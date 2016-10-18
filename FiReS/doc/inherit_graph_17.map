@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classfires_1_1_task.html" title="fires::Task" alt="" coords="5,81,89,108"/>
+<area shape="rect" id="node2" href="$classfires_1_1_aggregate.html" title="fires::Aggregate" alt="" coords="137,5,261,32"/>
+<area shape="rect" id="node3" href="$classfires_1_1_filter_set.html" title="fires::FilterSet" alt="" coords="145,56,254,83"/>
+<area shape="rect" id="node4" href="$classfires_1_1_search.html" title="FiReS search. " alt="" coords="148,107,251,133"/>
+<area shape="rect" id="node5" href="$classfires_1_1_sort.html" title="fires::Sort" alt="" coords="157,157,241,184"/>
+</map>

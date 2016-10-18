@@ -1,0 +1,25 @@
+var files =
+[
+    [ "Aggregate.h", "_aggregate_8h_source.html", null ],
+    [ "Aggregator.h", "_aggregator_8h_source.html", null ],
+    [ "api.h", "api_8h.html", "api_8h" ],
+    [ "Averager.h", "_averager_8h_source.html", null ],
+    [ "Comparer.h", "_comparer_8h_source.html", null ],
+    [ "defines.h", "defines_8h.html", null ],
+    [ "definesLinux.h", "defines_linux_8h_source.html", null ],
+    [ "Engine.h", "_engine_8h_source.html", null ],
+    [ "error.h", "error_8h_source.html", null ],
+    [ "Filter.h", "_filter_8h_source.html", null ],
+    [ "fires.h", "fires_8h_source.html", null ],
+    [ "Log.h", "_log_8h_source.html", null ],
+    [ "Normalizer.h", "_normalizer_8h_source.html", null ],
+    [ "Object.h", "_object_8h_source.html", null ],
+    [ "Objects.h", "_objects_8h_source.html", null ],
+    [ "Property.h", "_property_8h_source.html", null ],
+    [ "PropertyCaster.h", "_property_caster_8h_source.html", null ],
+    [ "Search.h", "_search_8h_source.html", null ],
+    [ "SearchConfig.h", "_search_config_8h_source.html", null ],
+    [ "Sort.h", "_sort_8h_source.html", null ],
+    [ "Task.h", "_task_8h_source.html", null ],
+    [ "version.h", "version_8h.html", "version_8h" ]
+];

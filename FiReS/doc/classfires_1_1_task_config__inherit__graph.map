@@ -1,0 +1,6 @@
+<map id="fires::TaskConfig" name="fires::TaskConfig">
+<area shape="rect" id="node2" href="$classfires_1_1_aggregate_config.html" title="{fires::AggregateConfig\n|# _properties\l# _aggregatedObject\l|+ AggregateConfig()\l+ ~AggregateConfig()\l+ addProperty()\l+ properties()\l+ aggregatedObject()\l+ clearAggregatedObject()\l+ clearProperties()\l+ clear()\l}" alt="" coords="5,182,200,377"/>
+<area shape="rect" id="node3" href="$classfires_1_1_filter_set_config.html" title="{fires::FilterSetConfig\n|# _removeFiltered\l# _filterPropertyLabel\l# _filters\l|+ FilterSetConfig()\l+ filters()\l+ filterPropertyLabel()\l}" alt="" coords="224,211,387,347"/>
+<area shape="rect" id="node4" href="$classfires_1_1_search_config.html" title="{fires::SearchConfig\n|# _propertiesConfig\l# _queryObjects\l# _distanceToQueryType\l# _resultsPropertyLabel\l|+ SearchConfig()\l+ ~SearchConfig()\l+ add()\l+ comparer()\l+ averager()\l+ normalizer()\l+ distanceToQueryType()\l+ properties()\l+ queryObjects()\l+ resultsPropertyLabel()\l+ clearQueryObjects()\l+ clearProperties()\l+ clear()\l}" alt="" coords="411,131,591,428"/>
+<area shape="rect" id="node5" href="$classfires_1_1_sort_config.html" title="{fires::SortConfig\n|# _properties\l|+ SortConfig()\l+ ~SortConfig()\l+ addProperty()\l+ clear()\l+ operator()()\l}" alt="" coords="616,211,741,347"/>
+</map>

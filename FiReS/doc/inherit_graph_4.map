@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classfires_1_1_filter.html" title="fires::Filter" alt="" coords="5,81,92,108"/>
+<area shape="rect" id="node2" href="$classfires_1_1_filter_range.html" title="fires::FilterRange" alt="" coords="156,56,283,83"/>
+<area shape="rect" id="node6" href="$classfires_1_1_filter_value.html" title="fires::FilterValue\&lt; T \&gt;" alt="" coords="140,107,299,133"/>
+<area shape="rect" id="node3" href="$classfires_1_1_filter_max_value.html" title="fires::FilterMaxValue\&lt; T \&gt;" alt="" coords="356,5,541,32"/>
+<area shape="rect" id="node4" href="$classfires_1_1_filter_min_value.html" title="fires::FilterMinValue\&lt; T \&gt;" alt="" coords="358,56,539,83"/>
+<area shape="rect" id="node5" href="$classfires_1_1_filter_scalar_range.html" title="fires::FilterScalarRange\&lt; T \&gt;" alt="" coords="347,107,551,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="fires::Task" name="fires::Task">
+<area shape="rect" id="node2" href="$classfires_1_1_aggregate.html" title="{fires::Aggregate\n||+ eval()\l}" alt="" coords="5,167,129,245"/>
+<area shape="rect" id="node3" href="$classfires_1_1_filter_set.html" title="{fires::FilterSet\n||+ eval()\l}" alt="" coords="154,167,263,245"/>
+<area shape="rect" id="node4" href="$classfires_1_1_search.html" title="FiReS search. " alt="" coords="287,145,530,267"/>
+<area shape="rect" id="node5" href="$classfires_1_1_sort.html" title="{fires::Sort\n||+ eval()\l}" alt="" coords="555,167,639,245"/>
+</map>

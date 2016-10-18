@@ -1,0 +1,4 @@
+<map id="fires::Normalizer" name="fires::Normalizer">
+<area shape="rect" id="node2" href="$classfires_1_1_scalar_normalizer.html" title="{fires::ScalarNormalizer\&lt; T \&gt;\n|# _minValue\l# _maxValue\l|+ ScalarNormalizer()\l+ reset()\l+ ~ScalarNormalizer()\l+ update()\l+ normalizeProperty()\l}" alt="" coords="5,204,209,355"/>
+<area shape="rect" id="node3" href="$classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html" title="{fires::ScalarNormalizer\l\&lt; T * \&gt;\n||+ ScalarNormalizer()\l+ ~ScalarNormalizer()\l+ update()\l+ normalizeProperty()\l+ freeNormalizedProperty()\l}" alt="" coords="8,403,207,553"/>
+</map>

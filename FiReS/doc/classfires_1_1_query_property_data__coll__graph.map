@@ -1,0 +1,5 @@
+<map id="fires::QueryPropertyData" name="fires::QueryPropertyData">
+<area shape="rect" id="node2" href="$classfires_1_1_normalizer.html" title="{fires::Normalizer\n||+ ~Normalizer()\l+ reset()\l+ update()\l+ normalizeProperty()\l+ normalizeDistance()\l+ freeNormalizedProperty()\l}" alt="" coords="5,5,204,156"/>
+<area shape="rect" id="node3" href="$classfires_1_1_averager.html" title="{fires::Averager\n||+ ~Averager()\l+ accum()\l+ divide()\l+ reset()\l+ property()\l}" alt="" coords="229,13,343,149"/>
+<area shape="rect" id="node4" href="$classfires_1_1_comparer.html" title="Parent comparer class that provides the distance computation virtual method. " alt="" coords="367,35,490,127"/>
+</map>
