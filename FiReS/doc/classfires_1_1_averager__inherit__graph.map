@@ -1,4 +1,0 @@
-<map id="fires::Averager" name="fires::Averager">
-<area shape="rect" id="node2" href="$classfires_1_1_scalar_averager.html" title="{fires::ScalarAverager\&lt; T \&gt;\n|# _resetValue\l# _accumValue\l|+ ScalarAverager()\l+ ~ScalarAverager()\l+ accum()\l+ divide()\l+ reset()\l+ property()\l}" alt="" coords="5,189,196,355"/>
-<area shape="rect" id="node3" href="$classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html" title="{fires::ScalarAverager\l\&lt; T * \&gt;\n||+ ScalarAverager()\l+ ~ScalarAverager()\l+ accum()\l+ property()\l}" alt="" coords="23,403,178,539"/>
-</map>

@@ -1,0 +1,4 @@
+<map id="fires::PropertyAggregator" name="fires::PropertyAggregator">
+<area shape="rect" id="node2" href="$classfires_1_1_scalar_property_aggregator.html" title="{fires::ScalarPropertyAggregator\l\&lt; T, Enable \&gt;\n||+ ~ScalarPropertyAggregator()\l+ add()\l+ divide()\l}" alt="" coords="5,175,229,296"/>
+<area shape="rect" id="node3" href="$classfires_1_1_scalar_property_aggregator_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1isa7381de0fd61233a669cb1cc69042452.html" title="{fires::ScalarPropertyAggregator\l\&lt; T, typename std::enable\l_if\&lt; std::is_enum\&lt; T \&gt;::value\l \&gt;::type \&gt;\n||+ ~ScalarPropertyAggregator()\l+ add()\l+ divide()\l}" alt="" coords="253,160,477,311"/>
+</map>

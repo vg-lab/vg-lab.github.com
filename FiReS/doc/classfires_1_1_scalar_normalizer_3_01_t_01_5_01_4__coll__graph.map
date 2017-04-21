@@ -1,6 +1,0 @@
-<map id="fires::ScalarNormalizer&lt; T * &gt;" name="fires::ScalarNormalizer&lt; T * &gt;">
-<area shape="rect" id="node2" href="$classfires_1_1_scalar_normalizer.html" title="{fires::ScalarNormalizer\&lt; T \&gt;\n||+ ScalarNormalizer()\l+ reset()\l+ ~ScalarNormalizer()\l+ update()\l+ normalizeProperty()\l}" alt="" coords="68,515,272,651"/>
-<area shape="rect" id="node3" href="$classfires_1_1_normalizer.html" title="{fires::Normalizer\n||+ ~Normalizer()\l+ reset()\l+ update()\l+ normalizeProperty()\l+ normalizeDistance()\l+ freeNormalizedProperty()\l}" alt="" coords="5,287,204,437"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="232,147,319,224"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="207,5,344,97"/>
-</map>

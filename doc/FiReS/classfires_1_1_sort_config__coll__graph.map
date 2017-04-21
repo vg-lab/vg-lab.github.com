@@ -1,0 +1,7 @@
+<map id="fires::SortConfig" name="fires::SortConfig">
+<area shape="rect" id="node2" href="$classfires_1_1_task_config.html" title="{fires::TaskConfig\n||}" alt="" coords="5,471,129,548"/>
+<area shape="rect" id="node4" href="$structfires_1_1_sort_config_1_1_t_sort_property.html" title="{fires::SortConfig::\lTSortProperty\n|+ order\l|}" alt="" coords="192,316,324,408"/>
+<area shape="rect" id="node5" href="$classfires_1_1_property_sorter.html" title="{fires::PropertySorter\n||+ ~PropertySorter()\l+ isLowerThan()\l+ isEqual()\l}" alt="" coords="126,147,278,253"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="303,161,389,239"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="277,5,415,97"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="fires::PropertyManager" name="fires::PropertyManager">
+<area shape="rect" id="node3" href="$classfires_1_1_property_caster.html" title="{fires::PropertyCaster\n||+ ~PropertyCaster()\l+ toInt()\l+ toString()\l}" alt="" coords="65,5,219,112"/>
+<area shape="rect" id="node7" href="$structfires_1_1_property_manager_1_1_t_property_info.html" title="{fires::PropertyManager\l::TPropertyInfo\n||}" alt="" coords="228,175,395,267"/>
+<area shape="rect" id="node5" href="$classfires_1_1_property_aggregator.html" title="{fires::PropertyAggregator\n||+ ~PropertyAggregator()\l+ add()\l+ divide()\l}" alt="" coords="389,5,573,112"/>
+<area shape="rect" id="node8" href="$classfires_1_1_property_sorter.html" title="{fires::PropertySorter\n||+ ~PropertySorter()\l+ isLowerThan()\l+ isEqual()\l}" alt="" coords="602,5,754,112"/>
+<area shape="rect" id="node9" href="$classfires_1_1_filter.html" title="{fires::Filter\n||+ ~Filter()\l+ eval()\l}" alt="" coords="267,13,355,105"/>
+</map>
