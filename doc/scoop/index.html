@@ -118,12 +118,15 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ul>
 <h2>Building</h2>
 <p>scoop has been succesfully built and used on Ubuntu 14.04, Mac OSX Yosemite and Windows 7/8 Visual Studio 2013 Win64. The following steps should be enough to build it just with the required dependencies.</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;git clone --recursive https://gitlab.gmrv.es/gmrv/scoop.git</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;mkdir scoop/build &amp;&amp; cd scoop/build</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cmake .. -DCMAKE_BUILD_TYPE=Release</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;make</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;git clone --recursive https://gitlab.gmrv.es/gmrv/scoop.git</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;mkdir scoop/build &amp;&amp; cd scoop/build</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cmake .. -DCMAKE_BUILD_TYPE=Release</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;make</div></div><!-- fragment --><h2>Testing</h2>
+<p>After building scoop, you can run some examples in bin directory. For example, to manually run a simple test that cre ates a sequential color map, use the command: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;./bin/scoopSequentialColorMap</div></div><!-- fragment --><h2>Documentation</h2>
+<p>You can access the online API documentation generated from the source (using <a href="http://doxygen.org/">Doxygen</a> ) in <a href="https://gmrvvis.github.io/doc/scoop/">https://gmrvvis.github.io/doc/scoop/</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 26 2017 19:16:53 for scoop by
+    <li class="footer">Generated on Thu Oct 26 2017 19:40:57 for scoop by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
