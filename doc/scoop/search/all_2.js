@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['categoricalcolormap',['CategoricalColorMap',['../classscoop_1_1_categorical_color_map.html',1,'scoop']]],
+  ['categoricalcolormap',['CategoricalColorMap',['../classscoop_1_1_categorical_color_map.html#aafb97117514d8d6b015ddef78ddd63c6',1,'scoop::CategoricalColorMap::CategoricalColorMap(void)'],['../classscoop_1_1_categorical_color_map.html#ad95afc8e57696a026de69bdf045e38a9',1,'scoop::CategoricalColorMap::CategoricalColorMap(const std::vector&lt; Category &gt; &amp;categories, const ColorPalette &amp;palette)']]],
+  ['check',['check',['../classscoop_1_1_version.html#a1c4a958fd0efd30d802e6ae76324624c',1,'scoop::Version']]],
+  ['colorbrewerdiverging',['ColorBrewerDiverging',['../classscoop_1_1_color_palette.html#a319ce231a53ccfbc74a19b3a4bd5938e',1,'scoop::ColorPalette::ColorBrewerDiverging()'],['../classscoop_1_1_color_palette.html#a866b9d7b3650069223fc02b3622a6db3',1,'scoop::ColorPalette::colorBrewerDiverging(ColorBrewerDiverging cbPalette=ColorBrewerDiverging::BrBG, unsigned int size=3, bool reverse=true)']]],
+  ['colorbrewerqualitative',['ColorBrewerQualitative',['../classscoop_1_1_color_palette.html#a41554d357cae1468d393f257378fb287',1,'scoop::ColorPalette::ColorBrewerQualitative()'],['../classscoop_1_1_color_palette.html#ad6d6ed27a7d555f16386faaa0a691d5e',1,'scoop::ColorPalette::colorBrewerQualitative(ColorBrewerQualitative cbPalette=ColorBrewerQualitative::Accent, unsigned int size=3, bool reverse=false)']]],
+  ['colorbrewersequential',['ColorBrewerSequential',['../classscoop_1_1_color_palette.html#a1c76073c85b48c515baed8fb216697ae',1,'scoop::ColorPalette::ColorBrewerSequential()'],['../classscoop_1_1_color_palette.html#acba6dd90f7508e42b61b7a7fb8a7878f',1,'scoop::ColorPalette::colorBrewerSequential(ColorBrewerSequential cbPalette=ColorBrewerSequential::BuGn, unsigned int size=3, bool reverse=true)']]],
+  ['colorinterpolation',['ColorInterpolation',['../classscoop_1_1_sequential_color_map.html#add5d1808b3ea790c9c7ed17c9bf9287d',1,'scoop::SequentialColorMap']]],
+  ['colorpalette',['ColorPalette',['../classscoop_1_1_color_palette.html',1,'scoop']]],
+  ['colors',['Colors',['../classscoop_1_1_color_palette.html#afb14374b1a8380231f03515ac0246785',1,'scoop::ColorPalette::Colors()'],['../classscoop_1_1_color_palette.html#a0b1dd324b9ec59798e6ed3dca1a3f060',1,'scoop::ColorPalette::colors(void) const '],['../classscoop_1_1_color_palette.html#a7bdad7da2b33bb039045043f5bc7025b',1,'scoop::ColorPalette::colors(void)']]]
+];

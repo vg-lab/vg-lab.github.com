@@ -1,0 +1,5 @@
+<map id="scoop::CategoricalColorMap::CategoricalColorMap" name="scoop::CategoricalColorMap::CategoricalColorMap">
+<area shape="rect" id="node2" href="$classscoop_1_1_color_palette.html#a0b1dd324b9ec59798e6ed3dca1a3f060" title="Returns the container of colors of the palette. " alt="" coords="281,5,426,47"/>
+<area shape="rect" id="node3" href="$classscoop_1_1_categorical_color_map.html#aa4d4c171d2cb1601221fdcb2976e40c9" title="Set a color for a category. " alt="" coords="253,71,453,112"/>
+<area shape="rect" id="node4" href="$classscoop_1_1_color_palette.html#a990cccc76e1764838b2d3c5b0fee5a80" title="Returns the size of the palette. " alt="" coords="281,136,426,177"/>
+</map>
