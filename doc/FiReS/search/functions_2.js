@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['distance',['distance',['../classfires_1_1_comparer.html#ae49ed1ed1f5df530328327d9e6ec8ffc',1,'fires::Comparer::distance()'],['../classfires_1_1_scalar_comparer.html#af9f20a2186c5b3f3c8d23e731251667e',1,'fires::ScalarComparer::distance()'],['../classfires_1_1_scalar_comparer_3_01_t_01_5_4.html#ac030389c7221a665857608046dca3416',1,'fires::ScalarComparer&lt; T *&gt;::distance()']]]
+  ['distance',['distance',['../classfires_1_1_comparer.html#a6ac9db3e18e7824b43fa4e6935e8d11c',1,'fires::Comparer::distance()'],['../classfires_1_1_scalar_comparer.html#a7ff5d058edc4c9ac2d675efe76c4c1f9',1,'fires::ScalarComparer::distance()'],['../classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html#a66c9c0f3d8dc1eba7f0d2c80f29ecf2d',1,'fires::ScalarComparer&lt; T * &gt;::distance()']]]
 ];

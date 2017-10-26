@@ -155,7 +155,7 @@
       <Scope>fires::Comparer</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_comparer.html</Path>
-    <Anchor>ae49ed1ed1f5df530328327d9e6ec8ffc</Anchor>
+    <Anchor>a6ac9db3e18e7824b43fa4e6935e8d11c</Anchor>
     <Abstract>Virtual method to compute distance. </Abstract>
     <DeclaredIn>Comparer.h</DeclaredIn>
   </Token>
@@ -352,6 +352,24 @@
     <Anchor>abc993475d3ffc3a352454c10f09bb0ee</Anchor>
     <Abstract>Default destructor. </Abstract>
     <DeclaredIn>Engine.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fires::EnumPropertyCaster</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>fires::EnumPropertyCaster</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_enum_property_caster.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -639,7 +657,7 @@
       <Scope>fires::Object</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_object.html</Path>
-    <Anchor>a82392a6f895a560ff9036fbc7611ab05</Anchor>
+    <Anchor>a253f18d0038408aa3b36fb8647e9adc3</Anchor>
     <Abstract>Get a property of this object as const. </Abstract>
     <DeclaredIn>Object.h</DeclaredIn>
   </Token>
@@ -675,7 +693,7 @@
       <Scope>fires::Object</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_object.html</Path>
-    <Anchor>abf3bbcf921155ea03cf9f99153bb13fc</Anchor>
+    <Anchor>aa050d3263b40669371b72053a9765bd9</Anchor>
     <Abstract>Queries if a property has been registered in this object. </Abstract>
     <DeclaredIn>Object.h</DeclaredIn>
   </Token>
@@ -711,7 +729,7 @@
       <Scope>fires::Object</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_object.html</Path>
-    <Anchor>a961f8959351f53e86f31ae0acdd249df</Anchor>
+    <Anchor>a9d4a4ed72b9321daae734df4e4a37f7c</Anchor>
     <Abstract>Get all properties as const. </Abstract>
     <DeclaredIn>Object.h</DeclaredIn>
   </Token>
@@ -735,7 +753,7 @@
       <Scope>fires::Object</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_object.html</Path>
-    <Anchor>a6730f27ee5a6f422f90d5c6698ca0e51</Anchor>
+    <Anchor>a4709ceca236d88b4cae49e5167819c4b</Anchor>
     <Abstract>Get the label of the object as const. </Abstract>
     <DeclaredIn>Object.h</DeclaredIn>
   </Token>
@@ -914,7 +932,19 @@
       <Scope>fires::PropertyManager</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_property_manager.html</Path>
-    <Anchor>a0862d9de7c99c14b0bfa3f34f62109ee</Anchor>
+    <Anchor>aa53c46b633fb66d636faad53602fb77d</Anchor>
+    <Abstract>Specialization for scalars. </Abstract>
+    <DeclaredIn>PropertyManager.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>registerProperty</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>fires::PropertyManager</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_property_manager.html</Path>
+    <Anchor>a39235ee7e9be9d610e5903eb70b4c3fa</Anchor>
     <Abstract>Specialization for scalars. </Abstract>
     <DeclaredIn>PropertyManager.h</DeclaredIn>
   </Token>
@@ -957,12 +987,12 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>fires::ScalarAverager&lt; T *&gt;</Name>
+      <Name>fires::ScalarAverager&lt; T * &gt;</Name>
       <APILanguage>c</APILanguage>
       <Type>tmplt</Type>
-      <Scope>fires::ScalarAverager&lt; T *&gt;</Scope>
+      <Scope>fires::ScalarAverager&lt; T * &gt;</Scope>
     </TokenIdentifier>
-    <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
+    <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -981,28 +1011,28 @@
       <Scope>fires::ScalarComparer</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_scalar_comparer.html</Path>
-    <Anchor>af9f20a2186c5b3f3c8d23e731251667e</Anchor>
+    <Anchor>a7ff5d058edc4c9ac2d675efe76c4c1f9</Anchor>
     <Abstract>Virtual method to compute distance. </Abstract>
     <DeclaredIn>Comparer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>fires::ScalarComparer&lt; T *&gt;</Name>
+      <Name>fires::ScalarComparer&lt; T * &gt;</Name>
       <APILanguage>c</APILanguage>
       <Type>tmplt</Type>
-      <Scope>fires::ScalarComparer&lt; T *&gt;</Scope>
+      <Scope>fires::ScalarComparer&lt; T * &gt;</Scope>
     </TokenIdentifier>
-    <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_4.html</Path>
+    <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>distance</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>fires::ScalarComparer&lt; T *&gt;</Scope>
+      <Scope>fires::ScalarComparer&lt; T * &gt;</Scope>
     </TokenIdentifier>
-    <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_4.html</Path>
-    <Anchor>ac030389c7221a665857608046dca3416</Anchor>
+    <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html</Path>
+    <Anchor>a66c9c0f3d8dc1eba7f0d2c80f29ecf2d</Anchor>
     <Abstract>Virtual method to compute distance. </Abstract>
     <DeclaredIn>Comparer.h</DeclaredIn>
   </Token>
@@ -1017,12 +1047,12 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>fires::ScalarNormalizer&lt; T *&gt;</Name>
+      <Name>fires::ScalarNormalizer&lt; T * &gt;</Name>
       <APILanguage>c</APILanguage>
       <Type>tmplt</Type>
-      <Scope>fires::ScalarNormalizer&lt; T *&gt;</Scope>
+      <Scope>fires::ScalarNormalizer&lt; T * &gt;</Scope>
     </TokenIdentifier>
-    <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
+    <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1050,6 +1080,15 @@
       <Scope>fires::ScalarPropertyCaster</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_scalar_property_caster.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fires::ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>fires::ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>

@@ -16,6 +16,5 @@ var searchData=
   ['fires_5fversion_5fmajor',['FIRES_VERSION_MAJOR',['../version_8h.html#a8578bdf088700746892ec37f316fbb2f',1,'version.h']]],
   ['fires_5fversion_5fminor',['FIRES_VERSION_MINOR',['../version_8h.html#a01dec0dccd0f25dac35d268b717a38bd',1,'version.h']]],
   ['fires_5fversion_5fpatch',['FIRES_VERSION_PATCH',['../version_8h.html#a0747cbc7ea5c4da46977bec684fc8f59',1,'version.h']]],
-  ['fires_5fversion_5frevision',['FIRES_VERSION_REVISION',['../version_8h.html#a465a45a7b22fc5be8cb8bbafdc07daac',1,'version.h']]],
-  ['fires_20_2d_20property_20management_20for_20filtering_2c_20retrieval_20and_20search',['FiReS - property management for Filtering, Retrieval and Search',['../index.html',1,'']]]
+  ['fires_5fversion_5frevision',['FIRES_VERSION_REVISION',['../version_8h.html#a465a45a7b22fc5be8cb8bbafdc07daac',1,'version.h']]]
 ];

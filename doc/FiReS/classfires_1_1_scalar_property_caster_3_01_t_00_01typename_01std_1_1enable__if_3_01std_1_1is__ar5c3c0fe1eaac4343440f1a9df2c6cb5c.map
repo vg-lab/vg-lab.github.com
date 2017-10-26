@@ -1,0 +1,3 @@
+<map id="fires::ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;" name="fires::ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;">
+<area shape="rect" id="node2" href="$classfires_1_1_property_caster.html" title="{fires::PropertyCaster\n||+ ~PropertyCaster()\l+ toInt()\l+ toString()\l+ fromString()\l+ categories()\l}" alt="" coords="25,5,180,141"/>
+</map>

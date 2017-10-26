@@ -1,6 +1,6 @@
 <map id="fires::PropertyManager::TPropertyInfo" name="fires::PropertyManager::TPropertyInfo">
-<area shape="rect" id="node2" href="$classfires_1_1_property_aggregator.html" title="{fires::PropertyAggregator\n||+ ~PropertyAggregator()\l+ add()\l+ divide()\l}" alt="" coords="5,5,189,112"/>
-<area shape="rect" id="node3" href="$classfires_1_1_property_sorter.html" title="{fires::PropertySorter\n||+ ~PropertySorter()\l+ isLowerThan()\l+ isEqual()\l}" alt="" coords="213,5,365,112"/>
-<area shape="rect" id="node4" href="$classfires_1_1_property_caster.html" title="{fires::PropertyCaster\n||+ ~PropertyCaster()\l+ toInt()\l+ toString()\l}" alt="" coords="389,5,544,112"/>
-<area shape="rect" id="node5" href="$classfires_1_1_filter.html" title="{fires::Filter\n||+ ~Filter()\l+ eval()\l}" alt="" coords="568,13,656,105"/>
+<area shape="rect" id="node2" href="$classfires_1_1_property_aggregator.html" title="{fires::PropertyAggregator\n||+ ~PropertyAggregator()\l+ add()\l+ divide()\l}" alt="" coords="5,20,189,127"/>
+<area shape="rect" id="node3" href="$classfires_1_1_property_sorter.html" title="{fires::PropertySorter\n||+ ~PropertySorter()\l+ isLowerThan()\l+ isEqual()\l}" alt="" coords="213,20,365,127"/>
+<area shape="rect" id="node4" href="$classfires_1_1_property_caster.html" title="{fires::PropertyCaster\n||+ ~PropertyCaster()\l+ toInt()\l+ toString()\l+ fromString()\l+ categories()\l}" alt="" coords="389,5,544,141"/>
+<area shape="rect" id="node5" href="$classfires_1_1_filter.html" title="{fires::Filter\n||+ ~Filter()\l+ eval()\l}" alt="" coords="568,27,656,119"/>
 </map>

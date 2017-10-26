@@ -3,16 +3,17 @@ var hierarchy =
     [ "fires::AggregateConfig::TAggregatorProperty", "structfires_1_1_aggregate_config_1_1_t_aggregator_property.html", null ],
     [ "fires::Averager", "classfires_1_1_averager.html", [
       [ "fires::ScalarAverager< T >", "classfires_1_1_scalar_averager.html", [
-        [ "fires::ScalarAverager< T *>", "classfires_1_1_scalar_averager_3_01_t_01_5_4.html", null ]
+        [ "fires::ScalarAverager< T * >", "classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html", null ]
       ] ]
     ] ],
     [ "fires::Comparer", "classfires_1_1_comparer.html", [
       [ "fires::ScalarComparer< T >", "classfires_1_1_scalar_comparer.html", [
-        [ "fires::ScalarComparer< T *>", "classfires_1_1_scalar_comparer_3_01_t_01_5_4.html", null ]
+        [ "fires::ScalarComparer< T * >", "classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html", null ]
       ] ]
     ] ],
     [ "fires::DependenciesManager", "classfires_1_1_dependencies_manager.html", null ],
     [ "fires::Engine", "classfires_1_1_engine.html", null ],
+    [ "fires::EnumPropertyCaster< T, Enable >", "classfires_1_1_enum_property_caster.html", null ],
     [ "fires::Filter", "classfires_1_1_filter.html", [
       [ "fires::FilterRange", "classfires_1_1_filter_range.html", [
         [ "fires::FilterMaxValue< T >", "classfires_1_1_filter_max_value.html", null ],
@@ -25,7 +26,7 @@ var hierarchy =
     [ "fires::Log", "classfires_1_1_log.html", null ],
     [ "fires::Normalizer", "classfires_1_1_normalizer.html", [
       [ "fires::ScalarNormalizer< T >", "classfires_1_1_scalar_normalizer.html", [
-        [ "fires::ScalarNormalizer< T *>", "classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html", null ]
+        [ "fires::ScalarNormalizer< T * >", "classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html", null ]
       ] ]
     ] ],
     [ "fires::Object", "classfires_1_1_object.html", null ],
@@ -36,7 +37,9 @@ var hierarchy =
       [ "fires::ScalarPropertyAggregator< T, typename std::enable_if< std::is_enum< T >::value >::type >", "classfires_1_1_scalar_property_aggregator_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1isa7381de0fd61233a669cb1cc69042452.html", null ]
     ] ],
     [ "fires::PropertyCaster", "classfires_1_1_property_caster.html", [
-      [ "fires::ScalarPropertyCaster< T >", "classfires_1_1_scalar_property_caster.html", null ]
+      [ "fires::EnumPropertyCaster< T, typename std::enable_if< std::is_enum< T >::value >::type >", "classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html", null ],
+      [ "fires::ScalarPropertyCaster< T, Enable >", "classfires_1_1_scalar_property_caster.html", null ],
+      [ "fires::ScalarPropertyCaster< T, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html", null ]
     ] ],
     [ "fires::PropertyGIDsManager", "classfires_1_1_property_g_i_ds_manager.html", null ],
     [ "fires::PropertyManager", "classfires_1_1_property_manager.html", null ],

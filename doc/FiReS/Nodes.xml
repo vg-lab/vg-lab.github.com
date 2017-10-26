@@ -6,10 +6,6 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
-        <Name>FiReS - property management for Filtering, Retrieval and Search</Name>
-        <Path>index.html</Path>
-       </Node>
-       <Node>
         <Name>Classes</Name>
         <Path>annotated.html</Path>
         <Subnodes>
@@ -152,7 +148,7 @@
                <Node>
                 <Name>distance</Name>
                 <Path>classfires_1_1_comparer.html</Path>
-                <Anchor>ae49ed1ed1f5df530328327d9e6ec8ffc</Anchor>
+                <Anchor>a6ac9db3e18e7824b43fa4e6935e8d11c</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -249,6 +245,61 @@
               </Subnodes>
              </Node>
              <Node>
+              <Name>EnumPropertyCaster</Name>
+              <Path>classfires_1_1_enum_property_caster.html</Path>
+             </Node>
+             <Node>
+              <Name>EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;</Name>
+              <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>EnumPropertyCaster</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a4d0ca51f8cd5e07886ad06b09b8dcc1c</Anchor>
+               </Node>
+               <Node>
+                <Name>~EnumPropertyCaster</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a23bdaca1b940693cfe9ba9e8e7583f08</Anchor>
+               </Node>
+               <Node>
+                <Name>categories</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a2af91186870c27ea13bb68152b749ed8</Anchor>
+               </Node>
+               <Node>
+                <Name>fromString</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a20ea6a9f149c6f79daace88003d582f4</Anchor>
+               </Node>
+               <Node>
+                <Name>scalarToString</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a6dba23e2415dcae0b58a82f7591f1554</Anchor>
+               </Node>
+               <Node>
+                <Name>toInt</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>ac0bc9be72f375d7ac3aa6783d91812bb</Anchor>
+               </Node>
+               <Node>
+                <Name>toString</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a603396166cf68d89e93086e7112e145c</Anchor>
+               </Node>
+               <Node>
+                <Name>_scalarToString</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>a3c0dd9fb7fc25543a364b0fadffb5493</Anchor>
+               </Node>
+               <Node>
+                <Name>_stringToScalar</Name>
+                <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+                <Anchor>ae168985285671b749b7a0e415739ac9d</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>Filter</Name>
               <Path>classfires_1_1_filter.html</Path>
               <Subnodes>
@@ -276,7 +327,7 @@
                <Node>
                 <Name>eval</Name>
                 <Path>classfires_1_1_filter_max_value.html</Path>
-                <Anchor>a77ecc50aeccf40b2f13c6348fc8d7d3d</Anchor>
+                <Anchor>a35ba055ddc98fe4290dcbb44eea49bc1</Anchor>
                </Node>
                <Node>
                 <Name>_max</Name>
@@ -302,7 +353,7 @@
                <Node>
                 <Name>eval</Name>
                 <Path>classfires_1_1_filter_min_value.html</Path>
-                <Anchor>a6df93c2d0c0ed6a8131372084f308407</Anchor>
+                <Anchor>a23bc62e5405e1e11d3f214aeb90763fe</Anchor>
                </Node>
                <Node>
                 <Name>_min</Name>
@@ -373,7 +424,7 @@
                <Node>
                 <Name>eval</Name>
                 <Path>classfires_1_1_filter_scalar_range.html</Path>
-                <Anchor>a413f86d7ba42fb21cbafc2d6420a2e9c</Anchor>
+                <Anchor>abe2712c2b8f9454ddda8e60ce130d763</Anchor>
                </Node>
                <Node>
                 <Name>max</Name>
@@ -454,7 +505,7 @@
                  <Node>
                   <Name>operator()</Name>
                   <Path>classfires_1_1_filter_set_config_1_1_object_fulfils_filter.html</Path>
-                  <Anchor>a40dbf05e02e7c11ab619d23f0ce9e37e</Anchor>
+                  <Anchor>a710b1f94fbbdd4aa6c903c1788cbdc78</Anchor>
                  </Node>
                  <Node>
                   <Name>_filterPropertyLabel</Name>
@@ -501,7 +552,7 @@
                <Node>
                 <Name>filters</Name>
                 <Path>classfires_1_1_filter_set_config.html</Path>
-                <Anchor>aee719a78cc5c32bba35b8358f5e44689</Anchor>
+                <Anchor>a2227d248070ff148bd7330d722398fe3</Anchor>
                </Node>
                <Node>
                 <Name>_filterPropertyLabel</Name>
@@ -532,7 +583,7 @@
                <Node>
                 <Name>eval</Name>
                 <Path>classfires_1_1_filter_value.html</Path>
-                <Anchor>a95ffcbceedc8f1cccfb27a6049678dac</Anchor>
+                <Anchor>ab40a1fe2a24d7a1cdd88afe40acb45ae</Anchor>
                </Node>
                <Node>
                 <Name>_value</Name>
@@ -609,7 +660,7 @@
                <Node>
                 <Name>normalizeProperty</Name>
                 <Path>classfires_1_1_normalizer.html</Path>
-                <Anchor>acede09f7281a5638d0359b12674d88b6</Anchor>
+                <Anchor>a8cedc9766c970f2a778fe2d4dd746e62</Anchor>
                </Node>
                <Node>
                 <Name>reset</Name>
@@ -655,12 +706,12 @@
                <Node>
                 <Name>getProperty</Name>
                 <Path>classfires_1_1_object.html</Path>
-                <Anchor>a82392a6f895a560ff9036fbc7611ab05</Anchor>
+                <Anchor>a253f18d0038408aa3b36fb8647e9adc3</Anchor>
                </Node>
                <Node>
                 <Name>hasProperty</Name>
                 <Path>classfires_1_1_object.html</Path>
-                <Anchor>abf3bbcf921155ea03cf9f99153bb13fc</Anchor>
+                <Anchor>aa050d3263b40669371b72053a9765bd9</Anchor>
                </Node>
                <Node>
                 <Name>label</Name>
@@ -670,7 +721,7 @@
                <Node>
                 <Name>label</Name>
                 <Path>classfires_1_1_object.html</Path>
-                <Anchor>a6730f27ee5a6f422f90d5c6698ca0e51</Anchor>
+                <Anchor>a4709ceca236d88b4cae49e5167819c4b</Anchor>
                </Node>
                <Node>
                 <Name>operator=</Name>
@@ -690,7 +741,7 @@
                <Node>
                 <Name>properties</Name>
                 <Path>classfires_1_1_object.html</Path>
-                <Anchor>a961f8959351f53e86f31ae0acdd249df</Anchor>
+                <Anchor>a9d4a4ed72b9321daae734df4e4a37f7c</Anchor>
                </Node>
                <Node>
                 <Name>registerProperty</Name>
@@ -736,7 +787,7 @@
                <Node>
                 <Name>get</Name>
                 <Path>classfires_1_1_object_properties.html</Path>
-                <Anchor>ac8d2b0a7f1b2eb95d4e6d93e649f5563</Anchor>
+                <Anchor>a5ac82c19a82602f3794b4453be3e7fb4</Anchor>
                </Node>
                <Node>
                 <Name>registerProperty</Name>
@@ -767,12 +818,12 @@
                <Node>
                 <Name>addList</Name>
                 <Path>classfires_1_1_objects.html</Path>
-                <Anchor>a64a92c4b28e453d443fcff8b851b6e29</Anchor>
+                <Anchor>af275e021f389d817db22485dc38899c4</Anchor>
                </Node>
                <Node>
                 <Name>clearAdds</Name>
                 <Path>classfires_1_1_objects.html</Path>
-                <Anchor>adec8d6dabb912522046c0a04a7f78bee</Anchor>
+                <Anchor>afe9cdb10e92d96963c652d0f7d45d6a0</Anchor>
                </Node>
                <Node>
                 <Name>del</Name>
@@ -849,7 +900,7 @@
                <Node>
                 <Name>empty</Name>
                 <Path>classfires_1_1_property.html</Path>
-                <Anchor>a1754a749ec7dd3953fc8d8937d8fcec9</Anchor>
+                <Anchor>a4cbb0623f94d61b51c3a8705f68d688f</Anchor>
                </Node>
                <Node>
                 <Name>operator=</Name>
@@ -864,12 +915,12 @@
                <Node>
                 <Name>type</Name>
                 <Path>classfires_1_1_property.html</Path>
-                <Anchor>a47a60c5a690ca878dc210aef56e540d2</Anchor>
+                <Anchor>a34f5a9f2321a0f890e2f3aaff140bdb8</Anchor>
                </Node>
                <Node>
                 <Name>value</Name>
                 <Path>classfires_1_1_property.html</Path>
-                <Anchor>aed14322d740b61df3766a989380bcf06</Anchor>
+                <Anchor>adf53ccdda8fc8ad80cc1359357d3b9f2</Anchor>
                </Node>
                <Node>
                 <Name>valuePtr</Name>
@@ -958,6 +1009,16 @@
                 <Anchor>a019a900774fec43192be6da54b4e2393</Anchor>
                </Node>
                <Node>
+                <Name>categories</Name>
+                <Path>classfires_1_1_property_caster.html</Path>
+                <Anchor>a6fc9d8a1d5fb3fd9ab3c571512f97118</Anchor>
+               </Node>
+               <Node>
+                <Name>fromString</Name>
+                <Path>classfires_1_1_property_caster.html</Path>
+                <Anchor>adab195302d06950da15cf58fa36b6433</Anchor>
+               </Node>
+               <Node>
                 <Name>toInt</Name>
                 <Path>classfires_1_1_property_caster.html</Path>
                 <Anchor>a3a4072055af7255919fcadf05d3785c0</Anchor>
@@ -1038,7 +1099,17 @@
                <Node>
                 <Name>getAggregator</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a9e916db79f0b8fe60c66132e750316cc</Anchor>
+               </Node>
+               <Node>
+                <Name>getAggregator</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
                 <Anchor>a687a657852ee30802e985cc9b42590dc</Anchor>
+               </Node>
+               <Node>
+                <Name>getFilter</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a91d7f67b1ee38364db246df6e0705e12</Anchor>
                </Node>
                <Node>
                 <Name>getFilter</Name>
@@ -1048,7 +1119,17 @@
                <Node>
                 <Name>getPropertyCaster</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>aa28240aff8a27c5e987ba5c63fc5bd17</Anchor>
+               </Node>
+               <Node>
+                <Name>getPropertyCaster</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
                 <Anchor>af5b766ec84b0db970ab883dc730e2b35</Anchor>
+               </Node>
+               <Node>
+                <Name>getSorter</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a662a57a91669c605f25b9d821616b1c0</Anchor>
                </Node>
                <Node>
                 <Name>getSorter</Name>
@@ -1063,12 +1144,22 @@
                <Node>
                 <Name>registerProperty</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
-                <Anchor>adb2b2f128e8cb0551708d4b9de8a4fbf</Anchor>
+                <Anchor>af6ab58bbed54f0e37ac17f9b261beb36</Anchor>
                </Node>
                <Node>
                 <Name>registerProperty</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
-                <Anchor>a0862d9de7c99c14b0bfa3f34f62109ee</Anchor>
+                <Anchor>aa53c46b633fb66d636faad53602fb77d</Anchor>
+               </Node>
+               <Node>
+                <Name>registerProperty</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>af1b4130d8e36b76ee10ee151cf42166e</Anchor>
+               </Node>
+               <Node>
+                <Name>registerProperty</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a39235ee7e9be9d610e5903eb70b4c3fa</Anchor>
                </Node>
                <Node>
                 <Name>setFilterRange</Name>
@@ -1236,28 +1327,28 @@
               </Subnodes>
              </Node>
              <Node>
-              <Name>ScalarAverager&lt; T *&gt;</Name>
-              <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
+              <Name>ScalarAverager&lt; T * &gt;</Name>
+              <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
               <Subnodes>
                <Node>
                 <Name>ScalarAverager</Name>
-                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
-                <Anchor>a4a86ed5bf22c11b6662a1a577cd9f4c3</Anchor>
+                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a4744536f3202b03a30615849a6028c75</Anchor>
                </Node>
                <Node>
                 <Name>~ScalarAverager</Name>
-                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
-                <Anchor>a3047f2ec6190f68d4cc59d7052c2261f</Anchor>
+                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a522c4c7a32f13f731435a653e05162c0</Anchor>
                </Node>
                <Node>
                 <Name>accum</Name>
-                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
-                <Anchor>a38e86e057669d2ab1191906e6a2e051e</Anchor>
+                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a5f4e3e2882fa8a717cfc3011eddd6f62</Anchor>
                </Node>
                <Node>
                 <Name>property</Name>
-                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
-                <Anchor>a8f14f43d3947183b10068213f71ec890</Anchor>
+                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
+                <Anchor>ad99879d9f2bf16e47de1f5b4ca46ee98</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1273,23 +1364,23 @@
                <Node>
                 <Name>_distance</Name>
                 <Path>classfires_1_1_scalar_comparer.html</Path>
-                <Anchor>aae58275748660f1e7d798464d2ef554c</Anchor>
+                <Anchor>a21fe7c73c0707dad856fbcba0b2438cb</Anchor>
                </Node>
                <Node>
                 <Name>distance</Name>
                 <Path>classfires_1_1_scalar_comparer.html</Path>
-                <Anchor>af9f20a2186c5b3f3c8d23e731251667e</Anchor>
+                <Anchor>a7ff5d058edc4c9ac2d675efe76c4c1f9</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
-              <Name>ScalarComparer&lt; T *&gt;</Name>
-              <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_4.html</Path>
+              <Name>ScalarComparer&lt; T * &gt;</Name>
+              <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html</Path>
               <Subnodes>
                <Node>
                 <Name>distance</Name>
-                <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_4.html</Path>
-                <Anchor>ac030389c7221a665857608046dca3416</Anchor>
+                <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a66c9c0f3d8dc1eba7f0d2c80f29ecf2d</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1310,7 +1401,7 @@
                <Node>
                 <Name>normalizeProperty</Name>
                 <Path>classfires_1_1_scalar_normalizer.html</Path>
-                <Anchor>aa61ffa8848d2b4e286a546dab09c8af8</Anchor>
+                <Anchor>a1962cf758324218970c1321371e76fa2</Anchor>
                </Node>
                <Node>
                 <Name>reset</Name>
@@ -1335,33 +1426,33 @@
               </Subnodes>
              </Node>
              <Node>
-              <Name>ScalarNormalizer&lt; T *&gt;</Name>
-              <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
+              <Name>ScalarNormalizer&lt; T * &gt;</Name>
+              <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
               <Subnodes>
                <Node>
                 <Name>ScalarNormalizer</Name>
-                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
-                <Anchor>a1ac932cc91ecb68a212862ec76b9b6bc</Anchor>
+                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a81cbfeed746d5d5bdc75d9ad7e29bba0</Anchor>
                </Node>
                <Node>
                 <Name>~ScalarNormalizer</Name>
-                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
-                <Anchor>a5f0611d1dfa0a48acd162e23360f81a0</Anchor>
+                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a7c9be20f4f2822fece1edae5b6d6b0be</Anchor>
                </Node>
                <Node>
                 <Name>freeNormalizedProperty</Name>
-                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
-                <Anchor>afc9f75198762862e05796f2b869592ba</Anchor>
+                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a4ad8f0a4e2e4f8162ea3c690e7d44a7d</Anchor>
                </Node>
                <Node>
                 <Name>normalizeProperty</Name>
-                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
-                <Anchor>a3101c1d9ce65f824a688f125d56dd06b</Anchor>
+                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
+                <Anchor>aa3a1f941d10f3638c1ec2bdcf7f84545</Anchor>
                </Node>
                <Node>
                 <Name>update</Name>
-                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
-                <Anchor>a45b1b2c0e114b558e4dca2b96c6984ea</Anchor>
+                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
+                <Anchor>a9191d450c61750206951e06e8abad12d</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1410,21 +1501,30 @@
              <Node>
               <Name>ScalarPropertyCaster</Name>
               <Path>classfires_1_1_scalar_property_caster.html</Path>
+             </Node>
+             <Node>
+              <Name>ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</Name>
+              <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
               <Subnodes>
                <Node>
                 <Name>~ScalarPropertyCaster</Name>
-                <Path>classfires_1_1_scalar_property_caster.html</Path>
-                <Anchor>a646d95e81cd7d0efb8876cc894a2e7d4</Anchor>
+                <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
+                <Anchor>af329e5372e643dcfc648af8fe7860602</Anchor>
+               </Node>
+               <Node>
+                <Name>fromString</Name>
+                <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
+                <Anchor>a15a9ebb9c1b0551c1c701b44e6d96b2c</Anchor>
                </Node>
                <Node>
                 <Name>toInt</Name>
-                <Path>classfires_1_1_scalar_property_caster.html</Path>
-                <Anchor>ac35bf9a2206de8804ab1c2f29eb8c03f</Anchor>
+                <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
+                <Anchor>a3ddd8c9988b2b4b4b36cd28c64e31e28</Anchor>
                </Node>
                <Node>
                 <Name>toString</Name>
-                <Path>classfires_1_1_scalar_property_caster.html</Path>
-                <Anchor>a0496fdf85eac524ec5b7daa0bb35601b</Anchor>
+                <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
+                <Anchor>a84205aa4afc334565bb3c56ee2c93740</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1664,7 +1764,7 @@
                <Node>
                 <Name>operator()</Name>
                 <Path>classfires_1_1_sort_config.html</Path>
-                <Anchor>a06a7f442eb67dbb2bbce6c8cd6d744d3</Anchor>
+                <Anchor>a5aec3e1e2b357dd6a4686bf19e8fbd4c</Anchor>
                </Node>
                <Node>
                 <Name>properties</Name>
@@ -1805,8 +1905,8 @@
               <Path>classfires_1_1_scalar_averager.html</Path>
               <Subnodes>
                <Node>
-                <Name>fires::ScalarAverager&lt; T *&gt;</Name>
-                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_4.html</Path>
+                <Name>fires::ScalarAverager&lt; T * &gt;</Name>
+                <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
                </Node>
               </Subnodes>
              </Node>
@@ -1821,8 +1921,8 @@
               <Path>classfires_1_1_scalar_comparer.html</Path>
               <Subnodes>
                <Node>
-                <Name>fires::ScalarComparer&lt; T *&gt;</Name>
-                <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_4.html</Path>
+                <Name>fires::ScalarComparer&lt; T * &gt;</Name>
+                <Path>classfires_1_1_scalar_comparer_3_01_t_01_5_01_4.html</Path>
                </Node>
               </Subnodes>
              </Node>
@@ -1835,6 +1935,10 @@
            <Node>
             <Name>fires::Engine</Name>
             <Path>classfires_1_1_engine.html</Path>
+           </Node>
+           <Node>
+            <Name>fires::EnumPropertyCaster&lt; T, Enable &gt;</Name>
+            <Path>classfires_1_1_enum_property_caster.html</Path>
            </Node>
            <Node>
             <Name>fires::Filter</Name>
@@ -1881,8 +1985,8 @@
               <Path>classfires_1_1_scalar_normalizer.html</Path>
               <Subnodes>
                <Node>
-                <Name>fires::ScalarNormalizer&lt; T *&gt;</Name>
-                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_4.html</Path>
+                <Name>fires::ScalarNormalizer&lt; T * &gt;</Name>
+                <Path>classfires_1_1_scalar_normalizer_3_01_t_01_5_01_4.html</Path>
                </Node>
               </Subnodes>
              </Node>
@@ -1919,8 +2023,16 @@
             <Path>classfires_1_1_property_caster.html</Path>
             <Subnodes>
              <Node>
-              <Name>fires::ScalarPropertyCaster&lt; T &gt;</Name>
+              <Name>fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;</Name>
+              <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
+             </Node>
+             <Node>
+              <Name>fires::ScalarPropertyCaster&lt; T, Enable &gt;</Name>
               <Path>classfires_1_1_scalar_property_caster.html</Path>
+             </Node>
+             <Node>
+              <Name>fires::ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</Name>
+              <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
              </Node>
             </Subnodes>
            </Node>

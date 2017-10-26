@@ -1,7 +1,6 @@
 var NAVTREE =
 [
   [ "FiReS", "index.html", [
-    [ "FiReS - property management for Filtering, Retrieval and Search", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -28,7 +27,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classfires_1_1_scalar_averager.html#a366c417e83524d67b1c37ce03f81db57"
+"classfires_1_1_property_sorter.html#ac05c2d2763a05fd15eaaa0f08c7d7875"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

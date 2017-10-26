@@ -1,0 +1,5 @@
+<map id="fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;" name="fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;">
+<area shape="rect" id="node2" href="$classfires_1_1_property_caster.html" title="{fires::PropertyCaster\n||+ ~PropertyCaster()\l+ toInt()\l+ toString()\l+ fromString()\l+ categories()\l}" alt="" coords="5,287,160,423"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="265,147,351,224"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="239,5,377,97"/>
+</map>

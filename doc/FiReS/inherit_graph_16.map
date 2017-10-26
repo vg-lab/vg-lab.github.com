@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classfires_1_1_property_g_i_ds_manager.html" title="Class for linking property names to properties GIDs. " alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node1" href="$classfires_1_1_property_caster.html" title="fires::PropertyCaster" alt="" coords="5,107,159,134"/>
+<area shape="rect" id="node2" href="$classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html" title="fires::EnumPropertyCaster\l\&lt; T, typename std::enable\l_if\&lt; std::is_enum\&lt; T \&gt;::value\l \&gt;::type \&gt;" alt="" coords="207,5,419,76"/>
+<area shape="rect" id="node3" href="$classfires_1_1_scalar_property_caster.html" title="fires::ScalarPropertyCaster\l\&lt; T, Enable \&gt;" alt="" coords="216,100,409,141"/>
+<area shape="rect" id="node4" href="$classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html" title="fires::ScalarPropertyCaster\l\&lt; T, typename std::enable\l_if\&lt; std::is_arithmetic\&lt; T\l \&gt;::value \&gt;::type \&gt;" alt="" coords="216,165,409,236"/>
 </map>
