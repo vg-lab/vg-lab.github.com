@@ -1,0 +1,48 @@
+var classnsol_1_1_neuron =
+[
+    [ "TFunctionalType", "classnsol_1_1_neuron.html#aed180f2e48f0c35b07dad4bd7f376ca3", [
+      [ "UNDEFINED_FUNCTIONAL_TYPE", "classnsol_1_1_neuron.html#aed180f2e48f0c35b07dad4bd7f376ca3ae62b013f801cd089c4d3c4c74957a310", null ],
+      [ "INHIBITORY", "classnsol_1_1_neuron.html#aed180f2e48f0c35b07dad4bd7f376ca3a474b6c858caec1c6ab1e7ff0a429ace4", null ],
+      [ "EXCITATORY", "classnsol_1_1_neuron.html#aed180f2e48f0c35b07dad4bd7f376ca3a4c5cf7e6708ae3227e30c1146870224c", null ]
+    ] ],
+    [ "TMorphologicalType", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bd", [
+      [ "UNDEFINED", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda6bef19c1eeaf092aced6f783ed85fda2", null ],
+      [ "PYRAMIDAL", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdafc61522d0af0098efce3bfe3727a9239", null ],
+      [ "INTERNEURON", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda03f47a6b3e96e12410cee41cd077ba4c", null ],
+      [ "BASKET", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda937cf8ab2c537ac489e09be0f7010214", null ],
+      [ "STELLATE", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdae00ef618bb86d59723b0f39b655cc770", null ],
+      [ "GOLGI", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdad3807f75e90657f9d293387f97cd1b62", null ],
+      [ "GRANULE", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda5e2be12f7358a939b3d1eba2ea980a34", null ],
+      [ "LUGARO", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdab4ced114e6b804430b822a2205b2cd50", null ],
+      [ "UNIPOLAR_BRUSH", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdab8a779b8145f0867c0e634d578ecb1d0", null ],
+      [ "PURKINJE", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda56589ca6a708463353de6e983d0fc4ec", null ],
+      [ "CHANDELIER", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda480bebb9276fb4792e7673d283d05731", null ],
+      [ "INFERIOR_OLIVE", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda27a0b6b7d004e1cad1a2393dd1eec1f0", null ],
+      [ "DEEP_CEREBELLAR_NUCLEI", "classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda508d970514c9f269bc2426d07a483cf7", null ]
+    ] ],
+    [ "Neuron", "classnsol_1_1_neuron.html#ad1b0db78120837e3ec562fcb00631c9a", null ],
+    [ "~Neuron", "classnsol_1_1_neuron.html#a4fc4ed932e94798ac71622085f313154", null ],
+    [ "asNeuron", "classnsol_1_1_neuron.html#a109eb4dbd75775a08e5ca96994025c57", null ],
+    [ "functionalType", "classnsol_1_1_neuron.html#adfde6cb81c44b191c3adbfe78c339c0c", null ],
+    [ "gid", "classnsol_1_1_neuron.html#a8afc950c57e22c17b1e66e0d942ade99", null ],
+    [ "hasMorphology", "classnsol_1_1_neuron.html#a87a6b4bd3c5cfe97e6659817dd6ad805", null ],
+    [ "isExcitatory", "classnsol_1_1_neuron.html#a91842b6c8f7d5f07922a0a9ef6e9f4d7", null ],
+    [ "isInhibitory", "classnsol_1_1_neuron.html#a97a60be15d68ec0a387faf2b8070a5bb", null ],
+    [ "isInterneuron", "classnsol_1_1_neuron.html#aac28e02936e13fb11afefb3704d9ee6b", null ],
+    [ "isMorphologyLoaded", "classnsol_1_1_neuron.html#aca48f344c006c3f972ee0bd037ac0c31", null ],
+    [ "isPyramidal", "classnsol_1_1_neuron.html#a6751e52ee672e3aa42f0463ea81da61d", null ],
+    [ "layer", "classnsol_1_1_neuron.html#a8b966e80f45c11f493a5c1497a1956a5", null ],
+    [ "miniColumn", "classnsol_1_1_neuron.html#af56fe9257432b506d2082f8f91534d5b", null ],
+    [ "miniColumn", "classnsol_1_1_neuron.html#ac7c2e4769818a48547c21444328afaaa", null ],
+    [ "morphologicalType", "classnsol_1_1_neuron.html#a210b3b6b30fc59d1efdf04a43dab1261", null ],
+    [ "morphology", "classnsol_1_1_neuron.html#a229e42a82da37020b5a614da1698c74d", null ],
+    [ "morphology", "classnsol_1_1_neuron.html#a99bd00b57fd120378d77128a72fd4713", null ],
+    [ "transform", "classnsol_1_1_neuron.html#a29aa5688d8524b9a96b0154f07b4d3cd", null ],
+    [ "_functionalType", "classnsol_1_1_neuron.html#a4ef13478ab3b6f046f4b5f488c8d8381", null ],
+    [ "_gid", "classnsol_1_1_neuron.html#a5f46713fc6ff658a318a8f4a455519a3", null ],
+    [ "_layer", "classnsol_1_1_neuron.html#aa51c2376a5fa63c19ac5c18d3f4b6b8c", null ],
+    [ "_miniColumn", "classnsol_1_1_neuron.html#ad68ac847e77b8091cded8a5b67b5af3a", null ],
+    [ "_morphologicalType", "classnsol_1_1_neuron.html#a7524d71e59338ca84b55b10d4e1974b5", null ],
+    [ "_morphology", "classnsol_1_1_neuron.html#a6e8c7eb6388f45f15f0c5be672c425c5", null ],
+    [ "_transform", "classnsol_1_1_neuron.html#aab3d437209099d129a7e4a08fdc57957", null ]
+];

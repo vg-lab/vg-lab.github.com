@@ -1,0 +1,6 @@
+<map id="nsol::DendriteStats" name="nsol::DendriteStats">
+<area shape="rect" id="node5" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="51,645,245,737"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_dendrite.html" title="{nsol::Dendrite\n|# _dendriteType\l|+ Dendrite()\l+ dendriteType()\l}" alt="" coords="5,373,133,465"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="36,5,260,317"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="158,365,295,472"/>
+</map>

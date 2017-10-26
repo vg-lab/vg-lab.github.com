@@ -1,0 +1,4 @@
+<map id="nsol::NeuriteStats::getStat" name="nsol::NeuriteStats::getStat">
+<area shape="rect" id="node2" href="$classnsol_1_1_neurite_cached_stats.html#a341437d9c1a50ab456bf0ddb36faa98e" title="Returns the stat given if the cache is clean and if it is dirty then computes the stat and stores the..." alt="" coords="191,5,376,47"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neurite_stats.html#a64fe3cdd2f15d9252f10fd4aef9356ef" title="Returns object as NeuriteStats. " alt="" coords="215,71,352,112"/>
+</map>

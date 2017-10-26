@@ -1,0 +1,634 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - nsol - nsol/Reader/SwcReader.h</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">nsol/Reader</a> - SwcReader.h<span style="font-size: 80%;"> (source / <a href="SwcReader.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">nsol</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">143</td>
+            <td class="headerCovTableEntry">160</td>
+            <td class="headerCovTableEntryHi">89.4 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2017-10-26 20:08:19</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">16</td>
+            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntryHi">88.9 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*</a>
+<span class="lineNum">       2 </span>            :  * Copyright (c) 2014-2017 GMRV/URJC.
+<span class="lineNum">       3 </span>            :  *
+<span class="lineNum">       4 </span>            :  * Authors: Pablo Toharia &lt;pablo.toharia@urjc.es&gt;
+<span class="lineNum">       5 </span>            :  *          Ricardo Suarez
+<span class="lineNum">       6 </span>            :  *
+<span class="lineNum">       7 </span>            :  * This file is part of nsol &lt;https://github.com/gmrvvis/nsol&gt;
+<span class="lineNum">       8 </span>            :  *
+<span class="lineNum">       9 </span>            :  * This library is free software; you can redistribute it and/or modify it under
+<span class="lineNum">      10 </span>            :  * the terms of the GNU Lesser General Public License version 3.0 as published
+<span class="lineNum">      11 </span>            :  * by the Free Software Foundation.
+<span class="lineNum">      12 </span>            :  *
+<span class="lineNum">      13 </span>            :  * This library is distributed in the hope that it will be useful, but WITHOUT
+<span class="lineNum">      14 </span>            :  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+<span class="lineNum">      15 </span>            :  * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+<span class="lineNum">      16 </span>            :  * details.
+<span class="lineNum">      17 </span>            :  *
+<span class="lineNum">      18 </span>            :  * You should have received a copy of the GNU Lesser General Public License
+<span class="lineNum">      19 </span>            :  * along with this library; if not, write to the Free Software Foundation, Inc.,
+<span class="lineNum">      20 </span>            :  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+<span class="lineNum">      21 </span>            :  *
+<span class="lineNum">      22 </span>            :  */
+<span class="lineNum">      23 </span>            : #ifndef __NSOL_SWC_READER__
+<span class="lineNum">      24 </span>            : #define __NSOL_SWC_READER__
+<span class="lineNum">      25 </span>            : 
+<span class="lineNum">      26 </span>            : 
+<span class="lineNum">      27 </span>            : #include &quot;../Neuron.h&quot;
+<span class="lineNum">      28 </span>            : #include &quot;../Stats/NodeCached.h&quot;
+<span class="lineNum">      29 </span>            : #include &quot;../Stats/SectionCachedStats.h&quot;
+<span class="lineNum">      30 </span>            : #include &quot;../Stats/DendriteCachedStats.h&quot;
+<span class="lineNum">      31 </span>            : #include &quot;../Stats/AxonCachedStats.h&quot;
+<span class="lineNum">      32 </span>            : #include &quot;../Stats/NeuronMorphologyCachedStats.h&quot;
+<span class="lineNum">      33 </span>            : 
+<span class="lineNum">      34 </span>            : 
+<span class="lineNum">      35 </span>            : #include &lt;iostream&gt;
+<span class="lineNum">      36 </span>            : #include &lt;fstream&gt;
+<span class="lineNum">      37 </span>            : #include &lt;sstream&gt;
+<span class="lineNum">      38 </span>            : #include &lt;assert.h&gt;
+<span class="lineNum">      39 </span>            : #include &lt;cctype&gt;
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span>            : #include &lt;map&gt;
+<span class="lineNum">      42 </span>            : #include &lt;stack&gt;
+<span class="lineNum">      43 </span>            : #include &lt;queue&gt;
+<span class="lineNum">      44 </span>            : 
+<span class="lineNum">      45 </span>            : namespace nsol
+<span class="lineNum">      46 </span>            : {
+<span class="lineNum">      47 </span>            : 
+<span class="lineNum">      48 </span>            : #define SWC_READER_TEMPLATE_CLASSES              \
+<span class="lineNum">      49 </span>            :     class NODE,                                  \
+<span class="lineNum">      50 </span>            :     class SECTION,                               \
+<span class="lineNum">      51 </span>            :     class DENDRITE,                              \
+<span class="lineNum">      52 </span>            :     class AXON,                                  \
+<span class="lineNum">      53 </span>            :     class SOMA,                                  \
+<span class="lineNum">      54 </span>            :     class NEURONMORPHOLOGY,                      \
+<span class="lineNum">      55 </span>            :     class NEURON
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span>            : #define SWC_READER_TEMPLATE_CLASS_NAMES         \
+<span class="lineNum">      58 </span>            :     NODE,                                       \
+<span class="lineNum">      59 </span>            :     SECTION,                                    \
+<span class="lineNum">      60 </span>            :     DENDRITE,                                   \
+<span class="lineNum">      61 </span>            :     AXON,                                       \
+<span class="lineNum">      62 </span>            :     SOMA,                                       \
+<span class="lineNum">      63 </span>            :     NEURONMORPHOLOGY,                           \
+<span class="lineNum">      64 </span>            :     NEURON
+<span class="lineNum">      65 </span>            : 
+<span class="lineNum">      66 </span>            : 
+<span class="lineNum">      67 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt;
+<span class="lineNum">      68 </span>            :   class SwcReaderTemplated
+<span class="lineNum">      69 </span>            :   {
+<span class="lineNum">      70 </span>            : 
+<span class="lineNum">      71 </span>            :   public:
+<span class="lineNum">      72 </span>            : 
+<span class="lineNum">      73 </span>            :     NeuronPtr readNeuron( const char *fileName,
+<span class="lineNum">      74 </span>            :         bool reposition_ = false );
+<span class="lineNum">      75 </span>            :     NeuronPtr readNeuron( const std::string fileName,
+<span class="lineNum">      76 </span>            :         bool reposition_ = false );
+<span class="lineNum">      77 </span>            :     NeuronMorphologyPtr readMorphology( const char *fileName,
+<span class="lineNum">      78 </span>            :         bool reposition_ = false );
+<span class="lineNum">      79 </span>            :     NeuronMorphologyPtr readMorphology( const std::string fileName,
+<span class="lineNum">      80 </span>            :         bool reposition_ = false );
+<span class="lineNum">      81 </span>            : 
+<span class="lineNum">      82 </span>            : 
+<span class="lineNum">      83 </span>            :   protected:
+<a name="84"><span class="lineNum">      84 </span>            : </a>
+<span class="lineNum">      85 </span>            :     typedef struct
+<span class="lineNum">      86 </span><span class="lineCov">      12740 :     {</span>
+<span class="lineNum">      87 </span>            :       unsigned int id;
+<span class="lineNum">      88 </span>            :       unsigned int type;
+<span class="lineNum">      89 </span>            :       Vec3f xyz;
+<span class="lineNum">      90 </span>            :       float radius;
+<span class="lineNum">      91 </span>            :       int parent;
+<span class="lineNum">      92 </span>            :       std::vector&lt;unsigned int&gt; children;
+<span class="lineNum">      93 </span>            :     } TSwcLine;
+<span class="lineNum">      94 </span>            : 
+<span class="lineNum">      95 </span>            :     typedef enum
+<span class="lineNum">      96 </span>            :     {
+<span class="lineNum">      97 </span>            :       SWC_SOMA = 1,
+<span class="lineNum">      98 </span>            :       SWC_AXON = 2,
+<span class="lineNum">      99 </span>            :       SWC_DENDRITE = 3,
+<span class="lineNum">     100 </span>            :       SWC_APICAL = 4
+<span class="lineNum">     101 </span>            :     } TSwcNodeType;
+<span class="lineNum">     102 </span>            : 
+<span class="lineNum">     103 </span>            :     typedef struct
+<span class="lineNum">     104 </span>            :     {
+<span class="lineNum">     105 </span>            :       unsigned int id;
+<span class="lineNum">     106 </span>            :       SectionPtr parent;
+<span class="lineNum">     107 </span>            :     } TReadDendritesStackElem;
+<span class="lineNum">     108 </span>            : 
+<span class="lineNum">     109 </span>            :     typedef struct
+<span class="lineNum">     110 </span>            :     {
+<span class="lineNum">     111 </span>            :       unsigned int id;
+<span class="lineNum">     112 </span>            :       SectionPtr parent;
+<span class="lineNum">     113 </span>            :     } TReadAxonStackElem;
+<span class="lineNum">     114 </span>            : 
+<span class="lineNum">     115 </span>            : 
+<span class="lineNum">     116 </span>            :     void _ReadDendrite( DendritePtr d,
+<span class="lineNum">     117 </span>            :                         std::map&lt;unsigned int, TSwcLine&gt; &amp; lines,
+<span class="lineNum">     118 </span>            :                         unsigned int initId,
+<span class="lineNum">     119 </span>            :                         NsolVector&lt;NodePtr&gt;* nodes_ = nullptr,
+<span class="lineNum">     120 </span>            :                         bool reposition_ = false );
+<span class="lineNum">     121 </span>            : 
+<span class="lineNum">     122 </span>            :     void _ReadAxon(NeuritePtr d, std::map&lt;unsigned int, TSwcLine&gt; &amp; lines,
+<span class="lineNum">     123 </span>            :                    unsigned int initId,
+<span class="lineNum">     124 </span>            :                    NsolVector&lt;NodePtr&gt;* nodes_ = nullptr,
+<span class="lineNum">     125 </span>            :                    bool reposition_ = false );
+<span class="lineNum">     126 </span>            : 
+<span class="lineNum">     127 </span>            : 
+<span class="lineNum">     128 </span>            :   }; // class SwcReaderTemplated
+<span class="lineNum">     129 </span>            : 
+<span class="lineNum">     130 </span>            : 
+<span class="lineNum">     131 </span>            :   typedef SwcReaderTemplated&lt; Node,
+<span class="lineNum">     132 </span>            :                               Section,
+<span class="lineNum">     133 </span>            :                               Dendrite,
+<span class="lineNum">     134 </span>            :                               Axon,
+<span class="lineNum">     135 </span>            :                               Soma,
+<span class="lineNum">     136 </span>            :                               NeuronMorphology,
+<span class="lineNum">     137 </span>            :                               Neuron &gt; SwcReader;
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span>            :   typedef SwcReaderTemplated&lt; Node,
+<span class="lineNum">     140 </span>            :                               SectionStats,
+<span class="lineNum">     141 </span>            :                               DendriteStats,
+<span class="lineNum">     142 </span>            :                               AxonStats,
+<span class="lineNum">     143 </span>            :                               SomaStats,
+<span class="lineNum">     144 </span>            :                               NeuronMorphologyStats,
+<span class="lineNum">     145 </span>            :                               Neuron &gt; SwcReaderStats;
+<span class="lineNum">     146 </span>            : 
+<span class="lineNum">     147 </span>            :   typedef SwcReaderTemplated&lt; NodeCached,
+<span class="lineNum">     148 </span>            :                               SectionCachedStats,
+<span class="lineNum">     149 </span>            :                               DendriteCachedStats,
+<span class="lineNum">     150 </span>            :                               AxonCachedStats,
+<span class="lineNum">     151 </span>            :                               SomaStats,
+<span class="lineNum">     152 </span>            :                               NeuronMorphologyCachedStats,
+<span class="lineNum">     153 </span>            :                               Neuron &gt; SwcReaderCachedStats;
+<span class="lineNum">     154 </span>            : 
+<span class="lineNum">     155 </span>            : 
+<span class="lineNum">     156 </span>            : 
+<span class="lineNum">     157 </span>            :   //////////////////////////////////////////////////////////////////
+<span class="lineNum">     158 </span>            :   //
+<span class="lineNum">     159 </span>            :   // Implementation of methods for SwcTemplated
+<span class="lineNum">     160 </span>            :   //
+<span class="lineNum">     161 </span>            :   //////////////////////////////////////////////////////////////////
+<span class="lineNum">     162 </span>            : 
+<span class="lineNum">     163 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt;
+<span class="lineNum">     164 </span>            :   NeuronPtr
+<span class="lineNum">     165 </span>            :   SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASS_NAMES &gt;::readNeuron(
+<span class="lineNum">     166 </span>            :     const char *fileName, bool reposition_ )
+<span class="lineNum">     167 </span>            :   {
+<span class="lineNum">     168 </span>            :     std::cerr &lt;&lt; &quot;SwcReader&lt; &gt;::readNeuron is deprecated. &quot;
+<span class="lineNum">     169 </span>            :               &lt;&lt; &quot;Please use BrainReader&lt; &gt;::loadNeuron&quot; &lt;&lt; std::endl;
+<span class="lineNum">     170 </span>            :     return this-&gt;readNeuron(std::string(fileName), reposition_ );
+<span class="lineNum">     171 </span>            :   }
+<span class="lineNum">     172 </span>            : 
+<span class="lineNum">     173 </span>            : 
+<span class="lineNum">     174 </span>            : 
+<span class="lineNum">     175 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt;
+<span class="lineNum">     176 </span>            :   NeuronPtr
+<span class="lineNum">     177 </span>            :   SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASS_NAMES &gt;::readNeuron(
+<span class="lineNum">     178 </span>            :     const std::string fileName, bool reposition_ )
+<span class="lineNum">     179 </span>            :   {
+<span class="lineNum">     180 </span>            :     std::cerr &lt;&lt; &quot;SwcReader&lt; &gt;::readNeuron is deprecated. &quot;
+<span class="lineNum">     181 </span>            :               &lt;&lt; &quot;Please use BrainReader&lt; &gt;::loadNeuron&quot; &lt;&lt; std::endl;
+<span class="lineNum">     182 </span>            :     NeuronMorphologyPtr nm = this-&gt;readMorphology( std::string( fileName ),
+<span class="lineNum">     183 </span>            :         reposition_ );
+<span class="lineNum">     184 </span>            : 
+<span class="lineNum">     185 </span>            :     if ( nm )
+<span class="lineNum">     186 </span>            :     {
+<span class="lineNum">     187 </span>            :       NeuronPtr neuron( new NEURON( nm ));
+<span class="lineNum">     188 </span>            :       nm-&gt;addParentNeuron( neuron );
+<span class="lineNum">     189 </span>            :       return neuron;
+<span class="lineNum">     190 </span>            :     }
+<span class="lineNum">     191 </span>            :     else
+<span class="lineNum">     192 </span>            :       return nullptr;
+<span class="lineNum">     193 </span>            :   }
+<span class="lineNum">     194 </span>            : 
+<span class="lineNum">     195 </span>            : 
+<span class="lineNum">     196 </span>            : 
+<a name="197"><span class="lineNum">     197 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt;</a>
+<span class="lineNum">     198 </span>            :   NeuronMorphologyPtr
+<span class="lineNum">     199 </span><span class="lineCov">         11 :   SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASS_NAMES &gt;::readMorphology(</span>
+<span class="lineNum">     200 </span>            :     const char * fileName, bool reposition_ )
+<span class="lineNum">     201 </span>            :   {
+<span class="lineNum">     202 </span><span class="lineCov">         22 :     std::cerr &lt;&lt; &quot;SwcReader&lt; &gt;::readMorphology is deprecated. &quot;</span>
+<span class="lineNum">     203 </span><span class="lineCov">         11 :               &lt;&lt; &quot;Please use BrainReader&lt; &gt;::loadMorphology&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     204 </span><span class="lineCov">         11 :     return this-&gt;readMorphology(std::string(fileName), reposition_ );</span>
+<span class="lineNum">     205 </span>            :   }
+<span class="lineNum">     206 </span>            : 
+<span class="lineNum">     207 </span>            : 
+<span class="lineNum">     208 </span>            : 
+<a name="209"><span class="lineNum">     209 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt;</a>
+<span class="lineNum">     210 </span>            :   NeuronMorphologyPtr
+<span class="lineNum">     211 </span><span class="lineCov">         15 :   SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASS_NAMES &gt;::readMorphology(</span>
+<span class="lineNum">     212 </span>            :     const std::string fileName, bool reposition_ )
+<span class="lineNum">     213 </span>            :   {
+<span class="lineNum">     214 </span><span class="lineCov">         30 :     std::cerr &lt;&lt; &quot;SwcReader&lt; &gt;::readMorphology is deprecated. &quot;</span>
+<span class="lineNum">     215 </span><span class="lineCov">         15 :               &lt;&lt; &quot;Please use BrainReader&lt; &gt;::loadMorphology&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     216 </span><span class="lineCov">         30 :     std::ifstream inFile;</span>
+<span class="lineNum">     217 </span><span class="lineCov">         15 :     inFile.open(fileName, std::ios::in);</span>
+<span class="lineNum">     218 </span>            : 
+<span class="lineNum">     219 </span>            :     //Opening file checking
+<span class="lineNum">     220 </span><span class="lineCov">         15 :     if ((inFile.rdstate( ) &amp; std::ifstream::failbit) != 0)</span>
+<span class="lineNum">     221 </span>            :     {
+<span class="lineNum">     222 </span><span class="lineNoCov">          0 :       std::cerr &lt;&lt; &quot;Error opening file &quot; &lt;&lt; fileName &lt;&lt; std::endl;</span>
+<span class="lineNum">     223 </span>            : 
+<span class="lineNum">     224 </span><span class="lineNoCov">          0 :       return nullptr;</span>
+<span class="lineNum">     225 </span>            :     }
+<span class="lineNum">     226 </span>            : 
+<span class="lineNum">     227 </span><span class="lineCov">         30 :     std::string lineString;</span>
+<span class="lineNum">     228 </span>            : 
+<span class="lineNum">     229 </span><span class="lineCov">         30 :     NsolVector&lt; NodePtr &gt; nodes;</span>
+<span class="lineNum">     230 </span><span class="lineCov">         15 :     NeuronMorphologyPtr neuronMorphology( new NEURONMORPHOLOGY( new SOMA ));</span>
+<span class="lineNum">     231 </span>            : 
+<span class="lineNum">     232 </span><span class="lineCov">         30 :     std::map&lt;unsigned int, TSwcLine&gt; lines;</span>
+<span class="lineNum">     233 </span>            : 
+<span class="lineNum">     234 </span><span class="lineCov">         15 :     int lineCount = 0;</span>
+<span class="lineNum">     235 </span>            : 
+<span class="lineNum">     236 </span><span class="lineCov">       5245 :     while ( std::getline( inFile, lineString ))</span>
+<span class="lineNum">     237 </span>            :     {
+<span class="lineNum">     238 </span><span class="lineCov">       2615 :       lineCount++;</span>
+<span class="lineNum">     239 </span>            : 
+<span class="lineNum">     240 </span>            :       // TODO: this does not cover the case the # char is not the first char
+<span class="lineNum">     241 </span><span class="lineCov">       2615 :       if ( lineString[0] != '#' )</span>
+<span class="lineNum">     242 </span>            :       {
+<span class="lineNum">     243 </span>            : 
+<span class="lineNum">     244 </span>            :         // Trim spaces
+<span class="lineNum">     245 </span><span class="lineCov">       2548 :         lineString.erase( lineString.find_last_not_of( &quot; \r\t&quot;) +1 );</span>
+<a name="246"><span class="lineNum">     246 </span>            :         unsigned int fields = 1 +</a>
+<span class="lineNum">     247 </span><span class="lineCov">       5096 :           (unsigned int)std::count_if( lineString.begin( ), lineString.end( ),</span>
+<span class="lineNum">     248 </span><span class="lineCov">      71391 :                                        []( unsigned char c )</span>
+<span class="lineNum">     249 </span>            :                                        {
+<span class="lineNum">     250 </span><span class="lineCov">      71391 :                                          return std::isspace( c );</span>
+<span class="lineNum">     251 </span><span class="lineCov">      73939 :                                        });</span>
+<span class="lineNum">     252 </span>            : 
+<span class="lineNum">     253 </span><span class="lineCov">       2548 :         if ( fields &lt; 7 )</span>
+<span class="lineNum">     254 </span>            :         {
+<span class="lineNum">     255 </span><span class="lineNoCov">          0 :           Log::log( std::string( &quot;Skipping lineString &quot; ) +</span>
+<span class="lineNum">     256 </span>            :                     std::to_string( lineCount ) +
+<span class="lineNum">     257 </span>            :                     std::string( &quot;. Not enough fields found&quot; ),
+<span class="lineNum">     258 </span>            :                     LOG_LEVEL_WARNING );
+<span class="lineNum">     259 </span><span class="lineNoCov">          0 :           continue;</span>
+<span class="lineNum">     260 </span>            :         }
+<span class="lineNum">     261 </span>            : 
+<span class="lineNum">     262 </span>            : 
+<span class="lineNum">     263 </span><span class="lineCov">       5096 :         std::istringstream iss(lineString);</span>
+<span class="lineNum">     264 </span>            : 
+<span class="lineNum">     265 </span><span class="lineCov">       5096 :         TSwcLine swcLineString;</span>
+<span class="lineNum">     266 </span><span class="lineCov">       2548 :         iss &gt;&gt; swcLineString.id;</span>
+<span class="lineNum">     267 </span><span class="lineCov">       2548 :         iss &gt;&gt; swcLineString.type;</span>
+<span class="lineNum">     268 </span><span class="lineCov">       5096 :         iss &gt;&gt; swcLineString.xyz[0]</span>
+<span class="lineNum">     269 </span><span class="lineCov">       5096 :             &gt;&gt; swcLineString.xyz[1]</span>
+<span class="lineNum">     270 </span><span class="lineCov">       2548 :             &gt;&gt; swcLineString.xyz[2];</span>
+<span class="lineNum">     271 </span><span class="lineCov">       2548 :         iss &gt;&gt; swcLineString.radius;</span>
+<span class="lineNum">     272 </span><span class="lineCov">       2548 :         iss &gt;&gt; swcLineString.parent;</span>
+<span class="lineNum">     273 </span>            : 
+<span class="lineNum">     274 </span><span class="lineCov">       2548 :         lines[swcLineString.id] = swcLineString;</span>
+<span class="lineNum">     275 </span>            : 
+<span class="lineNum">     276 </span>            :       }
+<span class="lineNum">     277 </span>            :     }
+<span class="lineNum">     278 </span>            : 
+<span class="lineNum">     279 </span><span class="lineCov">       2563 :     for ( const auto&amp; line : lines )</span>
+<span class="lineNum">     280 </span>            :     {
+<span class="lineNum">     281 </span><span class="lineCov">       2548 :       if (line.second.parent != -1)</span>
+<span class="lineNum">     282 </span><span class="lineCov">       2533 :         lines[line.second.parent].children.push_back( line.first );</span>
+<span class="lineNum">     283 </span>            :     }
+<span class="lineNum">     284 </span>            : 
+<span class="lineNum">     285 </span><span class="lineCov">         30 :     std::vector&lt;unsigned int&gt; somaChildren;</span>
+<span class="lineNum">     286 </span><span class="lineCov">         30 :     std::map&lt;unsigned int, NodePtr &gt; nodeSomaPtr;</span>
+<span class="lineNum">     287 </span>            : 
+<span class="lineNum">     288 </span><span class="lineCov">       2563 :     for ( const auto&amp; line : lines )</span>
+<span class="lineNum">     289 </span>            :     {
+<span class="lineNum">     290 </span><span class="lineCov">       2548 :       if (line.second.type == SWC_SOMA)</span>
+<span class="lineNum">     291 </span>            :       {
+<span class="lineNum">     292 </span>            :         NodePtr node(
+<span class="lineNum">     293 </span><span class="lineCov">         43 :           new NODE(line.second.xyz, line.second.id, line.second.radius) );</span>
+<span class="lineNum">     294 </span>            : 
+<span class="lineNum">     295 </span><span class="lineCov">         43 :         if ( reposition_ )</span>
+<span class="lineNum">     296 </span><span class="lineNoCov">          0 :           nodes.push_back( node );</span>
+<span class="lineNum">     297 </span>            : 
+<span class="lineNum">     298 </span><span class="lineCov">         43 :         neuronMorphology-&gt;soma( )-&gt;addNode(node);</span>
+<span class="lineNum">     299 </span>            : 
+<span class="lineNum">     300 </span><span class="lineCov">         43 :         nodeSomaPtr[line.second.id] = node;</span>
+<span class="lineNum">     301 </span>            : 
+<span class="lineNum">     302 </span><span class="lineCov">        114 :         for (unsigned int i = 0; i &lt; line.second.children.size( ); i++)</span>
+<span class="lineNum">     303 </span><span class="lineCov">         71 :           if (lines[line.second.children[i]].type != SWC_SOMA)</span>
+<span class="lineNum">     304 </span><span class="lineCov">         43 :             somaChildren.push_back(line.second.children[i]);</span>
+<span class="lineNum">     305 </span>            :       }
+<span class="lineNum">     306 </span>            :     }
+<span class="lineNum">     307 </span>            : 
+<span class="lineNum">     308 </span>            :     DendritePtr d;
+<span class="lineNum">     309 </span>            : 
+<span class="lineNum">     310 </span><span class="lineCov">         58 :     for (unsigned int i = 0; i &lt; somaChildren.size( ); i++)</span>
+<span class="lineNum">     311 </span>            :     {
+<span class="lineNum">     312 </span>            : 
+<span class="lineNum">     313 </span>            : 
+<span class="lineNum">     314 </span><span class="lineCov">         43 :       switch (lines[somaChildren[i]].type)</span>
+<span class="lineNum">     315 </span>            :       {
+<span class="lineNum">     316 </span>            :       case SWC_SOMA:
+<span class="lineNum">     317 </span>            :         // TODO: handle error
+<span class="lineNum">     318 </span><span class="lineNoCov">          0 :         assert(false);</span>
+<span class="lineNum">     319 </span>            : 
+<span class="lineNum">     320 </span>            :       case SWC_DENDRITE:
+<span class="lineNum">     321 </span>            :       {
+<span class="lineNum">     322 </span>            : 
+<span class="lineNum">     323 </span><span class="lineCov">         15 :         d = new DENDRITE( Dendrite::BASAL );</span>
+<span class="lineNum">     324 </span><span class="lineCov">         15 :         neuronMorphology-&gt;addNeurite( d );</span>
+<span class="lineNum">     325 </span><span class="lineCov">         15 :         d-&gt;morphology( neuronMorphology );</span>
+<span class="lineNum">     326 </span><span class="lineCov">         15 :         _ReadDendrite(d, lines, somaChildren[i],</span>
+<span class="lineNum">     327 </span>            :                       &amp;nodes, reposition_ );
+<span class="lineNum">     328 </span>            : 
+<span class="lineNum">     329 </span><span class="lineCov">         15 :         break;</span>
+<span class="lineNum">     330 </span>            :       }
+<span class="lineNum">     331 </span>            : 
+<span class="lineNum">     332 </span>            :       case SWC_APICAL:
+<span class="lineNum">     333 </span><span class="lineCov">         14 :         d = new DENDRITE( Dendrite::APICAL );</span>
+<span class="lineNum">     334 </span><span class="lineCov">         14 :         neuronMorphology-&gt;addNeurite( d );</span>
+<span class="lineNum">     335 </span><span class="lineCov">         14 :         d-&gt;morphology(neuronMorphology);</span>
+<span class="lineNum">     336 </span><span class="lineCov">         14 :         _ReadDendrite(d, lines, somaChildren[i],</span>
+<span class="lineNum">     337 </span>            :                       &amp;nodes, reposition_ );
+<span class="lineNum">     338 </span>            : 
+<span class="lineNum">     339 </span><span class="lineCov">         14 :         break;</span>
+<span class="lineNum">     340 </span>            : 
+<span class="lineNum">     341 </span>            :       case SWC_AXON:
+<span class="lineNum">     342 </span>            :       {
+<span class="lineNum">     343 </span><span class="lineCov">         14 :         AxonPtr nP = new AXON( );</span>
+<span class="lineNum">     344 </span><span class="lineCov">         14 :         neuronMorphology-&gt;addNeurite( nP );</span>
+<span class="lineNum">     345 </span><span class="lineCov">         14 :         nP-&gt;morphology(neuronMorphology);</span>
+<span class="lineNum">     346 </span><span class="lineCov">         14 :         _ReadAxon(nP, lines, somaChildren[i],</span>
+<span class="lineNum">     347 </span>            :                   &amp;nodes, reposition_ );
+<span class="lineNum">     348 </span>            : 
+<span class="lineNum">     349 </span><span class="lineCov">         14 :         break;</span>
+<span class="lineNum">     350 </span>            :       }
+<span class="lineNum">     351 </span>            : 
+<span class="lineNum">     352 </span>            :       default:
+<span class="lineNum">     353 </span><span class="lineNoCov">          0 :         break;</span>
+<span class="lineNum">     354 </span>            :       }
+<span class="lineNum">     355 </span>            : 
+<span class="lineNum">     356 </span>            :     }
+<span class="lineNum">     357 </span>            : 
+<span class="lineNum">     358 </span>            : 
+<span class="lineNum">     359 </span><span class="lineCov">         15 :     inFile.close( );</span>
+<span class="lineNum">     360 </span>            : 
+<span class="lineNum">     361 </span>            : 
+<span class="lineNum">     362 </span><span class="lineCov">         15 :     if ( reposition_ )</span>
+<span class="lineNum">     363 </span>            :     {
+<span class="lineNum">     364 </span><span class="lineNoCov">          0 :       Vec3f center = neuronMorphology-&gt;soma( )-&gt;center( );</span>
+<span class="lineNum">     365 </span>            : 
+<span class="lineNum">     366 </span><span class="lineNoCov">          0 :       NSOL_FOREACH( node, nodes )</span>
+<span class="lineNum">     367 </span>            :       {
+<span class="lineNum">     368 </span><span class="lineNoCov">          0 :         (*node)-&gt;point( (*node)-&gt;point( ) - center );</span>
+<span class="lineNum">     369 </span>            :       }
+<span class="lineNum">     370 </span>            : 
+<span class="lineNum">     371 </span><span class="lineNoCov">          0 :       neuronMorphology-&gt;soma( )-&gt;center( Vec3f( 0.0f, 0.0f, 0.0f ));</span>
+<span class="lineNum">     372 </span>            : 
+<span class="lineNum">     373 </span>            :     }
+<span class="lineNum">     374 </span>            : 
+<span class="lineNum">     375 </span><span class="lineCov">         15 :     return neuronMorphology;</span>
+<span class="lineNum">     376 </span>            : 
+<span class="lineNum">     377 </span>            :   }
+<span class="lineNum">     378 </span>            : 
+<a name="379"><span class="lineNum">     379 </span>            : </a>
+<span class="lineNum">     380 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt; void
+<span class="lineNum">     381 </span><span class="lineCov">         29 :   SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASS_NAMES &gt;::_ReadDendrite(</span>
+<span class="lineNum">     382 </span>            :     DendritePtr d,
+<span class="lineNum">     383 </span>            :     std::map&lt;unsigned int, TSwcLine&gt; &amp; lines,
+<span class="lineNum">     384 </span>            :     unsigned int initId,
+<span class="lineNum">     385 </span>            :     NsolVector&lt;NodePtr&gt;* nodes_,
+<span class="lineNum">     386 </span>            :     bool reposition_ )
+<span class="lineNum">     387 </span>            :   {
+<span class="lineNum">     388 </span>            : 
+<span class="lineNum">     389 </span><span class="lineCov">         58 :     std::stack&lt;TReadDendritesStackElem&gt; ids;</span>
+<span class="lineNum">     390 </span>            :     //ids.push(TReadDendritesStackElem { initId, NULL });
+<span class="lineNum">     391 </span><span class="lineCov">         29 :     TReadDendritesStackElem tmp = {initId, NULL};</span>
+<span class="lineNum">     392 </span><span class="lineCov">         29 :     ids.push(tmp);</span>
+<span class="lineNum">     393 </span>            : 
+<span class="lineNum">     394 </span>            : 
+<span class="lineNum">     395 </span><span class="lineCov">         29 :     SectionPtr s = nullptr, parentSection;</span>
+<span class="lineNum">     396 </span><span class="lineCov">         29 :     bool first = true;</span>
+<span class="lineNum">     397 </span>            : 
+<span class="lineNum">     398 </span><span class="lineCov">        655 :     while (!ids.empty( ))</span>
+<span class="lineNum">     399 </span>            :     {
+<span class="lineNum">     400 </span>            : 
+<span class="lineNum">     401 </span><span class="lineCov">        313 :       unsigned int id = ids.top( ).id;</span>
+<span class="lineNum">     402 </span><span class="lineCov">        313 :       parentSection = ids.top( ).parent;</span>
+<span class="lineNum">     403 </span><span class="lineCov">        313 :       ids.pop( );</span>
+<span class="lineNum">     404 </span>            : 
+<span class="lineNum">     405 </span>            :       /* parentSection = s; */
+<span class="lineNum">     406 </span><span class="lineCov">        313 :       s = SectionPtr( new SECTION );</span>
+<span class="lineNum">     407 </span>            : 
+<span class="lineNum">     408 </span><span class="lineCov">        313 :       if (!d-&gt;firstSection( ))</span>
+<span class="lineNum">     409 </span><span class="lineCov">         29 :         d-&gt;firstSection(s);  //-&gt;addSection( );</span>
+<span class="lineNum">     410 </span>            : 
+<span class="lineNum">     411 </span><span class="lineCov">        313 :       s-&gt;neurite(d);</span>
+<span class="lineNum">     412 </span><span class="lineCov">        313 :       s-&gt;parent( parentSection );</span>
+<span class="lineNum">     413 </span>            : 
+<span class="lineNum">     414 </span>            :       NodePtr node;
+<span class="lineNum">     415 </span><span class="lineCov">        313 :       if (first)</span>
+<span class="lineNum">     416 </span>            :       {
+<span class="lineNum">     417 </span><span class="lineCov">         29 :         node = new NODE(lines[id].xyz, id, lines[id].radius );</span>
+<span class="lineNum">     418 </span><span class="lineCov">         29 :         s-&gt;firstNode( node );</span>
+<span class="lineNum">     419 </span>            : 
+<span class="lineNum">     420 </span><span class="lineCov">         29 :         if ( reposition_ )</span>
+<span class="lineNum">     421 </span><span class="lineNoCov">          0 :           nodes_-&gt;push_back( node );</span>
+<span class="lineNum">     422 </span><span class="lineCov">         29 :         first = false;</span>
+<span class="lineNum">     423 </span>            :       }
+<span class="lineNum">     424 </span>            :       else
+<span class="lineNum">     425 </span>            :       {
+<span class="lineNum">     426 </span><span class="lineCov">        284 :         node = new NODE(lines[id].xyz, id, lines[id].radius );</span>
+<span class="lineNum">     427 </span><span class="lineCov">        284 :         s-&gt;addNode( node );</span>
+<span class="lineNum">     428 </span>            : 
+<span class="lineNum">     429 </span><span class="lineCov">        284 :         if ( parentSection )</span>
+<span class="lineNum">     430 </span><span class="lineCov">        284 :           parentSection-&gt;addChild( s );</span>
+<span class="lineNum">     431 </span>            : 
+<span class="lineNum">     432 </span><span class="lineCov">        284 :         if ( reposition_ )</span>
+<span class="lineNum">     433 </span><span class="lineNoCov">          0 :           nodes_-&gt;push_back( node );</span>
+<span class="lineNum">     434 </span>            :       }
+<span class="lineNum">     435 </span>            : 
+<span class="lineNum">     436 </span>            :       // While same section create the segments
+<span class="lineNum">     437 </span><span class="lineCov">       2989 :       while (lines[id].children.size( ) == 1)</span>
+<span class="lineNum">     438 </span>            :       {
+<span class="lineNum">     439 </span><span class="lineCov">       1338 :         id = lines[id].children[0];</span>
+<span class="lineNum">     440 </span>            : 
+<span class="lineNum">     441 </span><span class="lineCov">       1338 :         node  = new NODE( lines[id].xyz, id, lines[id].radius );</span>
+<span class="lineNum">     442 </span><span class="lineCov">       1338 :         if ( reposition_ )</span>
+<span class="lineNum">     443 </span><span class="lineNoCov">          0 :           nodes_-&gt;push_back( node );</span>
+<span class="lineNum">     444 </span>            : 
+<span class="lineNum">     445 </span><span class="lineCov">       1338 :         s-&gt;addNode( node );</span>
+<span class="lineNum">     446 </span>            :       }
+<span class="lineNum">     447 </span>            : 
+<span class="lineNum">     448 </span>            :       // New branching point
+<span class="lineNum">     449 </span><span class="lineCov">        313 :       if (lines[id].children.size( ) &gt; 1)</span>
+<span class="lineNum">     450 </span>            :       {
+<span class="lineNum">     451 </span>            :         //Plus new branch
+<span class="lineNum">     452 </span><span class="lineCov">        142 :         d-&gt;_addBranchCount( ( unsigned int ) lines[id].children.size( ) );</span>
+<span class="lineNum">     453 </span>            :         //Plus new bifurcation
+<span class="lineNum">     454 </span><span class="lineCov">        142 :         d-&gt;_addBifurcationCount(1);</span>
+<span class="lineNum">     455 </span>            : 
+<span class="lineNum">     456 </span><span class="lineCov">        426 :         NSOL_CONST_FOREACH( it, lines[ id ].children )</span>
+<span class="lineNum">     457 </span>            :         {
+<span class="lineNum">     458 </span><span class="lineCov">        284 :           TReadDendritesStackElem tmpStackElem = { (*it), s };</span>
+<span class="lineNum">     459 </span><span class="lineCov">        284 :           ids.push( tmpStackElem );</span>
+<span class="lineNum">     460 </span>            :         }
+<span class="lineNum">     461 </span>            :       }
+<span class="lineNum">     462 </span>            : 
+<span class="lineNum">     463 </span>            :     }
+<span class="lineNum">     464 </span>            : 
+<span class="lineNum">     465 </span><span class="lineCov">         29 :   }</span>
+<a name="466"><span class="lineNum">     466 </span>            : </a>
+<span class="lineNum">     467 </span>            :   template &lt; SWC_READER_TEMPLATE_CLASSES &gt; void
+<span class="lineNum">     468 </span><span class="lineCov">         14 :   SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASS_NAMES &gt;::_ReadAxon(</span>
+<span class="lineNum">     469 </span>            :     NeuritePtr d,
+<span class="lineNum">     470 </span>            :     std::map&lt;unsigned int,
+<span class="lineNum">     471 </span>            :     TSwcLine&gt; &amp;lines,
+<span class="lineNum">     472 </span>            :     unsigned int initId,
+<span class="lineNum">     473 </span>            :     NsolVector&lt;NodePtr&gt;* nodes_,
+<span class="lineNum">     474 </span>            :     bool reposition_ )
+<span class="lineNum">     475 </span>            :   {
+<span class="lineNum">     476 </span>            : 
+<span class="lineNum">     477 </span><span class="lineCov">         28 :     std::stack&lt;TReadAxonStackElem&gt; ids;</span>
+<span class="lineNum">     478 </span><span class="lineCov">         14 :     TReadAxonStackElem tmp = { initId, NULL };</span>
+<span class="lineNum">     479 </span><span class="lineCov">         14 :     ids.push(tmp);</span>
+<span class="lineNum">     480 </span>            : 
+<span class="lineNum">     481 </span><span class="lineCov">         14 :     SectionPtr s = NULL, parentSection;</span>
+<span class="lineNum">     482 </span><span class="lineCov">         14 :     bool first = true;</span>
+<span class="lineNum">     483 </span>            : 
+<span class="lineNum">     484 </span><span class="lineCov">        322 :     while (!ids.empty( ))</span>
+<span class="lineNum">     485 </span>            :     {
+<span class="lineNum">     486 </span>            : 
+<span class="lineNum">     487 </span><span class="lineCov">        154 :       unsigned int id = ids.top( ).id;</span>
+<span class="lineNum">     488 </span><span class="lineCov">        154 :       parentSection = ids.top( ).parent;</span>
+<span class="lineNum">     489 </span><span class="lineCov">        154 :       ids.pop( );</span>
+<span class="lineNum">     490 </span>            : 
+<span class="lineNum">     491 </span>            :       /* parentSection = s; */
+<span class="lineNum">     492 </span><span class="lineCov">        154 :       s = SectionPtr( new SECTION );</span>
+<span class="lineNum">     493 </span>            : 
+<span class="lineNum">     494 </span><span class="lineCov">        154 :       if (!d-&gt;firstSection( ))</span>
+<span class="lineNum">     495 </span><span class="lineCov">         14 :         d-&gt;firstSection(s);  //-&gt;addSection( );</span>
+<span class="lineNum">     496 </span>            : 
+<span class="lineNum">     497 </span><span class="lineCov">        154 :       s-&gt;neurite(d);</span>
+<span class="lineNum">     498 </span><span class="lineCov">        154 :       s-&gt;parent(parentSection);</span>
+<span class="lineNum">     499 </span>            : 
+<span class="lineNum">     500 </span>            :       NodePtr node;
+<span class="lineNum">     501 </span><span class="lineCov">        154 :       if (first)</span>
+<span class="lineNum">     502 </span>            :       {
+<span class="lineNum">     503 </span><span class="lineCov">         14 :         node = new NODE(lines[id].xyz, id, lines[id].radius );</span>
+<span class="lineNum">     504 </span><span class="lineCov">         14 :         s-&gt;firstNode( node );</span>
+<span class="lineNum">     505 </span>            : 
+<span class="lineNum">     506 </span><span class="lineCov">         14 :         if ( reposition_ )</span>
+<span class="lineNum">     507 </span><span class="lineNoCov">          0 :           nodes_-&gt;push_back( node );</span>
+<span class="lineNum">     508 </span><span class="lineCov">         14 :         first = false;</span>
+<span class="lineNum">     509 </span>            :       }
+<span class="lineNum">     510 </span>            :       else
+<span class="lineNum">     511 </span>            :       {
+<span class="lineNum">     512 </span><span class="lineCov">        140 :         node = new NODE(lines[id].xyz, id, lines[id].radius );</span>
+<span class="lineNum">     513 </span><span class="lineCov">        140 :         s-&gt;addNode( node );</span>
+<span class="lineNum">     514 </span>            : 
+<span class="lineNum">     515 </span><span class="lineCov">        140 :         if ( parentSection )</span>
+<span class="lineNum">     516 </span><span class="lineCov">        140 :           parentSection-&gt;addChild( s );</span>
+<span class="lineNum">     517 </span>            : 
+<span class="lineNum">     518 </span><span class="lineCov">        140 :         if ( reposition_ )</span>
+<span class="lineNum">     519 </span><span class="lineNoCov">          0 :           nodes_-&gt;push_back( node );</span>
+<span class="lineNum">     520 </span>            :       }
+<span class="lineNum">     521 </span>            : 
+<span class="lineNum">     522 </span>            :       // While same section create the segments
+<span class="lineNum">     523 </span><span class="lineCov">       1554 :       while (lines[id].children.size( ) == 1)</span>
+<span class="lineNum">     524 </span>            :       {
+<span class="lineNum">     525 </span>            : 
+<span class="lineNum">     526 </span><span class="lineCov">        700 :         id = lines[id].children[0];</span>
+<span class="lineNum">     527 </span>            : 
+<span class="lineNum">     528 </span><span class="lineCov">        700 :         node = new NODE(lines[id].xyz, id, lines[id].radius);</span>
+<span class="lineNum">     529 </span><span class="lineCov">        700 :         if ( reposition_ )</span>
+<span class="lineNum">     530 </span><span class="lineNoCov">          0 :           nodes_-&gt;push_back( node );</span>
+<span class="lineNum">     531 </span>            : 
+<span class="lineNum">     532 </span><span class="lineCov">        700 :         s-&gt;addNode( node );</span>
+<span class="lineNum">     533 </span>            : 
+<span class="lineNum">     534 </span>            :       }
+<span class="lineNum">     535 </span>            : 
+<span class="lineNum">     536 </span>            :       // New branching point
+<span class="lineNum">     537 </span><span class="lineCov">        154 :       if (lines[id].children.size( ) &gt; 1)</span>
+<span class="lineNum">     538 </span>            :       {
+<span class="lineNum">     539 </span>            :         //Plus new branch
+<span class="lineNum">     540 </span><span class="lineCov">         70 :         d-&gt;_addBranchCount( ( unsigned int ) lines[id].children.size( ));</span>
+<span class="lineNum">     541 </span>            :         //Plus new bifurcation
+<span class="lineNum">     542 </span><span class="lineCov">         70 :         d-&gt;_addBifurcationCount(1);</span>
+<span class="lineNum">     543 </span>            : 
+<span class="lineNum">     544 </span><span class="lineCov">        210 :         NSOL_CONST_FOREACH( it, lines[ id ].children )</span>
+<span class="lineNum">     545 </span>            :         {
+<span class="lineNum">     546 </span><span class="lineCov">        140 :           TReadAxonStackElem tmpStackElem = { (*it), s };</span>
+<span class="lineNum">     547 </span><span class="lineCov">        140 :           ids.push( tmpStackElem );</span>
+<span class="lineNum">     548 </span>            :         }
+<span class="lineNum">     549 </span>            :       }
+<span class="lineNum">     550 </span>            : 
+<span class="lineNum">     551 </span>            :     }
+<span class="lineNum">     552 </span>            : 
+<span class="lineNum">     553 </span><span class="lineCov">         14 :   }</span>
+<span class="lineNum">     554 </span>            : 
+<span class="lineNum">     555 </span>            : 
+<span class="lineNum">     556 </span>            : }
+<span class="lineNum">     557 </span>            : 
+<span class="lineNum">     558 </span>            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

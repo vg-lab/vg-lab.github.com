@@ -1,0 +1,12 @@
+<map id="nsol::NeuriteCachedStats" name="nsol::NeuriteCachedStats">
+<area shape="rect" id="node2" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="410,1196,547,1303"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="278,792,502,1075"/>
+<area shape="rect" id="node9" href="$classnsol_1_1_section.html" title="{nsol::Section\n|# _id\l|+ Section()\l+ ~Section()\l+ id()\l+ id()\l+ neurite()\l+ neurite()\l+ parent()\l+ parent()\l+ addChild()\l+ children()\land 12 more...\l}" alt="" coords="103,1137,219,1361"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="238,505,417,729"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="44,189,227,399"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="386,145,512,443"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="79,5,176,83"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="251,255,362,333"/>
+<area shape="rect" id="node10" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="143,895,254,972"/>
+<area shape="rect" id="node11" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n||+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="571,1152,759,1347"/>
+</map>

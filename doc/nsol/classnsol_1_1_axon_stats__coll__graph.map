@@ -1,0 +1,12 @@
+<map id="nsol::AxonStats" name="nsol::AxonStats">
+<area shape="rect" id="node2" href="$classnsol_1_1_axon.html" title="{nsol::Axon\n||+ Axon()\l}" alt="" coords="5,1211,93,1288"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="92,792,316,1075"/>
+<area shape="rect" id="node9" href="$classnsol_1_1_section.html" title="{nsol::Section\n|# _id\l|+ Section()\l+ ~Section()\l+ id()\l+ id()\l+ neurite()\l+ neurite()\l+ parent()\l+ parent()\l+ addChild()\l+ children()\land 12 more...\l}" alt="" coords="359,1137,475,1361"/>
+<area shape="rect" id="node11" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="118,1196,255,1303"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="147,505,325,729"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="326,189,509,399"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="41,145,167,443"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="410,5,507,83"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="191,255,302,333"/>
+<area shape="rect" id="node10" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="455,895,566,972"/>
+</map>

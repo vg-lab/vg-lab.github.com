@@ -1,0 +1,6 @@
+<map id="nsol::NeuronMorphologyCachedStats" name="nsol::NeuronMorphologyCachedStats">
+<area shape="rect" id="node2" href="$classnsol_1_1_neuron_morphology_stats.html" title="This class allows to compute stats for sections. " alt="" coords="5,601,216,722"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="21,263,200,516"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="19,5,202,215"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n|# _values\l|+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="241,564,429,759"/>
+</map>

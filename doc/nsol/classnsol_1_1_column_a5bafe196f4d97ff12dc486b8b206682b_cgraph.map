@@ -1,0 +1,9 @@
+<map id="nsol::Column::stats" name="nsol::Column::stats">
+<area shape="rect" id="node2" href="$classnsol_1_1_column.html#a379ee5c10e1a3df331c7fac161d2e0a0" title="Method to add a mini column. " alt="" coords="209,5,419,32"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_column.html#acad36437f8a03d9833fa66df0696d9b2" title="Method to clear mini columns. " alt="" coords="201,56,427,83"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_column.html#aab583fea99852e1f1b0b0726c5f02c96" title="Method to get&#45;set the column id. " alt="" coords="252,107,376,133"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_column.html#acc585835128a09f9664d52187aa944f0" title="Method to get minicolumns. " alt="" coords="216,157,412,184"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_column.html#ab1e6850552ba3dcf5896579daf58ba09" title="Method to get the number of minicolumns. " alt="" coords="213,209,415,250"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_column.html#aa17e9032236264d11dd085e49cf66420" title="Method to get the number of neurons in the column. " alt="" coords="199,275,429,301"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_column.html#af558800d51f1fd7bdae3201bceb1cd73" title="Method to remove a mini column. " alt="" coords="221,326,407,367"/>
+</map>

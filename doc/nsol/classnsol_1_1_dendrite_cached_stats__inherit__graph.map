@@ -1,0 +1,8 @@
+<map id="nsol::DendriteCachedStats" name="nsol::DendriteCachedStats">
+<area shape="rect" id="node2" href="$classnsol_1_1_dendrite_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="73,645,218,722"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_dendrite.html" title="{nsol::Dendrite\n|# _dendriteType\l|+ Dendrite()\l+ dendriteType()\l}" alt="" coords="5,417,133,509"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="36,5,260,317"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="158,409,295,516"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_neurite_cached_stats.html" title="This class allows to cache the stats for neurites. " alt="" coords="242,608,430,759"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n|# _values\l|+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="319,365,507,560"/>
+</map>

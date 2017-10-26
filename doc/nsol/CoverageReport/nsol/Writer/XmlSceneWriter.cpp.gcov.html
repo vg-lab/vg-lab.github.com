@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - nsol - nsol/Writer/XmlSceneWriter.cpp</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">nsol/Writer</a> - XmlSceneWriter.cpp<span style="font-size: 80%;"> (source / <a href="XmlSceneWriter.cpp.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">nsol</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">72</td>
+            <td class="headerCovTableEntry">84</td>
+            <td class="headerCovTableEntryHi">85.7 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2017-10-26 20:08:19</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*</a>
+<span class="lineNum">       2 </span>            :  * Copyright (c) 2014-2017 GMRV/URJC.
+<span class="lineNum">       3 </span>            :  *
+<span class="lineNum">       4 </span>            :  * Authors: Pablo Toharia &lt;pablo.toharia@urjc.es&gt;
+<span class="lineNum">       5 </span>            :  *
+<span class="lineNum">       6 </span>            :  * This file is part of nsol &lt;https://github.com/gmrvvis/nsol&gt;
+<span class="lineNum">       7 </span>            :  *
+<span class="lineNum">       8 </span>            :  * This library is free software; you can redistribute it and/or modify it under
+<span class="lineNum">       9 </span>            :  * the terms of the GNU Lesser General Public License version 3.0 as published
+<span class="lineNum">      10 </span>            :  * by the Free Software Foundation.
+<span class="lineNum">      11 </span>            :  *
+<span class="lineNum">      12 </span>            :  * This library is distributed in the hope that it will be useful, but WITHOUT
+<span class="lineNum">      13 </span>            :  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+<span class="lineNum">      14 </span>            :  * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+<span class="lineNum">      15 </span>            :  * details.
+<span class="lineNum">      16 </span>            :  *
+<span class="lineNum">      17 </span>            :  * You should have received a copy of the GNU Lesser General Public License
+<span class="lineNum">      18 </span>            :  * along with this library; if not, write to the Free Software Foundation, Inc.,
+<span class="lineNum">      19 </span>            :  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+<span class="lineNum">      20 </span>            :  *
+<span class="lineNum">      21 </span>            :  */
+<span class="lineNum">      22 </span>            : #include &quot;XmlSceneWriter.h&quot;
+<span class="lineNum">      23 </span>            : #include &quot;SwcWriter.h&quot;
+<span class="lineNum">      24 </span>            : #include &quot;../Log.h&quot;
+<span class="lineNum">      25 </span>            : #include &lt;iostream&gt;
+<span class="lineNum">      26 </span>            : #include &lt;fstream&gt;
+<span class="lineNum">      27 </span>            : 
+<span class="lineNum">      28 </span>            : namespace nsol
+<a name="29"><span class="lineNum">      29 </span>            : {</a>
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span><span class="lineCov">          4 :   std::string morphologicalTypeToString( const Neuron::TMorphologicalType type )</span>
+<span class="lineNum">      32 </span>            :   {
+<span class="lineNum">      33 </span><span class="lineCov">          4 :     switch( type )</span>
+<span class="lineNum">      34 </span>            :     {
+<span class="lineNum">      35 </span>            :     case Neuron::UNDEFINED:
+<span class="lineNum">      36 </span><span class="lineCov">          1 :       return std::string( &quot;UNDEFINED&quot; );</span>
+<span class="lineNum">      37 </span>            :       break;
+<span class="lineNum">      38 </span>            :     case Neuron::PYRAMIDAL:
+<span class="lineNum">      39 </span><span class="lineCov">          2 :       return std::string( &quot;PYRAMIDAL&quot; );</span>
+<span class="lineNum">      40 </span>            :       break;
+<span class="lineNum">      41 </span>            :     case Neuron::INTERNEURON:
+<span class="lineNum">      42 </span><span class="lineCov">          1 :       return std::string( &quot;INTERNEURON&quot; );</span>
+<span class="lineNum">      43 </span>            :       break;
+<span class="lineNum">      44 </span>            :     default:
+<span class="lineNum">      45 </span><span class="lineNoCov">          0 :       break;</span>
+<span class="lineNum">      46 </span>            :     }
+<span class="lineNum">      47 </span><span class="lineNoCov">          0 :     Log::log( &quot;nsol warning (XmlSceneWriter): &quot;</span>
+<span class="lineNum">      48 </span>            :               &quot;unknown morphological type&quot;,
+<span class="lineNum">      49 </span><span class="lineNoCov">          0 :               LOG_LEVEL_WARNING );</span>
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :     return std::string( &quot;UNDEFINED&quot; );</span>
+<a name="51"><span class="lineNum">      51 </span>            :   }</a>
+<span class="lineNum">      52 </span>            : 
+<span class="lineNum">      53 </span><span class="lineCov">          4 :   std::string functionalTypeToString( const Neuron::TFunctionalType type )</span>
+<span class="lineNum">      54 </span>            :   {
+<span class="lineNum">      55 </span><span class="lineCov">          4 :     switch( type )</span>
+<span class="lineNum">      56 </span>            :     {
+<span class="lineNum">      57 </span>            :     case Neuron::UNDEFINED_FUNCTIONAL_TYPE:
+<span class="lineNum">      58 </span><span class="lineCov">          1 :       return std::string( &quot;UNDEFINED_FUNCTIONAL_TYPE&quot; );</span>
+<span class="lineNum">      59 </span>            :       break;
+<span class="lineNum">      60 </span>            :     case Neuron::INHIBITORY:
+<span class="lineNum">      61 </span><span class="lineCov">          1 :       return std::string( &quot;INHIBITORY&quot; );</span>
+<span class="lineNum">      62 </span>            :       break;
+<span class="lineNum">      63 </span>            :     case Neuron::EXCITATORY:
+<span class="lineNum">      64 </span><span class="lineCov">          2 :       return std::string( &quot;EXCITATORY&quot; );</span>
+<span class="lineNum">      65 </span>            :       break;
+<span class="lineNum">      66 </span>            :     default:
+<span class="lineNum">      67 </span><span class="lineNoCov">          0 :       break;</span>
+<span class="lineNum">      68 </span>            :     }
+<span class="lineNum">      69 </span><span class="lineNoCov">          0 :     Log::log( &quot;nsol warning (XmlSceneWriter): &quot;</span>
+<span class="lineNum">      70 </span>            :               &quot;unknown functional type&quot;,
+<span class="lineNum">      71 </span><span class="lineNoCov">          0 :               LOG_LEVEL_WARNING );</span>
+<span class="lineNum">      72 </span><span class="lineNoCov">          0 :     return std::string( &quot;UNDEFINED_FUNCTIONAL_TYPE&quot; );</span>
+<a name="73"><span class="lineNum">      73 </span>            :   }</a>
+<span class="lineNum">      74 </span>            : 
+<span class="lineNum">      75 </span><span class="lineCov">          1 :   bool XmlSceneWriter::writeToXml( const std::string&amp; fileName,</span>
+<span class="lineNum">      76 </span>            :                                    const Columns&amp; columns,
+<span class="lineNum">      77 </span>            :                                    std::map&lt; std::string, NeuronMorphologyPtr &gt;
+<span class="lineNum">      78 </span>            :                                    morphologies,
+<span class="lineNum">      79 </span>            :                                    bool relativeToXmlMorphologyPath )
+<span class="lineNum">      80 </span>            :   {
+<span class="lineNum">      81 </span><span class="lineCov">          1 :     if ( columns.size( ) == 0 )</span>
+<span class="lineNum">      82 </span><span class="lineNoCov">          0 :       Log::log( &quot;Writting Xml file from an empty columns container&quot;,</span>
+<span class="lineNum">      83 </span><span class="lineNoCov">          0 :                 LOG_LEVEL_WARNING );</span>
+<span class="lineNum">      84 </span>            : 
+<span class="lineNum">      85 </span><span class="lineCov">          2 :     std::ofstream file;</span>
+<span class="lineNum">      86 </span><span class="lineCov">          1 :     file.open( fileName );</span>
+<span class="lineNum">      87 </span>            : 
+<span class="lineNum">      88 </span><span class="lineCov">          1 :     if ( !file.is_open( ))</span>
+<span class="lineNum">      89 </span><span class="lineNoCov">          0 :       NSOL_THROW( &quot;Xml output file could not be opened for writting.&quot; );</span>
+<span class="lineNum">      90 </span>            : 
+<span class="lineNum">      91 </span>            :     // Write headers
+<span class="lineNum">      92 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&quot;</span>
+<span class="lineNum">      93 </span><span class="lineCov">          1 :          &lt;&lt; std::endl &lt;&lt; std::endl;</span>
+<span class="lineNum">      94 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;&lt;scene version=\&quot;0.1\&quot;&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">      95 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;  &lt;morphology&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">      96 </span>            : 
+<span class="lineNum">      97 </span>            : 
+<span class="lineNum">      98 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;    &lt;columns&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">      99 </span><span class="lineCov">          3 :     for ( const auto&amp; col : columns )</span>
+<span class="lineNum">     100 </span>            :     {
+<span class="lineNum">     101 </span><span class="lineCov">          2 :       file &lt;&lt; &quot;      &lt;column id=\&quot;&quot; &lt;&lt; col-&gt;id( ) &lt;&lt; &quot;\&quot;&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     102 </span>            : 
+<span class="lineNum">     103 </span><span class="lineCov">          5 :       for ( const auto&amp; minicol : col-&gt;miniColumns( ))</span>
+<span class="lineNum">     104 </span>            :       {
+<span class="lineNum">     105 </span><span class="lineCov">          3 :         file &lt;&lt; &quot;        &lt;minicolumn id=\&quot;&quot; &lt;&lt; minicol-&gt;id( )</span>
+<span class="lineNum">     106 </span><span class="lineCov">          3 :              &lt;&lt; &quot;\&quot;&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     107 </span>            : 
+<span class="lineNum">     108 </span><span class="lineCov">          7 :         for ( const auto&amp; neuron : minicol-&gt;neurons( ))</span>
+<span class="lineNum">     109 </span>            :         {
+<span class="lineNum">     110 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;          &lt;neuron gid=\&quot;&quot; &lt;&lt; neuron-&gt;gid( ) &lt;&lt; &quot;\&quot; &quot;</span>
+<span class="lineNum">     111 </span><span class="lineCov">          8 :                &lt;&lt; &quot;layer=\&quot;&quot; &lt;&lt; neuron-&gt;layer( ) &lt;&lt;  &quot;\&quot; &quot;</span>
+<span class="lineNum">     112 </span><span class="lineCov">          4 :                &lt;&lt; &quot;morphologicalType=\&quot;&quot;</span>
+<span class="lineNum">     113 </span><span class="lineCov">         12 :                &lt;&lt; morphologicalTypeToString( neuron-&gt;morphologicalType( ))</span>
+<span class="lineNum">     114 </span><span class="lineCov">          4 :                &lt;&lt;  &quot;\&quot; &quot;</span>
+<span class="lineNum">     115 </span><span class="lineCov">          4 :                &lt;&lt; &quot;functionalType=\&quot;&quot;</span>
+<span class="lineNum">     116 </span><span class="lineCov">         12 :                &lt;&lt; functionalTypeToString( neuron-&gt;functionalType( ))</span>
+<span class="lineNum">     117 </span><span class="lineCov">          4 :                &lt;&lt; &quot;\&quot;&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     118 </span>            : 
+<span class="lineNum">     119 </span><span class="lineCov">          4 :           const auto&amp; xform = neuron-&gt;transform( );</span>
+<span class="lineNum">     120 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;            &lt;transform&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     121 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;              &quot;</span>
+<span class="lineNum">     122 </span><span class="lineCov">          8 :                &lt;&lt; xform( 0, 0 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 0, 1 ) &lt;&lt; &quot;, &quot;</span>
+<span class="lineNum">     123 </span><span class="lineCov">          8 :                &lt;&lt; xform( 0, 2 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 0, 3 ) &lt;&lt; &quot;, &quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     124 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;              &quot;</span>
+<span class="lineNum">     125 </span><span class="lineCov">          8 :                &lt;&lt; xform( 1, 0 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 1, 1 ) &lt;&lt; &quot;, &quot;</span>
+<span class="lineNum">     126 </span><span class="lineCov">          8 :                &lt;&lt; xform( 1, 2 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 1, 3 ) &lt;&lt; &quot;, &quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     127 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;              &quot;</span>
+<span class="lineNum">     128 </span><span class="lineCov">          8 :                &lt;&lt; xform( 2, 0 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 2, 1 ) &lt;&lt; &quot;, &quot;</span>
+<span class="lineNum">     129 </span><span class="lineCov">          8 :                &lt;&lt; xform( 2, 2 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 2, 3 ) &lt;&lt; &quot;, &quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     130 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;              &quot;</span>
+<span class="lineNum">     131 </span><span class="lineCov">          8 :                &lt;&lt; xform( 3, 0 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 3, 1 ) &lt;&lt; &quot;, &quot;</span>
+<span class="lineNum">     132 </span><span class="lineCov">          8 :                &lt;&lt; xform( 3, 2 ) &lt;&lt; &quot;, &quot; &lt;&lt; xform( 3, 3 ) &lt;&lt; std::endl;</span>
+<span class="lineNum">     133 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;            &lt;/transform&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     134 </span>            : 
+<span class="lineNum">     135 </span><span class="lineCov">          4 :           file &lt;&lt; &quot;          &lt;/neuron&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     136 </span>            :         }
+<span class="lineNum">     137 </span>            : 
+<span class="lineNum">     138 </span><span class="lineCov">          3 :         file &lt;&lt; &quot;        &lt;/minicolumn&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     139 </span>            :       }
+<span class="lineNum">     140 </span>            : 
+<span class="lineNum">     141 </span><span class="lineCov">          2 :       file &lt;&lt; &quot;      &lt;/column&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     142 </span>            :     }
+<span class="lineNum">     143 </span>            : 
+<span class="lineNum">     144 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;    &lt;/columns&gt;&quot; &lt;&lt; std::endl &lt;&lt; std::endl;;</span>
+<span class="lineNum">     145 </span>            : 
+<span class="lineNum">     146 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;    &lt;neuronmorphologies&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     147 </span>            : 
+<span class="lineNum">     148 </span><span class="lineCov">          1 :     unsigned int counter = 0;</span>
+<span class="lineNum">     149 </span>            :     SwcWriter swcWriter;
+<span class="lineNum">     150 </span><span class="lineCov">          2 :     for ( const auto&amp; morphology : morphologies )</span>
+<span class="lineNum">     151 </span>            :     {
+<span class="lineNum">     152 </span><span class="lineCov">          1 :       file &lt;&lt; &quot;      &lt;neuronmorphology neurons=\&quot;&quot;;</span>
+<span class="lineNum">     153 </span>            : 
+<span class="lineNum">     154 </span><span class="lineCov">          5 :       for ( const auto&amp; neuron : morphology.second-&gt;parentNeurons( ))</span>
+<span class="lineNum">     155 </span>            :       {
+<span class="lineNum">     156 </span><span class="lineCov">          4 :         file &lt;&lt; neuron-&gt;gid( );</span>
+<span class="lineNum">     157 </span><span class="lineCov">          4 :         if ( &amp;neuron != &amp;morphology.second-&gt;parentNeurons( ).back( ))</span>
+<span class="lineNum">     158 </span><span class="lineCov">          3 :           file &lt;&lt; &quot;,&quot;;</span>
+<span class="lineNum">     159 </span>            :       }
+<span class="lineNum">     160 </span><span class="lineCov">          2 :       file &lt;&lt; &quot;\&quot; swc=\&quot;&quot; &lt;&lt; std::to_string( counter )</span>
+<span class="lineNum">     161 </span><span class="lineCov">          1 :            &lt;&lt; &quot;.swc\&quot;&quot;;</span>
+<span class="lineNum">     162 </span><span class="lineCov">          1 :       if ( relativeToXmlMorphologyPath )</span>
+<span class="lineNum">     163 </span><span class="lineNoCov">          0 :         file &lt;&lt; &quot;pathRelativeToXml=\&quot;true\&quot;&quot;;</span>
+<span class="lineNum">     164 </span><span class="lineCov">          1 :       file &lt;&lt; &quot; /&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     165 </span>            :       // file &lt;&lt; &quot;      &lt;/neuronmorphology&gt;&quot; &lt;&lt; std::endl;
+<span class="lineNum">     166 </span>            : 
+<span class="lineNum">     167 </span><span class="lineCov">          2 :       swcWriter.writeMorphology( std::to_string( counter++ ) +</span>
+<span class="lineNum">     168 </span>            :                                  std::string( &quot;.swc&quot; ),
+<span class="lineNum">     169 </span><span class="lineCov">          2 :                                  morphology.second );</span>
+<span class="lineNum">     170 </span>            :     }
+<span class="lineNum">     171 </span>            : 
+<span class="lineNum">     172 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;    &lt;/neuronmorphologies&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     173 </span>            : 
+<span class="lineNum">     174 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;  &lt;/morphology&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     175 </span><span class="lineCov">          1 :     file &lt;&lt; &quot;&lt;/scene&gt;&quot; &lt;&lt; std::endl;</span>
+<span class="lineNum">     176 </span>            : 
+<span class="lineNum">     177 </span><span class="lineCov">          2 :     return true;</span>
+<a name="178"><span class="lineNum">     178 </span>            :   }</a>
+<span class="lineNum">     179 </span>            : 
+<span class="lineNum">     180 </span><span class="lineCov">         66 : }; // namespace nsol</span>
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

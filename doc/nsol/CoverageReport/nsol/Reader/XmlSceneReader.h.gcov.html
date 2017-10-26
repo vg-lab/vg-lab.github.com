@@ -1,0 +1,490 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - nsol - nsol/Reader/XmlSceneReader.h</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">nsol/Reader</a> - XmlSceneReader.h<span style="font-size: 80%;"> (source / <a href="XmlSceneReader.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">nsol</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">122</td>
+            <td class="headerCovTableEntry">133</td>
+            <td class="headerCovTableEntryHi">91.7 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2017-10-26 20:08:19</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*</a>
+<span class="lineNum">       2 </span>            :  * Copyright (c) 2014-2017 GMRV/URJC.
+<span class="lineNum">       3 </span>            :  *
+<span class="lineNum">       4 </span>            :  * Authors: Pablo Toharia &lt;pablo.toharia@urjc.es&gt;
+<span class="lineNum">       5 </span>            :  *
+<span class="lineNum">       6 </span>            :  * This file is part of nsol &lt;https://github.com/gmrvvis/nsol&gt;
+<span class="lineNum">       7 </span>            :  *
+<span class="lineNum">       8 </span>            :  * This library is free software; you can redistribute it and/or modify it under
+<span class="lineNum">       9 </span>            :  * the terms of the GNU Lesser General Public License version 3.0 as published
+<span class="lineNum">      10 </span>            :  * by the Free Software Foundation.
+<span class="lineNum">      11 </span>            :  *
+<span class="lineNum">      12 </span>            :  * This library is distributed in the hope that it will be useful, but WITHOUT
+<span class="lineNum">      13 </span>            :  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+<span class="lineNum">      14 </span>            :  * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+<span class="lineNum">      15 </span>            :  * details.
+<span class="lineNum">      16 </span>            :  *
+<span class="lineNum">      17 </span>            :  * You should have received a copy of the GNU Lesser General Public License
+<span class="lineNum">      18 </span>            :  * along with this library; if not, write to the Free Software Foundation, Inc.,
+<span class="lineNum">      19 </span>            :  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+<span class="lineNum">      20 </span>            :  *
+<span class="lineNum">      21 </span>            :  */
+<span class="lineNum">      22 </span>            : #ifndef __NSOL__XML_SCENE_READER__
+<span class="lineNum">      23 </span>            : #define __NSOL__XML_SCENE_READER__
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span>            : #ifdef NSOL_USE_QT5CORE
+<span class="lineNum">      26 </span>            : #include &lt;QStringList&gt;
+<span class="lineNum">      27 </span>            : #include &lt;QString&gt;
+<span class="lineNum">      28 </span>            : #include &lt;QXmlStreamReader&gt;
+<span class="lineNum">      29 </span>            : #include &lt;QFile&gt;
+<span class="lineNum">      30 </span>            : #include &lt;QFileInfo&gt;
+<span class="lineNum">      31 </span>            : #endif
+<span class="lineNum">      32 </span>            : 
+<span class="lineNum">      33 </span>            : #include &quot;BrionReader.h&quot;
+<span class="lineNum">      34 </span>            : #include &quot;SwcReader.h&quot;
+<span class="lineNum">      35 </span>            : #include &lt;map&gt;
+<span class="lineNum">      36 </span>            : 
+<span class="lineNum">      37 </span>            : 
+<span class="lineNum">      38 </span>            : namespace nsol
+<span class="lineNum">      39 </span>            : {
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span>            :   /*!
+<span class="lineNum">      42 </span>            :     This class allows to read the structure morphologies of a given Xml file.
+<span class="lineNum">      43 </span>            :   */
+<span class="lineNum">      44 </span>            :   class XmlSceneReader
+<span class="lineNum">      45 </span>            :   {
+<span class="lineNum">      46 </span>            :   public:
+<span class="lineNum">      47 </span>            : 
+<span class="lineNum">      48 </span>            : #ifdef NSOL_USE_QT5CORE
+<span class="lineNum">      49 </span>            :     /**
+<span class="lineNum">      50 </span>            :      * Read structure and optionally morphologies to xml file.
+<span class="lineNum">      51 </span>            :      * @param xmlSceneFile intput filename to read
+<span class="lineNum">      52 </span>            :      * @param columns container of columns 
+<span class="lineNum">      53 </span>            :      * @param neuronsMap 
+<span class="lineNum">      54 </span>            :      * @param morphologies morphologies to be read from XML files and linked in the Xml
+<span class="lineNum">      55 </span>            :      */
+<span class="lineNum">      56 </span>            :     template &lt; class NODE = Node,
+<span class="lineNum">      57 </span>            :                class SECTION = Section,
+<span class="lineNum">      58 </span>            :                class DENDRITE = Dendrite,
+<span class="lineNum">      59 </span>            :                class AXON = Axon,
+<span class="lineNum">      60 </span>            :                class SOMA = Soma,
+<span class="lineNum">      61 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
+<span class="lineNum">      62 </span>            :                class NEURON = Neuron,
+<a name="63"><span class="lineNum">      63 </span>            :                class MINICOLUMN = MiniColumn,</a>
+<span class="lineNum">      64 </span>            :                class COLUMN = Column &gt;
+<span class="lineNum">      65 </span><span class="lineCov">          4 :     static void loadXml(</span>
+<span class="lineNum">      66 </span>            :       const std::string&amp; xmlSceneFile,
+<span class="lineNum">      67 </span>            :       Columns&amp; columns, NeuronsMap&amp; neuronsMap,
+<span class="lineNum">      68 </span>            :       std::map&lt; std::string, NeuronMorphologyPtr &gt;&amp; morphologies)
+<span class="lineNum">      69 </span>            : #else
+<span class="lineNum">      70 </span>            :     /**
+<span class="lineNum">      71 </span>            :      * Read structure and optionally morphologies to xml file.
+<span class="lineNum">      72 </span>            :      * @param xmlSceneFile intput filename to read
+<span class="lineNum">      73 </span>            :      */
+<span class="lineNum">      74 </span>            :     template &lt; class NODE = Node,
+<span class="lineNum">      75 </span>            :                class SECTION = Section,
+<span class="lineNum">      76 </span>            :                class DENDRITE = Dendrite,
+<span class="lineNum">      77 </span>            :                class AXON = Axon,
+<span class="lineNum">      78 </span>            :                class SOMA = Soma,
+<span class="lineNum">      79 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
+<span class="lineNum">      80 </span>            :                class NEURON = Neuron,
+<span class="lineNum">      81 </span>            :                class MINICOLUMN = MiniColumn,
+<span class="lineNum">      82 </span>            :                class COLUMN = Column &gt;
+<span class="lineNum">      83 </span>            :     static void loadXml(
+<span class="lineNum">      84 </span>            :       const std::string&amp; xmlSceneFile,
+<span class="lineNum">      85 </span>            :       Columns&amp;, NeuronsMap&amp;,
+<span class="lineNum">      86 </span>            :       std::map&lt; std::string, NeuronMorphologyPtr &gt;&amp;)
+<span class="lineNum">      87 </span>            : #endif
+<span class="lineNum">      88 </span>            :     {
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            : #ifdef NSOL_USE_QT5CORE
+<span class="lineNum">      91 </span>            : 
+<span class="lineNum">      92 </span><span class="lineCov">          8 :       QFile qFile ( xmlSceneFile.c_str( ));</span>
+<span class="lineNum">      93 </span><span class="lineCov">          4 :       if ( ! qFile.exists( ))</span>
+<span class="lineNum">      94 </span><span class="lineNoCov">          0 :         NSOL_THROW( &quot;Scene file not found&quot; );</span>
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span><span class="lineCov">          4 :       qFile.open( QIODevice::ReadOnly | QIODevice::Text );</span>
+<span class="lineNum">      97 </span>            : 
+<span class="lineNum">      98 </span><span class="lineCov">          4 :       if ( ! qFile.isOpen( ))</span>
+<span class="lineNum">      99 </span><span class="lineNoCov">          0 :         NSOL_THROW( &quot;Scene file not readable&quot; );</span>
+<span class="lineNum">     100 </span>            : 
+<span class="lineNum">     101 </span><span class="lineCov">          8 :       QXmlStreamReader xml( &amp; qFile );</span>
+<span class="lineNum">     102 </span>            : 
+<span class="lineNum">     103 </span><span class="lineCov">          4 :       if ( xml.hasError( ) )</span>
+<span class="lineNum">     104 </span><span class="lineNoCov">          0 :         NSOL_THROW( &quot;Scene XML file has errors&quot; );</span>
+<span class="lineNum">     105 </span>            : 
+<span class="lineNum">     106 </span><span class="lineCov">          4 :       xml.readNextStartElement( );</span>
+<span class="lineNum">     107 </span>            : 
+<span class="lineNum">     108 </span><span class="lineCov">          8 :       std::string version;</span>
+<span class="lineNum">     109 </span>            : 
+<span class="lineNum">     110 </span>            :       // std::map&lt; unsigned int, NeuronPtr &gt; neuronsMap;
+<span class="lineNum">     111 </span>            : 
+<span class="lineNum">     112 </span>            : 
+<span class="lineNum">     113 </span><span class="lineCov">          4 :       if ( xml.name( ) == &quot;scene&quot; )</span>
+<span class="lineNum">     114 </span>            :       {
+<span class="lineNum">     115 </span><span class="lineCov">          8 :         QXmlStreamAttributes attributes = xml.attributes( );</span>
+<span class="lineNum">     116 </span>            : 
+<span class="lineNum">     117 </span><span class="lineCov">          4 :         if( attributes.hasAttribute( &quot;version&quot; ))</span>
+<span class="lineNum">     118 </span><span class="lineCov">          4 :           version = attributes.value( &quot;version&quot; ).toString( ).toStdString( );</span>
+<span class="lineNum">     119 </span>            :         else
+<span class="lineNum">     120 </span><span class="lineNoCov">          0 :           NSOL_THROW( &quot;No version number present&quot; );</span>
+<span class="lineNum">     121 </span>            :       }
+<span class="lineNum">     122 </span>            :       else
+<span class="lineNum">     123 </span><span class="lineNoCov">          0 :         NSOL_THROW( &quot;Expected &lt;scene&gt; root element&quot; );</span>
+<span class="lineNum">     124 </span>            : 
+<span class="lineNum">     125 </span><span class="lineCov">         20 :       while( !xml.atEnd( ) &amp;&amp;  !xml.hasError( ))</span>
+<span class="lineNum">     126 </span>            :       {
+<span class="lineNum">     127 </span><span class="lineCov">          8 :         xml.readNext( );</span>
+<span class="lineNum">     128 </span>            : 
+<span class="lineNum">     129 </span><span class="lineCov">          8 :         if ( xml.atEnd( ))</span>
+<span class="lineNum">     130 </span><span class="lineNoCov">          0 :           continue;</span>
+<span class="lineNum">     131 </span>            : 
+<span class="lineNum">     132 </span><span class="lineCov">          8 :         if ( xml.tokenType( ) != QXmlStreamReader::StartElement )</span>
+<span class="lineNum">     133 </span><span class="lineCov">          4 :           continue;</span>
+<span class="lineNum">     134 </span>            : 
+<span class="lineNum">     135 </span><span class="lineCov">          4 :         if ( xml.name( ) == &quot;morphology&quot; )</span>
+<span class="lineNum">     136 </span>            :         {
+<span class="lineNum">     137 </span><span class="lineCov">         84 :           while( !xml.atEnd( ) &amp;&amp;  !xml.hasError( ))</span>
+<span class="lineNum">     138 </span>            :           {
+<span class="lineNum">     139 </span><span class="lineCov">         40 :             xml.readNext( );</span>
+<span class="lineNum">     140 </span>            : 
+<span class="lineNum">     141 </span><span class="lineCov">         80 :             if ( xml.atEnd( ) ||</span>
+<span class="lineNum">     142 </span><span class="lineCov">         40 :                  xml.tokenType( ) != QXmlStreamReader::StartElement )</span>
+<span class="lineNum">     143 </span><span class="lineCov">         24 :               continue;</span>
+<span class="lineNum">     144 </span>            : 
+<span class="lineNum">     145 </span><span class="lineCov">         16 :             if ( !xml.atEnd( ) &amp;&amp; xml.name( ) == &quot;column&quot; )</span>
+<span class="lineNum">     146 </span>            :             {
+<span class="lineNum">     147 </span><span class="lineCov">         16 :               QXmlStreamAttributes attributes = xml.attributes( );</span>
+<span class="lineNum">     148 </span><span class="lineCov">          8 :               if( attributes.hasAttribute( &quot;id&quot; ))</span>
+<span class="lineNum">     149 </span>            :               {
+<span class="lineNum">     150 </span>            :                 //Creating column
+<span class="lineNum">     151 </span><span class="lineCov">          8 :                 unsigned int colId = attributes.value( &quot;id&quot; ).toUInt( );</span>
+<span class="lineNum">     152 </span><span class="lineCov">          8 :                 ColumnPtr column = ( ColumnPtr )new COLUMN( colId );</span>
+<span class="lineNum">     153 </span><span class="lineCov">          8 :                 columns.push_back( column );</span>
+<span class="lineNum">     154 </span>            : 
+<span class="lineNum">     155 </span>            :                 //Looking for minicolumns in column
+<span class="lineNum">     156 </span><span class="lineCov">        248 :                 while( !xml.atEnd( ) &amp;&amp; !xml.hasError( ) &amp;&amp;</span>
+<span class="lineNum">     157 </span><span class="lineCov">        192 :                        !( xml.name( ) == &quot;column&quot; &amp;&amp;</span>
+<span class="lineNum">     158 </span><span class="lineCov">         16 :                           xml.tokenType( ) == QXmlStreamReader::EndElement ))</span>
+<span class="lineNum">     159 </span>            :                 {
+<span class="lineNum">     160 </span><span class="lineCov">         40 :                   xml.readNext( );</span>
+<span class="lineNum">     161 </span><span class="lineCov">         80 :                   if ( xml.atEnd( ) ||</span>
+<span class="lineNum">     162 </span><span class="lineCov">         40 :                        xml.tokenType( ) != QXmlStreamReader::StartElement )</span>
+<span class="lineNum">     163 </span><span class="lineCov">         28 :                     continue;</span>
+<span class="lineNum">     164 </span>            : 
+<span class="lineNum">     165 </span><span class="lineCov">         12 :                   if ( !xml.atEnd( ) &amp;&amp; xml.name( ) == &quot;minicolumn&quot; )</span>
+<span class="lineNum">     166 </span>            :                   {
+<span class="lineNum">     167 </span><span class="lineCov">         12 :                     attributes = xml.attributes( );</span>
+<span class="lineNum">     168 </span><span class="lineCov">         12 :                     if ( attributes.hasAttribute( &quot;id&quot; ) )</span>
+<span class="lineNum">     169 </span>            :                     {
+<span class="lineNum">     170 </span>            :                       //Creating minicolumn
+<span class="lineNum">     171 </span>            :                       unsigned int miniColId =
+<span class="lineNum">     172 </span><span class="lineCov">         12 :                         attributes.value( &quot;id&quot; ).toUInt( );</span>
+<span class="lineNum">     173 </span>            :                       MiniColumnPtr miniColumn =
+<span class="lineNum">     174 </span><span class="lineCov">         12 :                         ( MiniColumnPtr )new MINICOLUMN( column, miniColId );</span>
+<span class="lineNum">     175 </span><span class="lineCov">         12 :                       column-&gt;addMiniColumn( miniColumn );</span>
+<span class="lineNum">     176 </span>            : 
+<span class="lineNum">     177 </span>            :                       //Looking for neuronos in minicolumn
+<span class="lineNum">     178 </span><span class="lineCov">        352 :                       while( !xml.atEnd( ) &amp;&amp; !xml.hasError( ) &amp;&amp;</span>
+<span class="lineNum">     179 </span><span class="lineCov">        272 :                              !( xml.name( ) == &quot;minicolumn&quot; &amp;&amp;</span>
+<span class="lineNum">     180 </span><span class="lineCov">         24 :                                 xml.tokenType( ) ==</span>
+<span class="lineNum">     181 </span>            :                                 QXmlStreamReader::EndElement ))
+<span class="lineNum">     182 </span>            :                       {
+<span class="lineNum">     183 </span><span class="lineCov">         56 :                         xml.readNext( );</span>
+<span class="lineNum">     184 </span><span class="lineCov">        112 :                         if ( xml.atEnd( ) ||</span>
+<span class="lineNum">     185 </span><span class="lineCov">         56 :                              xml.tokenType( ) !=</span>
+<span class="lineNum">     186 </span>            :                              QXmlStreamReader::StartElement )
+<span class="lineNum">     187 </span><span class="lineCov">         40 :                           continue;</span>
+<span class="lineNum">     188 </span>            : 
+<span class="lineNum">     189 </span><span class="lineCov">         16 :                         if ( !xml.atEnd( ) &amp;&amp; xml.name( ) == &quot;neuron&quot; )</span>
+<span class="lineNum">     190 </span>            :                         {
+<span class="lineNum">     191 </span><span class="lineCov">         16 :                           attributes = xml.attributes( );</span>
+<span class="lineNum">     192 </span><span class="lineCov">         16 :                           if ( attributes.hasAttribute( &quot;gid&quot; ))</span>
+<span class="lineNum">     193 </span>            :                           {
+<span class="lineNum">     194 </span>            :                             //Creating neuron
+<span class="lineNum">     195 </span>            :                             unsigned int gid =
+<span class="lineNum">     196 </span><span class="lineCov">         16 :                               attributes.value( &quot;gid&quot; ).toUInt( );</span>
+<span class="lineNum">     197 </span><span class="lineCov">         16 :                             unsigned int layer = 1;</span>
+<span class="lineNum">     198 </span>            :                             nsol::Neuron::TMorphologicalType morphologicalType =
+<span class="lineNum">     199 </span><span class="lineCov">         16 :                               nsol::Neuron::UNDEFINED;</span>
+<span class="lineNum">     200 </span>            :                             nsol::Neuron::TFunctionalType functionalType =
+<span class="lineNum">     201 </span><span class="lineCov">         16 :                               nsol::Neuron::UNDEFINED_FUNCTIONAL_TYPE;</span>
+<span class="lineNum">     202 </span><span class="lineCov">         16 :                             Matrix4_4f transform = Matrix4_4fIdentity;</span>
+<span class="lineNum">     203 </span>            : 
+<span class="lineNum">     204 </span>            :                             //GET Layer
+<span class="lineNum">     205 </span><span class="lineCov">         16 :                             if ( attributes.hasAttribute( &quot;layer&quot; ))</span>
+<span class="lineNum">     206 </span><span class="lineCov">         10 :                               layer = attributes.value( &quot;layer&quot; ).toUInt( );</span>
+<span class="lineNum">     207 </span>            : 
+<span class="lineNum">     208 </span>            :                             //GET Mophological Type
+<span class="lineNum">     209 </span><span class="lineCov">         16 :                             if ( attributes.hasAttribute(</span>
+<span class="lineNum">     210 </span>            :                                    &quot;morphologicalType&quot; ))
+<span class="lineNum">     211 </span>            :                             {
+<span class="lineNum">     212 </span>            :                               std::string typeString(
+<span class="lineNum">     213 </span>            :                                 attributes.value(
+<span class="lineNum">     214 </span>            :                                   &quot;morphologicalType&quot; ).toString(
+<span class="lineNum">     215 </span><span class="lineCov">         26 :                                     ).toStdString( ));</span>
+<span class="lineNum">     216 </span><span class="lineCov">         13 :                               if ( typeString == &quot;INTERNEURON&quot; )</span>
+<span class="lineNum">     217 </span>            :                               {
+<span class="lineNum">     218 </span><span class="lineCov">          4 :                                 morphologicalType = nsol::Neuron::INTERNEURON;</span>
+<span class="lineNum">     219 </span>            :                               }
+<span class="lineNum">     220 </span><span class="lineCov">          9 :                               else if( typeString == &quot;PYRAMIDAL&quot; )</span>
+<span class="lineNum">     221 </span>            :                               {
+<span class="lineNum">     222 </span><span class="lineCov">          8 :                                 morphologicalType = nsol::Neuron::PYRAMIDAL;</span>
+<span class="lineNum">     223 </span>            :                               }
+<span class="lineNum">     224 </span>            :                               else
+<span class="lineNum">     225 </span>            :                               {
+<span class="lineNum">     226 </span><span class="lineCov">          1 :                                 Log::log(</span>
+<span class="lineNum">     227 </span>            :                                   std::string(
+<span class="lineNum">     228 </span>            :                                     &quot;nsol warning (XmlSceneReader): &quot; ) +
+<span class="lineNum">     229 </span>            :                                   std::string( &quot;Neuron &quot; ) +
+<span class="lineNum">     230 </span>            :                                   std::to_string( gid ) +
+<span class="lineNum">     231 </span>            :                                   std::string(
+<span class="lineNum">     232 </span>            :                                     &quot; undefined morphological type.&quot; ),
+<span class="lineNum">     233 </span>            :                                   LOG_LEVEL_WARNING );
+<span class="lineNum">     234 </span>            :                               }
+<span class="lineNum">     235 </span>            :                             }
+<span class="lineNum">     236 </span>            : 
+<span class="lineNum">     237 </span>            :                             //GET Functional Type
+<span class="lineNum">     238 </span><span class="lineCov">         16 :                             if ( attributes.hasAttribute( &quot;functionalType&quot; ) )</span>
+<span class="lineNum">     239 </span>            :                             {
+<span class="lineNum">     240 </span>            :                               std::string typeString(
+<span class="lineNum">     241 </span>            :                                 attributes.value(
+<span class="lineNum">     242 </span>            :                                   &quot;functionalType&quot; ).toString(
+<span class="lineNum">     243 </span><span class="lineCov">         26 :                                     ).toStdString( ));</span>
+<span class="lineNum">     244 </span>            : 
+<span class="lineNum">     245 </span><span class="lineCov">         13 :                               if ( typeString == &quot;EXCITATORY&quot; )</span>
+<span class="lineNum">     246 </span>            :                               {
+<span class="lineNum">     247 </span><span class="lineCov">          8 :                                 functionalType = nsol::Neuron::EXCITATORY;</span>
+<span class="lineNum">     248 </span>            :                               }
+<span class="lineNum">     249 </span><span class="lineCov">          5 :                               else if( typeString == &quot;INHIBITORY&quot; )</span>
+<span class="lineNum">     250 </span>            :                               {
+<span class="lineNum">     251 </span><span class="lineCov">          4 :                                 functionalType = nsol::Neuron::INHIBITORY;</span>
+<span class="lineNum">     252 </span>            :                               }
+<span class="lineNum">     253 </span>            :                               else
+<span class="lineNum">     254 </span>            :                               {
+<span class="lineNum">     255 </span><span class="lineCov">          1 :                                 Log::log(</span>
+<span class="lineNum">     256 </span>            :                                   std::string(
+<span class="lineNum">     257 </span>            :                                     &quot;nsol warning (XmlSceneReader): &quot; ) +
+<span class="lineNum">     258 </span>            :                                   std::string( &quot;Neuron &quot; ) +
+<span class="lineNum">     259 </span>            :                                   std::to_string( gid ) +
+<span class="lineNum">     260 </span>            :                                   std::string(
+<span class="lineNum">     261 </span>            :                                     &quot; undefined functional type.&quot; ),
+<span class="lineNum">     262 </span>            :                                   LOG_LEVEL_WARNING );
+<span class="lineNum">     263 </span>            :                               }
+<span class="lineNum">     264 </span>            :                             }
+<span class="lineNum">     265 </span>            : 
+<span class="lineNum">     266 </span>            :                             // Looking for transform in neuron
+<span class="lineNum">     267 </span><span class="lineCov">        386 :                             while( !xml.atEnd( ) &amp;&amp; !xml.hasError( ) &amp;&amp;</span>
+<span class="lineNum">     268 </span><span class="lineCov">        296 :                                    !( xml.name( ) == &quot;neuron&quot; &amp;&amp;</span>
+<span class="lineNum">     269 </span><span class="lineCov">         32 :                                       xml.tokenType( ) ==</span>
+<span class="lineNum">     270 </span>            :                                       QXmlStreamReader::EndElement ))
+<span class="lineNum">     271 </span>            :                             {
+<span class="lineNum">     272 </span><span class="lineCov">         58 :                               xml.readNext( );</span>
+<span class="lineNum">     273 </span><span class="lineCov">        116 :                               if ( xml.atEnd( ) ||</span>
+<span class="lineNum">     274 </span><span class="lineCov">         58 :                                    xml.tokenType( ) !=</span>
+<span class="lineNum">     275 </span>            :                                    QXmlStreamReader::StartElement )
+<span class="lineNum">     276 </span><span class="lineCov">         45 :                                 continue;</span>
+<span class="lineNum">     277 </span>            : 
+<span class="lineNum">     278 </span><span class="lineCov">         13 :                               if ( !xml.atEnd( ) &amp;&amp; xml.name( ) == &quot;transform&quot; )</span>
+<span class="lineNum">     279 </span>            :                               {
+<span class="lineNum">     280 </span>            :                                 QStringList mL =
+<span class="lineNum">     281 </span><span class="lineCov">         26 :                                   xml.readElementText( ).remove(' ').</span>
+<span class="lineNum">     282 </span><span class="lineCov">         52 :                                   remove('\n').remove('\t').split(&quot;,&quot;);</span>
+<span class="lineNum">     283 </span><span class="lineCov">         13 :                                 if ( mL.size( ) == 16 )</span>
+<span class="lineNum">     284 </span>            :                                 {
+<span class="lineNum">     285 </span><span class="lineCov">         65 :                                   for ( unsigned int i = 0; i &lt; 4; i ++ )</span>
+<span class="lineNum">     286 </span><span class="lineCov">        260 :                                     for ( unsigned int j = 0; j &lt; 4; j ++ )</span>
+<span class="lineNum">     287 </span><span class="lineCov">        416 :                                       transform( i, j ) =</span>
+<span class="lineNum">     288 </span><span class="lineCov">        208 :                                         mL[ i * 4 + j].toFloat( );</span>
+<span class="lineNum">     289 </span>            :                                 }
+<span class="lineNum">     290 </span>            :                               }
+<span class="lineNum">     291 </span>            :                             }
+<span class="lineNum">     292 </span>            :                             NeuronPtr neuron = ( NeuronPtr )
+<span class="lineNum">     293 </span>            :                               new NEURON( nullptr, layer, gid,
+<span class="lineNum">     294 </span>            :                                           transform, miniColumn,
+<span class="lineNum">     295 </span>            :                                           morphologicalType,
+<span class="lineNum">     296 </span><span class="lineCov">         16 :                                           functionalType );</span>
+<span class="lineNum">     297 </span><span class="lineCov">         16 :                             if ( neuron )</span>
+<span class="lineNum">     298 </span>            :                             {
+<span class="lineNum">     299 </span><span class="lineCov">         16 :                               if ( neuronsMap.addNeuron( neuron ))</span>
+<span class="lineNum">     300 </span>            :                               {
+<span class="lineNum">     301 </span><span class="lineCov">         16 :                                 miniColumn-&gt;addNeuron( neuron );</span>
+<span class="lineNum">     302 </span><span class="lineCov">         16 :                                 neuronsMap.insert(</span>
+<span class="lineNum">     303 </span>            :                                   std::pair&lt; unsigned int, NeuronPtr &gt;(
+<span class="lineNum">     304 </span>            :                                     gid, neuron ));
+<span class="lineNum">     305 </span>            :                               }
+<span class="lineNum">     306 </span>            :                               else
+<span class="lineNum">     307 </span><span class="lineNoCov">          0 :                                 delete neuron;</span>
+<span class="lineNum">     308 </span>            :                             }
+<span class="lineNum">     309 </span>            :                           }
+<span class="lineNum">     310 </span>            :                         }
+<span class="lineNum">     311 </span>            :                       }
+<span class="lineNum">     312 </span>            :                     }
+<span class="lineNum">     313 </span>            :                   }
+<span class="lineNum">     314 </span>            :                 }
+<span class="lineNum">     315 </span>            :               }
+<span class="lineNum">     316 </span>            :             }
+<span class="lineNum">     317 </span>            : 
+<span class="lineNum">     318 </span><span class="lineCov">         16 :             if ( !xml.atEnd( ) &amp;&amp; xml.name( ) == &quot;neuronmorphologies&quot; )</span>
+<span class="lineNum">     319 </span>            :             {
+<span class="lineNum">     320 </span><span class="lineCov">        102 :               while( !xml.atEnd( ) &amp;&amp;  !xml.hasError( ))</span>
+<span class="lineNum">     321 </span>            :               {
+<span class="lineNum">     322 </span><span class="lineCov">         49 :                 xml.readNext( );</span>
+<span class="lineNum">     323 </span><span class="lineCov">         94 :                 if ( xml.atEnd( ) ||</span>
+<span class="lineNum">     324 </span><span class="lineCov">         45 :                      xml.tokenType( ) != QXmlStreamReader::StartElement )</span>
+<span class="lineNum">     325 </span><span class="lineCov">         42 :                   continue;</span>
+<span class="lineNum">     326 </span>            : 
+<span class="lineNum">     327 </span><span class="lineCov">          7 :                 if ( !xml.atEnd( ) &amp;&amp; xml.name( ) == &quot;neuronmorphology&quot; )</span>
+<span class="lineNum">     328 </span>            :                 {
+<span class="lineNum">     329 </span><span class="lineCov">         14 :                   QXmlStreamAttributes attributes = xml.attributes( );</span>
+<span class="lineNum">     330 </span><span class="lineCov">         28 :                   if( attributes.hasAttribute( &quot;neurons&quot; ) &amp;&amp;</span>
+<span class="lineNum">     331 </span><span class="lineCov">         21 :                       attributes.hasAttribute( &quot;swc&quot; ))</span>
+<span class="lineNum">     332 </span>            :                   {
+<span class="lineNum">     333 </span>            :                     std::string swc =
+<span class="lineNum">     334 </span><span class="lineCov">         14 :                       attributes.value( &quot;swc&quot; ).toString( ).toStdString( );</span>
+<span class="lineNum">     335 </span>            : 
+<span class="lineNum">     336 </span><span class="lineCov">         14 :                     QFileInfo checkFile( swc.c_str( ));</span>
+<span class="lineNum">     337 </span><span class="lineCov">          7 :                     if ( !checkFile.exists( ) || !checkFile.isFile( ))</span>
+<span class="lineNum">     338 </span>            :                     {
+<span class="lineNum">     339 </span>            :                       // If the file does not exist then prepend xml file path
+<span class="lineNum">     340 </span><span class="lineNoCov">          0 :                       QFileInfo xmlSceneFileInfo( xmlSceneFile.c_str( ));</span>
+<span class="lineNum">     341 </span><span class="lineNoCov">          0 :                       swc = xmlSceneFileInfo.path(</span>
+<span class="lineNum">     342 </span>            :                         ).toStdString( ) + std::string( &quot;/&quot; ) + swc;
+<span class="lineNum">     343 </span>            :                     }
+<span class="lineNum">     344 </span><span class="lineCov">          7 :                     NeuronMorphologyPtr neuronMorphology = nullptr;</span>
+<span class="lineNum">     345 </span><span class="lineCov">          7 :                     if ( morphologies.find( swc ) == morphologies.end( ))</span>
+<span class="lineNum">     346 </span>            :                     {
+<span class="lineNum">     347 </span>            : #ifdef NSOL_USE_BRION
+<span class="lineNum">     348 </span>            :                     BrionReaderTemplated&lt; NODE, SECTION, DENDRITE, AXON,
+<span class="lineNum">     349 </span>            :                                           SOMA, NEURONMORPHOLOGY, NEURON,
+<span class="lineNum">     350 </span>            :                                           MINICOLUMN, COLUMN &gt; brionReader;
+<span class="lineNum">     351 </span>            :                      neuronMorphology = brionReader.loadMorphology( swc );
+<span class="lineNum">     352 </span>            : #else
+<span class="lineNum">     353 </span>            :                      SwcReaderTemplated&lt; NODE, SECTION, DENDRITE, AXON, SOMA,
+<span class="lineNum">     354 </span>            :                                          NEURONMORPHOLOGY, NEURON&gt; swcReader;
+<span class="lineNum">     355 </span><span class="lineCov">          4 :                      neuronMorphology = swcReader.readMorphology( swc );</span>
+<span class="lineNum">     356 </span>            : #endif
+<span class="lineNum">     357 </span><span class="lineCov">          4 :                       if ( neuronMorphology )</span>
+<span class="lineNum">     358 </span><span class="lineCov">          4 :                         morphologies[ swc ] = neuronMorphology;</span>
+<span class="lineNum">     359 </span>            :                     }
+<span class="lineNum">     360 </span>            :                     else
+<span class="lineNum">     361 </span>            :                     {
+<span class="lineNum">     362 </span><span class="lineCov">          3 :                       neuronMorphology = morphologies[ swc ];</span>
+<span class="lineNum">     363 </span>            :                     }
+<span class="lineNum">     364 </span>            : 
+<span class="lineNum">     365 </span><span class="lineCov">          7 :                     if ( neuronMorphology )</span>
+<span class="lineNum">     366 </span>            :                     {
+<span class="lineNum">     367 </span>            : 
+<span class="lineNum">     368 </span>            :                       QStringList neurons_ =
+<span class="lineNum">     369 </span><span class="lineCov">         14 :                         attributes.value(&quot;neurons&quot;).toString( ).split(',');</span>
+<span class="lineNum">     370 </span><span class="lineCov">         23 :                       for ( const auto&amp; n : neurons_ )</span>
+<span class="lineNum">     371 </span>            :                       {
+<span class="lineNum">     372 </span><span class="lineCov">         16 :                         auto neuronFind = neuronsMap.find( n .toUInt( ));</span>
+<span class="lineNum">     373 </span><span class="lineCov">         16 :                         if( neuronFind != neuronsMap.end( ))</span>
+<span class="lineNum">     374 </span>            :                         {
+<span class="lineNum">     375 </span><span class="lineCov">         16 :                           NeuronPtr neuron = neuronFind-&gt;second;</span>
+<span class="lineNum">     376 </span><span class="lineCov">         16 :                           neuron-&gt;morphology( neuronMorphology );</span>
+<span class="lineNum">     377 </span><span class="lineCov">         16 :                           neuronMorphology-&gt;parentNeurons( ).push_back(</span>
+<span class="lineNum">     378 </span>            :                             neuron );
+<span class="lineNum">     379 </span>            :                         }
+<span class="lineNum">     380 </span>            :                       }
+<span class="lineNum">     381 </span>            :                     }
+<span class="lineNum">     382 </span>            :                     else
+<span class="lineNum">     383 </span>            :                     {
+<span class="lineNum">     384 </span><span class="lineNoCov">          0 :                       Log::log(</span>
+<span class="lineNum">     385 </span>            :                         std::string(
+<span class="lineNum">     386 </span>            :                           &quot;nsol warning (XmlSceneReader): morphology &quot; ) +
+<span class="lineNum">     387 </span>            :                         swc + std::string( &quot; could not be readed&quot; ),
+<span class="lineNum">     388 </span>            :                         LOG_LEVEL_WARNING );
+<span class="lineNum">     389 </span>            :                     }
+<span class="lineNum">     390 </span>            :                   } // if ( neuronMorphology )
+<span class="lineNum">     391 </span>            :                 }
+<span class="lineNum">     392 </span>            :               }
+<span class="lineNum">     393 </span>            :             }
+<span class="lineNum">     394 </span>            :           }
+<span class="lineNum">     395 </span>            :         }
+<span class="lineNum">     396 </span>            :         else
+<span class="lineNum">     397 </span><span class="lineNoCov">          0 :           NSOL_THROW( std::string( &quot;Element &lt;&quot; ) +</span>
+<span class="lineNum">     398 </span>            :                       xml.name( ).toString( ).toStdString( ) +
+<span class="lineNum">     399 </span>            :                       std::string( &quot;&gt; not expected&quot; ) );
+<span class="lineNum">     400 </span>            :       }
+<span class="lineNum">     401 </span>            : 
+<span class="lineNum">     402 </span>            : #else // NSOL_USE_QT5CORE
+<span class="lineNum">     403 </span>            :       NSOL_THROW( std::string(&quot;Can't load &quot;) + xmlSceneFile +
+<span class="lineNum">     404 </span>            :                   std::string( &quot;. QT5CORE not supported&quot; ));
+<span class="lineNum">     405 </span>            : #endif // NSOL_USE_QT5CORE
+<span class="lineNum">     406 </span>            : 
+<span class="lineNum">     407 </span><span class="lineCov">          4 :     }</span>
+<span class="lineNum">     408 </span>            : 
+<span class="lineNum">     409 </span>            : 
+<span class="lineNum">     410 </span>            :   }; // class XmlSceneReader
+<span class="lineNum">     411 </span>            : 
+<span class="lineNum">     412 </span>            : } // namespace nsol
+<span class="lineNum">     413 </span>            : 
+<span class="lineNum">     414 </span>            : #endif // __NSOL__XML_SCENE_READER__
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

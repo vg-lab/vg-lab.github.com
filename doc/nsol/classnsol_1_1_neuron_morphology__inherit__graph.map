@@ -1,0 +1,5 @@
+<map id="nsol::NeuronMorphology" name="nsol::NeuronMorphology">
+<area shape="rect" id="node3" href="$classnsol_1_1_neuron_morphology_stats.html" title="This class allows to compute stats for sections. " alt="" coords="31,564,241,685"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="45,5,227,215"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neuron_morphology_cached_stats.html" title="This class allows to cache the stats for neuronmorphologys. " alt="" coords="5,733,267,899"/>
+</map>

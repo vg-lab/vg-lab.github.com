@@ -1,0 +1,5 @@
+<map id="nsol::XmlSceneReader::loadXml" name="nsol::XmlSceneReader::loadXml">
+<area shape="rect" id="node2" href="$classnsol_1_1_column.html#a379ee5c10e1a3df331c7fac161d2e0a0" title="Method to add a mini column. " alt="" coords="217,5,428,32"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_mini_column.html#aa7acdaf6a1123ff50b538df0ee47af34" title="Method to add a neuron. " alt="" coords="218,56,427,83"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_log.html#a6a6ec07043dc22077331ebc692ae0dc5" title="Method to log out a message in a specific level. " alt="" coords="269,107,376,133"/>
+</map>

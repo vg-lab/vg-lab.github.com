@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - nsol - nsol/Section.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">nsol</a> - Section.h<span style="font-size: 80%;"> (source / <a href="Section.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">nsol</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2017-10-26 20:08:19</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*</a>
+<span class="lineNum">       2 </span>            :  * Copyright (c) 2014-2017 GMRV/URJC.
+<span class="lineNum">       3 </span>            :  *
+<span class="lineNum">       4 </span>            :  * Authors: Pablo Toharia &lt;pablo.toharia@urjc.es&gt;
+<span class="lineNum">       5 </span>            :  *
+<span class="lineNum">       6 </span>            :  * This file is part of nsol &lt;https://github.com/gmrvvis/nsol&gt;
+<span class="lineNum">       7 </span>            :  *
+<span class="lineNum">       8 </span>            :  * This library is free software; you can redistribute it and/or modify it under
+<span class="lineNum">       9 </span>            :  * the terms of the GNU Lesser General Public License version 3.0 as published
+<span class="lineNum">      10 </span>            :  * by the Free Software Foundation.
+<span class="lineNum">      11 </span>            :  *
+<span class="lineNum">      12 </span>            :  * This library is distributed in the hope that it will be useful, but WITHOUT
+<span class="lineNum">      13 </span>            :  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+<span class="lineNum">      14 </span>            :  * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+<span class="lineNum">      15 </span>            :  * details.
+<span class="lineNum">      16 </span>            :  *
+<span class="lineNum">      17 </span>            :  * You should have received a copy of the GNU Lesser General Public License
+<span class="lineNum">      18 </span>            :  * along with this library; if not, write to the Free Software Foundation, Inc.,
+<span class="lineNum">      19 </span>            :  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+<span class="lineNum">      20 </span>            :  *
+<span class="lineNum">      21 </span>            :  */
+<span class="lineNum">      22 </span>            : #ifndef __NSOL_SECTION__
+<span class="lineNum">      23 </span>            : #define __NSOL_SECTION__
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span>            : #include &lt;nsol/api.h&gt;
+<span class="lineNum">      26 </span>            : #include &quot;error.h&quot;
+<span class="lineNum">      27 </span>            : #include &quot;NsolTypes.h&quot;
+<span class="lineNum">      28 </span>            : #include &quot;Container/Sections.h&quot;
+<span class="lineNum">      29 </span>            : #include &quot;Container/Nodes.h&quot;
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            : namespace nsol
+<span class="lineNum">      32 </span>            : {
+<span class="lineNum">      33 </span>            : 
+<a name="34"><span class="lineNum">      34 </span>            :   class SectionStats;</a>
+<span class="lineNum">      35 </span>            : 
+<span class="lineNum">      36 </span><span class="lineCov">          3 :   class Section</span>
+<span class="lineNum">      37 </span>            :     : public virtual Object
+<span class="lineNum">      38 </span>            :   {
+<span class="lineNum">      39 </span>            : 
+<span class="lineNum">      40 </span>            :   public:
+<span class="lineNum">      41 </span>            : 
+<span class="lineNum">      42 </span>            :     /**
+<span class="lineNum">      43 </span>            :      * Default constructor
+<span class="lineNum">      44 </span>            :      */
+<span class="lineNum">      45 </span>            :     NSOL_API
+<span class="lineNum">      46 </span>            :     Section( void );
+<span class="lineNum">      47 </span>            : 
+<span class="lineNum">      48 </span>            :     /**
+<span class="lineNum">      49 </span>            :      * Default destructor
+<span class="lineNum">      50 </span>            :      */
+<span class="lineNum">      51 </span>            :     NSOL_API
+<span class="lineNum">      52 </span>            :     virtual ~Section( );
+<span class="lineNum">      53 </span>            : 
+<span class="lineNum">      54 </span>            :     /**
+<span class="lineNum">      55 </span>            :      * Method to get the gid of the section.
+<span class="lineNum">      56 </span>            :      * @return gid
+<span class="lineNum">      57 </span>            :      */
+<span class="lineNum">      58 </span>            :     NSOL_API
+<span class="lineNum">      59 </span>            :     unsigned int id( void );
+<span class="lineNum">      60 </span>            : 
+<span class="lineNum">      61 </span>            :     /**
+<span class="lineNum">      62 </span>            :      * Method to set the gid of the section.
+<span class="lineNum">      63 </span>            :      * @param id_ New gid of the section
+<span class="lineNum">      64 </span>            :      */
+<span class="lineNum">      65 </span>            :     NSOL_API
+<span class="lineNum">      66 </span>            :     void id (unsigned int id_ );
+<span class="lineNum">      67 </span>            : 
+<span class="lineNum">      68 </span>            :     /**
+<span class="lineNum">      69 </span>            :      * Gets the parent Neurite of the Section
+<span class="lineNum">      70 </span>            :      * @return pointer to the parent Neurite
+<span class="lineNum">      71 </span>            :      */
+<span class="lineNum">      72 </span>            :     NSOL_API
+<span class="lineNum">      73 </span>            :     NeuritePtr neurite( void );
+<span class="lineNum">      74 </span>            : 
+<span class="lineNum">      75 </span>            :     /**
+<span class="lineNum">      76 </span>            :      * Sets the parent neurite of this Section
+<span class="lineNum">      77 </span>            :      * @param neurite pointer to parent neurite
+<span class="lineNum">      78 </span>            :      */
+<span class="lineNum">      79 </span>            :     NSOL_API
+<span class="lineNum">      80 </span>            :     void neurite( NeuritePtr neurite );
+<span class="lineNum">      81 </span>            : 
+<span class="lineNum">      82 </span>            :     /**
+<span class="lineNum">      83 </span>            :      * Gets the parent Section of this Section
+<span class="lineNum">      84 </span>            :      * @return pointer to the parent Section
+<span class="lineNum">      85 </span>            :      */
+<span class="lineNum">      86 </span>            :     NSOL_API
+<span class="lineNum">      87 </span>            :     SectionPtr parent( void );
+<span class="lineNum">      88 </span>            : 
+<span class="lineNum">      89 </span>            :     /**
+<span class="lineNum">      90 </span>            :      * Sets the parent Section of this Section
+<span class="lineNum">      91 </span>            :      * @param parent pointer to parent Section
+<span class="lineNum">      92 </span>            :      */
+<span class="lineNum">      93 </span>            :     NSOL_API
+<span class="lineNum">      94 </span>            :     void parent( SectionPtr parent );
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span>            :     /**
+<span class="lineNum">      97 </span>            :      * Adds child Section to this Section
+<span class="lineNum">      98 </span>            :      * @param section pointer to the section to be added
+<span class="lineNum">      99 </span>            :      */
+<span class="lineNum">     100 </span>            :     NSOL_API
+<span class="lineNum">     101 </span>            :     void addChild( SectionPtr section );
+<span class="lineNum">     102 </span>            : 
+<span class="lineNum">     103 </span>            :     /**
+<span class="lineNum">     104 </span>            :      * Return the children sections
+<span class="lineNum">     105 </span>            :      * @return container of children sections
+<span class="lineNum">     106 </span>            :      */
+<span class="lineNum">     107 </span>            :     NSOL_API
+<span class="lineNum">     108 </span>            :     Sections &amp; children( void );
+<span class="lineNum">     109 </span>            : 
+<span class="lineNum">     110 </span>            :     NSOL_API
+<span class="lineNum">     111 </span>            :     const Sections &amp; children( void ) const;
+<span class="lineNum">     112 </span>            : 
+<span class="lineNum">     113 </span>            :     /**
+<span class="lineNum">     114 </span>            :      * Return the middle Nodes
+<span class="lineNum">     115 </span>            :      * @return container of middle Nodes
+<span class="lineNum">     116 </span>            :      */
+<span class="lineNum">     117 </span>            :     NSOL_API
+<span class="lineNum">     118 </span>            :     Nodes &amp; nodes( void );
+<span class="lineNum">     119 </span>            : 
+<span class="lineNum">     120 </span>            :     NSOL_API
+<span class="lineNum">     121 </span>            :     const Nodes &amp; nodes( void ) const;
+<span class="lineNum">     122 </span>            : 
+<span class="lineNum">     123 </span>            :     /**
+<span class="lineNum">     124 </span>            :      * Adds a node at the end of this section
+<span class="lineNum">     125 </span>            :      * @param node pointer to the Node to add.
+<span class="lineNum">     126 </span>            :      *        Precondition: pointer is not null.
+<span class="lineNum">     127 </span>            :      */
+<span class="lineNum">     128 </span>            :     NSOL_API
+<span class="lineNum">     129 </span>            :     virtual void addNode( NodePtr node );
+<span class="lineNum">     130 </span>            : 
+<span class="lineNum">     131 </span>            :     /**
+<span class="lineNum">     132 </span>            :      * Gets the first Node of the Section.
+<span class="lineNum">     133 </span>            :      * @return pointer to the first Node, null in case it doesn't have any
+<span class="lineNum">     134 </span>            :      */
+<span class="lineNum">     135 </span>            :     NSOL_API
+<span class="lineNum">     136 </span>            :     NodePtr firstNode( void );
+<span class="lineNum">     137 </span>            : 
+<span class="lineNum">     138 </span>            :     /**
+<span class="lineNum">     139 </span>            :      * Sets first Node of the Section. This method is virtual to allow
+<span class="lineNum">     140 </span>            :      * reimplementation for cached objects and dirty state propagation
+<span class="lineNum">     141 </span>            :      * @param firstNode pointer to the Node.
+<span class="lineNum">     142 </span>            :      */
+<span class="lineNum">     143 </span>            :     NSOL_API
+<span class="lineNum">     144 </span>            :     virtual void firstNode( NodePtr firstNode );
+<span class="lineNum">     145 </span>            : 
+<span class="lineNum">     146 </span>            :     /**
+<span class="lineNum">     147 </span>            :      * Gets the last Node of the Section.
+<span class="lineNum">     148 </span>            :      * @return pointer to the first Node, null in case it doesn't have any
+<span class="lineNum">     149 </span>            :      */
+<span class="lineNum">     150 </span>            :     NSOL_API
+<span class="lineNum">     151 </span>            :     NodePtr lastNode( void );
+<span class="lineNum">     152 </span>            : 
+<span class="lineNum">     153 </span>            :     /**
+<span class="lineNum">     154 </span>            :      * Returns object as SectionStats
+<span class="lineNum">     155 </span>            :      * @return pointer to SectionStats object
+<span class="lineNum">     156 </span>            :      */
+<span class="lineNum">     157 </span>            :     NSOL_API
+<span class="lineNum">     158 </span>            :     virtual SectionStats * stats( void );
+<span class="lineNum">     159 </span>            : 
+<span class="lineNum">     160 </span>            :     NSOL_API
+<span class="lineNum">     161 </span>            :     virtual SectionPtr clone( void ) const;
+<span class="lineNum">     162 </span>            : 
+<span class="lineNum">     163 </span>            :     NSOL_API
+<span class="lineNum">     164 </span>            :     bool operator == ( Section &amp; other ) const;
+<span class="lineNum">     165 </span>            : 
+<span class="lineNum">     166 </span>            :     NSOL_API
+<span class="lineNum">     167 </span>            :     bool operator != ( Section &amp; other ) const;
+<a name="168"><span class="lineNum">     168 </span>            : </a>
+<span class="lineNum">     169 </span>            :     NSOL_API
+<span class="lineNum">     170 </span><span class="lineCov">          1 :     virtual SectionPtr asSection( void )</span>
+<span class="lineNum">     171 </span>            :     {
+<span class="lineNum">     172 </span><span class="lineCov">          1 :       return this;</span>
+<span class="lineNum">     173 </span>            :     }
+<span class="lineNum">     174 </span>            : 
+<span class="lineNum">     175 </span>            :   protected:
+<span class="lineNum">     176 </span>            : 
+<span class="lineNum">     177 </span>            :     //! Unique id
+<span class="lineNum">     178 </span>            :     unsigned int _id;
+<span class="lineNum">     179 </span>            : 
+<span class="lineNum">     180 </span>            :     //! Parent neurite of the section
+<span class="lineNum">     181 </span>            :     NeuritePtr _neurite;
+<span class="lineNum">     182 </span>            : 
+<span class="lineNum">     183 </span>            :     //! Parent section of this section
+<span class="lineNum">     184 </span>            :     SectionPtr _parent;
+<span class="lineNum">     185 </span>            : 
+<span class="lineNum">     186 </span>            :     //! Container of the childrens sections of this section
+<span class="lineNum">     187 </span>            :     Sections _children;
+<span class="lineNum">     188 </span>            : 
+<span class="lineNum">     189 </span>            :     //! Container of the middle nodes of this section
+<span class="lineNum">     190 </span>            :     Nodes _nodes;
+<span class="lineNum">     191 </span>            : 
+<span class="lineNum">     192 </span>            : 
+<span class="lineNum">     193 </span>            :   }; // class Section
+<span class="lineNum">     194 </span>            : 
+<span class="lineNum">     195 </span>            : } // namespace nsol
+<span class="lineNum">     196 </span>            : 
+<span class="lineNum">     197 </span>            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
