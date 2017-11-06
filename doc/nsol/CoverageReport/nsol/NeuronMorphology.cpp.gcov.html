@@ -31,18 +31,18 @@
             <td class="headerValue">nsol</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">88</td>
+            <td class="headerCovTableEntry">92</td>
             <td class="headerCovTableEntry">94</td>
-            <td class="headerCovTableEntryHi">93.6 %</td>
+            <td class="headerCovTableEntryHi">97.9 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2017-10-30 19:03:48</td>
+            <td class="headerValue">2017-11-06 16:54:57</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntry">24</td>
             <td class="headerCovTableEntry">25</td>
-            <td class="headerCovTableEntryHi">92.0 %</td>
+            <td class="headerCovTableEntryHi">96.0 %</td>
           </tr>
           <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
         </table>
@@ -93,11 +93,11 @@
 <span class="lineNum">      31 </span>            : 
 <a name="32"><span class="lineNum">      32 </span><span class="lineCov">          8 :   }</span></a>
 <span class="lineNum">      33 </span>            : 
-<span class="lineNum">      34 </span><span class="lineCov">       1408 :   NeuronMorphology::NeuronMorphology( SomaPtr soma_ )</span>
-<span class="lineNum">      35 </span><span class="lineCov">       1408 :     : _soma( soma_ )</span>
+<span class="lineNum">      34 </span><span class="lineCov">       1410 :   NeuronMorphology::NeuronMorphology( SomaPtr soma_ )</span>
+<span class="lineNum">      35 </span><span class="lineCov">       1410 :     : _soma( soma_ )</span>
 <span class="lineNum">      36 </span>            :   {
 <span class="lineNum">      37 </span>            : 
-<a name="38"><span class="lineNum">      38 </span><span class="lineCov">       1408 :   }</span></a>
+<a name="38"><span class="lineNum">      38 </span><span class="lineCov">       1410 :   }</span></a>
 <span class="lineNum">      39 </span>            : 
 <span class="lineNum">      40 </span><span class="lineCov">         20 :   NeuronMorphology::~NeuronMorphology( void )</span>
 <span class="lineNum">      41 </span>            :   {
@@ -119,11 +119,11 @@
 <span class="lineNum">      57 </span>            :   }
 <a name="58"><span class="lineNum">      58 </span>            : </a>
 <span class="lineNum">      59 </span>            :   NeuritePtr
-<span class="lineNum">      60 </span><span class="lineCov">         55 :   NeuronMorphology::addNeurite( NeuritePtr neurite_ )</span>
+<span class="lineNum">      60 </span><span class="lineCov">         61 :   NeuronMorphology::addNeurite( NeuritePtr neurite_ )</span>
 <span class="lineNum">      61 </span>            :   {
-<span class="lineNum">      62 </span><span class="lineCov">         55 :     NSOL_DEBUG_CHECK( neurite_, &quot;neurite is null&quot; );</span>
-<span class="lineNum">      63 </span><span class="lineCov">         55 :     _neurites.push_back( neurite_ );</span>
-<span class="lineNum">      64 </span><span class="lineCov">         55 :     return neurite_;</span>
+<span class="lineNum">      62 </span><span class="lineCov">         61 :     NSOL_DEBUG_CHECK( neurite_, &quot;neurite is null&quot; );</span>
+<span class="lineNum">      63 </span><span class="lineCov">         61 :     _neurites.push_back( neurite_ );</span>
+<span class="lineNum">      64 </span><span class="lineCov">         61 :     return neurite_;</span>
 <a name="65"><span class="lineNum">      65 </span>            :   }</a>
 <span class="lineNum">      66 </span>            : 
 <span class="lineNum">      67 </span><span class="lineCov">          1 :   Dendrites * NeuronMorphology::dendrites( void ) const</span>
@@ -200,9 +200,9 @@
 <span class="lineNum">     138 </span>            :   }
 <a name="139"><span class="lineNum">     139 </span>            : </a>
 <span class="lineNum">     140 </span>            : 
-<span class="lineNum">     141 </span><span class="lineCov">         71 :   Neurites &amp; NeuronMorphology::neurites( void )</span>
+<span class="lineNum">     141 </span><span class="lineCov">         72 :   Neurites &amp; NeuronMorphology::neurites( void )</span>
 <span class="lineNum">     142 </span>            :   {
-<span class="lineNum">     143 </span><span class="lineCov">         71 :     return _neurites;</span>
+<span class="lineNum">     143 </span><span class="lineCov">         72 :     return _neurites;</span>
 <a name="144"><span class="lineNum">     144 </span>            :   }</a>
 <span class="lineNum">     145 </span>            : 
 <span class="lineNum">     146 </span><span class="lineCov">          1 :   const Neurites &amp; NeuronMorphology::neurites( void ) const</span>
@@ -220,22 +220,22 @@
 <span class="lineNum">     158 </span><span class="lineCov">          1 :     return _parentNeurons;</span>
 <a name="159"><span class="lineNum">     159 </span>            :   }</a>
 <span class="lineNum">     160 </span>            : 
-<span class="lineNum">     161 </span><span class="lineNoCov">          0 :   void NeuronMorphology::addParentNeuron( NeuronPtr neuron )</span>
+<span class="lineNum">     161 </span><span class="lineCov">          1 :   void NeuronMorphology::addParentNeuron( NeuronPtr neuron )</span>
 <span class="lineNum">     162 </span>            :   {
 <span class="lineNum">     163 </span>            :     Neurons::iterator neuronIt =
 <span class="lineNum">     164 </span>            :       std::find ( _parentNeurons.begin( ),
 <span class="lineNum">     165 </span>            :                   _parentNeurons.end( ),
-<span class="lineNum">     166 </span><span class="lineNoCov">          0 :                   neuron );</span>
+<span class="lineNum">     166 </span><span class="lineCov">          1 :                   neuron );</span>
 <span class="lineNum">     167 </span>            : 
-<span class="lineNum">     168 </span><span class="lineNoCov">          0 :     if ( neuronIt != _parentNeurons.end( ))</span>
+<span class="lineNum">     168 </span><span class="lineCov">          1 :     if ( neuronIt != _parentNeurons.end( ))</span>
 <span class="lineNum">     169 </span><span class="lineNoCov">          0 :       _parentNeurons.push_back( neuron );</span>
 <span class="lineNum">     170 </span>            : 
 <span class="lineNum">     171 </span>            : 
-<a name="172"><span class="lineNum">     172 </span><span class="lineNoCov">          0 :   }</span></a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          1 :   }</span></a>
 <span class="lineNum">     173 </span>            : 
-<span class="lineNum">     174 </span><span class="lineCov">         71 :   SomaPtr NeuronMorphology::soma( void )</span>
+<span class="lineNum">     174 </span><span class="lineCov">         78 :   SomaPtr NeuronMorphology::soma( void )</span>
 <span class="lineNum">     175 </span>            :   {
-<span class="lineNum">     176 </span><span class="lineCov">         71 :     return _soma;</span>
+<span class="lineNum">     176 </span><span class="lineCov">         78 :     return _soma;</span>
 <a name="177"><span class="lineNum">     177 </span>            :   }</a>
 <span class="lineNum">     178 </span>            : 
 <span class="lineNum">     179 </span><span class="lineCov">          4 :   NeuronMorphologyPtr NeuronMorphology::clone( void ) const</span>

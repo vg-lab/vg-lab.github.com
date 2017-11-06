@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2017-10-30 19:03:48</td>
+            <td class="headerValue">2017-11-06 16:54:57</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">21</td>
@@ -91,15 +91,15 @@
 <span class="lineNum">      29 </span>            : {
 <a name="30"><span class="lineNum">      30 </span>            : </a>
 <span class="lineNum">      31 </span>            :   //! Default constructor
-<span class="lineNum">      32 </span><span class="lineCov">         68 :   Neurite::Neurite( TNeuriteType initNeuriteType )</span>
+<span class="lineNum">      32 </span><span class="lineCov">         74 :   Neurite::Neurite( TNeuriteType initNeuriteType )</span>
 <span class="lineNum">      33 </span>            :     : _neuriteType( initNeuriteType )
 <span class="lineNum">      34 </span>            :     , _firstSection( nullptr)
 <span class="lineNum">      35 </span>            :     , _morphology( nullptr )
 <span class="lineNum">      36 </span>            :     , _numBranches( 0 )
-<span class="lineNum">      37 </span><span class="lineCov">         68 :     , _numBifurcations( 0 )</span>
+<span class="lineNum">      37 </span><span class="lineCov">         74 :     , _numBifurcations( 0 )</span>
 <span class="lineNum">      38 </span>            :   {
 <span class="lineNum">      39 </span>            :     // std::cout &lt;&lt; &quot;Neurite constructor &quot; &lt;&lt; _neuriteType &lt;&lt; std::endl;
-<span class="lineNum">      40 </span><span class="lineCov">         68 :   }</span>
+<span class="lineNum">      40 </span><span class="lineCov">         74 :   }</span>
 <a name="41"><span class="lineNum">      41 </span>            : </a>
 <span class="lineNum">      42 </span>            : 
 <span class="lineNum">      43 </span><span class="lineCov">         33 :   Neurite::~Neurite( )</span>
@@ -135,10 +135,10 @@
 <span class="lineNum">      73 </span><span class="lineCov">          1 :     return _morphology;</span>
 <a name="74"><span class="lineNum">      74 </span>            :   }</a>
 <span class="lineNum">      75 </span>            : 
-<span class="lineNum">      76 </span><span class="lineCov">         55 :   NeuronMorphologyPtr Neurite::morphology(</span>
+<span class="lineNum">      76 </span><span class="lineCov">         61 :   NeuronMorphologyPtr Neurite::morphology(</span>
 <span class="lineNum">      77 </span>            :     NeuronMorphologyPtr newMorphology )
 <span class="lineNum">      78 </span>            :   {
-<span class="lineNum">      79 </span><span class="lineCov">         55 :     return _morphology = newMorphology;</span>
+<span class="lineNum">      79 </span><span class="lineCov">         61 :     return _morphology = newMorphology;</span>
 <a name="80"><span class="lineNum">      80 </span>            :   }</a>
 <span class="lineNum">      81 </span>            : 
 <span class="lineNum">      82 </span><span class="lineCov">          1 :   bool Neurite::hasMorphology( ) const</span>
@@ -146,73 +146,73 @@
 <span class="lineNum">      84 </span><span class="lineCov">          1 :     return ( _morphology != nullptr );</span>
 <a name="85"><span class="lineNum">      85 </span>            :   }</a>
 <span class="lineNum">      86 </span>            : 
-<span class="lineNum">      87 </span><span class="lineCov">        482 :   SectionPtr Neurite::firstSection( void ) const</span>
+<span class="lineNum">      87 </span><span class="lineCov">        548 :   SectionPtr Neurite::firstSection( void ) const</span>
 <span class="lineNum">      88 </span>            :   {
-<span class="lineNum">      89 </span><span class="lineCov">        482 :     return _firstSection;</span>
+<span class="lineNum">      89 </span><span class="lineCov">        548 :     return _firstSection;</span>
 <a name="90"><span class="lineNum">      90 </span>            :   }</a>
 <span class="lineNum">      91 </span>            : 
-<span class="lineNum">      92 </span><span class="lineCov">         59 :   void Neurite::firstSection(SectionPtr section)</span>
+<span class="lineNum">      92 </span><span class="lineCov">         65 :   void Neurite::firstSection(SectionPtr section)</span>
 <span class="lineNum">      93 </span>            :   {
-<span class="lineNum">      94 </span><span class="lineCov">         59 :     _firstSection = section;</span>
-<a name="95"><span class="lineNum">      95 </span><span class="lineCov">         59 :   }</span></a>
+<span class="lineNum">      94 </span><span class="lineCov">         65 :     _firstSection = section;</span>
+<a name="95"><span class="lineNum">      95 </span><span class="lineCov">         65 :   }</span></a>
 <span class="lineNum">      96 </span>            : 
-<span class="lineNum">      97 </span><span class="lineCov">        187 :   Sections Neurite::sections( void ) const</span>
+<span class="lineNum">      97 </span><span class="lineCov">        190 :   Sections Neurite::sections( void ) const</span>
 <span class="lineNum">      98 </span>            :   {
-<span class="lineNum">      99 </span><span class="lineCov">        187 :     Sections sections_; // = new Sections;</span>
-<span class="lineNum">     100 </span><span class="lineCov">        374 :     std::stack&lt;SectionPtr&gt; sectionsToProcess;</span>
-<span class="lineNum">     101 </span><span class="lineCov">        187 :     sectionsToProcess.push( _firstSection );</span>
+<span class="lineNum">      99 </span><span class="lineCov">        190 :     Sections sections_; // = new Sections;</span>
+<span class="lineNum">     100 </span><span class="lineCov">        380 :     std::stack&lt;SectionPtr&gt; sectionsToProcess;</span>
+<span class="lineNum">     101 </span><span class="lineCov">        190 :     sectionsToProcess.push( _firstSection );</span>
 <span class="lineNum">     102 </span>            : 
-<span class="lineNum">     103 </span><span class="lineCov">       3969 :     while ( ! sectionsToProcess.empty( ))</span>
+<span class="lineNum">     103 </span><span class="lineCov">       4038 :     while ( ! sectionsToProcess.empty( ))</span>
 <span class="lineNum">     104 </span>            :     {
-<span class="lineNum">     105 </span><span class="lineCov">       1891 :       SectionPtr section  = sectionsToProcess.top( );</span>
-<span class="lineNum">     106 </span><span class="lineCov">       1891 :       sectionsToProcess.pop( );</span>
-<span class="lineNum">     107 </span><span class="lineCov">       1891 :       sections_.push_back( section );</span>
+<span class="lineNum">     105 </span><span class="lineCov">       1924 :       SectionPtr section  = sectionsToProcess.top( );</span>
+<span class="lineNum">     106 </span><span class="lineCov">       1924 :       sectionsToProcess.pop( );</span>
+<span class="lineNum">     107 </span><span class="lineCov">       1924 :       sections_.push_back( section );</span>
 <span class="lineNum">     108 </span>            : 
-<span class="lineNum">     109 </span><span class="lineCov">      10785 :       for ( auto childrenIt = section-&gt;children( ).begin( );</span>
-<span class="lineNum">     110 </span><span class="lineCov">       7190 :            childrenIt != section-&gt;children( ).end( ); childrenIt++ )</span>
-<span class="lineNum">     111 </span><span class="lineCov">       1704 :         sectionsToProcess.push( * childrenIt );</span>
+<span class="lineNum">     109 </span><span class="lineCov">      10974 :       for ( auto childrenIt = section-&gt;children( ).begin( );</span>
+<span class="lineNum">     110 </span><span class="lineCov">       7316 :            childrenIt != section-&gt;children( ).end( ); childrenIt++ )</span>
+<span class="lineNum">     111 </span><span class="lineCov">       1734 :         sectionsToProcess.push( * childrenIt );</span>
 <span class="lineNum">     112 </span>            :     }
 <span class="lineNum">     113 </span>            : 
-<span class="lineNum">     114 </span><span class="lineCov">        374 :     return sections_;</span>
+<span class="lineNum">     114 </span><span class="lineCov">        380 :     return sections_;</span>
 <a name="115"><span class="lineNum">     115 </span>            :   }</a>
 <span class="lineNum">     116 </span>            : 
-<span class="lineNum">     117 </span><span class="lineCov">         92 :   void Neurite::computeBranchBifurcations( void )</span>
+<span class="lineNum">     117 </span><span class="lineCov">         98 :   void Neurite::computeBranchBifurcations( void )</span>
 <span class="lineNum">     118 </span>            :   {
-<span class="lineNum">     119 </span><span class="lineCov">         92 :     unsigned int numBranchs = 0;</span>
-<span class="lineNum">     120 </span><span class="lineCov">         92 :     unsigned int numBifur = 0;</span>
-<span class="lineNum">     121 </span><span class="lineCov">        184 :     std::stack&lt;SectionPtr&gt; sPS;</span>
+<span class="lineNum">     119 </span><span class="lineCov">         98 :     unsigned int numBranchs = 0;</span>
+<span class="lineNum">     120 </span><span class="lineCov">         98 :     unsigned int numBifur = 0;</span>
+<span class="lineNum">     121 </span><span class="lineCov">        196 :     std::stack&lt;SectionPtr&gt; sPS;</span>
 <span class="lineNum">     122 </span>            : 
-<span class="lineNum">     123 </span><span class="lineCov">         92 :     if( _firstSection )</span>
-<span class="lineNum">     124 </span><span class="lineCov">         90 :       sPS.push(_firstSection);</span>
+<span class="lineNum">     123 </span><span class="lineCov">         98 :     if( _firstSection )</span>
+<span class="lineNum">     124 </span><span class="lineCov">         96 :       sPS.push(_firstSection);</span>
 <span class="lineNum">     125 </span>            : 
-<span class="lineNum">     126 </span><span class="lineCov">       1832 :     while (!sPS.empty( ))</span>
+<span class="lineNum">     126 </span><span class="lineCov">       1970 :     while (!sPS.empty( ))</span>
 <span class="lineNum">     127 </span>            :     {
-<span class="lineNum">     128 </span><span class="lineCov">        870 :       SectionPtr lS = sPS.top( );</span>
-<span class="lineNum">     129 </span><span class="lineCov">        870 :       sPS.pop( );</span>
-<span class="lineNum">     130 </span><span class="lineCov">       4950 :       for (Sections::iterator child = lS-&gt;children( ).begin( );</span>
-<span class="lineNum">     131 </span><span class="lineCov">       3300 :            child != lS-&gt;children( ).end( ); child++)</span>
+<span class="lineNum">     128 </span><span class="lineCov">        936 :       SectionPtr lS = sPS.top( );</span>
+<span class="lineNum">     129 </span><span class="lineCov">        936 :       sPS.pop( );</span>
+<span class="lineNum">     130 </span><span class="lineCov">       5328 :       for (Sections::iterator child = lS-&gt;children( ).begin( );</span>
+<span class="lineNum">     131 </span><span class="lineCov">       3552 :            child != lS-&gt;children( ).end( ); child++)</span>
 <span class="lineNum">     132 </span>            :       {
-<span class="lineNum">     133 </span><span class="lineCov">        780 :         numBranchs++;</span>
-<span class="lineNum">     134 </span><span class="lineCov">        780 :         numBifur += ( unsigned int ) lS-&gt;children( ).size( );</span>
+<span class="lineNum">     133 </span><span class="lineCov">        840 :         numBranchs++;</span>
+<span class="lineNum">     134 </span><span class="lineCov">        840 :         numBifur += ( unsigned int ) lS-&gt;children( ).size( );</span>
 <span class="lineNum">     135 </span>            : 
-<span class="lineNum">     136 </span><span class="lineCov">        780 :         sPS.push(*child);</span>
+<span class="lineNum">     136 </span><span class="lineCov">        840 :         sPS.push(*child);</span>
 <span class="lineNum">     137 </span>            :       }
 <span class="lineNum">     138 </span>            :     }
 <span class="lineNum">     139 </span>            : 
-<span class="lineNum">     140 </span><span class="lineCov">         92 :     _numBranches = numBranchs;</span>
-<span class="lineNum">     141 </span><span class="lineCov">         92 :     _numBifurcations = numBifur;</span>
-<a name="142"><span class="lineNum">     142 </span><span class="lineCov">         92 :   }</span></a>
+<span class="lineNum">     140 </span><span class="lineCov">         98 :     _numBranches = numBranchs;</span>
+<span class="lineNum">     141 </span><span class="lineCov">         98 :     _numBifurcations = numBifur;</span>
+<a name="142"><span class="lineNum">     142 </span><span class="lineCov">         98 :   }</span></a>
 <span class="lineNum">     143 </span>            : 
-<span class="lineNum">     144 </span><span class="lineCov">         46 :   unsigned int Neurite::numBranches( void )</span>
+<span class="lineNum">     144 </span><span class="lineCov">         49 :   unsigned int Neurite::numBranches( void )</span>
 <span class="lineNum">     145 </span>            :   {
-<span class="lineNum">     146 </span><span class="lineCov">         46 :     computeBranchBifurcations( );</span>
-<span class="lineNum">     147 </span><span class="lineCov">         46 :     return _numBranches;</span>
+<span class="lineNum">     146 </span><span class="lineCov">         49 :     computeBranchBifurcations( );</span>
+<span class="lineNum">     147 </span><span class="lineCov">         49 :     return _numBranches;</span>
 <a name="148"><span class="lineNum">     148 </span>            :   }</a>
 <span class="lineNum">     149 </span>            : 
-<span class="lineNum">     150 </span><span class="lineCov">         46 :   unsigned int Neurite::numBifurcations( void )</span>
+<span class="lineNum">     150 </span><span class="lineCov">         49 :   unsigned int Neurite::numBifurcations( void )</span>
 <span class="lineNum">     151 </span>            :   {
-<span class="lineNum">     152 </span><span class="lineCov">         46 :     computeBranchBifurcations( );</span>
-<span class="lineNum">     153 </span><span class="lineCov">         46 :     return _numBifurcations;</span>
+<span class="lineNum">     152 </span><span class="lineCov">         49 :     computeBranchBifurcations( );</span>
+<span class="lineNum">     153 </span><span class="lineCov">         49 :     return _numBifurcations;</span>
 <a name="154"><span class="lineNum">     154 </span>            :   }</a>
 <span class="lineNum">     155 </span>            : 
 <span class="lineNum">     156 </span><span class="lineCov">          1 :   NeuriteStats * Neurite::stats( void )</span>
@@ -276,15 +276,15 @@
 <span class="lineNum">     214 </span><span class="lineCov">          4 :     return ! ( *this == other );</span>
 <a name="215"><span class="lineNum">     215 </span>            :   }</a>
 <span class="lineNum">     216 </span>            : 
-<span class="lineNum">     217 </span><span class="lineCov">        212 :   void Neurite::_addBifurcationCount( unsigned int newNumBifurcations )</span>
+<span class="lineNum">     217 </span><span class="lineCov">        242 :   void Neurite::_addBifurcationCount( unsigned int newNumBifurcations )</span>
 <span class="lineNum">     218 </span>            :   {
-<span class="lineNum">     219 </span><span class="lineCov">        212 :     _numBifurcations += newNumBifurcations;</span>
-<a name="220"><span class="lineNum">     220 </span><span class="lineCov">        212 :   }</span></a>
+<span class="lineNum">     219 </span><span class="lineCov">        242 :     _numBifurcations += newNumBifurcations;</span>
+<a name="220"><span class="lineNum">     220 </span><span class="lineCov">        242 :   }</span></a>
 <span class="lineNum">     221 </span>            : 
-<span class="lineNum">     222 </span><span class="lineCov">        212 :   void Neurite::_addBranchCount( unsigned int newNumBranches )</span>
+<span class="lineNum">     222 </span><span class="lineCov">        242 :   void Neurite::_addBranchCount( unsigned int newNumBranches )</span>
 <span class="lineNum">     223 </span>            :   {
-<span class="lineNum">     224 </span><span class="lineCov">        212 :     _numBranches += newNumBranches;</span>
-<a name="225"><span class="lineNum">     225 </span><span class="lineCov">        212 :   }</span></a>
+<span class="lineNum">     224 </span><span class="lineCov">        242 :     _numBranches += newNumBranches;</span>
+<a name="225"><span class="lineNum">     225 </span><span class="lineCov">        242 :   }</span></a>
 <span class="lineNum">     226 </span>            : 
 <span class="lineNum">     227 </span><span class="lineCov">         66 : } // namespace nsol</span>
 <span class="lineNum">     228 </span>            : 
