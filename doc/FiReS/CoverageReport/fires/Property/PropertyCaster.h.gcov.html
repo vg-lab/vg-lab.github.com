@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2017-10-26 20:10:58</td>
+            <td class="headerValue">2017-11-07 14:40:32</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">11</td>
@@ -188,9 +188,9 @@
 <span class="lineNum">     126 </span>            :   {
 <span class="lineNum">     127 </span>            :   public:
 <span class="lineNum">     128 </span>            : 
-<span class="lineNum">     129 </span>            :     EnumPropertyCaster( const std::map&lt; T, std::string &gt;&amp; scalarToString )
+<span class="lineNum">     129 </span>            :     EnumPropertyCaster( const std::map&lt; T, std::string &gt;&amp; scalarToString_ )
 <span class="lineNum">     130 </span>            :     {
-<span class="lineNum">     131 </span>            :       _scalarToString = scalarToString;
+<span class="lineNum">     131 </span>            :       _scalarToString = scalarToString_;
 <span class="lineNum">     132 </span>            :       for ( const auto pair : _scalarToString )
 <span class="lineNum">     133 </span>            :         _stringToScalar[ pair.second ] = pair.first;
 <span class="lineNum">     134 </span>            :     }
