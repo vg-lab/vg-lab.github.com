@@ -1,6 +1,6 @@
 set(FIRES_MATURITY "EP")
 set(FIRES_DESCRIPTION "")
-set(FIRES_GIT_ROOT_URL "https://gitlab-ci-token:3qVrejoi9iSsiJo8E4yZ@gitlab.gmrv.es/jespa/FiReS.git")
+set(FIRES_GIT_ROOT_URL "https://gitlab-ci-token:G1zVQAKPAauwTvw5covn@gitlab.gmrv.es/retrieval/FiReS.git")
 set(FIRES_PACKAGE_URL "")
 set(FIRES_CI_URL "")
 set(FIRES_CI_PNG "")
