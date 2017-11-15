@@ -1,9 +1,5 @@
 <map id="nsol::Section" name="nsol::Section">
-<area shape="rect" id="node7" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="316,919,540,1201"/>
-<area shape="rect" id="node2" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="329,316,511,525"/>
-<area shape="rect" id="node8" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="173,632,352,856"/>
-<area shape="rect" id="node3" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="351,132,449,209"/>
-<area shape="rect" id="node9" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="178,272,305,569"/>
-<area shape="rect" id="node5" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="646,382,757,459"/>
-<area shape="rect" id="node10" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="43,382,154,459"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="5,132,188,341"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="212,198,309,275"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="371,198,481,275"/>
 </map>

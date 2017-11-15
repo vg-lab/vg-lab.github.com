@@ -28,6 +28,9 @@ var annotated_dup =
       [ "Neuron", "classnsol_1_1_neuron.html", "classnsol_1_1_neuron" ],
       [ "NeuronMorphology", "classnsol_1_1_neuron_morphology.html", "classnsol_1_1_neuron_morphology" ],
       [ "NeuronMorphologyCachedStats", "classnsol_1_1_neuron_morphology_cached_stats.html", "classnsol_1_1_neuron_morphology_cached_stats" ],
+      [ "NeuronMorphologySection", "classnsol_1_1_neuron_morphology_section.html", "classnsol_1_1_neuron_morphology_section" ],
+      [ "NeuronMorphologySectionCachedStats", "classnsol_1_1_neuron_morphology_section_cached_stats.html", "classnsol_1_1_neuron_morphology_section_cached_stats" ],
+      [ "NeuronMorphologySectionStats", "classnsol_1_1_neuron_morphology_section_stats.html", "classnsol_1_1_neuron_morphology_section_stats" ],
       [ "NeuronMorphologyStats", "classnsol_1_1_neuron_morphology_stats.html", "classnsol_1_1_neuron_morphology_stats" ],
       [ "NeuronsMap", "classnsol_1_1_neurons_map.html", "classnsol_1_1_neurons_map" ],
       [ "Node", "classnsol_1_1_node.html", "classnsol_1_1_node" ],
@@ -36,9 +39,7 @@ var annotated_dup =
       [ "Object", "classnsol_1_1_object.html", "classnsol_1_1_object" ],
       [ "ObjectWithProperties", "classnsol_1_1_object_with_properties.html", "classnsol_1_1_object_with_properties" ],
       [ "Section", "classnsol_1_1_section.html", "classnsol_1_1_section" ],
-      [ "SectionCachedStats", "classnsol_1_1_section_cached_stats.html", "classnsol_1_1_section_cached_stats" ],
       [ "Sections", "classnsol_1_1_sections.html", null ],
-      [ "SectionStats", "classnsol_1_1_section_stats.html", "classnsol_1_1_section_stats" ],
       [ "SegmentStats", "classnsol_1_1_segment_stats.html", "classnsol_1_1_segment_stats" ],
       [ "Simplifier", "classnsol_1_1_simplifier.html", "classnsol_1_1_simplifier" ],
       [ "Soma", "classnsol_1_1_soma.html", "classnsol_1_1_soma" ],
@@ -51,5 +52,7 @@ var annotated_dup =
       [ "Version", "classnsol_1_1_version.html", "classnsol_1_1_version" ],
       [ "XmlSceneReader", "classnsol_1_1_xml_scene_reader.html", "classnsol_1_1_xml_scene_reader" ],
       [ "XmlSceneWriter", "classnsol_1_1_xml_scene_writer.html", "classnsol_1_1_xml_scene_writer" ]
-    ] ]
+    ] ],
+    [ "SectionCachedStats", "class_section_cached_stats.html", null ],
+    [ "SectionStats", "class_section_stats.html", null ]
 ];

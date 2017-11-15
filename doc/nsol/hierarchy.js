@@ -6,8 +6,8 @@ var hierarchy =
         [ "nsol::DendriteCachedStats", "classnsol_1_1_dendrite_cached_stats.html", null ]
       ] ],
       [ "nsol::NeuronMorphologyCachedStats", "classnsol_1_1_neuron_morphology_cached_stats.html", null ],
-      [ "nsol::NodeCached", "classnsol_1_1_node_cached.html", null ],
-      [ "nsol::SectionCachedStats", "classnsol_1_1_section_cached_stats.html", null ]
+      [ "nsol::NeuronMorphologySectionCachedStats", "classnsol_1_1_neuron_morphology_section_cached_stats.html", null ],
+      [ "nsol::NodeCached", "classnsol_1_1_node_cached.html", null ]
     ] ],
     [ "nsol::Cached< TYPE >", "classnsol_1_1_cached.html", null ],
     [ "nsol::Circuit", "classnsol_1_1_circuit.html", null ],
@@ -49,8 +49,10 @@ var hierarchy =
       ] ],
       [ "nsol::ObjectWithProperties", "classnsol_1_1_object_with_properties.html", null ],
       [ "nsol::Section", "classnsol_1_1_section.html", [
-        [ "nsol::SectionStats", "classnsol_1_1_section_stats.html", [
-          [ "nsol::SectionCachedStats", "classnsol_1_1_section_cached_stats.html", null ]
+        [ "nsol::NeuronMorphologySection", "classnsol_1_1_neuron_morphology_section.html", [
+          [ "nsol::NeuronMorphologySectionStats", "classnsol_1_1_neuron_morphology_section_stats.html", [
+            [ "nsol::NeuronMorphologySectionCachedStats", "classnsol_1_1_neuron_morphology_section_cached_stats.html", null ]
+          ] ]
         ] ]
       ] ]
     ] ],
@@ -81,6 +83,8 @@ var hierarchy =
       [ "nsol::Nodes", "classnsol_1_1_nodes.html", null ],
       [ "nsol::Sections", "classnsol_1_1_sections.html", null ]
     ] ],
+    [ "SectionCachedStats", "class_section_cached_stats.html", null ],
+    [ "SectionStats", "class_section_stats.html", null ],
     [ "std::unordered_map< K, T >", null, [
       [ "nsol::NeuronsMap", "classnsol_1_1_neurons_map.html", null ]
     ] ],

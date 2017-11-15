@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2017-11-07 15:56:42</td>
+            <td class="headerValue">2017-11-15 12:14:08</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -86,7 +86,7 @@
 <span class="lineNum">      24 </span>            : 
 <span class="lineNum">      25 </span>            : #include &lt;nsol/api.h&gt;
 <span class="lineNum">      26 </span>            : #include &quot;NsolTypes.h&quot;
-<span class="lineNum">      27 </span>            : #include &quot;Section.h&quot;
+<span class="lineNum">      27 </span>            : #include &quot;NeuronMorphologySection.h&quot;
 <span class="lineNum">      28 </span>            : 
 <span class="lineNum">      29 </span>            : #include &lt;stack&gt;
 <span class="lineNum">      30 </span>            : 
@@ -103,7 +103,7 @@
 <span class="lineNum">      41 </span>            :   {
 <span class="lineNum">      42 </span>            : 
 <span class="lineNum">      43 </span>            :     template&lt; class NODE,
-<span class="lineNum">      44 </span>            :               class SECTION,
+<span class="lineNum">      44 </span>            :               class NEURONMORPHOLOGYSECTION,
 <span class="lineNum">      45 </span>            :               class DENDRITE,
 <span class="lineNum">      46 </span>            :               class AXON,
 <span class="lineNum">      47 </span>            :               class SOMA,
@@ -157,10 +157,10 @@
 <span class="lineNum">      95 </span>            :     bool hasMorphology( void ) const;
 <span class="lineNum">      96 </span>            : 
 <span class="lineNum">      97 </span>            :     NSOL_API
-<span class="lineNum">      98 </span>            :     SectionPtr firstSection( void ) const ;
+<span class="lineNum">      98 </span>            :     NeuronMorphologySectionPtr firstSection( void ) const ;
 <span class="lineNum">      99 </span>            : 
 <span class="lineNum">     100 </span>            :     NSOL_API
-<span class="lineNum">     101 </span>            :     virtual void firstSection( SectionPtr section );
+<span class="lineNum">     101 </span>            :     virtual void firstSection( NeuronMorphologySectionPtr section );
 <span class="lineNum">     102 </span>            : 
 <span class="lineNum">     103 </span>            :     NSOL_API
 <span class="lineNum">     104 </span>            :     Sections sections( void ) const;
@@ -201,7 +201,7 @@
 <span class="lineNum">     139 </span>            : 
 <span class="lineNum">     140 </span>            :     TNeuriteType _neuriteType;
 <span class="lineNum">     141 </span>            : 
-<span class="lineNum">     142 </span>            :     SectionPtr _firstSection;
+<span class="lineNum">     142 </span>            :     NeuronMorphologySectionPtr _firstSection;
 <span class="lineNum">     143 </span>            : 
 <span class="lineNum">     144 </span>            :     NeuronMorphologyPtr _morphology;
 <span class="lineNum">     145 </span>            : 

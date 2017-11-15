@@ -4,7 +4,7 @@ var searchData=
   ['cached_3c_3e',['Cached&lt;&gt;',['../classnsol_1_1_cached.html',1,'nsol']]],
   ['center',['center',['../classnsol_1_1_soma.html#a8fb8e725fe4b512a04e6e4eac0db2881',1,'nsol::Soma::center(void) const '],['../classnsol_1_1_soma.html#a540afed616858657bfc461c0c263c989',1,'nsol::Soma::center(const Vec3f &amp;center_)']]],
   ['check',['check',['../classnsol_1_1_version.html#ac3f6ad57df27748839df3db0e52c821b',1,'nsol::Version']]],
-  ['children',['children',['../classnsol_1_1_section.html#a1483ea21d5db6b163d66411414ee6db8',1,'nsol::Section']]],
+  ['children',['children',['../classnsol_1_1_neuron_morphology_section.html#abc31d472107d4609a7f6e721860fed7f',1,'nsol::NeuronMorphologySection']]],
   ['circuit',['Circuit',['../classnsol_1_1_circuit.html#aaac4e810e4908e635c44e464a301e29c',1,'nsol::Circuit']]],
   ['circuit',['Circuit',['../classnsol_1_1_circuit.html',1,'nsol']]],
   ['circuits',['Circuits',['../classnsol_1_1_circuits.html',1,'nsol']]],

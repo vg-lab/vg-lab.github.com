@@ -1,7 +1,7 @@
 var searchData=
 [
   ['neurite',['Neurite',['../classnsol_1_1_neurite.html',1,'nsol']]],
-  ['neurite',['neurite',['../classnsol_1_1_section.html#a4ae0b980b5a0b063bd8cc5427c048d98',1,'nsol::Section::neurite(void)'],['../classnsol_1_1_section.html#ac5468f98e495dbe99fc66e6f9021f755',1,'nsol::Section::neurite(NeuritePtr neurite)'],['../classnsol_1_1_neurite.html#a06b28c1cfac8493aa413104819a3286c',1,'nsol::Neurite::Neurite()']]],
+  ['neurite',['Neurite',['../classnsol_1_1_neurite.html#a06b28c1cfac8493aa413104819a3286c',1,'nsol::Neurite::Neurite()'],['../classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632',1,'nsol::NeuronMorphologySection::neurite(void)'],['../classnsol_1_1_neuron_morphology_section.html#a8f247a49470bb7e4b365ba32ada106c3',1,'nsol::NeuronMorphologySection::neurite(NeuritePtr neurite_)']]],
   ['neuritecachedstats',['NeuriteCachedStats',['../classnsol_1_1_neurite_cached_stats.html',1,'nsol']]],
   ['neuritecachedstats',['NeuriteCachedStats',['../classnsol_1_1_neurite_cached_stats.html#a3d4fa476544ba2ed08e9eacbe0681d6d',1,'nsol::NeuriteCachedStats']]],
   ['neurites',['Neurites',['../classnsol_1_1_neurites.html',1,'nsol']]],
@@ -13,6 +13,11 @@ var searchData=
   ['neuronmorphology',['NeuronMorphology',['../classnsol_1_1_neuron_morphology.html',1,'nsol']]],
   ['neuronmorphologycachedstats',['NeuronMorphologyCachedStats',['../classnsol_1_1_neuron_morphology_cached_stats.html#aace5eb8efca2735dd5c0b3dd1dfe6666',1,'nsol::NeuronMorphologyCachedStats']]],
   ['neuronmorphologycachedstats',['NeuronMorphologyCachedStats',['../classnsol_1_1_neuron_morphology_cached_stats.html',1,'nsol']]],
+  ['neuronmorphologysection',['NeuronMorphologySection',['../classnsol_1_1_neuron_morphology_section.html',1,'nsol']]],
+  ['neuronmorphologysection',['NeuronMorphologySection',['../classnsol_1_1_neuron_morphology_section.html#ac888dcb7c03bf7011ad6941f7f480f4f',1,'nsol::NeuronMorphologySection']]],
+  ['neuronmorphologysectioncachedstats',['NeuronMorphologySectionCachedStats',['../classnsol_1_1_neuron_morphology_section_cached_stats.html',1,'nsol']]],
+  ['neuronmorphologysectioncachedstats',['NeuronMorphologySectionCachedStats',['../classnsol_1_1_neuron_morphology_section_cached_stats.html#a2defd0642dc11bacbb5d264e11569425',1,'nsol::NeuronMorphologySectionCachedStats']]],
+  ['neuronmorphologysectionstats',['NeuronMorphologySectionStats',['../classnsol_1_1_neuron_morphology_section_stats.html',1,'nsol']]],
   ['neuronmorphologystats',['NeuronMorphologyStats',['../classnsol_1_1_neuron_morphology_stats.html',1,'nsol']]],
   ['neurons',['neurons',['../classnsol_1_1_mini_column.html#aa3763a6d12e098a7b4125f7687c91bdf',1,'nsol::MiniColumn::neurons(void)'],['../classnsol_1_1_mini_column.html#adfe3e57aa061ca4733b0497137dd1975',1,'nsol::MiniColumn::neurons(void) const ']]],
   ['neuronsmap',['NeuronsMap',['../classnsol_1_1_neurons_map.html',1,'nsol']]],

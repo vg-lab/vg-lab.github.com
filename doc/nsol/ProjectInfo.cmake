@@ -1,6 +1,6 @@
 set(NSOL_MATURITY "EP")
 set(NSOL_DESCRIPTION "Nsol - Neuroscience Objects Library")
-set(NSOL_GIT_ROOT_URL "https://gitlab-ci-token:myRz5z3mCAjxz7Hs_9r5@gitlab.gmrv.es/nsviz/nsol.git")
+set(NSOL_GIT_ROOT_URL "https://gitlab-ci-token:bc1Qx4nmjQWESV9dHiYV@gitlab.gmrv.es/nsviz/nsol.git")
 set(NSOL_PACKAGE_URL "")
 set(NSOL_CI_URL "")
 set(NSOL_CI_PNG "")

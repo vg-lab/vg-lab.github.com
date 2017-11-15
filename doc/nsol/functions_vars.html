@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">nsol
-   &#160;<span id="projectnumber">0.2.0</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Nsol - Neuroscience Objects Library</div>
   </td>
@@ -124,11 +124,11 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 &#160;
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_backwardSections
+: <a class="el" href="classnsol_1_1_section.html#a3567956d3db2e163631b9f9dba9b93fa">nsol::Section</a>
+</li>
 <li>_center
 : <a class="el" href="classnsol_1_1_soma.html#adf3df4825e75b6bbb91eea736ba389cd">nsol::Soma</a>
-</li>
-<li>_children
-: <a class="el" href="classnsol_1_1_section.html#aa89bdbe28e8377d0b38d457862364107">nsol::Section</a>
 </li>
 <li>_circuit
 : <a class="el" href="classnsol_1_1_data_set.html#ab04ef6414e126bc686e932d80584f356">nsol::DataSet</a>
@@ -142,6 +142,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>_dendriteType
 : <a class="el" href="classnsol_1_1_dendrite.html#a2e952e6f4b5b6e339d57c4a50df215d7">nsol::Dendrite</a>
 </li>
+<li>_forwardSections
+: <a class="el" href="classnsol_1_1_section.html#aaed70c00f198a70c256ab5cf034b8d65">nsol::Section</a>
+</li>
 <li>_functionalType
 : <a class="el" href="classnsol_1_1_neuron.html#a4ef13478ab3b6f046f4b5f488c8d8381">nsol::Neuron</a>
 </li>
@@ -151,7 +154,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>_id
 : <a class="el" href="classnsol_1_1_column.html#a73f9542b72de036ab284a66b16d5949a">nsol::Column</a>
 , <a class="el" href="classnsol_1_1_mini_column.html#a6fea3852e82821e11cfbcb9b90dd7dbf">nsol::MiniColumn</a>
-, <a class="el" href="classnsol_1_1_section.html#a26015adb64b0a09a46ac645cc5041ea2">nsol::Section</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#aad1c955878b8cd6f7e25d6cfe44e2b31">nsol::NeuronMorphologySection</a>
 </li>
 <li>_layer
 : <a class="el" href="classnsol_1_1_neuron.html#aa51c2376a5fa63c19ac5c18d3f4b6b8c">nsol::Neuron</a>
@@ -184,7 +187,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classnsol_1_1_neuron.html#a6e8c7eb6388f45f15f0c5be672c425c5">nsol::Neuron</a>
 </li>
 <li>_neurite
-: <a class="el" href="classnsol_1_1_section.html#a31058e1b26b443eace043d1a141312b4">nsol::Section</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a7f8a891edcc01c21c2b19459f1d74718">nsol::NeuronMorphologySection</a>
 </li>
 <li>_neurons
 : <a class="el" href="classnsol_1_1_data_set.html#a9fc18e1a984c2961923de201a86eb20f">nsol::DataSet</a>
@@ -194,9 +197,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classnsol_1_1_section.html#a734421ce18effb11e0b0819645101253">nsol::Section</a>
 , <a class="el" href="classnsol_1_1_soma.html#a414c55ff618fdab0020850106f2f55e4">nsol::Soma</a>
 </li>
-<li>_parent
-: <a class="el" href="classnsol_1_1_section.html#a1f13b14108565f24f27ad8453d46e72b">nsol::Section</a>
-</li>
 <li>_postSynapticConnections
 : <a class="el" href="classnsol_1_1_circuit.html#abdd67c2f2a10a7e44f16db6a0a510231">nsol::Circuit</a>
 </li>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classnsol_1_1_synapse.html#a9a87e64d755819fdee95c0c1f159474b">nsol::Synapse</a>
 </li>
 <li>_postSynapticSection
-: <a class="el" href="classnsol_1_1_morphology_synapse.html#aee6b604d63f44473ba78d5e0b4f7027b">nsol::MorphologySynapse</a>
+: <a class="el" href="classnsol_1_1_morphology_synapse.html#a3bfe8dd82fd434e602c123ec121c14bb">nsol::MorphologySynapse</a>
 </li>
 <li>_postSynapticSurfacePosition
 : <a class="el" href="classnsol_1_1_morphology_synapse.html#a911793a9ad2b67577c4af466cabda944">nsol::MorphologySynapse</a>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classnsol_1_1_synapse.html#a34d6d7f8f62e3161077c7401d0e7e84a">nsol::Synapse</a>
 </li>
 <li>_preSynapticSection
-: <a class="el" href="classnsol_1_1_morphology_synapse.html#a0a310464840036bfd14886df7a34415f">nsol::MorphologySynapse</a>
+: <a class="el" href="classnsol_1_1_morphology_synapse.html#ab7dc8d95d05c44fe26ec13085e73544d">nsol::MorphologySynapse</a>
 </li>
 <li>_preSynapticSurfacePosition
 : <a class="el" href="classnsol_1_1_morphology_synapse.html#aeddd685156eb258e92796f1ce8bf7190">nsol::MorphologySynapse</a>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 7 2017 15:56:44 for nsol by
+    <li class="footer">Generated on Wed Nov 15 2017 12:14:10 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

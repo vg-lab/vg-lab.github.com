@@ -2,7 +2,7 @@ var searchData=
 [
   ['center',['center',['../classnsol_1_1_soma.html#a8fb8e725fe4b512a04e6e4eac0db2881',1,'nsol::Soma::center(void) const '],['../classnsol_1_1_soma.html#a540afed616858657bfc461c0c263c989',1,'nsol::Soma::center(const Vec3f &amp;center_)']]],
   ['check',['check',['../classnsol_1_1_version.html#ac3f6ad57df27748839df3db0e52c821b',1,'nsol::Version']]],
-  ['children',['children',['../classnsol_1_1_section.html#a1483ea21d5db6b163d66411414ee6db8',1,'nsol::Section']]],
+  ['children',['children',['../classnsol_1_1_neuron_morphology_section.html#abc31d472107d4609a7f6e721860fed7f',1,'nsol::NeuronMorphologySection']]],
   ['circuit',['Circuit',['../classnsol_1_1_circuit.html#aaac4e810e4908e635c44e464a301e29c',1,'nsol::Circuit']]],
   ['clear',['clear',['../classnsol_1_1_circuit.html#afd0ec5cfe28ba26432930e9f9cca3d0b',1,'nsol::Circuit']]],
   ['clearminicolumns',['clearMiniColumns',['../classnsol_1_1_column.html#acad36437f8a03d9833fa66df0696d9b2',1,'nsol::Column']]],

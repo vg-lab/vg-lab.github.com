@@ -27,8 +27,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classnsol_1_1_morphology_synapse.html#a8e6e5b9dc8f939c50f18ed7c3d09e123",
-"classnsol_1_1_section_stats.html#ae488dcaabfe61d5fa9c49b3cd4ad23b6a8f88776c6898cd757f578e9ddfd3e8a3"
+"classnsol_1_1_morphology_synapse.html#a3cc10831993149af6631d016187ad204",
+"classnsol_1_1_section.html#a033f65dcaf822bc386f4fb5a008ac403"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

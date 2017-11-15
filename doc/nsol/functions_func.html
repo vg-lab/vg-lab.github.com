@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">nsol
-   &#160;<span id="projectnumber">0.2.0</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Nsol - Neuroscience Objects Library</div>
   </td>
@@ -145,11 +145,26 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>adaptSoma()
 : <a class="el" href="classnsol_1_1_simplifier.html#ad41d5e4fe55525b59fdb3dcaba2f169e">nsol::Simplifier</a>
 </li>
+<li>addBackwardNeighbour()
+: <a class="el" href="classnsol_1_1_section.html#a3952bb1dc196bbba0dde5d11dd79b14a">nsol::Section</a>
+</li>
+<li>addBackwardNode()
+: <a class="el" href="classnsol_1_1_section.html#afc711f8fb3346aa3f7245056dc5aff88">nsol::Section</a>
+</li>
 <li>addChild()
-: <a class="el" href="classnsol_1_1_section.html#a09c958eac9113e18ee9dc60d67366bdf">nsol::Section</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f">nsol::NeuronMorphologySection</a>
+</li>
+<li>addForwardNeighbour()
+: <a class="el" href="classnsol_1_1_section.html#a033f65dcaf822bc386f4fb5a008ac403">nsol::Section</a>
+</li>
+<li>addForwardNode()
+: <a class="el" href="classnsol_1_1_section.html#aa28f449c9e1639f82a2fb2e0ad35b24f">nsol::Section</a>
 </li>
 <li>addMiniColumn()
 : <a class="el" href="classnsol_1_1_column.html#a379ee5c10e1a3df331c7fac161d2e0a0">nsol::Column</a>
+</li>
+<li>addNeighbour()
+: <a class="el" href="classnsol_1_1_section.html#ad4844c9fa2e3a6e1ab8d4b2f9627f31a">nsol::Section</a>
 </li>
 <li>addNeurite()
 : <a class="el" href="classnsol_1_1_neuron_morphology.html#ae17e7244522c1d4eb43dc71c14af7e73">nsol::NeuronMorphology</a>
@@ -158,8 +173,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classnsol_1_1_mini_column.html#aa7acdaf6a1123ff50b538df0ee47af34">nsol::MiniColumn</a>
 </li>
 <li>addNode()
-: <a class="el" href="classnsol_1_1_section.html#acdaaf4ca2b043af770e2832ffd452175">nsol::Section</a>
-, <a class="el" href="classnsol_1_1_section_cached_stats.html#abfe3891715a00845c7dc97eb5f357952">nsol::SectionCachedStats</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de">nsol::NeuronMorphologySection</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section_cached_stats.html#addb84a22b47468a71be92125a01e3e0a">nsol::NeuronMorphologySectionCachedStats</a>
 , <a class="el" href="classnsol_1_1_soma.html#a1f26090e46683c07a19b24c54de89455">nsol::Soma</a>
 </li>
 <li>addSynapse()
@@ -178,6 +193,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>backwardNeighbors()
+: <a class="el" href="classnsol_1_1_section.html#a6c315e760a69b9e573ac5445b6afeca0">nsol::Section</a>
+</li>
+<li>backwardNode()
+: <a class="el" href="classnsol_1_1_section.html#a19876923087b4445fb168c912bf427fc">nsol::Section</a>
+</li>
 <li>basalDendrites()
 : <a class="el" href="classnsol_1_1_neuron_morphology.html#af6df4ff3284339176ec79ebdfd717431">nsol::NeuronMorphology</a>
 </li>
@@ -192,7 +213,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classnsol_1_1_version.html#ac3f6ad57df27748839df3db0e52c821b">nsol::Version</a>
 </li>
 <li>children()
-: <a class="el" href="classnsol_1_1_section.html#a1483ea21d5db6b163d66411414ee6db8">nsol::Section</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#abc31d472107d4609a7f6e721860fed7f">nsol::NeuronMorphologySection</a>
 </li>
 <li>Circuit()
 : <a class="el" href="classnsol_1_1_circuit.html#aaac4e810e4908e635c44e464a301e29c">nsol::Circuit</a>
@@ -230,11 +251,17 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>firstNode()
-: <a class="el" href="classnsol_1_1_section.html#af2414a45a1e0e796269952510e86622c">nsol::Section</a>
-, <a class="el" href="classnsol_1_1_section_cached_stats.html#a4b87303495e4953e0d424bfa6ab14bf5">nsol::SectionCachedStats</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc">nsol::NeuronMorphologySection</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section_cached_stats.html#a7b18c3b5a402583cf0be8a5adfd16293">nsol::NeuronMorphologySectionCachedStats</a>
 </li>
 <li>firstSection()
-: <a class="el" href="classnsol_1_1_neurite_cached_stats.html#a3a250ff50d756b437c3f1846fa8b1860">nsol::NeuriteCachedStats</a>
+: <a class="el" href="classnsol_1_1_neurite_cached_stats.html#aa0d96c2a3b8df0b8c1ca8e4e80c767fe">nsol::NeuriteCachedStats</a>
+</li>
+<li>forwardNeighbors()
+: <a class="el" href="classnsol_1_1_section.html#adeb5f9bbd6a130312910851d66f00f3d">nsol::Section</a>
+</li>
+<li>forwardNode()
+: <a class="el" href="classnsol_1_1_section.html#a98e12fcd1446fe1cb842cc3f2fd1e73b">nsol::Section</a>
 </li>
 <li>functionalType()
 : <a class="el" href="classnsol_1_1_neuron.html#adfde6cb81c44b191c3adbfe78c339c0c">nsol::Neuron</a>
@@ -281,7 +308,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>id()
 : <a class="el" href="classnsol_1_1_column.html#aab583fea99852e1f1b0b0726c5f02c96">nsol::Column</a>
 , <a class="el" href="classnsol_1_1_mini_column.html#ab04343b7ecf1c40bdc7e86cdc10e5ab5">nsol::MiniColumn</a>
-, <a class="el" href="classnsol_1_1_section.html#a72cd94a19cd028b5c61cbd93ec68ce21">nsol::Section</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a798dceea16dcc83f61132d706ad3f1b8">nsol::NeuronMorphologySection</a>
 </li>
 <li>Instance()
 : <a class="el" href="classnsol_1_1_simplifier.html#a1b15df10d5813a588e37de4d4340bfec">nsol::Simplifier</a>
@@ -303,7 +330,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>lastNode()
-: <a class="el" href="classnsol_1_1_section.html#aa7b26d2c42b737492414b63265765a71">nsol::Section</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#aebb37c04fce43056ca2338cff6a3387d">nsol::NeuronMorphologySection</a>
 </li>
 <li>layer()
 : <a class="el" href="classnsol_1_1_neuron.html#a8b966e80f45c11f493a5c1497a1956a5">nsol::Neuron</a>
@@ -350,7 +377,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classnsol_1_1_neurite.html#a06b28c1cfac8493aa413104819a3286c">nsol::Neurite</a>
 </li>
 <li>neurite()
-: <a class="el" href="classnsol_1_1_section.html#ac5468f98e495dbe99fc66e6f9021f755">nsol::Section</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632">nsol::NeuronMorphologySection</a>
 </li>
 <li>NeuriteCachedStats()
 : <a class="el" href="classnsol_1_1_neurite_cached_stats.html#a3d4fa476544ba2ed08e9eacbe0681d6d">nsol::NeuriteCachedStats</a>
@@ -366,6 +393,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>NeuronMorphologyCachedStats()
 : <a class="el" href="classnsol_1_1_neuron_morphology_cached_stats.html#aace5eb8efca2735dd5c0b3dd1dfe6666">nsol::NeuronMorphologyCachedStats</a>
+</li>
+<li>NeuronMorphologySection()
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#ac888dcb7c03bf7011ad6941f7f480f4f">nsol::NeuronMorphologySection</a>
+</li>
+<li>NeuronMorphologySectionCachedStats()
+: <a class="el" href="classnsol_1_1_neuron_morphology_section_cached_stats.html#a2defd0642dc11bacbb5d264e11569425">nsol::NeuronMorphologySectionCachedStats</a>
 </li>
 <li>neurons()
 : <a class="el" href="classnsol_1_1_mini_column.html#aa3763a6d12e098a7b4125f7687c91bdf">nsol::MiniColumn</a>
@@ -389,13 +422,13 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>parent()
-: <a class="el" href="classnsol_1_1_section.html#a2e913e1b6634c506a539b365e636f1e6">nsol::Section</a>
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47">nsol::NeuronMorphologySection</a>
 </li>
 <li>postSynapticNeuron()
 : <a class="el" href="classnsol_1_1_synapse.html#ae4ee1b2a6ceaedae83d869124ce49ea5">nsol::Synapse</a>
 </li>
 <li>postSynapticSection()
-: <a class="el" href="classnsol_1_1_morphology_synapse.html#af86fb3a148d9ef09f93f9b99116cdabc">nsol::MorphologySynapse</a>
+: <a class="el" href="classnsol_1_1_morphology_synapse.html#a6bd6944c776575db9c3a8ecf31c58cff">nsol::MorphologySynapse</a>
 </li>
 <li>postSynapticSurfacePosition()
 : <a class="el" href="classnsol_1_1_morphology_synapse.html#a622be191d7f41382c1959d947430da57">nsol::MorphologySynapse</a>
@@ -404,7 +437,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classnsol_1_1_synapse.html#ad4260ff1384d1696ff75743a4fec6b11">nsol::Synapse</a>
 </li>
 <li>preSynapticSection()
-: <a class="el" href="classnsol_1_1_morphology_synapse.html#af68670db5178e2016c85a0117b1b69f4">nsol::MorphologySynapse</a>
+: <a class="el" href="classnsol_1_1_morphology_synapse.html#ad33d55bebbf37ed6df6ad9ef6fe94457">nsol::MorphologySynapse</a>
 </li>
 <li>preSynapticSurfacePosition()
 : <a class="el" href="classnsol_1_1_morphology_synapse.html#ae0cb8f3df155aff1e474e8335f0b3566">nsol::MorphologySynapse</a>
@@ -426,13 +459,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>Section()
 : <a class="el" href="classnsol_1_1_section.html#adb2a2aca170f535875a513a7cf1c0b2d">nsol::Section</a>
 </li>
-<li>SectionCachedStats()
-: <a class="el" href="classnsol_1_1_section_cached_stats.html#a5ebd746f794946d9c0d63c6bbe041fb3">nsol::SectionCachedStats</a>
-</li>
 <li>setAndPropagateDirty()
 : <a class="el" href="classnsol_1_1_neurite_cached_stats.html#a2a8e05f4fa40c53859946db8b8b90688">nsol::NeuriteCachedStats</a>
 , <a class="el" href="classnsol_1_1_neuron_morphology_cached_stats.html#a2db3acd4052170bb77a95ab48f25d0ac">nsol::NeuronMorphologyCachedStats</a>
-, <a class="el" href="classnsol_1_1_section_cached_stats.html#aed447ca12bc43ee5d69bd43053810804">nsol::SectionCachedStats</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section_cached_stats.html#ab6087d0dafb9d80449974a9c26df962e">nsol::NeuronMorphologySectionCachedStats</a>
 </li>
 <li>setLogLevel()
 : <a class="el" href="classnsol_1_1_log.html#ad7eac896b73396094a629d2476eb8425">nsol::Log</a>
@@ -460,9 +490,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="classnsol_1_1_mini_column_stats.html#ad19177be54ee76e59cf89c730150b537">nsol::MiniColumnStats</a>
 , <a class="el" href="classnsol_1_1_neurite.html#ad8d726344f722fd1f048e5953d25f6fc">nsol::Neurite</a>
 , <a class="el" href="classnsol_1_1_neurite_stats.html#a64fe3cdd2f15d9252f10fd4aef9356ef">nsol::NeuriteStats</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#af6453f9b41930c5a00d293552a185b37">nsol::NeuronMorphologySection</a>
+, <a class="el" href="classnsol_1_1_neuron_morphology_section_stats.html#a628a17bf9403640dd5bc92f2d9c6029f">nsol::NeuronMorphologySectionStats</a>
 , <a class="el" href="classnsol_1_1_neuron_morphology_stats.html#a03049607f9dc2d3cc2c0d88f48294f1c">nsol::NeuronMorphologyStats</a>
-, <a class="el" href="classnsol_1_1_section.html#a20eb849a2b5307b8a9a93afe65503cf6">nsol::Section</a>
-, <a class="el" href="classnsol_1_1_section_stats.html#a19ba8a4a20e2a1899728cb0d07a206e0">nsol::SectionStats</a>
 </li>
 <li>stream()
 : <a class="el" href="classnsol_1_1_log.html#acd48f4844b8c09d38722db136e0c8932">nsol::Log</a>
@@ -471,7 +501,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classnsol_1_1_synapse.html#adc4a39a74ed432f01d06dc7037bc726e">nsol::Synapse</a>
 </li>
 <li>synapses()
-: <a class="el" href="classnsol_1_1_circuit.html#a94538d202cb2ec895f9d115df16300f8">nsol::Circuit</a>
+: <a class="el" href="classnsol_1_1_circuit.html#a7246631669fd25ec5a3a8a531a8a0ef4">nsol::Circuit</a>
 </li>
 <li>synapseType()
 : <a class="el" href="classnsol_1_1_morphology_synapse.html#ab59e1a084bd529ce7e38f839ee27f292">nsol::MorphologySynapse</a>
@@ -518,11 +548,14 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>~NeuronMorphologyCachedStats()
 : <a class="el" href="classnsol_1_1_neuron_morphology_cached_stats.html#a88882b1d0d27d086b930cbd59200b32a">nsol::NeuronMorphologyCachedStats</a>
 </li>
+<li>~NeuronMorphologySection()
+: <a class="el" href="classnsol_1_1_neuron_morphology_section.html#add85fa692ab96f97fe31688f487dfb90">nsol::NeuronMorphologySection</a>
+</li>
+<li>~NeuronMorphologySectionCachedStats()
+: <a class="el" href="classnsol_1_1_neuron_morphology_section_cached_stats.html#a5070ed72cbd14154e330194ad396610e">nsol::NeuronMorphologySectionCachedStats</a>
+</li>
 <li>~Section()
 : <a class="el" href="classnsol_1_1_section.html#a2022425618ee4205a187e29868184593">nsol::Section</a>
-</li>
-<li>~SectionCachedStats()
-: <a class="el" href="classnsol_1_1_section_cached_stats.html#af77d6cd158c7979fa6f5e16b4add23c6">nsol::SectionCachedStats</a>
 </li>
 <li>~Soma()
 : <a class="el" href="classnsol_1_1_soma.html#a2d9187a6012b4b4d80541f739ff61cab">nsol::Soma</a>
@@ -539,7 +572,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 7 2017 15:56:44 for nsol by
+    <li class="footer">Generated on Wed Nov 15 2017 12:14:10 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

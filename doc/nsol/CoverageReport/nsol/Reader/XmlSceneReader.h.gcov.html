@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2017-11-07 15:56:42</td>
+            <td class="headerValue">2017-11-15 12:14:08</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -116,7 +116,7 @@
 <span class="lineNum">      54 </span>            :      * @param morphologies morphologies to be read from XML files and linked in the Xml
 <span class="lineNum">      55 </span>            :      */
 <span class="lineNum">      56 </span>            :     template &lt; class NODE = Node,
-<span class="lineNum">      57 </span>            :                class SECTION = Section,
+<span class="lineNum">      57 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
 <span class="lineNum">      58 </span>            :                class DENDRITE = Dendrite,
 <span class="lineNum">      59 </span>            :                class AXON = Axon,
 <span class="lineNum">      60 </span>            :                class SOMA = Soma,
@@ -407,73 +407,75 @@
 <span class="lineNum">     345 </span><span class="lineCov">          7 :                     if ( morphologies.find( swc ) == morphologies.end( ))</span>
 <span class="lineNum">     346 </span>            :                     {
 <span class="lineNum">     347 </span>            : #ifdef NSOL_USE_BRION
-<span class="lineNum">     348 </span>            :                     BrionReaderTemplated&lt; NODE, SECTION, DENDRITE, AXON,
-<span class="lineNum">     349 </span>            :                                           SOMA, NEURONMORPHOLOGY, NEURON,
-<span class="lineNum">     350 </span>            :                                           MINICOLUMN, COLUMN &gt; brionReader;
-<span class="lineNum">     351 </span>            :                      neuronMorphology = brionReader.loadMorphology( swc );
-<span class="lineNum">     352 </span>            : #else
-<span class="lineNum">     353 </span>            :                      SwcReaderTemplated&lt; NODE, SECTION, DENDRITE, AXON, SOMA,
-<span class="lineNum">     354 </span>            :                                          NEURONMORPHOLOGY, NEURON&gt; swcReader;
-<span class="lineNum">     355 </span><span class="lineCov">          4 :                      neuronMorphology = swcReader.readMorphology( swc );</span>
-<span class="lineNum">     356 </span>            : #endif
-<span class="lineNum">     357 </span><span class="lineCov">          4 :                       if ( neuronMorphology )</span>
-<span class="lineNum">     358 </span><span class="lineCov">          4 :                         morphologies[ swc ] = neuronMorphology;</span>
-<span class="lineNum">     359 </span>            :                     }
-<span class="lineNum">     360 </span>            :                     else
-<span class="lineNum">     361 </span>            :                     {
-<span class="lineNum">     362 </span><span class="lineCov">          3 :                       neuronMorphology = morphologies[ swc ];</span>
-<span class="lineNum">     363 </span>            :                     }
-<span class="lineNum">     364 </span>            : 
-<span class="lineNum">     365 </span><span class="lineCov">          7 :                     if ( neuronMorphology )</span>
-<span class="lineNum">     366 </span>            :                     {
-<span class="lineNum">     367 </span>            : 
-<span class="lineNum">     368 </span>            :                       QStringList neurons_ =
-<span class="lineNum">     369 </span><span class="lineCov">         14 :                         attributes.value(&quot;neurons&quot;).toString( ).split(',');</span>
-<span class="lineNum">     370 </span><span class="lineCov">         23 :                       for ( const auto&amp; n : neurons_ )</span>
-<span class="lineNum">     371 </span>            :                       {
-<span class="lineNum">     372 </span><span class="lineCov">         16 :                         auto neuronFind = neuronsMap.find( n .toUInt( ));</span>
-<span class="lineNum">     373 </span><span class="lineCov">         16 :                         if( neuronFind != neuronsMap.end( ))</span>
-<span class="lineNum">     374 </span>            :                         {
-<span class="lineNum">     375 </span><span class="lineCov">         16 :                           NeuronPtr neuron = neuronFind-&gt;second;</span>
-<span class="lineNum">     376 </span><span class="lineCov">         16 :                           neuron-&gt;morphology( neuronMorphology );</span>
-<span class="lineNum">     377 </span><span class="lineCov">         16 :                           neuronMorphology-&gt;parentNeurons( ).push_back(</span>
-<span class="lineNum">     378 </span>            :                             neuron );
-<span class="lineNum">     379 </span>            :                         }
-<span class="lineNum">     380 </span>            :                       }
-<span class="lineNum">     381 </span>            :                     }
-<span class="lineNum">     382 </span>            :                     else
-<span class="lineNum">     383 </span>            :                     {
-<span class="lineNum">     384 </span><span class="lineNoCov">          0 :                       Log::log(</span>
-<span class="lineNum">     385 </span>            :                         std::string(
-<span class="lineNum">     386 </span>            :                           &quot;nsol warning (XmlSceneReader): morphology &quot; ) +
-<span class="lineNum">     387 </span>            :                         swc + std::string( &quot; could not be readed&quot; ),
-<span class="lineNum">     388 </span>            :                         LOG_LEVEL_WARNING );
-<span class="lineNum">     389 </span>            :                     }
-<span class="lineNum">     390 </span>            :                   } // if ( neuronMorphology )
-<span class="lineNum">     391 </span>            :                 }
-<span class="lineNum">     392 </span>            :               }
-<span class="lineNum">     393 </span>            :             }
-<span class="lineNum">     394 </span>            :           }
-<span class="lineNum">     395 </span>            :         }
-<span class="lineNum">     396 </span>            :         else
-<span class="lineNum">     397 </span><span class="lineNoCov">          0 :           NSOL_THROW( std::string( &quot;Element &lt;&quot; ) +</span>
-<span class="lineNum">     398 </span>            :                       xml.name( ).toString( ).toStdString( ) +
-<span class="lineNum">     399 </span>            :                       std::string( &quot;&gt; not expected&quot; ) );
-<span class="lineNum">     400 </span>            :       }
-<span class="lineNum">     401 </span>            : 
-<span class="lineNum">     402 </span>            : #else // NSOL_USE_QT5CORE
-<span class="lineNum">     403 </span>            :       NSOL_THROW( std::string(&quot;Can't load &quot;) + xmlSceneFile +
-<span class="lineNum">     404 </span>            :                   std::string( &quot;. QT5CORE not supported&quot; ));
-<span class="lineNum">     405 </span>            : #endif // NSOL_USE_QT5CORE
-<span class="lineNum">     406 </span>            : 
-<span class="lineNum">     407 </span><span class="lineCov">          4 :     }</span>
+<span class="lineNum">     348 </span>            :                     BrionReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION,
+<span class="lineNum">     349 </span>            :                                           DENDRITE, AXON, SOMA,
+<span class="lineNum">     350 </span>            :                                           NEURONMORPHOLOGY, NEURON,
+<span class="lineNum">     351 </span>            :                                           MINICOLUMN, COLUMN &gt; brionReader;
+<span class="lineNum">     352 </span>            :                      neuronMorphology = brionReader.loadMorphology( swc );
+<span class="lineNum">     353 </span>            : #else
+<span class="lineNum">     354 </span>            :                      SwcReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION,
+<span class="lineNum">     355 </span>            :                                          DENDRITE, AXON, SOMA,
+<span class="lineNum">     356 </span>            :                                          NEURONMORPHOLOGY, NEURON&gt; swcReader;
+<span class="lineNum">     357 </span><span class="lineCov">          4 :                      neuronMorphology = swcReader.readMorphology( swc );</span>
+<span class="lineNum">     358 </span>            : #endif
+<span class="lineNum">     359 </span><span class="lineCov">          4 :                       if ( neuronMorphology )</span>
+<span class="lineNum">     360 </span><span class="lineCov">          4 :                         morphologies[ swc ] = neuronMorphology;</span>
+<span class="lineNum">     361 </span>            :                     }
+<span class="lineNum">     362 </span>            :                     else
+<span class="lineNum">     363 </span>            :                     {
+<span class="lineNum">     364 </span><span class="lineCov">          3 :                       neuronMorphology = morphologies[ swc ];</span>
+<span class="lineNum">     365 </span>            :                     }
+<span class="lineNum">     366 </span>            : 
+<span class="lineNum">     367 </span><span class="lineCov">          7 :                     if ( neuronMorphology )</span>
+<span class="lineNum">     368 </span>            :                     {
+<span class="lineNum">     369 </span>            : 
+<span class="lineNum">     370 </span>            :                       QStringList neurons_ =
+<span class="lineNum">     371 </span><span class="lineCov">         14 :                         attributes.value(&quot;neurons&quot;).toString( ).split(',');</span>
+<span class="lineNum">     372 </span><span class="lineCov">         23 :                       for ( const auto&amp; n : neurons_ )</span>
+<span class="lineNum">     373 </span>            :                       {
+<span class="lineNum">     374 </span><span class="lineCov">         16 :                         auto neuronFind = neuronsMap.find( n .toUInt( ));</span>
+<span class="lineNum">     375 </span><span class="lineCov">         16 :                         if( neuronFind != neuronsMap.end( ))</span>
+<span class="lineNum">     376 </span>            :                         {
+<span class="lineNum">     377 </span><span class="lineCov">         16 :                           NeuronPtr neuron = neuronFind-&gt;second;</span>
+<span class="lineNum">     378 </span><span class="lineCov">         16 :                           neuron-&gt;morphology( neuronMorphology );</span>
+<span class="lineNum">     379 </span><span class="lineCov">         16 :                           neuronMorphology-&gt;parentNeurons( ).push_back(</span>
+<span class="lineNum">     380 </span>            :                             neuron );
+<span class="lineNum">     381 </span>            :                         }
+<span class="lineNum">     382 </span>            :                       }
+<span class="lineNum">     383 </span>            :                     }
+<span class="lineNum">     384 </span>            :                     else
+<span class="lineNum">     385 </span>            :                     {
+<span class="lineNum">     386 </span><span class="lineNoCov">          0 :                       Log::log(</span>
+<span class="lineNum">     387 </span>            :                         std::string(
+<span class="lineNum">     388 </span>            :                           &quot;nsol warning (XmlSceneReader): morphology &quot; ) +
+<span class="lineNum">     389 </span>            :                         swc + std::string( &quot; could not be readed&quot; ),
+<span class="lineNum">     390 </span>            :                         LOG_LEVEL_WARNING );
+<span class="lineNum">     391 </span>            :                     }
+<span class="lineNum">     392 </span>            :                   } // if ( neuronMorphology )
+<span class="lineNum">     393 </span>            :                 }
+<span class="lineNum">     394 </span>            :               }
+<span class="lineNum">     395 </span>            :             }
+<span class="lineNum">     396 </span>            :           }
+<span class="lineNum">     397 </span>            :         }
+<span class="lineNum">     398 </span>            :         else
+<span class="lineNum">     399 </span><span class="lineNoCov">          0 :           NSOL_THROW( std::string( &quot;Element &lt;&quot; ) +</span>
+<span class="lineNum">     400 </span>            :                       xml.name( ).toString( ).toStdString( ) +
+<span class="lineNum">     401 </span>            :                       std::string( &quot;&gt; not expected&quot; ) );
+<span class="lineNum">     402 </span>            :       }
+<span class="lineNum">     403 </span>            : 
+<span class="lineNum">     404 </span>            : #else // NSOL_USE_QT5CORE
+<span class="lineNum">     405 </span>            :       NSOL_THROW( std::string(&quot;Can't load &quot;) + xmlSceneFile +
+<span class="lineNum">     406 </span>            :                   std::string( &quot;. QT5CORE not supported&quot; ));
+<span class="lineNum">     407 </span>            : #endif // NSOL_USE_QT5CORE
 <span class="lineNum">     408 </span>            : 
-<span class="lineNum">     409 </span>            : 
-<span class="lineNum">     410 </span>            :   }; // class XmlSceneReader
+<span class="lineNum">     409 </span><span class="lineCov">          4 :     }</span>
+<span class="lineNum">     410 </span>            : 
 <span class="lineNum">     411 </span>            : 
-<span class="lineNum">     412 </span>            : } // namespace nsol
+<span class="lineNum">     412 </span>            :   }; // class XmlSceneReader
 <span class="lineNum">     413 </span>            : 
-<span class="lineNum">     414 </span>            : #endif // __NSOL__XML_SCENE_READER__
+<span class="lineNum">     414 </span>            : } // namespace nsol
+<span class="lineNum">     415 </span>            : 
+<span class="lineNum">     416 </span>            : #endif // __NSOL__XML_SCENE_READER__
 </pre>
       </td>
     </tr>

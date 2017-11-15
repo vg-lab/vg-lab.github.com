@@ -1,5 +1,6 @@
 <map id="nsol::Section" name="nsol::Section">
-<area shape="rect" id="node3" href="$classnsol_1_1_section_stats.html" title="This class allows to compute stats for sections. " alt="" coords="30,593,169,685"/>
-<area shape="rect" id="node2" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="8,5,191,215"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_section_cached_stats.html" title="This class allows to cache the stats for sections. " alt="" coords="5,733,193,899"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neuron_morphology_section.html" title="{nsol::NeuronMorphologySection\n|# _id\l# _neurite\l|+ NeuronMorphologySection()\l+ ~NeuronMorphologySection()\l+ id()\l+ id()\l+ neurite()\l+ neurite()\l+ parent()\l+ parent()\l+ addChild()\l+ children()\land 8 more...\l}" alt="" coords="19,564,246,803"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="41,5,224,215"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neuron_morphology_section_stats.html" title="{nsol::NeuronMorphologySection\lStats\n||+ stats()\l+ getStat()\l}" alt="" coords="20,851,245,957"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_neuron_morphology_section_cached_stats.html" title="{nsol::NeuronMorphologySection\lCachedStats\n||+ NeuronMorphologySectionCached\lStats()\l+ ~NeuronMorphologySection\lCachedStats()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ addNode()\l+ firstNode()\l+ getStat()\l}" alt="" coords="5,1005,260,1215"/>
 </map>

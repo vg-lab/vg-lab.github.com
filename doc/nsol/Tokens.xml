@@ -123,6 +123,28 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>SectionCachedStats</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>SectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>class_section_cached_stats.html</Path>
+    <Abstract>This class allows to cache the stats for sections. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>SectionStats</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>SectionStats</Scope>
+    </TokenIdentifier>
+    <Path>class_section_stats.html</Path>
+    <Abstract>This class allows to compute stats for sections. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::Axon</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -281,7 +303,7 @@
       <Scope>nsol::NeuriteCachedStats</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_neurite_cached_stats.html</Path>
-    <Anchor>a3a250ff50d756b437c3f1846fa8b1860</Anchor>
+    <Anchor>aa0d96c2a3b8df0b8c1ca8e4e80c767fe</Anchor>
     <Abstract>Set dirty all cached stats and propagates dirty to parent neurite. </Abstract>
     <DeclaredIn>NeuriteCachedStats.h</DeclaredIn>
   </Token>
@@ -1208,7 +1230,7 @@
       <Scope>nsol::NeuriteCachedStats</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_neurite_cached_stats.html</Path>
-    <Anchor>a3a250ff50d756b437c3f1846fa8b1860</Anchor>
+    <Anchor>aa0d96c2a3b8df0b8c1ca8e4e80c767fe</Anchor>
     <Abstract>Set dirty all cached stats and propagates dirty to parent neurite. </Abstract>
     <DeclaredIn>NeuriteCachedStats.h</DeclaredIn>
   </Token>
@@ -2031,7 +2053,7 @@
       <Scope>nsol::MorphologySynapse</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_morphology_synapse.html</Path>
-    <Anchor>af68670db5178e2016c85a0117b1b69f4</Anchor>
+    <Anchor>ad33d55bebbf37ed6df6ad9ef6fe94457</Anchor>
     <Abstract>Method to add a presynaptic section to the synapse. </Abstract>
     <DeclaredIn>MorphologySynapse.h</DeclaredIn>
   </Token>
@@ -2043,7 +2065,7 @@
       <Scope>nsol::MorphologySynapse</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_morphology_synapse.html</Path>
-    <Anchor>a41dedf598179de75c75fa529754345a3</Anchor>
+    <Anchor>ad55a9cc03a6ed9d436e3d3bb7a9d5441</Anchor>
     <Abstract>Method to get the presynaptic section. </Abstract>
     <DeclaredIn>MorphologySynapse.h</DeclaredIn>
   </Token>
@@ -2055,7 +2077,7 @@
       <Scope>nsol::MorphologySynapse</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_morphology_synapse.html</Path>
-    <Anchor>af86fb3a148d9ef09f93f9b99116cdabc</Anchor>
+    <Anchor>a6bd6944c776575db9c3a8ecf31c58cff</Anchor>
     <Abstract>Method to add a postsynaptic section to the synapse. </Abstract>
     <DeclaredIn>MorphologySynapse.h</DeclaredIn>
   </Token>
@@ -2067,7 +2089,7 @@
       <Scope>nsol::MorphologySynapse</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_morphology_synapse.html</Path>
-    <Anchor>ae35f354f0c28f431930f06b4c9f3a60b</Anchor>
+    <Anchor>af9fd95def1733ef85bbd84f96f7c1ade</Anchor>
     <Abstract>Method to get the postsynaptic section. </Abstract>
     <DeclaredIn>MorphologySynapse.h</DeclaredIn>
   </Token>
@@ -2209,7 +2231,7 @@
       <Scope>nsol::MorphologySynapse</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_morphology_synapse.html</Path>
-    <Anchor>a0a310464840036bfd14886df7a34415f</Anchor>
+    <Anchor>ab7dc8d95d05c44fe26ec13085e73544d</Anchor>
     <Abstract>Section of a presynaptic neuron (neurite) </Abstract>
   </Token>
   <Token>
@@ -2220,7 +2242,7 @@
       <Scope>nsol::MorphologySynapse</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_morphology_synapse.html</Path>
-    <Anchor>aee6b604d63f44473ba78d5e0b4f7027b</Anchor>
+    <Anchor>a3bfe8dd82fd434e602c123ec121c14bb</Anchor>
     <Abstract>Section of a postsynaptic neuron (neurite) </Abstract>
   </Token>
   <Token>
@@ -2368,7 +2390,7 @@
       <Scope>nsol::NeuriteCachedStats</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_neurite_cached_stats.html</Path>
-    <Anchor>a3a250ff50d756b437c3f1846fa8b1860</Anchor>
+    <Anchor>aa0d96c2a3b8df0b8c1ca8e4e80c767fe</Anchor>
     <Abstract>Set dirty all cached stats and propagates dirty to parent neurite. </Abstract>
     <DeclaredIn>NeuriteCachedStats.h</DeclaredIn>
   </Token>
@@ -3061,6 +3083,1229 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>nsol::NeuronMorphologySection</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>NeuronMorphologySection</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>ac888dcb7c03bf7011ad6941f7f480f4f</Anchor>
+    <Abstract>Default constructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~NeuronMorphologySection</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>add85fa692ab96f97fe31688f487dfb90</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+    <Abstract>Method to get the gid of the neuron morphology section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a9d9f9139364eab5e090bf2203874d248</Anchor>
+    <Abstract>Method to set the gid of the neuron morphology section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a34ad79e8f31819f2ea48590c42045632</Anchor>
+    <Abstract>Gets the parent Neurite of the Neuron Morphology Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a8f247a49470bb7e4b365ba32ada106c3</Anchor>
+    <Abstract>Sets the parent neurite of this Neuron Morphology Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>parent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a2d81aca4e63a55e4baa8fba858fe5b47</Anchor>
+    <Abstract>Gets the parent Section of this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>parent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a8dd2c6c41a08aeaf8aefa87f3dce7c54</Anchor>
+    <Abstract>Sets the parent Section of this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addChild</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a4c71a5985501a3340d51957a87f0dd6f</Anchor>
+    <Abstract>Adds child Section to this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>children</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>abc31d472107d4609a7f6e721860fed7f</Anchor>
+    <Abstract>Return the children sections. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a6b0557be796bdd98eb7dbcc2fc0491de</Anchor>
+    <Abstract>Adds a Node at the end of Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>firstNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a26edb3ce2d6d9e200b0971cad235c3cc</Anchor>
+    <Abstract>Gets the first Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>firstNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aefdeb9ea4e687e834c42c2882cbdeb02</Anchor>
+    <Abstract>Sets first Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>lastNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aebb37c04fce43056ca2338cff6a3387d</Anchor>
+    <Abstract>Gets the last Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>stats</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>af6453f9b41930c5a00d293552a185b37</Anchor>
+    <Abstract>Returns object as SectionStats. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Section</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>adb2a2aca170f535875a513a7cf1c0b2d</Anchor>
+    <Abstract>Default constructor. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Section</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a2022425618ee4205a187e29868184593</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>backwardNeighbors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a6c315e760a69b9e573ac5445b6afeca0</Anchor>
+    <Abstract>Gets the backward neighbour sections of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>forwardNeighbors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>adeb5f9bbd6a130312910851d66f00f3d</Anchor>
+    <Abstract>Gets the forward neighbour sections of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addBackwardNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a3952bb1dc196bbba0dde5d11dd79b14a</Anchor>
+    <Abstract>Adds backward neighbour section to this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a033f65dcaf822bc386f4fb5a008ac403</Anchor>
+    <Abstract>Adds forward neighbour section to this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>ad4844c9fa2e3a6e1ab8d4b2f9627f31a</Anchor>
+    <Abstract>Check if the node connects with the backward or the fordward neighbour sections and add the section t...</Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nodes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>ab644e0a315cd87eb9054a7c5ca40e5c7</Anchor>
+    <Abstract>Return the middle Nodes. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addBackwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>afc711f8fb3346aa3f7245056dc5aff88</Anchor>
+    <Abstract>Adds a node at the start of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aa28f449c9e1639f82a2fb2e0ad35b24f</Anchor>
+    <Abstract>Adds a node at the end of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>backwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a19876923087b4445fb168c912bf427fc</Anchor>
+    <Abstract>Gets the first Node of the Section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>forwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a98e12fcd1446fe1cb842cc3f2fd1e73b</Anchor>
+    <Abstract>Gets the last Node of the Section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aad1c955878b8cd6f7e25d6cfe44e2b31</Anchor>
+    <Abstract>Unique id. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a7f8a891edcc01c21c2b19459f1d74718</Anchor>
+    <Abstract>Parent neurite of the section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_nodes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a734421ce18effb11e0b0819645101253</Anchor>
+    <Abstract>Container of the middle nodes of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_backwardSections</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a3567956d3db2e163631b9f9dba9b93fa</Anchor>
+    <Abstract>Container of the backward neighbour sections of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_forwardSections</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aaed70c00f198a70c256ab5cf034b8d65</Anchor>
+    <Abstract>Container of the forward neighbour sections of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nsol::NeuronMorphologySectionCachedStats</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>NeuronMorphologySectionCachedStats</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+    <Anchor>a2defd0642dc11bacbb5d264e11569425</Anchor>
+    <Abstract>Stats that can be cached for NeuronMorphologySectionStats. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~NeuronMorphologySectionCachedStats</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+    <Anchor>a5070ed72cbd14154e330194ad396610e</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAndPropagateDirty</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+    <Anchor>ab6087d0dafb9d80449974a9c26df962e</Anchor>
+    <Abstract>Set dirty a cached stat and propagates dirty to parent neurite. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAndPropagateDirty</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+    <Anchor>a18efba937f362f8156252d04efcfb516</Anchor>
+    <Abstract>Set dirty all cached stats and propagates dirty to parent neurite. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+    <Anchor>addb84a22b47468a71be92125a01e3e0a</Anchor>
+    <Abstract>Adds a node at the end of the section. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>firstNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionCachedStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_cached_stats.html</Path>
+    <Anchor>a7b18c3b5a402583cf0be8a5adfd16293</Anchor>
+    <Abstract>Sets first Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionCachedStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>stats</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_stats.html</Path>
+    <Anchor>a628a17bf9403640dd5bc92f2d9c6029f</Anchor>
+    <Abstract>Returns object as SectionStats. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>NeuronMorphologySection</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>ac888dcb7c03bf7011ad6941f7f480f4f</Anchor>
+    <Abstract>Default constructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~NeuronMorphologySection</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>add85fa692ab96f97fe31688f487dfb90</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+    <Abstract>Method to get the gid of the neuron morphology section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a9d9f9139364eab5e090bf2203874d248</Anchor>
+    <Abstract>Method to set the gid of the neuron morphology section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a34ad79e8f31819f2ea48590c42045632</Anchor>
+    <Abstract>Gets the parent Neurite of the Neuron Morphology Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a8f247a49470bb7e4b365ba32ada106c3</Anchor>
+    <Abstract>Sets the parent neurite of this Neuron Morphology Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>parent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a2d81aca4e63a55e4baa8fba858fe5b47</Anchor>
+    <Abstract>Gets the parent Section of this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>parent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a8dd2c6c41a08aeaf8aefa87f3dce7c54</Anchor>
+    <Abstract>Sets the parent Section of this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addChild</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a4c71a5985501a3340d51957a87f0dd6f</Anchor>
+    <Abstract>Adds child Section to this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>children</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>abc31d472107d4609a7f6e721860fed7f</Anchor>
+    <Abstract>Return the children sections. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>firstNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a26edb3ce2d6d9e200b0971cad235c3cc</Anchor>
+    <Abstract>Gets the first Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>lastNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aebb37c04fce43056ca2338cff6a3387d</Anchor>
+    <Abstract>Gets the last Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Section</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>adb2a2aca170f535875a513a7cf1c0b2d</Anchor>
+    <Abstract>Default constructor. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Section</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a2022425618ee4205a187e29868184593</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>backwardNeighbors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a6c315e760a69b9e573ac5445b6afeca0</Anchor>
+    <Abstract>Gets the backward neighbour sections of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>forwardNeighbors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>adeb5f9bbd6a130312910851d66f00f3d</Anchor>
+    <Abstract>Gets the forward neighbour sections of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addBackwardNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a3952bb1dc196bbba0dde5d11dd79b14a</Anchor>
+    <Abstract>Adds backward neighbour section to this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a033f65dcaf822bc386f4fb5a008ac403</Anchor>
+    <Abstract>Adds forward neighbour section to this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>ad4844c9fa2e3a6e1ab8d4b2f9627f31a</Anchor>
+    <Abstract>Check if the node connects with the backward or the fordward neighbour sections and add the section t...</Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nodes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>ab644e0a315cd87eb9054a7c5ca40e5c7</Anchor>
+    <Abstract>Return the middle Nodes. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addBackwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>afc711f8fb3346aa3f7245056dc5aff88</Anchor>
+    <Abstract>Adds a node at the start of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aa28f449c9e1639f82a2fb2e0ad35b24f</Anchor>
+    <Abstract>Adds a node at the end of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>backwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a19876923087b4445fb168c912bf427fc</Anchor>
+    <Abstract>Gets the first Node of the Section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>forwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a98e12fcd1446fe1cb842cc3f2fd1e73b</Anchor>
+    <Abstract>Gets the last Node of the Section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aad1c955878b8cd6f7e25d6cfe44e2b31</Anchor>
+    <Abstract>Unique id. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a7f8a891edcc01c21c2b19459f1d74718</Anchor>
+    <Abstract>Parent neurite of the section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_nodes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a734421ce18effb11e0b0819645101253</Anchor>
+    <Abstract>Container of the middle nodes of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_backwardSections</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a3567956d3db2e163631b9f9dba9b93fa</Anchor>
+    <Abstract>Container of the backward neighbour sections of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_forwardSections</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aaed70c00f198a70c256ab5cf034b8d65</Anchor>
+    <Abstract>Container of the forward neighbour sections of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_values</Name>
+      <APILanguage>unknown</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Cached&lt;&gt;</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_cached.html</Path>
+    <Anchor>a2fd4f3362af9a0c519d6a23411e3350e</Anchor>
+    <Abstract>Container of the cached values. Is mutable to allow const methods to modify the cache if needed...</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nsol::NeuronMorphologySectionStats</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>nsol::NeuronMorphologySectionStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_stats.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>stats</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySectionStats</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section_stats.html</Path>
+    <Anchor>a628a17bf9403640dd5bc92f2d9c6029f</Anchor>
+    <Abstract>Returns object as SectionStats. </Abstract>
+    <DeclaredIn>NeuronMorphologySectionStats.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>NeuronMorphologySection</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>ac888dcb7c03bf7011ad6941f7f480f4f</Anchor>
+    <Abstract>Default constructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~NeuronMorphologySection</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>add85fa692ab96f97fe31688f487dfb90</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+    <Abstract>Method to get the gid of the neuron morphology section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a9d9f9139364eab5e090bf2203874d248</Anchor>
+    <Abstract>Method to set the gid of the neuron morphology section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a34ad79e8f31819f2ea48590c42045632</Anchor>
+    <Abstract>Gets the parent Neurite of the Neuron Morphology Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a8f247a49470bb7e4b365ba32ada106c3</Anchor>
+    <Abstract>Sets the parent neurite of this Neuron Morphology Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>parent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a2d81aca4e63a55e4baa8fba858fe5b47</Anchor>
+    <Abstract>Gets the parent Section of this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>parent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a8dd2c6c41a08aeaf8aefa87f3dce7c54</Anchor>
+    <Abstract>Sets the parent Section of this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addChild</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a4c71a5985501a3340d51957a87f0dd6f</Anchor>
+    <Abstract>Adds child Section to this Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>children</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>abc31d472107d4609a7f6e721860fed7f</Anchor>
+    <Abstract>Return the children sections. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a6b0557be796bdd98eb7dbcc2fc0491de</Anchor>
+    <Abstract>Adds a Node at the end of Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>firstNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a26edb3ce2d6d9e200b0971cad235c3cc</Anchor>
+    <Abstract>Gets the first Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>firstNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aefdeb9ea4e687e834c42c2882cbdeb02</Anchor>
+    <Abstract>Sets first Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>lastNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aebb37c04fce43056ca2338cff6a3387d</Anchor>
+    <Abstract>Gets the last Node of the Section. </Abstract>
+    <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Section</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>adb2a2aca170f535875a513a7cf1c0b2d</Anchor>
+    <Abstract>Default constructor. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Section</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a2022425618ee4205a187e29868184593</Anchor>
+    <Abstract>Default destructor. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>backwardNeighbors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a6c315e760a69b9e573ac5445b6afeca0</Anchor>
+    <Abstract>Gets the backward neighbour sections of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>forwardNeighbors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>adeb5f9bbd6a130312910851d66f00f3d</Anchor>
+    <Abstract>Gets the forward neighbour sections of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addBackwardNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a3952bb1dc196bbba0dde5d11dd79b14a</Anchor>
+    <Abstract>Adds backward neighbour section to this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a033f65dcaf822bc386f4fb5a008ac403</Anchor>
+    <Abstract>Adds forward neighbour section to this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addNeighbour</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>ad4844c9fa2e3a6e1ab8d4b2f9627f31a</Anchor>
+    <Abstract>Check if the node connects with the backward or the fordward neighbour sections and add the section t...</Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nodes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>ab644e0a315cd87eb9054a7c5ca40e5c7</Anchor>
+    <Abstract>Return the middle Nodes. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addBackwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>afc711f8fb3346aa3f7245056dc5aff88</Anchor>
+    <Abstract>Adds a node at the start of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aa28f449c9e1639f82a2fb2e0ad35b24f</Anchor>
+    <Abstract>Adds a node at the end of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>backwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a19876923087b4445fb168c912bf427fc</Anchor>
+    <Abstract>Gets the first Node of the Section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>forwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a98e12fcd1446fe1cb842cc3f2fd1e73b</Anchor>
+    <Abstract>Gets the last Node of the Section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>aad1c955878b8cd6f7e25d6cfe44e2b31</Anchor>
+    <Abstract>Unique id. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_neurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::NeuronMorphologySection</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_neuron_morphology_section.html</Path>
+    <Anchor>a7f8a891edcc01c21c2b19459f1d74718</Anchor>
+    <Abstract>Parent neurite of the section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_nodes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a734421ce18effb11e0b0819645101253</Anchor>
+    <Abstract>Container of the middle nodes of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_backwardSections</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>a3567956d3db2e163631b9f9dba9b93fa</Anchor>
+    <Abstract>Container of the backward neighbour sections of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_forwardSections</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aaed70c00f198a70c256ab5cf034b8d65</Anchor>
+    <Abstract>Container of the forward neighbour sections of this section. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::NeuronMorphologyStats</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -3280,98 +4525,62 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>id</Name>
+      <Name>backwardNeighbors</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a72cd94a19cd028b5c61cbd93ec68ce21</Anchor>
-    <Abstract>Method to get the gid of the section. </Abstract>
+    <Anchor>a6c315e760a69b9e573ac5445b6afeca0</Anchor>
+    <Abstract>Gets the backward neighbour sections of this section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>id</Name>
+      <Name>forwardNeighbors</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a99ee54f4967a177f7640892c234841de</Anchor>
-    <Abstract>Method to set the gid of the section. </Abstract>
+    <Anchor>adeb5f9bbd6a130312910851d66f00f3d</Anchor>
+    <Abstract>Gets the forward neighbour sections of this section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>neurite</Name>
+      <Name>addBackwardNeighbour</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a4ae0b980b5a0b063bd8cc5427c048d98</Anchor>
-    <Abstract>Gets the parent Neurite of the Section. </Abstract>
+    <Anchor>a3952bb1dc196bbba0dde5d11dd79b14a</Anchor>
+    <Abstract>Adds backward neighbour section to this section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>neurite</Name>
+      <Name>addForwardNeighbour</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>ac5468f98e495dbe99fc66e6f9021f755</Anchor>
-    <Abstract>Sets the parent neurite of this Section. </Abstract>
+    <Anchor>a033f65dcaf822bc386f4fb5a008ac403</Anchor>
+    <Abstract>Adds forward neighbour section to this section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>parent</Name>
+      <Name>addNeighbour</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a2e913e1b6634c506a539b365e636f1e6</Anchor>
-    <Abstract>Gets the parent Section of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>adb75ea71dd86da4e922b9e8fdc8d4d3a</Anchor>
-    <Abstract>Sets the parent Section of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>addChild</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a09c958eac9113e18ee9dc60d67366bdf</Anchor>
-    <Abstract>Adds child Section to this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>children</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a1483ea21d5db6b163d66411414ee6db8</Anchor>
-    <Abstract>Return the children sections. </Abstract>
+    <Anchor>ad4844c9fa2e3a6e1ab8d4b2f9627f31a</Anchor>
+    <Abstract>Check if the node connects with the backward or the fordward neighbour sections and add the section t...</Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
@@ -3388,107 +4597,51 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>addNode</Name>
+      <Name>addBackwardNode</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>acdaaf4ca2b043af770e2832ffd452175</Anchor>
+    <Anchor>afc711f8fb3346aa3f7245056dc5aff88</Anchor>
+    <Abstract>Adds a node at the start of this section. </Abstract>
+    <DeclaredIn>Section.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addForwardNode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Section</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_section.html</Path>
+    <Anchor>aa28f449c9e1639f82a2fb2e0ad35b24f</Anchor>
     <Abstract>Adds a node at the end of this section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>firstNode</Name>
+      <Name>backwardNode</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>af2414a45a1e0e796269952510e86622c</Anchor>
+    <Anchor>a19876923087b4445fb168c912bf427fc</Anchor>
     <Abstract>Gets the first Node of the Section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>firstNode</Name>
+      <Name>forwardNode</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a96cae8741018a7578ac82a6c4ec763e1</Anchor>
-    <Abstract>Sets first Node of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>lastNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>aa7b26d2c42b737492414b63265765a71</Anchor>
+    <Anchor>a98e12fcd1446fe1cb842cc3f2fd1e73b</Anchor>
     <Abstract>Gets the last Node of the Section. </Abstract>
     <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>stats</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a20eb849a2b5307b8a9a93afe65503cf6</Anchor>
-    <Abstract>Returns object as SectionStats. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_id</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a26015adb64b0a09a46ac645cc5041ea2</Anchor>
-    <Abstract>Unique id. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_neurite</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a31058e1b26b443eace043d1a141312b4</Anchor>
-    <Abstract>Parent neurite of the section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a1f13b14108565f24f27ad8453d46e72b</Anchor>
-    <Abstract>Parent section of this section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_children</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>aa89bdbe28e8377d0b38d457862364107</Anchor>
-    <Abstract>Container of the childrens sections of this section. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3503,320 +4656,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>nsol::SectionCachedStats</Name>
-      <APILanguage>c</APILanguage>
-      <Type>cl</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Abstract>This class allows to cache the stats for sections. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>SectionCachedStats</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Anchor>a5ebd746f794946d9c0d63c6bbe041fb3</Anchor>
-    <Abstract>Stats that can be cached for SectionStats. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>~SectionCachedStats</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Anchor>af77d6cd158c7979fa6f5e16b4add23c6</Anchor>
-    <Abstract>Default destructor. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setAndPropagateDirty</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Anchor>aed447ca12bc43ee5d69bd43053810804</Anchor>
-    <Abstract>Set dirty a cached stat and propagates dirty to parent neurite. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setAndPropagateDirty</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Anchor>a5e62876526ec779b25af4afc9079bf16</Anchor>
-    <Abstract>Set dirty all cached stats and propagates dirty to parent neurite. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>addNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Anchor>abfe3891715a00845c7dc97eb5f357952</Anchor>
-    <Abstract>Adds a node at the end of the section. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>firstNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionCachedStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_cached_stats.html</Path>
-    <Anchor>a4b87303495e4953e0d424bfa6ab14bf5</Anchor>
-    <Abstract>Sets first Node of the Section. </Abstract>
-    <DeclaredIn>SectionCachedStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>stats</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_stats.html</Path>
-    <Anchor>a19ba8a4a20e2a1899728cb0d07a206e0</Anchor>
-    <Abstract>Returns object as SectionStats. </Abstract>
-    <DeclaredIn>SectionStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>Section</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>adb2a2aca170f535875a513a7cf1c0b2d</Anchor>
-    <Abstract>Default constructor. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>~Section</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a2022425618ee4205a187e29868184593</Anchor>
-    <Abstract>Default destructor. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>id</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a72cd94a19cd028b5c61cbd93ec68ce21</Anchor>
-    <Abstract>Method to get the gid of the section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>id</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a99ee54f4967a177f7640892c234841de</Anchor>
-    <Abstract>Method to set the gid of the section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>neurite</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a4ae0b980b5a0b063bd8cc5427c048d98</Anchor>
-    <Abstract>Gets the parent Neurite of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>neurite</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>ac5468f98e495dbe99fc66e6f9021f755</Anchor>
-    <Abstract>Sets the parent neurite of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a2e913e1b6634c506a539b365e636f1e6</Anchor>
-    <Abstract>Gets the parent Section of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>adb75ea71dd86da4e922b9e8fdc8d4d3a</Anchor>
-    <Abstract>Sets the parent Section of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>addChild</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a09c958eac9113e18ee9dc60d67366bdf</Anchor>
-    <Abstract>Adds child Section to this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>children</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a1483ea21d5db6b163d66411414ee6db8</Anchor>
-    <Abstract>Return the children sections. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>nodes</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>ab644e0a315cd87eb9054a7c5ca40e5c7</Anchor>
-    <Abstract>Return the middle Nodes. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>firstNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>af2414a45a1e0e796269952510e86622c</Anchor>
-    <Abstract>Gets the first Node of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>lastNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>aa7b26d2c42b737492414b63265765a71</Anchor>
-    <Abstract>Gets the last Node of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_id</Name>
+      <Name>_backwardSections</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a26015adb64b0a09a46ac645cc5041ea2</Anchor>
-    <Abstract>Unique id. </Abstract>
+    <Anchor>a3567956d3db2e163631b9f9dba9b93fa</Anchor>
+    <Abstract>Container of the backward neighbour sections of this section. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>_neurite</Name>
+      <Name>_forwardSections</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>nsol::Section</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a31058e1b26b443eace043d1a141312b4</Anchor>
-    <Abstract>Parent neurite of the section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a1f13b14108565f24f27ad8453d46e72b</Anchor>
-    <Abstract>Parent section of this section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_children</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>aa89bdbe28e8377d0b38d457862364107</Anchor>
-    <Abstract>Container of the childrens sections of this section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_nodes</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a734421ce18effb11e0b0819645101253</Anchor>
-    <Abstract>Container of the middle nodes of this section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_values</Name>
-      <APILanguage>unknown</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Cached&lt;&gt;</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_cached.html</Path>
-    <Anchor>a2fd4f3362af9a0c519d6a23411e3350e</Anchor>
-    <Abstract>Container of the cached values. Is mutable to allow const methods to modify the cache if needed...</Abstract>
+    <Anchor>aaed70c00f198a70c256ab5cf034b8d65</Anchor>
+    <Abstract>Container of the forward neighbour sections of this section. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3826,264 +4684,6 @@
       <Scope>nsol::Sections</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_sections.html</Path>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>nsol::SectionStats</Name>
-      <APILanguage>c</APILanguage>
-      <Type>cl</Type>
-      <Scope>nsol::SectionStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_stats.html</Path>
-    <Abstract>This class allows to compute stats for sections. </Abstract>
-    <DeclaredIn>SectionStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>stats</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::SectionStats</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section_stats.html</Path>
-    <Anchor>a19ba8a4a20e2a1899728cb0d07a206e0</Anchor>
-    <Abstract>Returns object as SectionStats. </Abstract>
-    <DeclaredIn>SectionStats.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>Section</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>adb2a2aca170f535875a513a7cf1c0b2d</Anchor>
-    <Abstract>Default constructor. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>~Section</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a2022425618ee4205a187e29868184593</Anchor>
-    <Abstract>Default destructor. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>id</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a72cd94a19cd028b5c61cbd93ec68ce21</Anchor>
-    <Abstract>Method to get the gid of the section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>id</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a99ee54f4967a177f7640892c234841de</Anchor>
-    <Abstract>Method to set the gid of the section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>neurite</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a4ae0b980b5a0b063bd8cc5427c048d98</Anchor>
-    <Abstract>Gets the parent Neurite of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>neurite</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>ac5468f98e495dbe99fc66e6f9021f755</Anchor>
-    <Abstract>Sets the parent neurite of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a2e913e1b6634c506a539b365e636f1e6</Anchor>
-    <Abstract>Gets the parent Section of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>adb75ea71dd86da4e922b9e8fdc8d4d3a</Anchor>
-    <Abstract>Sets the parent Section of this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>addChild</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a09c958eac9113e18ee9dc60d67366bdf</Anchor>
-    <Abstract>Adds child Section to this Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>children</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a1483ea21d5db6b163d66411414ee6db8</Anchor>
-    <Abstract>Return the children sections. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>nodes</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>ab644e0a315cd87eb9054a7c5ca40e5c7</Anchor>
-    <Abstract>Return the middle Nodes. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>addNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>acdaaf4ca2b043af770e2832ffd452175</Anchor>
-    <Abstract>Adds a node at the end of this section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>firstNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>af2414a45a1e0e796269952510e86622c</Anchor>
-    <Abstract>Gets the first Node of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>firstNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a96cae8741018a7578ac82a6c4ec763e1</Anchor>
-    <Abstract>Sets first Node of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>lastNode</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>aa7b26d2c42b737492414b63265765a71</Anchor>
-    <Abstract>Gets the last Node of the Section. </Abstract>
-    <DeclaredIn>Section.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_id</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a26015adb64b0a09a46ac645cc5041ea2</Anchor>
-    <Abstract>Unique id. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_neurite</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a31058e1b26b443eace043d1a141312b4</Anchor>
-    <Abstract>Parent neurite of the section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_parent</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a1f13b14108565f24f27ad8453d46e72b</Anchor>
-    <Abstract>Parent section of this section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_children</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>aa89bdbe28e8377d0b38d457862364107</Anchor>
-    <Abstract>Container of the childrens sections of this section. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_nodes</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nsol::Section</Scope>
-    </TokenIdentifier>
-    <Path>classnsol_1_1_section.html</Path>
-    <Anchor>a734421ce18effb11e0b0819645101253</Anchor>
-    <Abstract>Container of the middle nodes of this section. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>

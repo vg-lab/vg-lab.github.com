@@ -1,9 +1,9 @@
 var searchData=
 [
   ['section',['Section',['../classnsol_1_1_section.html',1,'nsol']]],
-  ['sectioncachedstats',['SectionCachedStats',['../classnsol_1_1_section_cached_stats.html',1,'nsol']]],
+  ['sectioncachedstats',['SectionCachedStats',['../class_section_cached_stats.html',1,'']]],
   ['sections',['Sections',['../classnsol_1_1_sections.html',1,'nsol']]],
-  ['sectionstats',['SectionStats',['../classnsol_1_1_section_stats.html',1,'nsol']]],
+  ['sectionstats',['SectionStats',['../class_section_stats.html',1,'']]],
   ['segmentstats',['SegmentStats',['../classnsol_1_1_segment_stats.html',1,'nsol']]],
   ['simplifier',['Simplifier',['../classnsol_1_1_simplifier.html',1,'nsol']]],
   ['soma',['Soma',['../classnsol_1_1_soma.html',1,'nsol']]],

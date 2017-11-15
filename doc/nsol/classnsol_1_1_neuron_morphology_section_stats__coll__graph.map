@@ -1,0 +1,11 @@
+<map id="nsol::NeuronMorphologySectionStats" name="nsol::NeuronMorphologySectionStats">
+<area shape="rect" id="node2" href="$classnsol_1_1_neuron_morphology_section.html" title="{nsol::NeuronMorphologySection\n|# _id\l|+ NeuronMorphologySection()\l+ ~NeuronMorphologySection()\l+ id()\l+ id()\l+ neurite()\l+ neurite()\l+ parent()\l+ parent()\l+ addChild()\l+ children()\land 8 more...\l}" alt="" coords="112,779,339,1003"/>
+<area shape="rect" id="node9" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="5,1065,229,1348"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_section.html" title="{nsol::Section\n||+ Section()\l+ ~Section()\l+ backwardNeighbors()\l+ backwardNeighbors()\l+ forwardNeighbors()\l+ forwardNeighbors()\l+ addBackwardNeighbour()\l+ addForwardNeighbour()\l+ addNeighbour()\l+ nodes()\land 9 more...\l}" alt="" coords="110,455,309,679"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="325,132,507,341"/>
+<area shape="rect" id="node10" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="369,779,548,1003"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="550,198,647,275"/>
+<area shape="rect" id="node11" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="537,419,663,716"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="154,198,265,275"/>
+<area shape="rect" id="node12" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="333,529,443,606"/>
+</map>
