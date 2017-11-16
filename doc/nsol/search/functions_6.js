@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['id',['id',['../classnsol_1_1_column.html#aab583fea99852e1f1b0b0726c5f02c96',1,'nsol::Column::id(void)'],['../classnsol_1_1_column.html#a4e8fada2de8a3fcadb3c53c565d4f6c6',1,'nsol::Column::id(void) const '],['../classnsol_1_1_mini_column.html#ab04343b7ecf1c40bdc7e86cdc10e5ab5',1,'nsol::MiniColumn::id(void)'],['../classnsol_1_1_mini_column.html#ab4f1bf8da084a86d007b5737252b56e7',1,'nsol::MiniColumn::id(void) const '],['../classnsol_1_1_neuron_morphology_section.html#a798dceea16dcc83f61132d706ad3f1b8',1,'nsol::NeuronMorphologySection::id(void)'],['../classnsol_1_1_neuron_morphology_section.html#a9d9f9139364eab5e090bf2203874d248',1,'nsol::NeuronMorphologySection::id(unsigned int id_)']]],
-  ['instance',['Instance',['../classnsol_1_1_simplifier.html#a1b15df10d5813a588e37de4d4340bfec',1,'nsol::Simplifier']]],
-  ['isexcitatory',['isExcitatory',['../classnsol_1_1_neuron.html#a91842b6c8f7d5f07922a0a9ef6e9f4d7',1,'nsol::Neuron']]],
-  ['isinhibitory',['isInhibitory',['../classnsol_1_1_neuron.html#a97a60be15d68ec0a387faf2b8070a5bb',1,'nsol::Neuron']]],
-  ['isinterneuron',['isInterneuron',['../classnsol_1_1_neuron.html#aac28e02936e13fb11afefb3704d9ee6b',1,'nsol::Neuron']]],
-  ['ispyramidal',['isPyramidal',['../classnsol_1_1_neuron.html#a6751e52ee672e3aa42f0463ea81da61d',1,'nsol::Neuron']]]
+  ['getabi',['getABI',['../classnsol_1_1_version.html#ac4341b28ff2ae25a703f3e3995981085',1,'nsol::Version']]],
+  ['getmajor',['getMajor',['../classnsol_1_1_version.html#aeb6008f44946f9e6133469b7c2507042',1,'nsol::Version']]],
+  ['getminor',['getMinor',['../classnsol_1_1_version.html#a44e0746b60c20116c9b500d4580ee4cf',1,'nsol::Version']]],
+  ['getpatch',['getPatch',['../classnsol_1_1_version.html#ac59f87843e5197c1fb75e98528a3c1ba',1,'nsol::Version']]],
+  ['getrevision',['getRevision',['../classnsol_1_1_version.html#ae8ff0750aea8a6797c40d6710affbc7e',1,'nsol::Version']]],
+  ['getrevstring',['getRevString',['../classnsol_1_1_version.html#a1ec3987b621d14dd76e438fd5e4cfd0f',1,'nsol::Version']]],
+  ['getschema',['getSchema',['../classnsol_1_1_version.html#aa77bac26f4443d2c54cbb88916dd4d89',1,'nsol::Version']]],
+  ['getstat',['getStat',['../classnsol_1_1_neurite_cached_stats.html#a341437d9c1a50ab456bf0ddb36faa98e',1,'nsol::NeuriteCachedStats::getStat()'],['../classnsol_1_1_neurite_stats.html#a03b9faca92194eb69af5d3a6d0eb0cf0',1,'nsol::NeuriteStats::getStat()']]],
+  ['getstring',['getString',['../classnsol_1_1_version.html#a291b283009471fd6abc758ee7bbaaf63',1,'nsol::Version']]],
+  ['gid',['gid',['../classnsol_1_1_neuron.html#a8afc950c57e22c17b1e66e0d942ade99',1,'nsol::Neuron']]]
 ];

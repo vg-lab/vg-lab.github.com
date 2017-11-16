@@ -128,45 +128,40 @@ $(document).ready(function(){initNavTree('classnsol_1_1_swc_reader_templated.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_read_axon_stack_elem.html">TReadAxonStackElem</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_read_dendrites_stack_elem.html">TReadDendritesStackElem</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_read_neurite_stack_elem.html">TReadNeuriteStackElem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary elements to read branching neurite sections.  <a href="structnsol_1_1_swc_reader_templated_1_1_t_read_neurite_stack_elem.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains processed information of an SWC line element.  <a href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7045290d8089c45db7f92d4c0893dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7045290d8089c45db7f92d4c0893dd6"></a>
-<a class="el" href="classnsol_1_1_neuron.html">NeuronPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readNeuron</b> (const char *fileName, bool reposition_=false)</td></tr>
-<tr class="separator:ac7045290d8089c45db7f92d4c0893dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed299347e37237e4e944361ae972a7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ed299347e37237e4e944361ae972a7c"></a>
-<a class="el" href="classnsol_1_1_neuron.html">NeuronPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readNeuron</b> (const std::string fileName, bool reposition_=false)</td></tr>
-<tr class="separator:a9ed299347e37237e4e944361ae972a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b89e45039f04f01dbc05be26a9b7e26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b89e45039f04f01dbc05be26a9b7e26"></a>
-<a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readMorphology</b> (const char *fileName, bool reposition_=false)</td></tr>
-<tr class="separator:a9b89e45039f04f01dbc05be26a9b7e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeee20d18ad31d1d9e591774fae7d70fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeee20d18ad31d1d9e591774fae7d70fa"></a>
-<a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readMorphology</b> (const std::string fileName, bool reposition_=false)</td></tr>
-<tr class="separator:aeee20d18ad31d1d9e591774fae7d70fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05736bbee7070d1e9fd0e4aeb26c502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_neuron.html">NeuronPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_swc_reader_templated.html#ae05736bbee7070d1e9fd0e4aeb26c502">readNeuron</a> (const std::string &amp;fileName, bool reposition_=false)</td></tr>
+<tr class="memdesc:ae05736bbee7070d1e9fd0e4aeb26c502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> that contains the <a class="el" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. ">NeuronMorphology</a> described in SWC file Calls readMorphology( 2 )  <a href="#ae05736bbee7070d1e9fd0e4aeb26c502">More...</a><br /></td></tr>
+<tr class="separator:ae05736bbee7070d1e9fd0e4aeb26c502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91c611d7048d7d1d00d39d00ee80091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091">readMorphology</a> (const std::string &amp;fileName, bool reposition_=false)</td></tr>
+<tr class="memdesc:aa91c611d7048d7d1d00d39d00ee80091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. ">NeuronMorphology</a> and loads info described in SWC file.  <a href="#aa91c611d7048d7d1d00d39d00ee80091">More...</a><br /></td></tr>
+<tr class="separator:aa91c611d7048d7d1d00d39d00ee80091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:abfa33db80108c0bf39e58d95dc3a4f77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfa33db80108c0bf39e58d95dc3a4f77"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TSwcNodeType</b> { <b>SWC_SOMA</b> = 1, 
+<tr class="memitem:abfa33db80108c0bf39e58d95dc3a4f77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfa33db80108c0bf39e58d95dc3a4f77"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_swc_reader_templated.html#abfa33db80108c0bf39e58d95dc3a4f77">TSwcNodeType</a> { <b>SWC_SOMA</b> = 1, 
 <b>SWC_AXON</b> = 2, 
-<b>SWC_DENDRITE</b> = 3, 
+<b>SWC_BASAL</b> = 3, 
 <b>SWC_APICAL</b> = 4
- }</td></tr>
+ }<tr class="memdesc:abfa33db80108c0bf39e58d95dc3a4f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">SWC element types. <br /></td></tr>
+</td></tr>
 <tr class="separator:abfa33db80108c0bf39e58d95dc3a4f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a32ce1e5e43fef483b4e8bf5c28f2aaf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ce1e5e43fef483b4e8bf5c28f2aaf7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_ReadDendrite</b> (<a class="el" href="classnsol_1_1_dendrite.html">DendritePtr</a> d, std::map&lt; unsigned int, <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a> &gt; &amp;lines, unsigned int initId, NsolVector&lt; <a class="el" href="classnsol_1_1_node.html">NodePtr</a> &gt; *nodes_=nullptr, bool reposition_=false)</td></tr>
-<tr class="separator:a32ce1e5e43fef483b4e8bf5c28f2aaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3923417e28ae07e4230b2e160adbf5d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3923417e28ae07e4230b2e160adbf5d3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_ReadAxon</b> (<a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a> d, std::map&lt; unsigned int, <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a> &gt; &amp;lines, unsigned int initId, NsolVector&lt; <a class="el" href="classnsol_1_1_node.html">NodePtr</a> &gt; *nodes_=nullptr, bool reposition_=false)</td></tr>
-<tr class="separator:a3923417e28ae07e4230b2e160adbf5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9b74f0f93f6575267c6346a1ef90b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0">_ReadNeurite</a> (<a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a> neuritePointer, const std::map&lt; unsigned int, <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a> &gt; &amp;lines, unsigned int initId, NsolVector&lt; <a class="el" href="classnsol_1_1_node.html">NodePtr</a> &gt; *nodes_=nullptr, bool reposition_=false)</td></tr>
+<tr class="memdesc:a2b9b74f0f93f6575267c6346a1ef90b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> from a processed SWC file, calls _ReadSection.  <a href="#a2b9b74f0f93f6575267c6346a1ef90b0">More...</a><br /></td></tr>
+<tr class="separator:a2b9b74f0f93f6575267c6346a1ef90b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb89dca5b60503ecb179eb9b70e108d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9">_ReadSection</a> (<a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a> neuritePointer, <a class="el" href="classnsol_1_1_neuron_morphology_section.html">NeuronMorphologySectionPtr</a> sectionPointer, <a class="el" href="classnsol_1_1_node.html">NodePtr</a> nodePointer, std::stack&lt; <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_read_neurite_stack_elem.html">TReadNeuriteStackElem</a> &gt; *sectionFirstNodes, const std::map&lt; unsigned int, <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a> &gt; &amp;lines, NsolVector&lt; <a class="el" href="classnsol_1_1_node.html">NodePtr</a> &gt; *nodes_, bool reposition_)</td></tr>
+<tr class="memdesc:afb89dca5b60503ecb179eb9b70e108d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and calculates sections, as well as bifurcation and branch counts.  <a href="#afb89dca5b60503ecb179eb9b70e108d9">More...</a><br /></td></tr>
+<tr class="separator:afb89dca5b60503ecb179eb9b70e108d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;SWC_READER_TEMPLATE_CLASSES&gt;<br />
@@ -174,7 +169,390 @@ class nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;</h3>
 
 
 <p>Definition at line <a class="el" href="_swc_reader_8h_source.html#l00068">68</a> of file <a class="el" href="_swc_reader_8h_source.html">SwcReader.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2b9b74f0f93f6575267c6346a1ef90b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;SWC_READER_TEMPLATE_CLASSES &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classnsol_1_1_swc_reader_templated.html">nsol::SwcReaderTemplated</a>&lt; SWC_READER_TEMPLATE_CLASSES &gt;::_ReadNeurite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a>&#160;</td>
+          <td class="paramname"><em>neuritePointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; unsigned int, <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>initId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NsolVector&lt; <a class="el" href="classnsol_1_1_node.html">NodePtr</a> &gt; *&#160;</td>
+          <td class="paramname"><em>nodes_</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reposition_</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> from a processed SWC file, calls _ReadSection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">neuritePointer</td><td>neuritePtr where info will be loaded </td></tr>
+    <tr><td class="paramname">lines</td><td>processed SWC file line information stored as map </td></tr>
+    <tr><td class="paramname">initId</td><td>node ID of the first node in the neurite to read </td></tr>
+    <tr><td class="paramname">nodes_</td><td>auxiliary vector for recalculation purposes </td></tr>
+    <tr><td class="paramname">reposition_</td><td>sets soma center to ( 0.0, 0.0, 0.0 ) if true; it will only serve to add all new nodes to nodes_ for later recalculation </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Creates first <a class="el" href="classnsol_1_1_node.html">Node</a> in first Secion</p>
+<p>Loads first <a class="el" href="classnsol_1_1_section.html">Section</a> in <a class="el" href="classnsol_1_1_neurite.html">Neurite</a></p>
+<p>Creates and loads all <a class="el" href="classnsol_1_1_sections.html">Sections</a> in <a class="el" href="classnsol_1_1_neurite.html">Neurite</a></p>
+<p>Creates first <a class="el" href="classnsol_1_1_node.html">Node</a> of new <a class="el" href="classnsol_1_1_section.html">Section</a></p>
+<p>Loads <a class="el" href="classnsol_1_1_section.html">Section</a> and stores first <a class="el" href="classnsol_1_1_nodes.html">Nodes</a> of other <a class="el" href="classnsol_1_1_sections.html">Sections</a> to load </p>
+
+<p>Definition at line <a class="el" href="_swc_reader_8h_source.html#l00418">418</a> of file <a class="el" href="_swc_reader_8h_source.html">SwcReader.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::_ReadSection()</a>, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f">nsol::NeuronMorphologySection::addChild()</a>, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de">nsol::NeuronMorphologySection::addNode()</a>, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc">nsol::NeuronMorphologySection::firstNode()</a>, <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632">nsol::NeuronMorphologySection::neurite()</a>, and <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47">nsol::NeuronMorphologySection::parent()</a>.</p>
+
+<p>Referenced by <a class="el" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::readMorphology()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_cgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_cgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_cgraph" id="classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_cgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9" title="Creates and calculates sections, as well as bifurcation and branch counts. " alt="" coords="261,5,452,47"/>
+<area shape="rect" id="node3" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de" title="Adds a Node at the end of Section. " alt="" coords="517,35,743,76"/>
+<area shape="rect" id="node4" href="classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f" title="Adds child Section to this Section. " alt="" coords="244,123,469,164"/>
+<area shape="rect" id="node5" href="classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc" title="Gets the first Node of the Section. " alt="" coords="244,188,469,229"/>
+<area shape="rect" id="node6" href="classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632" title="Gets the parent Neurite of the Neuron Morphology Section. " alt="" coords="244,253,469,295"/>
+<area shape="rect" id="node7" href="classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47" title="Gets the parent Section of this Section. " alt="" coords="244,319,469,360"/>
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_icgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_icgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_icgraph" id="classnsol_1_1_swc_reader_templated_a2b9b74f0f93f6575267c6346a1ef90b0_icgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091" title="Creates a NeuronMorphology and loads info described in SWC file. " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node3" href="classnsol_1_1_swc_reader_templated.html#ae05736bbee7070d1e9fd0e4aeb26c502" title="Creates a new Neuron that contains the NeuronMorphology described in SWC file Calls readMorphology( 2..." alt="" coords="483,5,673,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afb89dca5b60503ecb179eb9b70e108d9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;SWC_READER_TEMPLATE_CLASSES &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classnsol_1_1_swc_reader_templated.html">nsol::SwcReaderTemplated</a>&lt; SWC_READER_TEMPLATE_CLASSES &gt;::_ReadSection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a>&#160;</td>
+          <td class="paramname"><em>neuritePointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnsol_1_1_neuron_morphology_section.html">NeuronMorphologySectionPtr</a>&#160;</td>
+          <td class="paramname"><em>sectionPointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnsol_1_1_node.html">NodePtr</a>&#160;</td>
+          <td class="paramname"><em>nodePointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::stack&lt; <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_read_neurite_stack_elem.html">TReadNeuriteStackElem</a> &gt; *&#160;</td>
+          <td class="paramname"><em>sectionFirstNodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; unsigned int, <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html">TSwcLine</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NsolVector&lt; <a class="el" href="classnsol_1_1_node.html">NodePtr</a> &gt; *&#160;</td>
+          <td class="paramname"><em>nodes_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reposition_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates and calculates sections, as well as bifurcation and branch counts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">neuritePointer</td><td>pointer to <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> where section is located </td></tr>
+    <tr><td class="paramname">sectionPointer</td><td>pointer to <a class="el" href="classnsol_1_1_section.html">Section</a> where data will be loaded </td></tr>
+    <tr><td class="paramname">nodePointer</td><td>pointer to first <a class="el" href="classnsol_1_1_node.html">Node</a> in section </td></tr>
+    <tr><td class="paramname">sectionFirstNodes</td><td>pointer to stack where new first nodes for new sections found will be stored </td></tr>
+    <tr><td class="paramname">lines</td><td>processed SWC file line information stored as map </td></tr>
+    <tr><td class="paramname">nodes_</td><td>auxiliary vector for recalculation purposes </td></tr>
+    <tr><td class="paramname">reposition_</td><td>sets soma center to ( 0.0, 0.0, 0.0 ) if true; it will only serve to add all new nodes to nodes_ for later recalculation </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Stores first node for later position recalculation</p>
+<p>Loads all nodes in section</p>
+<p>Stores nodes for later position recalculation</p>
+<p>End of section reached; first nodes of branching sections will be added to stack</p>
+<p>Branch count updated</p>
+<p>Plus new bifurcation</p>
+<p>Adds first nodes of new branches to stack </p>
+
+<p>Definition at line <a class="el" href="_swc_reader_8h_source.html#l00467">467</a> of file <a class="el" href="_swc_reader_8h_source.html">SwcReader.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de">nsol::NeuronMorphologySection::addNode()</a>.</p>
+
+<p>Referenced by <a class="el" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::_ReadNeurite()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_cgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_cgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_cgraph" id="classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_cgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de" title="Adds a Node at the end of Section. " alt="" coords="244,5,469,47"/>
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_icgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_icgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_icgraph" id="classnsol_1_1_swc_reader_templated_afb89dca5b60503ecb179eb9b70e108d9_icgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0" title="Reads a Neurite from a processed SWC file, calls _ReadSection. " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node3" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091" title="Creates a NeuronMorphology and loads info described in SWC file. " alt="" coords="483,5,673,47"/>
+<area shape="rect" id="node4" href="classnsol_1_1_swc_reader_templated.html#ae05736bbee7070d1e9fd0e4aeb26c502" title="Creates a new Neuron that contains the NeuronMorphology described in SWC file Calls readMorphology( 2..." alt="" coords="721,5,912,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa91c611d7048d7d1d00d39d00ee80091"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;SWC_READER_TEMPLATE_CLASSES &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a> <a class="el" href="classnsol_1_1_swc_reader_templated.html">nsol::SwcReaderTemplated</a>&lt; SWC_READER_TEMPLATE_CLASSES &gt;::readMorphology </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reposition_</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. ">NeuronMorphology</a> and loads info described in SWC file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>path to SWC file to read </td></tr>
+    <tr><td class="paramname">reposition_</td><td>sets soma center to ( 0.0, 0.0, 0.0 ) if true </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the <a class="el" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. ">NeuronMorphology</a> created; nullptr if failure on SWC read </dd></dl>
+<p>Opening file check</p>
+<p>Reads file, line by line</p>
+<p>Skips comment lines</p>
+<p>Verifies there are 7 fields ( or more, if comments are present )</p>
+<p>Loads info in struct <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html" title="Contains processed information of an SWC line element. ">TSwcLine</a></p>
+<p>Adds children to <a class="el" href="structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html" title="Contains processed information of an SWC line element. ">TSwcLine</a> elements created</p>
+<p>Adds soma nodes to neuronMorphology-&gt;<a class="el" href="classnsol_1_1_soma.html" title="Class to represent the soma of neurons. ">Soma</a></p>
+<p>Adds nodes for later recalculation of position if reposition_ is active</p>
+<p>Adds non-soma childrens of soma nodes to vector for later use</p>
+<p>Initiates read process for each neurite, via first node</p>
+<p>Moves soma center to ( 0.0, 0.0, 0.0 ) if reposition_ is active, accordingly recalculating position for all nodes</p>
+
+<p>Definition at line <a class="el" href="_swc_reader_8h_source.html#l00222">222</a> of file <a class="el" href="_swc_reader_8h_source.html">SwcReader.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::_ReadNeurite()</a>, <a class="el" href="classnsol_1_1_neuron_morphology.html#ae17e7244522c1d4eb43dc71c14af7e73">nsol::NeuronMorphology::addNeurite()</a>, <a class="el" href="classnsol_1_1_soma.html#a1f26090e46683c07a19b24c54de89455">nsol::Soma::addNode()</a>, <a class="el" href="classnsol_1_1_soma.html#a8fb8e725fe4b512a04e6e4eac0db2881">nsol::Soma::center()</a>, <a class="el" href="classnsol_1_1_log.html#a6a6ec07043dc22077331ebc692ae0dc5">nsol::Log::log()</a>, and <a class="el" href="classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd">nsol::NeuronMorphology::soma()</a>.</p>
+
+<p>Referenced by <a class="el" href="classnsol_1_1_swc_reader_templated.html#ae05736bbee7070d1e9fd0e4aeb26c502">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::readNeuron()</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_cgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_cgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_cgraph" id="classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_cgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0" title="Reads a Neurite from a processed SWC file, calls _ReadSection. " alt="" coords="244,155,435,196"/>
+<area shape="rect" id="node9" href="classnsol_1_1_neuron_morphology.html#ae17e7244522c1d4eb43dc71c14af7e73" title="Method to add a new neurite to the neuron. " alt="" coords="251,220,428,261"/>
+<area shape="rect" id="node10" href="classnsol_1_1_soma.html#a1f26090e46683c07a19b24c54de89455" title="Method to add a node to the soma. " alt="" coords="259,286,419,313"/>
+<area shape="rect" id="node11" href="classnsol_1_1_soma.html#a8fb8e725fe4b512a04e6e4eac0db2881" title="Method to get the center of the soma. " alt="" coords="268,337,411,363"/>
+<area shape="rect" id="node12" href="classnsol_1_1_log.html#a6a6ec07043dc22077331ebc692ae0dc5" title="Method to log out a message in a specific level. " alt="" coords="286,387,393,414"/>
+<area shape="rect" id="node13" href="classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd" title="Method to set the neuronal soma. " alt="" coords="251,439,428,480"/>
+<area shape="rect" id="node3" href="classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9" title="Creates and calculates sections, as well as bifurcation and branch counts. " alt="" coords="500,5,691,47"/>
+<area shape="rect" id="node4" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de" title="Adds a Node at the end of Section. " alt="" coords="756,35,981,76"/>
+<area shape="rect" id="node5" href="classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f" title="Adds child Section to this Section. " alt="" coords="483,123,708,164"/>
+<area shape="rect" id="node6" href="classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc" title="Gets the first Node of the Section. " alt="" coords="483,188,708,229"/>
+<area shape="rect" id="node7" href="classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632" title="Gets the parent Neurite of the Neuron Morphology Section. " alt="" coords="483,253,708,295"/>
+<area shape="rect" id="node8" href="classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47" title="Gets the parent Section of this Section. " alt="" coords="483,319,708,360"/>
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_icgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_icgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_icgraph" id="classnsol_1_1_swc_reader_templated_aa91c611d7048d7d1d00d39d00ee80091_icgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#ae05736bbee7070d1e9fd0e4aeb26c502" title="Creates a new Neuron that contains the NeuronMorphology described in SWC file Calls readMorphology( 2..." alt="" coords="244,5,435,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae05736bbee7070d1e9fd0e4aeb26c502"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;SWC_READER_TEMPLATE_CLASSES &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnsol_1_1_neuron.html">NeuronPtr</a> <a class="el" href="classnsol_1_1_swc_reader_templated.html">nsol::SwcReaderTemplated</a>&lt; SWC_READER_TEMPLATE_CLASSES &gt;::readNeuron </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reposition_</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> that contains the <a class="el" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. ">NeuronMorphology</a> described in SWC file Calls readMorphology( 2 ) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>path to SWC file to read </td></tr>
+    <tr><td class="paramname">reposition_</td><td>sets soma center to ( 0.0, 0.0, 0.0 ) if true </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> created; nullptr if failure on SWC read </dd></dl>
+
+<p>Definition at line <a class="el" href="_swc_reader_8h_source.html#l00203">203</a> of file <a class="el" href="_swc_reader_8h_source.html">SwcReader.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::readMorphology()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_swc_reader_templated_ae05736bbee7070d1e9fd0e4aeb26c502_cgraph.png" border="0" usemap="#classnsol_1_1_swc_reader_templated_ae05736bbee7070d1e9fd0e4aeb26c502_cgraph" alt=""/></div>
+<map name="classnsol_1_1_swc_reader_templated_ae05736bbee7070d1e9fd0e4aeb26c502_cgraph" id="classnsol_1_1_swc_reader_templated_ae05736bbee7070d1e9fd0e4aeb26c502_cgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091" title="Creates a NeuronMorphology and loads info described in SWC file. " alt="" coords="244,304,435,345"/>
+<area shape="rect" id="node3" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0" title="Reads a Neurite from a processed SWC file, calls _ReadSection. " alt="" coords="483,155,673,196"/>
+<area shape="rect" id="node10" href="classnsol_1_1_neuron_morphology.html#ae17e7244522c1d4eb43dc71c14af7e73" title="Method to add a new neurite to the neuron. " alt="" coords="489,220,667,261"/>
+<area shape="rect" id="node11" href="classnsol_1_1_soma.html#a1f26090e46683c07a19b24c54de89455" title="Method to add a node to the soma. " alt="" coords="498,286,658,313"/>
+<area shape="rect" id="node12" href="classnsol_1_1_soma.html#a8fb8e725fe4b512a04e6e4eac0db2881" title="Method to get the center of the soma. " alt="" coords="507,337,649,363"/>
+<area shape="rect" id="node13" href="classnsol_1_1_log.html#a6a6ec07043dc22077331ebc692ae0dc5" title="Method to log out a message in a specific level. " alt="" coords="525,387,631,414"/>
+<area shape="rect" id="node14" href="classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd" title="Method to set the neuronal soma. " alt="" coords="489,439,667,480"/>
+<area shape="rect" id="node4" href="classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9" title="Creates and calculates sections, as well as bifurcation and branch counts. " alt="" coords="739,5,929,47"/>
+<area shape="rect" id="node5" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de" title="Adds a Node at the end of Section. " alt="" coords="995,35,1220,76"/>
+<area shape="rect" id="node6" href="classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f" title="Adds child Section to this Section. " alt="" coords="721,123,947,164"/>
+<area shape="rect" id="node7" href="classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc" title="Gets the first Node of the Section. " alt="" coords="721,188,947,229"/>
+<area shape="rect" id="node8" href="classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632" title="Gets the parent Neurite of the Neuron Morphology Section. " alt="" coords="721,253,947,295"/>
+<area shape="rect" id="node9" href="classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47" title="Gets the parent Section of this Section. " alt="" coords="721,319,947,360"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_swc_reader_8h_source.html">SwcReader.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -183,7 +561,7 @@ class nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>nsol</b></li><li class="navelem"><a class="el" href="classnsol_1_1_swc_reader_templated.html">SwcReaderTemplated</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 12:14:10 for nsol by
+    <li class="footer">Generated on Thu Nov 16 2017 20:33:26 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

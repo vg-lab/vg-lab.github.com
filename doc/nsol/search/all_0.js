@@ -31,6 +31,8 @@ var searchData=
   ['_5fpresynapticneuron',['_preSynapticNeuron',['../classnsol_1_1_synapse.html#a34d6d7f8f62e3161077c7401d0e7e84a',1,'nsol::Synapse']]],
   ['_5fpresynapticsection',['_preSynapticSection',['../classnsol_1_1_morphology_synapse.html#ab7dc8d95d05c44fe26ec13085e73544d',1,'nsol::MorphologySynapse']]],
   ['_5fpresynapticsurfaceposition',['_preSynapticSurfacePosition',['../classnsol_1_1_morphology_synapse.html#aeddd685156eb258e92796f1ce8bf7190',1,'nsol::MorphologySynapse']]],
+  ['_5freadneurite',['_ReadNeurite',['../classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0',1,'nsol::SwcReaderTemplated']]],
+  ['_5freadsection',['_ReadSection',['../classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9',1,'nsol::SwcReaderTemplated']]],
   ['_5fstream',['_stream',['../classnsol_1_1_log.html#a2860b9449bff08fda23fb8158a0199e1',1,'nsol::Log']]],
   ['_5fsynapses',['_synapses',['../classnsol_1_1_circuit.html#a5e9ac3d6f02975feabba2ab59aa8e82e',1,'nsol::Circuit']]],
   ['_5ftransform',['_transform',['../classnsol_1_1_neuron.html#aab3d437209099d129a7e4a08fdc57957',1,'nsol::Neuron']]],

@@ -9,12 +9,12 @@ var searchData=
   ['tneuronmorphologysectionstat',['TNeuronMorphologySectionStat',['../classnsol_1_1_neuron_morphology_section_stats.html#ace2f5cf3dda8ebafd13feb520162951f',1,'nsol::NeuronMorphologySectionStats']]],
   ['tojson',['toJSON',['../classnsol_1_1_version.html#aa1c5f35ed503f5fc88d53ef8db8969f1',1,'nsol::Version']]],
   ['transform',['transform',['../classnsol_1_1_neuron.html#a29aa5688d8524b9a96b0154f07b4d3cd',1,'nsol::Neuron']]],
-  ['treadaxonstackelem',['TReadAxonStackElem',['../structnsol_1_1_swc_reader_templated_1_1_t_read_axon_stack_elem.html',1,'nsol::SwcReaderTemplated']]],
-  ['treaddendritesstackelem',['TReadDendritesStackElem',['../structnsol_1_1_swc_reader_templated_1_1_t_read_dendrites_stack_elem.html',1,'nsol::SwcReaderTemplated']]],
+  ['treadneuritestackelem',['TReadNeuriteStackElem',['../structnsol_1_1_swc_reader_templated_1_1_t_read_neurite_stack_elem.html',1,'nsol::SwcReaderTemplated']]],
   ['tsegmentstat',['TSegmentStat',['../classnsol_1_1_segment_stats.html#a990404bff6b84d6a5d19e6933aabe104',1,'nsol::SegmentStats']]],
   ['tsimplificationmethod',['TSimplificationMethod',['../classnsol_1_1_simplifier.html#a8a0153643b1323c8d42068ef618de1a7',1,'nsol::Simplifier']]],
   ['tswcline',['TSwcLine',['../structnsol_1_1_swc_reader_templated_1_1_t_swc_line.html',1,'nsol::SwcReaderTemplated']]],
   ['tswcline',['TSwcLine',['../structnsol_1_1_swc_writer_1_1_t_swc_line.html',1,'nsol::SwcWriter']]],
+  ['tswcnodetype',['TSwcNodeType',['../classnsol_1_1_swc_reader_templated.html#abfa33db80108c0bf39e58d95dc3a4f77',1,'nsol::SwcReaderTemplated']]],
   ['tsynapsetype',['TSynapseType',['../classnsol_1_1_morphology_synapse.html#a9e0b86b6437e96f3573a7b429c96f432',1,'nsol::MorphologySynapse']]],
   ['tsynapticsectiontype',['TSynapticSectionType',['../classnsol_1_1_morphology_synapse.html#a17a47f2ce79d651c5390857205991fc8',1,'nsol::MorphologySynapse']]]
 ];

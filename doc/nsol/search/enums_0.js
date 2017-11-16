@@ -9,6 +9,7 @@ var searchData=
   ['tneuronmorphologysectionstat',['TNeuronMorphologySectionStat',['../classnsol_1_1_neuron_morphology_section_stats.html#ace2f5cf3dda8ebafd13feb520162951f',1,'nsol::NeuronMorphologySectionStats']]],
   ['tsegmentstat',['TSegmentStat',['../classnsol_1_1_segment_stats.html#a990404bff6b84d6a5d19e6933aabe104',1,'nsol::SegmentStats']]],
   ['tsimplificationmethod',['TSimplificationMethod',['../classnsol_1_1_simplifier.html#a8a0153643b1323c8d42068ef618de1a7',1,'nsol::Simplifier']]],
+  ['tswcnodetype',['TSwcNodeType',['../classnsol_1_1_swc_reader_templated.html#abfa33db80108c0bf39e58d95dc3a4f77',1,'nsol::SwcReaderTemplated']]],
   ['tsynapsetype',['TSynapseType',['../classnsol_1_1_morphology_synapse.html#a9e0b86b6437e96f3573a7b429c96f432',1,'nsol::MorphologySynapse']]],
   ['tsynapticsectiontype',['TSynapticSectionType',['../classnsol_1_1_morphology_synapse.html#a17a47f2ce79d651c5390857205991fc8',1,'nsol::MorphologySynapse']]]
 ];
