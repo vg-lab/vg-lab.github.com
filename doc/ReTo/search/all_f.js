@@ -1,8 +1,8 @@
 var searchData=
 [
   ['reto_20_2d_20render_20auxiliary_20tools',['ReTo - Render auxiliary Tools',['../index.html',1,'']]],
-  ['radius',['radius',['../classreto_1_1_camera.html#a8c18c3d4199a08a93f02031ca4008ee4',1,'reto::Camera::radius(void)'],['../classreto_1_1_camera.html#ae46d1a3523df01db20083aad11b16a86',1,'reto::Camera::radius(const float radius_)']]],
-  ['ratio',['ratio',['../classreto_1_1_camera.html#a4568fc9b46364a80498b64c76e1a087d',1,'reto::Camera']]],
+  ['radius',['radius',['../classreto_1_1_camera.html#a8c18c3d4199a08a93f02031ca4008ee4',1,'reto::Camera::radius(void)'],['../classreto_1_1_camera.html#a6f0f7218403107053b49b757ccdbf7ba',1,'reto::Camera::radius(const float radius)']]],
+  ['ratio',['ratio',['../classreto_1_1_camera.html#a48560df1b716ce742c4ad365ba4e32e2',1,'reto::Camera']]],
   ['remove',['remove',['../classreto_1_1_texture_manager.html#a1e00e2e34d8a709c7bfda71facb96d6c',1,'reto::TextureManager']]],
   ['removeobject',['RemoveObject',['../classreto_1_1_picking_system.html#a6ed149604cb48b3fec476ccdb421aaa8',1,'reto::PickingSystem']]],
   ['render',['render',['../classreto_1_1_pickable.html#aad223d243fd8177567d244d04a8364fb',1,'reto::Pickable']]],
@@ -19,5 +19,5 @@ var searchData=
   ['reto_5fversion_5fpatch',['RETO_VERSION_PATCH',['../version_8h.html#a49e9c159ad03059c2069d97de4808f4f',1,'version.h']]],
   ['reto_5fversion_5frevision',['RETO_VERSION_REVISION',['../version_8h.html#a096b07b0fc896b8c46d6d1e7f584eac2',1,'version.h']]],
   ['reto_5fversion_5fstring',['RETO_VERSION_STRING',['../version_8h.html#a5f196b05f66df111c68d11d0bad2f104',1,'version.h']]],
-  ['rotation',['rotation',['../classreto_1_1_camera.html#a494f1fab697587d426af7ee497ba9181',1,'reto::Camera']]]
+  ['rotation',['rotation',['../classreto_1_1_camera.html#aa16cad32f1d54ea4434454872ca6d7c0',1,'reto::Camera']]]
 ];

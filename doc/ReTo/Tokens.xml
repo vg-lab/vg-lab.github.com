@@ -140,7 +140,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a89ecc9d9972f87783c9c13c944f727f5</Anchor>
+    <Anchor>aa6b27345edc1f88cc7482c895a2f2768</Anchor>
     <Abstract>Camera constructor. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -176,7 +176,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a882c96b67383901c9d0c8057899c0918</Anchor>
+    <Anchor>a874b1636a877fb113dd90c62ed36e8de</Anchor>
     <Abstract>Method to rotate the camera from the actual rotation. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -308,7 +308,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a4568fc9b46364a80498b64c76e1a087d</Anchor>
+    <Anchor>a48560df1b716ce742c4ad365ba4e32e2</Anchor>
     <Abstract>Method to set the camera projection ratio. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -320,7 +320,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a095b405df466beb64ffba862fd6d5ae8</Anchor>
+    <Anchor>a986f5e16c45f871e0b6e431ad5a5dd08</Anchor>
     <Abstract>Method to set the camera pivot pin. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -332,7 +332,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>ae46d1a3523df01db20083aad11b16a86</Anchor>
+    <Anchor>a6f0f7218403107053b49b757ccdbf7ba</Anchor>
     <Abstract>Method to set the distance between the camera and the pivot pin. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -344,7 +344,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a494f1fab697587d426af7ee497ba9181</Anchor>
+    <Anchor>aa16cad32f1d54ea4434454872ca6d7c0</Anchor>
     <Abstract>Method to set the rotation of the camera. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -356,7 +356,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aec3db024cf270a2ade21e853d3713522</Anchor>
+    <Anchor>a5a037acdf54e6846b13011557feead91</Anchor>
     <Abstract>Method to set the target pivot of the camera. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -368,7 +368,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aeb2af3ba25efb7a4631830a8957005e2</Anchor>
+    <Anchor>a43648c1d3c5463e74322560a09d7f24f</Anchor>
     <Abstract>Method to set the target camera distance between the camera and the pivot pin. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -380,7 +380,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a0d7de4cbc7a785f035607590b3887baf</Anchor>
+    <Anchor>a4091520144ee870b6072f4cae9c8de6f</Anchor>
     <Abstract>Method to set the target pivot pin a nd the target camera distance between the camera and this pivot ...</Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -392,7 +392,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>af1b1dbc436a2a73367bc7aa51791051d</Anchor>
+    <Anchor>a9a610a3241245a243e854f1bfe919a6a</Anchor>
     <Abstract>Method to set the anim duration of the camera movement from actual pivot and radius to the target piv...</Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -404,7 +404,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a793960107686ecfa7673cb2b0ee4590c</Anchor>
+    <Anchor>a6e29daf98854d4d2383a3756b79d9505</Anchor>
     <Abstract>Method to set window size. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -881,7 +881,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>af3b1ae2271f4c9ae812ebda6611baf3d</Anchor>
+    <Anchor>ac124d9868ac051d0c7556b5eb951244c</Anchor>
     <Abstract>Method to bind a specific index to a uniform value. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -917,7 +917,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a11a714058c6511ca118d07e0bbb42e94</Anchor>
+    <Anchor>a842508ab379800b4d4fa9b901237196e</Anchor>
     <Abstract>Method to catching an uniform buffer object. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -953,7 +953,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a44c10e9ce23621cf205eeeb37d779cc9</Anchor>
+    <Anchor>abb6b5c09752aec73bd9bcbda02a8c26c</Anchor>
     <Abstract>Method to get a Uniform Buffer Object index in cache. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1133,7 +1133,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a28ef2a026a226a98e285a66779282362</Anchor>
+    <Anchor>a04ce9bcce2f263706bf5fa185d6f68b5</Anchor>
     <Abstract>Method to send a ivec2. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1145,7 +1145,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a3e6a810e06b55dd3acf9f38da01dfcab</Anchor>
+    <Anchor>a776e4773ce31d036cfb138c5fb964ff3</Anchor>
     <Abstract>Method to send a ivec2. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1157,7 +1157,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a505327d46e2403cbc32e974414686384</Anchor>
+    <Anchor>a7a81bfc0800ed76181e3cff3f843d78f</Anchor>
     <Abstract>Method to send a ivec3. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1169,7 +1169,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a6cf04aaf80f88b9db75a07de1544d524</Anchor>
+    <Anchor>a762850de2a4366101401a856d75308e4</Anchor>
     <Abstract>Method to send a ivec3. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1181,7 +1181,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>adb0b4bb64bbd8128de25649b6b2fbc93</Anchor>
+    <Anchor>a9f8cc76dffb89ba637ca86cd0bc9b681</Anchor>
     <Abstract>Method to send a ivec4. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1193,7 +1193,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a22c5aaabbad92931671820499ade8f2d</Anchor>
+    <Anchor>aa627b91339a3a488be4d034a8d289ca1</Anchor>
     <Abstract>Method to send a ivec4. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1229,7 +1229,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>ab4633763f22dfde22873efe90f98a925</Anchor>
+    <Anchor>a8b8d51b6c084bbae048af8be9a380d95</Anchor>
     <Abstract>Method to send a mat4. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1241,7 +1241,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a9cc8bf96177ce202d4428bdcc392e56b</Anchor>
+    <Anchor>acb07b86d2ada34e6b1895438c711d3f3</Anchor>
     <Abstract>Method to send a mat4. </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>

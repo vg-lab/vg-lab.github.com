@@ -8,6 +8,6 @@ var searchData=
   ['loadobj',['loadObj',['../classreto_1_1_obj_parser.html#abc293e587f4a87476de56ee26eddc272',1,'reto::ObjParser']]],
   ['loadvertexshader',['loadVertexShader',['../classreto_1_1_shader_program.html#a0155912ae6a096903a97884990213894',1,'reto::ShaderProgram']]],
   ['loadvertexshaderfromtext',['loadVertexShaderFromText',['../classreto_1_1_shader_program.html#a9bee553fddd5de6211d18f1b5f95aa31',1,'reto::ShaderProgram']]],
-  ['localrotation',['localRotation',['../classreto_1_1_camera.html#a882c96b67383901c9d0c8057899c0918',1,'reto::Camera']]],
+  ['localrotation',['localRotation',['../classreto_1_1_camera.html#a874b1636a877fb113dd90c62ed36e8de',1,'reto::Camera']]],
   ['localtranslation',['localTranslation',['../classreto_1_1_camera.html#ad7a65c41440618908b19e6f0ad10bd38',1,'reto::Camera']]]
 ];
