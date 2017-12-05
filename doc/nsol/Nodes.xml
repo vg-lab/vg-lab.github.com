@@ -932,6 +932,32 @@
               </Subnodes>
              </Node>
              <Node>
+              <Name>Morphology</Name>
+              <Path>classnsol_1_1_morphology.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>Morphology</Name>
+                <Path>classnsol_1_1_morphology.html</Path>
+                <Anchor>a48cea7b29d0b9987e92626273465e6fc</Anchor>
+               </Node>
+               <Node>
+                <Name>~Morphology</Name>
+                <Path>classnsol_1_1_morphology.html</Path>
+                <Anchor>a2ee1119ee06dd41a12455032c3bee0a7</Anchor>
+               </Node>
+               <Node>
+                <Name>sections</Name>
+                <Path>classnsol_1_1_morphology.html</Path>
+                <Anchor>a13a3ea987edb8c285ff9a73d40221ab7</Anchor>
+               </Node>
+               <Node>
+                <Name>_sections</Name>
+                <Path>classnsol_1_1_morphology.html</Path>
+                <Anchor>a8a99efdec2d9d5880b5ea9f324e94228</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>MorphologySynapse</Name>
               <Path>classnsol_1_1_morphology_synapse.html</Path>
               <Subnodes>
@@ -1726,12 +1752,12 @@
                <Node>
                 <Name>addChild</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>a4c71a5985501a3340d51957a87f0dd6f</Anchor>
+                <Anchor>af030677d04be9c658e69945723e832fc</Anchor>
                </Node>
                <Node>
                 <Name>addNode</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>a6b0557be796bdd98eb7dbcc2fc0491de</Anchor>
+                <Anchor>afe89e932f7a0db23e63b3a5c80ad91e0</Anchor>
                </Node>
                <Node>
                 <Name>asNeuronMorphologySection</Name>
@@ -1761,7 +1787,7 @@
                <Node>
                 <Name>firstNode</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>aefdeb9ea4e687e834c42c2882cbdeb02</Anchor>
+                <Anchor>aa0059b91f0b2cc63e37d13b432849b6a</Anchor>
                </Node>
                <Node>
                 <Name>id</Name>
@@ -1771,7 +1797,7 @@
                <Node>
                 <Name>id</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>a9d9f9139364eab5e090bf2203874d248</Anchor>
+                <Anchor>a42b0e85d5c80c2e91d7d59057ab686a1</Anchor>
                </Node>
                <Node>
                 <Name>lastNode</Name>
@@ -1786,7 +1812,7 @@
                <Node>
                 <Name>neurite</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>a8f247a49470bb7e4b365ba32ada106c3</Anchor>
+                <Anchor>a0c8ba49058f56db2b5f037bac766184f</Anchor>
                </Node>
                <Node>
                 <Name>parent</Name>
@@ -1796,7 +1822,7 @@
                <Node>
                 <Name>parent</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>a8dd2c6c41a08aeaf8aefa87f3dce7c54</Anchor>
+                <Anchor>acd3ee1bd1a49d8a368582f9e85f9a54b</Anchor>
                </Node>
                <Node>
                 <Name>stats</Name>
@@ -2258,7 +2284,7 @@
                <Node>
                 <Name>addBackwardNeighbour</Name>
                 <Path>classnsol_1_1_section.html</Path>
-                <Anchor>a3952bb1dc196bbba0dde5d11dd79b14a</Anchor>
+                <Anchor>abae10981b91779fe8c3864d9a5f0f6d1</Anchor>
                </Node>
                <Node>
                 <Name>addBackwardNode</Name>
@@ -2268,7 +2294,7 @@
                <Node>
                 <Name>addForwardNeighbour</Name>
                 <Path>classnsol_1_1_section.html</Path>
-                <Anchor>a033f65dcaf822bc386f4fb5a008ac403</Anchor>
+                <Anchor>a00352c51a9873bc88cd8eac3edd5b860</Anchor>
                </Node>
                <Node>
                 <Name>addForwardNode</Name>
@@ -2278,7 +2304,7 @@
                <Node>
                 <Name>addNeighbour</Name>
                 <Path>classnsol_1_1_section.html</Path>
-                <Anchor>ad4844c9fa2e3a6e1ab8d4b2f9627f31a</Anchor>
+                <Anchor>a7362c73900e067a4016ffb1a012e1e46</Anchor>
                </Node>
                <Node>
                 <Name>asSection</Name>
@@ -2304,6 +2330,16 @@
                 <Name>clone</Name>
                 <Path>classnsol_1_1_section.html</Path>
                 <Anchor>ab907f483690662a890a0c4ee78a6784c</Anchor>
+               </Node>
+               <Node>
+                <Name>deleteBackwardNeighbour</Name>
+                <Path>classnsol_1_1_section.html</Path>
+                <Anchor>abadb2ebdd27e92e55049f0ae436096ab</Anchor>
+               </Node>
+               <Node>
+                <Name>deleteForwardNeighbour</Name>
+                <Path>classnsol_1_1_section.html</Path>
+                <Anchor>ac15a1719be16c8070705806311053980</Anchor>
                </Node>
                <Node>
                 <Name>forwardNeighbors</Name>
@@ -2471,9 +2507,19 @@
                 <Anchor>ada7f30d048431e7d907b76c732ea6ceb</Anchor>
                </Node>
                <Node>
+                <Name>repairSections</Name>
+                <Path>classnsol_1_1_simplifier.html</Path>
+                <Anchor>a9ee4347c374caf35f0f8ecd79531399c</Anchor>
+               </Node>
+               <Node>
                 <Name>simplify</Name>
                 <Path>classnsol_1_1_simplifier.html</Path>
                 <Anchor>a835a25806ca661ddb4b9ceef515873eb</Anchor>
+               </Node>
+               <Node>
+                <Name>simplify</Name>
+                <Path>classnsol_1_1_simplifier.html</Path>
+                <Anchor>a0b0673201fd917b31ff7e54462115ecb</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -3103,24 +3149,30 @@
               </Subnodes>
              </Node>
              <Node>
-              <Name>nsol::Neuron</Name>
-              <Path>classnsol_1_1_neuron.html</Path>
-             </Node>
-             <Node>
-              <Name>nsol::NeuronMorphology</Name>
-              <Path>classnsol_1_1_neuron_morphology.html</Path>
+              <Name>nsol::Morphology</Name>
+              <Path>classnsol_1_1_morphology.html</Path>
               <Subnodes>
                <Node>
-                <Name>nsol::NeuronMorphologyStats</Name>
-                <Path>classnsol_1_1_neuron_morphology_stats.html</Path>
+                <Name>nsol::NeuronMorphology</Name>
+                <Path>classnsol_1_1_neuron_morphology.html</Path>
                 <Subnodes>
                  <Node>
-                  <Name>nsol::NeuronMorphologyCachedStats</Name>
-                  <Path>classnsol_1_1_neuron_morphology_cached_stats.html</Path>
+                  <Name>nsol::NeuronMorphologyStats</Name>
+                  <Path>classnsol_1_1_neuron_morphology_stats.html</Path>
+                  <Subnodes>
+                   <Node>
+                    <Name>nsol::NeuronMorphologyCachedStats</Name>
+                    <Path>classnsol_1_1_neuron_morphology_cached_stats.html</Path>
+                   </Node>
+                  </Subnodes>
                  </Node>
                 </Subnodes>
                </Node>
               </Subnodes>
+             </Node>
+             <Node>
+              <Name>nsol::Neuron</Name>
+              <Path>classnsol_1_1_neuron.html</Path>
              </Node>
              <Node>
               <Name>nsol::Node</Name>
@@ -3542,6 +3594,10 @@
             <Path>_mini_column_stats_8h_source.html</Path>
            </Node>
            <Node>
+            <Name>Morphology.h</Name>
+            <Path>_morphology_8h_source.html</Path>
+           </Node>
+           <Node>
             <Name>MorphologySynapse.h</Name>
             <Path>_morphology_synapse_8h_source.html</Path>
            </Node>
@@ -3668,6 +3724,10 @@
            <Node>
             <Name>Synapses.h</Name>
             <Path>_synapses_8h_source.html</Path>
+           </Node>
+           <Node>
+            <Name>VasculatureReader.h</Name>
+            <Path>_vasculature_reader_8h_source.html</Path>
            </Node>
            <Node>
             <Name>version.h</Name>

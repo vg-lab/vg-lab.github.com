@@ -12,5 +12,7 @@ var classnsol_1_1_simplifier =
     [ "cutout", "classnsol_1_1_simplifier.html#af2f11f7d423b0fd6f433e61273caab06", null ],
     [ "Instance", "classnsol_1_1_simplifier.html#a1b15df10d5813a588e37de4d4340bfec", null ],
     [ "operator=", "classnsol_1_1_simplifier.html#ada7f30d048431e7d907b76c732ea6ceb", null ],
-    [ "simplify", "classnsol_1_1_simplifier.html#a835a25806ca661ddb4b9ceef515873eb", null ]
+    [ "repairSections", "classnsol_1_1_simplifier.html#a9ee4347c374caf35f0f8ecd79531399c", null ],
+    [ "simplify", "classnsol_1_1_simplifier.html#a835a25806ca661ddb4b9ceef515873eb", null ],
+    [ "simplify", "classnsol_1_1_simplifier.html#a0b0673201fd917b31ff7e54462115ecb", null ]
 ];

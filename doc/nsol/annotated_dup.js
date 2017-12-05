@@ -20,6 +20,7 @@ var annotated_dup =
       [ "MiniColumn", "classnsol_1_1_mini_column.html", "classnsol_1_1_mini_column" ],
       [ "MiniColumns", "classnsol_1_1_mini_columns.html", null ],
       [ "MiniColumnStats", "classnsol_1_1_mini_column_stats.html", "classnsol_1_1_mini_column_stats" ],
+      [ "Morphology", "classnsol_1_1_morphology.html", "classnsol_1_1_morphology" ],
       [ "MorphologySynapse", "classnsol_1_1_morphology_synapse.html", "classnsol_1_1_morphology_synapse" ],
       [ "Neurite", "classnsol_1_1_neurite.html", "classnsol_1_1_neurite" ],
       [ "NeuriteCachedStats", "classnsol_1_1_neurite_cached_stats.html", "classnsol_1_1_neurite_cached_stats" ],

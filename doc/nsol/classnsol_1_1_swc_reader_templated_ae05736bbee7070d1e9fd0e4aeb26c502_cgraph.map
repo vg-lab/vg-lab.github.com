@@ -7,8 +7,8 @@
 <area shape="rect" id="node13" href="$classnsol_1_1_log.html#a6a6ec07043dc22077331ebc692ae0dc5" title="Method to log out a message in a specific level. " alt="" coords="525,387,631,414"/>
 <area shape="rect" id="node14" href="$classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd" title="Method to set the neuronal soma. " alt="" coords="489,439,667,480"/>
 <area shape="rect" id="node4" href="$classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9" title="Creates and calculates sections, as well as bifurcation and branch counts. " alt="" coords="739,5,929,47"/>
-<area shape="rect" id="node5" href="$classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de" title="Adds a Node at the end of Section. " alt="" coords="995,35,1220,76"/>
-<area shape="rect" id="node6" href="$classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f" title="Adds child Section to this Section. " alt="" coords="721,123,947,164"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_neuron_morphology_section.html#afe89e932f7a0db23e63b3a5c80ad91e0" title="Adds a Node at the end of Section. " alt="" coords="995,35,1220,76"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_neuron_morphology_section.html#af030677d04be9c658e69945723e832fc" title="Adds child Section to this Section. " alt="" coords="721,123,947,164"/>
 <area shape="rect" id="node7" href="$classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc" title="Gets the first Node of the Section. " alt="" coords="721,188,947,229"/>
 <area shape="rect" id="node8" href="$classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632" title="Gets the parent Neurite of the Neuron Morphology Section. " alt="" coords="721,253,947,295"/>
 <area shape="rect" id="node9" href="$classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47" title="Gets the parent Section of this Section. " alt="" coords="721,319,947,360"/>

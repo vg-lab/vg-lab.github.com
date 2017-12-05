@@ -24,6 +24,7 @@ var files =
     [ "MiniColumn.h", "_mini_column_8h_source.html", null ],
     [ "MiniColumns.h", "_mini_columns_8h_source.html", null ],
     [ "MiniColumnStats.h", "_mini_column_stats_8h_source.html", null ],
+    [ "Morphology.h", "_morphology_8h_source.html", null ],
     [ "MorphologySynapse.h", "_morphology_synapse_8h_source.html", null ],
     [ "Neurite.h", "_neurite_8h_source.html", null ],
     [ "NeuriteCachedStats.cpp", "_neurite_cached_stats_8cpp_source.html", null ],
@@ -56,6 +57,7 @@ var files =
     [ "SwcWriter.h", "_swc_writer_8h_source.html", null ],
     [ "Synapse.h", "_synapse_8h_source.html", null ],
     [ "Synapses.h", "_synapses_8h_source.html", null ],
+    [ "VasculatureReader.h", "_vasculature_reader_8h_source.html", null ],
     [ "version.h", "version_8h.html", "version_8h" ],
     [ "XmlSceneReader.h", "_xml_scene_reader_8h_source.html", null ],
     [ "XmlSceneWriter.h", "_xml_scene_writer_8h_source.html", null ]

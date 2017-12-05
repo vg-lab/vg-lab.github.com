@@ -1,7 +1,9 @@
 <map id="nsol::NeuronMorphologyStats" name="nsol::NeuronMorphologyStats">
-<area shape="rect" id="node2" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="186,632,365,856"/>
-<area shape="rect" id="node3" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="5,316,188,525"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="212,272,339,569"/>
-<area shape="rect" id="node5" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="217,132,315,209"/>
-<area shape="rect" id="node7" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="375,382,485,459"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="345,764,523,988"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_morphology.html" title="{nsol::Morphology\n||+ Morphology()\l+ ~Morphology()\l+ sections()\l}" alt="" coords="201,499,333,606"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="5,132,188,341"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="212,198,323,275"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="371,404,497,701"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="385,198,483,275"/>
+<area shape="rect" id="node10" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="533,514,644,591"/>
 </map>

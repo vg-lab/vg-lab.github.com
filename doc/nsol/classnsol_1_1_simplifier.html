@@ -145,6 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a835a25806ca661ddb4b9ceef515873eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_simplifier.html#a835a25806ca661ddb4b9ceef515873eb">simplify</a> (<a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a> morpho_, <a class="el" href="classnsol_1_1_simplifier.html#a8a0153643b1323c8d42068ef618de1a7">TSimplificationMethod</a> simplMethod_=DELETE_ALL, float tolerance_=0.1, bool clone_=false)</td></tr>
 <tr class="memdesc:a835a25806ca661ddb4b9ceef515873eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to simplify the morphology given by the simplification function selected, the simplification can be made over the original given morphology or over a clone of this morphology.  <a href="#a835a25806ca661ddb4b9ceef515873eb">More...</a><br /></td></tr>
 <tr class="separator:a835a25806ca661ddb4b9ceef515873eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0673201fd917b31ff7e54462115ecb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b0673201fd917b31ff7e54462115ecb"></a>
+<a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>simplify</b> (<a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a> morpho_, <a class="el" href="classnsol_1_1_simplifier.html#a8a0153643b1323c8d42068ef618de1a7">TSimplificationMethod</a> simplMethod_=DELETE_ALL, float tolerance_=0.1)</td></tr>
+<tr class="separator:a0b0673201fd917b31ff7e54462115ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad41d5e4fe55525b59fdb3dcaba2f169e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_simplifier.html#ad41d5e4fe55525b59fdb3dcaba2f169e">adaptSoma</a> (<a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a> morpho_, bool clone_=false)</td></tr>
 <tr class="memdesc:ad41d5e4fe55525b59fdb3dcaba2f169e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to correct the neuronal morphology to avoid errors in the generation of the neuronal soma mesh.  <a href="#ad41d5e4fe55525b59fdb3dcaba2f169e">More...</a><br /></td></tr>
 <tr class="separator:ad41d5e4fe55525b59fdb3dcaba2f169e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2f11f7d423b0fd6f433e61273caab06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_simplifier.html#af2f11f7d423b0fd6f433e61273caab06">cutout</a> (<a class="el" href="classnsol_1_1_neuron_morphology.html">NeuronMorphologyPtr</a> morpho_, bool clone_=false)</td></tr>
 <tr class="memdesc:af2f11f7d423b0fd6f433e61273caab06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to cutout the neuronal morphology based in the nodes importances.  <a href="#af2f11f7d423b0fd6f433e61273caab06">More...</a><br /></td></tr>
 <tr class="separator:af2f11f7d423b0fd6f433e61273caab06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee4347c374caf35f0f8ecd79531399c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_simplifier.html#a9ee4347c374caf35f0f8ecd79531399c">repairSections</a> (<a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a> morpho_)</td></tr>
+<tr class="memdesc:a9ee4347c374caf35f0f8ecd79531399c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to repair morphological traces, deleting sections composed only by two nodes and whose distance between nodes is less than the radius of the segment that they represent.  <a href="#a9ee4347c374caf35f0f8ecd79531399c">More...</a><br /></td></tr>
+<tr class="separator:a9ee4347c374caf35f0f8ecd79531399c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e7b9070c2853b150f7f5acd88af5f3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e7b9070c2853b150f7f5acd88af5f3c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Simplifier</b> (<a class="el" href="classnsol_1_1_simplifier.html">Simplifier</a> const &amp;)=delete</td></tr>
 <tr class="separator:a4e7b9070c2853b150f7f5acd88af5f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +177,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A singleton class to operate over morphologies. </p>
 <p>Provides functionality to the simplification, the adaptation and the cutout of neuronal morphologies </p>
 
-<p>Definition at line <a class="el" href="_simplifier_8h_source.html#l00039">39</a> of file <a class="el" href="_simplifier_8h_source.html">Simplifier.h</a>.</p>
+<p>Definition at line <a class="el" href="_simplifier_8h_source.html#l00041">41</a> of file <a class="el" href="_simplifier_8h_source.html">Simplifier.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0157462bd2e5d6528d04ad8ac646090d"></a>
 <div class="memitem">
@@ -311,6 +317,30 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9ee4347c374caf35f0f8ecd79531399c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a> nsol::Simplifier::repairSections </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a>&#160;</td>
+          <td class="paramname"><em>morpho_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to repair morphological traces, deleting sections composed only by two nodes and whose distance between nodes is less than the radius of the segment that they represent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">morpho_</td><td>neuronal morphology to unify sections </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a835a25806ca661ddb4b9ceef515873eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +399,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>nsol</b></li><li class="navelem"><a class="el" href="classnsol_1_1_simplifier.html">Simplifier</a></li>
-    <li class="footer">Generated on Thu Nov 16 2017 20:33:26 for nsol by
+    <li class="footer">Generated on Tue Dec 5 2017 17:09:48 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

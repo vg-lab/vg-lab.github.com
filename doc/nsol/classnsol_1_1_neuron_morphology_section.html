@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('classnsol_1_1_neuron_morphology_sectio
 <div class="center"><img src="classnsol_1_1_neuron_morphology_section__inherit__graph.png" border="0" usemap="#nsol_1_1_neuron_morphology_section_inherit__map" alt="Inheritance graph"/></div>
 <map name="nsol_1_1_neuron_morphology_section_inherit__map" id="nsol_1_1_neuron_morphology_section_inherit__map">
 <area shape="rect" id="node4" href="classnsol_1_1_neuron_morphology_section_stats.html" title="{nsol::NeuronMorphologySection\lStats\n||+ stats()\l+ getStat()\l}" alt="" coords="20,851,245,957"/>
-<area shape="rect" id="node2" href="classnsol_1_1_section.html" title="{nsol::Section\n|# _nodes\l# _backwardSections\l# _forwardSections\l|+ Section()\l+ ~Section()\l+ backwardNeighbors()\l+ backwardNeighbors()\l+ forwardNeighbors()\l+ forwardNeighbors()\l+ addBackwardNeighbour()\l+ addForwardNeighbour()\l+ addNeighbour()\l+ nodes()\land 9 more...\l}" alt="" coords="33,263,232,516"/>
+<area shape="rect" id="node2" href="classnsol_1_1_section.html" title="{nsol::Section\n|# _nodes\l# _backwardSections\l# _forwardSections\l|+ Section()\l+ ~Section()\l+ backwardNeighbors()\l+ backwardNeighbors()\l+ forwardNeighbors()\l+ forwardNeighbors()\l+ addBackwardNeighbour()\l+ addForwardNeighbour()\l+ deleteBackwardNeighbour()\l+ deleteForwardNeighbour()\land 11 more...\l}" alt="" coords="25,263,240,516"/>
 <area shape="rect" id="node3" href="classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="41,5,224,215"/>
 <area shape="rect" id="node5" href="classnsol_1_1_neuron_morphology_section_cached_stats.html" title="{nsol::NeuronMorphologySection\lCachedStats\n||+ NeuronMorphologySectionCached\lStats()\l+ ~NeuronMorphologySection\lCachedStats()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ addNode()\l+ firstNode()\l+ getStat()\l}" alt="" coords="5,1005,260,1215"/>
 </map>
@@ -134,14 +134,15 @@ $(document).ready(function(){initNavTree('classnsol_1_1_neuron_morphology_sectio
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnsol_1_1_neuron_morphology_section__coll__graph.png" border="0" usemap="#nsol_1_1_neuron_morphology_section_coll__map" alt="Collaboration graph"/></div>
 <map name="nsol_1_1_neuron_morphology_section_coll__map" id="nsol_1_1_neuron_morphology_section_coll__map">
-<area shape="rect" id="node8" href="classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="176,1065,400,1348"/>
-<area shape="rect" id="node2" href="classnsol_1_1_section.html" title="{nsol::Section\n||+ Section()\l+ ~Section()\l+ backwardNeighbors()\l+ backwardNeighbors()\l+ forwardNeighbors()\l+ forwardNeighbors()\l+ addBackwardNeighbour()\l+ addForwardNeighbour()\l+ addNeighbour()\l+ nodes()\land 9 more...\l}" alt="" coords="73,455,271,679"/>
-<area shape="rect" id="node3" href="classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="178,132,361,341"/>
-<area shape="rect" id="node9" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="328,779,507,1003"/>
-<area shape="rect" id="node4" href="classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="385,198,482,275"/>
-<area shape="rect" id="node10" href="classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="363,419,490,716"/>
+<area shape="rect" id="node8" href="classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="329,1065,553,1348"/>
+<area shape="rect" id="node2" href="classnsol_1_1_section.html" title="{nsol::Section\n||+ Section()\l+ ~Section()\l+ backwardNeighbors()\l+ backwardNeighbors()\l+ forwardNeighbors()\l+ forwardNeighbors()\l+ addBackwardNeighbour()\l+ addForwardNeighbour()\l+ deleteBackwardNeighbour()\l+ deleteForwardNeighbour()\land 11 more...\l}" alt="" coords="229,455,443,679"/>
+<area shape="rect" id="node3" href="classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="222,132,405,341"/>
+<area shape="rect" id="node10" href="classnsol_1_1_morphology.html" title="{nsol::Morphology\n||+ Morphology()\l+ ~Morphology()\l+ sections()\l}" alt="" coords="73,514,205,621"/>
+<area shape="rect" id="node4" href="classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="438,198,535,275"/>
+<area shape="rect" id="node11" href="classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="467,419,594,716"/>
 <area shape="rect" id="node6" href="classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="43,198,154,275"/>
-<area shape="rect" id="node11" href="classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="534,529,645,606"/>
+<area shape="rect" id="node9" href="classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="453,779,632,1003"/>
+<area shape="rect" id="node12" href="classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="618,529,729,606"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -158,39 +159,39 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:a798dceea16dcc83f61132d706ad3f1b8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a798dceea16dcc83f61132d706ad3f1b8">id</a> (void)</td></tr>
 <tr class="memdesc:a798dceea16dcc83f61132d706ad3f1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the gid of the neuron morphology section.  <a href="#a798dceea16dcc83f61132d706ad3f1b8">More...</a><br /></td></tr>
 <tr class="separator:a798dceea16dcc83f61132d706ad3f1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d9f9139364eab5e090bf2203874d248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a9d9f9139364eab5e090bf2203874d248">id</a> (unsigned int id_)</td></tr>
-<tr class="memdesc:a9d9f9139364eab5e090bf2203874d248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the gid of the neuron morphology section.  <a href="#a9d9f9139364eab5e090bf2203874d248">More...</a><br /></td></tr>
-<tr class="separator:a9d9f9139364eab5e090bf2203874d248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b0e85d5c80c2e91d7d59057ab686a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a42b0e85d5c80c2e91d7d59057ab686a1">id</a> (unsigned int id)</td></tr>
+<tr class="memdesc:a42b0e85d5c80c2e91d7d59057ab686a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the gid of the neuron morphology section.  <a href="#a42b0e85d5c80c2e91d7d59057ab686a1">More...</a><br /></td></tr>
+<tr class="separator:a42b0e85d5c80c2e91d7d59057ab686a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ad79e8f31819f2ea48590c42045632"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632">neurite</a> (void)</td></tr>
-<tr class="memdesc:a34ad79e8f31819f2ea48590c42045632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> of the <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> Morphology <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a34ad79e8f31819f2ea48590c42045632">More...</a><br /></td></tr>
+<tr class="memdesc:a34ad79e8f31819f2ea48590c42045632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> of the <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> <a class="el" href="classnsol_1_1_morphology.html">Morphology</a> <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a34ad79e8f31819f2ea48590c42045632">More...</a><br /></td></tr>
 <tr class="separator:a34ad79e8f31819f2ea48590c42045632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f247a49470bb7e4b365ba32ada106c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a8f247a49470bb7e4b365ba32ada106c3">neurite</a> (<a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a> neurite_)</td></tr>
-<tr class="memdesc:a8f247a49470bb7e4b365ba32ada106c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent neurite of this <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> Morphology <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a8f247a49470bb7e4b365ba32ada106c3">More...</a><br /></td></tr>
-<tr class="separator:a8f247a49470bb7e4b365ba32ada106c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8ba49058f56db2b5f037bac766184f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a0c8ba49058f56db2b5f037bac766184f">neurite</a> (<a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a> neurite)</td></tr>
+<tr class="memdesc:a0c8ba49058f56db2b5f037bac766184f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent neurite of this <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> <a class="el" href="classnsol_1_1_morphology.html">Morphology</a> <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a0c8ba49058f56db2b5f037bac766184f">More...</a><br /></td></tr>
+<tr class="separator:a0c8ba49058f56db2b5f037bac766184f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d81aca4e63a55e4baa8fba858fe5b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_section.html">SectionPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47">parent</a> (void)</td></tr>
 <tr class="memdesc:a2d81aca4e63a55e4baa8fba858fe5b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent <a class="el" href="classnsol_1_1_section.html">Section</a> of this <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a2d81aca4e63a55e4baa8fba858fe5b47">More...</a><br /></td></tr>
 <tr class="separator:a2d81aca4e63a55e4baa8fba858fe5b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd2c6c41a08aeaf8aefa87f3dce7c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a8dd2c6c41a08aeaf8aefa87f3dce7c54">parent</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> parent_)</td></tr>
-<tr class="memdesc:a8dd2c6c41a08aeaf8aefa87f3dce7c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent <a class="el" href="classnsol_1_1_section.html">Section</a> of this <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a8dd2c6c41a08aeaf8aefa87f3dce7c54">More...</a><br /></td></tr>
-<tr class="separator:a8dd2c6c41a08aeaf8aefa87f3dce7c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c71a5985501a3340d51957a87f0dd6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a4c71a5985501a3340d51957a87f0dd6f">addChild</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section_)</td></tr>
-<tr class="memdesc:a4c71a5985501a3340d51957a87f0dd6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds child <a class="el" href="classnsol_1_1_section.html">Section</a> to this <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a4c71a5985501a3340d51957a87f0dd6f">More...</a><br /></td></tr>
-<tr class="separator:a4c71a5985501a3340d51957a87f0dd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3ee1bd1a49d8a368582f9e85f9a54b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#acd3ee1bd1a49d8a368582f9e85f9a54b">parent</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> parent)</td></tr>
+<tr class="memdesc:acd3ee1bd1a49d8a368582f9e85f9a54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent <a class="el" href="classnsol_1_1_section.html">Section</a> of this <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#acd3ee1bd1a49d8a368582f9e85f9a54b">More...</a><br /></td></tr>
+<tr class="separator:acd3ee1bd1a49d8a368582f9e85f9a54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af030677d04be9c658e69945723e832fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#af030677d04be9c658e69945723e832fc">addChild</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section)</td></tr>
+<tr class="memdesc:af030677d04be9c658e69945723e832fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds child <a class="el" href="classnsol_1_1_section.html">Section</a> to this <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#af030677d04be9c658e69945723e832fc">More...</a><br /></td></tr>
+<tr class="separator:af030677d04be9c658e69945723e832fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc31d472107d4609a7f6e721860fed7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_sections.html">Sections</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#abc31d472107d4609a7f6e721860fed7f">children</a> (void)</td></tr>
 <tr class="memdesc:abc31d472107d4609a7f6e721860fed7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the children sections.  <a href="#abc31d472107d4609a7f6e721860fed7f">More...</a><br /></td></tr>
 <tr class="separator:abc31d472107d4609a7f6e721860fed7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528e99fd6b726750a234bd92c531e7c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a528e99fd6b726750a234bd92c531e7c4"></a>
 const <a class="el" href="classnsol_1_1_sections.html">Sections</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>children</b> (void) const </td></tr>
 <tr class="separator:a528e99fd6b726750a234bd92c531e7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b0557be796bdd98eb7dbcc2fc0491de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a6b0557be796bdd98eb7dbcc2fc0491de">addNode</a> (<a class="el" href="classnsol_1_1_node.html">NodePtr</a> node_)</td></tr>
-<tr class="memdesc:a6b0557be796bdd98eb7dbcc2fc0491de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="classnsol_1_1_node.html">Node</a> at the end of <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a6b0557be796bdd98eb7dbcc2fc0491de">More...</a><br /></td></tr>
-<tr class="separator:a6b0557be796bdd98eb7dbcc2fc0491de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe89e932f7a0db23e63b3a5c80ad91e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#afe89e932f7a0db23e63b3a5c80ad91e0">addNode</a> (<a class="el" href="classnsol_1_1_node.html">NodePtr</a> node)</td></tr>
+<tr class="memdesc:afe89e932f7a0db23e63b3a5c80ad91e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="classnsol_1_1_node.html">Node</a> at the end of <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#afe89e932f7a0db23e63b3a5c80ad91e0">More...</a><br /></td></tr>
+<tr class="separator:afe89e932f7a0db23e63b3a5c80ad91e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26edb3ce2d6d9e200b0971cad235c3cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_node.html">NodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc">firstNode</a> (void)</td></tr>
 <tr class="memdesc:a26edb3ce2d6d9e200b0971cad235c3cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first <a class="el" href="classnsol_1_1_node.html">Node</a> of the <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#a26edb3ce2d6d9e200b0971cad235c3cc">More...</a><br /></td></tr>
 <tr class="separator:a26edb3ce2d6d9e200b0971cad235c3cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefdeb9ea4e687e834c42c2882cbdeb02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#aefdeb9ea4e687e834c42c2882cbdeb02">firstNode</a> (<a class="el" href="classnsol_1_1_node.html">NodePtr</a> firstNode_)</td></tr>
-<tr class="memdesc:aefdeb9ea4e687e834c42c2882cbdeb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets first <a class="el" href="classnsol_1_1_node.html">Node</a> of the <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#aefdeb9ea4e687e834c42c2882cbdeb02">More...</a><br /></td></tr>
-<tr class="separator:aefdeb9ea4e687e834c42c2882cbdeb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0059b91f0b2cc63e37d13b432849b6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#aa0059b91f0b2cc63e37d13b432849b6a">firstNode</a> (<a class="el" href="classnsol_1_1_node.html">NodePtr</a> firstNode)</td></tr>
+<tr class="memdesc:aa0059b91f0b2cc63e37d13b432849b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets first <a class="el" href="classnsol_1_1_node.html">Node</a> of the <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#aa0059b91f0b2cc63e37d13b432849b6a">More...</a><br /></td></tr>
+<tr class="separator:aa0059b91f0b2cc63e37d13b432849b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb37c04fce43056ca2338cff6a3387d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_node.html">NodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron_morphology_section.html#aebb37c04fce43056ca2338cff6a3387d">lastNode</a> (void)</td></tr>
 <tr class="memdesc:aebb37c04fce43056ca2338cff6a3387d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last <a class="el" href="classnsol_1_1_node.html">Node</a> of the <a class="el" href="classnsol_1_1_section.html">Section</a>.  <a href="#aebb37c04fce43056ca2338cff6a3387d">More...</a><br /></td></tr>
 <tr class="separator:aebb37c04fce43056ca2338cff6a3387d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,15 +225,21 @@ const <a class="el" href="classnsol_1_1_sections.html">Sections</a> &amp;&#160;<
 <tr class="memitem:a0ea83b025be811d1f2da536ef4ee7a3b inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ea83b025be811d1f2da536ef4ee7a3b"></a>
 const <a class="el" href="classnsol_1_1_sections.html">Sections</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>forwardNeighbors</b> (void) const </td></tr>
 <tr class="separator:a0ea83b025be811d1f2da536ef4ee7a3b inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3952bb1dc196bbba0dde5d11dd79b14a inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#a3952bb1dc196bbba0dde5d11dd79b14a">addBackwardNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section_)</td></tr>
-<tr class="memdesc:a3952bb1dc196bbba0dde5d11dd79b14a inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds backward neighbour section to this section.  <a href="#a3952bb1dc196bbba0dde5d11dd79b14a">More...</a><br /></td></tr>
-<tr class="separator:a3952bb1dc196bbba0dde5d11dd79b14a inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a033f65dcaf822bc386f4fb5a008ac403 inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#a033f65dcaf822bc386f4fb5a008ac403">addForwardNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section_)</td></tr>
-<tr class="memdesc:a033f65dcaf822bc386f4fb5a008ac403 inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds forward neighbour section to this section.  <a href="#a033f65dcaf822bc386f4fb5a008ac403">More...</a><br /></td></tr>
-<tr class="separator:a033f65dcaf822bc386f4fb5a008ac403 inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4844c9fa2e3a6e1ab8d4b2f9627f31a inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#ad4844c9fa2e3a6e1ab8d4b2f9627f31a">addNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section_, <a class="el" href="classnsol_1_1_node.html">NodePtr</a> node_)</td></tr>
-<tr class="memdesc:ad4844c9fa2e3a6e1ab8d4b2f9627f31a inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the node connects with the backward or the fordward neighbour sections and add the section to the correspondent sections container.  <a href="#ad4844c9fa2e3a6e1ab8d4b2f9627f31a">More...</a><br /></td></tr>
-<tr class="separator:ad4844c9fa2e3a6e1ab8d4b2f9627f31a inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae10981b91779fe8c3864d9a5f0f6d1 inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#abae10981b91779fe8c3864d9a5f0f6d1">addBackwardNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section)</td></tr>
+<tr class="memdesc:abae10981b91779fe8c3864d9a5f0f6d1 inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds backward neighbour section to this section.  <a href="#abae10981b91779fe8c3864d9a5f0f6d1">More...</a><br /></td></tr>
+<tr class="separator:abae10981b91779fe8c3864d9a5f0f6d1 inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00352c51a9873bc88cd8eac3edd5b860 inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#a00352c51a9873bc88cd8eac3edd5b860">addForwardNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section)</td></tr>
+<tr class="memdesc:a00352c51a9873bc88cd8eac3edd5b860 inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds forward neighbour section to this section.  <a href="#a00352c51a9873bc88cd8eac3edd5b860">More...</a><br /></td></tr>
+<tr class="separator:a00352c51a9873bc88cd8eac3edd5b860 inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadb2ebdd27e92e55049f0ae436096ab inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#abadb2ebdd27e92e55049f0ae436096ab">deleteBackwardNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section_)</td></tr>
+<tr class="memdesc:abadb2ebdd27e92e55049f0ae436096ab inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete backward neighbour section from this section.  <a href="#abadb2ebdd27e92e55049f0ae436096ab">More...</a><br /></td></tr>
+<tr class="separator:abadb2ebdd27e92e55049f0ae436096ab inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15a1719be16c8070705806311053980 inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#ac15a1719be16c8070705806311053980">deleteForwardNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section_)</td></tr>
+<tr class="memdesc:ac15a1719be16c8070705806311053980 inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete forward neighbour section from this section.  <a href="#ac15a1719be16c8070705806311053980">More...</a><br /></td></tr>
+<tr class="separator:ac15a1719be16c8070705806311053980 inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7362c73900e067a4016ffb1a012e1e46 inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#a7362c73900e067a4016ffb1a012e1e46">addNeighbour</a> (<a class="el" href="classnsol_1_1_section.html">SectionPtr</a> section, <a class="el" href="classnsol_1_1_node.html">NodePtr</a> node)</td></tr>
+<tr class="memdesc:a7362c73900e067a4016ffb1a012e1e46 inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the node connects with the backward or the fordward neighbour sections and add the section to the correspondent sections container.  <a href="#a7362c73900e067a4016ffb1a012e1e46">More...</a><br /></td></tr>
+<tr class="separator:a7362c73900e067a4016ffb1a012e1e46 inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab644e0a315cd87eb9054a7c5ca40e5c7 inherit pub_methods_classnsol_1_1_section"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_nodes.html">Nodes</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_section.html#ab644e0a315cd87eb9054a7c5ca40e5c7">nodes</a> (void)</td></tr>
 <tr class="memdesc:ab644e0a315cd87eb9054a7c5ca40e5c7 inherit pub_methods_classnsol_1_1_section"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the middle <a class="el" href="classnsol_1_1_nodes.html">Nodes</a>.  <a href="#ab644e0a315cd87eb9054a7c5ca40e5c7">More...</a><br /></td></tr>
 <tr class="separator:ab644e0a315cd87eb9054a7c5ca40e5c7 inherit pub_methods_classnsol_1_1_section"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,7 +318,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="textblock">
 <p>Definition at line <a class="el" href="_neuron_morphology_section_8h_source.html#l00033">33</a> of file <a class="el" href="_neuron_morphology_section_8h_source.html">NeuronMorphologySection.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4c71a5985501a3340d51957a87f0dd6f"></a>
+<a class="anchor" id="af030677d04be9c658e69945723e832fc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -319,7 +326,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">void nsol::NeuronMorphologySection::addChild </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnsol_1_1_section.html">SectionPtr</a>&#160;</td>
-          <td class="paramname"><em>section_</em></td><td>)</td>
+          <td class="paramname"><em>section</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -340,8 +347,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnsol_1_1_neuron_morphology_section_a4c71a5985501a3340d51957a87f0dd6f_icgraph.png" border="0" usemap="#classnsol_1_1_neuron_morphology_section_a4c71a5985501a3340d51957a87f0dd6f_icgraph" alt=""/></div>
-<map name="classnsol_1_1_neuron_morphology_section_a4c71a5985501a3340d51957a87f0dd6f_icgraph" id="classnsol_1_1_neuron_morphology_section_a4c71a5985501a3340d51957a87f0dd6f_icgraph">
+<div class="center"><img src="classnsol_1_1_neuron_morphology_section_af030677d04be9c658e69945723e832fc_icgraph.png" border="0" usemap="#classnsol_1_1_neuron_morphology_section_af030677d04be9c658e69945723e832fc_icgraph" alt=""/></div>
+<map name="classnsol_1_1_neuron_morphology_section_af030677d04be9c658e69945723e832fc_icgraph" id="classnsol_1_1_neuron_morphology_section_af030677d04be9c658e69945723e832fc_icgraph">
 <area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0" title="Reads a Neurite from a processed SWC file, calls _ReadSection. " alt="" coords="279,5,469,47"/>
 <area shape="rect" id="node3" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091" title="Creates a NeuronMorphology and loads info described in SWC file. " alt="" coords="517,5,708,47"/>
 <area shape="rect" id="node4" href="classnsol_1_1_swc_reader_templated.html#ae05736bbee7070d1e9fd0e4aeb26c502" title="Creates a new Neuron that contains the NeuronMorphology described in SWC file Calls readMorphology( 2..." alt="" coords="756,5,947,47"/>
@@ -351,7 +358,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="a6b0557be796bdd98eb7dbcc2fc0491de"></a>
+<a class="anchor" id="afe89e932f7a0db23e63b3a5c80ad91e0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -362,7 +369,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">virtual void nsol::NeuronMorphologySection::addNode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnsol_1_1_node.html">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>node_</em></td><td>)</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -376,7 +383,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Adds a <a class="el" href="classnsol_1_1_node.html">Node</a> at the end of <a class="el" href="classnsol_1_1_section.html">Section</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classnsol_1_1_node.html">Node</a></td><td>pointer to the <a class="el" href="classnsol_1_1_node.html">Node</a> to add. Precondition: pointer is not null. </td></tr>
+    <tr><td class="paramname">node</td><td>pointer to the <a class="el" href="classnsol_1_1_node.html">Node</a> to add. Precondition: pointer is not null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -390,8 +397,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnsol_1_1_neuron_morphology_section_a6b0557be796bdd98eb7dbcc2fc0491de_icgraph.png" border="0" usemap="#classnsol_1_1_neuron_morphology_section_a6b0557be796bdd98eb7dbcc2fc0491de_icgraph" alt=""/></div>
-<map name="classnsol_1_1_neuron_morphology_section_a6b0557be796bdd98eb7dbcc2fc0491de_icgraph" id="classnsol_1_1_neuron_morphology_section_a6b0557be796bdd98eb7dbcc2fc0491de_icgraph">
+<div class="center"><img src="classnsol_1_1_neuron_morphology_section_afe89e932f7a0db23e63b3a5c80ad91e0_icgraph.png" border="0" usemap="#classnsol_1_1_neuron_morphology_section_afe89e932f7a0db23e63b3a5c80ad91e0_icgraph" alt=""/></div>
+<map name="classnsol_1_1_neuron_morphology_section_afe89e932f7a0db23e63b3a5c80ad91e0_icgraph" id="classnsol_1_1_neuron_morphology_section_afe89e932f7a0db23e63b3a5c80ad91e0_icgraph">
 <area shape="rect" id="node2" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0" title="Reads a Neurite from a processed SWC file, calls _ReadSection. " alt="" coords="517,5,708,47"/>
 <area shape="rect" id="node5" href="classnsol_1_1_swc_reader_templated.html#afb89dca5b60503ecb179eb9b70e108d9" title="Creates and calculates sections, as well as bifurcation and branch counts. " alt="" coords="279,35,469,76"/>
 <area shape="rect" id="node3" href="classnsol_1_1_swc_reader_templated.html#aa91c611d7048d7d1d00d39d00ee80091" title="Creates a NeuronMorphology and loads info described in SWC file. " alt="" coords="756,5,947,47"/>
@@ -456,7 +463,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="aefdeb9ea4e687e834c42c2882cbdeb02"></a>
+<a class="anchor" id="aa0059b91f0b2cc63e37d13b432849b6a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -467,7 +474,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">virtual void nsol::NeuronMorphologySection::firstNode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnsol_1_1_node.html">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>firstNode_</em></td><td>)</td>
+          <td class="paramname"><em>firstNode</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -509,7 +516,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="a9d9f9139364eab5e090bf2203874d248"></a>
+<a class="anchor" id="a42b0e85d5c80c2e91d7d59057ab686a1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -517,7 +524,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">void nsol::NeuronMorphologySection::id </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>id_</em></td><td>)</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -526,7 +533,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Method to set the gid of the neuron morphology section. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gid</td><td></td></tr>
+    <tr><td class="paramname">id</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -566,7 +573,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 
-<p>Gets the parent <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> of the <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> Morphology <a class="el" href="classnsol_1_1_section.html">Section</a>. </p>
+<p>Gets the parent <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> of the <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> <a class="el" href="classnsol_1_1_morphology.html">Morphology</a> <a class="el" href="classnsol_1_1_section.html">Section</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the parent <a class="el" href="classnsol_1_1_neurite.html">Neurite</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classnsol_1_1_swc_reader_templated.html#a2b9b74f0f93f6575267c6346a1ef90b0">nsol::SwcReaderTemplated&lt; SWC_READER_TEMPLATE_CLASSES &gt;::_ReadNeurite()</a>.</p>
@@ -587,7 +594,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="a8f247a49470bb7e4b365ba32ada106c3"></a>
+<a class="anchor" id="a0c8ba49058f56db2b5f037bac766184f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -595,13 +602,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">void nsol::NeuronMorphologySection::neurite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnsol_1_1_neurite.html">NeuritePtr</a>&#160;</td>
-          <td class="paramname"><em>neurite_</em></td><td>)</td>
+          <td class="paramname"><em>neurite</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the parent neurite of this <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> Morphology <a class="el" href="classnsol_1_1_section.html">Section</a>. </p>
+<p>Sets the parent neurite of this <a class="el" href="classnsol_1_1_neuron.html" title="A class to represent neurons. ">Neuron</a> <a class="el" href="classnsol_1_1_morphology.html">Morphology</a> <a class="el" href="classnsol_1_1_section.html">Section</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">neurite</td><td>pointer to parent neurite </td></tr>
@@ -646,7 +653,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="a8dd2c6c41a08aeaf8aefa87f3dce7c54"></a>
+<a class="anchor" id="acd3ee1bd1a49d8a368582f9e85f9a54b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -654,7 +661,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">void nsol::NeuronMorphologySection::parent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnsol_1_1_section.html">SectionPtr</a>&#160;</td>
-          <td class="paramname"><em>parent_</em></td><td>)</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -708,7 +715,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>nsol</b></li><li class="navelem"><a class="el" href="classnsol_1_1_neuron_morphology_section.html">NeuronMorphologySection</a></li>
-    <li class="footer">Generated on Thu Nov 16 2017 20:33:26 for nsol by
+    <li class="footer">Generated on Tue Dec 5 2017 17:09:47 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

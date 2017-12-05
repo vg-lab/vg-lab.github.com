@@ -37,12 +37,14 @@ var hierarchy =
       [ "nsol::MiniColumn", "classnsol_1_1_mini_column.html", [
         [ "nsol::MiniColumnStats", "classnsol_1_1_mini_column_stats.html", null ]
       ] ],
-      [ "nsol::Neuron", "classnsol_1_1_neuron.html", null ],
-      [ "nsol::NeuronMorphology", "classnsol_1_1_neuron_morphology.html", [
-        [ "nsol::NeuronMorphologyStats", "classnsol_1_1_neuron_morphology_stats.html", [
-          [ "nsol::NeuronMorphologyCachedStats", "classnsol_1_1_neuron_morphology_cached_stats.html", null ]
+      [ "nsol::Morphology", "classnsol_1_1_morphology.html", [
+        [ "nsol::NeuronMorphology", "classnsol_1_1_neuron_morphology.html", [
+          [ "nsol::NeuronMorphologyStats", "classnsol_1_1_neuron_morphology_stats.html", [
+            [ "nsol::NeuronMorphologyCachedStats", "classnsol_1_1_neuron_morphology_cached_stats.html", null ]
+          ] ]
         ] ]
       ] ],
+      [ "nsol::Neuron", "classnsol_1_1_neuron.html", null ],
       [ "nsol::Node", "classnsol_1_1_node.html", [
         [ "nsol::ImportanceNode", "classnsol_1_1_importance_node.html", null ],
         [ "nsol::NodeCached", "classnsol_1_1_node_cached.html", null ]
