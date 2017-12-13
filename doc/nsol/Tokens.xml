@@ -1404,6 +1404,30 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Node</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_node.html</Path>
+    <Anchor>a16f9963793a795009ccde99390b3e1e4</Anchor>
+    <Abstract>Set the node id. </Abstract>
+    <DeclaredIn>Node.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Node</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_node.html</Path>
+    <Anchor>aa64417c3d40d09af4ab6efcb5efc66aa</Anchor>
+    <Abstract>Get the node id. </Abstract>
+    <DeclaredIn>Node.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::Log</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -4568,6 +4592,30 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Node</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_node.html</Path>
+    <Anchor>a16f9963793a795009ccde99390b3e1e4</Anchor>
+    <Abstract>Set the node id. </Abstract>
+    <DeclaredIn>Node.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Node</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_node.html</Path>
+    <Anchor>aa64417c3d40d09af4ab6efcb5efc66aa</Anchor>
+    <Abstract>Get the node id. </Abstract>
+    <DeclaredIn>Node.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::NodeCached</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -4576,6 +4624,30 @@
     <Path>classnsol_1_1_node_cached.html</Path>
     <Abstract>Using this class with SectionCachedStats allows to dirty cached section stats when node&amp;#39;s radius or p...</Abstract>
     <DeclaredIn>NodeCached.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Node</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_node.html</Path>
+    <Anchor>a16f9963793a795009ccde99390b3e1e4</Anchor>
+    <Abstract>Set the node id. </Abstract>
+    <DeclaredIn>Node.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>id</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Node</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_node.html</Path>
+    <Anchor>aa64417c3d40d09af4ab6efcb5efc66aa</Anchor>
+    <Abstract>Get the node id. </Abstract>
+    <DeclaredIn>Node.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>

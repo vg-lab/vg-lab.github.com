@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classnsol_1_1_object.html#aef16841b8a49bb38c1997b622f0edaaf":[0,0,0,36,8],
 "classnsol_1_1_object_with_properties.html":[0,0,0,37],
 "classnsol_1_1_object_with_properties.html#a47e8cd9f3d212a13dfcf9d2fd945f321":[0,0,0,37,2],
 "classnsol_1_1_object_with_properties.html#a5156d0e8c9d5e69d8169a7d62bbef805":[0,0,0,37,1],
@@ -143,8 +142,8 @@ var NAVTREEINDEX2 =
 "error_8h.html#a6b18ebe8da9527f3bd87bf2c767ea0a2":[1,0,18,1],
 "error_8h_source.html":[1,0,18],
 "files.html":[1,0],
-"functions.html":[0,3,0],
 "functions.html":[0,3,0,0],
+"functions.html":[0,3,0],
 "functions_0x7e.html":[0,3,0,17],
 "functions_a.html":[0,3,0,1],
 "functions_b.html":[0,3,0,2],

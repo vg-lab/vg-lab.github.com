@@ -1,5 +1,5 @@
 <map id="nsol::NodeCached" name="nsol::NodeCached">
-<area shape="rect" id="node2" href="$classnsol_1_1_node.html" title="{nsol::Node\n|# _point\l# _radius\l# _id\l|+ Node()\l+ ~Node()\l+ point()\l+ point()\l+ radius()\l+ radius()\l+ id()\l+ id()\l+ clone()\l+ operator=()\l+ operator==()\l+ operator!=()\l+ asNode()\l}" alt="" coords="39,277,163,560"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_node.html" title="{nsol::Node\n|# _point\l# _radius\l# _id\l|+ Node()\l+ ~Node()\l+ point()\l+ point()\l+ radius()\l+ radius()\l+ id()\l+ id()\l+ clone()\l+ operator==()\l+ operator!=()\l+ asNode()\l}" alt="" coords="39,277,163,545"/>
 <area shape="rect" id="node3" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="5,5,188,215"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n||+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="192,321,380,516"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n||+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="192,314,380,509"/>
 </map>
