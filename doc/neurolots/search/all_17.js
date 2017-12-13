@@ -9,7 +9,7 @@ var searchData=
   ['_7eorbitalvertex',['~OrbitalVertex',['../classnlgeometry_1_1_orbital_vertex.html#ae6a7d00589ab9f4f2898f167ee52e3e5',1,'nlgeometry::OrbitalVertex']]],
   ['_7equad',['~Quad',['../classnlgenerator_1_1_quad.html#a64958e365222d2cd36e4354f07983ac2',1,'nlgenerator::Quad']]],
   ['_7erenderer',['~Renderer',['../classnlrender_1_1_renderer.html#a67ca01b105cb1d712f9374dd9f14788b',1,'nlrender::Renderer']]],
-  ['_7esectionquad',['~SectionQuad',['../classnlgeometry_1_1_section_quad.html#afe35a982105307c769b7bc36c4858151',1,'nlgeometry::SectionQuad']]],
+  ['_7esectionquad',['~SectionQuad',['../classnlgeometry_1_1_section_quad.html#a33a50756c52b57dff3ded4a4e45ec882',1,'nlgeometry::SectionQuad']]],
   ['_7espatialhashtable',['~SpatialHashTable',['../classnlgeometry_1_1_spatial_hash_table.html#aa03a2aff05a2cbf6188ef049dc07d5d9',1,'nlgeometry::SpatialHashTable']]],
   ['_7etetrahedron',['~Tetrahedron',['../classnlphysics_1_1_tetrahedron.html#ab20cc80b4d6d0318d54f91f525aa5be0',1,'nlphysics::Tetrahedron']]],
   ['_7evertex',['~Vertex',['../classnlgeometry_1_1_vertex.html#ab9a3a2ad35be1d66adc0cb259b56e1ff',1,'nlgeometry::Vertex']]]

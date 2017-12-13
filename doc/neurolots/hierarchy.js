@@ -11,6 +11,7 @@ var hierarchy =
     [ "nlgeometry::Mesh", "classnlgeometry_1_1_mesh.html", null ],
     [ "nlgeometry::ObjReaderTemplated< VERTEX >", "classnlgeometry_1_1_obj_reader_templated.html", null ],
     [ "nlgeometry::ObjWriter", "classnlgeometry_1_1_obj_writer.html", null ],
+    [ "nlgeometry::OffWriter", "classnlgeometry_1_1_off_writer.html", null ],
     [ "nlgeometry::SectionQuad", "classnlgeometry_1_1_section_quad.html", null ],
     [ "nlgeometry::SpatialHashTable", "classnlgeometry_1_1_spatial_hash_table.html", null ],
     [ "nlgeometry::tFacet", "structnlgeometry_1_1t_facet.html", null ],

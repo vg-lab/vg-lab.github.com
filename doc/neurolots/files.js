@@ -21,6 +21,7 @@ var files =
     [ "Node.h", "_node_8h_source.html", null ],
     [ "ObjReaderTemplated.h", "_obj_reader_templated_8h_source.html", null ],
     [ "ObjWriter.h", "_obj_writer_8h_source.html", null ],
+    [ "OffWriter.h", "_off_writer_8h_source.html", null ],
     [ "OrbitalVertex.h", "_orbital_vertex_8h_source.html", null ],
     [ "Renderer.h", "_renderer_8h_source.html", null ],
     [ "SectionQuad.h", "_section_quad_8h_source.html", null ],

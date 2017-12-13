@@ -1,7 +1,7 @@
 var classnlgeometry_1_1_section_quad =
 [
     [ "SectionQuad", "classnlgeometry_1_1_section_quad.html#ae60a5d5529392332ba2d47c40609038b", null ],
-    [ "~SectionQuad", "classnlgeometry_1_1_section_quad.html#afe35a982105307c769b7bc36c4858151", null ],
+    [ "~SectionQuad", "classnlgeometry_1_1_section_quad.html#a33a50756c52b57dff3ded4a4e45ec882", null ],
     [ "axis0", "classnlgeometry_1_1_section_quad.html#a382c29a513a018cfe892fdee92ec23f1", null ],
     [ "axis1", "classnlgeometry_1_1_section_quad.html#aa0cf070052136bb8f0eb262842eaaa96", null ],
     [ "clone", "classnlgeometry_1_1_section_quad.html#a04e2381c219632a4cc8954c94b8f2d1c", null ],

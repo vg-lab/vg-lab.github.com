@@ -5,7 +5,7 @@ var classnlgeometry_1_1_orbital_vertex =
     [ "~OrbitalVertex", "classnlgeometry_1_1_orbital_vertex.html#ae6a7d00589ab9f4f2898f167ee52e3e5", null ],
     [ "center", "classnlgeometry_1_1_orbital_vertex.html#a338c570ca6f4067542686f413a473ba4", null ],
     [ "center", "classnlgeometry_1_1_orbital_vertex.html#a8c269478ec64912f85165f6adb2ef96d", null ],
-    [ "clone", "classnlgeometry_1_1_orbital_vertex.html#a97900286acabd4569c78faba990b6be7", null ],
+    [ "clone", "classnlgeometry_1_1_orbital_vertex.html#ad32f00c1acf0826f03367916c480a96d", null ],
     [ "displace", "classnlgeometry_1_1_orbital_vertex.html#a85747a1ab4a14bdf217c108a486c7746", null ],
     [ "norm", "classnlgeometry_1_1_orbital_vertex.html#a3dcd7c565faf93fc699c230dc4449d98", null ],
     [ "normalize", "classnlgeometry_1_1_orbital_vertex.html#a24768364083b5dc67d5f6f619c259451", null ],

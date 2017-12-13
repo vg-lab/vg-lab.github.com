@@ -864,7 +864,7 @@
       <Scope>nlgenerator::MeshGenerator</Scope>
     </TokenIdentifier>
     <Path>classnlgenerator_1_1_mesh_generator.html</Path>
-    <Anchor>a674c8302883240a0abd0aa4b0520bcbe</Anchor>
+    <Anchor>a3f5b05b5f72475a97a3c598291e1626c</Anchor>
     <Abstract>Static method that return a mesh generated from the given morphology. </Abstract>
     <DeclaredIn>MeshGenerator.h</DeclaredIn>
   </Token>
@@ -876,7 +876,7 @@
       <Scope>nlgenerator::MeshGenerator</Scope>
     </TokenIdentifier>
     <Path>classnlgenerator_1_1_mesh_generator.html</Path>
-    <Anchor>af340d81d73690fa9e77cd17c92051b94</Anchor>
+    <Anchor>a0f281cc4bcb527519b0d8b2f69f75971</Anchor>
     <Abstract>Static method that return a mesh generated from the given morphology changing some morphology params...</Abstract>
     <DeclaredIn>MeshGenerator.h</DeclaredIn>
   </Token>
@@ -1743,7 +1743,7 @@
       <Scope>nlgeometry::ObjWriter</Scope>
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_obj_writer.html</Path>
-    <Anchor>a6723e8e847cc01786f3723d4bceac391</Anchor>
+    <Anchor>ae287f9428bba17d9e50ac4beaf6baf7d</Anchor>
     <Abstract>Static method to write mesh to a obj file. </Abstract>
     <DeclaredIn>ObjWriter.h</DeclaredIn>
   </Token>
@@ -1755,9 +1755,42 @@
       <Scope>nlgeometry::ObjWriter</Scope>
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_obj_writer.html</Path>
-    <Anchor>a5e9034543a880aace713b3fb6c3a87d1</Anchor>
+    <Anchor>ad00296f770ddfd6801f4b4648e84c72a</Anchor>
     <Abstract>Static method to write a vector of facets and vertices to a obj file. </Abstract>
     <DeclaredIn>ObjWriter.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nlgeometry::OffWriter</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>nlgeometry::OffWriter</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_off_writer.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>writeMesh</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>nlgeometry::OffWriter</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_off_writer.html</Path>
+    <Anchor>a36245899c185979f421e0e1b122b4d09</Anchor>
+    <Abstract>Static method to write mesh to a off file. </Abstract>
+    <DeclaredIn>OffWriter.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>writeMesh</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>nlgeometry::OffWriter</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_off_writer.html</Path>
+    <Anchor>af821ffcdfdcecaf7108f68a14a41680a</Anchor>
+    <Abstract>Static method to write a vector of facets and vertices to a off file. </Abstract>
+    <DeclaredIn>OffWriter.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1896,7 +1929,7 @@
       <Scope>nlgeometry::OrbitalVertex</Scope>
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_orbital_vertex.html</Path>
-    <Anchor>a97900286acabd4569c78faba990b6be7</Anchor>
+    <Anchor>ad32f00c1acf0826f03367916c480a96d</Anchor>
     <Abstract>Method that return a cloned orbtial vertex. </Abstract>
     <DeclaredIn>OrbitalVertex.h</DeclaredIn>
   </Token>
@@ -1944,7 +1977,7 @@
       <Scope>nlgeometry::Vertex</Scope>
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_vertex.html</Path>
-    <Anchor>a05f3f30d7d30eb93f0a9bd5562e2704b</Anchor>
+    <Anchor>a78c3169e9e0d78da31d4283b2a512bc1</Anchor>
     <Abstract>Method to get the vertex id. </Abstract>
     <DeclaredIn>Vertex.h</DeclaredIn>
   </Token>
@@ -2137,7 +2170,7 @@
       <Scope>nlgeometry::SectionQuad</Scope>
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_section_quad.html</Path>
-    <Anchor>afe35a982105307c769b7bc36c4858151</Anchor>
+    <Anchor>a33a50756c52b57dff3ded4a4e45ec882</Anchor>
     <Abstract>Default destructor. </Abstract>
     <DeclaredIn>SectionQuad.h</DeclaredIn>
   </Token>
@@ -2723,7 +2756,7 @@
       <Scope>nlgeometry::Vertex</Scope>
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_vertex.html</Path>
-    <Anchor>a05f3f30d7d30eb93f0a9bd5562e2704b</Anchor>
+    <Anchor>a78c3169e9e0d78da31d4283b2a512bc1</Anchor>
     <Abstract>Method to get the vertex id. </Abstract>
     <DeclaredIn>Vertex.h</DeclaredIn>
   </Token>

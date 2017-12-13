@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">neurolots
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.1.1</span>
    </div>
    <div id="projectbrief">NeuroLOTs</div>
   </td>
@@ -114,18 +114,20 @@ $(document).ready(function(){initNavTree('classnlgenerator_1_1_mesh_generator.ht
 
 <p>This is the complete list of members for <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>, including all inherited members.</p>
 <table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_generateMophology</b>(nsol::NeuronMorphologyPtr morphology_) (defined in <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>_generateMorphology</b>(nsol::MorphologyPtr morphology_) (defined in <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_meshSections</b>(const nsol::Sections &amp;sections_, std::unordered_map&lt; nsol::NodePtr, JointNodePtr &gt; &amp;joints_) (defined in <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>_meshSections</b>(std::set&lt; nsol::SectionPtr &gt; &amp;uniqueSections_, const nsol::SectionPtr &amp;section_, std::unordered_map&lt; nsol::NodePtr, JointNodePtr &gt; &amp;joints_, nlgeometry::Facets &amp;facets_) (defined in <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_vectorizeJoints</b>(const nsol::Sections &amp;sections_) (defined in <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>_vectorizeJoints</b>(std::set&lt; nsol::SectionPtr &gt; &amp;uniqueSections_, const nsol::SectionPtr &amp;section_, std::unordered_map&lt; nsol::NodePtr, JointNodePtr &gt; &amp;joints_) (defined in <a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a>)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#a674c8302883240a0abd0aa4b0520bcbe">generateMesh</a>(nsol::NeuronMorphologyPtr &amp;morphology_)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#af340d81d73690fa9e77cd17c92051b94">generateMesh</a>(nsol::NeuronMorphologyPtr &amp;morphology_, float alphaRadius_, const std::vector&lt; float &gt; &amp;alphaNeurites_)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#a3f5b05b5f72475a97a3c598291e1626c">generateMesh</a>(nsol::MorphologyPtr morphology_)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#a0f281cc4bcb527519b0d8b2f69f75971">generateMesh</a>(nsol::NeuronMorphologyPtr morphology_, float alphaRadius_, const std::vector&lt; float &gt; &amp;alphaNeurites_)</td><td class="entry"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">nlgenerator::MeshGenerator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 4 2017 11:28:03 for neurolots by
+    <li class="footer">Generated on Wed Dec 13 2017 13:58:51 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

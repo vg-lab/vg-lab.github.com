@@ -5,6 +5,7 @@ var namespacenlgeometry =
     [ "Mesh", "classnlgeometry_1_1_mesh.html", "classnlgeometry_1_1_mesh" ],
     [ "ObjReaderTemplated", "classnlgeometry_1_1_obj_reader_templated.html", "classnlgeometry_1_1_obj_reader_templated" ],
     [ "ObjWriter", "classnlgeometry_1_1_obj_writer.html", "classnlgeometry_1_1_obj_writer" ],
+    [ "OffWriter", "classnlgeometry_1_1_off_writer.html", "classnlgeometry_1_1_off_writer" ],
     [ "OrbitalVertex", "classnlgeometry_1_1_orbital_vertex.html", "classnlgeometry_1_1_orbital_vertex" ],
     [ "SectionQuad", "classnlgeometry_1_1_section_quad.html", "classnlgeometry_1_1_section_quad" ],
     [ "SpatialHashTable", "classnlgeometry_1_1_spatial_hash_table.html", "classnlgeometry_1_1_spatial_hash_table" ],
