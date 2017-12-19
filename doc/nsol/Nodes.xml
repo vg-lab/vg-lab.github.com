@@ -2918,6 +2918,22 @@
               </Subnodes>
              </Node>
              <Node>
+              <Name>VectorsReaderTemplated</Name>
+              <Path>classnsol_1_1_vectors_reader_templated.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>_groupSections</Name>
+                <Path>classnsol_1_1_vectors_reader_templated.html</Path>
+                <Anchor>ac939b7617d4c31bc9cd302058279a605</Anchor>
+               </Node>
+               <Node>
+                <Name>loadMorphology</Name>
+                <Path>classnsol_1_1_vectors_reader_templated.html</Path>
+                <Anchor>a13de8886e14eaff29a13bc53ec2f15c9</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>Version</Name>
               <Path>classnsol_1_1_version.html</Path>
               <Subnodes>
@@ -3262,6 +3278,10 @@
               <Path>classnsol_1_1_morphology_synapse.html</Path>
              </Node>
             </Subnodes>
+           </Node>
+           <Node>
+            <Name>nsol::VectorsReaderTemplated&lt; VECTORS_READER_TEMPLATE_CLASSES &gt;</Name>
+            <Path>classnsol_1_1_vectors_reader_templated.html</Path>
            </Node>
            <Node>
             <Name>nsol::Version</Name>
@@ -3723,6 +3743,10 @@
            <Node>
             <Name>VasculatureReader.h</Name>
             <Path>_vasculature_reader_8h_source.html</Path>
+           </Node>
+           <Node>
+            <Name>VectorsReader.h</Name>
+            <Path>_vectors_reader_8h_source.html</Path>
            </Node>
            <Node>
             <Name>version.h</Name>

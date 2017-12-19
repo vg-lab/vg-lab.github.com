@@ -5637,6 +5637,15 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>nsol::VectorsReaderTemplated</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>nsol::VectorsReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_vectors_reader_templated.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::Version</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>

@@ -54,8 +54,9 @@ var NAVTREEINDEX0 =
 "_synapse_8h_source.html":[1,0,55],
 "_synapses_8h_source.html":[1,0,56],
 "_vasculature_reader_8h_source.html":[1,0,57],
-"_xml_scene_reader_8h_source.html":[1,0,59],
-"_xml_scene_writer_8h_source.html":[1,0,60],
+"_vectors_reader_8h_source.html":[1,0,58],
+"_xml_scene_reader_8h_source.html":[1,0,60],
+"_xml_scene_writer_8h_source.html":[1,0,61],
 "annotated.html":[0,0],
 "api_8h.html":[1,0,0],
 "api_8h.html#a71e9986aa4646ba4633e59b6e83fdcb5":[1,0,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classnsol_1_1_morphology.html":[0,0,0,19],
 "classnsol_1_1_morphology.html#a13a3ea987edb8c285ff9a73d40221ab7":[0,0,0,19,2],
 "classnsol_1_1_morphology.html#a2ee1119ee06dd41a12455032c3bee0a7":[0,0,0,19,1],
-"classnsol_1_1_morphology.html#a48cea7b29d0b9987e92626273465e6fc":[0,0,0,19,0],
-"classnsol_1_1_morphology.html#a8a99efdec2d9d5880b5ea9f324e94228":[0,0,0,19,3]
+"classnsol_1_1_morphology.html#a48cea7b29d0b9987e92626273465e6fc":[0,0,0,19,0]
 };

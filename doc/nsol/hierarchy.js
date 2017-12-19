@@ -72,6 +72,7 @@ var hierarchy =
     [ "nsol::Synapse", "classnsol_1_1_synapse.html", [
       [ "nsol::MorphologySynapse", "classnsol_1_1_morphology_synapse.html", null ]
     ] ],
+    [ "nsol::VectorsReaderTemplated< VECTORS_READER_TEMPLATE_CLASSES >", "classnsol_1_1_vectors_reader_templated.html", null ],
     [ "nsol::Version", "classnsol_1_1_version.html", null ],
     [ "nsol::XmlSceneReader", "classnsol_1_1_xml_scene_reader.html", null ],
     [ "nsol::XmlSceneWriter", "classnsol_1_1_xml_scene_writer.html", null ],

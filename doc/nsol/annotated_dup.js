@@ -50,6 +50,7 @@ var annotated_dup =
       [ "SwcWriter", "classnsol_1_1_swc_writer.html", "classnsol_1_1_swc_writer" ],
       [ "Synapse", "classnsol_1_1_synapse.html", "classnsol_1_1_synapse" ],
       [ "SynapsesMap", "classnsol_1_1_synapses_map.html", "classnsol_1_1_synapses_map" ],
+      [ "VectorsReaderTemplated", "classnsol_1_1_vectors_reader_templated.html", "classnsol_1_1_vectors_reader_templated" ],
       [ "Version", "classnsol_1_1_version.html", "classnsol_1_1_version" ],
       [ "XmlSceneReader", "classnsol_1_1_xml_scene_reader.html", "classnsol_1_1_xml_scene_reader" ],
       [ "XmlSceneWriter", "classnsol_1_1_xml_scene_writer.html", "classnsol_1_1_xml_scene_writer" ]

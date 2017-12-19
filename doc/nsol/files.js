@@ -58,6 +58,7 @@ var files =
     [ "Synapse.h", "_synapse_8h_source.html", null ],
     [ "Synapses.h", "_synapses_8h_source.html", null ],
     [ "VasculatureReader.h", "_vasculature_reader_8h_source.html", null ],
+    [ "VectorsReader.h", "_vectors_reader_8h_source.html", null ],
     [ "version.h", "version_8h.html", "version_8h" ],
     [ "XmlSceneReader.h", "_xml_scene_reader_8h_source.html", null ],
     [ "XmlSceneWriter.h", "_xml_scene_writer_8h_source.html", null ]

@@ -31,18 +31,18 @@
             <td class="headerValue">nsol</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">57</td>
+            <td class="headerCovTableEntry">72</td>
             <td class="headerCovTableEntry">108</td>
-            <td class="headerCovTableEntryMed">52.8 %</td>
+            <td class="headerCovTableEntryMed">66.7 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2017-12-13 16:37:04</td>
+            <td class="headerValue">2017-12-19 12:58:36</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">20</td>
+            <td class="headerCovTableEntry">21</td>
             <td class="headerCovTableEntry">25</td>
-            <td class="headerCovTableEntryHi">80.0 %</td>
+            <td class="headerCovTableEntryHi">84.0 %</td>
           </tr>
           <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
         </table>
@@ -87,12 +87,12 @@
 <span class="lineNum">      25 </span>            : namespace nsol
 <a name="26"><span class="lineNum">      26 </span>            : {</a>
 <span class="lineNum">      27 </span>            : 
-<span class="lineNum">      28 </span><span class="lineCov">        694 :   Section::Section( void )</span>
+<span class="lineNum">      28 </span><span class="lineCov">        697 :   Section::Section( void )</span>
 <span class="lineNum">      29 </span>            :   {
-<span class="lineNum">      30 </span><span class="lineCov">        694 :     _nodes.clear( );</span>
-<span class="lineNum">      31 </span><span class="lineCov">        694 :     _backwardSections.clear( );</span>
-<span class="lineNum">      32 </span><span class="lineCov">        694 :     _forwardSections.clear( );</span>
-<a name="33"><span class="lineNum">      33 </span><span class="lineCov">        694 :   }</span></a>
+<span class="lineNum">      30 </span><span class="lineCov">        697 :     _nodes.clear( );</span>
+<span class="lineNum">      31 </span><span class="lineCov">        697 :     _backwardSections.clear( );</span>
+<span class="lineNum">      32 </span><span class="lineCov">        697 :     _forwardSections.clear( );</span>
+<a name="33"><span class="lineNum">      33 </span><span class="lineCov">        697 :   }</span></a>
 <span class="lineNum">      34 </span>            : 
 <span class="lineNum">      35 </span><span class="lineCov">        365 :   Section::~Section( void )</span>
 <span class="lineNum">      36 </span>            :   {
@@ -107,9 +107,9 @@
 <span class="lineNum">      45 </span><span class="lineCov">        182 :     _nodes.clear( );</span>
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">        183 :   }</span></a>
 <span class="lineNum">      47 </span>            : 
-<span class="lineNum">      48 </span><span class="lineCov">          1 :   Sections&amp; Section::backwardNeighbors( void )</span>
+<span class="lineNum">      48 </span><span class="lineCov">          4 :   Sections&amp; Section::backwardNeighbors( void )</span>
 <span class="lineNum">      49 </span>            :   {
-<span class="lineNum">      50 </span><span class="lineCov">          1 :     return _backwardSections;</span>
+<span class="lineNum">      50 </span><span class="lineCov">          4 :     return _backwardSections;</span>
 <a name="51"><span class="lineNum">      51 </span>            :   }</a>
 <span class="lineNum">      52 </span>            : 
 <span class="lineNum">      53 </span><span class="lineCov">          1 :   const Sections&amp; Section::backwardNeighbors( void ) const</span>
@@ -117,9 +117,9 @@
 <span class="lineNum">      55 </span><span class="lineCov">          1 :     return _backwardSections;</span>
 <a name="56"><span class="lineNum">      56 </span>            :   }</a>
 <span class="lineNum">      57 </span>            : 
-<span class="lineNum">      58 </span><span class="lineCov">          1 :   Sections&amp; Section::forwardNeighbors( void )</span>
+<span class="lineNum">      58 </span><span class="lineCov">          5 :   Sections&amp; Section::forwardNeighbors( void )</span>
 <span class="lineNum">      59 </span>            :   {
-<span class="lineNum">      60 </span><span class="lineCov">          1 :     return _forwardSections;</span>
+<span class="lineNum">      60 </span><span class="lineCov">          5 :     return _forwardSections;</span>
 <a name="61"><span class="lineNum">      61 </span>            :   }</a>
 <span class="lineNum">      62 </span>            : 
 <span class="lineNum">      63 </span><span class="lineCov">          1 :   const Sections&amp; Section::forwardNeighbors( void ) const</span>
@@ -189,38 +189,38 @@
 <span class="lineNum">     127 </span><span class="lineNoCov">          0 :     return deletedNeighbour;</span>
 <a name="128"><span class="lineNum">     128 </span>            :   }</a>
 <span class="lineNum">     129 </span>            : 
-<span class="lineNum">     130 </span><span class="lineNoCov">          0 :   void Section::addNeighbour( SectionPtr section_, NodePtr node_ )</span>
+<span class="lineNum">     130 </span><span class="lineCov">          6 :   void Section::addNeighbour( SectionPtr section_, NodePtr node_ )</span>
 <span class="lineNum">     131 </span>            :   {
-<span class="lineNum">     132 </span><span class="lineNoCov">          0 :     if ( section_ &amp;&amp; _nodes.size( ) &gt; 0 )</span>
+<span class="lineNum">     132 </span><span class="lineCov">          6 :     if ( section_ &amp;&amp; _nodes.size( ) &gt; 0 )</span>
 <span class="lineNum">     133 </span>            :     {
-<span class="lineNum">     134 </span><span class="lineNoCov">          0 :       if ( node_ ==  _nodes.front( ))</span>
+<span class="lineNum">     134 </span><span class="lineCov">          6 :       if ( node_ ==  _nodes.front( ))</span>
 <span class="lineNum">     135 </span>            :       {
-<span class="lineNum">     136 </span><span class="lineNoCov">          0 :         bool isSection = false;</span>
-<span class="lineNum">     137 </span><span class="lineNoCov">          0 :         for ( auto section: _backwardSections )</span>
+<span class="lineNum">     136 </span><span class="lineCov">          4 :         bool isSection = false;</span>
+<span class="lineNum">     137 </span><span class="lineCov">          6 :         for ( auto section: _backwardSections )</span>
 <span class="lineNum">     138 </span>            :         {
-<span class="lineNum">     139 </span><span class="lineNoCov">          0 :           if (( isSection = (section == section_)))</span>
+<span class="lineNum">     139 </span><span class="lineCov">          2 :           if (( isSection = (section == section_)))</span>
 <span class="lineNum">     140 </span><span class="lineNoCov">          0 :             break;</span>
 <span class="lineNum">     141 </span>            :         }
-<span class="lineNum">     142 </span><span class="lineNoCov">          0 :         if ( !isSection )</span>
-<span class="lineNum">     143 </span><span class="lineNoCov">          0 :           _backwardSections.push_back( section_ );</span>
+<span class="lineNum">     142 </span><span class="lineCov">          4 :         if ( !isSection )</span>
+<span class="lineNum">     143 </span><span class="lineCov">          4 :           _backwardSections.push_back( section_ );</span>
 <span class="lineNum">     144 </span>            :       }
-<span class="lineNum">     145 </span><span class="lineNoCov">          0 :       if ( node_ ==  _nodes.back( ))</span>
+<span class="lineNum">     145 </span><span class="lineCov">          6 :       if ( node_ ==  _nodes.back( ))</span>
 <span class="lineNum">     146 </span>            :       {
-<span class="lineNum">     147 </span><span class="lineNoCov">          0 :         bool isSection = false;</span>
-<span class="lineNum">     148 </span><span class="lineNoCov">          0 :         for ( auto section: _forwardSections )</span>
+<span class="lineNum">     147 </span><span class="lineCov">          2 :         bool isSection = false;</span>
+<span class="lineNum">     148 </span><span class="lineCov">          3 :         for ( auto section: _forwardSections )</span>
 <span class="lineNum">     149 </span>            :         {
-<span class="lineNum">     150 </span><span class="lineNoCov">          0 :           if (( isSection = (section == section_)))</span>
+<span class="lineNum">     150 </span><span class="lineCov">          1 :           if (( isSection = (section == section_)))</span>
 <span class="lineNum">     151 </span><span class="lineNoCov">          0 :             break;</span>
 <span class="lineNum">     152 </span>            :         }
-<span class="lineNum">     153 </span><span class="lineNoCov">          0 :         if ( !isSection )</span>
-<span class="lineNum">     154 </span><span class="lineNoCov">          0 :           _forwardSections.push_back( section_ );</span>
+<span class="lineNum">     153 </span><span class="lineCov">          2 :         if ( !isSection )</span>
+<span class="lineNum">     154 </span><span class="lineCov">          2 :           _forwardSections.push_back( section_ );</span>
 <span class="lineNum">     155 </span>            :       }
 <span class="lineNum">     156 </span>            :     }
-<a name="157"><span class="lineNum">     157 </span><span class="lineNoCov">          0 :   }</span></a>
+<a name="157"><span class="lineNum">     157 </span><span class="lineCov">          6 :   }</span></a>
 <span class="lineNum">     158 </span>            : 
-<span class="lineNum">     159 </span><span class="lineCov">       1188 :   Nodes &amp; Section::nodes( void )</span>
+<span class="lineNum">     159 </span><span class="lineCov">       1198 :   Nodes &amp; Section::nodes( void )</span>
 <span class="lineNum">     160 </span>            :   {
-<span class="lineNum">     161 </span><span class="lineCov">       1188 :     return _nodes;</span>
+<span class="lineNum">     161 </span><span class="lineCov">       1198 :     return _nodes;</span>
 <a name="162"><span class="lineNum">     162 </span>            :   }</a>
 <span class="lineNum">     163 </span>            : 
 <span class="lineNum">     164 </span><span class="lineCov">         42 :   const Nodes &amp; Section::nodes( void ) const</span>
@@ -235,11 +235,11 @@
 <span class="lineNum">     173 </span><span class="lineCov">        682 :     _nodes.insert( _nodes.begin( ), node_ );</span>
 <a name="174"><span class="lineNum">     174 </span><span class="lineCov">        682 :   }</span></a>
 <span class="lineNum">     175 </span>            : 
-<span class="lineNum">     176 </span><span class="lineCov">       3672 :   void Section::addForwardNode( NodePtr node_ )</span>
+<span class="lineNum">     176 </span><span class="lineCov">       3681 :   void Section::addForwardNode( NodePtr node_ )</span>
 <span class="lineNum">     177 </span>            :   {
-<span class="lineNum">     178 </span><span class="lineCov">       3672 :     if ( node_ )</span>
-<span class="lineNum">     179 </span><span class="lineCov">       3672 :       _nodes.push_back( node_);</span>
-<a name="180"><span class="lineNum">     180 </span><span class="lineCov">       3672 :   }</span></a>
+<span class="lineNum">     178 </span><span class="lineCov">       3681 :     if ( node_ )</span>
+<span class="lineNum">     179 </span><span class="lineCov">       3681 :       _nodes.push_back( node_);</span>
+<a name="180"><span class="lineNum">     180 </span><span class="lineCov">       3681 :   }</span></a>
 <span class="lineNum">     181 </span>            : 
 <span class="lineNum">     182 </span><span class="lineCov">        477 :   NodePtr Section::backwardNode( void )</span>
 <span class="lineNum">     183 </span>            :   {
