@@ -1,0 +1,11 @@
+<map id="nsol::AscReaderTemplated::_ReadNeurite" name="nsol::AscReaderTemplated::_ReadNeurite">
+<area shape="rect" id="node2" href="$classnsol_1_1_asc_reader_templated.html#a91857a0a585bec1bde3b28b8ef5f338e" title="Calculates the total amount of opening minus closing brackets. " alt="" coords="261,5,450,47"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_asc_reader_templated.html#a5aee792729930959cd566911847c0f12" title="Modifies a string by removing any comments there may be (after &#39;;&#39; character) " alt="" coords="261,71,450,112"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_asc_reader_templated.html#aa8a8feb8a570d27c3adbad3715645419" title="Creates a new NodePtr using the information contained in a data line. " alt="" coords="261,136,450,177"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_neuron_morphology_section.html#af030677d04be9c658e69945723e832fc" title="Adds child Section to this Section. " alt="" coords="243,201,468,243"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_neuron_morphology_section.html#afe89e932f7a0db23e63b3a5c80ad91e0" title="Adds a Node at the end of Section. " alt="" coords="243,267,468,308"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_neuron_morphology_section.html#a26edb3ce2d6d9e200b0971cad235c3cc" title="Gets the first Node of the Section. " alt="" coords="243,332,468,373"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_log.html#a6a6ec07043dc22077331ebc692ae0dc5" title="Method to log out a message in a specific level. " alt="" coords="302,398,409,425"/>
+<area shape="rect" id="node9" href="$classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632" title="Gets the parent Neurite of the Neuron Morphology Section. " alt="" coords="243,449,468,491"/>
+<area shape="rect" id="node10" href="$classnsol_1_1_neuron_morphology_section.html#a2d81aca4e63a55e4baa8fba858fe5b47" title="Gets the parent Section of this Section. " alt="" coords="243,515,468,556"/>
+</map>

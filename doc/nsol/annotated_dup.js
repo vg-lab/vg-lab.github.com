@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "nsol", null, [
+      [ "AscReaderTemplated", "classnsol_1_1_asc_reader_templated.html", "classnsol_1_1_asc_reader_templated" ],
       [ "Axon", "classnsol_1_1_axon.html", "classnsol_1_1_axon" ],
       [ "AxonCachedStats", "classnsol_1_1_axon_cached_stats.html", "classnsol_1_1_axon_cached_stats" ],
       [ "AxonStats", "classnsol_1_1_axon_stats.html", "classnsol_1_1_axon_stats" ],

@@ -1,0 +1,7 @@
+<map id="nsol::AscReaderTemplated::_ReadSoma" name="nsol::AscReaderTemplated::_ReadSoma">
+<area shape="rect" id="node2" href="$classnsol_1_1_asc_reader_templated.html#a91857a0a585bec1bde3b28b8ef5f338e" title="Calculates the total amount of opening minus closing brackets. " alt="" coords="243,5,432,47"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_asc_reader_templated.html#a5aee792729930959cd566911847c0f12" title="Modifies a string by removing any comments there may be (after &#39;;&#39; character) " alt="" coords="243,71,432,112"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_asc_reader_templated.html#aa8a8feb8a570d27c3adbad3715645419" title="Creates a new NodePtr using the information contained in a data line. " alt="" coords="243,136,432,177"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_soma.html#a1f26090e46683c07a19b24c54de89455" title="Method to add a node to the soma. " alt="" coords="257,202,417,229"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd" title="Method to set the neuronal soma. " alt="" coords="249,253,426,295"/>
+</map>

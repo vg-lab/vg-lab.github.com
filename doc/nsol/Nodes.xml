@@ -18,6 +18,57 @@
             <Path></Path>
             <Subnodes>
              <Node>
+              <Name>AscReaderTemplated</Name>
+              <Path>classnsol_1_1_asc_reader_templated.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>_countBrackets</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>a91857a0a585bec1bde3b28b8ef5f338e</Anchor>
+               </Node>
+               <Node>
+                <Name>_eraseComent</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>a5aee792729930959cd566911847c0f12</Anchor>
+               </Node>
+               <Node>
+                <Name>_parseDataLine</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>aa8a8feb8a570d27c3adbad3715645419</Anchor>
+               </Node>
+               <Node>
+                <Name>_ReadNeurite</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>a71f3821d3a72b8b7d0d94543ca937678</Anchor>
+               </Node>
+               <Node>
+                <Name>_ReadSoma</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>aa917570e6a786305c1d1537f44ec44c2</Anchor>
+               </Node>
+               <Node>
+                <Name>readMorphology</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>a7f6d9b1f3ebdf7ca0f1afb27776210fd</Anchor>
+               </Node>
+               <Node>
+                <Name>readNeuron</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>ac5de4eb6120afd1ccffe4f92faf63e56</Anchor>
+               </Node>
+               <Node>
+                <Name>inFile</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>ab5a6c79e83de8c27d0366655a2edf166</Anchor>
+               </Node>
+               <Node>
+                <Name>nodeId</Name>
+                <Path>classnsol_1_1_asc_reader_templated.html</Path>
+                <Anchor>a373b75f0a8ce78dd7cae502f575a3675</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>Axon</Name>
               <Path>classnsol_1_1_axon.html</Path>
               <Subnodes>
@@ -1217,6 +1268,11 @@
                 <Name>stats</Name>
                 <Path>classnsol_1_1_neurite.html</Path>
                 <Anchor>ad8d726344f722fd1f048e5953d25f6fc</Anchor>
+               </Node>
+               <Node>
+                <Name>AscReaderTemplated</Name>
+                <Path>classnsol_1_1_neurite.html</Path>
+                <Anchor>ad2f18b1f87cb0496d7484db18a99a1ec</Anchor>
                </Node>
                <Node>
                 <Name>operator&lt;&lt;</Name>
@@ -3064,6 +3120,10 @@
             </Subnodes>
            </Node>
            <Node>
+            <Name>nsol::AscReaderTemplated&lt; ASC_READER_TEMPLATE_CLASSES &gt;</Name>
+            <Path>classnsol_1_1_asc_reader_templated.html</Path>
+           </Node>
+           <Node>
             <Name>nsol::Cached&lt; TYPE &gt;</Name>
             <Path>classnsol_1_1_cached.html</Path>
            </Node>
@@ -3498,6 +3558,10 @@
               <Anchor>a8a0f15ba06eaf2e9c54ac50dd3b08e39</Anchor>
              </Node>
             </Subnodes>
+           </Node>
+           <Node>
+            <Name>AscReader.h</Name>
+            <Path>_asc_reader_8h_source.html</Path>
            </Node>
            <Node>
             <Name>Axon.h</Name>

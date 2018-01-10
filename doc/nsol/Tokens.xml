@@ -145,6 +145,99 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>nsol::AscReaderTemplated</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>readNeuron</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>ac5de4eb6120afd1ccffe4f92faf63e56</Anchor>
+    <Abstract>Creates a new Neuron that contains the NeuronMorphology described in an ASC file Calls readMorphology...</Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>readMorphology</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>a7f6d9b1f3ebdf7ca0f1afb27776210fd</Anchor>
+    <Abstract>Creates a NeuronMorphology and loads info described in ASC file. </Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_ReadNeurite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>a71f3821d3a72b8b7d0d94543ca937678</Anchor>
+    <Abstract>Reads a Neurite from an ASC file. </Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_ReadSoma</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>aa917570e6a786305c1d1537f44ec44c2</Anchor>
+    <Abstract>Reads soma points from an ASC file. </Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_countBrackets</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>a91857a0a585bec1bde3b28b8ef5f338e</Anchor>
+    <Abstract>Calculates the total amount of opening minus closing brackets. </Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_eraseComent</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>a5aee792729930959cd566911847c0f12</Anchor>
+    <Abstract>Modifies a string by removing any comments there may be (after &amp;#39;;&amp;#39; character) </Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_parseDataLine</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::AscReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_asc_reader_templated.html</Path>
+    <Anchor>aa8a8feb8a570d27c3adbad3715645419</Anchor>
+    <Abstract>Creates a new NodePtr using the information contained in a data line. </Abstract>
+    <DeclaredIn>AscReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::Axon</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>

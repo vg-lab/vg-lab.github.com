@@ -9,6 +9,7 @@ var hierarchy =
       [ "nsol::NeuronMorphologySectionCachedStats", "classnsol_1_1_neuron_morphology_section_cached_stats.html", null ],
       [ "nsol::NodeCached", "classnsol_1_1_node_cached.html", null ]
     ] ],
+    [ "nsol::AscReaderTemplated< ASC_READER_TEMPLATE_CLASSES >", "classnsol_1_1_asc_reader_templated.html", null ],
     [ "nsol::Cached< TYPE >", "classnsol_1_1_cached.html", null ],
     [ "nsol::Circuit", "classnsol_1_1_circuit.html", null ],
     [ "nsol::DataSet", "classnsol_1_1_data_set.html", null ],

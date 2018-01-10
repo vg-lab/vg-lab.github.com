@@ -1,0 +1,6 @@
+<map id="nsol::AscReaderTemplated::_eraseComent" name="nsol::AscReaderTemplated::_eraseComent">
+<area shape="rect" id="node2" href="$classnsol_1_1_asc_reader_templated.html#a71f3821d3a72b8b7d0d94543ca937678" title="Reads a Neurite from an ASC file. " alt="" coords="243,5,432,47"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_asc_reader_templated.html#a7f6d9b1f3ebdf7ca0f1afb27776210fd" title="Creates a NeuronMorphology and loads info described in ASC file. " alt="" coords="480,64,669,105"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_asc_reader_templated.html#aa917570e6a786305c1d1537f44ec44c2" title="Reads soma points from an ASC file. " alt="" coords="243,123,432,164"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_asc_reader_templated.html#ac5de4eb6120afd1ccffe4f92faf63e56" title="Creates a new Neuron that contains the NeuronMorphology described in an ASC file Calls readMorphology..." alt="" coords="717,64,907,105"/>
+</map>

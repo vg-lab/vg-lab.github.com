@@ -22,6 +22,7 @@ var classnsol_1_1_neurite =
     [ "operator==", "classnsol_1_1_neurite.html#aab2f53facc45dfc32292650ca0e84809", null ],
     [ "sections", "classnsol_1_1_neurite.html#a8adfae12293f30dfe3e388e71c006b67", null ],
     [ "stats", "classnsol_1_1_neurite.html#ad8d726344f722fd1f048e5953d25f6fc", null ],
+    [ "AscReaderTemplated", "classnsol_1_1_neurite.html#ad2f18b1f87cb0496d7484db18a99a1ec", null ],
     [ "operator<<", "classnsol_1_1_neurite.html#a587c8681c243ed9d9da445c05469c73a", null ],
     [ "SwcReaderTemplated", "classnsol_1_1_neurite.html#ac8ebf6db00ac146b58bf25e622dd95ff", null ],
     [ "_firstSection", "classnsol_1_1_neurite.html#a9db9934bfa234e038204126d4321c3ef", null ],
