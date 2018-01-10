@@ -126,8 +126,8 @@ $(document).ready(function(){initNavTree('classnsol_1_1_vectors_reader_templated
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13de8886e14eaff29a13bc53ec2f15c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13de8886e14eaff29a13bc53ec2f15c9"></a>
-<a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>loadMorphology</b> (const std::vector&lt; float &gt; &amp;points_, const std::vector&lt; unsigned int &gt; &amp;segments_)</td></tr>
+<tr class="memitem:a13de8886e14eaff29a13bc53ec2f15c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_vectors_reader_templated.html#a13de8886e14eaff29a13bc53ec2f15c9">loadMorphology</a> (const std::vector&lt; float &gt; &amp;points_, const std::vector&lt; unsigned int &gt; &amp;segments_)</td></tr>
+<tr class="memdesc:a13de8886e14eaff29a13bc53ec2f15c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a generic morphology using a vector of points and segments.  <a href="#a13de8886e14eaff29a13bc53ec2f15c9">More...</a><br /></td></tr>
 <tr class="separator:a13de8886e14eaff29a13bc53ec2f15c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -142,7 +142,65 @@ class nsol::VectorsReaderTemplated&lt; VECTORS_READER_TEMPLATE_CLASSES &gt;</h3>
 
 
 <p>Definition at line <a class="el" href="_vectors_reader_8h_source.html#l00044">44</a> of file <a class="el" href="_vectors_reader_8h_source.html">VectorsReader.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a13de8886e14eaff29a13bc53ec2f15c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;VECTORS_READER_TEMPLATE_CLASSES &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnsol_1_1_morphology.html">MorphologyPtr</a> <a class="el" href="classnsol_1_1_vectors_reader_templated.html">nsol::VectorsReaderTemplated</a>&lt; VECTORS_READER_TEMPLATE_CLASSES &gt;::loadMorphology </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>segments_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a generic morphology using a vector of points and segments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points_</td><td>each point or node is represented by four floats (position {x,y,z} and radius). </td></tr>
+    <tr><td class="paramname">segments_</td><td>each segment is represented by two unsigned integers (indices of the two nodes belonging to the segment). Indices must have values from 0 to (#points-1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MorphologyPtr a generic morphology. </dd></dl>
+
+<p>Definition at line <a class="el" href="_vectors_reader_8h_source.html#l00076">76</a> of file <a class="el" href="_vectors_reader_8h_source.html">VectorsReader.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_section.html#afc711f8fb3346aa3f7245056dc5aff88">nsol::Section::addBackwardNode()</a>, <a class="el" href="classnsol_1_1_section.html#aa28f449c9e1639f82a2fb2e0ad35b24f">nsol::Section::addForwardNode()</a>, <a class="el" href="classnsol_1_1_section.html#a6c315e760a69b9e573ac5445b6afeca0">nsol::Section::backwardNeighbors()</a>, and <a class="el" href="classnsol_1_1_section.html#adeb5f9bbd6a130312910851d66f00f3d">nsol::Section::forwardNeighbors()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_vectors_reader_templated_a13de8886e14eaff29a13bc53ec2f15c9_cgraph.png" border="0" usemap="#classnsol_1_1_vectors_reader_templated_a13de8886e14eaff29a13bc53ec2f15c9_cgraph" alt=""/></div>
+<map name="classnsol_1_1_vectors_reader_templated_a13de8886e14eaff29a13bc53ec2f15c9_cgraph" id="classnsol_1_1_vectors_reader_templated_a13de8886e14eaff29a13bc53ec2f15c9_cgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_section.html#afc711f8fb3346aa3f7245056dc5aff88" title="Adds a node at the start of this section. " alt="" coords="271,5,502,32"/>
+<area shape="rect" id="node3" href="classnsol_1_1_section.html#aa28f449c9e1639f82a2fb2e0ad35b24f" title="Adds a node at the end of this section. " alt="" coords="277,56,497,83"/>
+<area shape="rect" id="node4" href="classnsol_1_1_section.html#a6c315e760a69b9e573ac5445b6afeca0" title="Gets the backward neighbour sections of this section. " alt="" coords="268,107,505,133"/>
+<area shape="rect" id="node5" href="classnsol_1_1_section.html#adeb5f9bbd6a130312910851d66f00f3d" title="Gets the forward neighbour sections of this section. " alt="" coords="275,157,499,184"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_vectors_reader_8h_source.html">VectorsReader.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -151,7 +209,7 @@ class nsol::VectorsReaderTemplated&lt; VECTORS_READER_TEMPLATE_CLASSES &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>nsol</b></li><li class="navelem"><a class="el" href="classnsol_1_1_vectors_reader_templated.html">VectorsReaderTemplated</a></li>
-    <li class="footer">Generated on Wed Jan 10 2018 15:44:44 for nsol by
+    <li class="footer">Generated on Wed Jan 10 2018 16:17:47 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -5739,6 +5739,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>loadMorphology</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::VectorsReaderTemplated</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_vectors_reader_templated.html</Path>
+    <Anchor>a13de8886e14eaff29a13bc53ec2f15c9</Anchor>
+    <Abstract>Creates a generic morphology using a vector of points and segments. </Abstract>
+    <DeclaredIn>VectorsReader.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nsol::Version</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>

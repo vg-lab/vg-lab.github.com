@@ -1,0 +1,6 @@
+<map id="nsol::VectorsReaderTemplated::loadMorphology" name="nsol::VectorsReaderTemplated::loadMorphology">
+<area shape="rect" id="node2" href="$classnsol_1_1_section.html#afc711f8fb3346aa3f7245056dc5aff88" title="Adds a node at the start of this section. " alt="" coords="271,5,502,32"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_section.html#aa28f449c9e1639f82a2fb2e0ad35b24f" title="Adds a node at the end of this section. " alt="" coords="277,56,497,83"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_section.html#a6c315e760a69b9e573ac5445b6afeca0" title="Gets the backward neighbour sections of this section. " alt="" coords="268,107,505,133"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_section.html#adeb5f9bbd6a130312910851d66f00f3d" title="Gets the forward neighbour sections of this section. " alt="" coords="275,157,499,184"/>
+</map>
