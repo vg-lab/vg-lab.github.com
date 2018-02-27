@@ -1,6 +1,6 @@
 var classfires_1_1_scalar_averager =
 [
-    [ "ScalarAverager", "classfires_1_1_scalar_averager.html#ae713555d6bcebe4685bf3b1e3850ee12", null ],
+    [ "ScalarAverager", "classfires_1_1_scalar_averager.html#a63bd893371c519bf6a5061b538a6031e", null ],
     [ "~ScalarAverager", "classfires_1_1_scalar_averager.html#abf98ee3ef9a82300147dfd6122aea498", null ],
     [ "accum", "classfires_1_1_scalar_averager.html#a044f291776b430723d80270d6db1f528", null ],
     [ "divide", "classfires_1_1_scalar_averager.html#a75877b1b9478882720f73abf5ed6cfe3", null ],

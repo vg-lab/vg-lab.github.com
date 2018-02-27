@@ -66,7 +66,7 @@
                <Node>
                 <Name>addProperty</Name>
                 <Path>classfires_1_1_aggregate_config.html</Path>
-                <Anchor>abe9ec134edf2ed330d5749adc0d90cd1</Anchor>
+                <Anchor>aeced0726bd63238c13cbde3eb014314e</Anchor>
                </Node>
                <Node>
                 <Name>aggregatedObject</Name>
@@ -944,6 +944,11 @@
                 <Anchor>ab6de0ae0f0c0a0888b25e2cf6a505487</Anchor>
                 <Subnodes>
                  <Node>
+                  <Name>SUM</Name>
+                  <Path>classfires_1_1_property_aggregator.html</Path>
+                  <Anchor>ab6de0ae0f0c0a0888b25e2cf6a505487a741fb9681a61a474c93bc0e4d759f4ab</Anchor>
+                 </Node>
+                 <Node>
                   <Name>MIN</Name>
                   <Path>classfires_1_1_property_aggregator.html</Path>
                   <Anchor>ab6de0ae0f0c0a0888b25e2cf6a505487ab4ab5a382c255aad1d0792c7ac41164b</Anchor>
@@ -1287,7 +1292,7 @@
                <Node>
                 <Name>ScalarAverager</Name>
                 <Path>classfires_1_1_scalar_averager.html</Path>
-                <Anchor>ae713555d6bcebe4685bf3b1e3850ee12</Anchor>
+                <Anchor>a63bd893371c519bf6a5061b538a6031e</Anchor>
                </Node>
                <Node>
                 <Name>~ScalarAverager</Name>
@@ -1333,7 +1338,7 @@
                <Node>
                 <Name>ScalarAverager</Name>
                 <Path>classfires_1_1_scalar_averager_3_01_t_01_5_01_4.html</Path>
-                <Anchor>a4744536f3202b03a30615849a6028c75</Anchor>
+                <Anchor>a81c27e5865e4efb746ad0c562515fb89</Anchor>
                </Node>
                <Node>
                 <Name>~ScalarAverager</Name>
