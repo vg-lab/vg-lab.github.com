@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('classreto_1_1_camera.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa6b27345edc1f88cc7482c895a2f2768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa6b27345edc1f88cc7482c895a2f2768">Camera</a> (float <a class="el" href="classreto_1_1_camera.html#abcc550ae7ddb5309e07289cffca81890">fov</a>=45.0f, float ratio=((float) 16)/9, float nearPlane=0.1f, float farPlane=10000.0f, Eigen::Vector3f pivot=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float radius=1000.0f, float yaw=0.0f, float pitch=0.0f)</td></tr>
+<tr class="memitem:aa6b27345edc1f88cc7482c895a2f2768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa6b27345edc1f88cc7482c895a2f2768">Camera</a> (float <a class="el" href="classreto_1_1_camera.html#a8f2556a424b4f3f7a3de850294700e7c">fov</a>=45.0f, float ratio=((float) 16)/9, float nearPlane=0.1f, float farPlane=10000.0f, Eigen::Vector3f pivot=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float radius=1000.0f, float yaw=0.0f, float pitch=0.0f)</td></tr>
 <tr class="memdesc:aa6b27345edc1f88cc7482c895a2f2768"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> constructor.  <a href="#aa6b27345edc1f88cc7482c895a2f2768">More...</a><br /></td></tr>
 <tr class="separator:aa6b27345edc1f88cc7482c895a2f2768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c8e04892dc269450756820b120a6d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22c8e04892dc269450756820b120a6d1"></a>
@@ -145,17 +145,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a207744a4f6a95d4ed239222663c5e4a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a207744a4f6a95d4ed239222663c5e4a0">anim</a> (void)</td></tr>
 <tr class="memdesc:a207744a4f6a95d4ed239222663c5e4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to if there is a target pivot move the camera to this target pivot.  <a href="#a207744a4f6a95d4ed239222663c5e4a0">More...</a><br /></td></tr>
 <tr class="separator:a207744a4f6a95d4ed239222663c5e4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcc550ae7ddb5309e07289cffca81890"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#abcc550ae7ddb5309e07289cffca81890">fov</a> (void)</td></tr>
-<tr class="memdesc:abcc550ae7ddb5309e07289cffca81890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the field of view of the camera.  <a href="#abcc550ae7ddb5309e07289cffca81890">More...</a><br /></td></tr>
-<tr class="separator:abcc550ae7ddb5309e07289cffca81890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3039f3fc5a24df22bea54a8b78f39f7f"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane</a> (void)</td></tr>
-<tr class="memdesc:a3039f3fc5a24df22bea54a8b78f39f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get and set the far plane of the camera.  <a href="#a3039f3fc5a24df22bea54a8b78f39f7f">More...</a><br /></td></tr>
-<tr class="separator:a3039f3fc5a24df22bea54a8b78f39f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2556a424b4f3f7a3de850294700e7c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8f2556a424b4f3f7a3de850294700e7c">fov</a> (void) const </td></tr>
+<tr class="memdesc:a8f2556a424b4f3f7a3de850294700e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the field of view of the camera.  <a href="#a8f2556a424b4f3f7a3de850294700e7c">More...</a><br /></td></tr>
+<tr class="separator:a8f2556a424b4f3f7a3de850294700e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af991332311a30e255145eb7d180170c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#af991332311a30e255145eb7d180170c2">fov</a> (float fieldOfView)</td></tr>
+<tr class="memdesc:af991332311a30e255145eb7d180170c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to modify the current field of view of the camera.  <a href="#af991332311a30e255145eb7d180170c2">More...</a><br /></td></tr>
+<tr class="separator:af991332311a30e255145eb7d180170c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388f65bf17cbc9a273e9b480e4516eee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a388f65bf17cbc9a273e9b480e4516eee">nearPlane</a> (void) const </td></tr>
+<tr class="memdesc:a388f65bf17cbc9a273e9b480e4516eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the current near plane of the camera.  <a href="#a388f65bf17cbc9a273e9b480e4516eee">More...</a><br /></td></tr>
+<tr class="separator:a388f65bf17cbc9a273e9b480e4516eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3307e1273a127e1a6eb09e947cf9c49e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a3307e1273a127e1a6eb09e947cf9c49e">nearPlane</a> (float near)</td></tr>
+<tr class="memdesc:a3307e1273a127e1a6eb09e947cf9c49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the near plane of the camera Note: This will modify projection and view-projection matrices.  <a href="#a3307e1273a127e1a6eb09e947cf9c49e">More...</a><br /></td></tr>
+<tr class="separator:a3307e1273a127e1a6eb09e947cf9c49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb250869ba2bf7a392ab4dae22542373"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#afb250869ba2bf7a392ab4dae22542373">farPlane</a> (void) const </td></tr>
+<tr class="memdesc:afb250869ba2bf7a392ab4dae22542373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get and set the far plane of the camera.  <a href="#afb250869ba2bf7a392ab4dae22542373">More...</a><br /></td></tr>
+<tr class="separator:afb250869ba2bf7a392ab4dae22542373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fa83e322eb997561e28a05c567bb2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a01fa83e322eb997561e28a05c567bb2c">farPlane</a> (float far)</td></tr>
+<tr class="memdesc:a01fa83e322eb997561e28a05c567bb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the near plane of the camera Note: This will modify projection and view-projection matrices.  <a href="#a01fa83e322eb997561e28a05c567bb2c">More...</a><br /></td></tr>
+<tr class="separator:a01fa83e322eb997561e28a05c567bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0dc315155c83651e68685e9f54d82e5"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa0dc315155c83651e68685e9f54d82e5">pivot</a> (void)</td></tr>
 <tr class="memdesc:aa0dc315155c83651e68685e9f54d82e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the actual pivot pin of the camera.  <a href="#aa0dc315155c83651e68685e9f54d82e5">More...</a><br /></td></tr>
 <tr class="separator:aa0dc315155c83651e68685e9f54d82e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c18c3d4199a08a93f02031ca4008ee4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8c18c3d4199a08a93f02031ca4008ee4">radius</a> (void)</td></tr>
-<tr class="memdesc:a8c18c3d4199a08a93f02031ca4008ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the actual distance between the camera and the pivot pin aka camera radius.  <a href="#a8c18c3d4199a08a93f02031ca4008ee4">More...</a><br /></td></tr>
+<tr class="memdesc:a8c18c3d4199a08a93f02031ca4008ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the actual distance between the camera and the pivot positions.  <a href="#a8c18c3d4199a08a93f02031ca4008ee4">More...</a><br /></td></tr>
 <tr class="separator:a8c18c3d4199a08a93f02031ca4008ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65eb263a6c430f317fc3be6b12222e"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8c65eb263a6c430f317fc3be6b12222e">projectionMatrix</a> (void)</td></tr>
 <tr class="memdesc:a8c65eb263a6c430f317fc3be6b12222e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to projection matrix of the camera vectorized in columns.  <a href="#a8c65eb263a6c430f317fc3be6b12222e">More...</a><br /></td></tr>
@@ -167,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af04acafea51d165cd9ba48eefdc5687f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to view matrix of the camera vectorized in columns.  <a href="#af04acafea51d165cd9ba48eefdc5687f">More...</a><br /></td></tr>
 <tr class="separator:af04acafea51d165cd9ba48eefdc5687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a75b39e91a61eb8d44b70c9ab4e64fac8">viewProjectionMatrix</a> (void)</td></tr>
-<tr class="memdesc:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to projectionview matrix of the camera vectorized in columns.  <a href="#a75b39e91a61eb8d44b70c9ab4e64fac8">More...</a><br /></td></tr>
+<tr class="memdesc:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to view-projection matrix of the camera vectorized in columns.  <a href="#a75b39e91a61eb8d44b70c9ab4e64fac8">More...</a><br /></td></tr>
 <tr class="separator:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0b342ca3460d6f7a3dc301c30e3ee3"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a2a0b342ca3460d6f7a3dc301c30e3ee3">position</a> (void)</td></tr>
 <tr class="memdesc:a2a0b342ca3460d6f7a3dc301c30e3ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to the camera position vectorized.  <a href="#a2a0b342ca3460d6f7a3dc301c30e3ee3">More...</a><br /></td></tr>
@@ -310,38 +322,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a3039f3fc5a24df22bea54a8b78f39f7f"></a>
+<a class="anchor" id="afb250869ba2bf7a392ab4dae22542373"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float&amp; reto::Camera::farPlane </td>
+          <td class="memname">float reto::Camera::farPlane </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Method to get and set the far plane of the camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>the reference to a float with the far plane attrib of the camera </dd></dl>
-
-<p>Definition at line <a class="el" href="_camera_8h_source.html#l00144">144</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
-<p>References <a class="el" href="classreto_1_1_camera.html#a9a610a3241245a243e854f1bfe919a6a">animDuration()</a>, <a class="el" href="classreto_1_1_camera.html#abc884422e36d921e5aec45d593efd3ca">height()</a>, <a class="el" href="classreto_1_1_camera.html#a7c9c644796f089ea003a8abf40c7279e">orthoMatrix()</a>, <a class="el" href="classreto_1_1_camera.html#aa0dc315155c83651e68685e9f54d82e5">pivot()</a>, <a class="el" href="classreto_1_1_camera.html#a2a0b342ca3460d6f7a3dc301c30e3ee3">position()</a>, <a class="el" href="classreto_1_1_camera.html#a8c65eb263a6c430f317fc3be6b12222e">projectionMatrix()</a>, <a class="el" href="classreto_1_1_camera.html#a8c18c3d4199a08a93f02031ca4008ee4">radius()</a>, <a class="el" href="classreto_1_1_camera.html#a48560df1b716ce742c4ad365ba4e32e2">ratio()</a>, <a class="el" href="classreto_1_1_camera.html#aa16cad32f1d54ea4434454872ca6d7c0">rotation()</a>, <a class="el" href="classreto_1_1_camera.html#a6e29daf98854d4d2383a3756b79d9505">setWindowSize()</a>, <a class="el" href="classreto_1_1_camera.html#a5a037acdf54e6846b13011557feead91">targetPivot()</a>, <a class="el" href="classreto_1_1_camera.html#a4091520144ee870b6072f4cae9c8de6f">targetPivotRadius()</a>, <a class="el" href="classreto_1_1_camera.html#a43648c1d3c5463e74322560a09d7f24f">targetRadius()</a>, <a class="el" href="classreto_1_1_camera.html#af04acafea51d165cd9ba48eefdc5687f">viewMatrix()</a>, <a class="el" href="classreto_1_1_camera.html#a75b39e91a61eb8d44b70c9ab4e64fac8">viewProjectionMatrix()</a>, and <a class="el" href="classreto_1_1_camera.html#a2c2de4ac3e7183f7f7351c2c1e99158c">width()</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the far plane attribute of the camera </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abcc550ae7ddb5309e07289cffca81890"></a>
+<a class="anchor" id="a01fa83e322eb997561e28a05c567bb2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reto::Camera::farPlane </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>far</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to set the near plane of the camera Note: This will modify projection and view-projection matrices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">near</td><td>new value for near plane </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f2556a424b4f3f7a3de850294700e7c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -350,13 +374,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Method to get the field of view of the camera. </p>
 <dl class="section return"><dt>Returns</dt><dd>float with the field of view of the camera </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af991332311a30e255145eb7d180170c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reto::Camera::fov </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fieldOfView</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to modify the current field of view of the camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fieldOfView</td><td>new value for field of view Note: This will modify projection and view-projection matrices </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -376,20 +424,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Method to get window height size. </p>
 <dl class="section return"><dt>Returns</dt><dd>window height size </dd></dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_abc884422e36d921e5aec45d593efd3ca_icgraph.png" border="0" usemap="#classreto_1_1_camera_abc884422e36d921e5aec45d593efd3ca_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_abc884422e36d921e5aec45d593efd3ca_icgraph" id="classreto_1_1_camera_abc884422e36d921e5aec45d593efd3ca_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="208,5,375,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -452,6 +486,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a388f65bf17cbc9a273e9b480e4516eee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float reto::Camera::nearPlane </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to get the current near plane of the camera. </p>
+<dl class="section return"><dt>Returns</dt><dd>float with the near plane distance from camera </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3307e1273a127e1a6eb09e947cf9c49e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reto::Camera::nearPlane </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>near</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to set the near plane of the camera Note: This will modify projection and view-projection matrices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">near</td><td>new value for near plane </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7c9c644796f089ea003a8abf40c7279e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -468,20 +545,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Method to get the pointer to ortho-projection matrix of the camera vectorized in columns. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized ortho-projection matrix of the camera </dd></dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a7c9c644796f089ea003a8abf40c7279e_icgraph.png" border="0" usemap="#classreto_1_1_camera_a7c9c644796f089ea003a8abf40c7279e_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a7c9c644796f089ea003a8abf40c7279e_icgraph" id="classreto_1_1_camera_a7c9c644796f089ea003a8abf40c7279e_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="241,5,408,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -501,20 +564,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Method to get the actual pivot pin of the camera. </p>
 <dl class="section return"><dt>Returns</dt><dd>Eige::Vector3f with the pivot pin of the camera </dd></dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_aa0dc315155c83651e68685e9f54d82e5_icgraph.png" border="0" usemap="#classreto_1_1_camera_aa0dc315155c83651e68685e9f54d82e5_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_aa0dc315155c83651e68685e9f54d82e5_icgraph" id="classreto_1_1_camera_aa0dc315155c83651e68685e9f54d82e5_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="200,5,367,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -559,20 +608,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Method to get the pointer to the camera position vectorized. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to float whit the vectorized camera position </dd></dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a2a0b342ca3460d6f7a3dc301c30e3ee3_icgraph.png" border="0" usemap="#classreto_1_1_camera_a2a0b342ca3460d6f7a3dc301c30e3ee3_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a2a0b342ca3460d6f7a3dc301c30e3ee3_icgraph" id="classreto_1_1_camera_a2a0b342ca3460d6f7a3dc301c30e3ee3_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="219,5,385,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a8c65eb263a6c430f317fc3be6b12222e"></a>
@@ -592,20 +627,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Method to get the pointer to projection matrix of the camera vectorized in columns. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized projection matrix of the camera </dd></dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a8c65eb263a6c430f317fc3be6b12222e_icgraph.png" border="0" usemap="#classreto_1_1_camera_a8c65eb263a6c430f317fc3be6b12222e_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a8c65eb263a6c430f317fc3be6b12222e_icgraph" id="classreto_1_1_camera_a8c65eb263a6c430f317fc3be6b12222e_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="232,13,399,39"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a8c18c3d4199a08a93f02031ca4008ee4"></a>
@@ -622,22 +643,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Method to get the actual distance between the camera and the pivot pin aka camera radius. </p>
-<dl class="section return"><dt>Returns</dt><dd>float with the distance between the camera and the pivot pin </dd></dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a8c18c3d4199a08a93f02031ca4008ee4_icgraph.png" border="0" usemap="#classreto_1_1_camera_a8c18c3d4199a08a93f02031ca4008ee4_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a8c18c3d4199a08a93f02031ca4008ee4_icgraph" id="classreto_1_1_camera_a8c18c3d4199a08a93f02031ca4008ee4_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="208,5,375,32"/>
-</map>
-</div>
-</p>
+<p>Method to get the actual distance between the camera and the pivot positions. </p>
+<p>This distance is the actual radius from camera's orbit over pivot. </p><dl class="section return"><dt>Returns</dt><dd>float with the distance between the camera and the pivot position. </dd></dl>
 
 </div>
 </div>
@@ -687,20 +694,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a48560df1b716ce742c4ad365ba4e32e2_icgraph.png" border="0" usemap="#classreto_1_1_camera_a48560df1b716ce742c4ad365ba4e32e2_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a48560df1b716ce742c4ad365ba4e32e2_icgraph" id="classreto_1_1_camera_a48560df1b716ce742c4ad365ba4e32e2_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="197,5,364,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aa16cad32f1d54ea4434454872ca6d7c0"></a>
@@ -735,20 +728,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </table>
   </dd>
 </dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_aa16cad32f1d54ea4434454872ca6d7c0_icgraph.png" border="0" usemap="#classreto_1_1_camera_aa16cad32f1d54ea4434454872ca6d7c0_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_aa16cad32f1d54ea4434454872ca6d7c0_icgraph" id="classreto_1_1_camera_aa16cad32f1d54ea4434454872ca6d7c0_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="219,5,385,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -785,20 +764,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a6e29daf98854d4d2383a3756b79d9505_icgraph.png" border="0" usemap="#classreto_1_1_camera_a6e29daf98854d4d2383a3756b79d9505_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a6e29daf98854d4d2383a3756b79d9505_icgraph" id="classreto_1_1_camera_a6e29daf98854d4d2383a3756b79d9505_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="263,5,429,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a5a037acdf54e6846b13011557feead91"></a>
@@ -822,20 +787,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </table>
   </dd>
 </dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a5a037acdf54e6846b13011557feead91_icgraph.png" border="0" usemap="#classreto_1_1_camera_a5a037acdf54e6846b13011557feead91_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a5a037acdf54e6846b13011557feead91_icgraph" id="classreto_1_1_camera_a5a037acdf54e6846b13011557feead91_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="239,5,405,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -872,20 +823,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a4091520144ee870b6072f4cae9c8de6f_icgraph.png" border="0" usemap="#classreto_1_1_camera_a4091520144ee870b6072f4cae9c8de6f_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a4091520144ee870b6072f4cae9c8de6f_icgraph" id="classreto_1_1_camera_a4091520144ee870b6072f4cae9c8de6f_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="239,13,405,39"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a43648c1d3c5463e74322560a09d7f24f"></a>
@@ -910,20 +847,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a43648c1d3c5463e74322560a09d7f24f_icgraph.png" border="0" usemap="#classreto_1_1_camera_a43648c1d3c5463e74322560a09d7f24f_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a43648c1d3c5463e74322560a09d7f24f_icgraph" id="classreto_1_1_camera_a43648c1d3c5463e74322560a09d7f24f_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="249,5,416,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="af04acafea51d165cd9ba48eefdc5687f"></a>
@@ -943,20 +866,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Method to get the pointer to view matrix of the camera vectorized in columns. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized view matrix of the camera </dd></dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_af04acafea51d165cd9ba48eefdc5687f_icgraph.png" border="0" usemap="#classreto_1_1_camera_af04acafea51d165cd9ba48eefdc5687f_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_af04acafea51d165cd9ba48eefdc5687f_icgraph" id="classreto_1_1_camera_af04acafea51d165cd9ba48eefdc5687f_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="235,5,401,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a75b39e91a61eb8d44b70c9ab4e64fac8"></a>
@@ -973,22 +882,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Method to get the pointer to projectionview matrix of the camera vectorized in columns. </p>
-<dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized projectionview matrix of the camera </dd></dl>
-
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a75b39e91a61eb8d44b70c9ab4e64fac8_icgraph.png" border="0" usemap="#classreto_1_1_camera_a75b39e91a61eb8d44b70c9ab4e64fac8_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a75b39e91a61eb8d44b70c9ab4e64fac8_icgraph" id="classreto_1_1_camera_a75b39e91a61eb8d44b70c9ab4e64fac8_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="259,13,425,39"/>
-</map>
-</div>
-</p>
+<p>Method to get the pointer to view-projection matrix of the camera vectorized in columns. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized view-projection matrix of the camera </dd></dl>
 
 </div>
 </div>
@@ -1009,20 +904,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Method to get window width size. </p>
 <dl class="section return"><dt>Returns</dt><dd>window width size </dd></dl>
 
-<p>Referenced by <a class="el" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f">farPlane()</a>.</p>
-
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classreto_1_1_camera_a2c2de4ac3e7183f7f7351c2c1e99158c_icgraph.png" border="0" usemap="#classreto_1_1_camera_a2c2de4ac3e7183f7f7351c2c1e99158c_icgraph" alt=""/></div>
-<map name="classreto_1_1_camera_a2c2de4ac3e7183f7f7351c2c1e99158c_icgraph" id="classreto_1_1_camera_a2c2de4ac3e7183f7f7351c2c1e99158c_icgraph">
-<area shape="rect" id="node2" href="classreto_1_1_camera.html#a3039f3fc5a24df22bea54a8b78f39f7f" title="Method to get and set the far plane of the camera. " alt="" coords="201,5,368,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -1034,7 +915,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>reto</b></li><li class="navelem"><a class="el" href="classreto_1_1_camera.html">Camera</a></li>
-    <li class="footer">Generated on Mon Feb 12 2018 14:28:39 for ReTo by
+    <li class="footer">Generated on Thu Mar 22 2018 17:12:23 for ReTo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -200,8 +200,44 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>abcc550ae7ddb5309e07289cffca81890</Anchor>
+    <Anchor>a8f2556a424b4f3f7a3de850294700e7c</Anchor>
     <Abstract>Method to get the field of view of the camera. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fov</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>af991332311a30e255145eb7d180170c2</Anchor>
+    <Abstract>Method to modify the current field of view of the camera. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nearPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a388f65bf17cbc9a273e9b480e4516eee</Anchor>
+    <Abstract>Method to get the current near plane of the camera. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nearPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a3307e1273a127e1a6eb09e947cf9c49e</Anchor>
+    <Abstract>Method to set the near plane of the camera Note: This will modify projection and view-projection matr...</Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>
@@ -212,8 +248,20 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a3039f3fc5a24df22bea54a8b78f39f7f</Anchor>
+    <Anchor>afb250869ba2bf7a392ab4dae22542373</Anchor>
     <Abstract>Method to get and set the far plane of the camera. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>farPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a01fa83e322eb997561e28a05c567bb2c</Anchor>
+    <Abstract>Method to set the near plane of the camera Note: This will modify projection and view-projection matr...</Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>
@@ -237,7 +285,7 @@
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
     <Anchor>a8c18c3d4199a08a93f02031ca4008ee4</Anchor>
-    <Abstract>Method to get the actual distance between the camera and the pivot pin aka camera radius...</Abstract>
+    <Abstract>Method to get the actual distance between the camera and the pivot positions. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>
@@ -285,7 +333,7 @@
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
     <Anchor>a75b39e91a61eb8d44b70c9ab4e64fac8</Anchor>
-    <Abstract>Method to get the pointer to projectionview matrix of the camera vectorized in columns. </Abstract>
+    <Abstract>Method to get the pointer to view-projection matrix of the camera vectorized in columns. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>

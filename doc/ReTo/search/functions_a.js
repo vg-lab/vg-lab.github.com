@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['objparser',['ObjParser',['../classreto_1_1_obj_parser.html#afdad2d589c4ca889929b0b9708098193',1,'reto::ObjParser']]],
-  ['operator_28_29',['operator()',['../classreto_1_1_shader_program.html#a652b7878143be9647954c9e3840ef70c',1,'reto::ShaderProgram']]],
-  ['operator_5b_5d',['operator[]',['../classreto_1_1_shader_program.html#aac0d4f5992677a93966e88a6e20d3bf7',1,'reto::ShaderProgram']]],
-  ['orthomatrix',['orthoMatrix',['../classreto_1_1_camera.html#a7c9c644796f089ea003a8abf40c7279e',1,'reto::Camera']]]
+  ['nearplane',['nearPlane',['../classreto_1_1_camera.html#a388f65bf17cbc9a273e9b480e4516eee',1,'reto::Camera::nearPlane(void) const '],['../classreto_1_1_camera.html#a3307e1273a127e1a6eb09e947cf9c49e',1,'reto::Camera::nearPlane(float near)']]]
 ];

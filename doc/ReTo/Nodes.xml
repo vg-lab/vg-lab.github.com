@@ -48,12 +48,22 @@
                <Node>
                 <Name>farPlane</Name>
                 <Path>classreto_1_1_camera.html</Path>
-                <Anchor>a3039f3fc5a24df22bea54a8b78f39f7f</Anchor>
+                <Anchor>afb250869ba2bf7a392ab4dae22542373</Anchor>
+               </Node>
+               <Node>
+                <Name>farPlane</Name>
+                <Path>classreto_1_1_camera.html</Path>
+                <Anchor>a01fa83e322eb997561e28a05c567bb2c</Anchor>
                </Node>
                <Node>
                 <Name>fov</Name>
                 <Path>classreto_1_1_camera.html</Path>
-                <Anchor>abcc550ae7ddb5309e07289cffca81890</Anchor>
+                <Anchor>a8f2556a424b4f3f7a3de850294700e7c</Anchor>
+               </Node>
+               <Node>
+                <Name>fov</Name>
+                <Path>classreto_1_1_camera.html</Path>
+                <Anchor>af991332311a30e255145eb7d180170c2</Anchor>
                </Node>
                <Node>
                 <Name>height</Name>
@@ -69,6 +79,16 @@
                 <Name>localTranslation</Name>
                 <Path>classreto_1_1_camera.html</Path>
                 <Anchor>ad7a65c41440618908b19e6f0ad10bd38</Anchor>
+               </Node>
+               <Node>
+                <Name>nearPlane</Name>
+                <Path>classreto_1_1_camera.html</Path>
+                <Anchor>a388f65bf17cbc9a273e9b480e4516eee</Anchor>
+               </Node>
+               <Node>
+                <Name>nearPlane</Name>
+                <Path>classreto_1_1_camera.html</Path>
+                <Anchor>a3307e1273a127e1a6eb09e947cf9c49e</Anchor>
                </Node>
                <Node>
                 <Name>orthoMatrix</Name>
