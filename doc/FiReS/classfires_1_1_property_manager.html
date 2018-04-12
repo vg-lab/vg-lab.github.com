@@ -137,10 +137,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0718015ec73471ebe5392fb169cea206"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0718015ec73471ebe5392fb169cea206"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0718015ec73471ebe5392fb169cea206"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, typename std::enable_if&lt; std::is_class&lt; T &gt;::value &gt;::type *=0)</td></tr>
-<tr class="separator:a0718015ec73471ebe5392fb169cea206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6ab58bbed54f0e37ac17f9b261beb36"><td class="memTemplParams" colspan="2"><a class="anchor" id="af6ab58bbed54f0e37ac17f9b261beb36"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af6ab58bbed54f0e37ac17f9b261beb36"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type *=0)</td></tr>
@@ -150,6 +146,15 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa53c46b633fb66d636faad53602fb77d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfires_1_1_property_manager.html#aa53c46b633fb66d636faad53602fb77d">registerProperty</a> (const std::string &amp;label, T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type *=0)</td></tr>
 <tr class="memdesc:aa53c46b633fb66d636faad53602fb77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for scalars. <br /></td></tr>
 <tr class="separator:aa53c46b633fb66d636faad53602fb77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895dd6e5735a7f950ce8700e869b6e5d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a895dd6e5735a7f950ce8700e869b6e5d"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a895dd6e5735a7f950ce8700e869b6e5d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
+<tr class="separator:a895dd6e5735a7f950ce8700e869b6e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7c9515677483c982d1cdac113d37cd"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4d7c9515677483c982d1cdac113d37cd"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4d7c9515677483c982d1cdac113d37cd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfires_1_1_property_manager.html#a4d7c9515677483c982d1cdac113d37cd">registerProperty</a> (const std::string &amp;label, T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
+<tr class="memdesc:a4d7c9515677483c982d1cdac113d37cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for strings. <br /></td></tr>
+<tr class="separator:a4d7c9515677483c982d1cdac113d37cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1b4130d8e36b76ee10ee151cf42166e"><td class="memTemplParams" colspan="2"><a class="anchor" id="af1b4130d8e36b76ee10ee151cf42166e"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af1b4130d8e36b76ee10ee151cf42166e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, const std::map&lt; T, std::string &gt; &amp;enumToString=std::map&lt; T, std::string &gt;(), typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type *=0)</td></tr>
@@ -159,6 +164,10 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a39235ee7e9be9d610e5903eb70b4c3fa"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfires_1_1_property_manager.html#a39235ee7e9be9d610e5903eb70b4c3fa">registerProperty</a> (const std::string &amp;label, T, const std::map&lt; T, std::string &gt; &amp;enumToString=std::map&lt; T, std::string &gt;(), typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type *=0)</td></tr>
 <tr class="memdesc:a39235ee7e9be9d610e5903eb70b4c3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for scalars. <br /></td></tr>
 <tr class="separator:a39235ee7e9be9d610e5903eb70b4c3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7048675c0a8d9f785055eb63e6631937"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7048675c0a8d9f785055eb63e6631937"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7048675c0a8d9f785055eb63e6631937"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, typename std::enable_if&lt; std::is_class&lt; T &gt;::value &amp;&amp;!boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
+<tr class="separator:a7048675c0a8d9f785055eb63e6631937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a662a57a91669c605f25b9d821616b1c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a662a57a91669c605f25b9d821616b1c0"></a>
 static <a class="el" href="classfires_1_1_property_sorter.html">fires::PropertySorter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSorter</b> (PropertyGID propertyGID)</td></tr>
 <tr class="separator:a662a57a91669c605f25b9d821616b1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +216,7 @@ static std::map&lt; std::type_index, <a class="el" href="classfires_1_1_property
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_property_manager_8h_source.html#l00038">38</a> of file <a class="el" href="_property_manager_8h_source.html">PropertyManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_property_manager_8h_source.html#l00039">39</a> of file <a class="el" href="_property_manager_8h_source.html">PropertyManager.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_property_manager_8h_source.html">PropertyManager.h</a></li>
 </ul>
@@ -217,7 +226,7 @@ static std::map&lt; std::type_index, <a class="el" href="classfires_1_1_property
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fires</b></li><li class="navelem"><a class="el" href="classfires_1_1_property_manager.html">PropertyManager</a></li>
-    <li class="footer">Generated on Thu Mar 8 2018 12:38:32 for FiReS by
+    <li class="footer">Generated on Thu Apr 12 2018 11:25:55 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -124,6 +124,8 @@ $(document).ready(function(){initNavTree('classfires_1_1_property_caster.html','
 <area shape="rect" id="node2" href="classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html" title="{fires::EnumPropertyCaster\l\&lt; T, typename std::enable\l_if\&lt; std::is_enum\&lt; T \&gt;::value\l \&gt;::type \&gt;\n|# _scalarToString\l# _stringToScalar\l|+ EnumPropertyCaster()\l+ ~EnumPropertyCaster()\l+ toInt()\l+ toString()\l+ fromString()\l+ categories()\l+ scalarToString()\l}" alt="" coords="5,189,217,413"/>
 <area shape="rect" id="node3" href="classfires_1_1_scalar_property_caster.html" title="{fires::ScalarPropertyCaster\l\&lt; T, Enable \&gt;\n||}" alt="" coords="241,255,435,347"/>
 <area shape="rect" id="node4" href="classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html" title="{fires::ScalarPropertyCaster\l\&lt; T, typename std::enable\l_if\&lt; std::is_arithmetic\&lt; T\l \&gt;::value \&gt;::type \&gt;\n||+ ~ScalarPropertyCaster()\l+ toInt()\l+ toString()\l+ fromString()\l}" alt="" coords="459,219,654,384"/>
+<area shape="rect" id="node5" href="classfires_1_1_string_property_caster.html" title="{fires::StringPropertyCaster\l\&lt; T, Enable \&gt;\n||}" alt="" coords="679,255,869,347"/>
+<area shape="rect" id="node6" href="classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html" title="{fires::StringPropertyCaster\l\&lt; T, typename std::enable\l_if\&lt; boost::spirit::traits\l::is_string\&lt; T \&gt;::value \&gt;::type \&gt;\n||+ ~StringPropertyCaster()\l+ toInt()\l+ toString()\l+ fromString()\l}" alt="" coords="893,219,1121,384"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -138,17 +140,17 @@ $(document).ready(function(){initNavTree('classfires_1_1_property_caster.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa178c1abc908d829fff46166e093e1db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa178c1abc908d829fff46166e093e1db"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TIntCasting</b> { <b>ROUND</b> = 0, 
+<tr class="memitem:a239ab5fd8c6eb2ffb4d2171a58345e29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a239ab5fd8c6eb2ffb4d2171a58345e29"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TIntRounding</b> { <b>ROUND</b> = 0, 
 <b>CEIL</b>, 
 <b>FLOOR</b>
  }</td></tr>
-<tr class="separator:aa178c1abc908d829fff46166e093e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a239ab5fd8c6eb2ffb4d2171a58345e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a4072055af7255919fcadf05d3785c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a4072055af7255919fcadf05d3785c0"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>toInt</b> (const <a class="el" href="classfires_1_1_property.html">Property</a> &amp;, TIntCasting casting=ROUND)=0</td></tr>
-<tr class="separator:a3a4072055af7255919fcadf05d3785c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22b639e8f6f68251a946246f381e9d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad22b639e8f6f68251a946246f381e9d5"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>toInt</b> (const <a class="el" href="classfires_1_1_property.html">Property</a> &amp;, TIntRounding rounding=ROUND)=0</td></tr>
+<tr class="separator:ad22b639e8f6f68251a946246f381e9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6345a66a36e41a0bef32c5c1fdd54760"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6345a66a36e41a0bef32c5c1fdd54760"></a>
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> (const <a class="el" href="classfires_1_1_property.html">Property</a> &amp;property)=0</td></tr>
 <tr class="separator:a6345a66a36e41a0bef32c5c1fdd54760"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,7 +163,7 @@ virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" vali
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_property_caster_8h_source.html#l00034">34</a> of file <a class="el" href="_property_caster_8h_source.html">PropertyCaster.h</a>.</p>
+<p>Definition at line <a class="el" href="_property_caster_8h_source.html#l00036">36</a> of file <a class="el" href="_property_caster_8h_source.html">PropertyCaster.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_property_caster_8h_source.html">PropertyCaster.h</a></li>
 </ul>
@@ -171,7 +173,7 @@ virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" vali
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fires</b></li><li class="navelem"><a class="el" href="classfires_1_1_property_caster.html">PropertyCaster</a></li>
-    <li class="footer">Generated on Thu Mar 8 2018 12:38:32 for FiReS by
+    <li class="footer">Generated on Thu Apr 12 2018 11:25:55 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -142,9 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7dad63ba1a4ff23f9457108e2b3231ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dad63ba1a4ff23f9457108e2b3231ea"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EnumPropertyCaster</b> (const std::map&lt; T, std::string &gt; &amp;scalarToString_)</td></tr>
 <tr class="separator:a7dad63ba1a4ff23f9457108e2b3231ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bc9be72f375d7ac3aa6783d91812bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0bc9be72f375d7ac3aa6783d91812bb"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>toInt</b> (const <a class="el" href="classfires_1_1_property.html">Property</a> &amp;property, TIntCasting casting=ROUND)</td></tr>
-<tr class="separator:ac0bc9be72f375d7ac3aa6783d91812bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea58de70326c701266d3b9d83d973e37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea58de70326c701266d3b9d83d973e37"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>toInt</b> (const <a class="el" href="classfires_1_1_property.html">Property</a> &amp;property, TIntRounding rounding=ROUND)</td></tr>
+<tr class="separator:aea58de70326c701266d3b9d83d973e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603396166cf68d89e93086e7112e145c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a603396166cf68d89e93086e7112e145c"></a>
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> (const <a class="el" href="classfires_1_1_property.html">Property</a> &amp;property)</td></tr>
 <tr class="separator:a603396166cf68d89e93086e7112e145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,18 +170,18 @@ std::map&lt; std::string, T &gt;&#160;</td><td class="memItemRight" valign="bott
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classfires_1_1_property_caster"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfires_1_1_property_caster')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfires_1_1_property_caster.html">fires::PropertyCaster</a></td></tr>
-<tr class="memitem:aa178c1abc908d829fff46166e093e1db inherit pub_types_classfires_1_1_property_caster"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa178c1abc908d829fff46166e093e1db"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TIntCasting</b> { <b>ROUND</b> = 0, 
+<tr class="memitem:a239ab5fd8c6eb2ffb4d2171a58345e29 inherit pub_types_classfires_1_1_property_caster"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a239ab5fd8c6eb2ffb4d2171a58345e29"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TIntRounding</b> { <b>ROUND</b> = 0, 
 <b>CEIL</b>, 
 <b>FLOOR</b>
  }</td></tr>
-<tr class="separator:aa178c1abc908d829fff46166e093e1db inherit pub_types_classfires_1_1_property_caster"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a239ab5fd8c6eb2ffb4d2171a58345e29 inherit pub_types_classfires_1_1_property_caster"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="_property_caster_8h_source.html#l00123">123</a> of file <a class="el" href="_property_caster_8h_source.html">PropertyCaster.h</a>.</p>
+<p>Definition at line <a class="el" href="_property_caster_8h_source.html#l00173">173</a> of file <a class="el" href="_property_caster_8h_source.html">PropertyCaster.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_property_caster_8h_source.html">PropertyCaster.h</a></li>
 </ul>
@@ -191,7 +191,7 @@ class fires::EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fires</b></li><li class="navelem"><a class="el" href="classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html">EnumPropertyCaster&lt; T, typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type &gt;</a></li>
-    <li class="footer">Generated on Thu Mar 8 2018 12:38:32 for FiReS by
+    <li class="footer">Generated on Thu Apr 12 2018 11:25:55 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

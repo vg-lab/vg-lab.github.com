@@ -1,0 +1,7 @@
+var classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6 =
+[
+    [ "~StringPropertyCaster", "classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html#a5741af4cf0b7fea68acc8c0981aff890", null ],
+    [ "fromString", "classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html#aac7f133f59a35d8d6b5e2fc29c8d7f14", null ],
+    [ "toInt", "classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html#a472e4226fc39c55c02c549430580daca", null ],
+    [ "toString", "classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html#a723748579f32ea8883707ba6b437be06", null ]
+];

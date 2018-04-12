@@ -944,6 +944,18 @@
       <Scope>fires::PropertyManager</Scope>
     </TokenIdentifier>
     <Path>classfires_1_1_property_manager.html</Path>
+    <Anchor>a4d7c9515677483c982d1cdac113d37cd</Anchor>
+    <Abstract>Specialization for strings. </Abstract>
+    <DeclaredIn>PropertyManager.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>registerProperty</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>fires::PropertyManager</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_property_manager.html</Path>
     <Anchor>a39235ee7e9be9d610e5903eb70b4c3fa</Anchor>
     <Abstract>Specialization for scalars. </Abstract>
     <DeclaredIn>PropertyManager.h</DeclaredIn>
@@ -1215,6 +1227,33 @@
       <Scope>fires::SortConfig::TSortProperty</Scope>
     </TokenIdentifier>
     <Path>structfires_1_1_sort_config_1_1_t_sort_property.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fires::StringPropertyCaster</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>fires::StringPropertyCaster</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_string_property_caster.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fires::StringPropertyCaster&lt; T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type &gt;</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>fires::StringPropertyCaster&lt; T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type &gt;</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fires::StringPropertySorter</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>fires::StringPropertySorter</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_string_property_sorter.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>

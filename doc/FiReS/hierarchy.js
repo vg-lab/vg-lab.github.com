@@ -39,13 +39,16 @@ var hierarchy =
     [ "fires::PropertyCaster", "classfires_1_1_property_caster.html", [
       [ "fires::EnumPropertyCaster< T, typename std::enable_if< std::is_enum< T >::value >::type >", "classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html", null ],
       [ "fires::ScalarPropertyCaster< T, Enable >", "classfires_1_1_scalar_property_caster.html", null ],
-      [ "fires::ScalarPropertyCaster< T, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html", null ]
+      [ "fires::ScalarPropertyCaster< T, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html", null ],
+      [ "fires::StringPropertyCaster< T, Enable >", "classfires_1_1_string_property_caster.html", null ],
+      [ "fires::StringPropertyCaster< T, typename std::enable_if< boost::spirit::traits::is_string< T >::value >::type >", "classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html", null ]
     ] ],
     [ "fires::PropertyGIDsManager", "classfires_1_1_property_g_i_ds_manager.html", null ],
     [ "fires::PropertyManager", "classfires_1_1_property_manager.html", null ],
     [ "fires::PropertyManager::TPropertyInfo", "structfires_1_1_property_manager_1_1_t_property_info.html", null ],
     [ "fires::PropertySorter", "classfires_1_1_property_sorter.html", [
-      [ "fires::ScalarPropertySorter< T >", "classfires_1_1_scalar_property_sorter.html", null ]
+      [ "fires::ScalarPropertySorter< T >", "classfires_1_1_scalar_property_sorter.html", null ],
+      [ "fires::StringPropertySorter< T >", "classfires_1_1_string_property_sorter.html", null ]
     ] ],
     [ "fires::QueryPropertyData", "classfires_1_1_query_property_data.html", null ],
     [ "fires::SortConfig::TSortProperty", "structfires_1_1_sort_config_1_1_t_sort_property.html", null ],

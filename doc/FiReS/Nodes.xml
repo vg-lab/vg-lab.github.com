@@ -280,7 +280,7 @@
                <Node>
                 <Name>toInt</Name>
                 <Path>classfires_1_1_enum_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__enumbce45079927e709d3a2b934b01aa3058.html</Path>
-                <Anchor>ac0bc9be72f375d7ac3aa6783d91812bb</Anchor>
+                <Anchor>aea58de70326c701266d3b9d83d973e37</Anchor>
                </Node>
                <Node>
                 <Name>toString</Name>
@@ -987,24 +987,24 @@
               <Path>classfires_1_1_property_caster.html</Path>
               <Subnodes>
                <Node>
-                <Name>TIntCasting</Name>
+                <Name>TIntRounding</Name>
                 <Path>classfires_1_1_property_caster.html</Path>
-                <Anchor>aa178c1abc908d829fff46166e093e1db</Anchor>
+                <Anchor>a239ab5fd8c6eb2ffb4d2171a58345e29</Anchor>
                 <Subnodes>
                  <Node>
                   <Name>ROUND</Name>
                   <Path>classfires_1_1_property_caster.html</Path>
-                  <Anchor>aa178c1abc908d829fff46166e093e1dba7a9728355c6541e2ab9a3c189a616db6</Anchor>
+                  <Anchor>a239ab5fd8c6eb2ffb4d2171a58345e29a7a9728355c6541e2ab9a3c189a616db6</Anchor>
                  </Node>
                  <Node>
                   <Name>CEIL</Name>
                   <Path>classfires_1_1_property_caster.html</Path>
-                  <Anchor>aa178c1abc908d829fff46166e093e1dba5456e395d7ac0d96776fe1fd42591d4c</Anchor>
+                  <Anchor>a239ab5fd8c6eb2ffb4d2171a58345e29a5456e395d7ac0d96776fe1fd42591d4c</Anchor>
                  </Node>
                  <Node>
                   <Name>FLOOR</Name>
                   <Path>classfires_1_1_property_caster.html</Path>
-                  <Anchor>aa178c1abc908d829fff46166e093e1dbacce89e7aebc1b2445d633a475928942f</Anchor>
+                  <Anchor>a239ab5fd8c6eb2ffb4d2171a58345e29acce89e7aebc1b2445d633a475928942f</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
@@ -1026,7 +1026,7 @@
                <Node>
                 <Name>toInt</Name>
                 <Path>classfires_1_1_property_caster.html</Path>
-                <Anchor>a3a4072055af7255919fcadf05d3785c0</Anchor>
+                <Anchor>ad22b639e8f6f68251a946246f381e9d5</Anchor>
                </Node>
                <Node>
                 <Name>toString</Name>
@@ -1144,11 +1144,6 @@
                <Node>
                 <Name>registerProperty</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
-                <Anchor>a0718015ec73471ebe5392fb169cea206</Anchor>
-               </Node>
-               <Node>
-                <Name>registerProperty</Name>
-                <Path>classfires_1_1_property_manager.html</Path>
                 <Anchor>af6ab58bbed54f0e37ac17f9b261beb36</Anchor>
                </Node>
                <Node>
@@ -1159,12 +1154,27 @@
                <Node>
                 <Name>registerProperty</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a895dd6e5735a7f950ce8700e869b6e5d</Anchor>
+               </Node>
+               <Node>
+                <Name>registerProperty</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a4d7c9515677483c982d1cdac113d37cd</Anchor>
+               </Node>
+               <Node>
+                <Name>registerProperty</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
                 <Anchor>af1b4130d8e36b76ee10ee151cf42166e</Anchor>
                </Node>
                <Node>
                 <Name>registerProperty</Name>
                 <Path>classfires_1_1_property_manager.html</Path>
                 <Anchor>a39235ee7e9be9d610e5903eb70b4c3fa</Anchor>
+               </Node>
+               <Node>
+                <Name>registerProperty</Name>
+                <Path>classfires_1_1_property_manager.html</Path>
+                <Anchor>a7048675c0a8d9f785055eb63e6631937</Anchor>
                </Node>
                <Node>
                 <Name>setFilterRange</Name>
@@ -1524,7 +1534,7 @@
                <Node>
                 <Name>toInt</Name>
                 <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
-                <Anchor>a3ddd8c9988b2b4b4b36cd28c64e31e28</Anchor>
+                <Anchor>a6c6580a18489e0c0f8df5b8e56ff9e59</Anchor>
                </Node>
                <Node>
                 <Name>toString</Name>
@@ -1784,6 +1794,57 @@
               </Subnodes>
              </Node>
              <Node>
+              <Name>StringPropertyCaster</Name>
+              <Path>classfires_1_1_string_property_caster.html</Path>
+             </Node>
+             <Node>
+              <Name>StringPropertyCaster&lt; T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type &gt;</Name>
+              <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>~StringPropertyCaster</Name>
+                <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+                <Anchor>a5741af4cf0b7fea68acc8c0981aff890</Anchor>
+               </Node>
+               <Node>
+                <Name>fromString</Name>
+                <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+                <Anchor>aac7f133f59a35d8d6b5e2fc29c8d7f14</Anchor>
+               </Node>
+               <Node>
+                <Name>toInt</Name>
+                <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+                <Anchor>a472e4226fc39c55c02c549430580daca</Anchor>
+               </Node>
+               <Node>
+                <Name>toString</Name>
+                <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+                <Anchor>a723748579f32ea8883707ba6b437be06</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>StringPropertySorter</Name>
+              <Path>classfires_1_1_string_property_sorter.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>~StringPropertySorter</Name>
+                <Path>classfires_1_1_string_property_sorter.html</Path>
+                <Anchor>a23c5b8bc9eaa8b747cc09ce3432201ad</Anchor>
+               </Node>
+               <Node>
+                <Name>isEqual</Name>
+                <Path>classfires_1_1_string_property_sorter.html</Path>
+                <Anchor>ace89aea3a5e5bc223e2bc310e662a852</Anchor>
+               </Node>
+               <Node>
+                <Name>isLowerThan</Name>
+                <Path>classfires_1_1_string_property_sorter.html</Path>
+                <Anchor>ae2435e6223eb2ae4e499553d1ffd438b</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>Task</Name>
               <Path>classfires_1_1_task.html</Path>
               <Subnodes>
@@ -2039,6 +2100,14 @@
               <Name>fires::ScalarPropertyCaster&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</Name>
               <Path>classfires_1_1_scalar_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__are41878d5cd8f4020b7a1042839d45667.html</Path>
              </Node>
+             <Node>
+              <Name>fires::StringPropertyCaster&lt; T, Enable &gt;</Name>
+              <Path>classfires_1_1_string_property_caster.html</Path>
+             </Node>
+             <Node>
+              <Name>fires::StringPropertyCaster&lt; T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type &gt;</Name>
+              <Path>classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html</Path>
+             </Node>
             </Subnodes>
            </Node>
            <Node>
@@ -2060,6 +2129,10 @@
              <Node>
               <Name>fires::ScalarPropertySorter&lt; T &gt;</Name>
               <Path>classfires_1_1_scalar_property_sorter.html</Path>
+             </Node>
+             <Node>
+              <Name>fires::StringPropertySorter&lt; T &gt;</Name>
+              <Path>classfires_1_1_string_property_sorter.html</Path>
              </Node>
             </Subnodes>
            </Node>

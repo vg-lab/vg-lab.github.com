@@ -20,5 +20,8 @@ var searchData=
   ['setupdater',['setUpdater',['../classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41',1,'fires::DependenciesManager']]],
   ['sort',['Sort',['../classfires_1_1_sort.html',1,'fires']]],
   ['sortconfig',['SortConfig',['../classfires_1_1_sort_config.html',1,'fires']]],
-  ['stream',['stream',['../classfires_1_1_log.html#ae010c8f688b07db0bf40133d1835e8b3',1,'fires::Log']]]
+  ['stream',['stream',['../classfires_1_1_log.html#ae010c8f688b07db0bf40133d1835e8b3',1,'fires::Log']]],
+  ['stringpropertycaster',['StringPropertyCaster',['../classfires_1_1_string_property_caster.html',1,'fires']]],
+  ['stringpropertycaster_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20boost_3a_3aspirit_3a_3atraits_3a_3ais_5fstring_3c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['StringPropertyCaster&lt; T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type &gt;',['../classfires_1_1_string_property_caster_3_01_t_00_01typename_01std_1_1enable__if_3_01boost_1_1spir20267b266c6fce0203b95a9bac05bbf6.html',1,'fires']]],
+  ['stringpropertysorter',['StringPropertySorter',['../classfires_1_1_string_property_sorter.html',1,'fires']]]
 ];
