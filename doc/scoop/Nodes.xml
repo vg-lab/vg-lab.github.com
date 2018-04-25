@@ -276,6 +276,33 @@
                 </Subnodes>
                </Node>
                <Node>
+                <Name>MatplotlibPerceptualUniform</Name>
+                <Path>classscoop_1_1_color_palette.html</Path>
+                <Anchor>ac3bc92ee6914187cf7e70fd2d2e8aa01</Anchor>
+                <Subnodes>
+                 <Node>
+                  <Name>Viridis</Name>
+                  <Path>classscoop_1_1_color_palette.html</Path>
+                  <Anchor>ac3bc92ee6914187cf7e70fd2d2e8aa01a8fe43b0b5266cc1374bb52de13fb4b9b</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>Magma</Name>
+                  <Path>classscoop_1_1_color_palette.html</Path>
+                  <Anchor>ac3bc92ee6914187cf7e70fd2d2e8aa01a88734a894b4c0cef08945a0215e2983f</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>Inferno</Name>
+                  <Path>classscoop_1_1_color_palette.html</Path>
+                  <Anchor>ac3bc92ee6914187cf7e70fd2d2e8aa01a7aab9a7f1038da4b9fba5151aeb5c1da</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>Plasma</Name>
+                  <Path>classscoop_1_1_color_palette.html</Path>
+                  <Anchor>ac3bc92ee6914187cf7e70fd2d2e8aa01a85ef8a642b79b12e1b2139e0c4e4a84e</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
                 <Name>colorBrewerDiverging</Name>
                 <Path>classscoop_1_1_color_palette.html</Path>
                 <Anchor>a866b9d7b3650069223fc02b3622a6db3</Anchor>
@@ -299,6 +326,11 @@
                 <Name>colors</Name>
                 <Path>classscoop_1_1_color_palette.html</Path>
                 <Anchor>a7bdad7da2b33bb039045043f5bc7025b</Anchor>
+               </Node>
+               <Node>
+                <Name>matplotlibPerceptualUniform</Name>
+                <Path>classscoop_1_1_color_palette.html</Path>
+                <Anchor>acead4a752eb0f0d5bc14acb7910a593d</Anchor>
                </Node>
                <Node>
                 <Name>size</Name>

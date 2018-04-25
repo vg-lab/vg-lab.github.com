@@ -42,11 +42,18 @@ var classscoop_1_1_color_palette =
       [ "Purples", "classscoop_1_1_color_palette.html#a1c76073c85b48c515baed8fb216697aeaa512dbf718cdce505d7620d1ae724fb0", null ],
       [ "Reds", "classscoop_1_1_color_palette.html#a1c76073c85b48c515baed8fb216697aea9f11069364a2140aa0366e49214e1f71", null ]
     ] ],
+    [ "MatplotlibPerceptualUniform", "classscoop_1_1_color_palette.html#ac3bc92ee6914187cf7e70fd2d2e8aa01", [
+      [ "Viridis", "classscoop_1_1_color_palette.html#ac3bc92ee6914187cf7e70fd2d2e8aa01a8fe43b0b5266cc1374bb52de13fb4b9b", null ],
+      [ "Magma", "classscoop_1_1_color_palette.html#ac3bc92ee6914187cf7e70fd2d2e8aa01a88734a894b4c0cef08945a0215e2983f", null ],
+      [ "Inferno", "classscoop_1_1_color_palette.html#ac3bc92ee6914187cf7e70fd2d2e8aa01a7aab9a7f1038da4b9fba5151aeb5c1da", null ],
+      [ "Plasma", "classscoop_1_1_color_palette.html#ac3bc92ee6914187cf7e70fd2d2e8aa01a85ef8a642b79b12e1b2139e0c4e4a84e", null ]
+    ] ],
     [ "colorBrewerDiverging", "classscoop_1_1_color_palette.html#a866b9d7b3650069223fc02b3622a6db3", null ],
     [ "colorBrewerQualitative", "classscoop_1_1_color_palette.html#ad6d6ed27a7d555f16386faaa0a691d5e", null ],
     [ "colorBrewerSequential", "classscoop_1_1_color_palette.html#acba6dd90f7508e42b61b7a7fb8a7878f", null ],
     [ "colors", "classscoop_1_1_color_palette.html#a0b1dd324b9ec59798e6ed3dca1a3f060", null ],
     [ "colors", "classscoop_1_1_color_palette.html#a7bdad7da2b33bb039045043f5bc7025b", null ],
+    [ "matplotlibPerceptualUniform", "classscoop_1_1_color_palette.html#acead4a752eb0f0d5bc14acb7910a593d", null ],
     [ "size", "classscoop_1_1_color_palette.html#a990cccc76e1764838b2d3c5b0fee5a80", null ],
     [ "_colors", "classscoop_1_1_color_palette.html#af85bf700b5c82ab1c23bd06413a9358e", null ]
 ];
