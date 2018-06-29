@@ -3,7 +3,7 @@ var classfires_1_1_aggregate_config =
     [ "TAggregatorProperty", "structfires_1_1_aggregate_config_1_1_t_aggregator_property.html", "structfires_1_1_aggregate_config_1_1_t_aggregator_property" ],
     [ "AggregateConfig", "classfires_1_1_aggregate_config.html#a2ee5d63ab3d0d913dfc5934935afc486", null ],
     [ "~AggregateConfig", "classfires_1_1_aggregate_config.html#a7339b3bae394de517538e86b344d0c6f", null ],
-    [ "addProperty", "classfires_1_1_aggregate_config.html#aeced0726bd63238c13cbde3eb014314e", null ],
+    [ "addProperty", "classfires_1_1_aggregate_config.html#aacfcc498ca9ad5c4210043856954c22a", null ],
     [ "aggregatedObject", "classfires_1_1_aggregate_config.html#ab098fbb96fa9fc4e70a5be6831213337", null ],
     [ "clear", "classfires_1_1_aggregate_config.html#ab7cb7da88edf139f04a8050903a3a583", null ],
     [ "clearAggregatedObject", "classfires_1_1_aggregate_config.html#af29edc4d09b34b52a4a731bc40ba966a", null ],
