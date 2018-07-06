@@ -116,6 +116,8 @@ $(document).ready(function(){initNavTree('classfires_1_1_object.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#af9622369109b8f0dcfcad21057649502">_label</a></td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#ab2d2bf620c435c4f7ddf14f06581e470">_properties</a></td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#abdb4cae8f80274f2deb48dc7cd2d294a">clearProperties</a>(void)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#a17fcd4d54b0a0b2d3710e0b8e6d65a51">deserialize</a>(std::istream &amp;stream)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#ad235a866db5620c5512d4914a87c4175">deserialize</a>(const boost::property_tree::ptree &amp;root)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#a034219e22b4cc549cf208fe132aaaea1">getProperty</a>(const std::string &amp;label)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#a253f18d0038408aa3b36fb8647e9adc3">getProperty</a>(const std::string &amp;label) const </td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#aa050d3263b40669371b72053a9765bd9">hasProperty</a>(const std::string &amp;label) const </td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
@@ -128,15 +130,16 @@ $(document).ready(function(){initNavTree('classfires_1_1_object.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#a3b8e21292bc9e5a897d50749226f33b4">properties</a>(void)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#a9d4a4ed72b9321daae734df4e4a37f7c">properties</a>(void) const </td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#a4983d50d6fd3ce0ff5ae63dcaa99eac0">registerProperty</a>(const std::string &amp;label, const Property &amp;property)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#a7bd8e95ece78c2090f1cfce4a183ab95">setProperty</a>(const std::string &amp;label, const Property &amp;property)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#afc20c68a70083b6d76bba98e3550d16e">unregisterProperty</a>(const std::string &amp;label)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#aba909f306bb28cf9c6a53489e6693d23">~Object</a>()</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#a0b20519c564571aadfd698d6379a72b3">serialize</a>(std::ostream &amp;stream, bool minimizeStream=true, const std::string &amp;linePrefix=&quot;&quot;) const </td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#a7bd8e95ece78c2090f1cfce4a183ab95">setProperty</a>(const std::string &amp;label, const Property &amp;property)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfires_1_1_object.html#afc20c68a70083b6d76bba98e3550d16e">unregisterProperty</a>(const std::string &amp;label)</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfires_1_1_object.html#aba909f306bb28cf9c6a53489e6693d23">~Object</a>()</td><td class="entry"><a class="el" href="classfires_1_1_object.html">fires::Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 29 2018 11:20:54 for FiReS by
+    <li class="footer">Generated on Fri Jul 6 2018 16:38:27 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

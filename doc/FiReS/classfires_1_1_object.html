@@ -184,6 +184,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4709ceca236d88b4cae49e5167819c4b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_object.html#a4709ceca236d88b4cae49e5167819c4b">label</a> (void) const </td></tr>
 <tr class="memdesc:a4709ceca236d88b4cae49e5167819c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the label of the object as const.  <a href="#a4709ceca236d88b4cae49e5167819c4b">More...</a><br /></td></tr>
 <tr class="separator:a4709ceca236d88b4cae49e5167819c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b20519c564571aadfd698d6379a72b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_object.html#a0b20519c564571aadfd698d6379a72b3">serialize</a> (std::ostream &amp;stream, bool minimizeStream=true, const std::string &amp;linePrefix=&quot;&quot;) const </td></tr>
+<tr class="memdesc:a0b20519c564571aadfd698d6379a72b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this object properties.  <a href="#a0b20519c564571aadfd698d6379a72b3">More...</a><br /></td></tr>
+<tr class="separator:a0b20519c564571aadfd698d6379a72b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fcd4d54b0a0b2d3710e0b8e6d65a51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17fcd4d54b0a0b2d3710e0b8e6d65a51"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_object.html#a17fcd4d54b0a0b2d3710e0b8e6d65a51">deserialize</a> (std::istream &amp;stream)</td></tr>
+<tr class="memdesc:a17fcd4d54b0a0b2d3710e0b8e6d65a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and loads this object properties  stream containing JSON from which data will be loaded. <br /></td></tr>
+<tr class="separator:a17fcd4d54b0a0b2d3710e0b8e6d65a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad235a866db5620c5512d4914a87c4175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad235a866db5620c5512d4914a87c4175"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_object.html#ad235a866db5620c5512d4914a87c4175">deserialize</a> (const boost::property_tree::ptree &amp;root)</td></tr>
+<tr class="memdesc:ad235a866db5620c5512d4914a87c4175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and loads this object properties  boost JSON root object from which data will be loaded. <br /></td></tr>
+<tr class="separator:ad235a866db5620c5512d4914a87c4175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Operators</div></td></tr>
 <tr class="memitem:a361a383c9d0d7e1677aabfe0cbb79baf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a361a383c9d0d7e1677aabfe0cbb79baf"></a>
 <a class="el" href="classfires_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classfires_1_1_object.html">Object</a> &amp;other)</td></tr>
@@ -204,7 +215,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div class="textblock"><p>A class to represent objects that can be used in fires. </p>
 <p>This class provides access to object properties and properties </p>
 
-<p>Definition at line <a class="el" href="_object_8h_source.html#l00062">62</a> of file <a class="el" href="_object_8h_source.html">Object.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_8h_source.html#l00063">63</a> of file <a class="el" href="_object_8h_source.html">Object.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a034219e22b4cc549cf208fe132aaaea1"></a>
 <div class="memitem">
@@ -431,6 +442,47 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="a0b20519c564571aadfd698d6379a72b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fires::Object::serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>minimizeStream</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>linePrefix</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize this object properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>to write the object </td></tr>
+    <tr><td class="paramname">linePrefix</td><td>prefix at the start of every line </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7bd8e95ece78c2090f1cfce4a183ab95"></a>
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +553,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fires</b></li><li class="navelem"><a class="el" href="classfires_1_1_object.html">Object</a></li>
-    <li class="footer">Generated on Fri Jun 29 2018 11:20:54 for FiReS by
+    <li class="footer">Generated on Fri Jul 6 2018 16:38:27 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

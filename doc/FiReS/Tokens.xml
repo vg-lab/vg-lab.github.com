@@ -759,6 +759,42 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>serialize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>fires::Object</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_object.html</Path>
+    <Anchor>a0b20519c564571aadfd698d6379a72b3</Anchor>
+    <Abstract>Serialize this object properties. </Abstract>
+    <DeclaredIn>Object.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>deserialize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>fires::Object</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_object.html</Path>
+    <Anchor>a17fcd4d54b0a0b2d3710e0b8e6d65a51</Anchor>
+    <Abstract>Reads and loads this object properties  stream containing JSON from which data will be loaded...</Abstract>
+    <DeclaredIn>Object.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>deserialize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>fires::Object</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_object.html</Path>
+    <Anchor>ad235a866db5620c5512d4914a87c4175</Anchor>
+    <Abstract>Reads and loads this object properties  boost JSON root object from which data will be loaded...</Abstract>
+    <DeclaredIn>Object.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_properties</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>

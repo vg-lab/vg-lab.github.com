@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['serialize',['serialize',['../classfires_1_1_object.html#a0b20519c564571aadfd698d6379a72b3',1,'fires::Object']]],
   ['setdependentsdirty',['setDependentsDirty',['../classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e',1,'fires::DependenciesManager']]],
   ['setloglevel',['setLogLevel',['../classfires_1_1_log.html#a03dacd88c905b87baa3fec361696a9e3',1,'fires::Log']]],
   ['setproperty',['setProperty',['../classfires_1_1_object.html#a7bd8e95ece78c2090f1cfce4a183ab95',1,'fires::Object']]],

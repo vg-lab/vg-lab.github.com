@@ -1,0 +1,624 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - FiReS - fires/PropertyManager.h</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">fires</a> - PropertyManager.h<span style="font-size: 80%;"> (source / <a href="PropertyManager.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">FiReS</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">7</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2018-07-06 16:38:36</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*</a>
+<span class="lineNum">       2 </span>            :  * Copyright (c) 2014-2016 GMRV/URJC.
+<span class="lineNum">       3 </span>            :  *
+<span class="lineNum">       4 </span>            :  * Authors: Pablo Toharia &lt;pablo.toharia@urjc.es&gt;
+<span class="lineNum">       5 </span>            :  *
+<span class="lineNum">       6 </span>            :  * This file is part of FiReS &lt;https://github.com/gmrvvis/FiReS&gt;
+<span class="lineNum">       7 </span>            :  *
+<span class="lineNum">       8 </span>            :  * This library is free software; you can redistribute it and/or modify it under
+<span class="lineNum">       9 </span>            :  * the terms of the GNU Lesser General Public License version 3.0 as published
+<span class="lineNum">      10 </span>            :  * by the Free Software Foundation.
+<span class="lineNum">      11 </span>            :  *
+<span class="lineNum">      12 </span>            :  * This library is distributed in the hope that it will be useful, but WITHOUT
+<span class="lineNum">      13 </span>            :  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+<span class="lineNum">      14 </span>            :  * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+<span class="lineNum">      15 </span>            :  * details.
+<span class="lineNum">      16 </span>            :  *
+<span class="lineNum">      17 </span>            :  * You should have received a copy of the GNU Lesser General Public License
+<span class="lineNum">      18 </span>            :  * along with this library; if not, write to the Free Software Foundation, Inc.,
+<span class="lineNum">      19 </span>            :  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+<span class="lineNum">      20 </span>            :  *
+<span class="lineNum">      21 </span>            :  */
+<span class="lineNum">      22 </span>            : #ifndef __FIRES_PROPERTY_MANAGER__
+<span class="lineNum">      23 </span>            : #define __FIRES_PROPERTY_MANAGER__
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span>            : #include &lt;fires/api.h&gt;
+<span class="lineNum">      26 </span>            : #include &quot;PropertyGIDsManager.h&quot;
+<span class="lineNum">      27 </span>            : #include &quot;Tasks/Sort.h&quot;
+<span class="lineNum">      28 </span>            : #include &quot;Tasks/Filter.h&quot;
+<span class="lineNum">      29 </span>            : #include &quot;Property/PropertyCaster.h&quot;
+<span class="lineNum">      30 </span>            : #include &quot;Property/Aggregator.h&quot;
+<span class="lineNum">      31 </span>            : #include &lt;typeindex&gt;
+<span class="lineNum">      32 </span>            : #include &lt;map&gt;
+<span class="lineNum">      33 </span>            : #include &lt;type_traits&gt;
+<span class="lineNum">      34 </span>            : #include &lt;boost/spirit/home/support/string_traits.hpp&gt;
+<span class="lineNum">      35 </span>            : 
+<span class="lineNum">      36 </span>            : namespace fires
+<span class="lineNum">      37 </span>            : {
+<span class="lineNum">      38 </span>            : 
+<span class="lineNum">      39 </span>            :   class PropertyManager
+<span class="lineNum">      40 </span>            :   {
+<span class="lineNum">      41 </span>            : 
+<span class="lineNum">      42 </span>            :   public:
+<span class="lineNum">      43 </span>            : 
+<span class="lineNum">      44 </span>            :     typedef struct
+<span class="lineNum">      45 </span>            :     {
+<span class="lineNum">      46 </span>            :       PropertySorter* sorter;
+<span class="lineNum">      47 </span>            :       PropertyAggregator* aggregator;
+<span class="lineNum">      48 </span>            :       Filter* filter;
+<span class="lineNum">      49 </span>            :       PropertyCaster* caster;
+<span class="lineNum">      50 </span>            :     } TPropertyInfo;
+<span class="lineNum">      51 </span>            : 
+<span class="lineNum">      52 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">      53 </span>            :     static void registerProperty(
+<span class="lineNum">      54 </span>            :       fires::Object* obj,
+<span class="lineNum">      55 </span>            :       const std::string&amp; label,
+<span class="lineNum">      56 </span>            :       T value,
+<span class="lineNum">      57 </span>            :       typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">      58 </span>            :     {
+<span class="lineNum">      59 </span>            :       obj-&gt;registerProperty( label, Property( ( T ) value ));
+<span class="lineNum">      60 </span>            :       registerProperty( label, value );
+<span class="lineNum">      61 </span>            :     }
+<span class="lineNum">      62 </span>            : 
+<span class="lineNum">      63 </span>            :     //! Specialization for scalars
+<span class="lineNum">      64 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">      65 </span>            :     static void registerProperty(
+<span class="lineNum">      66 </span>            :       const std::string&amp; label,
+<span class="lineNum">      67 </span>            :       T /* value */,
+<span class="lineNum">      68 </span>            :       typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">      69 </span>            :     {
+<span class="lineNum">      70 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">      71 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">      72 </span>            :       {
+<span class="lineNum">      73 </span>            :         ScalarPropertySorter&lt; T &gt;* sorter = nullptr;
+<span class="lineNum">      74 </span>            :         ScalarPropertyAggregator&lt; T &gt;* aggregator = nullptr;
+<span class="lineNum">      75 </span>            :         ScalarPropertyCaster&lt; T &gt;* caster = nullptr;
+<span class="lineNum">      76 </span>            : 
+<span class="lineNum">      77 </span>            :         const auto typeIdx = std::type_index( typeid( T ));
+<span class="lineNum">      78 </span>            : 
+<span class="lineNum">      79 </span>            :         // Sorters
+<span class="lineNum">      80 </span>            :         const auto&amp; sorterIt = _sorters.find( typeIdx );
+<span class="lineNum">      81 </span>            :         if ( sorterIt == _sorters.end( ))
+<span class="lineNum">      82 </span>            :         {
+<span class="lineNum">      83 </span>            :           sorter = new ScalarPropertySorter&lt; T &gt;;
+<span class="lineNum">      84 </span>            :           _sorters.insert( std::make_pair( typeIdx, sorter ));
+<span class="lineNum">      85 </span>            :         }
+<span class="lineNum">      86 </span>            :         else
+<span class="lineNum">      87 </span>            :         {
+<span class="lineNum">      88 </span>            :           sorter =
+<span class="lineNum">      89 </span>            :             dynamic_cast&lt; ScalarPropertySorter&lt; T &gt;* &gt;(
+<span class="lineNum">      90 </span>            :               sorterIt-&gt;second );
+<span class="lineNum">      91 </span>            :         }
+<span class="lineNum">      92 </span>            : 
+<span class="lineNum">      93 </span>            :         // Aggregators
+<span class="lineNum">      94 </span>            :         const auto&amp; aggregatorIt = _aggregators.find( typeIdx );
+<span class="lineNum">      95 </span>            :         if ( aggregatorIt == _aggregators.end( ))
+<span class="lineNum">      96 </span>            :         {
+<span class="lineNum">      97 </span>            :           aggregator = new ScalarPropertyAggregator&lt; T &gt;;
+<span class="lineNum">      98 </span>            :           _aggregators.insert( std::make_pair( typeIdx, aggregator ));
+<span class="lineNum">      99 </span>            :         }
+<span class="lineNum">     100 </span>            :         else
+<span class="lineNum">     101 </span>            :         {
+<span class="lineNum">     102 </span>            :           aggregator =
+<span class="lineNum">     103 </span>            :             dynamic_cast&lt; ScalarPropertyAggregator&lt; T &gt;* &gt;(
+<span class="lineNum">     104 </span>            :               aggregatorIt-&gt;second );
+<span class="lineNum">     105 </span>            :         }
+<span class="lineNum">     106 </span>            : 
+<span class="lineNum">     107 </span>            :         // Casters
+<span class="lineNum">     108 </span>            :         const auto&amp; casterIt = _casters.find( typeIdx );
+<span class="lineNum">     109 </span>            :         if ( casterIt == _casters.end( ))
+<span class="lineNum">     110 </span>            :         {
+<span class="lineNum">     111 </span>            :           caster = new ScalarPropertyCaster&lt; T &gt;;
+<span class="lineNum">     112 </span>            :           _casters.insert( std::make_pair( typeIdx, caster ));
+<span class="lineNum">     113 </span>            :         }
+<span class="lineNum">     114 </span>            :         else
+<span class="lineNum">     115 </span>            :         {
+<span class="lineNum">     116 </span>            :           caster = dynamic_cast&lt; ScalarPropertyCaster&lt; T &gt;* &gt;(
+<span class="lineNum">     117 </span>            :             casterIt-&gt;second );
+<span class="lineNum">     118 </span>            :         }
+<span class="lineNum">     119 </span>            : 
+<span class="lineNum">     120 </span>            :         _properties[ propertyGID ] = {
+<span class="lineNum">     121 </span>            :           sorter,
+<span class="lineNum">     122 </span>            :           aggregator,
+<span class="lineNum">     123 </span>            :           new FilterScalarRange&lt; T &gt;(
+<span class="lineNum">     124 </span>            :             T( ), T( ),
+<span class="lineNum">     125 </span>            :             FilterRange::CLOSED_ENDPOINT,
+<span class="lineNum">     126 </span>            :             FilterRange::CLOSED_ENDPOINT ),
+<span class="lineNum">     127 </span>            :           caster,
+<span class="lineNum">     128 </span>            :         };
+<span class="lineNum">     129 </span>            : 
+<span class="lineNum">     130 </span>            :       }
+<span class="lineNum">     131 </span>            :     }
+<span class="lineNum">     132 </span>            : 
+<span class="lineNum">     133 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">     134 </span>            :     static void registerProperty(
+<span class="lineNum">     135 </span>            :         fires::Object* obj,
+<span class="lineNum">     136 </span>            :         const std::string&amp; label,
+<span class="lineNum">     137 </span>            :         T value,
+<span class="lineNum">     138 </span>            :         typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type* = 0)
+<span class="lineNum">     139 </span>            :     {
+<span class="lineNum">     140 </span>            :       obj-&gt;registerProperty( label, value );
+<span class="lineNum">     141 </span>            :       registerProperty( label, value );
+<span class="lineNum">     142 </span>            :     }
+<span class="lineNum">     143 </span>            : 
+<span class="lineNum">     144 </span>            :     //! Specialization for strings
+<span class="lineNum">     145 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">     146 </span>            :     static void registerProperty(
+<span class="lineNum">     147 </span>            :         const std::string&amp; label,
+<span class="lineNum">     148 </span>            :         T /* value */,
+<span class="lineNum">     149 </span>            :         typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">     150 </span>            :     {
+<span class="lineNum">     151 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">     152 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">     153 </span>            :       {
+<span class="lineNum">     154 </span>            :         StringPropertySorter&lt; T &gt;* sorter = nullptr;
+<span class="lineNum">     155 </span>            :         StringPropertyCaster&lt; T &gt;* caster = nullptr;
+<span class="lineNum">     156 </span>            : 
+<span class="lineNum">     157 </span>            :         const auto typeIdx = std::type_index( typeid( T ));
+<span class="lineNum">     158 </span>            : 
+<span class="lineNum">     159 </span>            :         // Sorters
+<span class="lineNum">     160 </span>            :         const auto&amp; sorterIt = _sorters.find( typeIdx );
+<span class="lineNum">     161 </span>            :         if ( sorterIt == _sorters.end( ))
+<span class="lineNum">     162 </span>            :         {
+<span class="lineNum">     163 </span>            :           sorter = new StringPropertySorter&lt; T &gt;;
+<span class="lineNum">     164 </span>            :           _sorters.insert( std::make_pair( typeIdx, sorter ));
+<span class="lineNum">     165 </span>            :         }
+<span class="lineNum">     166 </span>            :         else
+<span class="lineNum">     167 </span>            :         {
+<span class="lineNum">     168 </span>            :           sorter = dynamic_cast&lt; StringPropertySorter&lt; T &gt;* &gt;(
+<span class="lineNum">     169 </span>            :             sorterIt-&gt;second );
+<span class="lineNum">     170 </span>            :         }
+<span class="lineNum">     171 </span>            : 
+<span class="lineNum">     172 </span>            :         // Casters
+<span class="lineNum">     173 </span>            :         const auto&amp; casterIt = _casters.find( typeIdx );
+<span class="lineNum">     174 </span>            :         if ( casterIt == _casters.end( ))
+<span class="lineNum">     175 </span>            :         {
+<span class="lineNum">     176 </span>            :           caster = new StringPropertyCaster&lt; T &gt;;
+<span class="lineNum">     177 </span>            :           _casters.insert( std::make_pair( typeIdx, caster ));
+<span class="lineNum">     178 </span>            :         }
+<span class="lineNum">     179 </span>            :         else
+<span class="lineNum">     180 </span>            :         {
+<span class="lineNum">     181 </span>            :           caster = dynamic_cast&lt; StringPropertyCaster&lt; T &gt;* &gt;(
+<span class="lineNum">     182 </span>            :             casterIt-&gt;second );
+<span class="lineNum">     183 </span>            :         }
+<span class="lineNum">     184 </span>            : 
+<span class="lineNum">     185 </span>            :         _properties[ propertyGID ] = {
+<span class="lineNum">     186 </span>            :             sorter,
+<span class="lineNum">     187 </span>            :             nullptr,
+<span class="lineNum">     188 </span>            :             nullptr,
+<span class="lineNum">     189 </span>            :             caster,
+<span class="lineNum">     190 </span>            :         };
+<span class="lineNum">     191 </span>            : 
+<span class="lineNum">     192 </span>            :       }
+<span class="lineNum">     193 </span>            :     }
+<span class="lineNum">     194 </span>            : 
+<span class="lineNum">     195 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">     196 </span>            :     static void registerProperty(
+<span class="lineNum">     197 </span>            :       Object* obj,
+<span class="lineNum">     198 </span>            :       const std::string&amp; label,
+<span class="lineNum">     199 </span>            :       T value,
+<span class="lineNum">     200 </span>            :       const std::map&lt; T, std::string &gt;&amp; enumToString =
+<span class="lineNum">     201 </span>            :       std::map&lt; T, std::string &gt;( ),
+<span class="lineNum">     202 </span>            :       typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">     203 </span>            :     {
+<span class="lineNum">     204 </span>            :       obj-&gt;registerProperty( label, fires::Property( ( T ) value ));
+<span class="lineNum">     205 </span>            :       registerProperty( label, value, enumToString );
+<span class="lineNum">     206 </span>            :     }
+<span class="lineNum">     207 </span>            : 
+<span class="lineNum">     208 </span>            :     //! Specialization for scalars
+<span class="lineNum">     209 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">     210 </span>            :     static void registerProperty(
+<span class="lineNum">     211 </span>            :       const std::string&amp; label,
+<span class="lineNum">     212 </span>            :       T /* value */,
+<span class="lineNum">     213 </span>            :       const std::map&lt; T, std::string &gt;&amp; enumToString =
+<span class="lineNum">     214 </span>            :       std::map&lt; T, std::string &gt;( ),
+<span class="lineNum">     215 </span>            :       typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">     216 </span>            :     {
+<span class="lineNum">     217 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">     218 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">     219 </span>            :       {
+<span class="lineNum">     220 </span>            :         ScalarPropertySorter&lt; T &gt;* sorter = nullptr;
+<span class="lineNum">     221 </span>            :         ScalarPropertyAggregator&lt; T &gt;* aggregator = nullptr;
+<span class="lineNum">     222 </span>            :         EnumPropertyCaster&lt; T &gt;* caster = nullptr;
+<span class="lineNum">     223 </span>            : 
+<span class="lineNum">     224 </span>            :         const auto typeIdx = std::type_index( typeid( T ));
+<span class="lineNum">     225 </span>            : 
+<span class="lineNum">     226 </span>            :         // Sorters
+<span class="lineNum">     227 </span>            :         const auto&amp; sorterIt = _sorters.find( typeIdx );
+<span class="lineNum">     228 </span>            :         if ( sorterIt == _sorters.end( ))
+<span class="lineNum">     229 </span>            :         {
+<span class="lineNum">     230 </span>            :           sorter = new ScalarPropertySorter&lt; T &gt;;
+<span class="lineNum">     231 </span>            :           _sorters.insert( std::make_pair( typeIdx, sorter ));
+<span class="lineNum">     232 </span>            :         }
+<span class="lineNum">     233 </span>            :         else
+<span class="lineNum">     234 </span>            :         {
+<span class="lineNum">     235 </span>            :           sorter =
+<span class="lineNum">     236 </span>            :             dynamic_cast&lt; ScalarPropertySorter&lt; T &gt;* &gt;(
+<span class="lineNum">     237 </span>            :               sorterIt-&gt;second );
+<span class="lineNum">     238 </span>            :         }
+<span class="lineNum">     239 </span>            : 
+<span class="lineNum">     240 </span>            :         // Aggregators
+<span class="lineNum">     241 </span>            :         const auto&amp; aggregatorIt = _aggregators.find( typeIdx );
+<span class="lineNum">     242 </span>            :         if ( aggregatorIt == _aggregators.end( ))
+<span class="lineNum">     243 </span>            :         {
+<span class="lineNum">     244 </span>            :           aggregator = new ScalarPropertyAggregator&lt; T &gt;;
+<span class="lineNum">     245 </span>            :           _aggregators.insert( std::make_pair( typeIdx, aggregator ));
+<span class="lineNum">     246 </span>            :         }
+<span class="lineNum">     247 </span>            :         else
+<span class="lineNum">     248 </span>            :         {
+<span class="lineNum">     249 </span>            :           aggregator =
+<span class="lineNum">     250 </span>            :             dynamic_cast&lt; ScalarPropertyAggregator&lt; T &gt;* &gt;(
+<span class="lineNum">     251 </span>            :               aggregatorIt-&gt;second );
+<span class="lineNum">     252 </span>            :         }
+<span class="lineNum">     253 </span>            : 
+<span class="lineNum">     254 </span>            :         // Casters
+<span class="lineNum">     255 </span>            :         const auto casterIt = _casters.find( typeIdx );
+<span class="lineNum">     256 </span>            :         if ( casterIt == _casters.end( ))
+<span class="lineNum">     257 </span>            :         {
+<span class="lineNum">     258 </span>            :           caster = new EnumPropertyCaster&lt; T &gt;( enumToString );
+<span class="lineNum">     259 </span>            :           _casters.insert( std::make_pair( typeIdx, caster ));
+<span class="lineNum">     260 </span>            :         }
+<span class="lineNum">     261 </span>            :         else
+<span class="lineNum">     262 </span>            :         {
+<span class="lineNum">     263 </span>            :           caster =
+<span class="lineNum">     264 </span>            :             dynamic_cast&lt; EnumPropertyCaster&lt; T &gt;* &gt;( casterIt-&gt;second );
+<span class="lineNum">     265 </span>            :         }
+<span class="lineNum">     266 </span>            : 
+<span class="lineNum">     267 </span>            :         _properties[ propertyGID ] = {
+<span class="lineNum">     268 </span>            :           sorter,
+<span class="lineNum">     269 </span>            :           aggregator,
+<span class="lineNum">     270 </span>            :           new FilterScalarRange&lt; T &gt;(
+<span class="lineNum">     271 </span>            :             T( ), T( ),
+<span class="lineNum">     272 </span>            :             FilterRange::CLOSED_ENDPOINT,
+<span class="lineNum">     273 </span>            :             FilterRange::CLOSED_ENDPOINT ),
+<span class="lineNum">     274 </span>            :           caster,
+<span class="lineNum">     275 </span>            :         };
+<span class="lineNum">     276 </span>            : 
+<span class="lineNum">     277 </span>            :       }
+<span class="lineNum">     278 </span>            :     }
+<span class="lineNum">     279 </span>            : 
+<span class="lineNum">     280 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">     281 </span>            :     static
+<span class="lineNum">     282 </span>            :     void registerProperty(
+<span class="lineNum">     283 </span>            :         fires::Object* obj,
+<span class="lineNum">     284 </span>            :         const std::string&amp; label,
+<span class="lineNum">     285 </span>            :         T value,
+<span class="lineNum">     286 </span>            :         typename std::enable_if&lt; std::is_class&lt; T &gt;::value &amp;&amp; ! boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">     287 </span>            :     {
+<span class="lineNum">     288 </span>            :       obj-&gt;registerProperty( label, value );
+<span class="lineNum">     289 </span>            :       registerProperty( label, value );
+<span class="lineNum">     290 </span>            :     }
+<span class="lineNum">     291 </span>            : 
+<span class="lineNum">     292 </span>            :     template &lt; typename T &gt;
+<span class="lineNum">     293 </span>            :     static void registerProperty(
+<span class="lineNum">     294 </span>            :       const std::string&amp; label,
+<span class="lineNum">     295 </span>            :       T /* value */,
+<span class="lineNum">     296 </span>            :       typename std::enable_if&lt; std::is_class&lt; T &gt;::value &amp;&amp;
+<span class="lineNum">     297 </span>            :         ! boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type* = 0 )
+<span class="lineNum">     298 </span>            :     {
+<span class="lineNum">     299 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">     300 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">     301 </span>            :       {
+<span class="lineNum">     302 </span>            :         PropertySorter* sorter = nullptr;
+<span class="lineNum">     303 </span>            :         PropertyAggregator* aggregator = nullptr;
+<span class="lineNum">     304 </span>            :         PropertyCaster* caster = nullptr;
+<span class="lineNum">     305 </span>            : 
+<span class="lineNum">     306 </span>            :         const auto typeIdx = std::type_index( typeid( T ));
+<span class="lineNum">     307 </span>            : 
+<span class="lineNum">     308 </span>            :         // Sorters
+<span class="lineNum">     309 </span>            :         const auto&amp; sorterIt = _sorters.find( typeIdx );
+<span class="lineNum">     310 </span>            :         if ( sorterIt != _sorters.end( ))
+<span class="lineNum">     311 </span>            :         {
+<span class="lineNum">     312 </span>            :           sorter = sorterIt-&gt;second ;
+<span class="lineNum">     313 </span>            :         }
+<span class="lineNum">     314 </span>            : 
+<span class="lineNum">     315 </span>            :         // Aggregators
+<span class="lineNum">     316 </span>            :         const auto&amp; aggregatorIt = _aggregators.find( typeIdx );
+<span class="lineNum">     317 </span>            :         if ( aggregatorIt != _aggregators.end( ))
+<span class="lineNum">     318 </span>            :         {
+<span class="lineNum">     319 </span>            :           aggregator = aggregatorIt-&gt;second;
+<span class="lineNum">     320 </span>            :         }
+<span class="lineNum">     321 </span>            : 
+<span class="lineNum">     322 </span>            :         // Casters
+<span class="lineNum">     323 </span>            :         const auto casterIt = _casters.find( typeIdx );
+<span class="lineNum">     324 </span>            :         if ( casterIt != _casters.end( ))
+<span class="lineNum">     325 </span>            :         {
+<span class="lineNum">     326 </span>            :           caster = casterIt-&gt;second;
+<span class="lineNum">     327 </span>            :         }
+<span class="lineNum">     328 </span>            : 
+<span class="lineNum">     329 </span>            :         _properties[ propertyGID ] = {
+<span class="lineNum">     330 </span>            :           sorter,
+<span class="lineNum">     331 </span>            :           aggregator,
+<span class="lineNum">     332 </span>            :           nullptr,
+<span class="lineNum">     333 </span>            :           caster,
+<span class="lineNum">     334 </span>            :         };
+<span class="lineNum">     335 </span>            : 
+<span class="lineNum">     336 </span>            :       }
+<span class="lineNum">     337 </span>            :     }
+<span class="lineNum">     338 </span>            : 
+<span class="lineNum">     339 </span>            :     static void addType(const std::type_index typeIdx,
+<span class="lineNum">     340 </span>            :        PropertyCaster* caster, PropertyAggregator* aggregator,
+<span class="lineNum">     341 </span>            :        PropertySorter* sorter )
+<span class="lineNum">     342 </span>            :     {
+<span class="lineNum">     343 </span>            :       // Sorters
+<span class="lineNum">     344 </span>            :       const auto&amp; sorterIt = _sorters.find( typeIdx );
+<span class="lineNum">     345 </span>            :       if ( sorterIt == _sorters.end( ))
+<span class="lineNum">     346 </span>            :       {
+<span class="lineNum">     347 </span>            :         _sorters.insert( std::make_pair( typeIdx,sorter ));
+<span class="lineNum">     348 </span>            :       }
+<span class="lineNum">     349 </span>            :       else
+<span class="lineNum">     350 </span>            :       {
+<span class="lineNum">     351 </span>            :         sorterIt-&gt;second = sorter;
+<span class="lineNum">     352 </span>            :       }
+<span class="lineNum">     353 </span>            : 
+<span class="lineNum">     354 </span>            :       // Aggregators
+<span class="lineNum">     355 </span>            :       const auto&amp; aggregatorIt = _aggregators.find( typeIdx );
+<span class="lineNum">     356 </span>            :       if ( aggregatorIt == _aggregators.end( ))
+<span class="lineNum">     357 </span>            :       {
+<span class="lineNum">     358 </span>            :         _aggregators.insert( std::make_pair( typeIdx,aggregator ));
+<span class="lineNum">     359 </span>            :       }
+<span class="lineNum">     360 </span>            :       else
+<span class="lineNum">     361 </span>            :       {
+<span class="lineNum">     362 </span>            :         aggregatorIt-&gt;second = aggregator;
+<span class="lineNum">     363 </span>            :       }
+<span class="lineNum">     364 </span>            : 
+<span class="lineNum">     365 </span>            :       // Casters
+<span class="lineNum">     366 </span>            :       const auto casterIt = _casters.find( typeIdx );
+<span class="lineNum">     367 </span>            :       if ( casterIt == _casters.end( ))
+<span class="lineNum">     368 </span>            :       {
+<span class="lineNum">     369 </span>            :         _casters.insert( std::make_pair( typeIdx,caster ));
+<span class="lineNum">     370 </span>            :       }
+<span class="lineNum">     371 </span>            :       else
+<span class="lineNum">     372 </span>            :       {
+<span class="lineNum">     373 </span>            :         casterIt-&gt;second = caster;
+<span class="lineNum">     374 </span>            :       }
+<span class="lineNum">     375 </span>            : 
+<span class="lineNum">     376 </span>            :     }
+<span class="lineNum">     377 </span>            : 
+<span class="lineNum">     378 </span>            :     static PropertySorter* getSorter( PropertyGID propertyGID )
+<span class="lineNum">     379 </span>            :     {
+<span class="lineNum">     380 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">     381 </span>            :         return nullptr;
+<span class="lineNum">     382 </span>            : 
+<span class="lineNum">     383 </span>            :       return _properties[ propertyGID ].sorter;
+<span class="lineNum">     384 </span>            :     }
+<span class="lineNum">     385 </span>            : 
+<span class="lineNum">     386 </span>            :     static PropertySorter* getSorter( const std::string&amp; label )
+<span class="lineNum">     387 </span>            :     {
+<span class="lineNum">     388 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">     389 </span>            :       return getSorter( propertyGID );
+<span class="lineNum">     390 </span>            :     }
+<span class="lineNum">     391 </span>            : 
+<span class="lineNum">     392 </span>            :     static Filter* getFilter( PropertyGID propertyGID )
+<span class="lineNum">     393 </span>            :     {
+<span class="lineNum">     394 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">     395 </span>            :         return nullptr;
+<span class="lineNum">     396 </span>            : 
+<span class="lineNum">     397 </span>            :       return _properties[ propertyGID ].filter;
+<span class="lineNum">     398 </span>            :     }
+<span class="lineNum">     399 </span>            : 
+<span class="lineNum">     400 </span>            :     static Filter* getFilter( const std::string&amp; label )
+<span class="lineNum">     401 </span>            :     {
+<span class="lineNum">     402 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">     403 </span>            :       return getFilter( propertyGID );
+<span class="lineNum">     404 </span>            :     }
+<span class="lineNum">     405 </span>            : 
+<span class="lineNum">     406 </span>            :     static PropertyAggregator* getAggregator( PropertyGID propertyGID )
+<span class="lineNum">     407 </span>            :     {
+<span class="lineNum">     408 </span>            :       if ( _properties.find( propertyGID ) == _properties.end( ))
+<span class="lineNum">     409 </span>            :         return nullptr;
+<span class="lineNum">     410 </span>            : 
+<span class="lineNum">     411 </span>            :       return _properties[ propertyGID ].aggregator;
+<span class="lineNum">     412 </span>            :     }
+<span class="lineNum">     413 </span>            : 
+<span class="lineNum">     414 </span>            :     static PropertyAggregator* getAggregator( const std::string&amp; label )
+<span class="lineNum">     415 </span>            :     {
+<span class="lineNum">     416 </span>            :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );
+<span class="lineNum">     417 </span>            :       return getAggregator( propertyGID );
+<a name="418"><span class="lineNum">     418 </span>            :     }</a>
+<span class="lineNum">     419 </span>            : 
+<span class="lineNum">     420 </span><span class="lineNoCov">          0 :     static PropertyCaster* getPropertyCaster( PropertyGID propertyGID )</span>
+<span class="lineNum">     421 </span>            :     {
+<span class="lineNum">     422 </span><span class="lineNoCov">          0 :       if ( _properties.find( propertyGID ) == _properties.end( ))</span>
+<span class="lineNum">     423 </span>            :       {
+<span class="lineNum">     424 </span><span class="lineNoCov">          0 :         return nullptr;</span>
+<span class="lineNum">     425 </span>            :       }
+<span class="lineNum">     426 </span>            : 
+<span class="lineNum">     427 </span><span class="lineNoCov">          0 :       return _properties[ propertyGID ].caster;</span>
+<a name="428"><span class="lineNum">     428 </span>            :     }</a>
+<span class="lineNum">     429 </span>            : 
+<span class="lineNum">     430 </span><span class="lineNoCov">          0 :     static PropertyCaster* getPropertyCaster( const std::string&amp; label )</span>
+<span class="lineNum">     431 </span>            :     {
+<span class="lineNum">     432 </span><span class="lineNoCov">          0 :       auto propertyGID = PropertyGIDsManager::getPropertyGID( label );</span>
+<span class="lineNum">     433 </span><span class="lineNoCov">          0 :       return getPropertyCaster( propertyGID );</span>
+<span class="lineNum">     434 </span>            :     }
+<span class="lineNum">     435 </span>            : 
+<span class="lineNum">     436 </span>            :     static void setTypePropertyCaster( std::type_index typeIndex,
+<span class="lineNum">     437 </span>            :       PropertyCaster* caster )
+<span class="lineNum">     438 </span>            :     {
+<span class="lineNum">     439 </span>            :       auto iteratorCaster = _casters.find( typeIndex );
+<span class="lineNum">     440 </span>            :       if ( iteratorCaster == _casters.end( )){
+<span class="lineNum">     441 </span>            :         _casters.insert( std::make_pair( typeIndex, caster ));
+<span class="lineNum">     442 </span>            :       }
+<span class="lineNum">     443 </span>            :       else{
+<span class="lineNum">     444 </span>            :         iteratorCaster-&gt;second = caster;
+<span class="lineNum">     445 </span>            :       }
+<span class="lineNum">     446 </span>            :     }
+<span class="lineNum">     447 </span>            : 
+<span class="lineNum">     448 </span>            :     static void setTypeAgregator( std::type_index typeIndex,
+<span class="lineNum">     449 </span>            :        PropertyAggregator* agregator )
+<span class="lineNum">     450 </span>            :     {
+<span class="lineNum">     451 </span>            :       auto iteratorAgregator = _aggregators.find( typeIndex );
+<span class="lineNum">     452 </span>            :       if ( iteratorAgregator == _aggregators.end( ))
+<span class="lineNum">     453 </span>            :       {
+<span class="lineNum">     454 </span>            :         _aggregators.insert( std::make_pair( typeIndex, agregator ));
+<span class="lineNum">     455 </span>            :       }
+<span class="lineNum">     456 </span>            :       else
+<span class="lineNum">     457 </span>            :       {
+<span class="lineNum">     458 </span>            :         iteratorAgregator-&gt;second = agregator;
+<span class="lineNum">     459 </span>            :       }
+<span class="lineNum">     460 </span>            :     }
+<span class="lineNum">     461 </span>            : 
+<span class="lineNum">     462 </span>            :     static void setTypeSorter( std::type_index typeIndex,
+<span class="lineNum">     463 </span>            :       PropertySorter* sorter )
+<span class="lineNum">     464 </span>            :     {
+<span class="lineNum">     465 </span>            :       auto iteratorSorter = _sorters.find( typeIndex );
+<span class="lineNum">     466 </span>            :       if ( iteratorSorter == _sorters.end( ))
+<span class="lineNum">     467 </span>            :       {
+<span class="lineNum">     468 </span>            :         _sorters.insert( std::make_pair( typeIndex, sorter ));
+<span class="lineNum">     469 </span>            :       }
+<span class="lineNum">     470 </span>            :       else
+<span class="lineNum">     471 </span>            :       {
+<span class="lineNum">     472 </span>            :         iteratorSorter-&gt;second = sorter;
+<span class="lineNum">     473 </span>            :       }
+<span class="lineNum">     474 </span>            :     }
+<span class="lineNum">     475 </span>            : 
+<span class="lineNum">     476 </span>            : 
+<span class="lineNum">     477 </span>            :     static void setFilterRange( Filter* filter,
+<span class="lineNum">     478 </span>            :       int minValue, int maxValue )
+<span class="lineNum">     479 </span>            :     {
+<span class="lineNum">     480 </span>            :       if ( dynamic_cast&lt; FilterScalarRange&lt; float &gt;* &gt;( filter ))
+<span class="lineNum">     481 </span>            :       {
+<span class="lineNum">     482 </span>            :         auto fsrf =
+<span class="lineNum">     483 </span>            :           dynamic_cast&lt; FilterScalarRange&lt; float &gt;* &gt;( filter );
+<span class="lineNum">     484 </span>            :         fsrf-&gt;min( ) = ( float ) minValue;
+<span class="lineNum">     485 </span>            :         fsrf-&gt;max( ) = ( float ) maxValue;
+<span class="lineNum">     486 </span>            :       }
+<span class="lineNum">     487 </span>            :       else if ( dynamic_cast&lt; FilterScalarRange&lt; int &gt;* &gt;( filter ))
+<span class="lineNum">     488 </span>            :       {
+<span class="lineNum">     489 </span>            :         auto fsri =
+<span class="lineNum">     490 </span>            :           dynamic_cast&lt; FilterScalarRange&lt; int &gt;* &gt;( filter );
+<span class="lineNum">     491 </span>            :         fsri-&gt;min( ) = ( int ) minValue;
+<span class="lineNum">     492 </span>            :         fsri-&gt;max( ) = ( int ) maxValue;
+<span class="lineNum">     493 </span>            :       }
+<span class="lineNum">     494 </span>            :       else if ( dynamic_cast&lt; FilterScalarRange&lt; unsigned int &gt;* &gt;(
+<span class="lineNum">     495 </span>            :                   filter ))
+<span class="lineNum">     496 </span>            :       {
+<span class="lineNum">     497 </span>            :         auto fsrui =
+<span class="lineNum">     498 </span>            :           dynamic_cast&lt; FilterScalarRange&lt; unsigned int &gt;* &gt;( filter );
+<span class="lineNum">     499 </span>            :         fsrui-&gt;min( ) = ( unsigned int ) minValue;
+<span class="lineNum">     500 </span>            :         fsrui-&gt;max( ) = ( unsigned int ) maxValue;
+<span class="lineNum">     501 </span>            :       }
+<span class="lineNum">     502 </span>            :     }
+<span class="lineNum">     503 </span>            : 
+<span class="lineNum">     504 </span>            :     static void clear( void )
+<span class="lineNum">     505 </span>            :     {
+<span class="lineNum">     506 </span>            :       for ( auto f :  _properties )
+<span class="lineNum">     507 </span>            :       {
+<span class="lineNum">     508 </span>            :         if ( f.second.filter )
+<span class="lineNum">     509 </span>            :           delete f.second.filter;
+<span class="lineNum">     510 </span>            :       }
+<span class="lineNum">     511 </span>            : 
+<span class="lineNum">     512 </span>            :       for ( auto f :  _sorters )
+<span class="lineNum">     513 </span>            :       {
+<span class="lineNum">     514 </span>            :         if ( f.second )
+<span class="lineNum">     515 </span>            :           delete f.second;
+<span class="lineNum">     516 </span>            :       }
+<span class="lineNum">     517 </span>            : 
+<span class="lineNum">     518 </span>            :       for ( auto f :  _aggregators )
+<span class="lineNum">     519 </span>            :       {
+<span class="lineNum">     520 </span>            :         if ( f.second )
+<span class="lineNum">     521 </span>            :           delete f.second;
+<span class="lineNum">     522 </span>            :       }
+<span class="lineNum">     523 </span>            : 
+<span class="lineNum">     524 </span>            :       for ( auto f :  _casters )
+<span class="lineNum">     525 </span>            :       {
+<span class="lineNum">     526 </span>            :         if ( f.second )
+<span class="lineNum">     527 </span>            :           delete f.second;
+<span class="lineNum">     528 </span>            :       }
+<span class="lineNum">     529 </span>            : 
+<span class="lineNum">     530 </span>            :       _properties.clear( );
+<span class="lineNum">     531 </span>            :       _sorters.clear( );
+<span class="lineNum">     532 </span>            :       _aggregators.clear( );
+<span class="lineNum">     533 </span>            :       _casters.clear( );
+<span class="lineNum">     534 </span>            :     }
+<span class="lineNum">     535 </span>            : 
+<span class="lineNum">     536 </span>            :   protected:
+<span class="lineNum">     537 </span>            : 
+<span class="lineNum">     538 </span>            :     FIRES_API static std::map&lt; PropertyGID, TPropertyInfo &gt; _properties;
+<span class="lineNum">     539 </span>            :     FIRES_API static std::map&lt; std::type_index, PropertySorter* &gt; _sorters;
+<span class="lineNum">     540 </span>            :     FIRES_API
+<span class="lineNum">     541 </span>            :     static std::map&lt; std::type_index, PropertyAggregator* &gt; _aggregators;
+<span class="lineNum">     542 </span>            :     FIRES_API static std::map&lt; std::type_index, PropertyCaster* &gt; _casters;
+<span class="lineNum">     543 </span>            : 
+<span class="lineNum">     544 </span>            :   };
+<span class="lineNum">     545 </span>            : 
+<span class="lineNum">     546 </span>            : }
+<span class="lineNum">     547 </span>            : 
+<span class="lineNum">     548 </span>            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

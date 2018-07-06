@@ -155,10 +155,10 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4d7c9515677483c982d1cdac113d37cd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfires_1_1_property_manager.html#a4d7c9515677483c982d1cdac113d37cd">registerProperty</a> (const std::string &amp;label, T, typename std::enable_if&lt; boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
 <tr class="memdesc:a4d7c9515677483c982d1cdac113d37cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for strings. <br /></td></tr>
 <tr class="separator:a4d7c9515677483c982d1cdac113d37cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1b4130d8e36b76ee10ee151cf42166e"><td class="memTemplParams" colspan="2"><a class="anchor" id="af1b4130d8e36b76ee10ee151cf42166e"></a>
+<tr class="memitem:aa55cb35a5f56c6d7d814955aaf008d94"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa55cb35a5f56c6d7d814955aaf008d94"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af1b4130d8e36b76ee10ee151cf42166e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, const std::map&lt; T, std::string &gt; &amp;enumToString=std::map&lt; T, std::string &gt;(), typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type *=0)</td></tr>
-<tr class="separator:af1b4130d8e36b76ee10ee151cf42166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55cb35a5f56c6d7d814955aaf008d94"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">Object</a> *obj, const std::string &amp;label, T value, const std::map&lt; T, std::string &gt; &amp;enumToString=std::map&lt; T, std::string &gt;(), typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type *=0)</td></tr>
+<tr class="separator:aa55cb35a5f56c6d7d814955aaf008d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39235ee7e9be9d610e5903eb70b4c3fa"><td class="memTemplParams" colspan="2"><a class="anchor" id="a39235ee7e9be9d610e5903eb70b4c3fa"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a39235ee7e9be9d610e5903eb70b4c3fa"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfires_1_1_property_manager.html#a39235ee7e9be9d610e5903eb70b4c3fa">registerProperty</a> (const std::string &amp;label, T, const std::map&lt; T, std::string &gt; &amp;enumToString=std::map&lt; T, std::string &gt;(), typename std::enable_if&lt; std::is_enum&lt; T &gt;::value &gt;::type *=0)</td></tr>
@@ -168,33 +168,49 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7048675c0a8d9f785055eb63e6631937"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (<a class="el" href="classfires_1_1_object.html">fires::Object</a> *obj, const std::string &amp;label, T value, typename std::enable_if&lt; std::is_class&lt; T &gt;::value &amp;&amp;!boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
 <tr class="separator:a7048675c0a8d9f785055eb63e6631937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662a57a91669c605f25b9d821616b1c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a662a57a91669c605f25b9d821616b1c0"></a>
-static <a class="el" href="classfires_1_1_property_sorter.html">fires::PropertySorter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSorter</b> (PropertyGID propertyGID)</td></tr>
-<tr class="separator:a662a57a91669c605f25b9d821616b1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75aa16cc1b61767abae942762dbe892c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75aa16cc1b61767abae942762dbe892c"></a>
-static <a class="el" href="classfires_1_1_property_sorter.html">fires::PropertySorter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSorter</b> (const std::string &amp;label)</td></tr>
-<tr class="separator:a75aa16cc1b61767abae942762dbe892c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91d7f67b1ee38364db246df6e0705e12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91d7f67b1ee38364db246df6e0705e12"></a>
-static <a class="el" href="classfires_1_1_filter.html">fires::Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFilter</b> (PropertyGID propertyGID)</td></tr>
-<tr class="separator:a91d7f67b1ee38364db246df6e0705e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e1f95544bbb8b672c904b1579d3faf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0e1f95544bbb8b672c904b1579d3faf"></a>
-static <a class="el" href="classfires_1_1_filter.html">fires::Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFilter</b> (const std::string &amp;label)</td></tr>
-<tr class="separator:ad0e1f95544bbb8b672c904b1579d3faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e916db79f0b8fe60c66132e750316cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e916db79f0b8fe60c66132e750316cc"></a>
-static <a class="el" href="classfires_1_1_property_aggregator.html">fires::PropertyAggregator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getAggregator</b> (PropertyGID propertyGID)</td></tr>
-<tr class="separator:a9e916db79f0b8fe60c66132e750316cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a687a657852ee30802e985cc9b42590dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a687a657852ee30802e985cc9b42590dc"></a>
-static <a class="el" href="classfires_1_1_property_aggregator.html">fires::PropertyAggregator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getAggregator</b> (const std::string &amp;label)</td></tr>
-<tr class="separator:a687a657852ee30802e985cc9b42590dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa28240aff8a27c5e987ba5c63fc5bd17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa28240aff8a27c5e987ba5c63fc5bd17"></a>
-static <a class="el" href="classfires_1_1_property_caster.html">fires::PropertyCaster</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyCaster</b> (PropertyGID propertyGID)</td></tr>
-<tr class="separator:aa28240aff8a27c5e987ba5c63fc5bd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b766ec84b0db970ab883dc730e2b35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5b766ec84b0db970ab883dc730e2b35"></a>
-static <a class="el" href="classfires_1_1_property_caster.html">fires::PropertyCaster</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyCaster</b> (const std::string &amp;label)</td></tr>
-<tr class="separator:af5b766ec84b0db970ab883dc730e2b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38580cbfb758a9e7ed0e9581f3014ed9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38580cbfb758a9e7ed0e9581f3014ed9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFilterRange</b> (<a class="el" href="classfires_1_1_filter.html">fires::Filter</a> *filter, int minValue, int maxValue)</td></tr>
-<tr class="separator:a38580cbfb758a9e7ed0e9581f3014ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4db4f8f4098220ef16cb84a6469e274"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa4db4f8f4098220ef16cb84a6469e274"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa4db4f8f4098220ef16cb84a6469e274"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerProperty</b> (const std::string &amp;label, T, typename std::enable_if&lt; std::is_class&lt; T &gt;::value &amp;&amp;!boost::spirit::traits::is_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
+<tr class="separator:aa4db4f8f4098220ef16cb84a6469e274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5572630b91922cc3385c21266f476efb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5572630b91922cc3385c21266f476efb"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>addType</b> (const std::type_index typeIdx, <a class="el" href="classfires_1_1_property_caster.html">PropertyCaster</a> *caster, <a class="el" href="classfires_1_1_property_aggregator.html">PropertyAggregator</a> *aggregator, <a class="el" href="classfires_1_1_property_sorter.html">PropertySorter</a> *sorter)</td></tr>
+<tr class="separator:a5572630b91922cc3385c21266f476efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ad940699087d70b44b16ae30b6675f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96ad940699087d70b44b16ae30b6675f"></a>
+static <a class="el" href="classfires_1_1_property_sorter.html">PropertySorter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSorter</b> (PropertyGID propertyGID)</td></tr>
+<tr class="separator:a96ad940699087d70b44b16ae30b6675f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfbd1757393062d2130ccc40ab8a4a3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfbd1757393062d2130ccc40ab8a4a3c"></a>
+static <a class="el" href="classfires_1_1_property_sorter.html">PropertySorter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSorter</b> (const std::string &amp;label)</td></tr>
+<tr class="separator:abfbd1757393062d2130ccc40ab8a4a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c962e1b51f522634f9fed0e41f17b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1c962e1b51f522634f9fed0e41f17b1"></a>
+static <a class="el" href="classfires_1_1_filter.html">Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFilter</b> (PropertyGID propertyGID)</td></tr>
+<tr class="separator:ad1c962e1b51f522634f9fed0e41f17b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21a992fe5361c025ec34a83acc9fb35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad21a992fe5361c025ec34a83acc9fb35"></a>
+static <a class="el" href="classfires_1_1_filter.html">Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFilter</b> (const std::string &amp;label)</td></tr>
+<tr class="separator:ad21a992fe5361c025ec34a83acc9fb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1724572ea44375fedc20daecdd401ea5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1724572ea44375fedc20daecdd401ea5"></a>
+static <a class="el" href="classfires_1_1_property_aggregator.html">PropertyAggregator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getAggregator</b> (PropertyGID propertyGID)</td></tr>
+<tr class="separator:a1724572ea44375fedc20daecdd401ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa136616c356e38e8b50d6702da13d17d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa136616c356e38e8b50d6702da13d17d"></a>
+static <a class="el" href="classfires_1_1_property_aggregator.html">PropertyAggregator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getAggregator</b> (const std::string &amp;label)</td></tr>
+<tr class="separator:aa136616c356e38e8b50d6702da13d17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a993e17027d5e7b8ffa8fc6e874f87a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a993e17027d5e7b8ffa8fc6e874f87a"></a>
+static <a class="el" href="classfires_1_1_property_caster.html">PropertyCaster</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyCaster</b> (PropertyGID propertyGID)</td></tr>
+<tr class="separator:a9a993e17027d5e7b8ffa8fc6e874f87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1933296c7f2460abc7feee2dccca8152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1933296c7f2460abc7feee2dccca8152"></a>
+static <a class="el" href="classfires_1_1_property_caster.html">PropertyCaster</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyCaster</b> (const std::string &amp;label)</td></tr>
+<tr class="separator:a1933296c7f2460abc7feee2dccca8152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98425d97b333d2df4ccf709bb914760"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad98425d97b333d2df4ccf709bb914760"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTypePropertyCaster</b> (std::type_index typeIndex, <a class="el" href="classfires_1_1_property_caster.html">PropertyCaster</a> *caster)</td></tr>
+<tr class="separator:ad98425d97b333d2df4ccf709bb914760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4beed06cde3ac50d8b304b79e0ff60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb4beed06cde3ac50d8b304b79e0ff60"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTypeAgregator</b> (std::type_index typeIndex, <a class="el" href="classfires_1_1_property_aggregator.html">PropertyAggregator</a> *agregator)</td></tr>
+<tr class="separator:adb4beed06cde3ac50d8b304b79e0ff60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b74c33457628d564142027aee2faabe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b74c33457628d564142027aee2faabe"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTypeSorter</b> (std::type_index typeIndex, <a class="el" href="classfires_1_1_property_sorter.html">PropertySorter</a> *sorter)</td></tr>
+<tr class="separator:a0b74c33457628d564142027aee2faabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1504f530d10211f2c44ea01579286aab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1504f530d10211f2c44ea01579286aab"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFilterRange</b> (<a class="el" href="classfires_1_1_filter.html">Filter</a> *filter, int minValue, int maxValue)</td></tr>
+<tr class="separator:a1504f530d10211f2c44ea01579286aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbef095c75c18b528f2cb43bfb103668"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbef095c75c18b528f2cb43bfb103668"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (void)</td></tr>
 <tr class="separator:abbef095c75c18b528f2cb43bfb103668"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,7 +242,7 @@ static std::map&lt; std::type_index, <a class="el" href="classfires_1_1_property
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fires</b></li><li class="navelem"><a class="el" href="classfires_1_1_property_manager.html">PropertyManager</a></li>
-    <li class="footer">Generated on Fri Jun 29 2018 11:20:54 for FiReS by
+    <li class="footer">Generated on Fri Jul 6 2018 16:38:27 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
