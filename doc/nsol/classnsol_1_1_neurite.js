@@ -8,6 +8,7 @@ var classnsol_1_1_neurite =
     [ "~Neurite", "classnsol_1_1_neurite.html#a8a9d1124befeee9ee2f6eaa555654b90", null ],
     [ "_addBifurcationCount", "classnsol_1_1_neurite.html#af07a6c674a05f745841d5588d3746e0b", null ],
     [ "_addBranchCount", "classnsol_1_1_neurite.html#af2ca53f9c1e2a5207e96df5565f9fcc4", null ],
+    [ "_clone", "classnsol_1_1_neurite.html#a9c08ca9abc7dbb3277693f5b01b38422", null ],
     [ "clone", "classnsol_1_1_neurite.html#a44aebad411df76e66b15b7749594a730", null ],
     [ "computeBranchBifurcations", "classnsol_1_1_neurite.html#a9976a3cfe953e077e3d7dae9b87f3d06", null ],
     [ "firstSection", "classnsol_1_1_neurite.html#aa800230b54acdda094e875bd661b9636", null ],

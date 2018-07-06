@@ -80,6 +80,7 @@ var NAVTREEINDEX0 =
 "classnsol_1_1_asc_reader_templated.html#ac5de4eb6120afd1ccffe4f92faf63e56":[0,0,0,0,6],
 "classnsol_1_1_axon.html":[0,0,0,1],
 "classnsol_1_1_axon.html#a9c223445554018071c3c67f65fbffca7":[0,0,0,1,0],
+"classnsol_1_1_axon.html#aa9a38b9ff18854988f4c427b39f25baf":[0,0,0,1,1],
 "classnsol_1_1_axon_cached_stats.html":[0,0,0,2],
 "classnsol_1_1_axon_cached_stats.html#ace47bc4fe401087569ff35eb3d2600d4":[0,0,0,2,0],
 "classnsol_1_1_axon_stats.html":[0,0,0,3],
@@ -183,9 +184,10 @@ var NAVTREEINDEX0 =
 "classnsol_1_1_data_set.html#afed7575424568833bfd39ea39671ac15":[0,0,0,10,15],
 "classnsol_1_1_dendrite.html":[0,0,0,11],
 "classnsol_1_1_dendrite.html#a15db6983674e020c1032bc8cd2457629":[0,0,0,11,0],
-"classnsol_1_1_dendrite.html#a2e952e6f4b5b6e339d57c4a50df215d7":[0,0,0,11,5],
-"classnsol_1_1_dendrite.html#a3826c8e2a4cdf0a6d4c97089f7c5ae29":[0,0,0,11,4],
-"classnsol_1_1_dendrite.html#a9709fa2e8006c6f490be36294c69d630":[0,0,0,11,3],
+"classnsol_1_1_dendrite.html#a2e952e6f4b5b6e339d57c4a50df215d7":[0,0,0,11,6],
+"classnsol_1_1_dendrite.html#a3826c8e2a4cdf0a6d4c97089f7c5ae29":[0,0,0,11,5],
+"classnsol_1_1_dendrite.html#a42f356b861f47cd6693fe5814f1408e7":[0,0,0,11,3],
+"classnsol_1_1_dendrite.html#a9709fa2e8006c6f490be36294c69d630":[0,0,0,11,4],
 "classnsol_1_1_dendrite.html#aaf358afbe58453109bc5cd79120915cc":[0,0,0,11,2],
 "classnsol_1_1_dendrite.html#ad867efa35d778e8b5512411ea7b799a9":[0,0,0,11,1],
 "classnsol_1_1_dendrite.html#ad867efa35d778e8b5512411ea7b799a9a1f8df8f268c484c02c41dc573c676626":[0,0,0,11,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6a64a27694d7d42295070d65f8b9fd66cf":[0,0,0,19,0,3],
 "classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6a752e32fb1ad4a58ebd083a32829a5418":[0,0,0,19,0,4],
 "classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6a7ccc88be55d9aaf1936e294f57834aa8":[0,0,0,19,0,10],
-"classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6a85ba7420aa00ec0be404aacd226c9852":[0,0,0,19,0,6],
-"classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6a93bd204031edf4130927445c14fe497f":[0,0,0,19,0,2],
-"classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6ab48784e801d69585c130538f21af386a":[0,0,0,19,0,16]
+"classnsol_1_1_mini_column_stats.html#a37f0f56ce606287c789498e870d435b6a85ba7420aa00ec0be404aacd226c9852":[0,0,0,19,0,6]
 };

@@ -77,6 +77,11 @@
                 <Path>classnsol_1_1_axon.html</Path>
                 <Anchor>a9c223445554018071c3c67f65fbffca7</Anchor>
                </Node>
+               <Node>
+                <Name>clone</Name>
+                <Path>classnsol_1_1_axon.html</Path>
+                <Anchor>aa9a38b9ff18854988f4c427b39f25baf</Anchor>
+               </Node>
               </Subnodes>
              </Node>
              <Node>
@@ -623,6 +628,11 @@
                 <Name>Dendrite</Name>
                 <Path>classnsol_1_1_dendrite.html</Path>
                 <Anchor>aaf358afbe58453109bc5cd79120915cc</Anchor>
+               </Node>
+               <Node>
+                <Name>clone</Name>
+                <Path>classnsol_1_1_dendrite.html</Path>
+                <Anchor>a42f356b861f47cd6693fe5814f1408e7</Anchor>
                </Node>
                <Node>
                 <Name>dendriteType</Name>
@@ -1198,6 +1208,11 @@
                 <Name>_addBranchCount</Name>
                 <Path>classnsol_1_1_neurite.html</Path>
                 <Anchor>af2ca53f9c1e2a5207e96df5565f9fcc4</Anchor>
+               </Node>
+               <Node>
+                <Name>_clone</Name>
+                <Path>classnsol_1_1_neurite.html</Path>
+                <Anchor>a9c08ca9abc7dbb3277693f5b01b38422</Anchor>
                </Node>
                <Node>
                 <Name>clone</Name>

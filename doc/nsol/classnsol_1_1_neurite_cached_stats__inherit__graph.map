@@ -1,7 +1,7 @@
 <map id="nsol::NeuriteCachedStats" name="nsol::NeuriteCachedStats">
-<area shape="rect" id="node5" href="$classnsol_1_1_axon_cached_stats.html" title="This class allows to compute stats for axons. " alt="" coords="23,814,193,891"/>
-<area shape="rect" id="node6" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="218,807,411,899"/>
-<area shape="rect" id="node2" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="49,409,186,516"/>
-<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="5,5,229,317"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n|# _values\l|+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="210,365,398,560"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_axon_cached_stats.html" title="This class allows to compute stats for axons. " alt="" coords="23,829,193,906"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="218,821,411,913"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="49,424,186,531"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l# _clone()\l}" alt="" coords="5,5,229,332"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_cached.html" title="{nsol::Cached\&lt;\&gt;\n|# _values\l|+ Cached()\l+ ~Cached()\l+ dirty()\l+ setDirty()\l+ setDirty()\l+ setAndPropagateDirty()\l+ setAndPropagateDirty()\l+ cacheValue()\l+ getValue()\l}" alt="" coords="210,380,398,575"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="nsol::AxonStats" name="nsol::AxonStats">
-<area shape="rect" id="node5" href="$classnsol_1_1_axon_cached_stats.html" title="This class allows to compute stats for axons. " alt="" coords="32,645,203,723"/>
-<area shape="rect" id="node2" href="$classnsol_1_1_axon.html" title="{nsol::Axon\n||+ Axon()\l}" alt="" coords="5,380,93,457"/>
-<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="5,5,229,317"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="118,365,255,472"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_axon_cached_stats.html" title="This class allows to compute stats for axons. " alt="" coords="32,660,203,737"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_axon.html" title="{nsol::Axon\n||+ Axon()\l+ clone()\l}" alt="" coords="5,387,93,479"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l# _clone()\l}" alt="" coords="5,5,229,332"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="118,380,255,487"/>
 </map>

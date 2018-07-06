@@ -31,18 +31,18 @@
             <td class="headerValue">nsol</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">105</td>
-            <td class="headerCovTableEntry">106</td>
+            <td class="headerCovTableEntry">108</td>
+            <td class="headerCovTableEntry">109</td>
             <td class="headerCovTableEntryHi">99.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-04-05 15:30:07</td>
+            <td class="headerValue">2018-07-06 15:18:51</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">21</td>
-            <td class="headerCovTableEntry">21</td>
-            <td class="headerCovTableEntryHi">100.0 %</td>
+            <td class="headerCovTableEntry">22</td>
+            <td class="headerCovTableEntryHi">95.5 %</td>
           </tr>
           <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
         </table>
@@ -102,7 +102,7 @@
 <span class="lineNum">      40 </span><span class="lineCov">         74 :   }</span>
 <a name="41"><span class="lineNum">      41 </span>            : </a>
 <span class="lineNum">      42 </span>            : 
-<span class="lineNum">      43 </span><span class="lineCov">         33 :   Neurite::~Neurite( )</span>
+<span class="lineNum">      43 </span><span class="lineCov">         30 :   Neurite::~Neurite( )</span>
 <span class="lineNum">      44 </span>            :   {
 <span class="lineNum">      45 </span><span class="lineCov">         15 :     delete _firstSection-&gt;firstNode( );</span>
 <span class="lineNum">      46 </span>            : 
@@ -121,7 +121,7 @@
 <span class="lineNum">      59 </span>            : 
 <span class="lineNum">      60 </span><span class="lineCov">        180 :     for ( SectionPtr section: this-&gt;sections( ))</span>
 <span class="lineNum">      61 </span><span class="lineCov">        165 :       delete section;</span>
-<span class="lineNum">      62 </span><span class="lineCov">         18 :   }</span>
+<span class="lineNum">      62 </span><span class="lineCov">         15 :   }</span>
 <a name="63"><span class="lineNum">      63 </span>            : </a>
 <span class="lineNum">      64 </span>            :   //! Get the type of neurite
 <span class="lineNum">      65 </span><span class="lineCov">         15 :   Neurite::TNeuriteType &amp; Neurite::neuriteType( void )</span>
@@ -222,80 +222,85 @@
 <span class="lineNum">     160 </span><span class="lineCov">          1 :     return nullptr;</span>
 <a name="161"><span class="lineNum">     161 </span>            :   }</a>
 <span class="lineNum">     162 </span>            : 
-<span class="lineNum">     163 </span><span class="lineCov">         14 :   NeuritePtr Neurite::clone( void ) const</span>
+<span class="lineNum">     163 </span><span class="lineCov">          2 :   NeuritePtr Neurite::clone( void ) const</span>
 <span class="lineNum">     164 </span>            :   {
-<span class="lineNum">     165 </span><span class="lineCov">         14 :     NeuritePtr neurite = new Neurite( _neuriteType );</span>
-<span class="lineNum">     166 </span>            :     NeuronMorphologySectionPtr firstSec =
-<span class="lineNum">     167 </span><span class="lineCov">         14 :       dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( _firstSection-&gt;clone( ));</span>
-<span class="lineNum">     168 </span>            : 
-<span class="lineNum">     169 </span><span class="lineCov">         14 :     firstSec-&gt;neurite( neurite );</span>
-<span class="lineNum">     170 </span><span class="lineCov">         14 :     firstSec-&gt;firstNode( _firstSection-&gt;firstNode( )-&gt;clone( ));</span>
-<span class="lineNum">     171 </span><span class="lineCov">         14 :     neurite-&gt;firstSection( firstSec );</span>
-<span class="lineNum">     172 </span>            : 
-<span class="lineNum">     173 </span><span class="lineCov">         28 :     std::stack&lt; SectionPtr &gt; originalSections;</span>
-<span class="lineNum">     174 </span><span class="lineCov">         28 :     std::stack&lt; SectionPtr &gt; newSections;</span>
-<span class="lineNum">     175 </span>            : 
-<span class="lineNum">     176 </span><span class="lineCov">         14 :     originalSections.push( _firstSection );</span>
-<span class="lineNum">     177 </span><span class="lineCov">         14 :     newSections.push( firstSec );</span>
+<span class="lineNum">     165 </span><span class="lineCov">          2 :     NeuritePtr neurite = new Neurite( _neuriteType );</span>
+<span class="lineNum">     166 </span><span class="lineCov">          2 :     _clone( neurite );</span>
+<span class="lineNum">     167 </span><span class="lineCov">          2 :     return neurite;</span>
+<a name="168"><span class="lineNum">     168 </span>            :   }</a>
+<span class="lineNum">     169 </span>            : 
+<span class="lineNum">     170 </span><span class="lineCov">         14 :   void Neurite::_clone( NeuritePtr neurite ) const</span>
+<span class="lineNum">     171 </span>            :   {
+<span class="lineNum">     172 </span>            :     NeuronMorphologySectionPtr firstSec =
+<span class="lineNum">     173 </span><span class="lineCov">         14 :       dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( _firstSection-&gt;clone( ));</span>
+<span class="lineNum">     174 </span>            : 
+<span class="lineNum">     175 </span><span class="lineCov">         14 :     firstSec-&gt;neurite( neurite );</span>
+<span class="lineNum">     176 </span><span class="lineCov">         14 :     firstSec-&gt;firstNode( _firstSection-&gt;firstNode( )-&gt;clone( ));</span>
+<span class="lineNum">     177 </span><span class="lineCov">         14 :     neurite-&gt;firstSection( firstSec );</span>
 <span class="lineNum">     178 </span>            : 
-<span class="lineNum">     179 </span><span class="lineCov">        282 :     while( ! originalSections.empty( ))</span>
-<span class="lineNum">     180 </span>            :     {
-<span class="lineNum">     181 </span>            :       NeuronMorphologySectionPtr originalSec =
-<span class="lineNum">     182 </span><span class="lineCov">        134 :         dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( originalSections.top( ));</span>
-<span class="lineNum">     183 </span>            :       NeuronMorphologySectionPtr newSec =
-<span class="lineNum">     184 </span><span class="lineCov">        134 :         dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( newSections.top( ));</span>
-<span class="lineNum">     185 </span><span class="lineCov">        134 :       originalSections.pop( );</span>
-<span class="lineNum">     186 </span><span class="lineCov">        134 :       newSections.pop( );</span>
-<span class="lineNum">     187 </span>            : 
-<span class="lineNum">     188 </span><span class="lineCov">        254 :       for ( SectionPtr childSec: originalSec-&gt;children( ))</span>
-<span class="lineNum">     189 </span>            :       {
-<span class="lineNum">     190 </span>            :         NeuronMorphologySectionPtr newChildSec =
-<span class="lineNum">     191 </span>            :           dynamic_cast&lt; NeuronMorphologySectionPtr &gt;(
-<span class="lineNum">     192 </span><span class="lineCov">        120 :           dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( childSec )-&gt;clone( ));</span>
-<span class="lineNum">     193 </span><span class="lineCov">        120 :         newChildSec-&gt;parent( newSec );</span>
-<span class="lineNum">     194 </span><span class="lineCov">        120 :         newChildSec-&gt;neurite( neurite );</span>
-<span class="lineNum">     195 </span><span class="lineCov">        120 :         newSec-&gt;addChild( newChildSec );</span>
-<span class="lineNum">     196 </span>            : 
-<span class="lineNum">     197 </span><span class="lineCov">        120 :         originalSections.push( childSec );</span>
-<span class="lineNum">     198 </span><span class="lineCov">        120 :         newSections.push( newChildSec );</span>
-<span class="lineNum">     199 </span>            :       }
-<span class="lineNum">     200 </span>            :     }
-<span class="lineNum">     201 </span><span class="lineCov">         28 :     return neurite;</span>
-<a name="202"><span class="lineNum">     202 </span>            :   }</a>
-<span class="lineNum">     203 </span>            : 
-<span class="lineNum">     204 </span><span class="lineCov">          6 :   bool Neurite::operator == ( Neurite &amp; other )</span>
-<span class="lineNum">     205 </span>            :   {
-<span class="lineNum">     206 </span><span class="lineCov">         36 :     if ( _neuriteType != other.neuriteType( ) ||</span>
-<span class="lineNum">     207 </span><span class="lineCov">         36 :          sections( ).size( ) != other.sections( ).size( ) ||</span>
-<span class="lineNum">     208 </span><span class="lineCov">         24 :          numBranches( ) != other.numBranches( ) ||</span>
-<span class="lineNum">     209 </span><span class="lineCov">          6 :          numBifurcations( ) != other.numBifurcations( ))</span>
-<span class="lineNum">     210 </span><span class="lineNoCov">          0 :       return false;</span>
-<span class="lineNum">     211 </span>            : 
-<span class="lineNum">     212 </span><span class="lineCov">         41 :     for ( unsigned int i = 0; i &lt; sections( ).size( ); i++ )</span>
-<span class="lineNum">     213 </span><span class="lineCov">         36 :       if ( sections( )[i] != other.sections( )[i] )</span>
-<span class="lineNum">     214 </span><span class="lineCov">          1 :         return false;</span>
-<span class="lineNum">     215 </span>            : 
-<span class="lineNum">     216 </span><span class="lineCov">          5 :     return true;</span>
-<a name="217"><span class="lineNum">     217 </span>            :   }</a>
-<span class="lineNum">     218 </span>            : 
-<span class="lineNum">     219 </span><span class="lineCov">          4 :   bool Neurite::operator != ( Neurite &amp; other )</span>
-<span class="lineNum">     220 </span>            :   {
-<span class="lineNum">     221 </span><span class="lineCov">          4 :     return ! ( *this == other );</span>
+<span class="lineNum">     179 </span><span class="lineCov">         28 :     std::stack&lt; SectionPtr &gt; originalSections;</span>
+<span class="lineNum">     180 </span><span class="lineCov">         28 :     std::stack&lt; SectionPtr &gt; newSections;</span>
+<span class="lineNum">     181 </span>            : 
+<span class="lineNum">     182 </span><span class="lineCov">         14 :     originalSections.push( _firstSection );</span>
+<span class="lineNum">     183 </span><span class="lineCov">         14 :     newSections.push( firstSec );</span>
+<span class="lineNum">     184 </span>            : 
+<span class="lineNum">     185 </span><span class="lineCov">        282 :     while( ! originalSections.empty( ))</span>
+<span class="lineNum">     186 </span>            :     {
+<span class="lineNum">     187 </span>            :       NeuronMorphologySectionPtr originalSec =
+<span class="lineNum">     188 </span><span class="lineCov">        134 :         dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( originalSections.top( ));</span>
+<span class="lineNum">     189 </span>            :       NeuronMorphologySectionPtr newSec =
+<span class="lineNum">     190 </span><span class="lineCov">        134 :         dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( newSections.top( ));</span>
+<span class="lineNum">     191 </span><span class="lineCov">        134 :       originalSections.pop( );</span>
+<span class="lineNum">     192 </span><span class="lineCov">        134 :       newSections.pop( );</span>
+<span class="lineNum">     193 </span>            : 
+<span class="lineNum">     194 </span><span class="lineCov">        254 :       for ( SectionPtr childSec: originalSec-&gt;children( ))</span>
+<span class="lineNum">     195 </span>            :       {
+<span class="lineNum">     196 </span>            :         NeuronMorphologySectionPtr newChildSec =
+<span class="lineNum">     197 </span>            :           dynamic_cast&lt; NeuronMorphologySectionPtr &gt;(
+<span class="lineNum">     198 </span><span class="lineCov">        120 :           dynamic_cast&lt; NeuronMorphologySectionPtr &gt;( childSec )-&gt;clone( ));</span>
+<span class="lineNum">     199 </span><span class="lineCov">        120 :         newChildSec-&gt;parent( newSec );</span>
+<span class="lineNum">     200 </span><span class="lineCov">        120 :         newChildSec-&gt;neurite( neurite );</span>
+<span class="lineNum">     201 </span><span class="lineCov">        120 :         newSec-&gt;addChild( newChildSec );</span>
+<span class="lineNum">     202 </span>            : 
+<span class="lineNum">     203 </span><span class="lineCov">        120 :         originalSections.push( childSec );</span>
+<span class="lineNum">     204 </span><span class="lineCov">        120 :         newSections.push( newChildSec );</span>
+<span class="lineNum">     205 </span>            :       }
+<span class="lineNum">     206 </span>            :     }
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">         14 :   }</span></a>
+<span class="lineNum">     208 </span>            : 
+<span class="lineNum">     209 </span><span class="lineCov">          6 :   bool Neurite::operator == ( Neurite &amp; other )</span>
+<span class="lineNum">     210 </span>            :   {
+<span class="lineNum">     211 </span><span class="lineCov">         36 :     if ( _neuriteType != other.neuriteType( ) ||</span>
+<span class="lineNum">     212 </span><span class="lineCov">         36 :          sections( ).size( ) != other.sections( ).size( ) ||</span>
+<span class="lineNum">     213 </span><span class="lineCov">         24 :          numBranches( ) != other.numBranches( ) ||</span>
+<span class="lineNum">     214 </span><span class="lineCov">          6 :          numBifurcations( ) != other.numBifurcations( ))</span>
+<span class="lineNum">     215 </span><span class="lineNoCov">          0 :       return false;</span>
+<span class="lineNum">     216 </span>            : 
+<span class="lineNum">     217 </span><span class="lineCov">         41 :     for ( unsigned int i = 0; i &lt; sections( ).size( ); i++ )</span>
+<span class="lineNum">     218 </span><span class="lineCov">         36 :       if ( sections( )[i] != other.sections( )[i] )</span>
+<span class="lineNum">     219 </span><span class="lineCov">          1 :         return false;</span>
+<span class="lineNum">     220 </span>            : 
+<span class="lineNum">     221 </span><span class="lineCov">          5 :     return true;</span>
 <a name="222"><span class="lineNum">     222 </span>            :   }</a>
 <span class="lineNum">     223 </span>            : 
-<span class="lineNum">     224 </span><span class="lineCov">        242 :   void Neurite::_addBifurcationCount( unsigned int newNumBifurcations )</span>
+<span class="lineNum">     224 </span><span class="lineCov">          4 :   bool Neurite::operator != ( Neurite &amp; other )</span>
 <span class="lineNum">     225 </span>            :   {
-<span class="lineNum">     226 </span><span class="lineCov">        242 :     _numBifurcations += newNumBifurcations;</span>
-<a name="227"><span class="lineNum">     227 </span><span class="lineCov">        242 :   }</span></a>
+<span class="lineNum">     226 </span><span class="lineCov">          4 :     return ! ( *this == other );</span>
+<a name="227"><span class="lineNum">     227 </span>            :   }</a>
 <span class="lineNum">     228 </span>            : 
-<span class="lineNum">     229 </span><span class="lineCov">        242 :   void Neurite::_addBranchCount( unsigned int newNumBranches )</span>
+<span class="lineNum">     229 </span><span class="lineCov">        242 :   void Neurite::_addBifurcationCount( unsigned int newNumBifurcations )</span>
 <span class="lineNum">     230 </span>            :   {
-<span class="lineNum">     231 </span><span class="lineCov">        242 :     _numBranches += newNumBranches;</span>
+<span class="lineNum">     231 </span><span class="lineCov">        242 :     _numBifurcations += newNumBifurcations;</span>
 <a name="232"><span class="lineNum">     232 </span><span class="lineCov">        242 :   }</span></a>
 <span class="lineNum">     233 </span>            : 
-<span class="lineNum">     234 </span><span class="lineCov">         69 : } // namespace nsol</span>
-<span class="lineNum">     235 </span>            : 
-<span class="lineNum">     236 </span>            : // EOF
+<span class="lineNum">     234 </span><span class="lineCov">        242 :   void Neurite::_addBranchCount( unsigned int newNumBranches )</span>
+<span class="lineNum">     235 </span>            :   {
+<span class="lineNum">     236 </span><span class="lineCov">        242 :     _numBranches += newNumBranches;</span>
+<a name="237"><span class="lineNum">     237 </span><span class="lineCov">        242 :   }</span></a>
+<span class="lineNum">     238 </span>            : 
+<span class="lineNum">     239 </span><span class="lineCov">         69 : } // namespace nsol</span>
+<span class="lineNum">     240 </span>            : 
+<span class="lineNum">     241 </span>            : // EOF
 </pre>
       </td>
     </tr>

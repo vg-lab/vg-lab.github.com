@@ -1,10 +1,10 @@
 <map id="nsol::Neurite" name="nsol::Neurite">
-<area shape="rect" id="node2" href="$classnsol_1_1_axon.html" title="{nsol::Axon\n||+ Axon()\l}" alt="" coords="44,380,132,457"/>
-<area shape="rect" id="node5" href="$classnsol_1_1_dendrite.html" title="{nsol::Dendrite\n|# _dendriteType\l|+ Dendrite()\l+ dendriteType()\l}" alt="" coords="356,373,484,465"/>
-<area shape="rect" id="node8" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="178,365,315,472"/>
-<area shape="rect" id="node3" href="$classnsol_1_1_axon_stats.html" title="This class allows to compute stats for axons. " alt="" coords="5,557,128,634"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_axon_cached_stats.html" title="This class allows to compute stats for axons. " alt="" coords="63,726,233,803"/>
-<area shape="rect" id="node6" href="$classnsol_1_1_dendrite_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="365,557,510,634"/>
-<area shape="rect" id="node7" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="299,719,493,811"/>
-<area shape="rect" id="node9" href="$classnsol_1_1_neurite_cached_stats.html" title="This class allows to cache the stats for neurites. " alt="" coords="153,520,341,671"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_axon.html" title="{nsol::Axon\n||+ Axon()\l+ clone()\l}" alt="" coords="44,387,132,479"/>
+<area shape="rect" id="node5" href="$classnsol_1_1_dendrite.html" title="{nsol::Dendrite\n|# _dendriteType\l|+ Dendrite()\l+ dendriteType()\l+ clone()\l}" alt="" coords="356,380,484,487"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_neurite_stats.html" title="This class allows to compute stats for neurites. " alt="" coords="178,380,315,487"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_axon_stats.html" title="This class allows to compute stats for axons. " alt="" coords="5,571,128,649"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_axon_cached_stats.html" title="This class allows to compute stats for axons. " alt="" coords="63,741,233,818"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_dendrite_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="365,571,510,649"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="299,733,493,825"/>
+<area shape="rect" id="node9" href="$classnsol_1_1_neurite_cached_stats.html" title="This class allows to cache the stats for neurites. " alt="" coords="153,535,341,685"/>
 </map>

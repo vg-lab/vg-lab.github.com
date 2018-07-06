@@ -1,5 +1,5 @@
 <map id="nsol::Dendrite" name="nsol::Dendrite">
-<area shape="rect" id="node3" href="$classnsol_1_1_dendrite_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="45,505,190,583"/>
-<area shape="rect" id="node2" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l}" alt="" coords="5,5,229,317"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="21,631,214,723"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_dendrite_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="45,535,190,612"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_neurite.html" title="{nsol::Neurite\n|# _neuriteType\l# _firstSection\l# _morphology\l# _numBranches\l# _numBifurcations\l|+ Neurite()\l+ ~Neurite()\l+ neuriteType()\l+ morphology()\l+ morphology()\l+ hasMorphology()\l+ firstSection()\l+ firstSection()\l+ sections()\l+ computeBranchBifurcations()\land 6 more...\l# _addBifurcationCount()\l# _addBranchCount()\l# _clone()\l}" alt="" coords="5,5,229,332"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_dendrite_cached_stats.html" title="This class allows to compute stats for dendrites. " alt="" coords="21,660,214,752"/>
 </map>

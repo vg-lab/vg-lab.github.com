@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['neurite',['Neurite',['../classnsol_1_1_neurite.html#a06b28c1cfac8493aa413104819a3286c',1,'nsol::Neurite::Neurite()'],['../classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632',1,'nsol::NeuronMorphologySection::neurite(void)'],['../classnsol_1_1_neuron_morphology_section.html#a0c8ba49058f56db2b5f037bac766184f',1,'nsol::NeuronMorphologySection::neurite(NeuritePtr neurite)']]],
+  ['neurite',['neurite',['../classnsol_1_1_neuron_morphology_section.html#a34ad79e8f31819f2ea48590c42045632',1,'nsol::NeuronMorphologySection::neurite(void)'],['../classnsol_1_1_neuron_morphology_section.html#a0c8ba49058f56db2b5f037bac766184f',1,'nsol::NeuronMorphologySection::neurite(NeuritePtr neurite)'],['../classnsol_1_1_neurite.html#a06b28c1cfac8493aa413104819a3286c',1,'nsol::Neurite::Neurite()']]],
   ['neuritecachedstats',['NeuriteCachedStats',['../classnsol_1_1_neurite_cached_stats.html#a3d4fa476544ba2ed08e9eacbe0681d6d',1,'nsol::NeuriteCachedStats']]],
   ['neuritestats',['NeuriteStats',['../classnsol_1_1_neurite_stats.html#abe3737a0ed3966ea68a4b6daed5fed43',1,'nsol::NeuriteStats']]],
   ['neuritetype',['neuriteType',['../classnsol_1_1_neurite.html#a217ae876bd3162c751a1070d758f8601',1,'nsol::Neurite']]],
