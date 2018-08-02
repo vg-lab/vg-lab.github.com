@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-07-06 15:18:51</td>
+            <td class="headerValue">2018-08-02 17:16:12</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -180,8 +180,8 @@
 <span class="lineNum">     118 </span>            :                              COLUMN &gt; brionReader;
 <span class="lineNum">     119 </span>            : 
 <span class="lineNum">     120 </span>            :        brionReader.loadBlueConfigConnectivity( _neurons,
-<span class="lineNum">     121 </span>            :                                                     _circuit,
-<span class="lineNum">     122 </span>            :                                                    *_blueConfig, _target );
+<span class="lineNum">     121 </span>            :                                                _circuit,
+<span class="lineNum">     122 </span>            :                                                *_blueConfig, _target );
 <span class="lineNum">     123 </span>            : #else
 <span class="lineNum">     124 </span>            :     void loadBlueConfigConnectivity( )
 <span class="lineNum">     125 </span>            :     {
@@ -393,12 +393,12 @@
 <span class="lineNum">     331 </span>            :       if( !_blueConfig )
 <span class="lineNum">     332 </span>            :         return;
 <span class="lineNum">     333 </span>            : 
-<span class="lineNum">     334 </span>            :       const brion::Circuit circuit( _blueConfig-&gt;getCircuitSource( ));
+<span class="lineNum">     334 </span>            :       const brain::Circuit circuit( *_blueConfig );
 <span class="lineNum">     335 </span>            :       const std::string morphologySource =
 <span class="lineNum">     336 </span>            :         _blueConfig-&gt;getMorphologySource( ).getPath( );
 <span class="lineNum">     337 </span>            : 
-<span class="lineNum">     338 </span>            :       const brion::NeuronMatrix&amp; data = circuit.get(
-<span class="lineNum">     339 </span>            :         neuronIds_, brion::NEURON_MORPHOLOGY_NAME );
+<span class="lineNum">     338 </span>            :       const auto morphologyLabels = circuit.getMorphologyNames(
+<span class="lineNum">     339 </span>            :         neuronIds_ );
 <span class="lineNum">     340 </span>            : 
 <span class="lineNum">     341 </span>            :       BrionReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION, DENDRITE, AXON,
 <span class="lineNum">     342 </span>            :                             SOMA, NEURONMORPHOLOGY, NEURON, MINICOLUMN,
@@ -407,7 +407,7 @@
 <span class="lineNum">     345 </span>            :       int i = 0;
 <span class="lineNum">     346 </span>            :       for( auto id: neuronIds_ )
 <span class="lineNum">     347 </span>            :       {
-<span class="lineNum">     348 </span>            :         std::string morphologyLabel = data[i][0];
+<span class="lineNum">     348 </span>            :         std::string morphologyLabel = morphologyLabels[i];
 <span class="lineNum">     349 </span>            :         i++;
 <span class="lineNum">     350 </span>            :         _loadMorphology( id, morphologySource, morphologyLabel,
 <span class="lineNum">     351 </span>            :                          brionReader );
