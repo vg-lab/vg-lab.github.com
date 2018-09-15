@@ -7,6 +7,6 @@
 <area shape="rect" id="node12" href="$classnsol_1_1_section.html" title="{nsol::Section\n||+ Section()\l+ ~Section()\l+ backwardNeighbors()\l+ backwardNeighbors()\l+ forwardNeighbors()\l+ forwardNeighbors()\l+ addBackwardNeighbour()\l+ addForwardNeighbour()\l+ deleteBackwardNeighbour()\l+ deleteForwardNeighbour()\land 11 more...\l}" alt="" coords="393,329,607,553"/>
 <area shape="rect" id="node6" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="423,71,534,149"/>
 <area shape="rect" id="node7" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="651,292,778,589"/>
-<area shape="rect" id="node8" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="639,71,737,149"/>
+<area shape="rect" id="node8" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||+ positions()\l}" alt="" coords="636,71,740,149"/>
 <area shape="rect" id="node9" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="69,402,179,479"/>
 </map>

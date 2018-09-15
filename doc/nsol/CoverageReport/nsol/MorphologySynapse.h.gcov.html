@@ -31,13 +31,13 @@
             <td class="headerValue">nsol</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">12</td>
-            <td class="headerCovTableEntry">14</td>
-            <td class="headerCovTableEntryHi">85.7 %</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-08-02 17:16:12</td>
+            <td class="headerValue">2018-09-15 12:57:12</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -91,9 +91,9 @@
 <span class="lineNum">      29 </span>            : 
 <span class="lineNum">      30 </span>            : 
 <span class="lineNum">      31 </span>            : namespace nsol
-<span class="lineNum">      32 </span>            : {
+<a name="32"><span class="lineNum">      32 </span>            : {</a>
 <span class="lineNum">      33 </span>            : 
-<span class="lineNum">      34 </span>            :   class MorphologySynapse : public virtual Synapse
+<span class="lineNum">      34 </span><span class="lineCov">          1 :   class MorphologySynapse : public Synapse</span>
 <span class="lineNum">      35 </span>            :   {
 <span class="lineNum">      36 </span>            : 
 <span class="lineNum">      37 </span>            :   public:
@@ -145,139 +145,108 @@
 <span class="lineNum">      83 </span>            :     ///@{
 <span class="lineNum">      84 </span>            : 
 <span class="lineNum">      85 </span>            :     /**
-<span class="lineNum">      86 </span>            :      * Method to get the type of the synapse.
+<span class="lineNum">      86 </span>            :      * GID getter
 <span class="lineNum">      87 </span>            :      */
-<span class="lineNum">      88 </span>            :     NSOL_API
-<span class="lineNum">      89 </span>            :     TSynapseType synapseType( void ) const;
-<span class="lineNum">      90 </span>            : 
-<span class="lineNum">      91 </span>            :     /**
-<span class="lineNum">      92 </span>            :      * Method to get the presynaptic surface position.
-<span class="lineNum">      93 </span>            :      * @return presynaptic surface position.
+<span class="lineNum">      88 </span>            :     NSOL_API unsigned int gid( void ) const;
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            :     /**
+<span class="lineNum">      91 </span>            :      * GID setter
+<span class="lineNum">      92 </span>            :      *
+<span class="lineNum">      93 </span>            :      * Note: Zero as default value.
 <span class="lineNum">      94 </span>            :      */
-<span class="lineNum">      95 </span>            :     NSOL_API
-<span class="lineNum">      96 </span>            :     Vec3f preSynapticSurfacePosition( void ) const;
-<span class="lineNum">      97 </span>            : 
-<span class="lineNum">      98 </span>            :     /**
-<span class="lineNum">      99 </span>            :      * Method to set presynaptic surface position to the synapse.
-<span class="lineNum">     100 </span>            :      * @param presynaptic_surface_position_ presynaptic surface position.
-<span class="lineNum">     101 </span>            :      */
-<span class="lineNum">     102 </span>            :     NSOL_API
-<span class="lineNum">     103 </span>            :     void
-<span class="lineNum">     104 </span>            :     preSynapticSurfacePosition( const Vec3f&amp; presynaptic_surface_position_ );
-<span class="lineNum">     105 </span>            : 
-<span class="lineNum">     106 </span>            :     /**
-<span class="lineNum">     107 </span>            :      * Method to get the postsynaptic surface position.
-<span class="lineNum">     108 </span>            :      * @return postsynaptic surface position.
-<span class="lineNum">     109 </span>            :      */
-<span class="lineNum">     110 </span>            :     NSOL_API
-<span class="lineNum">     111 </span>            :     Vec3f postSynapticSurfacePosition( void ) const;
-<span class="lineNum">     112 </span>            : 
-<span class="lineNum">     113 </span>            :     /**
-<span class="lineNum">     114 </span>            :      * Method to set postsynaptic surface position to the synapse.
-<span class="lineNum">     115 </span>            :      * @param position_ postsynaptic surface position.
-<span class="lineNum">     116 </span>            :      */
-<span class="lineNum">     117 </span>            :     NSOL_API
-<span class="lineNum">     118 </span>            :     void
-<span class="lineNum">     119 </span>            :     postSynapticSurfacePosition(const Vec3f&amp; position_ );
-<span class="lineNum">     120 </span>            : 
-<span class="lineNum">     121 </span>            :     /**
-<span class="lineNum">     122 </span>            :      * Method to add a presynaptic section to the synapse.
-<span class="lineNum">     123 </span>            :      * @param preSynapticSection_ presynaptic section.
-<span class="lineNum">     124 </span>            :      * @see Synapse
-<span class="lineNum">     125 </span>            :      */
-<span class="lineNum">     126 </span>            :     NSOL_API
-<span class="lineNum">     127 </span>            :     void preSynapticSection(
-<span class="lineNum">     128 </span>            :       const  NeuronMorphologySectionPtr preSynapticSection_ );
-<span class="lineNum">     129 </span>            : 
-<span class="lineNum">     130 </span>            :     /**
-<span class="lineNum">     131 </span>            :      * Method to get the presynaptic section.
-<span class="lineNum">     132 </span>            :      * @return pointer to the presynaptic section.
-<span class="lineNum">     133 </span>            :      */
-<span class="lineNum">     134 </span>            :     NSOL_API
-<span class="lineNum">     135 </span>            :     NeuronMorphologySectionPtr preSynapticSection( void ) const;
-<span class="lineNum">     136 </span>            : 
-<span class="lineNum">     137 </span>            :     /**
-<span class="lineNum">     138 </span>            :      * Method to add a postsynaptic section to the synapse.
-<span class="lineNum">     139 </span>            :      * @param section_ postsynaptic section.
-<span class="lineNum">     140 </span>            :      * @see Synapse
-<span class="lineNum">     141 </span>            :      */
-<span class="lineNum">     142 </span>            :     NSOL_API
-<span class="lineNum">     143 </span>            :     void postSynapticSection(
-<span class="lineNum">     144 </span>            :       const  NeuronMorphologySectionPtr section_ );
-<span class="lineNum">     145 </span>            : 
-<span class="lineNum">     146 </span>            :     /**
-<span class="lineNum">     147 </span>            :      * Method to get the postsynaptic section.
-<span class="lineNum">     148 </span>            :      * @return pointer to the postsynaptic section.
-<span class="lineNum">     149 </span>            :      */
-<span class="lineNum">     150 </span>            :     NSOL_API
-<span class="lineNum">     151 </span>            :     NeuronMorphologySectionPtr postSynapticSection( void ) const;
-<span class="lineNum">     152 </span>            : 
-<span class="lineNum">     153 </span>            :     ///@}
-<span class="lineNum">     154 </span>            : 
-<span class="lineNum">     155 </span>            :     /** @name Operators */
-<span class="lineNum">     156 </span>            :     ///@{
-<span class="lineNum">     157 </span>            : 
-<span class="lineNum">     158 </span>            :     NSOL_API
-<span class="lineNum">     159 </span>            :     virtual MorphologySynapse&amp; operator =
-<span class="lineNum">     160 </span>            :     ( const MorphologySynapse&amp; other_ );
-<span class="lineNum">     161 </span>            : 
-<span class="lineNum">     162 </span>            :     ///@}
+<span class="lineNum">      95 </span>            :     NSOL_API void gid( unsigned int gid_ );
+<span class="lineNum">      96 </span>            : 
+<span class="lineNum">      97 </span>            :     /**
+<span class="lineNum">      98 </span>            :      * Method to get the type of the synapse.
+<span class="lineNum">      99 </span>            :      */
+<span class="lineNum">     100 </span>            :     NSOL_API
+<span class="lineNum">     101 </span>            :     TSynapseType synapseType( void ) const;
+<span class="lineNum">     102 </span>            : 
+<span class="lineNum">     103 </span>            :     /**
+<span class="lineNum">     104 </span>            :      * Method to get the presynaptic surface position.
+<span class="lineNum">     105 </span>            :      * @return presynaptic surface position.
+<span class="lineNum">     106 </span>            :      */
+<span class="lineNum">     107 </span>            :     NSOL_API
+<span class="lineNum">     108 </span>            :     Vec3f preSynapticSurfacePosition( void ) const;
+<span class="lineNum">     109 </span>            : 
+<span class="lineNum">     110 </span>            :     /**
+<span class="lineNum">     111 </span>            :      * Method to set presynaptic surface position to the synapse.
+<span class="lineNum">     112 </span>            :      * @param presynaptic_surface_position_ presynaptic surface position.
+<span class="lineNum">     113 </span>            :      */
+<span class="lineNum">     114 </span>            :     NSOL_API
+<span class="lineNum">     115 </span>            :     void
+<span class="lineNum">     116 </span>            :     preSynapticSurfacePosition( const Vec3f&amp; presynaptic_surface_position_ );
+<span class="lineNum">     117 </span>            : 
+<span class="lineNum">     118 </span>            :     /**
+<span class="lineNum">     119 </span>            :      * Method to get the postsynaptic surface position.
+<span class="lineNum">     120 </span>            :      * @return postsynaptic surface position.
+<span class="lineNum">     121 </span>            :      */
+<span class="lineNum">     122 </span>            :     NSOL_API
+<span class="lineNum">     123 </span>            :     Vec3f postSynapticSurfacePosition( void ) const;
+<span class="lineNum">     124 </span>            : 
+<span class="lineNum">     125 </span>            :     /**
+<span class="lineNum">     126 </span>            :      * Method to set postsynaptic surface position to the synapse.
+<span class="lineNum">     127 </span>            :      * @param position_ postsynaptic surface position.
+<span class="lineNum">     128 </span>            :      */
+<span class="lineNum">     129 </span>            :     NSOL_API
+<span class="lineNum">     130 </span>            :     void
+<span class="lineNum">     131 </span>            :     postSynapticSurfacePosition( const Vec3f&amp; position_ );
+<span class="lineNum">     132 </span>            : 
+<span class="lineNum">     133 </span>            :     /**
+<span class="lineNum">     134 </span>            :      * Method to add a presynaptic section to the synapse.
+<span class="lineNum">     135 </span>            :      * @param preSynapticSection_ presynaptic section.
+<span class="lineNum">     136 </span>            :      * @see Synapse
+<span class="lineNum">     137 </span>            :      */
+<span class="lineNum">     138 </span>            :     NSOL_API
+<span class="lineNum">     139 </span>            :     void preSynapticSection(
+<span class="lineNum">     140 </span>            :         const NeuronMorphologySectionPtr preSynapticSection_ );
+<span class="lineNum">     141 </span>            : 
+<span class="lineNum">     142 </span>            :     /**
+<span class="lineNum">     143 </span>            :      * Method to get the presynaptic section.
+<span class="lineNum">     144 </span>            :      * @return pointer to the presynaptic section.
+<span class="lineNum">     145 </span>            :      */
+<span class="lineNum">     146 </span>            :     NSOL_API
+<span class="lineNum">     147 </span>            :     NeuronMorphologySectionPtr preSynapticSection( void ) const;
+<span class="lineNum">     148 </span>            : 
+<span class="lineNum">     149 </span>            :     /**
+<span class="lineNum">     150 </span>            :      * Method to add a postsynaptic section to the synapse.
+<span class="lineNum">     151 </span>            :      * @param section_ postsynaptic section.
+<span class="lineNum">     152 </span>            :      * @see Synapse
+<span class="lineNum">     153 </span>            :      */
+<span class="lineNum">     154 </span>            :     NSOL_API
+<span class="lineNum">     155 </span>            :     void postSynapticSection( const NeuronMorphologySectionPtr section_ );
+<span class="lineNum">     156 </span>            : 
+<span class="lineNum">     157 </span>            :     /**
+<span class="lineNum">     158 </span>            :      * Method to get the postsynaptic section.
+<span class="lineNum">     159 </span>            :      * @return pointer to the postsynaptic section.
+<span class="lineNum">     160 </span>            :      */
+<span class="lineNum">     161 </span>            :     NSOL_API
+<span class="lineNum">     162 </span>            :     NeuronMorphologySectionPtr postSynapticSection( void ) const;
 <span class="lineNum">     163 </span>            : 
-<span class="lineNum">     164 </span>            : 
-<span class="lineNum">     165 </span>            :   private:
-<a name="166"><span class="lineNum">     166 </span>            : </a>
-<span class="lineNum">     167 </span>            :     int
-<span class="lineNum">     168 </span><span class="lineCov">         10 :     _calculateSynapticSection( Neurite::TNeuriteType&amp; neuriteType_,</span>
-<span class="lineNum">     169 </span>            :                                TSynapticSectionType synapticSectionType_ ) const
-<span class="lineNum">     170 </span>            :     {
-<span class="lineNum">     171 </span><span class="lineCov">         10 :       NeuritePtr neurite = nullptr;</span>
-<span class="lineNum">     172 </span>            : 
-<span class="lineNum">     173 </span><span class="lineCov">         10 :       switch( synapticSectionType_ )</span>
-<span class="lineNum">     174 </span>            :       {
-<span class="lineNum">     175 </span>            :         case MorphologySynapse::PRESYNAPTICSECTION:
-<span class="lineNum">     176 </span>            :          {
-<span class="lineNum">     177 </span><span class="lineCov">          5 :           if( _preSynapticSection == nullptr )</span>
-<span class="lineNum">     178 </span><span class="lineNoCov">          0 :            return -1;</span>
-<span class="lineNum">     179 </span><span class="lineCov">          5 :           neurite = _preSynapticSection-&gt;neurite( );</span>
-<span class="lineNum">     180 </span>            :          }
-<span class="lineNum">     181 </span><span class="lineCov">          5 :          break;</span>
-<span class="lineNum">     182 </span>            :         case MorphologySynapse::POSTSYNAPTICSECTION:
-<span class="lineNum">     183 </span>            :          {
-<span class="lineNum">     184 </span><span class="lineCov">          5 :           if( _postSynapticSection == nullptr )</span>
-<span class="lineNum">     185 </span><span class="lineCov">          2 :            return -1;</span>
-<span class="lineNum">     186 </span><span class="lineCov">          3 :           neurite = _postSynapticSection-&gt;neurite( );</span>
-<span class="lineNum">     187 </span>            :          }
-<span class="lineNum">     188 </span><span class="lineCov">          3 :          break;</span>
-<span class="lineNum">     189 </span>            :         default:
-<span class="lineNum">     190 </span><span class="lineNoCov">          0 :          return -1;</span>
-<span class="lineNum">     191 </span>            :       }
-<span class="lineNum">     192 </span>            : 
-<span class="lineNum">     193 </span><span class="lineCov">          8 :       neuriteType_ = neurite-&gt;neuriteType();</span>
-<span class="lineNum">     194 </span>            : 
-<span class="lineNum">     195 </span><span class="lineCov">          8 :       return 0;</span>
-<span class="lineNum">     196 </span>            :     }
-<span class="lineNum">     197 </span>            : 
-<span class="lineNum">     198 </span>            : 
-<span class="lineNum">     199 </span>            : 
-<span class="lineNum">     200 </span>            :   protected:
-<span class="lineNum">     201 </span>            : 
-<span class="lineNum">     202 </span>            :     //! Presynaptic surface position
-<span class="lineNum">     203 </span>            :     Vec3f _preSynapticSurfacePosition;
-<span class="lineNum">     204 </span>            : 
-<span class="lineNum">     205 </span>            :     //! Postsynaptic surface position
-<span class="lineNum">     206 </span>            :     Vec3f _postSynapticSurfacePosition;
-<span class="lineNum">     207 </span>            : 
-<span class="lineNum">     208 </span>            :     //! Section of a presynaptic neuron (neurite)
-<span class="lineNum">     209 </span>            :     NeuronMorphologySectionPtr _preSynapticSection;
-<span class="lineNum">     210 </span>            : 
-<span class="lineNum">     211 </span>            :     //! Section of a postsynaptic neuron (neurite)
-<span class="lineNum">     212 </span>            :     NeuronMorphologySectionPtr _postSynapticSection;
-<span class="lineNum">     213 </span>            : 
-<span class="lineNum">     214 </span>            :   };
-<span class="lineNum">     215 </span>            : 
-<span class="lineNum">     216 </span>            : } // namespace nsol
-<span class="lineNum">     217 </span>            : 
-<span class="lineNum">     218 </span>            : #endif // __NSOL_COMPARTMENTSYNAPSE__
+<span class="lineNum">     164 </span>            :     ///@}
+<span class="lineNum">     165 </span>            : 
+<span class="lineNum">     166 </span>            :   protected:
+<span class="lineNum">     167 </span>            : 
+<span class="lineNum">     168 </span>            :     //! Synapse GID (default value zero)
+<span class="lineNum">     169 </span>            :     unsigned int _gid;
+<span class="lineNum">     170 </span>            : 
+<span class="lineNum">     171 </span>            :     //! Presynaptic surface position
+<span class="lineNum">     172 </span>            :     Vec3f _preSynapticSurfacePosition;
+<span class="lineNum">     173 </span>            : 
+<span class="lineNum">     174 </span>            :     //! Postsynaptic surface position
+<span class="lineNum">     175 </span>            :     Vec3f _postSynapticSurfacePosition;
+<span class="lineNum">     176 </span>            : 
+<span class="lineNum">     177 </span>            :     //! Section of a presynaptic neuron (neurite)
+<span class="lineNum">     178 </span>            :     NeuronMorphologySectionPtr _preSynapticSection;
+<span class="lineNum">     179 </span>            : 
+<span class="lineNum">     180 </span>            :     //! Section of a postsynaptic neuron (neurite)
+<span class="lineNum">     181 </span>            :     NeuronMorphologySectionPtr _postSynapticSection;
+<span class="lineNum">     182 </span>            : 
+<span class="lineNum">     183 </span>            :   };
+<span class="lineNum">     184 </span>            : 
+<span class="lineNum">     185 </span>            : } // namespace nsol
+<span class="lineNum">     186 </span>            : 
+<span class="lineNum">     187 </span>            : #endif // __NSOL_COMPARTMENTSYNAPSE__
 </pre>
       </td>
     </tr>

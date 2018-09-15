@@ -1,13 +1,13 @@
 <map id="nsol::DataSet" name="nsol::DataSet">
-<area shape="rect" id="node2" href="$classnsol_1_1_columns.html" title="{nsol::Columns\n||}" alt="" coords="126,791,238,869"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_columns.html" title="{nsol::Columns\n||}" alt="" coords="126,821,238,898"/>
 <area shape="rect" id="node5" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="218,365,397,589"/>
 <area shape="rect" id="node6" href="$classnsol_1_1_morphology.html" title="{nsol::Morphology\n||+ Morphology()\l+ ~Morphology()\l+ sections()\l}" alt="" coords="21,101,153,207"/>
 <area shape="rect" id="node7" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="177,5,304,303"/>
 <area shape="rect" id="node8" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="328,115,439,193"/>
 <area shape="rect" id="node9" title="STL class. " alt="" coords="421,439,508,516"/>
 <area shape="rect" id="node10" title="STL class. " alt="" coords="463,108,600,200"/>
-<area shape="rect" id="node11" href="$classnsol_1_1_neurons_map.html" title="{nsol::NeuronsMap\n||+ addNeuron()\l}" alt="" coords="565,791,703,869"/>
+<area shape="rect" id="node11" href="$classnsol_1_1_neurons_map.html" title="{nsol::NeuronsMap\n||+ addNeuron()\l}" alt="" coords="565,821,703,898"/>
 <area shape="rect" id="node12" title="STL class. " alt="" coords="533,431,735,523"/>
-<area shape="rect" id="node13" href="$classnsol_1_1_circuit.html" title="A class to represent connections between neurons. TODO: extend long description. " alt="" coords="742,667,915,993"/>
+<area shape="rect" id="node13" href="$classnsol_1_1_circuit.html" title="A class to represent connections between neurons. TODO: extend long description. " alt="" coords="742,667,915,1052"/>
 <area shape="rect" id="node15" href="$classnsol_1_1_synapses_map.html" title="{nsol::SynapsesMap\n||+ addSynapse()\l}" alt="" coords="923,439,1068,516"/>
 </map>

@@ -10,7 +10,7 @@ var searchData=
   ['_5ferasecoment',['_eraseComent',['../classnsol_1_1_asc_reader_templated.html#a5aee792729930959cd566911847c0f12',1,'nsol::AscReaderTemplated']]],
   ['_5fforwardsections',['_forwardSections',['../classnsol_1_1_section.html#aaed70c00f198a70c256ab5cf034b8d65',1,'nsol::Section']]],
   ['_5ffunctionaltype',['_functionalType',['../classnsol_1_1_neuron.html#a4ef13478ab3b6f046f4b5f488c8d8381',1,'nsol::Neuron']]],
-  ['_5fgid',['_gid',['../classnsol_1_1_neuron.html#a5f46713fc6ff658a318a8f4a455519a3',1,'nsol::Neuron']]],
+  ['_5fgid',['_gid',['../classnsol_1_1_morphology_synapse.html#a55d1fb2c773d07c9ae4f29875d5075c6',1,'nsol::MorphologySynapse::_gid()'],['../classnsol_1_1_neuron.html#a5f46713fc6ff658a318a8f4a455519a3',1,'nsol::Neuron::_gid()']]],
   ['_5fid',['_id',['../classnsol_1_1_column.html#a73f9542b72de036ab284a66b16d5949a',1,'nsol::Column::_id()'],['../classnsol_1_1_mini_column.html#a6fea3852e82821e11cfbcb9b90dd7dbf',1,'nsol::MiniColumn::_id()'],['../classnsol_1_1_neuron_morphology_section.html#aad1c955878b8cd6f7e25d6cfe44e2b31',1,'nsol::NeuronMorphologySection::_id()']]],
   ['_5flayer',['_layer',['../classnsol_1_1_neuron.html#aa51c2376a5fa63c19ac5c18d3f4b6b8c',1,'nsol::Neuron']]],
   ['_5floglevel',['_logLevel',['../classnsol_1_1_log.html#a448d27236b3ff39b4517bc567d18cdec',1,'nsol::Log']]],

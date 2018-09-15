@@ -1,4 +1,4 @@
 <map id="nsol::SomaStats" name="nsol::SomaStats">
 <area shape="rect" id="node2" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="29,272,155,569"/>
-<area shape="rect" id="node3" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="43,132,141,209"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||+ positions()\l}" alt="" coords="40,132,144,209"/>
 </map>

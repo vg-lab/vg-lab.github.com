@@ -32,17 +32,17 @@
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">40</td>
-            <td class="headerCovTableEntry">43</td>
-            <td class="headerCovTableEntryHi">93.0 %</td>
+            <td class="headerCovTableEntry">51</td>
+            <td class="headerCovTableEntryMed">78.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-08-02 17:16:12</td>
+            <td class="headerValue">2018-09-15 12:57:12</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">12</td>
-            <td class="headerCovTableEntry">12</td>
-            <td class="headerCovTableEntryHi">100.0 %</td>
+            <td class="headerCovTableEntry">13</td>
+            <td class="headerCovTableEntryHi">92.3 %</td>
           </tr>
           <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
         </table>
@@ -187,7 +187,22 @@
 <span class="lineNum">     125 </span><span class="lineCov">          9 :     return _neurons;</span>
 <a name="126"><span class="lineNum">     126 </span>            :   }</a>
 <span class="lineNum">     127 </span>            : 
-<span class="lineNum">     128 </span><span class="lineCov">         69 : } // namespace nsol</span>
+<span class="lineNum">     128 </span><span class="lineNoCov">          0 :   Vec3f DataSet::_calculatePosition( const Vec3fs&amp; sectionNodes,</span>
+<span class="lineNum">     129 </span>            :                                      unsigned int segmentID, float distance ) const
+<span class="lineNum">     130 </span>            :   {
+<span class="lineNum">     131 </span><span class="lineNoCov">          0 :     Vec3f result;</span>
+<span class="lineNum">     132 </span>            : 
+<span class="lineNum">     133 </span><span class="lineNoCov">          0 :     auto start = sectionNodes[ segmentID ];</span>
+<span class="lineNum">     134 </span><span class="lineNoCov">          0 :     auto end = sectionNodes[ segmentID + 1 ];</span>
+<span class="lineNum">     135 </span>            : 
+<span class="lineNum">     136 </span><span class="lineNoCov">          0 :     Vec3f direction = ( end - start );</span>
+<span class="lineNum">     137 </span><span class="lineNoCov">          0 :     direction.normalize( );</span>
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span><span class="lineNoCov">          0 :     result = direction * distance;</span>
+<span class="lineNum">     140 </span><span class="lineNoCov">          0 :     return result;</span>
+<a name="141"><span class="lineNum">     141 </span>            :   }</a>
+<span class="lineNum">     142 </span>            : 
+<span class="lineNum">     143 </span><span class="lineCov">         69 : } // namespace nsol</span>
 </pre>
       </td>
     </tr>

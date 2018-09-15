@@ -117,13 +117,15 @@ $(document).ready(function(){initNavTree('classnsol_1_1_circuit.html','');});
   <tr><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a32c48c840dee3c8f7abfd32100421c05">_preSynapticConnections</a></td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a5e9ac3d6f02975feabba2ab59aa8e82e">_synapses</a></td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#ac7ac7d0caf266d8804a8b1b88834842e">addSynapse</a>(SynapsePtr synapse_)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>addSynapses</b>(const std::vector&lt; SynapsePtr &gt; &amp;synapses) (defined in <a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a>)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>addSynapses</b>(const std::vector&lt; MorphologySynapsePtr &gt; &amp;synapses) (defined in <a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a>)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ALL</b> enum value (defined in <a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a>)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#aaac4e810e4908e635c44e464a301e29c">Circuit</a>(void)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#afd0ec5cfe28ba26432930e9f9cca3d0b">clear</a>(void)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#adcaa1f48d005aab4ecedd937cae9d4a5">numberOfSynapses</a>(void) const </td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>POSTSYNAPTICCONNECTIONS</b> enum value (defined in <a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a>)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>PRESYNAPTICCONNECTIONS</b> enum value (defined in <a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a>)</td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a7246631669fd25ec5a3a8a531a8a0ef4">synapses</a>(void) const </td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a46c0bc265c160a639832750d81030710">synapses</a>(void) const </td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a406adfe56423a4c73942f6e9c08716ee">synapses</a>(TDataType dataType_) const </td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a94538d202cb2ec895f9d115df16300f8">synapses</a>(uint32_t neuronGID_, TDataType dataType_) const </td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classnsol_1_1_circuit.html#a60d3967b2ad2ab0879a5bdb13ed8b595">synapses</a>(const std::set&lt; uint32_t &gt; &amp;gidsNeurons_, TDataType dataType_) const </td><td class="entry"><a class="el" href="classnsol_1_1_circuit.html">nsol::Circuit</a></td><td class="entry"></td></tr>
@@ -134,7 +136,7 @@ $(document).ready(function(){initNavTree('classnsol_1_1_circuit.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 2 2018 17:16:13 for nsol by
+    <li class="footer">Generated on Sat Sep 15 2018 12:57:13 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

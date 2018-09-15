@@ -204,6 +204,16 @@
                 <Anchor>ac7ac7d0caf266d8804a8b1b88834842e</Anchor>
                </Node>
                <Node>
+                <Name>addSynapses</Name>
+                <Path>classnsol_1_1_circuit.html</Path>
+                <Anchor>a02a5493ade5b9ea9013c0c6b5401af6e</Anchor>
+               </Node>
+               <Node>
+                <Name>addSynapses</Name>
+                <Path>classnsol_1_1_circuit.html</Path>
+                <Anchor>ac336d3caa906aadaeae557fdad876a15</Anchor>
+               </Node>
+               <Node>
                 <Name>clear</Name>
                 <Path>classnsol_1_1_circuit.html</Path>
                 <Anchor>afd0ec5cfe28ba26432930e9f9cca3d0b</Anchor>
@@ -216,7 +226,7 @@
                <Node>
                 <Name>synapses</Name>
                 <Path>classnsol_1_1_circuit.html</Path>
-                <Anchor>a7246631669fd25ec5a3a8a531a8a0ef4</Anchor>
+                <Anchor>a46c0bc265c160a639832750d81030710</Anchor>
                </Node>
                <Node>
                 <Name>synapses</Name>
@@ -480,6 +490,11 @@
                 <Name>DataSet</Name>
                 <Path>classnsol_1_1_data_set.html</Path>
                 <Anchor>ae23b8f10fa076313135e7f2d9670edba</Anchor>
+               </Node>
+               <Node>
+                <Name>_calculatePosition</Name>
+                <Path>classnsol_1_1_data_set.html</Path>
+                <Anchor>a4a2154b71e36490ae824a0dd3959db66</Anchor>
                </Node>
                <Node>
                 <Name>addNeuron</Name>
@@ -1097,9 +1112,14 @@
                 <Anchor>a3cc10831993149af6631d016187ad204</Anchor>
                </Node>
                <Node>
-                <Name>operator=</Name>
+                <Name>gid</Name>
                 <Path>classnsol_1_1_morphology_synapse.html</Path>
-                <Anchor>ad218cf478771b91bb75fb3f306469655</Anchor>
+                <Anchor>a54d3ed66255ae0a1cfb368f385387a8f</Anchor>
+               </Node>
+               <Node>
+                <Name>gid</Name>
+                <Path>classnsol_1_1_morphology_synapse.html</Path>
+                <Anchor>a18074dd5a33c66f523b74b492fcc69f7</Anchor>
                </Node>
                <Node>
                 <Name>postSynapticSection</Name>
@@ -1145,6 +1165,11 @@
                 <Name>synapseType</Name>
                 <Path>classnsol_1_1_morphology_synapse.html</Path>
                 <Anchor>ab59e1a084bd529ce7e38f839ee27f292</Anchor>
+               </Node>
+               <Node>
+                <Name>_gid</Name>
+                <Path>classnsol_1_1_morphology_synapse.html</Path>
+                <Anchor>a55d1fb2c773d07c9ae4f29875d5075c6</Anchor>
                </Node>
                <Node>
                 <Name>_postSynapticSection</Name>
@@ -1863,7 +1888,7 @@
                <Node>
                 <Name>id</Name>
                 <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-                <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+                <Anchor>a46036e293a5a9186eede80cdd93af7b1</Anchor>
                </Node>
                <Node>
                 <Name>id</Name>
@@ -2250,6 +2275,13 @@
              <Node>
               <Name>Nodes</Name>
               <Path>classnsol_1_1_nodes.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>positions</Name>
+                <Path>classnsol_1_1_nodes.html</Path>
+                <Anchor>aaa7b2b370bd8d0b803930a5d94c897d9</Anchor>
+               </Node>
+              </Subnodes>
              </Node>
              <Node>
               <Name>Object</Name>
@@ -2924,11 +2956,6 @@
                 <Name>~Synapse</Name>
                 <Path>classnsol_1_1_synapse.html</Path>
                 <Anchor>ac01670285dde8138d80fe464faa21808</Anchor>
-               </Node>
-               <Node>
-                <Name>operator=</Name>
-                <Path>classnsol_1_1_synapse.html</Path>
-                <Anchor>abd6414867cd791d3ec221eeb2817a5b9</Anchor>
                </Node>
                <Node>
                 <Name>postSynapticNeuron</Name>

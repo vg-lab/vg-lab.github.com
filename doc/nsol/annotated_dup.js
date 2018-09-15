@@ -37,7 +37,7 @@ var annotated_dup =
       [ "NeuronsMap", "classnsol_1_1_neurons_map.html", "classnsol_1_1_neurons_map" ],
       [ "Node", "classnsol_1_1_node.html", "classnsol_1_1_node" ],
       [ "NodeCached", "classnsol_1_1_node_cached.html", "classnsol_1_1_node_cached" ],
-      [ "Nodes", "classnsol_1_1_nodes.html", null ],
+      [ "Nodes", "classnsol_1_1_nodes.html", "classnsol_1_1_nodes" ],
       [ "Object", "classnsol_1_1_object.html", "classnsol_1_1_object" ],
       [ "ObjectWithProperties", "classnsol_1_1_object_with_properties.html", "classnsol_1_1_object_with_properties" ],
       [ "Section", "classnsol_1_1_section.html", "classnsol_1_1_section" ],

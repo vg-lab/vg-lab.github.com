@@ -595,7 +595,7 @@
       <Scope>nsol::Circuit</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_circuit.html</Path>
-    <Anchor>a7246631669fd25ec5a3a8a531a8a0ef4</Anchor>
+    <Anchor>a46c0bc265c160a639832750d81030710</Anchor>
     <Abstract>Method to get all the synapses from the circuit. </Abstract>
     <DeclaredIn>Circuit.h</DeclaredIn>
   </Token>
@@ -2124,6 +2124,30 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>gid</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::MorphologySynapse</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_morphology_synapse.html</Path>
+    <Anchor>a54d3ed66255ae0a1cfb368f385387a8f</Anchor>
+    <Abstract>GID getter. </Abstract>
+    <DeclaredIn>MorphologySynapse.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>gid</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::MorphologySynapse</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_morphology_synapse.html</Path>
+    <Anchor>a18074dd5a33c66f523b74b492fcc69f7</Anchor>
+    <Abstract>GID setter. </Abstract>
+    <DeclaredIn>MorphologySynapse.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>synapseType</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -2337,6 +2361,17 @@
     <Anchor>abafc0244647522496922b04f8e6cb2e1</Anchor>
     <Abstract>Method to get the synaptic weight. </Abstract>
     <DeclaredIn>Synapse.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_gid</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nsol::MorphologySynapse</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_morphology_synapse.html</Path>
+    <Anchor>a55d1fb2c773d07c9ae4f29875d5075c6</Anchor>
+    <Abstract>Synapse GID (default value zero) </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3281,7 +3316,7 @@
       <Scope>nsol::NeuronMorphologySection</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-    <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+    <Anchor>a46036e293a5a9186eede80cdd93af7b1</Anchor>
     <Abstract>Method to get the gid of the neuron morphology section. </Abstract>
     <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
   </Token>
@@ -3777,7 +3812,7 @@
       <Scope>nsol::NeuronMorphologySection</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-    <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+    <Anchor>a46036e293a5a9186eede80cdd93af7b1</Anchor>
     <Abstract>Method to get the gid of the neuron morphology section. </Abstract>
     <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
   </Token>
@@ -4176,7 +4211,7 @@
       <Scope>nsol::NeuronMorphologySection</Scope>
     </TokenIdentifier>
     <Path>classnsol_1_1_neuron_morphology_section.html</Path>
-    <Anchor>a798dceea16dcc83f61132d706ad3f1b8</Anchor>
+    <Anchor>a46036e293a5a9186eede80cdd93af7b1</Anchor>
     <Abstract>Method to get the gid of the neuron morphology section. </Abstract>
     <DeclaredIn>NeuronMorphologySection.h</DeclaredIn>
   </Token>

@@ -3,7 +3,6 @@ var classnsol_1_1_synapse =
     [ "Synapse", "classnsol_1_1_synapse.html#a4ba31e16f138d6f1155d8cdd1873cf2e", null ],
     [ "Synapse", "classnsol_1_1_synapse.html#adc4a39a74ed432f01d06dc7037bc726e", null ],
     [ "~Synapse", "classnsol_1_1_synapse.html#ac01670285dde8138d80fe464faa21808", null ],
-    [ "operator=", "classnsol_1_1_synapse.html#abd6414867cd791d3ec221eeb2817a5b9", null ],
     [ "postSynapticNeuron", "classnsol_1_1_synapse.html#ae4ee1b2a6ceaedae83d869124ce49ea5", null ],
     [ "postSynapticNeuron", "classnsol_1_1_synapse.html#ade78167bdbed82f2033865d7e1b90359", null ],
     [ "preSynapticNeuron", "classnsol_1_1_synapse.html#ad4260ff1384d1696ff75743a4fec6b11", null ],

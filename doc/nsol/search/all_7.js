@@ -9,5 +9,5 @@ var searchData=
   ['getschema',['getSchema',['../classnsol_1_1_version.html#aa77bac26f4443d2c54cbb88916dd4d89',1,'nsol::Version']]],
   ['getstat',['getStat',['../classnsol_1_1_neurite_cached_stats.html#a341437d9c1a50ab456bf0ddb36faa98e',1,'nsol::NeuriteCachedStats::getStat()'],['../classnsol_1_1_neurite_stats.html#a03b9faca92194eb69af5d3a6d0eb0cf0',1,'nsol::NeuriteStats::getStat()']]],
   ['getstring',['getString',['../classnsol_1_1_version.html#a291b283009471fd6abc758ee7bbaaf63',1,'nsol::Version']]],
-  ['gid',['gid',['../classnsol_1_1_neuron.html#a8afc950c57e22c17b1e66e0d942ade99',1,'nsol::Neuron']]]
+  ['gid',['gid',['../classnsol_1_1_morphology_synapse.html#a54d3ed66255ae0a1cfb368f385387a8f',1,'nsol::MorphologySynapse::gid(void) const '],['../classnsol_1_1_morphology_synapse.html#a18074dd5a33c66f523b74b492fcc69f7',1,'nsol::MorphologySynapse::gid(unsigned int gid_)'],['../classnsol_1_1_neuron.html#a8afc950c57e22c17b1e66e0d942ade99',1,'nsol::Neuron::gid()']]]
 ];

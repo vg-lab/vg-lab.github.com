@@ -11,7 +11,7 @@ var searchData=
   ['setstream',['setStream',['../classnsol_1_1_log.html#a28d69229997601a19e91c407052404fc',1,'nsol::Log']]],
   ['simplifier',['Simplifier',['../classnsol_1_1_simplifier.html',1,'nsol']]],
   ['simplify',['simplify',['../classnsol_1_1_simplifier.html#a835a25806ca661ddb4b9ceef515873eb',1,'nsol::Simplifier']]],
-  ['soma',['soma',['../classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd',1,'nsol::NeuronMorphology::soma()'],['../classnsol_1_1_soma.html#a3a860731c624b40179376fc455cae47b',1,'nsol::Soma::Soma()']]],
+  ['soma',['Soma',['../classnsol_1_1_soma.html#a3a860731c624b40179376fc455cae47b',1,'nsol::Soma::Soma()'],['../classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd',1,'nsol::NeuronMorphology::soma()']]],
   ['soma',['Soma',['../classnsol_1_1_soma.html',1,'nsol']]],
   ['somastats',['SomaStats',['../classnsol_1_1_soma_stats.html#a3d8fc3c2710cf69bff00cc8387c34622',1,'nsol::SomaStats']]],
   ['somastats',['SomaStats',['../classnsol_1_1_soma_stats.html',1,'nsol']]],
@@ -22,7 +22,7 @@ var searchData=
   ['swcwriter',['SwcWriter',['../classnsol_1_1_swc_writer.html',1,'nsol']]],
   ['synapse',['Synapse',['../classnsol_1_1_synapse.html#a4ba31e16f138d6f1155d8cdd1873cf2e',1,'nsol::Synapse::Synapse(void)'],['../classnsol_1_1_synapse.html#adc4a39a74ed432f01d06dc7037bc726e',1,'nsol::Synapse::Synapse(const Synapse &amp;other_)']]],
   ['synapse',['Synapse',['../classnsol_1_1_synapse.html',1,'nsol']]],
-  ['synapses',['synapses',['../classnsol_1_1_circuit.html#a7246631669fd25ec5a3a8a531a8a0ef4',1,'nsol::Circuit::synapses(void) const '],['../classnsol_1_1_circuit.html#a406adfe56423a4c73942f6e9c08716ee',1,'nsol::Circuit::synapses(TDataType dataType_) const '],['../classnsol_1_1_circuit.html#a94538d202cb2ec895f9d115df16300f8',1,'nsol::Circuit::synapses(uint32_t neuronGID_, TDataType dataType_) const '],['../classnsol_1_1_circuit.html#a60d3967b2ad2ab0879a5bdb13ed8b595',1,'nsol::Circuit::synapses(const std::set&lt; uint32_t &gt; &amp;gidsNeurons_, TDataType dataType_) const ']]],
+  ['synapses',['synapses',['../classnsol_1_1_circuit.html#a46c0bc265c160a639832750d81030710',1,'nsol::Circuit::synapses(void) const '],['../classnsol_1_1_circuit.html#a406adfe56423a4c73942f6e9c08716ee',1,'nsol::Circuit::synapses(TDataType dataType_) const '],['../classnsol_1_1_circuit.html#a94538d202cb2ec895f9d115df16300f8',1,'nsol::Circuit::synapses(uint32_t neuronGID_, TDataType dataType_) const '],['../classnsol_1_1_circuit.html#a60d3967b2ad2ab0879a5bdb13ed8b595',1,'nsol::Circuit::synapses(const std::set&lt; uint32_t &gt; &amp;gidsNeurons_, TDataType dataType_) const ']]],
   ['synapsesmap',['SynapsesMap',['../classnsol_1_1_synapses_map.html',1,'nsol']]],
   ['synapsetype',['synapseType',['../classnsol_1_1_morphology_synapse.html#ab59e1a084bd529ce7e38f839ee27f292',1,'nsol::MorphologySynapse']]]
 ];

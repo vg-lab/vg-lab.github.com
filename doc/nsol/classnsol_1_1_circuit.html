@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('classnsol_1_1_circuit.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnsol_1_1_circuit__coll__graph.png" border="0" usemap="#nsol_1_1_circuit_coll__map" alt="Collaboration graph"/></div>
 <map name="nsol_1_1_circuit_coll__map" id="nsol_1_1_circuit_coll__map">
-<area shape="rect" id="node3" href="classnsol_1_1_synapse.html" title="A class to represent synapses. " alt="" coords="5,145,183,531"/>
-<area shape="rect" id="node4" href="classnsol_1_1_synapses_map.html" title="{nsol::SynapsesMap\n||+ addSynapse()\l}" alt="" coords="208,601,353,678"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="207,292,418,384"/>
+<area shape="rect" id="node3" href="classnsol_1_1_synapse.html" title="A class to represent synapses. " alt="" coords="5,145,183,501"/>
+<area shape="rect" id="node4" href="classnsol_1_1_synapses_map.html" title="{nsol::SynapsesMap\n||+ addSynapse()\l}" alt="" coords="208,571,353,649"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="207,277,418,369"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -156,6 +156,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ac7ac7d0caf266d8804a8b1b88834842e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_circuit.html#ac7ac7d0caf266d8804a8b1b88834842e">addSynapse</a> (<a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> synapse_)</td></tr>
 <tr class="memdesc:ac7ac7d0caf266d8804a8b1b88834842e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to add a connection into the cirtuit.  <a href="#ac7ac7d0caf266d8804a8b1b88834842e">More...</a><br /></td></tr>
 <tr class="separator:ac7ac7d0caf266d8804a8b1b88834842e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a5493ade5b9ea9013c0c6b5401af6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02a5493ade5b9ea9013c0c6b5401af6e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSynapses</b> (const std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &gt; &amp;<a class="el" href="classnsol_1_1_circuit.html#a46c0bc265c160a639832750d81030710">synapses</a>)</td></tr>
+<tr class="separator:a02a5493ade5b9ea9013c0c6b5401af6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac336d3caa906aadaeae557fdad876a15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac336d3caa906aadaeae557fdad876a15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSynapses</b> (const std::vector&lt; <a class="el" href="classnsol_1_1_morphology_synapse.html">MorphologySynapsePtr</a> &gt; &amp;<a class="el" href="classnsol_1_1_circuit.html#a46c0bc265c160a639832750d81030710">synapses</a>)</td></tr>
+<tr class="separator:ac336d3caa906aadaeae557fdad876a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0ec5cfe28ba26432930e9f9cca3d0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd0ec5cfe28ba26432930e9f9cca3d0b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_circuit.html#afd0ec5cfe28ba26432930e9f9cca3d0b">clear</a> (void)</td></tr>
 <tr class="memdesc:afd0ec5cfe28ba26432930e9f9cca3d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to clear all the connections of all the circuit. <br /></td></tr>
@@ -164,9 +170,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:adcaa1f48d005aab4ecedd937cae9d4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the total number of connections of the circuit.  <a href="#adcaa1f48d005aab4ecedd937cae9d4a5">More...</a><br /></td></tr>
 <tr class="separator:adcaa1f48d005aab4ecedd937cae9d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Afferent &amp; Efferent synapses related methods</div></td></tr>
-<tr class="memitem:a7246631669fd25ec5a3a8a531a8a0ef4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_circuit.html#a7246631669fd25ec5a3a8a531a8a0ef4">synapses</a> (void) const </td></tr>
-<tr class="memdesc:a7246631669fd25ec5a3a8a531a8a0ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get all the synapses from the circuit.  <a href="#a7246631669fd25ec5a3a8a531a8a0ef4">More...</a><br /></td></tr>
-<tr class="separator:a7246631669fd25ec5a3a8a531a8a0ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c0bc265c160a639832750d81030710"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_circuit.html#a46c0bc265c160a639832750d81030710">synapses</a> (void) const </td></tr>
+<tr class="memdesc:a46c0bc265c160a639832750d81030710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get all the synapses from the circuit.  <a href="#a46c0bc265c160a639832750d81030710">More...</a><br /></td></tr>
+<tr class="separator:a46c0bc265c160a639832750d81030710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406adfe56423a4c73942f6e9c08716ee"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_circuit.html#a406adfe56423a4c73942f6e9c08716ee">synapses</a> (<a class="el" href="classnsol_1_1_circuit.html#a33e8d54b4b105405616c345c67e5a530">TDataType</a> dataType_) const </td></tr>
 <tr class="memdesc:a406adfe56423a4c73942f6e9c08716ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get all the synapses from the circuit.  <a href="#a406adfe56423a4c73942f6e9c08716ee">More...</a><br /></td></tr>
 <tr class="separator:a406adfe56423a4c73942f6e9c08716ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,12 +246,12 @@ std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &
 
 </div>
 </div>
-<a class="anchor" id="a7246631669fd25ec5a3a8a531a8a0ef4"></a>
+<a class="anchor" id="a46c0bc265c160a639832750d81030710"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &gt; nsol::Circuit::synapses </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &gt;&amp; nsol::Circuit::synapses </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -365,7 +371,7 @@ std::vector&lt; <a class="el" href="classnsol_1_1_synapse.html">SynapsePtr</a> &
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>nsol</b></li><li class="navelem"><a class="el" href="classnsol_1_1_circuit.html">Circuit</a></li>
-    <li class="footer">Generated on Thu Aug 2 2018 17:16:13 for nsol by
+    <li class="footer">Generated on Sat Sep 15 2018 12:57:13 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

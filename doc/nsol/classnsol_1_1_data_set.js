@@ -1,6 +1,7 @@
 var classnsol_1_1_data_set =
 [
     [ "DataSet", "classnsol_1_1_data_set.html#ae23b8f10fa076313135e7f2d9670edba", null ],
+    [ "_calculatePosition", "classnsol_1_1_data_set.html#a4a2154b71e36490ae824a0dd3959db66", null ],
     [ "addNeuron", "classnsol_1_1_data_set.html#a5a8a1efa1bf7399a888d7e24dc41eca0", null ],
     [ "circuit", "classnsol_1_1_data_set.html#a0cc6bcc0deae27c71aaec9dbe1981421", null ],
     [ "circuit", "classnsol_1_1_data_set.html#afe4410d91934af384afc9e0111b02377", null ],

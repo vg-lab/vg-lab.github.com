@@ -7,6 +7,6 @@
 <area shape="rect" id="node7" href="$classnsol_1_1_neuron_morphology.html" title="A class to represent morphology of neurons. " alt="" coords="584,1175,763,1399"/>
 <area shape="rect" id="node9" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="541,198,651,275"/>
 <area shape="rect" id="node11" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="698,521,825,819"/>
-<area shape="rect" id="node12" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||}" alt="" coords="713,198,810,275"/>
-<area shape="rect" id="node14" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="861,631,971,709"/>
+<area shape="rect" id="node12" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||+ positions()\l}" alt="" coords="709,198,813,275"/>
+<area shape="rect" id="node14" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="862,631,973,709"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="nsol::Circuit" name="nsol::Circuit">
-<area shape="rect" id="node3" href="$classnsol_1_1_synapse.html" title="A class to represent synapses. " alt="" coords="5,145,183,531"/>
-<area shape="rect" id="node4" href="$classnsol_1_1_synapses_map.html" title="{nsol::SynapsesMap\n||+ addSynapse()\l}" alt="" coords="208,601,353,678"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="207,292,418,384"/>
+<area shape="rect" id="node3" href="$classnsol_1_1_synapse.html" title="A class to represent synapses. " alt="" coords="5,145,183,501"/>
+<area shape="rect" id="node4" href="$classnsol_1_1_synapses_map.html" title="{nsol::SynapsesMap\n||+ addSynapse()\l}" alt="" coords="208,571,353,649"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="207,277,418,369"/>
 </map>
