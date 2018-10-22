@@ -251,6 +251,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>removeDependency</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>fires::DependenciesManager</Scope>
+    </TokenIdentifier>
+    <Path>classfires_1_1_dependencies_manager.html</Path>
+    <Anchor>a272d29c28cef4361eaf3c9d2895b1091</Anchor>
+    <Abstract>Removes a dependency between a property of an object and another property of the same or another obje...</Abstract>
+    <DeclaredIn>DependenciesManager.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>setDependentsDirty</Name>
       <APILanguage>cpp</APILanguage>
       <Type>clm</Type>

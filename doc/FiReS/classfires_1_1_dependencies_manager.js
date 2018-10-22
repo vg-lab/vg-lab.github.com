@@ -7,6 +7,7 @@ var classfires_1_1_dependencies_manager =
     [ "UpdatePropertyCallback", "classfires_1_1_dependencies_manager.html#a897e11241695e0e477fbef4e59b57329", null ],
     [ "addDependency", "classfires_1_1_dependencies_manager.html#af7dca3ddb186b007911403e1396b28e5", null ],
     [ "getDirtiness", "classfires_1_1_dependencies_manager.html#adcd371a507998d7b99f748e8bffcf903", null ],
+    [ "removeDependency", "classfires_1_1_dependencies_manager.html#a272d29c28cef4361eaf3c9d2895b1091", null ],
     [ "removeObject", "classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668", null ],
     [ "setDependentsDirty", "classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e", null ],
     [ "setUpdater", "classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41", null ],

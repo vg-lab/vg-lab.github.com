@@ -163,6 +163,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af7dca3ddb186b007911403e1396b28e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_dependencies_manager.html#af7dca3ddb186b007911403e1396b28e5">addDependency</a> (<a class="el" href="classfires_1_1_object.html">Object</a> *dependent, const std::string &amp;dependentPropLabel, <a class="el" href="classfires_1_1_object.html">Object</a> *dependency, const std::string &amp;dependencyPropLabel)</td></tr>
 <tr class="memdesc:af7dca3ddb186b007911403e1396b28e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a dependency between a property of an object and another property of the same or another object.  <a href="#af7dca3ddb186b007911403e1396b28e5">More...</a><br /></td></tr>
 <tr class="separator:af7dca3ddb186b007911403e1396b28e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272d29c28cef4361eaf3c9d2895b1091"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_dependencies_manager.html#a272d29c28cef4361eaf3c9d2895b1091">removeDependency</a> (<a class="el" href="classfires_1_1_object.html">Object</a> *dependent, const std::string &amp;dependentPropLabel, <a class="el" href="classfires_1_1_object.html">Object</a> *dependency, const std::string &amp;dependencyPropLabel)</td></tr>
+<tr class="memdesc:a272d29c28cef4361eaf3c9d2895b1091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a dependency between a property of an object and another property of the same or another object.  <a href="#a272d29c28cef4361eaf3c9d2895b1091">More...</a><br /></td></tr>
+<tr class="separator:a272d29c28cef4361eaf3c9d2895b1091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac53b3d87479f848703fe9311bd1adf6e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e">setDependentsDirty</a> (<a class="el" href="classfires_1_1_object.html">Object</a> *obj, const std::string &amp;propLabel, bool includeSelf=false)</td></tr>
 <tr class="memdesc:ac53b3d87479f848703fe9311bd1adf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a property of an object to be dirty.  <a href="#ac53b3d87479f848703fe9311bd1adf6e">More...</a><br /></td></tr>
 <tr class="separator:ac53b3d87479f848703fe9311bd1adf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,6 +328,77 @@ static <a class="el" href="classfires_1_1_dependencies_manager.html#a3a937b3ac4c
 
 </div>
 </div>
+<a class="anchor" id="a272d29c28cef4361eaf3c9d2895b1091"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fires::DependenciesManager::removeDependency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfires_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>dependent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dependentPropLabel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfires_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>dependency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dependencyPropLabel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a dependency between a property of an object and another property of the same or another object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dependent</td><td>object that depends on ( dependency, dependencyPropLabel ) </td></tr>
+    <tr><td class="paramname">dependentPropLabel</td><td>property that depends on ( dependent, propLabel ) </td></tr>
+    <tr><td class="paramname">dependency</td><td>object which is a dependency of ( dependent, propLabel ) </td></tr>
+    <tr><td class="paramname">dependencyPropLabel</td><td>property that is a dependency of ( dependent, propLabel ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41">setUpdater()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classfires_1_1_dependencies_manager_a272d29c28cef4361eaf3c9d2895b1091_icgraph.png" border="0" usemap="#classfires_1_1_dependencies_manager_a272d29c28cef4361eaf3c9d2895b1091_icgraph" alt=""/></div>
+<map name="classfires_1_1_dependencies_manager_a272d29c28cef4361eaf3c9d2895b1091_icgraph" id="classfires_1_1_dependencies_manager_a272d29c28cef4361eaf3c9d2895b1091_icgraph">
+<area shape="rect" id="node2" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41" title="Establishes a member function used as updater for a specific object and property. ..." alt="" coords="257,5,461,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a91e86ad8848e276c9eed64a74ff09668"></a>
 <div class="memitem">
 <div class="memproto">
@@ -358,11 +432,11 @@ static <a class="el" href="classfires_1_1_dependencies_manager.html#a3a937b3ac4c
 
 <p>Referenced by <a class="el" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41">setUpdater()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classfires_1_1_dependencies_manager_a91e86ad8848e276c9eed64a74ff09668_icgraph.png" border="0" usemap="#classfires_1_1_dependencies_manager_a91e86ad8848e276c9eed64a74ff09668_icgraph" alt=""/></div>
 <map name="classfires_1_1_dependencies_manager_a91e86ad8848e276c9eed64a74ff09668_icgraph" id="classfires_1_1_dependencies_manager_a91e86ad8848e276c9eed64a74ff09668_icgraph">
 <area shape="rect" id="node2" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41" title="Establishes a member function used as updater for a specific object and property. ..." alt="" coords="257,5,461,47"/>
@@ -421,11 +495,11 @@ static <a class="el" href="classfires_1_1_dependencies_manager.html#a3a937b3ac4c
 
 <p>Referenced by <a class="el" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41">setUpdater()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classfires_1_1_dependencies_manager_ac53b3d87479f848703fe9311bd1adf6e_icgraph.png" border="0" usemap="#classfires_1_1_dependencies_manager_ac53b3d87479f848703fe9311bd1adf6e_icgraph" alt=""/></div>
 <map name="classfires_1_1_dependencies_manager_ac53b3d87479f848703fe9311bd1adf6e_icgraph" id="classfires_1_1_dependencies_manager_ac53b3d87479f848703fe9311bd1adf6e_icgraph">
 <area shape="rect" id="node2" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41" title="Establishes a member function used as updater for a specific object and property. ..." alt="" coords="257,5,461,47"/>
@@ -494,21 +568,22 @@ template&lt;class UPDATER &gt; </div>
 
 <p>Definition at line <a class="el" href="_dependencies_manager_8h_source.html#l00090">90</a> of file <a class="el" href="_dependencies_manager_8h_source.html">DependenciesManager.h</a>.</p>
 
-<p>References <a class="el" href="classfires_1_1_dependencies_manager.html#a28a089fcb1ec912f41b93f2073fa43db">_dependsOn</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#af7dca3ddb186b007911403e1396b28e5">addDependency()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#adcd371a507998d7b99f748e8bffcf903">getDirtiness()</a>, <a class="el" href="classfires_1_1_property_g_i_ds_manager.html#a193a24246c08340a24d5a363b6f3fa26">fires::PropertyGIDsManager::getPropertyGID()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668">removeObject()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e">setDependentsDirty()</a>, and <a class="el" href="classfires_1_1_dependencies_manager.html#a39357355f3d31ee840b4bf9e68238aa0">updateProperty()</a>.</p>
+<p>References <a class="el" href="classfires_1_1_dependencies_manager.html#a28a089fcb1ec912f41b93f2073fa43db">_dependsOn</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#af7dca3ddb186b007911403e1396b28e5">addDependency()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#adcd371a507998d7b99f748e8bffcf903">getDirtiness()</a>, <a class="el" href="classfires_1_1_property_g_i_ds_manager.html#a193a24246c08340a24d5a363b6f3fa26">fires::PropertyGIDsManager::getPropertyGID()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#a272d29c28cef4361eaf3c9d2895b1091">removeDependency()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668">removeObject()</a>, <a class="el" href="classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e">setDependentsDirty()</a>, and <a class="el" href="classfires_1_1_dependencies_manager.html#a39357355f3d31ee840b4bf9e68238aa0">updateProperty()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classfires_1_1_dependencies_manager_a068a2cf70cad9b531df2c6355259ea41_cgraph.png" border="0" usemap="#classfires_1_1_dependencies_manager_a068a2cf70cad9b531df2c6355259ea41_cgraph" alt=""/></div>
 <map name="classfires_1_1_dependencies_manager_a068a2cf70cad9b531df2c6355259ea41_cgraph" id="classfires_1_1_dependencies_manager_a068a2cf70cad9b531df2c6355259ea41_cgraph">
 <area shape="rect" id="node2" href="classfires_1_1_dependencies_manager.html#af7dca3ddb186b007911403e1396b28e5" title="Establish a dependency between a property of an object and another property of the same or another ob..." alt="" coords="257,5,461,47"/>
 <area shape="rect" id="node3" href="classfires_1_1_dependencies_manager.html#adcd371a507998d7b99f748e8bffcf903" title="Returns of a property of an object is dirty. " alt="" coords="257,71,461,112"/>
 <area shape="rect" id="node4" href="classfires_1_1_property_g_i_ds_manager.html#a193a24246c08340a24d5a363b6f3fa26" title="Converts from property name to property GID. " alt="" coords="261,136,458,177"/>
-<area shape="rect" id="node5" href="classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668" title="Removes an object both from dependencies and dependents. " alt="" coords="257,201,461,243"/>
-<area shape="rect" id="node6" href="classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e" title="Sets a property of an object to be dirty. " alt="" coords="257,267,461,308"/>
-<area shape="rect" id="node7" href="classfires_1_1_dependencies_manager.html#a39357355f3d31ee840b4bf9e68238aa0" title="Method to update a specific property. " alt="" coords="257,332,461,373"/>
+<area shape="rect" id="node5" href="classfires_1_1_dependencies_manager.html#a272d29c28cef4361eaf3c9d2895b1091" title="Removes a dependency between a property of an object and another property of the same or another obje..." alt="" coords="257,201,461,243"/>
+<area shape="rect" id="node6" href="classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668" title="Removes an object both from dependencies and dependents. " alt="" coords="257,267,461,308"/>
+<area shape="rect" id="node7" href="classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e" title="Sets a property of an object to be dirty. " alt="" coords="257,332,461,373"/>
+<area shape="rect" id="node8" href="classfires_1_1_dependencies_manager.html#a39357355f3d31ee840b4bf9e68238aa0" title="Method to update a specific property. " alt="" coords="257,397,461,439"/>
 </map>
 </div>
 </p>
@@ -559,11 +634,11 @@ template&lt;class UPDATER &gt; </div>
 
 <p>Referenced by <a class="el" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41">setUpdater()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classfires_1_1_dependencies_manager_a39357355f3d31ee840b4bf9e68238aa0_icgraph.png" border="0" usemap="#classfires_1_1_dependencies_manager_a39357355f3d31ee840b4bf9e68238aa0_icgraph" alt=""/></div>
 <map name="classfires_1_1_dependencies_manager_a39357355f3d31ee840b4bf9e68238aa0_icgraph" id="classfires_1_1_dependencies_manager_a39357355f3d31ee840b4bf9e68238aa0_icgraph">
 <area shape="rect" id="node2" href="classfires_1_1_dependencies_manager.html#a068a2cf70cad9b531df2c6355259ea41" title="Establishes a member function used as updater for a specific object and property. ..." alt="" coords="257,5,461,47"/>
@@ -582,7 +657,7 @@ template&lt;class UPDATER &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fires</b></li><li class="navelem"><a class="el" href="classfires_1_1_dependencies_manager.html">DependenciesManager</a></li>
-    <li class="footer">Generated on Fri Jul 6 2018 16:38:27 for FiReS by
+    <li class="footer">Generated on Mon Oct 22 2018 10:29:17 for FiReS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -197,6 +197,11 @@
                 <Anchor>adcd371a507998d7b99f748e8bffcf903</Anchor>
                </Node>
                <Node>
+                <Name>removeDependency</Name>
+                <Path>classfires_1_1_dependencies_manager.html</Path>
+                <Anchor>a272d29c28cef4361eaf3c9d2895b1091</Anchor>
+               </Node>
+               <Node>
                 <Name>removeObject</Name>
                 <Path>classfires_1_1_dependencies_manager.html</Path>
                 <Anchor>a91e86ad8848e276c9eed64a74ff09668</Anchor>

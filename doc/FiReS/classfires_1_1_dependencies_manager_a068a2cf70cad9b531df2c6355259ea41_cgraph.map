@@ -2,7 +2,8 @@
 <area shape="rect" id="node2" href="$classfires_1_1_dependencies_manager.html#af7dca3ddb186b007911403e1396b28e5" title="Establish a dependency between a property of an object and another property of the same or another ob..." alt="" coords="257,5,461,47"/>
 <area shape="rect" id="node3" href="$classfires_1_1_dependencies_manager.html#adcd371a507998d7b99f748e8bffcf903" title="Returns of a property of an object is dirty. " alt="" coords="257,71,461,112"/>
 <area shape="rect" id="node4" href="$classfires_1_1_property_g_i_ds_manager.html#a193a24246c08340a24d5a363b6f3fa26" title="Converts from property name to property GID. " alt="" coords="261,136,458,177"/>
-<area shape="rect" id="node5" href="$classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668" title="Removes an object both from dependencies and dependents. " alt="" coords="257,201,461,243"/>
-<area shape="rect" id="node6" href="$classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e" title="Sets a property of an object to be dirty. " alt="" coords="257,267,461,308"/>
-<area shape="rect" id="node7" href="$classfires_1_1_dependencies_manager.html#a39357355f3d31ee840b4bf9e68238aa0" title="Method to update a specific property. " alt="" coords="257,332,461,373"/>
+<area shape="rect" id="node5" href="$classfires_1_1_dependencies_manager.html#a272d29c28cef4361eaf3c9d2895b1091" title="Removes a dependency between a property of an object and another property of the same or another obje..." alt="" coords="257,201,461,243"/>
+<area shape="rect" id="node6" href="$classfires_1_1_dependencies_manager.html#a91e86ad8848e276c9eed64a74ff09668" title="Removes an object both from dependencies and dependents. " alt="" coords="257,267,461,308"/>
+<area shape="rect" id="node7" href="$classfires_1_1_dependencies_manager.html#ac53b3d87479f848703fe9311bd1adf6e" title="Sets a property of an object to be dirty. " alt="" coords="257,332,461,373"/>
+<area shape="rect" id="node8" href="$classfires_1_1_dependencies_manager.html#a39357355f3d31ee840b4bf9e68238aa0" title="Method to update a specific property. " alt="" coords="257,397,461,439"/>
 </map>
