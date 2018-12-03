@@ -1,8 +1,8 @@
 <map id="nsol::NeuronMorphology" name="nsol::NeuronMorphology">
-<area shape="rect" id="node2" href="$classnsol_1_1_morphology.html" title="{nsol::Morphology\n||+ Morphology()\l+ ~Morphology()\l+ sections()\l}" alt="" coords="201,499,333,606"/>
+<area shape="rect" id="node2" href="$classnsol_1_1_morphology.html" title="{nsol::Morphology\n||+ Morphology()\l+ ~Morphology()\l+ sections()\l}" alt="" coords="201,507,333,613"/>
 <area shape="rect" id="node3" href="$classnsol_1_1_object.html" title="{nsol::Object\n||+ Object()\l+ ~Object()\l+ asColumn()\l+ asMiniColumn()\l+ asNeuron()\l+ asNeuronMorphology()\l+ asSection()\l+ asNode()\l+ properties()\l+ create()\l}" alt="" coords="5,132,188,341"/>
 <area shape="rect" id="node4" href="$classnsol_1_1_sections.html" title="{nsol::Sections\n||}" alt="" coords="212,198,323,275"/>
-<area shape="rect" id="node6" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="371,404,497,701"/>
-<area shape="rect" id="node7" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||+ positions()\l}" alt="" coords="382,198,486,275"/>
-<area shape="rect" id="node9" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="535,514,645,591"/>
+<area shape="rect" id="node6" href="$classnsol_1_1_soma.html" title="Class to represent the soma of neurons. " alt="" coords="367,404,519,716"/>
+<area shape="rect" id="node7" href="$classnsol_1_1_nodes.html" title="{nsol::Nodes\n||+ positions()\l}" alt="" coords="391,198,495,275"/>
+<area shape="rect" id="node9" href="$classnsol_1_1_neurites.html" title="{nsol::Neurites\n||}" alt="" coords="551,521,661,599"/>
 </map>

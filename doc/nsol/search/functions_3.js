@@ -8,5 +8,6 @@ var searchData=
   ['clearminicolumns',['clearMiniColumns',['../classnsol_1_1_column.html#acad36437f8a03d9833fa66df0696d9b2',1,'nsol::Column']]],
   ['clearneurons',['clearNeurons',['../classnsol_1_1_mini_column.html#a01d63a621337743a1e098c3ebebcb210',1,'nsol::MiniColumn']]],
   ['column',['Column',['../classnsol_1_1_column.html#ae7ac921585096c61cd4a15304031d1cb',1,'nsol::Column::Column(unsigned short id=0)'],['../classnsol_1_1_column.html#a5b04a74a3076653caf02bfdb518b2b69',1,'nsol::Column::Column(const Column &amp;other)'],['../classnsol_1_1_mini_column.html#ae09eb46a1414518a74f0e43e9db5b572',1,'nsol::MiniColumn::column(ColumnPtr column)'],['../classnsol_1_1_mini_column.html#aeaaca176f6af030a7dacba6e3a9c6440',1,'nsol::MiniColumn::column(void) const ']]],
+  ['computeparams',['computeParams',['../classnsol_1_1_soma.html#a1e49e36f1f8606d56e550d735c68628c',1,'nsol::Soma']]],
   ['cutout',['cutout',['../classnsol_1_1_simplifier.html#af2f11f7d423b0fd6f433e61273caab06',1,'nsol::Simplifier']]]
 ];

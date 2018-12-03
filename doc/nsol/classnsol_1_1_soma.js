@@ -6,6 +6,7 @@ var classnsol_1_1_soma =
     [ "center", "classnsol_1_1_soma.html#a8fb8e725fe4b512a04e6e4eac0db2881", null ],
     [ "center", "classnsol_1_1_soma.html#a540afed616858657bfc461c0c263c989", null ],
     [ "clone", "classnsol_1_1_soma.html#a30a072df044d0a3e2c84f79144e42a8d", null ],
+    [ "computeParams", "classnsol_1_1_soma.html#a1e49e36f1f8606d56e550d735c68628c", null ],
     [ "maxRadius", "classnsol_1_1_soma.html#ae5f36080c2d2f1558436570abe70f60f", null ],
     [ "meanRadius", "classnsol_1_1_soma.html#acfb97fbc3d9787b8ac61ae770531f8e1", null ],
     [ "minRadius", "classnsol_1_1_soma.html#a7492e5e9b86e8daf55ded6a6ec177172", null ],

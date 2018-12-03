@@ -2656,6 +2656,11 @@
                 <Anchor>a30a072df044d0a3e2c84f79144e42a8d</Anchor>
                </Node>
                <Node>
+                <Name>computeParams</Name>
+                <Path>classnsol_1_1_soma.html</Path>
+                <Anchor>a1e49e36f1f8606d56e550d735c68628c</Anchor>
+               </Node>
+               <Node>
                 <Name>maxRadius</Name>
                 <Path>classnsol_1_1_soma.html</Path>
                 <Anchor>ae5f36080c2d2f1558436570abe70f60f</Anchor>

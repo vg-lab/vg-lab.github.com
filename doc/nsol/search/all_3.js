@@ -15,5 +15,6 @@ var searchData=
   ['column',['Column',['../classnsol_1_1_column.html',1,'nsol']]],
   ['columns',['Columns',['../classnsol_1_1_columns.html',1,'nsol']]],
   ['columnstats',['ColumnStats',['../classnsol_1_1_column_stats.html',1,'nsol']]],
+  ['computeparams',['computeParams',['../classnsol_1_1_soma.html#a1e49e36f1f8606d56e550d735c68628c',1,'nsol::Soma']]],
   ['cutout',['cutout',['../classnsol_1_1_simplifier.html#af2f11f7d423b0fd6f433e61273caab06',1,'nsol::Simplifier']]]
 ];

@@ -5247,6 +5247,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>computeParams</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Soma</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_soma.html</Path>
+    <Anchor>a1e49e36f1f8606d56e550d735c68628c</Anchor>
+    <Abstract>Method to force the compute of the soma parameters (center and radii) </Abstract>
+    <DeclaredIn>Soma.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_center</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -5439,6 +5451,18 @@
     <Path>classnsol_1_1_soma.html</Path>
     <Anchor>a1f26090e46683c07a19b24c54de89455</Anchor>
     <Abstract>Method to add a node to the soma. </Abstract>
+    <DeclaredIn>Soma.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>computeParams</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nsol::Soma</Scope>
+    </TokenIdentifier>
+    <Path>classnsol_1_1_soma.html</Path>
+    <Anchor>a1e49e36f1f8606d56e550d735c68628c</Anchor>
+    <Abstract>Method to force the compute of the soma parameters (center and radii) </Abstract>
     <DeclaredIn>Soma.h</DeclaredIn>
   </Token>
   <Token>
