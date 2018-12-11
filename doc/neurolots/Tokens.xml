@@ -1233,6 +1233,30 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>expand</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlgeometry::AxisAlignedBoundingBox</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_axis_aligned_bounding_box.html</Path>
+    <Anchor>a575521390fc96b0521c7da981d846ff6</Anchor>
+    <Abstract>Method that expands the current bounds with the given point. </Abstract>
+    <DeclaredIn>AxisAlignedBoundingBox.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>expand</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlgeometry::AxisAlignedBoundingBox</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_axis_aligned_bounding_box.html</Path>
+    <Anchor>a8e3d6dc92509e0013af1b2bf74783a9d</Anchor>
+    <Abstract>Method that expands the current bounds with the given bounding box. </Abstract>
+    <DeclaredIn>AxisAlignedBoundingBox.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_minimum</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>

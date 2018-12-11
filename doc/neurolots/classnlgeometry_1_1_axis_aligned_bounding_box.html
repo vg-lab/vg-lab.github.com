@@ -158,6 +158,15 @@ NLGEOMETRY_API const Eigen::Vector3f &amp;&#160;</td><td class="memItemRight" va
 <tr class="memitem:adea98c9f01955daf4ad3a84fe798e67e"><td class="memItemLeft" align="right" valign="top">NLGEOMETRY_API float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgeometry_1_1_axis_aligned_bounding_box.html#adea98c9f01955daf4ad3a84fe798e67e">radius</a> (void) const </td></tr>
 <tr class="memdesc:adea98c9f01955daf4ad3a84fe798e67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that computes and return the axis aligned bounding box radius.  <a href="#adea98c9f01955daf4ad3a84fe798e67e">More...</a><br /></td></tr>
 <tr class="separator:adea98c9f01955daf4ad3a84fe798e67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575521390fc96b0521c7da981d846ff6"><td class="memItemLeft" align="right" valign="top">NLGEOMETRY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgeometry_1_1_axis_aligned_bounding_box.html#a575521390fc96b0521c7da981d846ff6">expand</a> (const Eigen::Vector3f &amp;point)</td></tr>
+<tr class="memdesc:a575521390fc96b0521c7da981d846ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that expands the current bounds with the given point.  <a href="#a575521390fc96b0521c7da981d846ff6">More...</a><br /></td></tr>
+<tr class="separator:a575521390fc96b0521c7da981d846ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3d6dc92509e0013af1b2bf74783a9d"><td class="memItemLeft" align="right" valign="top">NLGEOMETRY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgeometry_1_1_axis_aligned_bounding_box.html#a8e3d6dc92509e0013af1b2bf74783a9d">expand</a> (const <a class="el" href="classnlgeometry_1_1_axis_aligned_bounding_box.html">AxisAlignedBoundingBox</a> &amp;other)</td></tr>
+<tr class="memdesc:a8e3d6dc92509e0013af1b2bf74783a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that expands the current bounds with the given bounding box.  <a href="#a8e3d6dc92509e0013af1b2bf74783a9d">More...</a><br /></td></tr>
+<tr class="separator:a8e3d6dc92509e0013af1b2bf74783a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394f19d58c4286c7a31f9302010b6162"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a394f19d58c4286c7a31f9302010b6162"></a>
+NLGEOMETRY_API void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (void)</td></tr>
+<tr class="separator:a394f19d58c4286c7a31f9302010b6162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -230,6 +239,54 @@ Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 
 </div>
 </div>
+<a class="anchor" id="a575521390fc96b0521c7da981d846ff6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NLGEOMETRY_API void nlgeometry::AxisAlignedBoundingBox::expand </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method that expands the current bounds with the given point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>given point to expand current bounds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e3d6dc92509e0013af1b2bf74783a9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NLGEOMETRY_API void nlgeometry::AxisAlignedBoundingBox::expand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnlgeometry_1_1_axis_aligned_bounding_box.html">AxisAlignedBoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method that expands the current bounds with the given bounding box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>given bounding box to expand current bounds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab93e31feec53caf698364d16a3907347"></a>
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +353,7 @@ Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlgeometry.html">nlgeometry</a></li><li class="navelem"><a class="el" href="classnlgeometry_1_1_axis_aligned_bounding_box.html">AxisAlignedBoundingBox</a></li>
-    <li class="footer">Generated on Thu Nov 22 2018 19:10:47 for neurolots by
+    <li class="footer">Generated on Tue Dec 11 2018 17:26:56 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

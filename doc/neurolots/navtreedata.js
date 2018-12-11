@@ -10,7 +10,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
@@ -27,8 +27,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classnlgeometry_1_1_vertex.html#a7b9751bbce975494c47a37d958b2979e",
-"pages.html"
+"classnlgeometry_1_1_vertex.html#a62497d24119195fd38e1670b991c82fb",
+"nlphysics_2version_8h.html#aa89aa693b37a962a29601f598dbd7222"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

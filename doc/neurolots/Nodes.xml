@@ -421,6 +421,21 @@
                 <Anchor>a8ca32f11183ea1dc375029336545125a</Anchor>
                </Node>
                <Node>
+                <Name>clear</Name>
+                <Path>classnlgeometry_1_1_axis_aligned_bounding_box.html</Path>
+                <Anchor>a394f19d58c4286c7a31f9302010b6162</Anchor>
+               </Node>
+               <Node>
+                <Name>expand</Name>
+                <Path>classnlgeometry_1_1_axis_aligned_bounding_box.html</Path>
+                <Anchor>a575521390fc96b0521c7da981d846ff6</Anchor>
+               </Node>
+               <Node>
+                <Name>expand</Name>
+                <Path>classnlgeometry_1_1_axis_aligned_bounding_box.html</Path>
+                <Anchor>a8e3d6dc92509e0013af1b2bf74783a9d</Anchor>
+               </Node>
+               <Node>
                 <Name>maximum</Name>
                 <Path>classnlgeometry_1_1_axis_aligned_bounding_box.html</Path>
                 <Anchor>ab93e31feec53caf698364d16a3907347</Anchor>
@@ -2144,6 +2159,96 @@
            <Node>
             <Name>Functions</Name>
             <Path>functions_func.html</Path>
+            <Subnodes>
+             <Node>
+              <Name>a</Name>
+              <Path>functions_func.html</Path>
+             </Node>
+             <Node>
+              <Name>b</Name>
+              <Path>functions_func_b.html</Path>
+             </Node>
+             <Node>
+              <Name>c</Name>
+              <Path>functions_func_c.html</Path>
+             </Node>
+             <Node>
+              <Name>d</Name>
+              <Path>functions_func_d.html</Path>
+             </Node>
+             <Node>
+              <Name>e</Name>
+              <Path>functions_func_e.html</Path>
+             </Node>
+             <Node>
+              <Name>f</Name>
+              <Path>functions_func_f.html</Path>
+             </Node>
+             <Node>
+              <Name>g</Name>
+              <Path>functions_func_g.html</Path>
+             </Node>
+             <Node>
+              <Name>i</Name>
+              <Path>functions_func_i.html</Path>
+             </Node>
+             <Node>
+              <Name>j</Name>
+              <Path>functions_func_j.html</Path>
+             </Node>
+             <Node>
+              <Name>l</Name>
+              <Path>functions_func_l.html</Path>
+             </Node>
+             <Node>
+              <Name>m</Name>
+              <Path>functions_func_m.html</Path>
+             </Node>
+             <Node>
+              <Name>n</Name>
+              <Path>functions_func_n.html</Path>
+             </Node>
+             <Node>
+              <Name>o</Name>
+              <Path>functions_func_o.html</Path>
+             </Node>
+             <Node>
+              <Name>p</Name>
+              <Path>functions_func_p.html</Path>
+             </Node>
+             <Node>
+              <Name>q</Name>
+              <Path>functions_func_q.html</Path>
+             </Node>
+             <Node>
+              <Name>r</Name>
+              <Path>functions_func_r.html</Path>
+             </Node>
+             <Node>
+              <Name>s</Name>
+              <Path>functions_func_s.html</Path>
+             </Node>
+             <Node>
+              <Name>t</Name>
+              <Path>functions_func_t.html</Path>
+             </Node>
+             <Node>
+              <Name>u</Name>
+              <Path>functions_func_u.html</Path>
+             </Node>
+             <Node>
+              <Name>v</Name>
+              <Path>functions_func_v.html</Path>
+             </Node>
+             <Node>
+              <Name>w</Name>
+              <Path>functions_func_w.html</Path>
+             </Node>
+             <Node>
+              <Name>~</Name>
+              <Path>functions_func_0x7e.html</Path>
+             </Node>
+            </Subnodes>
            </Node>
            <Node>
             <Name>Variables</Name>
