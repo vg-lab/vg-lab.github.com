@@ -123,6 +123,15 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>reto::AbstractCameraController</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::AbstractCameraController</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_abstract_camera_controller.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>reto::Camera</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -140,7 +149,19 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aa6b27345edc1f88cc7482c895a2f2768</Anchor>
+    <Anchor>a5c885d5f53bc01f67f137c6bd7867ace</Anchor>
+    <Abstract>Camera constructor. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Camera</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>aef323db85f8f711df4717d896f637ef5</Anchor>
     <Abstract>Camera constructor. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -158,134 +179,14 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>localTranslation</Name>
+      <Name>setZeqSession</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>ad7a65c41440618908b19e6f0ad10bd38</Anchor>
-    <Abstract>Method to translate the camera from the actual position. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>localRotation</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a874b1636a877fb113dd90c62ed36e8de</Anchor>
-    <Abstract>Method to rotate the camera from the actual rotation. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>anim</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a207744a4f6a95d4ed239222663c5e4a0</Anchor>
-    <Abstract>Method to if there is a target pivot move the camera to this target pivot. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>fov</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a8f2556a424b4f3f7a3de850294700e7c</Anchor>
-    <Abstract>Method to get the field of view of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>fov</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>af991332311a30e255145eb7d180170c2</Anchor>
-    <Abstract>Method to modify the current field of view of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>nearPlane</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a388f65bf17cbc9a273e9b480e4516eee</Anchor>
-    <Abstract>Method to get the current near plane of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>nearPlane</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a3307e1273a127e1a6eb09e947cf9c49e</Anchor>
-    <Abstract>Method to set the near plane of the camera Note: This will modify projection and view-projection matr...</Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>farPlane</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>afb250869ba2bf7a392ab4dae22542373</Anchor>
-    <Abstract>Method to get and set the far plane of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>farPlane</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a01fa83e322eb997561e28a05c567bb2c</Anchor>
-    <Abstract>Method to set the near plane of the camera Note: This will modify projection and view-projection matr...</Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>pivot</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aa0dc315155c83651e68685e9f54d82e5</Anchor>
-    <Abstract>Method to get the actual pivot pin of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>radius</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a8c18c3d4199a08a93f02031ca4008ee4</Anchor>
-    <Abstract>Method to get the actual distance between the camera and the pivot positions. </Abstract>
+    <Anchor>a9ccb702eb107da3cd70913e936a9d959</Anchor>
+    <Abstract>Method to start or change the camera zeqSession. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>
@@ -302,18 +203,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>orthoMatrix</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a7c9c644796f089ea003a8abf40c7279e</Anchor>
-    <Abstract>Method to get the pointer to ortho-projection matrix of the camera vectorized in columns. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>viewMatrix</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -326,159 +215,165 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>viewProjectionMatrix</Name>
+      <Name>projectionViewMatrix</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a75b39e91a61eb8d44b70c9ab4e64fac8</Anchor>
+    <Anchor>a6b940cdb827ea5b1aa2c85da1c820f9c</Anchor>
     <Abstract>Method to get the pointer to view-projection matrix of the camera vectorized in columns. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>position</Name>
+      <Name>_f</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a2a0b342ca3460d6f7a3dc301c30e3ee3</Anchor>
-    <Abstract>Method to get the pointer to the camera position vectorized. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>aeaf8135126ff063fd90a8710300c70d5</Anchor>
+    <Abstract>Factor to calculate the camera projection matrix based on the camera far plane, near plane...</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>ratio</Name>
+      <Name>_fov</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a48560df1b716ce742c4ad365ba4e32e2</Anchor>
-    <Abstract>Method to set the camera projection ratio. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>a4e954b9f6ba2041e46077619b79fcc8c</Anchor>
+    <Abstract>Camera fild of view. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>pivot</Name>
+      <Name>_ratio</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a986f5e16c45f871e0b6e431ad5a5dd08</Anchor>
-    <Abstract>Method to set the camera pivot pin. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>a7eef02742642b3ef7f175fa0e51c1e31</Anchor>
+    <Abstract>Camera ratio. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>radius</Name>
+      <Name>_nearPlane</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a6f0f7218403107053b49b757ccdbf7ba</Anchor>
-    <Abstract>Method to set the distance between the camera and the pivot pin. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>a2fd847c5d84f9c54e9aa7c2013aeb105</Anchor>
+    <Abstract>Camera near plane. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>rotation</Name>
+      <Name>_farPlane</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aa16cad32f1d54ea4434454872ca6d7c0</Anchor>
-    <Abstract>Method to set the rotation of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>aa27ef306620aebcb9250f113736af0d3</Anchor>
+    <Abstract>Camera far plane. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>targetPivot</Name>
+      <Name>_projectionMatrix</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a5a037acdf54e6846b13011557feead91</Anchor>
-    <Abstract>Method to set the target pivot of the camera. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>ae30fbc701aed0bc995648aa1c0690dea</Anchor>
+    <Abstract>Projection matrix. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>targetRadius</Name>
+      <Name>_isProjMatClean</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a43648c1d3c5463e74322560a09d7f24f</Anchor>
-    <Abstract>Method to set the target camera distance between the camera and the pivot pin. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>ae5e8a749b6aabe85c4e019c3803ab913</Anchor>
+    <Abstract>Bool to check the clean state of projection matrix. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>targetPivotRadius</Name>
+      <Name>_viewMatrix</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a4091520144ee870b6072f4cae9c8de6f</Anchor>
-    <Abstract>Method to set the target pivot pin a nd the target camera distance between the camera and this pivot ...</Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>a76e74f8b3d8619bfab16af6342004ecb</Anchor>
+    <Abstract>View matrix. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>animDuration</Name>
+      <Name>_projectionViewMatrix</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a9a610a3241245a243e854f1bfe919a6a</Anchor>
-    <Abstract>Method to set the anim duration of the camera movement from actual pivot and radius to the target piv...</Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>ae2adb6a4210287d45d9256482be0dc7e</Anchor>
+    <Abstract>Projection view matrix. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setWindowSize</Name>
+      <Name>_enableZeqConnChanges</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a6e29daf98854d4d2383a3756b79d9505</Anchor>
-    <Abstract>Method to set window size. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>a8465c8de8dbda78ee6ca66f4d37f68e3</Anchor>
+    <Abstract>Bool to enable zeq changes in view matrix. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>width</Name>
+      <Name>_zeqConnection</Name>
       <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
+      <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a2c2de4ac3e7183f7f7351c2c1e99158c</Anchor>
-    <Abstract>Method to get window width size. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Anchor>af4871c24ec22d285f75a970e585f3b9d</Anchor>
+    <Abstract>State of the zeq connection: 1 activated, 0 desactivated. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>height</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>reto::Camera</Scope>
+      <Name>reto::CameraAnimation</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::CameraAnimation</Scope>
     </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>abc884422e36d921e5aec45d593efd3ca</Anchor>
-    <Abstract>Method to get window height size. </Abstract>
-    <DeclaredIn>Camera.h</DeclaredIn>
+    <Path>classreto_1_1_camera_animation.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::FreeCameraController</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::FreeCameraController</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_free_camera_controller.html</Path>
+    <Abstract>Class to control orbtial camera. </Abstract>
+    <DeclaredIn>FreeCameraController.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::KeyCamera</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::KeyCamera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_key_camera.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -591,6 +486,17 @@
     <Anchor>abc293e587f4a87476de56ee26eddc272</Anchor>
     <Abstract>Load new obj file. </Abstract>
     <DeclaredIn>ObjParser.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::OrbitalCameraController</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::OrbitalCameraController</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_orbital_camera_controller.html</Path>
+    <Abstract>Class to control orbtial camera. </Abstract>
+    <DeclaredIn>OrbitalCameraController.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>

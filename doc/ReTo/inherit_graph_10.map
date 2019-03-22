@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classreto_1_1_version.html" title="Information about the current ReTo version. " alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" href="$classreto_1_1_texture.html" title="Abstract class to manage texture. " alt="" coords="5,81,108,108"/>
+<area shape="rect" id="node2" href="$classreto_1_1_texture1_d.html" title="Class to manage 1D textures. " alt="" coords="173,5,293,32"/>
+<area shape="rect" id="node3" href="$classreto_1_1_texture2_d.html" title="Class to manage 2D textures. " alt="" coords="173,56,293,83"/>
+<area shape="rect" id="node4" href="$classreto_1_1_texture2_d_array.html" title="Class to manage 2D array textures. " alt="" coords="156,107,311,133"/>
+<area shape="rect" id="node5" href="$classreto_1_1_texture3_d.html" title="Class to manage 3D textures. " alt="" coords="173,157,293,184"/>
 </map>

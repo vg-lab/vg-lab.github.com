@@ -107,6 +107,9 @@ $(document).ready(function(){initNavTree('classreto_1_1_camera.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classreto_1_1_camera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">reto::Camera Class Reference</div>  </div>
@@ -129,103 +132,110 @@ $(document).ready(function(){initNavTree('classreto_1_1_camera.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa6b27345edc1f88cc7482c895a2f2768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa6b27345edc1f88cc7482c895a2f2768">Camera</a> (float <a class="el" href="classreto_1_1_camera.html#a8f2556a424b4f3f7a3de850294700e7c">fov</a>=45.0f, float ratio=((float) 16)/9, float nearPlane=0.1f, float farPlane=10000.0f, Eigen::Vector3f pivot=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float radius=1000.0f, float yaw=0.0f, float pitch=0.0f)</td></tr>
-<tr class="memdesc:aa6b27345edc1f88cc7482c895a2f2768"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> constructor.  <a href="#aa6b27345edc1f88cc7482c895a2f2768">More...</a><br /></td></tr>
-<tr class="separator:aa6b27345edc1f88cc7482c895a2f2768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c885d5f53bc01f67f137c6bd7867ace"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a5c885d5f53bc01f67f137c6bd7867ace">Camera</a> (float fov_=45.0f, float ratio_=16.0f/9, float nearPlane_=0.1f, float farPlane_=10000.0f)</td></tr>
+<tr class="memdesc:a5c885d5f53bc01f67f137c6bd7867ace"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> constructor.  <a href="#a5c885d5f53bc01f67f137c6bd7867ace">More...</a><br /></td></tr>
+<tr class="separator:a5c885d5f53bc01f67f137c6bd7867ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef323db85f8f711df4717d896f637ef5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aef323db85f8f711df4717d896f637ef5">Camera</a> (const std::string &amp;session_, float fov_=45.0f, float ratio_=16.0f/9, float nearPlane_=0.1f, float farPlane_=10000.0f)</td></tr>
+<tr class="memdesc:aef323db85f8f711df4717d896f637ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> constructor.  <a href="#aef323db85f8f711df4717d896f637ef5">More...</a><br /></td></tr>
+<tr class="separator:aef323db85f8f711df4717d896f637ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c8e04892dc269450756820b120a6d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22c8e04892dc269450756820b120a6d1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a22c8e04892dc269450756820b120a6d1">~Camera</a> (void)</td></tr>
 <tr class="memdesc:a22c8e04892dc269450756820b120a6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:a22c8e04892dc269450756820b120a6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a65c41440618908b19e6f0ad10bd38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#ad7a65c41440618908b19e6f0ad10bd38">localTranslation</a> (Eigen::Vector3f increment_)</td></tr>
-<tr class="memdesc:ad7a65c41440618908b19e6f0ad10bd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to translate the camera from the actual position.  <a href="#ad7a65c41440618908b19e6f0ad10bd38">More...</a><br /></td></tr>
-<tr class="separator:ad7a65c41440618908b19e6f0ad10bd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874b1636a877fb113dd90c62ed36e8de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a874b1636a877fb113dd90c62ed36e8de">localRotation</a> (const float yaw, const float pitch)</td></tr>
-<tr class="memdesc:a874b1636a877fb113dd90c62ed36e8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to rotate the camera from the actual rotation.  <a href="#a874b1636a877fb113dd90c62ed36e8de">More...</a><br /></td></tr>
-<tr class="separator:a874b1636a877fb113dd90c62ed36e8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a207744a4f6a95d4ed239222663c5e4a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a207744a4f6a95d4ed239222663c5e4a0">anim</a> (void)</td></tr>
-<tr class="memdesc:a207744a4f6a95d4ed239222663c5e4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to if there is a target pivot move the camera to this target pivot.  <a href="#a207744a4f6a95d4ed239222663c5e4a0">More...</a><br /></td></tr>
-<tr class="separator:a207744a4f6a95d4ed239222663c5e4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2556a424b4f3f7a3de850294700e7c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8f2556a424b4f3f7a3de850294700e7c">fov</a> (void) const </td></tr>
-<tr class="memdesc:a8f2556a424b4f3f7a3de850294700e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the field of view of the camera.  <a href="#a8f2556a424b4f3f7a3de850294700e7c">More...</a><br /></td></tr>
-<tr class="separator:a8f2556a424b4f3f7a3de850294700e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af991332311a30e255145eb7d180170c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#af991332311a30e255145eb7d180170c2">fov</a> (float fieldOfView)</td></tr>
-<tr class="memdesc:af991332311a30e255145eb7d180170c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to modify the current field of view of the camera.  <a href="#af991332311a30e255145eb7d180170c2">More...</a><br /></td></tr>
-<tr class="separator:af991332311a30e255145eb7d180170c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388f65bf17cbc9a273e9b480e4516eee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a388f65bf17cbc9a273e9b480e4516eee">nearPlane</a> (void) const </td></tr>
-<tr class="memdesc:a388f65bf17cbc9a273e9b480e4516eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the current near plane of the camera.  <a href="#a388f65bf17cbc9a273e9b480e4516eee">More...</a><br /></td></tr>
-<tr class="separator:a388f65bf17cbc9a273e9b480e4516eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3307e1273a127e1a6eb09e947cf9c49e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a3307e1273a127e1a6eb09e947cf9c49e">nearPlane</a> (float near)</td></tr>
-<tr class="memdesc:a3307e1273a127e1a6eb09e947cf9c49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the near plane of the camera Note: This will modify projection and view-projection matrices.  <a href="#a3307e1273a127e1a6eb09e947cf9c49e">More...</a><br /></td></tr>
-<tr class="separator:a3307e1273a127e1a6eb09e947cf9c49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb250869ba2bf7a392ab4dae22542373"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#afb250869ba2bf7a392ab4dae22542373">farPlane</a> (void) const </td></tr>
-<tr class="memdesc:afb250869ba2bf7a392ab4dae22542373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get and set the far plane of the camera.  <a href="#afb250869ba2bf7a392ab4dae22542373">More...</a><br /></td></tr>
-<tr class="separator:afb250869ba2bf7a392ab4dae22542373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01fa83e322eb997561e28a05c567bb2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a01fa83e322eb997561e28a05c567bb2c">farPlane</a> (float far)</td></tr>
-<tr class="memdesc:a01fa83e322eb997561e28a05c567bb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the near plane of the camera Note: This will modify projection and view-projection matrices.  <a href="#a01fa83e322eb997561e28a05c567bb2c">More...</a><br /></td></tr>
-<tr class="separator:a01fa83e322eb997561e28a05c567bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0dc315155c83651e68685e9f54d82e5"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa0dc315155c83651e68685e9f54d82e5">pivot</a> (void)</td></tr>
-<tr class="memdesc:aa0dc315155c83651e68685e9f54d82e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the actual pivot pin of the camera.  <a href="#aa0dc315155c83651e68685e9f54d82e5">More...</a><br /></td></tr>
-<tr class="separator:aa0dc315155c83651e68685e9f54d82e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c18c3d4199a08a93f02031ca4008ee4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8c18c3d4199a08a93f02031ca4008ee4">radius</a> (void)</td></tr>
-<tr class="memdesc:a8c18c3d4199a08a93f02031ca4008ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the actual distance between the camera and the pivot positions.  <a href="#a8c18c3d4199a08a93f02031ca4008ee4">More...</a><br /></td></tr>
-<tr class="separator:a8c18c3d4199a08a93f02031ca4008ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccb702eb107da3cd70913e936a9d959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a9ccb702eb107da3cd70913e936a9d959">setZeqSession</a> (const std::string &amp;session_)</td></tr>
+<tr class="memdesc:a9ccb702eb107da3cd70913e936a9d959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to start or change the camera zeqSession.  <a href="#a9ccb702eb107da3cd70913e936a9d959">More...</a><br /></td></tr>
+<tr class="separator:a9ccb702eb107da3cd70913e936a9d959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65eb263a6c430f317fc3be6b12222e"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8c65eb263a6c430f317fc3be6b12222e">projectionMatrix</a> (void)</td></tr>
 <tr class="memdesc:a8c65eb263a6c430f317fc3be6b12222e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to projection matrix of the camera vectorized in columns.  <a href="#a8c65eb263a6c430f317fc3be6b12222e">More...</a><br /></td></tr>
 <tr class="separator:a8c65eb263a6c430f317fc3be6b12222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9c644796f089ea003a8abf40c7279e"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a7c9c644796f089ea003a8abf40c7279e">orthoMatrix</a> (void)</td></tr>
-<tr class="memdesc:a7c9c644796f089ea003a8abf40c7279e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to ortho-projection matrix of the camera vectorized in columns.  <a href="#a7c9c644796f089ea003a8abf40c7279e">More...</a><br /></td></tr>
-<tr class="separator:a7c9c644796f089ea003a8abf40c7279e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af04acafea51d165cd9ba48eefdc5687f"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#af04acafea51d165cd9ba48eefdc5687f">viewMatrix</a> (void)</td></tr>
 <tr class="memdesc:af04acafea51d165cd9ba48eefdc5687f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to view matrix of the camera vectorized in columns.  <a href="#af04acafea51d165cd9ba48eefdc5687f">More...</a><br /></td></tr>
 <tr class="separator:af04acafea51d165cd9ba48eefdc5687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a75b39e91a61eb8d44b70c9ab4e64fac8">viewProjectionMatrix</a> (void)</td></tr>
-<tr class="memdesc:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to view-projection matrix of the camera vectorized in columns.  <a href="#a75b39e91a61eb8d44b70c9ab4e64fac8">More...</a><br /></td></tr>
-<tr class="separator:a75b39e91a61eb8d44b70c9ab4e64fac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a0b342ca3460d6f7a3dc301c30e3ee3"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a2a0b342ca3460d6f7a3dc301c30e3ee3">position</a> (void)</td></tr>
-<tr class="memdesc:a2a0b342ca3460d6f7a3dc301c30e3ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to the camera position vectorized.  <a href="#a2a0b342ca3460d6f7a3dc301c30e3ee3">More...</a><br /></td></tr>
-<tr class="separator:a2a0b342ca3460d6f7a3dc301c30e3ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48560df1b716ce742c4ad365ba4e32e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a48560df1b716ce742c4ad365ba4e32e2">ratio</a> (float ratio)</td></tr>
-<tr class="memdesc:a48560df1b716ce742c4ad365ba4e32e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the camera projection ratio.  <a href="#a48560df1b716ce742c4ad365ba4e32e2">More...</a><br /></td></tr>
-<tr class="separator:a48560df1b716ce742c4ad365ba4e32e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986f5e16c45f871e0b6e431ad5a5dd08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a986f5e16c45f871e0b6e431ad5a5dd08">pivot</a> (Eigen::Vector3f pivot)</td></tr>
-<tr class="memdesc:a986f5e16c45f871e0b6e431ad5a5dd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the camera pivot pin.  <a href="#a986f5e16c45f871e0b6e431ad5a5dd08">More...</a><br /></td></tr>
-<tr class="separator:a986f5e16c45f871e0b6e431ad5a5dd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0f7218403107053b49b757ccdbf7ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a6f0f7218403107053b49b757ccdbf7ba">radius</a> (const float radius)</td></tr>
-<tr class="memdesc:a6f0f7218403107053b49b757ccdbf7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the distance between the camera and the pivot pin.  <a href="#a6f0f7218403107053b49b757ccdbf7ba">More...</a><br /></td></tr>
-<tr class="separator:a6f0f7218403107053b49b757ccdbf7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa16cad32f1d54ea4434454872ca6d7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa16cad32f1d54ea4434454872ca6d7c0">rotation</a> (const float yaw, const float pitch)</td></tr>
-<tr class="memdesc:aa16cad32f1d54ea4434454872ca6d7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the rotation of the camera.  <a href="#aa16cad32f1d54ea4434454872ca6d7c0">More...</a><br /></td></tr>
-<tr class="separator:aa16cad32f1d54ea4434454872ca6d7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a037acdf54e6846b13011557feead91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a5a037acdf54e6846b13011557feead91">targetPivot</a> (Eigen::Vector3f targetPivot)</td></tr>
-<tr class="memdesc:a5a037acdf54e6846b13011557feead91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the target pivot of the camera.  <a href="#a5a037acdf54e6846b13011557feead91">More...</a><br /></td></tr>
-<tr class="separator:a5a037acdf54e6846b13011557feead91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43648c1d3c5463e74322560a09d7f24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a43648c1d3c5463e74322560a09d7f24f">targetRadius</a> (const float targetRadius)</td></tr>
-<tr class="memdesc:a43648c1d3c5463e74322560a09d7f24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the target camera distance between the camera and the pivot pin.  <a href="#a43648c1d3c5463e74322560a09d7f24f">More...</a><br /></td></tr>
-<tr class="separator:a43648c1d3c5463e74322560a09d7f24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4091520144ee870b6072f4cae9c8de6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a4091520144ee870b6072f4cae9c8de6f">targetPivotRadius</a> (Eigen::Vector3f <a class="el" href="classreto_1_1_camera.html#a5a037acdf54e6846b13011557feead91">targetPivot</a>, const float <a class="el" href="classreto_1_1_camera.html#a43648c1d3c5463e74322560a09d7f24f">targetRadius</a>)</td></tr>
-<tr class="memdesc:a4091520144ee870b6072f4cae9c8de6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the target pivot pin a nd the target camera distance between the camera and this pivot pin.  <a href="#a4091520144ee870b6072f4cae9c8de6f">More...</a><br /></td></tr>
-<tr class="separator:a4091520144ee870b6072f4cae9c8de6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a610a3241245a243e854f1bfe919a6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a610a3241245a243e854f1bfe919a6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a9a610a3241245a243e854f1bfe919a6a">animDuration</a> (const float animDuration)</td></tr>
-<tr class="memdesc:a9a610a3241245a243e854f1bfe919a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the anim duration of the camera movement from actual pivot and radius to the target pivot and radius. <br /></td></tr>
-<tr class="separator:a9a610a3241245a243e854f1bfe919a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e29daf98854d4d2383a3756b79d9505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a6e29daf98854d4d2383a3756b79d9505">setWindowSize</a> (const int <a class="el" href="classreto_1_1_camera.html#a2c2de4ac3e7183f7f7351c2c1e99158c">width</a>, const int <a class="el" href="classreto_1_1_camera.html#abc884422e36d921e5aec45d593efd3ca">height</a>)</td></tr>
-<tr class="memdesc:a6e29daf98854d4d2383a3756b79d9505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set window size.  <a href="#a6e29daf98854d4d2383a3756b79d9505">More...</a><br /></td></tr>
-<tr class="separator:a6e29daf98854d4d2383a3756b79d9505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2de4ac3e7183f7f7351c2c1e99158c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a2c2de4ac3e7183f7f7351c2c1e99158c">width</a> (void)</td></tr>
-<tr class="memdesc:a2c2de4ac3e7183f7f7351c2c1e99158c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get window width size.  <a href="#a2c2de4ac3e7183f7f7351c2c1e99158c">More...</a><br /></td></tr>
-<tr class="separator:a2c2de4ac3e7183f7f7351c2c1e99158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc884422e36d921e5aec45d593efd3ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#abc884422e36d921e5aec45d593efd3ca">height</a> (void)</td></tr>
-<tr class="memdesc:abc884422e36d921e5aec45d593efd3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get window height size.  <a href="#abc884422e36d921e5aec45d593efd3ca">More...</a><br /></td></tr>
-<tr class="separator:abc884422e36d921e5aec45d593efd3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b940cdb827ea5b1aa2c85da1c820f9c"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a6b940cdb827ea5b1aa2c85da1c820f9c">projectionViewMatrix</a> (void)</td></tr>
+<tr class="memdesc:a6b940cdb827ea5b1aa2c85da1c820f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the pointer to view-projection matrix of the camera vectorized in columns.  <a href="#a6b940cdb827ea5b1aa2c85da1c820f9c">More...</a><br /></td></tr>
+<tr class="separator:a6b940cdb827ea5b1aa2c85da1c820f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad08213199360fc1372c0b1d44ef64ffe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad08213199360fc1372c0b1d44ef64ffe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_setFov</b> (float fov_)</td></tr>
+<tr class="separator:ad08213199360fc1372c0b1d44ef64ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de2e51c99f602030a0b1f45acdd6229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6de2e51c99f602030a0b1f45acdd6229"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_setRatio</b> (float ratio_)</td></tr>
+<tr class="separator:a6de2e51c99f602030a0b1f45acdd6229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231fc8a0b4c10a1de2e401b4d13da995"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a231fc8a0b4c10a1de2e401b4d13da995"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_setNearPlane</b> (float nearPlane_)</td></tr>
+<tr class="separator:a231fc8a0b4c10a1de2e401b4d13da995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72b1b1b99380e0a0ed90386f9c1ecaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa72b1b1b99380e0a0ed90386f9c1ecaa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_setFarPlane</b> (float farPlane_)</td></tr>
+<tr class="separator:aa72b1b1b99380e0a0ed90386f9c1ecaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5339d89f586cb3503dcd979e679fbf90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5339d89f586cb3503dcd979e679fbf90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_buildProjectionMatrix</b> (void)</td></tr>
+<tr class="separator:a5339d89f586cb3503dcd979e679fbf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3e4404894fc95d9593e37c50dae289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a3e4404894fc95d9593e37c50dae289"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_setEnableZeqConnChanges</b> (bool enableZeqConnChanges_)</td></tr>
+<tr class="separator:a8a3e4404894fc95d9593e37c50dae289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aeaf8135126ff063fd90a8710300c70d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf8135126ff063fd90a8710300c70d5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aeaf8135126ff063fd90a8710300c70d5">_f</a></td></tr>
+<tr class="memdesc:aeaf8135126ff063fd90a8710300c70d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factor to calculate the camera projection matrix based on the camera far plane, near plane, field of view and ratio. <br /></td></tr>
+<tr class="separator:aeaf8135126ff063fd90a8710300c70d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e954b9f6ba2041e46077619b79fcc8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e954b9f6ba2041e46077619b79fcc8c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a4e954b9f6ba2041e46077619b79fcc8c">_fov</a></td></tr>
+<tr class="memdesc:a4e954b9f6ba2041e46077619b79fcc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> fild of view. <br /></td></tr>
+<tr class="separator:a4e954b9f6ba2041e46077619b79fcc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eef02742642b3ef7f175fa0e51c1e31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7eef02742642b3ef7f175fa0e51c1e31"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a7eef02742642b3ef7f175fa0e51c1e31">_ratio</a></td></tr>
+<tr class="memdesc:a7eef02742642b3ef7f175fa0e51c1e31"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> ratio. <br /></td></tr>
+<tr class="separator:a7eef02742642b3ef7f175fa0e51c1e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd847c5d84f9c54e9aa7c2013aeb105"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fd847c5d84f9c54e9aa7c2013aeb105"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a2fd847c5d84f9c54e9aa7c2013aeb105">_nearPlane</a></td></tr>
+<tr class="memdesc:a2fd847c5d84f9c54e9aa7c2013aeb105"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> near plane. <br /></td></tr>
+<tr class="separator:a2fd847c5d84f9c54e9aa7c2013aeb105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27ef306620aebcb9250f113736af0d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa27ef306620aebcb9250f113736af0d3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#aa27ef306620aebcb9250f113736af0d3">_farPlane</a></td></tr>
+<tr class="memdesc:aa27ef306620aebcb9250f113736af0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> far plane. <br /></td></tr>
+<tr class="separator:aa27ef306620aebcb9250f113736af0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30fbc701aed0bc995648aa1c0690dea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae30fbc701aed0bc995648aa1c0690dea"></a>
+Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#ae30fbc701aed0bc995648aa1c0690dea">_projectionMatrix</a></td></tr>
+<tr class="memdesc:ae30fbc701aed0bc995648aa1c0690dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projection matrix. <br /></td></tr>
+<tr class="separator:ae30fbc701aed0bc995648aa1c0690dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e8a749b6aabe85c4e019c3803ab913"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5e8a749b6aabe85c4e019c3803ab913"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#ae5e8a749b6aabe85c4e019c3803ab913">_isProjMatClean</a></td></tr>
+<tr class="memdesc:ae5e8a749b6aabe85c4e019c3803ab913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bool to check the clean state of projection matrix. <br /></td></tr>
+<tr class="separator:ae5e8a749b6aabe85c4e019c3803ab913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e74f8b3d8619bfab16af6342004ecb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76e74f8b3d8619bfab16af6342004ecb"></a>
+Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a76e74f8b3d8619bfab16af6342004ecb">_viewMatrix</a></td></tr>
+<tr class="memdesc:a76e74f8b3d8619bfab16af6342004ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">View matrix. <br /></td></tr>
+<tr class="separator:a76e74f8b3d8619bfab16af6342004ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2adb6a4210287d45d9256482be0dc7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2adb6a4210287d45d9256482be0dc7e"></a>
+Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#ae2adb6a4210287d45d9256482be0dc7e">_projectionViewMatrix</a></td></tr>
+<tr class="memdesc:ae2adb6a4210287d45d9256482be0dc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projection view matrix. <br /></td></tr>
+<tr class="separator:ae2adb6a4210287d45d9256482be0dc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8465c8de8dbda78ee6ca66f4d37f68e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8465c8de8dbda78ee6ca66f4d37f68e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#a8465c8de8dbda78ee6ca66f4d37f68e3">_enableZeqConnChanges</a></td></tr>
+<tr class="memdesc:a8465c8de8dbda78ee6ca66f4d37f68e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bool to enable zeq changes in view matrix. <br /></td></tr>
+<tr class="separator:a8465c8de8dbda78ee6ca66f4d37f68e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4871c24ec22d285f75a970e585f3b9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4871c24ec22d285f75a970e585f3b9d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_camera.html#af4871c24ec22d285f75a970e585f3b9d">_zeqConnection</a></td></tr>
+<tr class="memdesc:af4871c24ec22d285f75a970e585f3b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the zeq connection: 1 activated, 0 desactivated. <br /></td></tr>
+<tr class="separator:af4871c24ec22d285f75a970e585f3b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a226deefcc81c61788d5d2c3853cfc033"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a226deefcc81c61788d5d2c3853cfc033"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractCameraController</b></td></tr>
+<tr class="separator:a226deefcc81c61788d5d2c3853cfc033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to manage camera. </p>
-<p>This class manage the camera: allows to move, rotate, make zoom, anim and automatically synchronize the camera with other applications using of ZeroEQ </p>
+<p>This class manage the camera: allows synchronize the camera with other applications using of ZeroEQ </p>
 
-<p>Definition at line <a class="el" href="_camera_8h_source.html#l00061">61</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p>Definition at line <a class="el" href="_camera_8h_source.html#l00062">62</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa6b27345edc1f88cc7482c895a2f2768"></a>
+<a class="anchor" id="a5c885d5f53bc01f67f137c6bd7867ace"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -233,49 +243,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="memname">reto::Camera::Camera </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>fov</em> = <code>45.0f</code>, </td>
+          <td class="paramname"><em>fov_</em> = <code>45.0f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>ratio</em> = <code>((float)&#160;16)/9</code>, </td>
+          <td class="paramname"><em>ratio_</em> = <code>16.0f/9</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>nearPlane</em> = <code>0.1f</code>, </td>
+          <td class="paramname"><em>nearPlane_</em> = <code>0.1f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>farPlane</em> = <code>10000.0f</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::Vector3f&#160;</td>
-          <td class="paramname"><em>pivot</em> = <code>Eigen::Vector3f(0.0f,&#160;0.0f,&#160;0.0f)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>radius</em> = <code>1000.0f</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>yaw</em> = <code>0.0f</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>pitch</em> = <code>0.0f</code>&#160;</td>
+          <td class="paramname"><em>farPlane_</em> = <code>10000.0f</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,156 +278,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">ratio</td><td>camera ratio </td></tr>
     <tr><td class="paramname">nearPlane</td><td>camera near plane </td></tr>
     <tr><td class="paramname">farPlane</td><td>camera far plane </td></tr>
-    <tr><td class="paramname">pivot</td><td>camera rotation pivot </td></tr>
-    <tr><td class="paramname">radius</td><td>camera distance from the camera pivot </td></tr>
-    <tr><td class="paramname">yaw</td><td>camera rotation of y exe </td></tr>
-    <tr><td class="paramname">pitch</td><td>camera rotation of x exe </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a207744a4f6a95d4ed239222663c5e4a0"></a>
+<a class="anchor" id="aef323db85f8f711df4717d896f637ef5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool reto::Camera::anim </td>
+          <td class="memname">reto::Camera::Camera </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to if there is a target pivot move the camera to this target pivot. </p>
-<dl class="section return"><dt>Returns</dt><dd>boolean that is 1 if the camera is actually moving </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afb250869ba2bf7a392ab4dae22542373"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float reto::Camera::farPlane </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get and set the far plane of the camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>the far plane attribute of the camera </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a01fa83e322eb997561e28a05c567bb2c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::farPlane </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>far</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the near plane of the camera Note: This will modify projection and view-projection matrices. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">near</td><td>new value for near plane </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8f2556a424b4f3f7a3de850294700e7c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float reto::Camera::fov </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get the field of view of the camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>float with the field of view of the camera </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af991332311a30e255145eb7d180170c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::fov </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>fieldOfView</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to modify the current field of view of the camera. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fieldOfView</td><td>new value for field of view Note: This will modify projection and view-projection matrices </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="abc884422e36d921e5aec45d593efd3ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int reto::Camera::height </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get window height size. </p>
-<dl class="section return"><dt>Returns</dt><dd>window height size </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a874b1636a877fb113dd90c62ed36e8de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::localRotation </td>
-          <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>yaw</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>session_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>pitch</em>&#160;</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fov_</em> = <code>45.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio_</em> = <code>16.0f/9</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>nearPlane_</em> = <code>0.1f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>farPlane_</em> = <code>10000.0f</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -451,165 +326,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Method to rotate the camera from the actual rotation. </p>
+<p><a class="el" href="classreto_1_1_camera.html" title="Class to manage camera. ">Camera</a> constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">yaw</td><td>camera rotation of y exe </td></tr>
-    <tr><td class="paramname">pitch</td><td>camera rotation of x exe </td></tr>
+    <tr><td class="paramname">session</td><td>ZeroEq session to synchronize the camera with other applications </td></tr>
+    <tr><td class="paramname">fov</td><td>camera field of view </td></tr>
+    <tr><td class="paramname">ratio</td><td>camera ratio </td></tr>
+    <tr><td class="paramname">nearPlane</td><td>camera near plane </td></tr>
+    <tr><td class="paramname">farPlan</td><td>camera far plane </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ad7a65c41440618908b19e6f0ad10bd38"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::localTranslation </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector3f&#160;</td>
-          <td class="paramname"><em>increment_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to translate the camera from the actual position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">increment_</td><td>camera translation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a388f65bf17cbc9a273e9b480e4516eee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float reto::Camera::nearPlane </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get the current near plane of the camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>float with the near plane distance from camera </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3307e1273a127e1a6eb09e947cf9c49e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::nearPlane </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>near</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the near plane of the camera Note: This will modify projection and view-projection matrices. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">near</td><td>new value for near plane </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7c9c644796f089ea003a8abf40c7279e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float* reto::Camera::orthoMatrix </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get the pointer to ortho-projection matrix of the camera vectorized in columns. </p>
-<dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized ortho-projection matrix of the camera </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa0dc315155c83651e68685e9f54d82e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Eigen::Vector3f reto::Camera::pivot </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get the actual pivot pin of the camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>Eige::Vector3f with the pivot pin of the camera </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a986f5e16c45f871e0b6e431ad5a5dd08"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::pivot </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector3f&#160;</td>
-          <td class="paramname"><em>pivot</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the camera pivot pin. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pivot</td><td>new camera pivot pin </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a2a0b342ca3460d6f7a3dc301c30e3ee3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float* reto::Camera::position </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get the pointer to the camera position vectorized. </p>
-<dl class="section return"><dt>Returns</dt><dd>pointer to float whit the vectorized camera position </dd></dl>
-
-</div>
-</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8c65eb263a6c430f317fc3be6b12222e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -629,12 +360,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a8c18c3d4199a08a93f02031ca4008ee4"></a>
+<a class="anchor" id="a6b940cdb827ea5b1aa2c85da1c820f9c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float reto::Camera::radius </td>
+          <td class="memname">float* reto::Camera::projectionViewMatrix </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -643,206 +374,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Method to get the actual distance between the camera and the pivot positions. </p>
-<p>This distance is the actual radius from camera's orbit over pivot. </p><dl class="section return"><dt>Returns</dt><dd>float with the distance between the camera and the pivot position. </dd></dl>
+<p>Method to get the pointer to view-projection matrix of the camera vectorized in columns. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized view-projection matrix of the camera </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a6f0f7218403107053b49b757ccdbf7ba"></a>
+<a class="anchor" id="a9ccb702eb107da3cd70913e936a9d959"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void reto::Camera::radius </td>
+          <td class="memname">void reto::Camera::setZeqSession </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>radius</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>session_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Method to set the distance between the camera and the pivot pin. </p>
+<p>Method to start or change the camera zeqSession. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">radius</td><td>distance between the camera and the pivot pin </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a48560df1b716ce742c4ad365ba4e32e2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::ratio </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>ratio</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the camera projection ratio. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ratio</td><td>camera projection ratio </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa16cad32f1d54ea4434454872ca6d7c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::rotation </td>
-          <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>yaw</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>pitch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the rotation of the camera. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">yaw</td><td>camera rotation of y exe </td></tr>
-    <tr><td class="paramname">pitch</td><td>camera rotation of x exe </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6e29daf98854d4d2383a3756b79d9505"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::setWindowSize </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set window size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>Window width </td></tr>
-    <tr><td class="paramname">height</td><td>Window height </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5a037acdf54e6846b13011557feead91"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::targetPivot </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector3f&#160;</td>
-          <td class="paramname"><em>targetPivot</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the target pivot of the camera. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">targetPivot</td><td>camera target pivot pin </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4091520144ee870b6072f4cae9c8de6f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::targetPivotRadius </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector3f&#160;</td>
-          <td class="paramname"><em>targetPivot</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>targetRadius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the target pivot pin a nd the target camera distance between the camera and this pivot pin. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">targetPivot</td><td>camera target pivot pin </td></tr>
-    <tr><td class="paramname">targetRadius</td><td>target camera distance between the camera and the pivot pin </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a43648c1d3c5463e74322560a09d7f24f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reto::Camera::targetRadius </td>
-          <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>targetRadius</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to set the target camera distance between the camera and the pivot pin. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">targetRadius</td><td>target camera distance between the camera and the pivot pin </td></tr>
+    <tr><td class="paramname">session</td><td>ZeroEq session to synchronize the camera with other applications </td></tr>
   </table>
   </dd>
 </dl>
@@ -868,44 +422,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a75b39e91a61eb8d44b70c9ab4e64fac8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float* reto::Camera::viewProjectionMatrix </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get the pointer to view-projection matrix of the camera vectorized in columns. </p>
-<dl class="section return"><dt>Returns</dt><dd>pointer to float whit the column vectorized view-projection matrix of the camera </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2c2de4ac3e7183f7f7351c2c1e99158c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int reto::Camera::width </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method to get window width size. </p>
-<dl class="section return"><dt>Returns</dt><dd>window width size </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_camera_8h_source.html">Camera.h</a></li>
 </ul>
@@ -915,7 +431,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>reto</b></li><li class="navelem"><a class="el" href="classreto_1_1_camera.html">Camera</a></li>
-    <li class="footer">Generated on Wed Feb 13 2019 10:23:40 for ReTo by
+    <li class="footer">Generated on Fri Mar 22 2019 12:49:17 for ReTo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

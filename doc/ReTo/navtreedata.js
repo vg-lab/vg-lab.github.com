@@ -25,7 +25,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"structreto_1_1_texture_config.html#a68f268a12fed55dc1781c0e1252c92f7"
+"classreto_1_1_texture.html#acf15339e043d030dea71df9d9c98f0ce"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,0 +1,3 @@
+<map id="reto::CameraAnimation" name="reto::CameraAnimation">
+<area shape="rect" id="node3" href="$classreto_1_1_key_camera.html" title="{reto::KeyCamera\n|# _time\l# _position\l# _rotation\l# _radius\l|+ KeyCamera()\l+ KeyCamera()\l+ ~KeyCamera()\l+ time()\l+ position()\l+ rotation()\l+ radius()\l# _rotMatrixFromAngles()\l}" alt="" coords="5,5,192,229"/>
+</map>

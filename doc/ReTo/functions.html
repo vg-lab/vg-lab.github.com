@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
-      <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
@@ -102,7 +101,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
       <li><a href="#index_v"><span>v</span></a></li>
-      <li><a href="#index_w"><span>w</span></a></li>
       <li class="current"><a href="#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -145,11 +143,44 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>_currentdt
 : <a class="el" href="classreto_1_1_spline.html#a4aaf4b09734a33af0ab4210d74f7443f">reto::Spline</a>
 </li>
+<li>_enableZeqConnChanges
+: <a class="el" href="classreto_1_1_camera.html#a8465c8de8dbda78ee6ca66f4d37f68e3">reto::Camera</a>
+</li>
+<li>_f
+: <a class="el" href="classreto_1_1_camera.html#aeaf8135126ff063fd90a8710300c70d5">reto::Camera</a>
+</li>
+<li>_farPlane
+: <a class="el" href="classreto_1_1_camera.html#aa27ef306620aebcb9250f113736af0d3">reto::Camera</a>
+</li>
+<li>_fov
+: <a class="el" href="classreto_1_1_camera.html#a4e954b9f6ba2041e46077619b79fcc8c">reto::Camera</a>
+</li>
+<li>_isProjMatClean
+: <a class="el" href="classreto_1_1_camera.html#ae5e8a749b6aabe85c4e019c3803ab913">reto::Camera</a>
+</li>
+<li>_nearPlane
+: <a class="el" href="classreto_1_1_camera.html#a2fd847c5d84f9c54e9aa7c2013aeb105">reto::Camera</a>
+</li>
 <li>_olddt
 : <a class="el" href="classreto_1_1_spline.html#a3f365d66eefc031e38128bc9250edf53">reto::Spline</a>
 </li>
 <li>_points
 : <a class="el" href="classreto_1_1_spline.html#a58f4f72ac4fd09fe3774abc7e2418915">reto::Spline</a>
+</li>
+<li>_projectionMatrix
+: <a class="el" href="classreto_1_1_camera.html#ae30fbc701aed0bc995648aa1c0690dea">reto::Camera</a>
+</li>
+<li>_projectionViewMatrix
+: <a class="el" href="classreto_1_1_camera.html#ae2adb6a4210287d45d9256482be0dc7e">reto::Camera</a>
+</li>
+<li>_ratio
+: <a class="el" href="classreto_1_1_camera.html#a7eef02742642b3ef7f175fa0e51c1e31">reto::Camera</a>
+</li>
+<li>_viewMatrix
+: <a class="el" href="classreto_1_1_camera.html#a76e74f8b3d8619bfab16af6342004ecb">reto::Camera</a>
+</li>
+<li>_zeqConnection
+: <a class="el" href="classreto_1_1_camera.html#af4871c24ec22d285f75a970e585f3b9d">reto::Camera</a>
 </li>
 </ul>
 
@@ -178,12 +209,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>angleBetweenPoints()
 : <a class="el" href="classreto_1_1_spline.html#a87fc1a5170cff03e5ad98a342fb90635">reto::Spline</a>
-</li>
-<li>anim()
-: <a class="el" href="classreto_1_1_camera.html#a207744a4f6a95d4ed239222663c5e4a0">reto::Camera</a>
-</li>
-<li>animDuration()
-: <a class="el" href="classreto_1_1_camera.html#a9a610a3241245a243e854f1bfe919a6a">reto::Camera</a>
 </li>
 <li>area()
 : <a class="el" href="classreto_1_1_picking_system.html#ade28acfad6f9e79d4d9017996b5ab354">reto::PickingSystem</a>
@@ -215,7 +240,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>Camera()
-: <a class="el" href="classreto_1_1_camera.html#aa6b27345edc1f88cc7482c895a2f2768">reto::Camera</a>
+: <a class="el" href="classreto_1_1_camera.html#a5c885d5f53bc01f67f137c6bd7867ace">reto::Camera</a>
 </li>
 <li>check()
 : <a class="el" href="classreto_1_1_version.html#a686d181dfc6e7da0fc7a9100655b55a6">reto::Version</a>
@@ -238,16 +263,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>evaluate()
 : <a class="el" href="classreto_1_1_spline.html#a58be5d7b5aafa5038499b8e4f3a8ebc6">reto::Spline</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
-<li>farPlane()
-: <a class="el" href="classreto_1_1_camera.html#afb250869ba2bf7a392ab4dae22542373">reto::Camera</a>
-</li>
-<li>fov()
-: <a class="el" href="classreto_1_1_camera.html#a8f2556a424b4f3f7a3de850294700e7c">reto::Camera</a>
 </li>
 </ul>
 
@@ -289,9 +304,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>handler()
 : <a class="el" href="classreto_1_1_texture.html#af008efdca65f3000b6cccf89f4947624">reto::Texture</a>
-</li>
-<li>height()
-: <a class="el" href="classreto_1_1_camera.html#abc884422e36d921e5aec45d593efd3ca">reto::Camera</a>
 </li>
 </ul>
 
@@ -340,19 +352,10 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>loadVertexShaderFromText()
 : <a class="el" href="classreto_1_1_shader_program.html#a9bee553fddd5de6211d18f1b5f95aa31">reto::ShaderProgram</a>
 </li>
-<li>localRotation()
-: <a class="el" href="classreto_1_1_camera.html#a874b1636a877fb113dd90c62ed36e8de">reto::Camera</a>
-</li>
-<li>localTranslation()
-: <a class="el" href="classreto_1_1_camera.html#ad7a65c41440618908b19e6f0ad10bd38">reto::Camera</a>
-</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
-<li>nearPlane()
-: <a class="el" href="classreto_1_1_camera.html#a388f65bf17cbc9a273e9b480e4516eee">reto::Camera</a>
-</li>
 <li>normals
 : <a class="el" href="structreto_1_1_model.html#ad4024090432335cf0e9541cbc369519d">reto::Model</a>
 </li>
@@ -369,9 +372,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>operator[]()
 : <a class="el" href="classreto_1_1_shader_program.html#aac0d4f5992677a93966e88a6e20d3bf7">reto::ShaderProgram</a>
 </li>
-<li>orthoMatrix()
-: <a class="el" href="classreto_1_1_camera.html#a7c9c644796f089ea003a8abf40c7279e">reto::Camera</a>
-</li>
 </ul>
 
 
@@ -379,28 +379,19 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>PickingSystem()
 : <a class="el" href="classreto_1_1_picking_system.html#ae06d7dd62c79c9c9652fad13befe8f9d">reto::PickingSystem</a>
 </li>
-<li>pivot()
-: <a class="el" href="classreto_1_1_camera.html#aa0dc315155c83651e68685e9f54d82e5">reto::Camera</a>
-</li>
-<li>position()
-: <a class="el" href="classreto_1_1_camera.html#a2a0b342ca3460d6f7a3dc301c30e3ee3">reto::Camera</a>
-</li>
 <li>program()
 : <a class="el" href="classreto_1_1_shader_program.html#abf977daae0860e0787ce47655a36845e">reto::ShaderProgram</a>
 </li>
 <li>projectionMatrix()
 : <a class="el" href="classreto_1_1_camera.html#a8c65eb263a6c430f317fc3be6b12222e">reto::Camera</a>
 </li>
+<li>projectionViewMatrix()
+: <a class="el" href="classreto_1_1_camera.html#a6b940cdb827ea5b1aa2c85da1c820f9c">reto::Camera</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
-<li>radius()
-: <a class="el" href="classreto_1_1_camera.html#a8c18c3d4199a08a93f02031ca4008ee4">reto::Camera</a>
-</li>
-<li>ratio()
-: <a class="el" href="classreto_1_1_camera.html#a48560df1b716ce742c4ad365ba4e32e2">reto::Camera</a>
-</li>
 <li>remove()
 : <a class="el" href="classreto_1_1_texture_manager.html#a1e00e2e34d8a709c7bfda71facb96d6c">reto::TextureManager</a>
 </li>
@@ -416,9 +407,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>resize()
 : <a class="el" href="classreto_1_1_texture2_d.html#aaed7925e2f93b797ee8c802f78093ffe">reto::Texture2D</a>
 , <a class="el" href="classreto_1_1_texture.html#a68d7eae31b329e9b44ef4dc346bb4f47">reto::Texture</a>
-</li>
-<li>rotation()
-: <a class="el" href="classreto_1_1_camera.html#aa16cad32f1d54ea4434454872ca6d7c0">reto::Camera</a>
 </li>
 </ul>
 
@@ -466,8 +454,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>sendUniformu()
 : <a class="el" href="classreto_1_1_shader_program.html#a324c88baecb6e3cb10e676a7cc1fbc17">reto::ShaderProgram</a>
 </li>
-<li>setWindowSize()
-: <a class="el" href="classreto_1_1_camera.html#a6e29daf98854d4d2383a3756b79d9505">reto::Camera</a>
+<li>setZeqSession()
+: <a class="el" href="classreto_1_1_camera.html#a9ccb702eb107da3cd70913e936a9d959">reto::Camera</a>
 </li>
 <li>Spline()
 : <a class="el" href="classreto_1_1_spline.html#a8c1f2d5d0c467de0a56c319968ccb9e4">reto::Spline</a>
@@ -484,15 +472,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>target()
 : <a class="el" href="classreto_1_1_texture.html#a41af21d730286952fae86a1a22c08cac">reto::Texture</a>
-</li>
-<li>targetPivot()
-: <a class="el" href="classreto_1_1_camera.html#a5a037acdf54e6846b13011557feead91">reto::Camera</a>
-</li>
-<li>targetPivotRadius()
-: <a class="el" href="classreto_1_1_camera.html#a4091520144ee870b6072f4cae9c8de6f">reto::Camera</a>
-</li>
-<li>targetRadius()
-: <a class="el" href="classreto_1_1_camera.html#a43648c1d3c5463e74322560a09d7f24f">reto::Camera</a>
 </li>
 <li>texCoords
 : <a class="el" href="structreto_1_1_model.html#a88b7d9056c81019c477af0dd2625d648">reto::Model</a>
@@ -533,16 +512,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>viewMatrix()
 : <a class="el" href="classreto_1_1_camera.html#af04acafea51d165cd9ba48eefdc5687f">reto::Camera</a>
 </li>
-<li>viewProjectionMatrix()
-: <a class="el" href="classreto_1_1_camera.html#a75b39e91a61eb8d44b70c9ab4e64fac8">reto::Camera</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
-<li>width()
-: <a class="el" href="classreto_1_1_camera.html#a2c2de4ac3e7183f7f7351c2c1e99158c">reto::Camera</a>
-</li>
 </ul>
 
 
@@ -556,7 +525,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 13 2019 10:23:40 for ReTo by
+    <li class="footer">Generated on Fri Mar 22 2019 12:49:17 for ReTo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

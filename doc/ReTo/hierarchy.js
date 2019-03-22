@@ -1,6 +1,12 @@
 var hierarchy =
 [
+    [ "reto::AbstractCameraController", "classreto_1_1_abstract_camera_controller.html", [
+      [ "reto::FreeCameraController", "classreto_1_1_free_camera_controller.html", null ],
+      [ "reto::OrbitalCameraController", "classreto_1_1_orbital_camera_controller.html", null ]
+    ] ],
     [ "reto::Camera", "classreto_1_1_camera.html", null ],
+    [ "reto::CameraAnimation", "classreto_1_1_camera_animation.html", null ],
+    [ "reto::KeyCamera", "classreto_1_1_key_camera.html", null ],
     [ "reto::Model", "structreto_1_1_model.html", null ],
     [ "reto::ObjParser", "classreto_1_1_obj_parser.html", null ],
     [ "reto::Pickable", "classreto_1_1_pickable.html", null ],
