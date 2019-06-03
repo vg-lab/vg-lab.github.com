@@ -8,6 +8,8 @@ var classfires_1_1_object =
     [ "deserialize", "classfires_1_1_object.html#ad235a866db5620c5512d4914a87c4175", null ],
     [ "getProperty", "classfires_1_1_object.html#a034219e22b4cc549cf208fe132aaaea1", null ],
     [ "getProperty", "classfires_1_1_object.html#a253f18d0038408aa3b36fb8647e9adc3", null ],
+    [ "getPropertyValue", "classfires_1_1_object.html#a0bcb6752b01ad9432275ffa4e66ead7a", null ],
+    [ "getPropertyValue", "classfires_1_1_object.html#a829b461138a00861ee8ea6410b3e96f4", null ],
     [ "hasProperty", "classfires_1_1_object.html#aa050d3263b40669371b72053a9765bd9", null ],
     [ "label", "classfires_1_1_object.html#ae675a4376978d7f994ecebb09c592967", null ],
     [ "label", "classfires_1_1_object.html#a4709ceca236d88b4cae49e5167819c4b", null ],

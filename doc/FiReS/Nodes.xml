@@ -729,6 +729,16 @@
                 <Anchor>a253f18d0038408aa3b36fb8647e9adc3</Anchor>
                </Node>
                <Node>
+                <Name>getPropertyValue</Name>
+                <Path>classfires_1_1_object.html</Path>
+                <Anchor>a0bcb6752b01ad9432275ffa4e66ead7a</Anchor>
+               </Node>
+               <Node>
+                <Name>getPropertyValue</Name>
+                <Path>classfires_1_1_object.html</Path>
+                <Anchor>a829b461138a00861ee8ea6410b3e96f4</Anchor>
+               </Node>
+               <Node>
                 <Name>hasProperty</Name>
                 <Path>classfires_1_1_object.html</Path>
                 <Anchor>aa050d3263b40669371b72053a9765bd9</Anchor>
