@@ -882,6 +882,42 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>generateStructureMesh</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>nlgenerator::MeshGenerator</Scope>
+    </TokenIdentifier>
+    <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+    <Anchor>a65cbf8152c3963ed0589e4d7827f1575</Anchor>
+    <Abstract>Static method that return a structure mesh generated from the given morphology. </Abstract>
+    <DeclaredIn>MeshGenerator.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>verticesToIndices</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>nlgenerator::MeshGenerator</Scope>
+    </TokenIdentifier>
+    <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+    <Anchor>abd49ea341a5c604dccc50630a8c7dee2</Anchor>
+    <Abstract>Static method that fill the node index to vertices indices structure. </Abstract>
+    <DeclaredIn>MeshGenerator.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>conformBuffer</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>nlgenerator::MeshGenerator</Scope>
+    </TokenIdentifier>
+    <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+    <Anchor>afc11f10bfbe88ab47dae38e7cb5ae4b4</Anchor>
+    <Abstract>Static method that fills the buffer with the given value for the vertices related to the given node i...</Abstract>
+    <DeclaredIn>MeshGenerator.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>nlgenerator::Quad</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -1372,18 +1408,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>cleanStoreStatus</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nlgeometry::Facet</Scope>
-    </TokenIdentifier>
-    <Path>classnlgeometry_1_1_facet.html</Path>
-    <Anchor>a17ae65234a419cf0c060f1c23d3f2a6c</Anchor>
-    <Abstract>Method that put the store status to nor stored for all the facet vertices. </Abstract>
-    <DeclaredIn>Facet.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>getIndicesAs</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -1465,6 +1489,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>lines</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>ac770cdc94336b683ff04799a39ff5d80</Anchor>
+    <Abstract>Method that return the mesh lines. </Abstract>
+    <DeclaredIn>Mesh.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>triangles</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -1489,6 +1525,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>verticesSize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>abfecd4d8244d1d014d129affe3cbe431</Anchor>
+    <Abstract>Method that return the uploaded vertices size. </Abstract>
+    <DeclaredIn>Mesh.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>aaBoundingBox</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -1496,7 +1544,7 @@
     </TokenIdentifier>
     <Path>classnlgeometry_1_1_mesh.html</Path>
     <Anchor>afcc001811ee823ab098c5bbc4a3e01dd</Anchor>
-    <Abstract>Method that return the returns the mesh axis aligned bounding box. </Abstract>
+    <Abstract>Method that returns the returns the mesh axis aligned bounding box. </Abstract>
     <DeclaredIn>Mesh.h</DeclaredIn>
   </Token>
   <Token>
@@ -1549,6 +1597,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>uploadBuffer</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>a6a4d6796141eaab83a57b5e151c7f768</Anchor>
+    <Abstract>Method that upload the geometric information of the mesh to the gpu. </Abstract>
+    <DeclaredIn>Mesh.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>computeBoundingBox</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -1569,6 +1629,18 @@
     <Path>classnlgeometry_1_1_mesh.html</Path>
     <Anchor>a6b6d7555e92249e208fe13957544c6d3</Anchor>
     <Abstract>Method that computes the normals of the mesh geometry. </Abstract>
+    <DeclaredIn>Mesh.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>renderLines</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>a17e4c4826285d98b4b32e122dfef4472</Anchor>
+    <Abstract>Method that render the mesh lines. </Abstract>
     <DeclaredIn>Mesh.h</DeclaredIn>
   </Token>
   <Token>
@@ -1617,6 +1689,17 @@
     <Path>classnlgeometry_1_1_mesh.html</Path>
     <Anchor>ac50d8855e4abe929bf0d071231b5132b</Anchor>
     <Abstract>Mesh vertices. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_lines</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>aaf6fb6b2b99d3da4c20bf8543cdff183</Anchor>
+    <Abstract>Mesh lines. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1675,6 +1758,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>_linesSize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>a5b32ff7da4ba80efc3255ed8d2e6b85f</Anchor>
+    <Abstract>Size of the mesh lines. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_trianglesSize</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -1697,6 +1791,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>_verticesSize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>a6db0ffa837f00c8d06bac014160b115a</Anchor>
+    <Abstract>Size of uploaded vertices. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_modelMatrix</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -1705,6 +1810,17 @@
     <Path>classnlgeometry_1_1_mesh.html</Path>
     <Anchor>a41d63f67174cc30717e01df37042c86b</Anchor>
     <Abstract>Model matrix of the mesh. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_format</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlgeometry::Mesh</Scope>
+    </TokenIdentifier>
+    <Path>classnlgeometry_1_1_mesh.html</Path>
+    <Anchor>afbdda14970678949f7ac519e4eaa7f0c</Anchor>
+    <Abstract>Attribs format in gpu. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -2067,18 +2183,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>cleanStoreStatus</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nlgeometry::Vertex</Scope>
-    </TokenIdentifier>
-    <Path>classnlgeometry_1_1_vertex.html</Path>
-    <Anchor>a24badab85264e3bbd83ccc7b1a5ffe54</Anchor>
-    <Abstract>Method that put store status to not stored. </Abstract>
-    <DeclaredIn>Vertex.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>_center</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -2153,17 +2257,6 @@
     <Path>classnlgeometry_1_1_vertex.html</Path>
     <Anchor>a434e36adf7f6ffe8ea290b0524655197</Anchor>
     <Abstract>Vertex uv coordinates. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_stored</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nlgeometry::Vertex</Scope>
-    </TokenIdentifier>
-    <Path>classnlgeometry_1_1_vertex.html</Path>
-    <Anchor>a4fafc7a4ea5554013ef59e53e88b0c4c</Anchor>
-    <Abstract>Vertex stored status. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -2906,18 +2999,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>cleanStoreStatus</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>nlgeometry::Vertex</Scope>
-    </TokenIdentifier>
-    <Path>classnlgeometry_1_1_vertex.html</Path>
-    <Anchor>a24badab85264e3bbd83ccc7b1a5ffe54</Anchor>
-    <Abstract>Method that put store status to not stored. </Abstract>
-    <DeclaredIn>Vertex.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>clone</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -2982,17 +3063,6 @@
     <Path>classnlgeometry_1_1_vertex.html</Path>
     <Anchor>a434e36adf7f6ffe8ea290b0524655197</Anchor>
     <Abstract>Vertex uv coordinates. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_stored</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>nlgeometry::Vertex</Scope>
-    </TokenIdentifier>
-    <Path>classnlgeometry_1_1_vertex.html</Path>
-    <Anchor>a4fafc7a4ea5554013ef59e53e88b0c4c</Anchor>
-    <Abstract>Vertex stored status. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3789,6 +3859,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>alpha</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a68aa8de403c950140d6ee132d4777e3d</Anchor>
+    <Abstract>Method that return the transparency factor. </Abstract>
+    <DeclaredIn>Renderer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>tessCriteria</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -3801,13 +3883,37 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>colorFunc</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a5bd62e041245d1765152fe62aa46505c</Anchor>
+    <Abstract>Method that return the type of color function. </Abstract>
+    <DeclaredIn>Renderer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>transparencyStatus</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a15537b549b478889aee381f74a38cc67</Anchor>
+    <Abstract>Method that return the transparency status. </Abstract>
+    <DeclaredIn>Renderer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>render</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>abcab4313ee2a708d01f28200ba19f305</Anchor>
+    <Anchor>a7cc1da7329f91cb5c1edadc745bb5bbc</Anchor>
     <Abstract>Method that renderize the given mesh. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>
@@ -3819,7 +3925,7 @@
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>aa7deb00f48957cb9a7d9f6305fab7aaa</Anchor>
+    <Anchor>a0b38c787244a150c35064678ded91625</Anchor>
     <Abstract>Method that renderize the given meshes. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>
@@ -3831,7 +3937,7 @@
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>a30aa96408cfb0f47f11993a462060f32</Anchor>
+    <Anchor>adad976f4706e85108d19062451a72d3f</Anchor>
     <Abstract>Method that renderize the given meshes. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>
@@ -3869,6 +3975,17 @@
     <Path>classnlrender_1_1_renderer.html</Path>
     <Anchor>a2a76e86b5c95609c42ef42b05d2c4c08</Anchor>
     <Abstract>Variable to determine if keep the OpenGL server status. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_programLines</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a5135ef01154b0d93410eec5f20ea66b1</Anchor>
+    <Abstract>Program to render lines. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3913,6 +4030,17 @@
     <Path>classnlrender_1_1_renderer.html</Path>
     <Anchor>a84f40c777e34f98b567c24faff65cff0</Anchor>
     <Abstract>Program to extract tessellated quads. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_programTransCompose</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>ac8d76d59510b28cdee631638e5443abc</Anchor>
+    <Abstract>Program to compose the transparency scene. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3971,6 +4099,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>_alpha</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a7464ce2c7abee8106058ba9f789f5ca6</Anchor>
+    <Abstract>Transparency factor. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_tessCriteria</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -3982,6 +4121,28 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>_colorFunc</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a5439c37b54c70bfdd519000ea71c268c</Anchor>
+    <Abstract>Type of render color function. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_transparencyStatus</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>ab3d9c92f5ac79ce4dabf975d776f6117</Anchor>
+    <Abstract>Status of transparency render. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>_tfo</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -3989,7 +4150,7 @@
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
     <Anchor>a151da8f9f097d9e044f0aba15276d8aa</Anchor>
-    <Abstract>Vertex array object indices to mesh extraction. </Abstract>
+    <Abstract>Vertex array object index to mesh extraction. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -4001,6 +4162,116 @@
     <Path>classnlrender_1_1_renderer.html</Path>
     <Anchor>a8174af3c9253f8baf3110f01063e1dda</Anchor>
     <Abstract>Vertex buffers object indices to mesh extraction. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_quadVao</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a13ff8a69b5553da6a2f229e2d10db04a</Anchor>
+    <Abstract>Vertex array object index to quad. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_transSystemInit</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a0c723510179e5318bbeeb8f995306e85</Anchor>
+    <Abstract>Variable to indicates if the transparency system is initialized. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_opaqueFbo</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a115548fcd89250578d5655bbe1082e54</Anchor>
+    <Abstract>FBO used in the transparency composition to save opaque objects. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_transFbo</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a30ff2805776b6ad42b60032e1c60f241</Anchor>
+    <Abstract>FBO used in the transparency composition to save transparent objects. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_opaqueTexture</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a65a9daf084c4c12fdc80b2ed341aab73</Anchor>
+    <Abstract>Texture to save the opaque objects color. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_accumTexture</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>ad5000fafeb28cf862d1eebc22d26f379</Anchor>
+    <Abstract>Texture to save the tranparent accumulated objects color. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_revealageTexture</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>af9f6239a01f87b778cc30dff4b758413</Anchor>
+    <Abstract>Texture to save the traparent revealage objects color. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_depthTexture</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a7fb25b324fc30ada70b90df48bdc818f</Anchor>
+    <Abstract>Texture to save the opaque objects depth. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_transSystemWidth</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>af0e1798562df3457f994a3c9a6b28b27</Anchor>
+    <Abstract>Width of the screen for the transparency system. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>_transSystemHeight</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>nlrender::Renderer</Scope>
+    </TokenIdentifier>
+    <Path>classnlrender_1_1_renderer.html</Path>
+    <Anchor>a9cc39258fc280b1a5be0f7cae7841d9b</Anchor>
+    <Abstract>height of the screen for the transparency system </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>

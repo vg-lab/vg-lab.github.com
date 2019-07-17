@@ -133,6 +133,14 @@ Public Types</h2></td></tr>
 <b>LINEAR</b>
  }</td></tr>
 <tr class="separator:ad95ae8b98a4d06cbab9b3d5d0eadde76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b92da508dea551bcfa423aad8242b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b92da508dea551bcfa423aad8242b30"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TColorFunc</b> { <b>PERVERTEX</b> = 2, 
+<b>GLOBAL</b>
+ }</td></tr>
+<tr class="separator:a4b92da508dea551bcfa423aad8242b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411bf85283e46cc3e4ccce957931bbc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a411bf85283e46cc3e4ccce957931bbc6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TTransparencyStatus</b> { <b>DISABLE</b> = 0, 
+<b>ENABLE</b>
+ }</td></tr>
+<tr class="separator:a411bf85283e46cc3e4ccce957931bbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -159,30 +167,54 @@ NLRENDER_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:aea07c92a5411d4e0ba92c674b52507e9"><td class="memItemLeft" align="right" valign="top">NLRENDER_API float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#aea07c92a5411d4e0ba92c674b52507e9">maximumDistance</a> (void)</td></tr>
 <tr class="memdesc:aea07c92a5411d4e0ba92c674b52507e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that return the maximum distance.  <a href="#aea07c92a5411d4e0ba92c674b52507e9">More...</a><br /></td></tr>
 <tr class="separator:aea07c92a5411d4e0ba92c674b52507e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aa8de403c950140d6ee132d4777e3d"><td class="memItemLeft" align="right" valign="top">NLRENDER_API float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a68aa8de403c950140d6ee132d4777e3d">alpha</a> (void)</td></tr>
+<tr class="memdesc:a68aa8de403c950140d6ee132d4777e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that return the transparency factor.  <a href="#a68aa8de403c950140d6ee132d4777e3d">More...</a><br /></td></tr>
+<tr class="separator:a68aa8de403c950140d6ee132d4777e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae645062bfa8031059fccfe228b11f2a3"><td class="memItemLeft" align="right" valign="top">NLRENDER_API TTessCriteria &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ae645062bfa8031059fccfe228b11f2a3">tessCriteria</a> (void)</td></tr>
 <tr class="memdesc:ae645062bfa8031059fccfe228b11f2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that return the tessellation criteria.  <a href="#ae645062bfa8031059fccfe228b11f2a3">More...</a><br /></td></tr>
 <tr class="separator:ae645062bfa8031059fccfe228b11f2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcab4313ee2a708d01f28200ba19f305"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#abcab4313ee2a708d01f28200ba19f305">render</a> (<a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> mesh_, const Eigen::Matrix4f &amp;modelMatrix_=Eigen::Matrix4f::Identity(), const Eigen::Vector3f &amp;color_=Eigen::Vector3f(0.5f, 0.5f, 0.5f), bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
-<tr class="memdesc:abcab4313ee2a708d01f28200ba19f305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given mesh.  <a href="#abcab4313ee2a708d01f28200ba19f305">More...</a><br /></td></tr>
-<tr class="separator:abcab4313ee2a708d01f28200ba19f305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7deb00f48957cb9a7d9f6305fab7aaa"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#aa7deb00f48957cb9a7d9f6305fab7aaa">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const Eigen::Vector3f &amp;color_=Eigen::Vector3f(0.5f, 0.5f, 0.5f), bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
-<tr class="memdesc:aa7deb00f48957cb9a7d9f6305fab7aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#aa7deb00f48957cb9a7d9f6305fab7aaa">More...</a><br /></td></tr>
-<tr class="separator:aa7deb00f48957cb9a7d9f6305fab7aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30aa96408cfb0f47f11993a462060f32"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a30aa96408cfb0f47f11993a462060f32">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const std::vector&lt; Eigen::Vector3f &gt; &amp;colors_, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
-<tr class="memdesc:a30aa96408cfb0f47f11993a462060f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#a30aa96408cfb0f47f11993a462060f32">More...</a><br /></td></tr>
-<tr class="separator:a30aa96408cfb0f47f11993a462060f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd62e041245d1765152fe62aa46505c"><td class="memItemLeft" align="right" valign="top">NLRENDER_API TColorFunc &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a5bd62e041245d1765152fe62aa46505c">colorFunc</a> (void)</td></tr>
+<tr class="memdesc:a5bd62e041245d1765152fe62aa46505c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that return the type of color function.  <a href="#a5bd62e041245d1765152fe62aa46505c">More...</a><br /></td></tr>
+<tr class="separator:a5bd62e041245d1765152fe62aa46505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15537b549b478889aee381f74a38cc67"><td class="memItemLeft" align="right" valign="top">NLRENDER_API TTransparencyStatus &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a15537b549b478889aee381f74a38cc67">transparencyStatus</a> (void)</td></tr>
+<tr class="memdesc:a15537b549b478889aee381f74a38cc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that return the transparency status.  <a href="#a15537b549b478889aee381f74a38cc67">More...</a><br /></td></tr>
+<tr class="separator:a15537b549b478889aee381f74a38cc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc1da7329f91cb5c1edadc745bb5bbc"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a7cc1da7329f91cb5c1edadc745bb5bbc">render</a> (<a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> mesh_, const Eigen::Matrix4f &amp;modelMatrix_=Eigen::Matrix4f::Identity(), const Eigen::Vector3f &amp;color_=Eigen::Vector3f(0.5f, 0.5f, 0.5f), bool renderTriangles_=true, bool renderQuads_=true, bool renderLines=true) const </td></tr>
+<tr class="memdesc:a7cc1da7329f91cb5c1edadc745bb5bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given mesh.  <a href="#a7cc1da7329f91cb5c1edadc745bb5bbc">More...</a><br /></td></tr>
+<tr class="separator:a7cc1da7329f91cb5c1edadc745bb5bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b38c787244a150c35064678ded91625"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a0b38c787244a150c35064678ded91625">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const Eigen::Vector3f &amp;color_=Eigen::Vector3f(0.5f, 0.5f, 0.5f), bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
+<tr class="memdesc:a0b38c787244a150c35064678ded91625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#a0b38c787244a150c35064678ded91625">More...</a><br /></td></tr>
+<tr class="separator:a0b38c787244a150c35064678ded91625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad976f4706e85108d19062451a72d3f"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#adad976f4706e85108d19062451a72d3f">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const std::vector&lt; Eigen::Vector3f &gt; &amp;colors_, bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
+<tr class="memdesc:adad976f4706e85108d19062451a72d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#adad976f4706e85108d19062451a72d3f">More...</a><br /></td></tr>
+<tr class="separator:adad976f4706e85108d19062451a72d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7801513a44ad17b1371476a8c430c41e"><td class="memItemLeft" align="right" valign="top">NLRENDER_API <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a7801513a44ad17b1371476a8c430c41e">extract</a> (<a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> mesh_, const Eigen::Matrix4f &amp;modelMatrix_=Eigen::Matrix4f::Identity(), bool extractTriangles_=true, bool extractQuads_=true) const </td></tr>
 <tr class="memdesc:a7801513a44ad17b1371476a8c430c41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that extract the given mesh.  <a href="#a7801513a44ad17b1371476a8c430c41e">More...</a><br /></td></tr>
 <tr class="separator:a7801513a44ad17b1371476a8c430c41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad198dda350f0211181ab141269e6ecce"><td class="memItemLeft" align="right" valign="top">NLRENDER_API nlgeometry::Meshes &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ad198dda350f0211181ab141269e6ecce">extract</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, bool extractTriangles_=true, bool extractQuads_=true) const </td></tr>
 <tr class="memdesc:ad198dda350f0211181ab141269e6ecce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that extract the given meshes.  <a href="#ad198dda350f0211181ab141269e6ecce">More...</a><br /></td></tr>
 <tr class="separator:ad198dda350f0211181ab141269e6ecce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a0fa2f997b41c0ad78c671cf0afbbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18a0fa2f997b41c0ad78c671cf0afbbb"></a>
+NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>initTransparencySystem</b> (unsigned int width_, unsigned int height_)</td></tr>
+<tr class="separator:a18a0fa2f997b41c0ad78c671cf0afbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679a01b22efd9d38e8e86f8af7a02713"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a679a01b22efd9d38e8e86f8af7a02713"></a>
+NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>setUpOpaqueTransparencyScene</b> (Eigen::Vector3f backgroundColor_, unsigned int width_, unsigned int height_)</td></tr>
+<tr class="separator:a679a01b22efd9d38e8e86f8af7a02713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5806cb566fbd25ce40f711da31ca8f8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5806cb566fbd25ce40f711da31ca8f8c"></a>
+NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>setUpTransparentTransparencyScene</b> (void)</td></tr>
+<tr class="separator:a5806cb566fbd25ce40f711da31ca8f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3160983c3206132230dbfe9e1392391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3160983c3206132230dbfe9e1392391"></a>
+NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>composeTransparencyScene</b> (unsigned int finalFbo_)</td></tr>
+<tr class="separator:ae3160983c3206132230dbfe9e1392391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aca900a99aec860247262dd97a7229192"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca900a99aec860247262dd97a7229192"></a>
 <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_vectorToMesh</b> (std::vector&lt; float &gt; positions_, std::vector&lt; float &gt; normals_) const </td></tr>
 <tr class="separator:aca900a99aec860247262dd97a7229192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9197f2db91db73885d167604a843f31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9197f2db91db73885d167604a843f31"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_uploadQuad</b> (void)</td></tr>
+<tr class="separator:ac9197f2db91db73885d167604a843f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -190,6 +222,10 @@ Protected Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a2a76e86b5c95609c42ef42b05d2c4c08">_keepOpenGLServerStack</a></td></tr>
 <tr class="memdesc:a2a76e86b5c95609c42ef42b05d2c4c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable to determine if keep the OpenGL server status. <br /></td></tr>
 <tr class="separator:a2a76e86b5c95609c42ef42b05d2c4c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5135ef01154b0d93410eec5f20ea66b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5135ef01154b0d93410eec5f20ea66b1"></a>
+reto::ShaderProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a5135ef01154b0d93410eec5f20ea66b1">_programLines</a></td></tr>
+<tr class="memdesc:a5135ef01154b0d93410eec5f20ea66b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program to render lines. <br /></td></tr>
+<tr class="separator:a5135ef01154b0d93410eec5f20ea66b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299c1ef045df4746cdaae5118fefde28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a299c1ef045df4746cdaae5118fefde28"></a>
 reto::ShaderProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a299c1ef045df4746cdaae5118fefde28">_programTriangles</a></td></tr>
 <tr class="memdesc:a299c1ef045df4746cdaae5118fefde28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program to render tessellated triangles. <br /></td></tr>
@@ -206,6 +242,10 @@ reto::ShaderProgram *&#160;</td><td class="memItemRight" valign="bottom"><a clas
 reto::ShaderProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a84f40c777e34f98b567c24faff65cff0">_programQuadsFB</a></td></tr>
 <tr class="memdesc:a84f40c777e34f98b567c24faff65cff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program to extract tessellated quads. <br /></td></tr>
 <tr class="separator:a84f40c777e34f98b567c24faff65cff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d76d59510b28cdee631638e5443abc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8d76d59510b28cdee631638e5443abc"></a>
+reto::ShaderProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ac8d76d59510b28cdee631638e5443abc">_programTransCompose</a></td></tr>
+<tr class="memdesc:ac8d76d59510b28cdee631638e5443abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program to compose the transparency scene. <br /></td></tr>
+<tr class="separator:ac8d76d59510b28cdee631638e5443abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8d37054ebf9942db08328cc048c0afd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8d37054ebf9942db08328cc048c0afd"></a>
 Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ae8d37054ebf9942db08328cc048c0afd">_viewMatrix</a></td></tr>
 <tr class="memdesc:ae8d37054ebf9942db08328cc048c0afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scene camera view matrix. <br /></td></tr>
@@ -226,23 +266,113 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#af909282d943829420e5595eb2eb1d34c">_maximumDistance</a></td></tr>
 <tr class="memdesc:af909282d943829420e5595eb2eb1d34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum tessellation distance. <br /></td></tr>
 <tr class="separator:af909282d943829420e5595eb2eb1d34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7464ce2c7abee8106058ba9f789f5ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7464ce2c7abee8106058ba9f789f5ca6"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a7464ce2c7abee8106058ba9f789f5ca6">_alpha</a></td></tr>
+<tr class="memdesc:a7464ce2c7abee8106058ba9f789f5ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transparency factor. <br /></td></tr>
+<tr class="separator:a7464ce2c7abee8106058ba9f789f5ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47944ed58ae3320378ada59989698dfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47944ed58ae3320378ada59989698dfa"></a>
 TTessCriteria&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a47944ed58ae3320378ada59989698dfa">_tessCriteria</a></td></tr>
 <tr class="memdesc:a47944ed58ae3320378ada59989698dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tessellation level of detail criteria. <br /></td></tr>
 <tr class="separator:a47944ed58ae3320378ada59989698dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5439c37b54c70bfdd519000ea71c268c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5439c37b54c70bfdd519000ea71c268c"></a>
+TColorFunc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a5439c37b54c70bfdd519000ea71c268c">_colorFunc</a></td></tr>
+<tr class="memdesc:a5439c37b54c70bfdd519000ea71c268c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of render color function. <br /></td></tr>
+<tr class="separator:a5439c37b54c70bfdd519000ea71c268c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d9c92f5ac79ce4dabf975d776f6117"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3d9c92f5ac79ce4dabf975d776f6117"></a>
+TTransparencyStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ab3d9c92f5ac79ce4dabf975d776f6117">_transparencyStatus</a></td></tr>
+<tr class="memdesc:ab3d9c92f5ac79ce4dabf975d776f6117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of transparency render. <br /></td></tr>
+<tr class="separator:ab3d9c92f5ac79ce4dabf975d776f6117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151da8f9f097d9e044f0aba15276d8aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a151da8f9f097d9e044f0aba15276d8aa"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a151da8f9f097d9e044f0aba15276d8aa">_tfo</a></td></tr>
-<tr class="memdesc:a151da8f9f097d9e044f0aba15276d8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex array object indices to mesh extraction. <br /></td></tr>
+<tr class="memdesc:a151da8f9f097d9e044f0aba15276d8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex array object index to mesh extraction. <br /></td></tr>
 <tr class="separator:a151da8f9f097d9e044f0aba15276d8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8174af3c9253f8baf3110f01063e1dda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8174af3c9253f8baf3110f01063e1dda"></a>
 std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a8174af3c9253f8baf3110f01063e1dda">_tbos</a></td></tr>
 <tr class="memdesc:a8174af3c9253f8baf3110f01063e1dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex buffers object indices to mesh extraction. <br /></td></tr>
 <tr class="separator:a8174af3c9253f8baf3110f01063e1dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ff8a69b5553da6a2f229e2d10db04a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13ff8a69b5553da6a2f229e2d10db04a"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a13ff8a69b5553da6a2f229e2d10db04a">_quadVao</a></td></tr>
+<tr class="memdesc:a13ff8a69b5553da6a2f229e2d10db04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex array object index to quad. <br /></td></tr>
+<tr class="separator:a13ff8a69b5553da6a2f229e2d10db04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c723510179e5318bbeeb8f995306e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c723510179e5318bbeeb8f995306e85"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a0c723510179e5318bbeeb8f995306e85">_transSystemInit</a></td></tr>
+<tr class="memdesc:a0c723510179e5318bbeeb8f995306e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable to indicates if the transparency system is initialized. <br /></td></tr>
+<tr class="separator:a0c723510179e5318bbeeb8f995306e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115548fcd89250578d5655bbe1082e54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a115548fcd89250578d5655bbe1082e54"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a115548fcd89250578d5655bbe1082e54">_opaqueFbo</a></td></tr>
+<tr class="memdesc:a115548fcd89250578d5655bbe1082e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">FBO used in the transparency composition to save opaque objects. <br /></td></tr>
+<tr class="separator:a115548fcd89250578d5655bbe1082e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ff2805776b6ad42b60032e1c60f241"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30ff2805776b6ad42b60032e1c60f241"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a30ff2805776b6ad42b60032e1c60f241">_transFbo</a></td></tr>
+<tr class="memdesc:a30ff2805776b6ad42b60032e1c60f241"><td class="mdescLeft">&#160;</td><td class="mdescRight">FBO used in the transparency composition to save transparent objects. <br /></td></tr>
+<tr class="separator:a30ff2805776b6ad42b60032e1c60f241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a9daf084c4c12fdc80b2ed341aab73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65a9daf084c4c12fdc80b2ed341aab73"></a>
+reto::Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a65a9daf084c4c12fdc80b2ed341aab73">_opaqueTexture</a></td></tr>
+<tr class="memdesc:a65a9daf084c4c12fdc80b2ed341aab73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to save the opaque objects color. <br /></td></tr>
+<tr class="separator:a65a9daf084c4c12fdc80b2ed341aab73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5000fafeb28cf862d1eebc22d26f379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5000fafeb28cf862d1eebc22d26f379"></a>
+reto::Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ad5000fafeb28cf862d1eebc22d26f379">_accumTexture</a></td></tr>
+<tr class="memdesc:ad5000fafeb28cf862d1eebc22d26f379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to save the tranparent accumulated objects color. <br /></td></tr>
+<tr class="separator:ad5000fafeb28cf862d1eebc22d26f379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f6239a01f87b778cc30dff4b758413"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9f6239a01f87b778cc30dff4b758413"></a>
+reto::Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#af9f6239a01f87b778cc30dff4b758413">_revealageTexture</a></td></tr>
+<tr class="memdesc:af9f6239a01f87b778cc30dff4b758413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to save the traparent revealage objects color. <br /></td></tr>
+<tr class="separator:af9f6239a01f87b778cc30dff4b758413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb25b324fc30ada70b90df48bdc818f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fb25b324fc30ada70b90df48bdc818f"></a>
+reto::Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a7fb25b324fc30ada70b90df48bdc818f">_depthTexture</a></td></tr>
+<tr class="memdesc:a7fb25b324fc30ada70b90df48bdc818f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to save the opaque objects depth. <br /></td></tr>
+<tr class="separator:a7fb25b324fc30ada70b90df48bdc818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e1798562df3457f994a3c9a6b28b27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0e1798562df3457f994a3c9a6b28b27"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#af0e1798562df3457f994a3c9a6b28b27">_transSystemWidth</a></td></tr>
+<tr class="memdesc:af0e1798562df3457f994a3c9a6b28b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the screen for the transparency system. <br /></td></tr>
+<tr class="separator:af0e1798562df3457f994a3c9a6b28b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc39258fc280b1a5be0f7cae7841d9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cc39258fc280b1a5be0f7cae7841d9b"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a9cc39258fc280b1a5be0f7cae7841d9b">_transSystemHeight</a></td></tr>
+<tr class="memdesc:a9cc39258fc280b1a5be0f7cae7841d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">height of the screen for the transparency system <br /></td></tr>
+<tr class="separator:a9cc39258fc280b1a5be0f7cae7841d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_renderer_8h_source.html#l00035">35</a> of file <a class="el" href="_renderer_8h_source.html">Renderer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a68aa8de403c950140d6ee132d4777e3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NLRENDER_API float&amp; nlrender::Renderer::alpha </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method that return the transparency factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>the transparency factor </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5bd62e041245d1765152fe62aa46505c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NLRENDER_API TColorFunc&amp; nlrender::Renderer::colorFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method that return the type of color function. </p>
+<dl class="section return"><dt>Returns</dt><dd>the color funciton type </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7801513a44ad17b1371476a8c430c41e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -394,7 +524,7 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
-<a class="anchor" id="abcab4313ee2a708d01f28200ba19f305"></a>
+<a class="anchor" id="a7cc1da7329f91cb5c1edadc745bb5bbc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -426,7 +556,13 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>renderQuads_</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>renderQuads_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>renderLines</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -446,7 +582,7 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
-<a class="anchor" id="aa7deb00f48957cb9a7d9f6305fab7aaa"></a>
+<a class="anchor" id="a0b38c787244a150c35064678ded91625"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -467,6 +603,12 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
           <td></td>
           <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
           <td class="paramname"><em>color_</em> = <code>Eigen::Vector3f(0.5f,&#160;0.5f,&#160;0.5f)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>renderLines_</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -498,7 +640,7 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
-<a class="anchor" id="a30aa96408cfb0f47f11993a462060f32"></a>
+<a class="anchor" id="adad976f4706e85108d19062451a72d3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -519,6 +661,12 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
           <td></td>
           <td class="paramtype">const std::vector&lt; Eigen::Vector3f &gt; &amp;&#160;</td>
           <td class="paramname"><em>colors_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>renderLines_</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -588,6 +736,25 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
+<a class="anchor" id="a15537b549b478889aee381f74a38cc67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NLRENDER_API TTransparencyStatus&amp; nlrender::Renderer::transparencyStatus </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method that return the transparency status. </p>
+<dl class="section return"><dt>Returns</dt><dd>the transparency status </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a99ee7d8cc252857950116fd5b39009cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -616,7 +783,7 @@ std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bot
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlrender.html">nlrender</a></li><li class="navelem"><a class="el" href="classnlrender_1_1_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Tue Dec 11 2018 17:26:56 for neurolots by
+    <li class="footer">Generated on Wed Jul 17 2019 12:50:32 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

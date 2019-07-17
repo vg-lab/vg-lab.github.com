@@ -151,10 +151,21 @@ const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>triangle
 <tr class="memitem:a07eff1bfee78e791b6ea45e322960573"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07eff1bfee78e791b6ea45e322960573"></a>
 const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_tes</b></td></tr>
 <tr class="separator:a07eff1bfee78e791b6ea45e322960573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196aa29243206b65b97dc78590338a9a"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>triangle_frag</b></td></tr>
+<tr class="memitem:a1265785b8ea5e1dbc968c815a189ac2b"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>transparency_vert</b></td></tr>
+<tr class="separator:a1265785b8ea5e1dbc968c815a189ac2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152dbddb8639207844c799d906e3dbaa"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>line_vert</b></td></tr>
+<tr class="separator:a152dbddb8639207844c799d906e3dbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a56bdfbce83bb17112d552eed0a768"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96a56bdfbce83bb17112d552eed0a768"></a>
+const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>line_frag</b></td></tr>
+<tr class="separator:a96a56bdfbce83bb17112d552eed0a768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196aa29243206b65b97dc78590338a9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a196aa29243206b65b97dc78590338a9a"></a>
+const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>triangle_frag</b></td></tr>
 <tr class="separator:a196aa29243206b65b97dc78590338a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86dd2699a157228f5adc4d04ae7f7b1e"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_frag</b></td></tr>
+<tr class="memitem:a86dd2699a157228f5adc4d04ae7f7b1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86dd2699a157228f5adc4d04ae7f7b1e"></a>
+const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_frag</b></td></tr>
 <tr class="separator:a86dd2699a157228f5adc4d04ae7f7b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1b6c28f5bd81f51e9c5ac4ba95f95f"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>transparency_frag</b></td></tr>
+<tr class="separator:a6d1b6c28f5bd81f51e9c5ac4ba95f95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 2015-2017 GMRV/URJC. </p>
@@ -169,31 +180,45 @@ const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_tes
 <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. </p>
 </div><h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a86dd2699a157228f5adc4d04ae7f7b1e"></a>
+<a class="anchor" id="a152dbddb8639207844c799d906e3dbaa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const nlrender::quad_frag</td>
+          <td class="memname">const char* const nlrender::line_vert</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;out vec4 oColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 normal;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 L;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform vec3 color;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;vec4 shading( )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vec3 N=normalize( normal );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  float dif = dot( N, L );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  dif = clamp( dif, 0.0, 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  return vec4( color * dif, 1.0 ) + vec4( color * 0.3, 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}\n\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  oColor = shading( );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 inVertex;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 inColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;out vec3 vColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform mat4 viewModel;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform mat4 proy;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( void )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vColor = inColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  gl_Position = proy * viewModel * vec4( inVertex , 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="_shaders_8h_source.html#l00347">347</a> of file <a class="el" href="_shaders_8h_source.html">Shaders.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a196aa29243206b65b97dc78590338a9a"></a>
+<a class="anchor" id="a6d1b6c28f5bd81f51e9c5ac4ba95f95f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const nlrender::triangle_frag</td>
+          <td class="memname">const char* const nlrender::transparency_frag</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;out vec4 oColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 normal;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 L;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform vec3 color;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;vec4 shading( )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vec3 N=normalize( normal );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  float dif = dot( N, L );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  dif = clamp( dif, 0.0, 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  return vec4( color * dif, 1.0 ) + vec4( color * 0.3, 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}\n\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  oColor = shading( );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="_shaders_8h_source.html#l00326">326</a> of file <a class="el" href="_shaders_8h_source.html">Shaders.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;out vec4 oColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform sampler2D opaqueTexture;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform sampler2D accumTexture;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform sampler2D revealageTexture;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( void )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // vec4 C0 = texelFetch( opaqueTexture, ivec2( gl_FragCoord.xy)*2 , 0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // vec4 accum = texelFetch( accumTexture, ivec2( gl_FragCoord.xy)*2 + ivec2( -600, 0 ) , 0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // float r = texelFetch( revealageTexture, ivec2( gl_FragCoord.xy)*2 + ivec2( 0,-600 ), 0 ).r;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // // vec4 sumC1 = vec4( accum.rgb / clamp( accum.a, 1e-4, 5e4), r );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // // oColor = sumC1 *(1-r) + C0 * r;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // oColor = vec4( r ) + accum + C0;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // // oColor = vec4( gl_FragCoord.xy / 600.0f, 0, 0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vec4 C0 = texelFetch( opaqueTexture, ivec2( gl_FragCoord.xy), 0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vec4 accum = texelFetch( accumTexture, ivec2( gl_FragCoord.xy), 0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  float r = texelFetch( revealageTexture, ivec2( gl_FragCoord.xy), 0 ).r;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vec4 sumC1 = vec4( accum.rgb / clamp( accum.a, 1e-4, 5e4), r );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  oColor = sumC1 *(1.0 - r) + C0 * r;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  // oColor = vec4( r ) + accum + C0;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_shaders_8h_source.html#l00506">506</a> of file <a class="el" href="_shaders_8h_source.html">Shaders.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1265785b8ea5e1dbc968c815a189ac2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const nlrender::transparency_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec2 inPosition;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( void )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  gl_Position = vec4( inPosition, 0.0, 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_shaders_8h_source.html#l00338">338</a> of file <a class="el" href="_shaders_8h_source.html">Shaders.h</a>.</p>
 
 </div>
 </div>
@@ -203,7 +228,7 @@ const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_tes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlrender.html">nlrender</a></li>
-    <li class="footer">Generated on Tue Dec 11 2018 17:26:56 for neurolots by
+    <li class="footer">Generated on Wed Jul 17 2019 12:50:32 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

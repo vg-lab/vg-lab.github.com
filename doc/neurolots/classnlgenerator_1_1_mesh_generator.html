@@ -133,6 +133,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f281cc4bcb527519b0d8b2f69f75971"><td class="memItemLeft" align="right" valign="top">static NLGENERATOR_API <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#a0f281cc4bcb527519b0d8b2f69f75971">generateMesh</a> (nsol::NeuronMorphologyPtr morphology_, float alphaRadius_, const std::vector&lt; float &gt; &amp;alphaNeurites_)</td></tr>
 <tr class="memdesc:a0f281cc4bcb527519b0d8b2f69f75971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that return a mesh generated from the given morphology changing some morphology params.  <a href="#a0f281cc4bcb527519b0d8b2f69f75971">More...</a><br /></td></tr>
 <tr class="separator:a0f281cc4bcb527519b0d8b2f69f75971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cbf8152c3963ed0589e4d7827f1575"><td class="memItemLeft" align="right" valign="top">static NLGENERATOR_API <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#a65cbf8152c3963ed0589e4d7827f1575">generateStructureMesh</a> (nsol::MorphologyPtr morphology_, NodeIdToVertices &amp;nodeIdToVertices_, Eigen::Vector3f color_=Eigen::Vector3f(0.0f, 0.0f, 0.0f), bool generateNodes_=false, float offset_=0.9f)</td></tr>
+<tr class="memdesc:a65cbf8152c3963ed0589e4d7827f1575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that return a structure mesh generated from the given morphology.  <a href="#a65cbf8152c3963ed0589e4d7827f1575">More...</a><br /></td></tr>
+<tr class="separator:a65cbf8152c3963ed0589e4d7827f1575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd49ea341a5c604dccc50630a8c7dee2"><td class="memItemLeft" align="right" valign="top">static NLGENERATOR_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#abd49ea341a5c604dccc50630a8c7dee2">verticesToIndices</a> (NodeIdToVertices &amp;nodeIdToVertices_, NodeIdToVerticesIds &amp;nodeIdToVerticesIds_)</td></tr>
+<tr class="memdesc:abd49ea341a5c604dccc50630a8c7dee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that fill the node index to vertices indices structure.  <a href="#abd49ea341a5c604dccc50630a8c7dee2">More...</a><br /></td></tr>
+<tr class="separator:abd49ea341a5c604dccc50630a8c7dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc11f10bfbe88ab47dae38e7cb5ae4b4"><td class="memItemLeft" align="right" valign="top">static NLGENERATOR_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlgenerator_1_1_mesh_generator.html#afc11f10bfbe88ab47dae38e7cb5ae4b4">conformBuffer</a> (std::vector&lt; unsigned int &gt; &amp;nodeIds_, NodeIdToVerticesIds &amp;nodeIdToVerticesIds_, std::vector&lt; float &gt; &amp;buffer_, Eigen::Vector3f value_)</td></tr>
+<tr class="memdesc:afc11f10bfbe88ab47dae38e7cb5ae4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that fills the buffer with the given value for the vertices related to the given node indices.  <a href="#afc11f10bfbe88ab47dae38e7cb5ae4b4">More...</a><br /></td></tr>
+<tr class="separator:afc11f10bfbe88ab47dae38e7cb5ae4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -154,11 +163,74 @@ static nlgeometry::Facets&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a83688a8c49b8431446d5f74a5627e96d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83688a8c49b8431446d5f74a5627e96d"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>_meshSections</b> (std::set&lt; nsol::SectionPtr &gt; &amp;uniqueSections_, const nsol::SectionPtr &amp;section_, std::unordered_map&lt; nsol::NodePtr, <a class="el" href="classnlgenerator_1_1_joint_node.html">JointNodePtr</a> &gt; &amp;joints_, nlgeometry::Facets &amp;facets_)</td></tr>
 <tr class="separator:a83688a8c49b8431446d5f74a5627e96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5771ef91581bf3448e68fecdc6ed4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e5771ef91581bf3448e68fecdc6ed4e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>_vectorizeSections</b> (<a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> mesh_, const nsol::SectionPtr section_, std::set&lt; nsol::SectionPtr &gt; &amp;uniqueSections_, NodeIdToVertices &amp;nodeIdToVertices_, Eigen::Vector3f color_, bool generateNodes_, float offset_)</td></tr>
+<tr class="separator:a3e5771ef91581bf3448e68fecdc6ed4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4898b9ad22b0eaaee444f3db632db262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4898b9ad22b0eaaee444f3db632db262"></a>
+static nlgeometry::Facets&#160;</td><td class="memItemRight" valign="bottom"><b>_generateCube</b> (nsol::NodePtr node_, NodeIdToVertices &amp;nodeIdToVertices_, Eigen::Vector3f color_, float offset_)</td></tr>
+<tr class="separator:a4898b9ad22b0eaaee444f3db632db262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_mesh_generator_8h_source.html#l00039">39</a> of file <a class="el" href="_mesh_generator_8h_source.html">MeshGenerator.h</a>.</p>
+<p>Definition at line <a class="el" href="_mesh_generator_8h_source.html#l00045">45</a> of file <a class="el" href="_mesh_generator_8h_source.html">MeshGenerator.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afc11f10bfbe88ab47dae38e7cb5ae4b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static NLGENERATOR_API void nlgenerator::MeshGenerator::conformBuffer </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodeIds_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeIdToVerticesIds &amp;&#160;</td>
+          <td class="paramname"><em>nodeIdToVerticesIds_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3f&#160;</td>
+          <td class="paramname"><em>value_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static method that fills the buffer with the given value for the vertices related to the given node indices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeIds_</td><td>vector of morphology node indices </td></tr>
+    <tr><td class="paramname">nodeIdToVerticesIds_</td><td>output structure that keeps the relationship between morphology node index and mesh vertices indices </td></tr>
+    <tr><td class="paramname">buffer_</td><td>float buffer to fill </td></tr>
+    <tr><td class="paramname">value_</td><td>value to insert in the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3f5b05b5f72475a97a3c598291e1626c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -243,6 +315,111 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>_meshSections<
 
 </div>
 </div>
+<a class="anchor" id="a65cbf8152c3963ed0589e4d7827f1575"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static NLGENERATOR_API <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> nlgenerator::MeshGenerator::generateStructureMesh </td>
+          <td>(</td>
+          <td class="paramtype">nsol::MorphologyPtr&#160;</td>
+          <td class="paramname"><em>morphology_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeIdToVertices &amp;&#160;</td>
+          <td class="paramname"><em>nodeIdToVertices_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3f&#160;</td>
+          <td class="paramname"><em>color_</em> = <code>Eigen::Vector3f(0.0f,&#160;0.0f,&#160;0.0f)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>generateNodes_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset_</em> = <code>0.9f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static method that return a structure mesh generated from the given morphology. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moprholgy_</td><td>to be reconstructed </td></tr>
+    <tr><td class="paramname">nodeToVertices_</td><td>structure that keeps the relationship between morphology nodes index and mesh vertices </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a structure mesh generated from the given morphology </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abd49ea341a5c604dccc50630a8c7dee2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static NLGENERATOR_API void nlgenerator::MeshGenerator::verticesToIndices </td>
+          <td>(</td>
+          <td class="paramtype">NodeIdToVertices &amp;&#160;</td>
+          <td class="paramname"><em>nodeIdToVertices_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeIdToVerticesIds &amp;&#160;</td>
+          <td class="paramname"><em>nodeIdToVerticesIds_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static method that fill the node index to vertices indices structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeToVertices_</td><td>input structure that keeps the relationship between morphology node index and mesh vertices </td></tr>
+    <tr><td class="paramname">nodeIdToVerticesIds_</td><td>output structure that keeps the relationship between morphology node index and mesh vertices indices </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_mesh_generator_8h_source.html">MeshGenerator.h</a></li>
 </ul>
@@ -252,7 +429,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>_meshSections<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlgenerator.html">nlgenerator</a></li><li class="navelem"><a class="el" href="classnlgenerator_1_1_mesh_generator.html">MeshGenerator</a></li>
-    <li class="footer">Generated on Tue Dec 11 2018 17:26:56 for neurolots by
+    <li class="footer">Generated on Wed Jul 17 2019 12:50:31 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

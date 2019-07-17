@@ -7,7 +7,6 @@ var classnlgeometry_1_1_facet =
     [ "Facet", "classnlgeometry_1_1_facet.html#a078855e0ce6ee51bddea575ed253fa05", null ],
     [ "~Facet", "classnlgeometry_1_1_facet.html#aafe84d5f4086d74f4d0d29fd307a2273", null ],
     [ "addIndicesAs", "classnlgeometry_1_1_facet.html#ae495a662ea0bd2897619983d0f190104", null ],
-    [ "cleanStoreStatus", "classnlgeometry_1_1_facet.html#a17ae65234a419cf0c060f1c23d3f2a6c", null ],
     [ "getIndicesAs", "classnlgeometry_1_1_facet.html#a8ba610e696d74422c7a98646f67c7360", null ],
     [ "store", "classnlgeometry_1_1_facet.html#af1d3c7b8b261da0379b9c2715028ead9", null ],
     [ "vertex0", "classnlgeometry_1_1_facet.html#a766f41c6569badc037ba122f48e85a5f", null ],

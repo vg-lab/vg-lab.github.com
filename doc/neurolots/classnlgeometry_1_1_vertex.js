@@ -3,7 +3,6 @@ var classnlgeometry_1_1_vertex =
     [ "Vertex", "classnlgeometry_1_1_vertex.html#a53ee15d4da43b39dc92caad95172019c", null ],
     [ "Vertex", "classnlgeometry_1_1_vertex.html#a03f9f5e61e3e4d5a737f12965df14bbc", null ],
     [ "~Vertex", "classnlgeometry_1_1_vertex.html#ab9a3a2ad35be1d66adc0cb259b56e1ff", null ],
-    [ "cleanStoreStatus", "classnlgeometry_1_1_vertex.html#a24badab85264e3bbd83ccc7b1a5ffe54", null ],
     [ "clone", "classnlgeometry_1_1_vertex.html#a2c0e905f0052fda11ecded276831466d", null ],
     [ "color", "classnlgeometry_1_1_vertex.html#a15858621eef1167bd0f33e3c659720fb", null ],
     [ "color", "classnlgeometry_1_1_vertex.html#a23fec9b4c6280095f3483562914d81f2", null ],
@@ -26,6 +25,5 @@ var classnlgeometry_1_1_vertex =
     [ "_id", "classnlgeometry_1_1_vertex.html#a62497d24119195fd38e1670b991c82fb", null ],
     [ "_normal", "classnlgeometry_1_1_vertex.html#afd5161b4f11c8883742d7fe08d27a732", null ],
     [ "_position", "classnlgeometry_1_1_vertex.html#a0a9f36dd6dd1053292f46cd0d164ba17", null ],
-    [ "_stored", "classnlgeometry_1_1_vertex.html#a4fafc7a4ea5554013ef59e53e88b0c4c", null ],
     [ "_uv", "classnlgeometry_1_1_vertex.html#a434e36adf7f6ffe8ea290b0524655197", null ]
 ];

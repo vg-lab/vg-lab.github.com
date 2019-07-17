@@ -237,6 +237,11 @@
               <Path>classnlgenerator_1_1_mesh_generator.html</Path>
               <Subnodes>
                <Node>
+                <Name>_generateCube</Name>
+                <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+                <Anchor>a4898b9ad22b0eaaee444f3db632db262</Anchor>
+               </Node>
+               <Node>
                 <Name>_generateMophology</Name>
                 <Path>classnlgenerator_1_1_mesh_generator.html</Path>
                 <Anchor>a8eb4d14cf8456e95655791f19024d7df</Anchor>
@@ -267,6 +272,16 @@
                 <Anchor>a1d2c1558907783903c0df59c92e5a47e</Anchor>
                </Node>
                <Node>
+                <Name>_vectorizeSections</Name>
+                <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+                <Anchor>a3e5771ef91581bf3448e68fecdc6ed4e</Anchor>
+               </Node>
+               <Node>
+                <Name>conformBuffer</Name>
+                <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+                <Anchor>afc11f10bfbe88ab47dae38e7cb5ae4b4</Anchor>
+               </Node>
+               <Node>
                 <Name>generateMesh</Name>
                 <Path>classnlgenerator_1_1_mesh_generator.html</Path>
                 <Anchor>a3f5b05b5f72475a97a3c598291e1626c</Anchor>
@@ -275,6 +290,16 @@
                 <Name>generateMesh</Name>
                 <Path>classnlgenerator_1_1_mesh_generator.html</Path>
                 <Anchor>a0f281cc4bcb527519b0d8b2f69f75971</Anchor>
+               </Node>
+               <Node>
+                <Name>generateStructureMesh</Name>
+                <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+                <Anchor>a65cbf8152c3963ed0589e4d7827f1575</Anchor>
+               </Node>
+               <Node>
+                <Name>verticesToIndices</Name>
+                <Path>classnlgenerator_1_1_mesh_generator.html</Path>
+                <Anchor>abd49ea341a5c604dccc50630a8c7dee2</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -509,11 +534,6 @@
                 <Anchor>ae495a662ea0bd2897619983d0f190104</Anchor>
                </Node>
                <Node>
-                <Name>cleanStoreStatus</Name>
-                <Path>classnlgeometry_1_1_facet.html</Path>
-                <Anchor>a17ae65234a419cf0c060f1c23d3f2a6c</Anchor>
-               </Node>
-               <Node>
                 <Name>getIndicesAs</Name>
                 <Path>classnlgeometry_1_1_facet.html</Path>
                 <Anchor>a8ba610e696d74422c7a98646f67c7360</Anchor>
@@ -610,6 +630,11 @@
                 <Anchor>abaa5690dd63a1b8ddbd887152a317b51</Anchor>
                </Node>
                <Node>
+                <Name>lines</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>ac770cdc94336b683ff04799a39ff5d80</Anchor>
+               </Node>
+               <Node>
                 <Name>modelMatrix</Name>
                 <Path>classnlgeometry_1_1_mesh.html</Path>
                 <Anchor>a4a8aeed339e37185262e34ddd1ff170f</Anchor>
@@ -630,6 +655,11 @@
                 <Anchor>a0cf5f840607f52166c8bb43a6225c5b5</Anchor>
                </Node>
                <Node>
+                <Name>renderLines</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>a17e4c4826285d98b4b32e122dfef4472</Anchor>
+               </Node>
+               <Node>
                 <Name>renderQuads</Name>
                 <Path>classnlgeometry_1_1_mesh.html</Path>
                 <Anchor>aee14ddea6b4c89aa19fdc8a2c9ad921e</Anchor>
@@ -645,6 +675,11 @@
                 <Anchor>a06f8916a87d29a80d8777bf190d37342</Anchor>
                </Node>
                <Node>
+                <Name>uploadBuffer</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>a6a4d6796141eaab83a57b5e151c7f768</Anchor>
+               </Node>
+               <Node>
                 <Name>uploadGPU</Name>
                 <Path>classnlgeometry_1_1_mesh.html</Path>
                 <Anchor>afb41b8e1369f0e84c98599f77faa3a15</Anchor>
@@ -655,6 +690,11 @@
                 <Anchor>a3105b3f82b13f914ffb74616f16d25b0</Anchor>
                </Node>
                <Node>
+                <Name>verticesSize</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>abfecd4d8244d1d014d129affe3cbe431</Anchor>
+               </Node>
+               <Node>
                 <Name>_aaBoundingBox</Name>
                 <Path>classnlgeometry_1_1_mesh.html</Path>
                 <Anchor>a1b32514c1852f291cd6ce04f5f6e025f</Anchor>
@@ -663,6 +703,21 @@
                 <Name>_facetType</Name>
                 <Path>classnlgeometry_1_1_mesh.html</Path>
                 <Anchor>ab2d1515a84cb0eb4ac426ec440fc68cd</Anchor>
+               </Node>
+               <Node>
+                <Name>_format</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>afbdda14970678949f7ac519e4eaa7f0c</Anchor>
+               </Node>
+               <Node>
+                <Name>_lines</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>aaf6fb6b2b99d3da4c20bf8543cdff183</Anchor>
+               </Node>
+               <Node>
+                <Name>_linesSize</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>a5b32ff7da4ba80efc3255ed8d2e6b85f</Anchor>
                </Node>
                <Node>
                 <Name>_modelMatrix</Name>
@@ -703,6 +758,11 @@
                 <Name>_vertices</Name>
                 <Path>classnlgeometry_1_1_mesh.html</Path>
                 <Anchor>ac50d8855e4abe929bf0d071231b5132b</Anchor>
+               </Node>
+               <Node>
+                <Name>_verticesSize</Name>
+                <Path>classnlgeometry_1_1_mesh.html</Path>
+                <Anchor>a6db0ffa837f00c8d06bac014160b115a</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1170,11 +1230,6 @@
                 <Anchor>ab9a3a2ad35be1d66adc0cb259b56e1ff</Anchor>
                </Node>
                <Node>
-                <Name>cleanStoreStatus</Name>
-                <Path>classnlgeometry_1_1_vertex.html</Path>
-                <Anchor>a24badab85264e3bbd83ccc7b1a5ffe54</Anchor>
-               </Node>
-               <Node>
                 <Name>clone</Name>
                 <Path>classnlgeometry_1_1_vertex.html</Path>
                 <Anchor>a2c0e905f0052fda11ecded276831466d</Anchor>
@@ -1283,11 +1338,6 @@
                 <Name>_position</Name>
                 <Path>classnlgeometry_1_1_vertex.html</Path>
                 <Anchor>a0a9f36dd6dd1053292f46cd0d164ba17</Anchor>
-               </Node>
-               <Node>
-                <Name>_stored</Name>
-                <Path>classnlgeometry_1_1_vertex.html</Path>
-                <Anchor>a4fafc7a4ea5554013ef59e53e88b0c4c</Anchor>
                </Node>
                <Node>
                 <Name>_uv</Name>
@@ -1683,6 +1733,23 @@
               <Path>classnlrender_1_1_renderer.html</Path>
               <Subnodes>
                <Node>
+                <Name>TColorFunc</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a4b92da508dea551bcfa423aad8242b30</Anchor>
+                <Subnodes>
+                 <Node>
+                  <Name>PERVERTEX</Name>
+                  <Path>classnlrender_1_1_renderer.html</Path>
+                  <Anchor>a4b92da508dea551bcfa423aad8242b30acca87f12fb1492ceafc310d14e436db9</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>GLOBAL</Name>
+                  <Path>classnlrender_1_1_renderer.html</Path>
+                  <Anchor>a4b92da508dea551bcfa423aad8242b30a0038b4c50cdc299cb900cb46f4bb4f2d</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
                 <Name>TTessCriteria</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>ad95ae8b98a4d06cbab9b3d5d0eadde76</Anchor>
@@ -1700,6 +1767,23 @@
                 </Subnodes>
                </Node>
                <Node>
+                <Name>TTransparencyStatus</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a411bf85283e46cc3e4ccce957931bbc6</Anchor>
+                <Subnodes>
+                 <Node>
+                  <Name>DISABLE</Name>
+                  <Path>classnlrender_1_1_renderer.html</Path>
+                  <Anchor>a411bf85283e46cc3e4ccce957931bbc6aa1706274e6539501610574f9fac5236c</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>ENABLE</Name>
+                  <Path>classnlrender_1_1_renderer.html</Path>
+                  <Anchor>a411bf85283e46cc3e4ccce957931bbc6a06d5f736fedbc25f63478912029fed75</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
                 <Name>Renderer</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a26a24f5c595081a07dd8fe9e3d43e473</Anchor>
@@ -1710,9 +1794,29 @@
                 <Anchor>a67ca01b105cb1d712f9374dd9f14788b</Anchor>
                </Node>
                <Node>
+                <Name>_uploadQuad</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ac9197f2db91db73885d167604a843f31</Anchor>
+               </Node>
+               <Node>
                 <Name>_vectorToMesh</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>aca900a99aec860247262dd97a7229192</Anchor>
+               </Node>
+               <Node>
+                <Name>alpha</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a68aa8de403c950140d6ee132d4777e3d</Anchor>
+               </Node>
+               <Node>
+                <Name>colorFunc</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5bd62e041245d1765152fe62aa46505c</Anchor>
+               </Node>
+               <Node>
+                <Name>composeTransparencyScene</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ae3160983c3206132230dbfe9e1392391</Anchor>
                </Node>
                <Node>
                 <Name>extract</Name>
@@ -1723,6 +1827,11 @@
                 <Name>extract</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>ad198dda350f0211181ab141269e6ecce</Anchor>
+               </Node>
+               <Node>
+                <Name>initTransparencySystem</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a18a0fa2f997b41c0ad78c671cf0afbbb</Anchor>
                </Node>
                <Node>
                 <Name>lod</Name>
@@ -1742,17 +1851,27 @@
                <Node>
                 <Name>render</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
-                <Anchor>abcab4313ee2a708d01f28200ba19f305</Anchor>
+                <Anchor>a7cc1da7329f91cb5c1edadc745bb5bbc</Anchor>
                </Node>
                <Node>
                 <Name>render</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
-                <Anchor>aa7deb00f48957cb9a7d9f6305fab7aaa</Anchor>
+                <Anchor>a0b38c787244a150c35064678ded91625</Anchor>
                </Node>
                <Node>
                 <Name>render</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
-                <Anchor>a30aa96408cfb0f47f11993a462060f32</Anchor>
+                <Anchor>adad976f4706e85108d19062451a72d3f</Anchor>
+               </Node>
+               <Node>
+                <Name>setUpOpaqueTransparencyScene</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a679a01b22efd9d38e8e86f8af7a02713</Anchor>
+               </Node>
+               <Node>
+                <Name>setUpTransparentTransparencyScene</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5806cb566fbd25ce40f711da31ca8f8c</Anchor>
                </Node>
                <Node>
                 <Name>tangentModulus</Name>
@@ -1765,9 +1884,34 @@
                 <Anchor>ae645062bfa8031059fccfe228b11f2a3</Anchor>
                </Node>
                <Node>
+                <Name>transparencyStatus</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a15537b549b478889aee381f74a38cc67</Anchor>
+               </Node>
+               <Node>
                 <Name>viewMatrix</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a99ee7d8cc252857950116fd5b39009cf</Anchor>
+               </Node>
+               <Node>
+                <Name>_accumTexture</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ad5000fafeb28cf862d1eebc22d26f379</Anchor>
+               </Node>
+               <Node>
+                <Name>_alpha</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a7464ce2c7abee8106058ba9f789f5ca6</Anchor>
+               </Node>
+               <Node>
+                <Name>_colorFunc</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5439c37b54c70bfdd519000ea71c268c</Anchor>
+               </Node>
+               <Node>
+                <Name>_depthTexture</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a7fb25b324fc30ada70b90df48bdc818f</Anchor>
                </Node>
                <Node>
                 <Name>_keepOpenGLServerStack</Name>
@@ -1785,6 +1929,21 @@
                 <Anchor>af909282d943829420e5595eb2eb1d34c</Anchor>
                </Node>
                <Node>
+                <Name>_opaqueFbo</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a115548fcd89250578d5655bbe1082e54</Anchor>
+               </Node>
+               <Node>
+                <Name>_opaqueTexture</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a65a9daf084c4c12fdc80b2ed341aab73</Anchor>
+               </Node>
+               <Node>
+                <Name>_programLines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5135ef01154b0d93410eec5f20ea66b1</Anchor>
+               </Node>
+               <Node>
                 <Name>_programQuads</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a8915782d537f9838953c1fa2a2a07c8b</Anchor>
@@ -1793,6 +1952,11 @@
                 <Name>_programQuadsFB</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a84f40c777e34f98b567c24faff65cff0</Anchor>
+               </Node>
+               <Node>
+                <Name>_programTransCompose</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ac8d76d59510b28cdee631638e5443abc</Anchor>
                </Node>
                <Node>
                 <Name>_programTriangles</Name>
@@ -1808,6 +1972,16 @@
                 <Name>_projectionMatrix</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a492e395ca550f9570d0f0b3265d2eaf5</Anchor>
+               </Node>
+               <Node>
+                <Name>_quadVao</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a13ff8a69b5553da6a2f229e2d10db04a</Anchor>
+               </Node>
+               <Node>
+                <Name>_revealageTexture</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>af9f6239a01f87b778cc30dff4b758413</Anchor>
                </Node>
                <Node>
                 <Name>_tbos</Name>
@@ -1828,6 +2002,31 @@
                 <Name>_tng</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>af3689603340045ba25070f1743b8e0d5</Anchor>
+               </Node>
+               <Node>
+                <Name>_transFbo</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a30ff2805776b6ad42b60032e1c60f241</Anchor>
+               </Node>
+               <Node>
+                <Name>_transparencyStatus</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ab3d9c92f5ac79ce4dabf975d776f6117</Anchor>
+               </Node>
+               <Node>
+                <Name>_transSystemHeight</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a9cc39258fc280b1a5be0f7cae7841d9b</Anchor>
+               </Node>
+               <Node>
+                <Name>_transSystemInit</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a0c723510179e5318bbeeb8f995306e85</Anchor>
+               </Node>
+               <Node>
+                <Name>_transSystemWidth</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>af0e1798562df3457f994a3c9a6b28b27</Anchor>
                </Node>
                <Node>
                 <Name>_viewMatrix</Name>
