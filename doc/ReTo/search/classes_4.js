@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model',['Model',['../structreto_1_1_model.html',1,'reto']]]
+  ['lasso',['Lasso',['../classreto_1_1_selection_system_1_1_lasso.html',1,'reto::SelectionSystem']]]
 ];

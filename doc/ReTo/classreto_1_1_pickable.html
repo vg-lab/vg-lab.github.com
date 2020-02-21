@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ReTo
-   &#160;<span id="projectnumber">0.3.0</span>
+   &#160;<span id="projectnumber">0.3.1</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,24 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreto_1_1_pickable.html#aad223d243fd8177567d244d04a8364fb">render</a> (<a class="el" href="classreto_1_1_shader_program.html">reto::ShaderProgram</a> *)=0</td></tr>
 <tr class="memdesc:aad223d243fd8177567d244d04a8364fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to render a <a class="el" href="classreto_1_1_pickable.html">Pickable</a> object. <br /></td></tr>
 <tr class="separator:aad223d243fd8177567d244d04a8364fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002598cc8296cb8507eb7b031ea92d5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a002598cc8296cb8507eb7b031ea92d5b"></a>
+virtual std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getModel</b> (void) const =0</td></tr>
+<tr class="separator:a002598cc8296cb8507eb7b031ea92d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5888eaf9333608071590af8757ee671d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5888eaf9333608071590af8757ee671d"></a>
+virtual std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getPositions</b> (void) const =0</td></tr>
+<tr class="separator:a5888eaf9333608071590af8757ee671d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71592b11d9738f64178f9d72ac2c8c4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71592b11d9738f64178f9d72ac2c8c4a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>getSelected</b> (void) const =0</td></tr>
+<tr class="separator:a71592b11d9738f64178f9d72ac2c8c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe94423f0ad08edd387091e9cb3a6cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabe94423f0ad08edd387091e9cb3a6cf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelected</b> (const bool &amp;selected)=0</td></tr>
+<tr class="separator:aabe94423f0ad08edd387091e9cb3a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938b903b22af3c5a5e91b6aa2015c4d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938b903b22af3c5a5e91b6aa2015c4d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getId</b> (void) const </td></tr>
+<tr class="separator:a938b903b22af3c5a5e91b6aa2015c4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba43bf5829a75e1588f0dc737486ec99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba43bf5829a75e1588f0dc737486ec99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setId</b> (const int &amp;id)</td></tr>
+<tr class="separator:aba43bf5829a75e1588f0dc737486ec99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -192,7 +210,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>_numIds</b> = 1</td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>reto</b></li><li class="navelem"><a class="el" href="classreto_1_1_pickable.html">Pickable</a></li>
-    <li class="footer">Generated on Fri Mar 22 2019 12:49:17 for ReTo by
+    <li class="footer">Generated on Fri Feb 21 2020 20:28:01 for ReTo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

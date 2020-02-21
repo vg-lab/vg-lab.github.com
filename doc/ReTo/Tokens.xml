@@ -191,6 +191,78 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>nearPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a388f65bf17cbc9a273e9b480e4516eee</Anchor>
+    <Abstract>Method to obtain the near plane distance. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>nearPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a0f2f6c0aa06e491a574535fb9ac0cff4</Anchor>
+    <Abstract>Method to establish the near plane distance. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>farPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>afb250869ba2bf7a392ab4dae22542373</Anchor>
+    <Abstract>Method to obtain the far plane distance. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>farPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a97f9217b78b6300c56aea4ee094e1e9e</Anchor>
+    <Abstract>Method to establish the far plane distance. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fieldOfView</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>ace959415d9a76bb969a7cd8ef21d51ac</Anchor>
+    <Abstract>Method to obtain the field of view angle value. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fieldOfView</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Camera</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_camera.html</Path>
+    <Anchor>a272aa7fc935463f3d520ea03fc5aee7f</Anchor>
+    <Abstract>Method to establish field of view angle. </Abstract>
+    <DeclaredIn>Camera.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>projectionMatrix</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -357,6 +429,495 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>reto::ClippingPlane</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Abstract>Class to manage a clipping plane. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ClippingPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>ad2859a748032be9c2098506c703fa5b7</Anchor>
+    <Abstract>ClippingPlane constructor. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ClippingPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>af0b4acc3e78c3d9a008eb9eafa0e70ce</Anchor>
+    <Abstract>ClippingPlane constructor. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~ClippingPlane</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>aa591b6c769d5edd0f08d92118c2f3185</Anchor>
+    <Abstract>ClippingPlane destructor. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getEquation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>aa31a1118154583ac81e50151ea4767ac</Anchor>
+    <Abstract>Method to get the clipping plane equation. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setEquation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a73f81ad6e2511677d53135d17bd790a1</Anchor>
+    <Abstract>Method to set the clipping plane equation. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setEquationByPointAndNormal</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a96514a1268eca6dd5b60128c48772ee5</Anchor>
+    <Abstract>Method to set the clipping plane equation. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setEquationByPointAndVectors</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>ad46c10923f525743928e9b71492343eb</Anchor>
+    <Abstract>Method to set the clipping plane equation. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setEquationByPoints</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a91244b7247c37d322e40b2b87b5dbaa9</Anchor>
+    <Abstract>Method to set the clipping plane equation. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getClippingMode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a81185534a591d9c1a0f50e288402799b</Anchor>
+    <Abstract>Method to get the plane clipping mode. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setClippingMode</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a314924c3863680ea9944772b6295fec6</Anchor>
+    <Abstract>Method to set the plane clipping mode. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>activate</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a7edf7d35d9d9ac58ddc49b2d2584d1ae</Anchor>
+    <Abstract>Method to activate the clipping plane and activate it&amp;#39;s uniforms. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>deactivate</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>acdc9a045e043cd44e9534f13ceca45d4</Anchor>
+    <Abstract>Method to deactivate the clipping plane. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>clear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingPlane</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_plane.html</Path>
+    <Anchor>a7f129cdfb2e64ebca846bd290146a420</Anchor>
+    <Abstract>Method to clear clipping plane. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::ClippingSystem</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Abstract>Class to manage clipping planes. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ClippingSystem</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>af7228a3f654aca59f4129af778ef4e23</Anchor>
+    <Abstract>ClippingSystem constructor. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ClippingSystem</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a44344e1048cb31e3cf02776823eac3d3</Anchor>
+    <Abstract>ClippingSystem constructor passing vertex shader code. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~ClippingSystem</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a4f023818f8b6df144f80c50760da96be</Anchor>
+    <Abstract>ClippingSystem destructor. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>get</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>ae32302dbf783fbece403c19251a706fe</Anchor>
+    <Abstract>Method to get a clipping plane from ClippingSystem. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>set</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a43585406bc5b3f095900e29b746563af</Anchor>
+    <Abstract>Method to set a new clipping plane to ClippingSystem. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>remove</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a8a6aac5dc5a1ec762cf215618d09d09f</Anchor>
+    <Abstract>Method to remove a clipping plane from ClippingSystem. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>activatePlanes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a76282a1c276cd74cdcbd9d4bf757d72f</Anchor>
+    <Abstract>Method to activate clipping planes. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>deactivatePlanes</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a6d459e6e73bf9986dc76661b034dfef5</Anchor>
+    <Abstract>Method to deactivate clipping planes. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>draw</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a0455a4a03d20754dfa73dac15e2c54bd</Anchor>
+    <Abstract>Method to draw objects using clipping system. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a4cb634827b5fac99872bb8e6386d278e</Anchor>
+    <Abstract>Method to add a pickable object. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>removeObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>adf292fdaf51baf2b97c6c78257e970ae</Anchor>
+    <Abstract>Method to remove a pickable object. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>program</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a3029ebe08c0c67be0c7fbda58648e71a</Anchor>
+    <Abstract>Method to get program handler. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>clear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::ClippingSystem</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_clipping_system.html</Path>
+    <Anchor>a1eb64761d9876d83728fde55ed6ba925</Anchor>
+    <Abstract>Method to clear clipping planes. </Abstract>
+    <DeclaredIn>ClippingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::Framebuffer2D</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Abstract>Class to manage a framebuffer with 2D textures. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Framebuffer2D</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>a1a1aa9696f93ccd7ad6fe52fbb0c68bb</Anchor>
+    <Abstract>Framebuffer2D constructor. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Framebuffer2D</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>af4adc9040fa5cae9104e87cf769484d1</Anchor>
+    <Abstract>Framebuffer2D destructor. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>bind</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>a9047a904a2ac404112bd9aed24d555a3</Anchor>
+    <Abstract>Method to bind framebuffer. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>unbind</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>ad21b4ffe25b2673b0c9544ce9304c9d7</Anchor>
+    <Abstract>Method to bind default framebuffer. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>resize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>a4001c9079d6429d2acd13274162bc6f6</Anchor>
+    <Abstract>Method to resize the framebuffer size. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>bindAttachments</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>a30680702f4b76831fd16edba1cc1102b</Anchor>
+    <Abstract>Method to bind all framebuffer attachments. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>clear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Framebuffer2D</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_framebuffer2_d.html</Path>
+    <Anchor>a01170395b8a6d90434c42805c634ea38</Anchor>
+    <Abstract>Method to bind all framebuffer attachments. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Quad</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>aaffcd66673f671e73fb9ae7f40f1dc84</Anchor>
+    <Abstract>Quad constructor. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Quad</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>a4efc935e6c25e2709da4d937362e62a5</Anchor>
+    <Abstract>Quad destructor. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>program</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>a54c80302f54dbf02607fdd40fdf33d07</Anchor>
+    <Abstract>Method to get program handler. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>draw</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>ab0dcf929c60fe92c838d4560af3ed452</Anchor>
+    <Abstract>Method to draw quad. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>clear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>ad2a276d9e487a7fb0c180dbd7237b3eb</Anchor>
+    <Abstract>Method to clear quad resources. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>reto::FreeCameraController</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -500,6 +1061,30 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>position</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::OrbitalCameraController</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_orbital_camera_controller.html</Path>
+    <Anchor>a38205c28eaa6326a2892cd6b72ae2b23</Anchor>
+    <Abstract>Method to establish the pivot or orbital center for the camera. </Abstract>
+    <DeclaredIn>OrbitalCameraController.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>position</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::OrbitalCameraController</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_orbital_camera_controller.html</Path>
+    <Anchor>a59a026a66602a9cecd6b13d08714b16d</Anchor>
+    <Abstract>Method to obtain the pivot or orbital center. </Abstract>
+    <DeclaredIn>OrbitalCameraController.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>reto::Pickable</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -635,6 +1220,77 @@
     <Anchor>a7f650671622468df21c1bb5a032e5a59</Anchor>
     <Abstract>This method is invoked to render objects. </Abstract>
     <DeclaredIn>PickingSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::Quad</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Abstract>Class to manage a quad. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Quad</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>aaffcd66673f671e73fb9ae7f40f1dc84</Anchor>
+    <Abstract>Quad constructor. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Quad</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>a4efc935e6c25e2709da4d937362e62a5</Anchor>
+    <Abstract>Quad destructor. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>program</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>a54c80302f54dbf02607fdd40fdf33d07</Anchor>
+    <Abstract>Method to get program handler. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>draw</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>ab0dcf929c60fe92c838d4560af3ed452</Anchor>
+    <Abstract>Method to draw quad. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>clear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::Quad</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_quad.html</Path>
+    <Anchor>ad2a276d9e487a7fb0c180dbd7237b3eb</Anchor>
+    <Abstract>Method to clear quad resources. </Abstract>
+    <DeclaredIn>Framebuffer.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1922,6 +2578,101 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>reto::TransformFeedback</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Abstract>Class to manage transform feedbacks. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TransformFeedback</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>ab30d512eedf0b650adecee47a8f8890e</Anchor>
+    <Abstract>TransformFeedback constructor. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~TransformFeedback</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>a81cb0b5fa8052737b35e2be544fdd39d</Anchor>
+    <Abstract>TransformFeedback destructor. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>draw</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>a846eb7ca4a4725611c33709e9b16e0ed</Anchor>
+    <Abstract>Method to draw transform feedback. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>a760f5559e4a564b75a7cf76b02d3722a</Anchor>
+    <Abstract>Method to add a pickable object. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>removeObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>aff5e8884303dc6642f1e5d740ae1cce8</Anchor>
+    <Abstract>Method to remove a pickable object. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>program</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>a3509d9609c60292b2f36e5f8bb696eb0</Anchor>
+    <Abstract>Method to get program handler. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>clear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::TransformFeedback</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_transform_feedback.html</Path>
+    <Anchor>a2bc27e3c9a8e1aceadd3e8bc4165c32d</Anchor>
+    <Abstract>Method to clear transform feedback. </Abstract>
+    <DeclaredIn>TransformFeedback.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>reto::Version</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -2041,5 +2792,327 @@
     <Path>classreto_1_1_version.html</Path>
     <Anchor>a12228648dd99c503cf27c98feb97d7f7</Anchor>
     <DeclaredIn>version.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::SelectionSystem::Lasso</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Abstract>Class to manage lasso selection. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Lasso</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a846dc81977b332ea80896d38ac0724bb</Anchor>
+    <Abstract>Lasso constructor. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Lasso</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a9003d22e0a692bbce2d59f5287b5fe7e</Anchor>
+    <Abstract>Lasso destructor. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setColor</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a113312a687f195a514e7c15d38501762</Anchor>
+    <Abstract>Method to set the selection color. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setLineWidth</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a00aa0ce50190ab5ba0f578c32800b214</Anchor>
+    <Abstract>Method to set the width of the border line of the selection. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>resize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>ad6aab249f7c1191209dcf448276c9600</Anchor>
+    <Abstract>Method used on resize callback to change width and height for calculating points. ...</Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>draw</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a27af7069ae59fb9b6bb59a5fb6c66009</Anchor>
+    <Abstract>Method to draw lasso. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>mouseDown</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a913c87052a355b2fb65ba0d895f66633</Anchor>
+    <Abstract>Method used on mouse down callback to get a point. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>mouseMove</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a9e31230f23713cbba8455125f0b6d83f</Anchor>
+    <Abstract>Method used on mouse move callback to get the a point. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>mouseUp</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a904d7cd2a1e3a22b4f135c3ccb765108</Anchor>
+    <Abstract>Method used on mouse up callback to get the a point, call to transform feedback and clear points...</Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>programLine</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>ac7c52895f8872e5f3cd228ad06b3ceb5</Anchor>
+    <Abstract>Method to get program handler for line. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>programFilling</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a5fbc5767a4568bb3fd3a1d824167baba</Anchor>
+    <Abstract>Method to get program handler for filling. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a255dcff8c95dc4e14d0fa7990c4e8401</Anchor>
+    <Abstract>Method to add a pickable object. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>removeObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::Lasso</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_lasso.html</Path>
+    <Anchor>a0942ef177a48bc57b002bc1df2cd01e2</Anchor>
+    <Abstract>Method to remove a pickable object. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>reto::SelectionSystem::RubberBand</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Abstract>Class to manage rubberband selection. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>RubberBand</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>a4cfb9e79d6e2977bbdd216f6e3fc7565</Anchor>
+    <Abstract>RubberBand constructor. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~RubberBand</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>a9df2088eba930f3507547b87db6f5075</Anchor>
+    <Abstract>Rubberband destructor. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setColor</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>ae2257d7a1a21ca4be68f42693223dda1</Anchor>
+    <Abstract>Method to set the selection color. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setLineWidth</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>ac7e3c8484ba4584cb4308a6e3af50b59</Anchor>
+    <Abstract>Method to set the width of the border line of the selection. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>resize</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>aa485fd930e3ccf96a5f8b5bab8d8e16e</Anchor>
+    <Abstract>Method used on resize callback to change width and height for calculating points. ...</Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>draw</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>ad29d0109a76080a60f5b968182459e67</Anchor>
+    <Abstract>Method to draw rubberband. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>mouseDown</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>a795cdfac7a8dd96717b97575210b2864</Anchor>
+    <Abstract>Method used on mouse down callback to get a point. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>mouseMove</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>a6d653b9f9ea236c86847121f31eb4982</Anchor>
+    <Abstract>Method used on mouse move callback to get the a point. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>mouseUp</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>af946fe3076aa4397b5ab2f5395f5fee8</Anchor>
+    <Abstract>Method used on mouse up callback to get the a point, call to transform feedback and clear points...</Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>program</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>ab1462eebbcdecd9ca585b1c968e09e7d</Anchor>
+    <Abstract>Method to get program handler for line and filling. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>addObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>a83325142206a052ead8589935b2f6488</Anchor>
+    <Abstract>Method to add a pickable object. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>removeObject</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::SelectionSystem::RubberBand</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_selection_system_1_1_rubber_band.html</Path>
+    <Anchor>abd0b0354df983b47948b1663b6c771b7</Anchor>
+    <Abstract>Method to remove a pickable object. </Abstract>
+    <DeclaredIn>SelectionSystem.h</DeclaredIn>
   </Token>
 </Tokens>
