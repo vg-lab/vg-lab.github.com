@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">neurolots
-   &#160;<span id="projectnumber">0.2.0</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">NeuroLOTs</div>
   </td>
@@ -189,7 +189,7 @@ const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_fra
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 inVertex;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;in vec3 inColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;out vec3 vColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform mat4 viewModel;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform mat4 proy;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( void )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vColor = inColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  gl_Position = proy * viewModel * vec4( inVertex , 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;#version 400\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;layout( location = 0 ) in vec3 inVertex;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;layout( location = 1 ) in vec3 inColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;out vec3 vColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform mat4 viewModel;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;uniform mat4 proy;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;void main( void )\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  vColor = inColor;\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  gl_Position = proy * viewModel * vec4( inVertex , 1.0 );\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;}&quot;</span></div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="_shaders_8h_source.html#l00347">347</a> of file <a class="el" href="_shaders_8h_source.html">Shaders.h</a>.</p>
 
 </div>
@@ -228,7 +228,7 @@ const char *const&#160;</td><td class="memItemRight" valign="bottom"><b>quad_fra
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlrender.html">nlrender</a></li>
-    <li class="footer">Generated on Fri Mar 27 2020 12:15:00 for neurolots by
+    <li class="footer">Generated on Wed May 27 2020 17:31:29 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

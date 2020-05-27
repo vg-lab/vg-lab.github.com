@@ -6,7 +6,7 @@ var searchData=
   ['cleargpudata',['clearGPUData',['../classnlgeometry_1_1_mesh.html#a7b0333732d986a88199a561bca491d60',1,'nlgeometry::Mesh']]],
   ['clone',['clone',['../classnlgeometry_1_1_orbital_vertex.html#ad32f00c1acf0826f03367916c480a96d',1,'nlgeometry::OrbitalVertex::clone()'],['../classnlgeometry_1_1_section_quad.html#a04e2381c219632a4cc8954c94b8f2d1c',1,'nlgeometry::SectionQuad::clone()'],['../classnlgeometry_1_1_vertex.html#a2c0e905f0052fda11ecded276831466d',1,'nlgeometry::Vertex::clone()']]],
   ['color',['color',['../classnlgeometry_1_1_vertex.html#a15858621eef1167bd0f33e3c659720fb',1,'nlgeometry::Vertex']]],
-  ['colorfunc',['colorFunc',['../classnlrender_1_1_renderer.html#a5bd62e041245d1765152fe62aa46505c',1,'nlrender::Renderer']]],
+  ['colorfunc',['colorFunc',['../classnlrender_1_1_renderer.html#a8ca6038e214ff29104c489809a57ed26',1,'nlrender::Renderer']]],
   ['compute',['compute',['../classnlgenerator_1_1_icosphere.html#a92da233e5c908b1ca9f430b5d39dbe12',1,'nlgenerator::Icosphere']]],
   ['computeboundingbox',['computeBoundingBox',['../classnlgeometry_1_1_mesh.html#aab0f5df675edc9b7a3238bde6da709a7',1,'nlgeometry::Mesh']]],
   ['computegeometry',['computeGeometry',['../classnlgenerator_1_1_joint_node.html#a058aa94c9ea7ea4d4707434c682efc61',1,'nlgenerator::JointNode']]],

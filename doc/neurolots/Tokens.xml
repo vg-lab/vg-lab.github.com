@@ -3877,7 +3877,7 @@
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>ae645062bfa8031059fccfe228b11f2a3</Anchor>
+    <Anchor>ac9c8a7af6d27fba61a5b1290d2e29a5f</Anchor>
     <Abstract>Method that return the tessellation criteria. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>
@@ -3889,7 +3889,7 @@
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>a5bd62e041245d1765152fe62aa46505c</Anchor>
+    <Anchor>a8ca6038e214ff29104c489809a57ed26</Anchor>
     <Abstract>Method that return the type of color function. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>
@@ -3901,7 +3901,7 @@
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>a15537b549b478889aee381f74a38cc67</Anchor>
+    <Anchor>a04779f489d0494a4ac6c73b11ae37d5e</Anchor>
     <Abstract>Method that return the transparency status. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>

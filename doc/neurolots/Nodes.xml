@@ -1794,6 +1794,16 @@
                 <Anchor>a67ca01b105cb1d712f9374dd9f14788b</Anchor>
                </Node>
                <Node>
+                <Name>_composeFragmentSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a810988cb23586a62ff9ba347a9243b19</Anchor>
+               </Node>
+               <Node>
+                <Name>_composeVertexSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a9a33e9ccc2b9acefe24f7a917890c137</Anchor>
+               </Node>
+               <Node>
                 <Name>_uploadQuad</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>ac9197f2db91db73885d167604a843f31</Anchor>
@@ -1811,7 +1821,12 @@
                <Node>
                 <Name>colorFunc</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
-                <Anchor>a5bd62e041245d1765152fe62aa46505c</Anchor>
+                <Anchor>a8ca6038e214ff29104c489809a57ed26</Anchor>
+               </Node>
+               <Node>
+                <Name>colorFunc</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a4bf117517e229f4fe3d29a8a3c03941a</Anchor>
                </Node>
                <Node>
                 <Name>composeTransparencyScene</Name>
@@ -1881,12 +1896,17 @@
                <Node>
                 <Name>tessCriteria</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
-                <Anchor>ae645062bfa8031059fccfe228b11f2a3</Anchor>
+                <Anchor>ac9c8a7af6d27fba61a5b1290d2e29a5f</Anchor>
+               </Node>
+               <Node>
+                <Name>tessCriteria</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5ddb2f819918c020fe8d04555ed773cb</Anchor>
                </Node>
                <Node>
                 <Name>transparencyStatus</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
-                <Anchor>a15537b549b478889aee381f74a38cc67</Anchor>
+                <Anchor>a04779f489d0494a4ac6c73b11ae37d5e</Anchor>
                </Node>
                <Node>
                 <Name>viewMatrix</Name>
@@ -1919,9 +1939,34 @@
                 <Anchor>a2a76e86b5c95609c42ef42b05d2c4c08</Anchor>
                </Node>
                <Node>
+                <Name>_lFragmentSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a99749488b88d67a3df441dce323dc806</Anchor>
+               </Node>
+               <Node>
+                <Name>_lGlobalColorInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a05f3e0c230a4953b21006a2e2095d997</Anchor>
+               </Node>
+               <Node>
                 <Name>_lod</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>af655d57f4e24ff7f07a0d59e746c6145</Anchor>
+               </Node>
+               <Node>
+                <Name>_lTransDisableInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ab3b0308e00a45e32d5786b183060915e</Anchor>
+               </Node>
+               <Node>
+                <Name>_lTransEnableInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ac61f1eb20b2db255e3297b6fd953e7cc</Anchor>
+               </Node>
+               <Node>
+                <Name>_lVertexColorInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a24304273c1b084cb9457c35b986f2003</Anchor>
                </Node>
                <Node>
                 <Name>_maximumDistance</Name>
@@ -1974,9 +2019,64 @@
                 <Anchor>a492e395ca550f9570d0f0b3265d2eaf5</Anchor>
                </Node>
                <Node>
+                <Name>_qFBHomogeDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>afc5ca06a65f7f3093325b6780ca8c5ae</Anchor>
+               </Node>
+               <Node>
+                <Name>_qFBLinearDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>abc3e7fd9f71639f4a619b333b5aea658</Anchor>
+               </Node>
+               <Node>
+                <Name>_qFBVertexSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ab503bfe70dc911fda4e445432d2e47f9</Anchor>
+               </Node>
+               <Node>
+                <Name>_qFragmentSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a32c239a36bddfe743e28336ddc644655</Anchor>
+               </Node>
+               <Node>
+                <Name>_qGlobalColorInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a23922891271bce8fbefa5edaed25c0d9</Anchor>
+               </Node>
+               <Node>
+                <Name>_qHomogeDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a758d823621b61271085e568e6880250c</Anchor>
+               </Node>
+               <Node>
+                <Name>_qLinearDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a381a2f334448f3adf08c56acb03daba6</Anchor>
+               </Node>
+               <Node>
+                <Name>_qTransDisableInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5797025d0c38e92816d59cf1baef2285</Anchor>
+               </Node>
+               <Node>
+                <Name>_qTransEnableInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a2be2d66ea65ea2ccb895640262dd48a5</Anchor>
+               </Node>
+               <Node>
                 <Name>_quadVao</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a13ff8a69b5553da6a2f229e2d10db04a</Anchor>
+               </Node>
+               <Node>
+                <Name>_qVertexColorInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a9e0cb0525594678e873a674ccb32b097</Anchor>
+               </Node>
+               <Node>
+                <Name>_qVertexSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a977d4bcda9bb17fbebe60e9714710fc0</Anchor>
                </Node>
                <Node>
                 <Name>_revealageTexture</Name>
@@ -1994,9 +2094,44 @@
                 <Anchor>a47944ed58ae3320378ada59989698dfa</Anchor>
                </Node>
                <Node>
+                <Name>_tFBHomogeDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>aa99368ba7b22e85f528e41c53e9bfda4</Anchor>
+               </Node>
+               <Node>
+                <Name>_tFBLinearDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a95cca41b5bf134fc100c6de5dca42cc0</Anchor>
+               </Node>
+               <Node>
+                <Name>_tFBVertexSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a6cec1228cb67e2d29b622209d8eec8a2</Anchor>
+               </Node>
+               <Node>
                 <Name>_tfo</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>a151da8f9f097d9e044f0aba15276d8aa</Anchor>
+               </Node>
+               <Node>
+                <Name>_tFragmentSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a7c27225e16582a78159c0a98f765000b</Anchor>
+               </Node>
+               <Node>
+                <Name>_tGlobalColorInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>aff37da22041a810c0184a11467818236</Anchor>
+               </Node>
+               <Node>
+                <Name>_tHomogeDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>afd9514707817d6a906b7ad073f92cb52</Anchor>
+               </Node>
+               <Node>
+                <Name>_tLinearDistInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a5511df173001dc325acd0774d62a2fd5</Anchor>
                </Node>
                <Node>
                 <Name>_tng</Name>
@@ -2027,6 +2162,56 @@
                 <Name>_transSystemWidth</Name>
                 <Path>classnlrender_1_1_renderer.html</Path>
                 <Anchor>af0e1798562df3457f994a3c9a6b28b27</Anchor>
+               </Node>
+               <Node>
+                <Name>_tTransDisableInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ae42df5c3a75b342a615e01c6574c5afc</Anchor>
+               </Node>
+               <Node>
+                <Name>_tTransEnableInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ae754997ddbc7ad0f77c6cf06f565dd28</Anchor>
+               </Node>
+               <Node>
+                <Name>_tVertexColorInd</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>af97e0067d7d0d2f2fe95edce035ac2cd</Anchor>
+               </Node>
+               <Node>
+                <Name>_tVertexSubroutines</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a7ae54fcc2ee8066f9fe423d2decebda1</Anchor>
+               </Node>
+               <Node>
+                <Name>_ulColorSub</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a1c2c16b1c4b5c770da8903f286a740fa</Anchor>
+               </Node>
+               <Node>
+                <Name>_ulTransSub</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>aafa9fdf00199c93dafcfc26cb67f25f6</Anchor>
+               </Node>
+               <Node>
+                <Name>_uqColorSub</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a8ec6206708d664c1cf61718a96488e13</Anchor>
+               </Node>
+               <Node>
+                <Name>_uqTransSub</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>ae0f583aadd6dea0690eb94d724799275</Anchor>
+               </Node>
+               <Node>
+                <Name>_utColorSub</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a8cc0824a740996dd31824819af62c003</Anchor>
+               </Node>
+               <Node>
+                <Name>_utTransSub</Name>
+                <Path>classnlrender_1_1_renderer.html</Path>
+                <Anchor>a22bb7f4f8033d8d3d92422a137836c83</Anchor>
                </Node>
                <Node>
                 <Name>_viewMatrix</Name>
