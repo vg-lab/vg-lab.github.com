@@ -1,1 +1,1 @@
-# gmrvvis.github.io
+# vg-lab.github.io
