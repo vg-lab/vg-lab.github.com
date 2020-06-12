@@ -6,13 +6,13 @@
      <key>CFBundleName</key>
      <string>scoop</string>
      <key>CFBundleIdentifier</key>
-     <string>gmrv.es.scoop</string>
+     <string>vglab.es.scoop</string>
      <key>CFBundleVersion</key>
      <string>0.1.4</string>
      <key>DocSetFeedName</key>
      <string>scoop Documentation</string>
      <key>DocSetPublisherIdentifier</key>
-     <string>gmrv.es.scoop.documentation</string>
+     <string>vglab.es.scoop.documentation</string>
      <key>DocSetPublisherName</key>
      <string>Unknown</string>
      <key>DashDocSetFamily</key>
