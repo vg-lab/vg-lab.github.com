@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-06-12 10:56:27</td>
+            <td class="headerValue">2021-04-06 13:37:15</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">11</td>
@@ -241,7 +241,7 @@
 <span class="lineNum">     179 </span>            :     EnumPropertyCaster( const std::map&lt; T, std::string &gt;&amp; scalarToString_ )
 <span class="lineNum">     180 </span>            :     {
 <span class="lineNum">     181 </span>            :       _scalarToString = scalarToString_;
-<span class="lineNum">     182 </span>            :       for ( const auto pair : _scalarToString )
+<span class="lineNum">     182 </span>            :       for ( const auto&amp; pair : _scalarToString )
 <span class="lineNum">     183 </span>            :         _stringToScalar[ pair.second ] = pair.first;
 <span class="lineNum">     184 </span>            :     }
 <span class="lineNum">     185 </span>            :     virtual ~EnumPropertyCaster( void )
@@ -280,7 +280,7 @@
 <span class="lineNum">     218 </span>            :     {
 <span class="lineNum">     219 </span>            :       std::vector&lt; std::string &gt; categories_;
 <span class="lineNum">     220 </span>            :       categories_.reserve( _scalarToString.size( ));
-<span class="lineNum">     221 </span>            :       for ( const auto catPair : _scalarToString )
+<span class="lineNum">     221 </span>            :       for ( const auto&amp; catPair : _scalarToString )
 <span class="lineNum">     222 </span>            :         categories_.push_back( catPair.second );
 <span class="lineNum">     223 </span>            :       return categories_;
 <span class="lineNum">     224 </span>            :     }
