@@ -492,7 +492,7 @@
       <Scope>MyPair</Scope>
     </TokenIdentifier>
     <Path>class_my_pair.html</Path>
-    <Abstract>Copyright (c) 2015-2017 GMRV/URJC. </Abstract>
+    <Abstract>Copyright (c) 2015-2017 VG-Lab/URJC. </Abstract>
     <DeclaredIn>Icosphere.h</DeclaredIn>
   </Token>
   <Token>
@@ -503,7 +503,7 @@
       <Scope>nlgenerator</Scope>
     </TokenIdentifier>
     <Path>namespacenlgenerator.html</Path>
-    <Abstract>Copyright (c) 2015-2017 GMRV/URJC. </Abstract>
+    <Abstract>Copyright (c) 2015-2017 VG-Lab/URJC. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1171,7 +1171,7 @@
       <Scope>nlgeometry</Scope>
     </TokenIdentifier>
     <Path>namespacenlgeometry.html</Path>
-    <Abstract>Copyright (c) 2015-2017 GMRV/URJC. </Abstract>
+    <Abstract>Copyright (c) 2015-2017 VG-Lab/URJC. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3072,7 +3072,7 @@
       <Scope>nlphysics</Scope>
     </TokenIdentifier>
     <Path>namespacenlphysics.html</Path>
-    <Abstract>Copyright (c) 2015-2017 GMRV/URJC. </Abstract>
+    <Abstract>Copyright (c) 2015-2017 VG-Lab/URJC. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3753,7 +3753,7 @@
       <Scope>nlrender</Scope>
     </TokenIdentifier>
     <Path>namespacenlrender.html</Path>
-    <Abstract>Copyright (c) 2015-2017 GMRV/URJC. </Abstract>
+    <Abstract>Copyright (c) 2015-2017 VG-Lab/URJC. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3937,7 +3937,7 @@
       <Scope>nlrender::Renderer</Scope>
     </TokenIdentifier>
     <Path>classnlrender_1_1_renderer.html</Path>
-    <Anchor>adad976f4706e85108d19062451a72d3f</Anchor>
+    <Anchor>aed0fa8f8895697cb96dae297e8848628</Anchor>
     <Abstract>Method that renderize the given meshes. </Abstract>
     <DeclaredIn>Renderer.h</DeclaredIn>
   </Token>

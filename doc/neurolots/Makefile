@@ -1,4 +1,4 @@
-DOCSET_NAME=gmrv.es.neurolots.docset
+DOCSET_NAME=vg-lab.es.neurolots.docset
 DOCSET_CONTENTS=$(DOCSET_NAME)/Contents
 DOCSET_RESOURCES=$(DOCSET_CONTENTS)/Resources
 DOCSET_DOCUMENTS=$(DOCSET_RESOURCES)/Documents

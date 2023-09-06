@@ -30,7 +30,7 @@ var classnlrender_1_1_renderer =
     [ "projectionMatrix", "classnlrender_1_1_renderer.html#a66eff4ed0b2d6d4eef369ac4f7eb1be2", null ],
     [ "render", "classnlrender_1_1_renderer.html#a7cc1da7329f91cb5c1edadc745bb5bbc", null ],
     [ "render", "classnlrender_1_1_renderer.html#a0b38c787244a150c35064678ded91625", null ],
-    [ "render", "classnlrender_1_1_renderer.html#adad976f4706e85108d19062451a72d3f", null ],
+    [ "render", "classnlrender_1_1_renderer.html#aed0fa8f8895697cb96dae297e8848628", null ],
     [ "setUpOpaqueTransparencyScene", "classnlrender_1_1_renderer.html#a679a01b22efd9d38e8e86f8af7a02713", null ],
     [ "setUpTransparentTransparencyScene", "classnlrender_1_1_renderer.html#a5806cb566fbd25ce40f711da31ca8f8c", null ],
     [ "tangentModulus", "classnlrender_1_1_renderer.html#a99a055dd37fbde371dac9f861395ebbe", null ],

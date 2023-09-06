@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">neurolots
-   &#160;<span id="projectnumber">0.3.0</span>
+   &#160;<span id="projectnumber">0.3.3</span>
    </div>
    <div id="projectbrief">NeuroLOTs</div>
   </td>
@@ -191,9 +191,9 @@ NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>colorFun
 <tr class="memitem:a0b38c787244a150c35064678ded91625"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a0b38c787244a150c35064678ded91625">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const Eigen::Vector3f &amp;color_=Eigen::Vector3f(0.5f, 0.5f, 0.5f), bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
 <tr class="memdesc:a0b38c787244a150c35064678ded91625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#a0b38c787244a150c35064678ded91625">More...</a><br /></td></tr>
 <tr class="separator:a0b38c787244a150c35064678ded91625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad976f4706e85108d19062451a72d3f"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#adad976f4706e85108d19062451a72d3f">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const std::vector&lt; Eigen::Vector3f &gt; &amp;colors_, bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
-<tr class="memdesc:adad976f4706e85108d19062451a72d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#adad976f4706e85108d19062451a72d3f">More...</a><br /></td></tr>
-<tr class="separator:adad976f4706e85108d19062451a72d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0fa8f8895697cb96dae297e8848628"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#aed0fa8f8895697cb96dae297e8848628">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const Eigen::Vector3f &amp;baseColor, const std::vector&lt; Eigen::Vector3f &gt; &amp;colors_, bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
+<tr class="memdesc:aed0fa8f8895697cb96dae297e8848628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#aed0fa8f8895697cb96dae297e8848628">More...</a><br /></td></tr>
+<tr class="separator:aed0fa8f8895697cb96dae297e8848628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7801513a44ad17b1371476a8c430c41e"><td class="memItemLeft" align="right" valign="top">NLRENDER_API <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a7801513a44ad17b1371476a8c430c41e">extract</a> (<a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> mesh_, const Eigen::Matrix4f &amp;modelMatrix_=Eigen::Matrix4f::Identity(), bool extractTriangles_=true, bool extractQuads_=true) const </td></tr>
 <tr class="memdesc:a7801513a44ad17b1371476a8c430c41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that extract the given mesh.  <a href="#a7801513a44ad17b1371476a8c430c41e">More...</a><br /></td></tr>
 <tr class="separator:a7801513a44ad17b1371476a8c430c41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -751,7 +751,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="adad976f4706e85108d19062451a72d3f"></a>
+<a class="anchor" id="aed0fa8f8895697cb96dae297e8848628"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -766,6 +766,12 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td></td>
           <td class="paramtype">const std::vector&lt; Eigen::Matrix4f &gt; &amp;&#160;</td>
           <td class="paramname"><em>modelMatrices_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>baseColor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -894,7 +900,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlrender.html">nlrender</a></li><li class="navelem"><a class="el" href="classnlrender_1_1_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Wed May 27 2020 17:31:29 for neurolots by
+    <li class="footer">Generated on Wed Sep 6 2023 19:19:15 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
