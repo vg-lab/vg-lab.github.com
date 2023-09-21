@@ -171,7 +171,7 @@
                <Node>
                 <Name>AbstractCameraController</Name>
                 <Path>classreto_1_1_abstract_camera_controller.html</Path>
-                <Anchor>af171ad7a8cfd6be287639ce50bb2a134</Anchor>
+                <Anchor>a1c5ea531521cf362dda11bf984e55c12</Anchor>
                </Node>
                <Node>
                 <Name>~AbstractCameraController</Name>
@@ -191,7 +191,7 @@
                <Node>
                 <Name>anim</Name>
                 <Path>classreto_1_1_abstract_camera_controller.html</Path>
-                <Anchor>afcad5ccbb5b8af78399bfe0e05a3500d</Anchor>
+                <Anchor>ac1cedf6a2644f7725540f06de6ced37a</Anchor>
                </Node>
                <Node>
                 <Name>camera</Name>
@@ -201,7 +201,7 @@
                <Node>
                 <Name>isAniming</Name>
                 <Path>classreto_1_1_abstract_camera_controller.html</Path>
-                <Anchor>aefd55670df61eb06a1f8e44ef7581afc</Anchor>
+                <Anchor>a3f6b1751e3808aad8d2e6f4558ff9db1</Anchor>
                </Node>
                <Node>
                 <Name>localTranslate</Name>
@@ -216,7 +216,7 @@
                <Node>
                 <Name>position</Name>
                 <Path>classreto_1_1_abstract_camera_controller.html</Path>
-                <Anchor>a7f133d74f85cda53b351d1354e046051</Anchor>
+                <Anchor>a6744381eddf9806c348fe71bb1291881</Anchor>
                </Node>
                <Node>
                 <Name>radius</Name>
@@ -226,7 +226,7 @@
                <Node>
                 <Name>radius</Name>
                 <Path>classreto_1_1_abstract_camera_controller.html</Path>
-                <Anchor>a68bc9e3c17cbb0ad5b8c3e33a9762434</Anchor>
+                <Anchor>a97ee72f56ef1332ee0a5205483ef6b1c</Anchor>
                </Node>
                <Node>
                 <Name>rotate</Name>
@@ -251,7 +251,7 @@
                <Node>
                 <Name>rotation</Name>
                 <Path>classreto_1_1_abstract_camera_controller.html</Path>
-                <Anchor>a9d52d5675ea590194b75189d69885782</Anchor>
+                <Anchor>a76c0d6a07abaaa916fb0d88a7ff918fc</Anchor>
                </Node>
                <Node>
                 <Name>rotationMatrixFromAngles</Name>
@@ -332,12 +332,12 @@
                <Node>
                 <Name>Camera</Name>
                 <Path>classreto_1_1_camera.html</Path>
-                <Anchor>a5c885d5f53bc01f67f137c6bd7867ace</Anchor>
+                <Anchor>ab9051371322ea60f222187c376ed98d3</Anchor>
                </Node>
                <Node>
                 <Name>Camera</Name>
                 <Path>classreto_1_1_camera.html</Path>
-                <Anchor>aef323db85f8f711df4717d896f637ef5</Anchor>
+                <Anchor>ac5573fe97d2d351b61604ac12df3be32</Anchor>
                </Node>
                <Node>
                 <Name>~Camera</Name>
@@ -417,7 +417,7 @@
                <Node>
                 <Name>setZeqSession</Name>
                 <Path>classreto_1_1_camera.html</Path>
-                <Anchor>a9ccb702eb107da3cd70913e936a9d959</Anchor>
+                <Anchor>aa305a146709d483195b6177e011d1d7a</Anchor>
                </Node>
                <Node>
                 <Name>viewMatrix</Name>
@@ -435,11 +435,6 @@
                 <Anchor>a8465c8de8dbda78ee6ca66f4d37f68e3</Anchor>
                </Node>
                <Node>
-                <Name>_f</Name>
-                <Path>classreto_1_1_camera.html</Path>
-                <Anchor>aeaf8135126ff063fd90a8710300c70d5</Anchor>
-               </Node>
-               <Node>
                 <Name>_farPlane</Name>
                 <Path>classreto_1_1_camera.html</Path>
                 <Anchor>aa27ef306620aebcb9250f113736af0d3</Anchor>
@@ -448,6 +443,11 @@
                 <Name>_fov</Name>
                 <Path>classreto_1_1_camera.html</Path>
                 <Anchor>a4e954b9f6ba2041e46077619b79fcc8c</Anchor>
+               </Node>
+               <Node>
+                <Name>_fovTan</Name>
+                <Path>classreto_1_1_camera.html</Path>
+                <Anchor>afade9ef30cf0e0fbd7b909c54c7269e4</Anchor>
                </Node>
                <Node>
                 <Name>_isProjMatClean</Name>
@@ -480,9 +480,9 @@
                 <Anchor>a76e74f8b3d8619bfab16af6342004ecb</Anchor>
                </Node>
                <Node>
-                <Name>_zeqConnection</Name>
+                <Name>NO_ZEROEQ</Name>
                 <Path>classreto_1_1_camera.html</Path>
-                <Anchor>af4871c24ec22d285f75a970e585f3b9d</Anchor>
+                <Anchor>a2e46cd8434a5be05bf6dee24eaa0030c</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -555,7 +555,7 @@
                <Node>
                 <Name>endTime</Name>
                 <Path>classreto_1_1_camera_animation.html</Path>
-                <Anchor>aaa6087dc153a05bb76b5f95c7533cc7f</Anchor>
+                <Anchor>a59f2eb7be758b9195bb150ebd404c796</Anchor>
                </Node>
                <Node>
                 <Name>getKeyCamera</Name>
@@ -565,22 +565,22 @@
                <Node>
                 <Name>isPosAnimated</Name>
                 <Path>classreto_1_1_camera_animation.html</Path>
-                <Anchor>af7a269d2c844677ce9561e46811394f5</Anchor>
+                <Anchor>ad6577698bf20162f6322dc3db2906639</Anchor>
                </Node>
                <Node>
                 <Name>isRadAnimated</Name>
                 <Path>classreto_1_1_camera_animation.html</Path>
-                <Anchor>a47f0bad0762740049ae5d9098e14e1a0</Anchor>
+                <Anchor>add01705fe208fe3f17b023ce406858e6</Anchor>
                </Node>
                <Node>
                 <Name>isRotAnimated</Name>
                 <Path>classreto_1_1_camera_animation.html</Path>
-                <Anchor>a0cbc5da75606ec5d262daedc31f508f5</Anchor>
+                <Anchor>aeed547331d95e262fb242784533a38d8</Anchor>
                </Node>
                <Node>
                 <Name>startTime</Name>
                 <Path>classreto_1_1_camera_animation.html</Path>
-                <Anchor>a0340a7cab67497822b1474af958f9ce5</Anchor>
+                <Anchor>a0ff7f8952deba62fe8209601cbbf591a</Anchor>
                </Node>
                <Node>
                 <Name>_animation</Name>
@@ -804,12 +804,12 @@
                <Node>
                 <Name>FreeCameraController</Name>
                 <Path>classreto_1_1_free_camera_controller.html</Path>
-                <Anchor>affe3e7c8005b5c694efb113c6dece2d4</Anchor>
+                <Anchor>af84f31425975e1635f97b3f99a9e7ff3</Anchor>
                </Node>
                <Node>
                 <Name>~FreeCameraController</Name>
                 <Path>classreto_1_1_free_camera_controller.html</Path>
-                <Anchor>a4c7d814fe71a10f9aaab96eb194ae546</Anchor>
+                <Anchor>a6d27900b7d7d1f8042ffadfa58dcb6e2</Anchor>
                </Node>
                <Node>
                 <Name>_conformSetViewMatrix</Name>
@@ -850,22 +850,22 @@
                <Node>
                 <Name>position</Name>
                 <Path>classreto_1_1_key_camera.html</Path>
-                <Anchor>ab0ed629bcf41adf5edeeabe3379decfa</Anchor>
+                <Anchor>a76f30a657dfbd82b440c095ca586f44f</Anchor>
                </Node>
                <Node>
                 <Name>radius</Name>
                 <Path>classreto_1_1_key_camera.html</Path>
-                <Anchor>accdb5859fdad3585abd1aff04f911eaa</Anchor>
+                <Anchor>ad9e2af432df6409b866b172a2700bdd1</Anchor>
                </Node>
                <Node>
                 <Name>rotation</Name>
                 <Path>classreto_1_1_key_camera.html</Path>
-                <Anchor>a8f261f649e41dbdf7a6febfec82e572e</Anchor>
+                <Anchor>a229f4348e11605df9188004531476cb8</Anchor>
                </Node>
                <Node>
                 <Name>time</Name>
                 <Path>classreto_1_1_key_camera.html</Path>
-                <Anchor>aadb56631934b72591d06f060b895d3bf</Anchor>
+                <Anchor>a916005ef71ddad5235e9516cad4add4e</Anchor>
                </Node>
                <Node>
                 <Name>_position</Name>
@@ -983,12 +983,12 @@
                <Node>
                 <Name>OrbitalCameraController</Name>
                 <Path>classreto_1_1_orbital_camera_controller.html</Path>
-                <Anchor>aa12a0329680f180d0e790ed8bc53c95c</Anchor>
+                <Anchor>a9e2d406a7989a53c3adb9c7bb299e74f</Anchor>
                </Node>
                <Node>
                 <Name>~OrbitalCameraController</Name>
                 <Path>classreto_1_1_orbital_camera_controller.html</Path>
-                <Anchor>a23c2c77c23a2f53ee01b18b2faeedc1e</Anchor>
+                <Anchor>a8a6af8abf06e5eb134662be4a660a52c</Anchor>
                </Node>
                <Node>
                 <Name>_conformSetViewMatrix</Name>
@@ -1008,7 +1008,7 @@
                <Node>
                 <Name>position</Name>
                 <Path>classreto_1_1_orbital_camera_controller.html</Path>
-                <Anchor>a59a026a66602a9cecd6b13d08714b16d</Anchor>
+                <Anchor>a23381f86bff1f7153ba402191c4699d9</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1272,17 +1272,17 @@
                <Node>
                 <Name>isAttributeCached</Name>
                 <Path>classreto_1_1_shader_program.html</Path>
-                <Anchor>af143f081700a52f60b9271ae6b1b0245</Anchor>
+                <Anchor>a3a53b95ab492658ce9fdce654c35db4d</Anchor>
                </Node>
                <Node>
                 <Name>isLinked</Name>
                 <Path>classreto_1_1_shader_program.html</Path>
-                <Anchor>a2675c5af21c62423fc0ec6a9876ed911</Anchor>
+                <Anchor>a267005a00e5a8b3a228896ea12407d52</Anchor>
                </Node>
                <Node>
                 <Name>isUniformCached</Name>
                 <Path>classreto_1_1_shader_program.html</Path>
-                <Anchor>a9aa2f01169ecba173ce293e30c165fbe</Anchor>
+                <Anchor>a9e2bff85432aef0616e6bdca8af31b25</Anchor>
                </Node>
                <Node>
                 <Name>link</Name>

@@ -149,8 +149,8 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a5c885d5f53bc01f67f137c6bd7867ace</Anchor>
-    <Abstract>Camera constructor. </Abstract>
+    <Anchor>ab9051371322ea60f222187c376ed98d3</Anchor>
+    <Abstract>use as session name to disable ZEROEQ </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
   <Token>
@@ -161,7 +161,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aef323db85f8f711df4717d896f637ef5</Anchor>
+    <Anchor>ac5573fe97d2d351b61604ac12df3be32</Anchor>
     <Abstract>Camera constructor. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -185,7 +185,7 @@
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>a9ccb702eb107da3cd70913e936a9d959</Anchor>
+    <Anchor>aa305a146709d483195b6177e011d1d7a</Anchor>
     <Abstract>Method to start or change the camera zeqSession. </Abstract>
     <DeclaredIn>Camera.h</DeclaredIn>
   </Token>
@@ -299,13 +299,13 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>_f</Name>
+      <Name>_fovTan</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>reto::Camera</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_camera.html</Path>
-    <Anchor>aeaf8135126ff063fd90a8710300c70d5</Anchor>
+    <Anchor>afade9ef30cf0e0fbd7b909c54c7269e4</Anchor>
     <Abstract>Factor to calculate the camera projection matrix based on the camera far plane, near plane...</Abstract>
   </Token>
   <Token>
@@ -406,17 +406,6 @@
     <Path>classreto_1_1_camera.html</Path>
     <Anchor>a8465c8de8dbda78ee6ca66f4d37f68e3</Anchor>
     <Abstract>Bool to enable zeq changes in view matrix. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>_zeqConnection</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>reto::Camera</Scope>
-    </TokenIdentifier>
-    <Path>classreto_1_1_camera.html</Path>
-    <Anchor>af4871c24ec22d285f75a970e585f3b9d</Anchor>
-    <Abstract>State of the zeq connection: 1 activated, 0 desactivated. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -924,7 +913,7 @@
       <Scope>reto::FreeCameraController</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_free_camera_controller.html</Path>
-    <Abstract>Class to control orbtial camera. </Abstract>
+    <Abstract>Class to control orbital camera. </Abstract>
     <DeclaredIn>FreeCameraController.h</DeclaredIn>
   </Token>
   <Token>
@@ -1056,7 +1045,19 @@
       <Scope>reto::OrbitalCameraController</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_orbital_camera_controller.html</Path>
-    <Abstract>Class to control orbtial camera. </Abstract>
+    <Abstract>Class to control orbital camera This class manage the movement, rotation, zoom and animation of orbit...</Abstract>
+    <DeclaredIn>OrbitalCameraController.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>OrbitalCameraController</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>reto::OrbitalCameraController</Scope>
+    </TokenIdentifier>
+    <Path>classreto_1_1_orbital_camera_controller.html</Path>
+    <Anchor>a9e2d406a7989a53c3adb9c7bb299e74f</Anchor>
+    <Abstract>OrbitalCameraController class constructor. </Abstract>
     <DeclaredIn>OrbitalCameraController.h</DeclaredIn>
   </Token>
   <Token>
@@ -1079,7 +1080,7 @@
       <Scope>reto::OrbitalCameraController</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_orbital_camera_controller.html</Path>
-    <Anchor>a59a026a66602a9cecd6b13d08714b16d</Anchor>
+    <Anchor>a23381f86bff1f7153ba402191c4699d9</Anchor>
     <Abstract>Method to obtain the pivot or orbital center. </Abstract>
     <DeclaredIn>OrbitalCameraController.h</DeclaredIn>
   </Token>
@@ -1503,7 +1504,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>a9aa2f01169ecba173ce293e30c165fbe</Anchor>
+    <Anchor>a9e2bff85432aef0616e6bdca8af31b25</Anchor>
     <Abstract>Method to check if uniform exist (only check in uniform cache) </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>
@@ -1515,7 +1516,7 @@
       <Scope>reto::ShaderProgram</Scope>
     </TokenIdentifier>
     <Path>classreto_1_1_shader_program.html</Path>
-    <Anchor>af143f081700a52f60b9271ae6b1b0245</Anchor>
+    <Anchor>a3a53b95ab492658ce9fdce654c35db4d</Anchor>
     <Abstract>Method to check if attribute exist (only check in attribute cache) </Abstract>
     <DeclaredIn>ShaderProgram.h</DeclaredIn>
   </Token>

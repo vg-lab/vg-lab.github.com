@@ -6,13 +6,13 @@
      <key>CFBundleName</key>
      <string>ReTo</string>
      <key>CFBundleIdentifier</key>
-     <string>gmrv.es.reto</string>
+     <string>vg-lab.es.reto</string>
      <key>CFBundleVersion</key>
-     <string>0.3.1</string>
+     <string>0.3.7</string>
      <key>DocSetFeedName</key>
      <string>ReTo Documentation</string>
      <key>DocSetPublisherIdentifier</key>
-     <string>gmrv.es.reto.documentation</string>
+     <string>vg-lab.es.reto.documentation</string>
      <key>DocSetPublisherName</key>
      <string>Unknown</string>
      <key>DashDocSetFamily</key>

@@ -1,7 +1,7 @@
 var classreto_1_1_camera =
 [
-    [ "Camera", "classreto_1_1_camera.html#a5c885d5f53bc01f67f137c6bd7867ace", null ],
-    [ "Camera", "classreto_1_1_camera.html#aef323db85f8f711df4717d896f637ef5", null ],
+    [ "Camera", "classreto_1_1_camera.html#ab9051371322ea60f222187c376ed98d3", null ],
+    [ "Camera", "classreto_1_1_camera.html#ac5573fe97d2d351b61604ac12df3be32", null ],
     [ "~Camera", "classreto_1_1_camera.html#a22c8e04892dc269450756820b120a6d1", null ],
     [ "_buildProjectionMatrix", "classreto_1_1_camera.html#a5339d89f586cb3503dcd979e679fbf90", null ],
     [ "_setEnableZeqConnChanges", "classreto_1_1_camera.html#a8a3e4404894fc95d9593e37c50dae289", null ],
@@ -17,18 +17,18 @@ var classreto_1_1_camera =
     [ "nearPlane", "classreto_1_1_camera.html#a0f2f6c0aa06e491a574535fb9ac0cff4", null ],
     [ "projectionMatrix", "classreto_1_1_camera.html#a8c65eb263a6c430f317fc3be6b12222e", null ],
     [ "projectionViewMatrix", "classreto_1_1_camera.html#a6b940cdb827ea5b1aa2c85da1c820f9c", null ],
-    [ "setZeqSession", "classreto_1_1_camera.html#a9ccb702eb107da3cd70913e936a9d959", null ],
+    [ "setZeqSession", "classreto_1_1_camera.html#aa305a146709d483195b6177e011d1d7a", null ],
     [ "viewMatrix", "classreto_1_1_camera.html#af04acafea51d165cd9ba48eefdc5687f", null ],
     [ "AbstractCameraController", "classreto_1_1_camera.html#a226deefcc81c61788d5d2c3853cfc033", null ],
     [ "_enableZeqConnChanges", "classreto_1_1_camera.html#a8465c8de8dbda78ee6ca66f4d37f68e3", null ],
-    [ "_f", "classreto_1_1_camera.html#aeaf8135126ff063fd90a8710300c70d5", null ],
     [ "_farPlane", "classreto_1_1_camera.html#aa27ef306620aebcb9250f113736af0d3", null ],
     [ "_fov", "classreto_1_1_camera.html#a4e954b9f6ba2041e46077619b79fcc8c", null ],
+    [ "_fovTan", "classreto_1_1_camera.html#afade9ef30cf0e0fbd7b909c54c7269e4", null ],
     [ "_isProjMatClean", "classreto_1_1_camera.html#ae5e8a749b6aabe85c4e019c3803ab913", null ],
     [ "_nearPlane", "classreto_1_1_camera.html#a2fd847c5d84f9c54e9aa7c2013aeb105", null ],
     [ "_projectionMatrix", "classreto_1_1_camera.html#ae30fbc701aed0bc995648aa1c0690dea", null ],
     [ "_projectionViewMatrix", "classreto_1_1_camera.html#ae2adb6a4210287d45d9256482be0dc7e", null ],
     [ "_ratio", "classreto_1_1_camera.html#a7eef02742642b3ef7f175fa0e51c1e31", null ],
     [ "_viewMatrix", "classreto_1_1_camera.html#a76e74f8b3d8619bfab16af6342004ecb", null ],
-    [ "_zeqConnection", "classreto_1_1_camera.html#af4871c24ec22d285f75a970e585f3b9d", null ]
+    [ "NO_ZEROEQ", "classreto_1_1_camera.html#a2e46cd8434a5be05bf6dee24eaa0030c", null ]
 ];
