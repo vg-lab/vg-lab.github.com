@@ -6,13 +6,13 @@
      <key>CFBundleName</key>
      <string>nsol</string>
      <key>CFBundleIdentifier</key>
-     <string>gmrv.es.nsol</string>
+     <string>vg-lab.es.nsol</string>
      <key>CFBundleVersion</key>
      <string>0.4.0</string>
      <key>DocSetFeedName</key>
      <string>nsol Documentation</string>
      <key>DocSetPublisherIdentifier</key>
-     <string>gmrv.es.nsol.documentation</string>
+     <string>vg-lab.es.nsol.documentation</string>
      <key>DocSetPublisherName</key>
      <string>Unknown</string>
      <key>DashDocSetFamily</key>

@@ -1,4 +1,4 @@
-DOCSET_NAME=gmrv.es.nsol.docset
+DOCSET_NAME=vg-lab.es.nsol.docset
 DOCSET_CONTENTS=$(DOCSET_NAME)/Contents
 DOCSET_RESOURCES=$(DOCSET_CONTENTS)/Resources
 DOCSET_DOCUMENTS=$(DOCSET_RESOURCES)/Documents
