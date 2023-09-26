@@ -6,13 +6,13 @@
      <key>CFBundleName</key>
      <string>FiReS</string>
      <key>CFBundleIdentifier</key>
-     <string>es.gmrv.fires</string>
+     <string>es.vg-lab.fires</string>
      <key>CFBundleVersion</key>
      <string>0.2.0</string>
      <key>DocSetFeedName</key>
      <string>FiReS Documentation</string>
      <key>DocSetPublisherIdentifier</key>
-     <string>es.gmrv.fires.documentation</string>
+     <string>es.vg-lab.fires.documentation</string>
      <key>DocSetPublisherName</key>
      <string>Unknown</string>
      <key>DashDocSetFamily</key>

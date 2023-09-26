@@ -1,4 +1,4 @@
-DOCSET_NAME=es.gmrv.fires.docset
+DOCSET_NAME=es.vg-lab.fires.docset
 DOCSET_CONTENTS=$(DOCSET_NAME)/Contents
 DOCSET_RESOURCES=$(DOCSET_CONTENTS)/Resources
 DOCSET_DOCUMENTS=$(DOCSET_RESOURCES)/Documents
