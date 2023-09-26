@@ -1,6 +1,6 @@
 set(SCOOP_MATURITY "EP")
 set(SCOOP_DESCRIPTION "Scoop - Simple ColoR pAleTtes and mappERs")
-set(SCOOP_GIT_ROOT_URL "https://gitlab-ci-token:BzNkgC_zb-gW8jrDkni1@gitlab.vglab.es/gmrv/scoop.git")
+set(SCOOP_GIT_ROOT_URL "https://gitlab-ci-token:JePzKB2huMx3tHW6_N_A@gitlab.vg-lab.es/gmrv/scoop.git")
 set(SCOOP_PACKAGE_URL "")
 set(SCOOP_CI_URL "")
 set(SCOOP_CI_PNG "")
