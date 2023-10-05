@@ -16,5 +16,7 @@ var searchData=
   ['tswcline',['TSwcLine',['../structnsol_1_1_swc_writer_1_1_t_swc_line.html',1,'nsol::SwcWriter']]],
   ['tswcnodetype',['TSwcNodeType',['../classnsol_1_1_swc_reader_templated.html#abfa33db80108c0bf39e58d95dc3a4f77',1,'nsol::SwcReaderTemplated']]],
   ['tsynapsetype',['TSynapseType',['../classnsol_1_1_morphology_synapse.html#a9e0b86b6437e96f3573a7b429c96f432',1,'nsol::MorphologySynapse']]],
-  ['tsynapticsectiontype',['TSynapticSectionType',['../classnsol_1_1_morphology_synapse.html#a17a47f2ce79d651c5390857205991fc8',1,'nsol::MorphologySynapse']]]
+  ['tsynapticsectiontype',['TSynapticSectionType',['../classnsol_1_1_morphology_synapse.html#a17a47f2ce79d651c5390857205991fc8',1,'nsol::MorphologySynapse']]],
+  ['typetocolor',['typeToColor',['../classnsol_1_1_neuron.html#a27334b29ec413a93ce89af1354d82045',1,'nsol::Neuron']]],
+  ['typetostring',['typeToString',['../classnsol_1_1_neuron.html#a043d845f042368bc4f318bab3c44bd30',1,'nsol::Neuron']]]
 ];

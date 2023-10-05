@@ -1122,6 +1122,11 @@
                 <Anchor>a18074dd5a33c66f523b74b492fcc69f7</Anchor>
                </Node>
                <Node>
+                <Name>operator=</Name>
+                <Path>classnsol_1_1_morphology_synapse.html</Path>
+                <Anchor>ac384b5ed1ec8083a3d980026e074fdfb</Anchor>
+               </Node>
+               <Node>
                 <Name>postSynapticSection</Name>
                 <Path>classnsol_1_1_morphology_synapse.html</Path>
                 <Anchor>a6bd6944c776575db9c3a8ecf31c58cff</Anchor>
@@ -1563,6 +1568,16 @@
                 <Anchor>adfde6cb81c44b191c3adbfe78c339c0c</Anchor>
                </Node>
                <Node>
+                <Name>functionToColor</Name>
+                <Path>classnsol_1_1_neuron.html</Path>
+                <Anchor>a9929cb4e575240c80f81a145e9eb5fb2</Anchor>
+               </Node>
+               <Node>
+                <Name>functionToString</Name>
+                <Path>classnsol_1_1_neuron.html</Path>
+                <Anchor>a064e53feeb8f2f776e168e655ac612e5</Anchor>
+               </Node>
+               <Node>
                 <Name>gid</Name>
                 <Path>classnsol_1_1_neuron.html</Path>
                 <Anchor>a8afc950c57e22c17b1e66e0d942ade99</Anchor>
@@ -1603,6 +1618,11 @@
                 <Anchor>a8b966e80f45c11f493a5c1497a1956a5</Anchor>
                </Node>
                <Node>
+                <Name>layerToColor</Name>
+                <Path>classnsol_1_1_neuron.html</Path>
+                <Anchor>a7b5a04a2ab61061d8e3fcee8e2c351f5</Anchor>
+               </Node>
+               <Node>
                 <Name>miniColumn</Name>
                 <Path>classnsol_1_1_neuron.html</Path>
                 <Anchor>af56fe9257432b506d2082f8f91534d5b</Anchor>
@@ -1631,6 +1651,16 @@
                 <Name>transform</Name>
                 <Path>classnsol_1_1_neuron.html</Path>
                 <Anchor>a29aa5688d8524b9a96b0154f07b4d3cd</Anchor>
+               </Node>
+               <Node>
+                <Name>typeToColor</Name>
+                <Path>classnsol_1_1_neuron.html</Path>
+                <Anchor>a27334b29ec413a93ce89af1354d82045</Anchor>
+               </Node>
+               <Node>
+                <Name>typeToString</Name>
+                <Path>classnsol_1_1_neuron.html</Path>
+                <Anchor>a043d845f042368bc4f318bab3c44bd30</Anchor>
                </Node>
                <Node>
                 <Name>_functionalType</Name>
@@ -1714,9 +1744,9 @@
                 <Anchor>abc65618b1d08dfab025446ac9f200e9f</Anchor>
                </Node>
                <Node>
-                <Name>axon</Name>
+                <Name>axons</Name>
                 <Path>classnsol_1_1_neuron_morphology.html</Path>
-                <Anchor>a2b134489e53569208f1b2d376aa66746</Anchor>
+                <Anchor>af65c1d879b4eea35fdda8b21a5e1e53d</Anchor>
                </Node>
                <Node>
                 <Name>basalDendrites</Name>
@@ -2963,6 +2993,11 @@
                 <Anchor>ac01670285dde8138d80fe464faa21808</Anchor>
                </Node>
                <Node>
+                <Name>operator=</Name>
+                <Path>classnsol_1_1_synapse.html</Path>
+                <Anchor>a16487c87194c96d3473c4cc35d2513fe</Anchor>
+               </Node>
+               <Node>
                 <Name>postSynapticNeuron</Name>
                 <Path>classnsol_1_1_synapse.html</Path>
                 <Anchor>ae4ee1b2a6ceaedae83d869124ce49ea5</Anchor>
@@ -3517,6 +3552,10 @@
              <Node>
               <Name>n</Name>
               <Path>functions_n.html</Path>
+             </Node>
+             <Node>
+              <Name>o</Name>
+              <Path>functions_o.html</Path>
              </Node>
              <Node>
               <Name>p</Name>

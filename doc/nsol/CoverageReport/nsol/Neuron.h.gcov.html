@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-26 14:32:41</td>
+            <td class="headerValue">2023-10-05 19:21:29</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -131,146 +131,325 @@
 <span class="lineNum">      69 </span>            :       DEEP_CEREBELLAR_NUCLEI
 <span class="lineNum">      70 </span>            :     } TMorphologicalType;
 <span class="lineNum">      71 </span>            : 
-<span class="lineNum">      72 </span>            :     //! Type of neuron based in neuron functionality
-<span class="lineNum">      73 </span>            :     typedef enum : uint8_t
-<span class="lineNum">      74 </span>            :     {
-<span class="lineNum">      75 </span>            :       UNDEFINED_FUNCTIONAL_TYPE = 0,
-<span class="lineNum">      76 </span>            :       INHIBITORY,
-<span class="lineNum">      77 </span>            :       EXCITATORY
-<span class="lineNum">      78 </span>            :     } TFunctionalType;
+<span class="lineNum">      72 </span>            :     /** \brief Returns the string of the given morphological type.
+<span class="lineNum">      73 </span>            :      * \param[in] type Morphological type.
+<span class="lineNum">      74 </span>            :      *
+<span class="lineNum">      75 </span>            :      */
+<span class="lineNum">      76 </span>            :     static std::string typeToString(const TMorphologicalType type)
+<span class="lineNum">      77 </span>            :     {
+<span class="lineNum">      78 </span>            :       std::string typeStr = &quot;Undefined&quot;;
 <span class="lineNum">      79 </span>            : 
-<span class="lineNum">      80 </span>            : 
-<span class="lineNum">      81 </span>            : 
-<span class="lineNum">      82 </span>            :     NSOL_API
-<span class="lineNum">      83 </span>            :     Neuron( const NeuronMorphologyPtr neuronMorphology = nullptr,
-<span class="lineNum">      84 </span>            :             const unsigned short layer = 0,
-<span class="lineNum">      85 </span>            :             const unsigned int gid = 0,
-<span class="lineNum">      86 </span>            :             const Matrix4_4f transform = Matrix4_4fIdentity,
-<span class="lineNum">      87 </span>            :             const MiniColumnPtr miniColumn = nullptr,
-<span class="lineNum">      88 </span>            :             const TMorphologicalType morphologicalType = UNDEFINED,
-<span class="lineNum">      89 </span>            :             const TFunctionalType functionalType = UNDEFINED_FUNCTIONAL_TYPE );
-<span class="lineNum">      90 </span>            : 
-<span class="lineNum">      91 </span>            :     NSOL_API
-<span class="lineNum">      92 </span>            :     virtual ~Neuron( void );
-<span class="lineNum">      93 </span>            : 
-<span class="lineNum">      94 </span>            :     NSOL_API
-<span class="lineNum">      95 </span>            :     bool hasMorphology() const;
-<span class="lineNum">      96 </span>            : 
-<span class="lineNum">      97 </span>            :     NSOL_API
-<span class="lineNum">      98 </span>            :     bool isMorphologyLoaded( ) const;
-<span class="lineNum">      99 </span>            : 
-<span class="lineNum">     100 </span>            :     // NSOL_API
-<span class="lineNum">     101 </span>            :     // NeuronMorphologyPtr createMorphology( void );
-<span class="lineNum">     102 </span>            : 
-<span class="lineNum">     103 </span>            :     NSOL_API
-<span class="lineNum">     104 </span>            :     NeuronMorphologyPtr morphology( void ) const;
-<span class="lineNum">     105 </span>            : 
-<span class="lineNum">     106 </span>            :     NSOL_API
-<span class="lineNum">     107 </span>            :     virtual void morphology( NeuronMorphologyPtr morphology );
-<span class="lineNum">     108 </span>            : 
-<span class="lineNum">     109 </span>            :     /**
-<span class="lineNum">     110 </span>            :      * Method to get the transformation matrix of the neuron.
-<span class="lineNum">     111 </span>            :      * @return transformation matrix
-<span class="lineNum">     112 </span>            :      */
-<span class="lineNum">     113 </span>            :     NSOL_API
-<span class="lineNum">     114 </span>            :     Matrix4_4f &amp; transform( void );
-<span class="lineNum">     115 </span>            : 
-<span class="lineNum">     116 </span>            :     /**
-<span class="lineNum">     117 </span>            :      * Method to get-set the layer of the neuron.
-<span class="lineNum">     118 </span>            :      * @return layer
-<span class="lineNum">     119 </span>            :      */
-<span class="lineNum">     120 </span>            :     NSOL_API
-<span class="lineNum">     121 </span>            :     unsigned short &amp; layer( void );
-<span class="lineNum">     122 </span>            : 
-<span class="lineNum">     123 </span>            :     /**
-<span class="lineNum">     124 </span>            :      * Method to get-set the layer of the neuron.
-<span class="lineNum">     125 </span>            :      * @return layer
-<span class="lineNum">     126 </span>            :      */
-<span class="lineNum">     127 </span>            :     NSOL_API
-<span class="lineNum">     128 </span>            :     unsigned int &amp; gid( void );
-<span class="lineNum">     129 </span>            : 
-<span class="lineNum">     130 </span>            :     NSOL_API
-<span class="lineNum">     131 </span>            :     void miniColumn(MiniColumnPtr miniColumn);
-<span class="lineNum">     132 </span>            : 
-<span class="lineNum">     133 </span>            :     NSOL_API
-<span class="lineNum">     134 </span>            :     MiniColumnPtr &amp;miniColumn( void );
-<span class="lineNum">     135 </span>            : 
-<span class="lineNum">     136 </span>            :     /**
-<span class="lineNum">     137 </span>            :      * Method to get the neuron type based in morphology.
-<span class="lineNum">     138 </span>            :      * @return neuron type
-<span class="lineNum">     139 </span>            :      */
-<span class="lineNum">     140 </span>            :     NSOL_API
-<span class="lineNum">     141 </span>            :     TMorphologicalType &amp; morphologicalType();
-<span class="lineNum">     142 </span>            : 
-<span class="lineNum">     143 </span>            :     /**
-<span class="lineNum">     144 </span>            :      * Method to get the neuron type based in functionality.
-<span class="lineNum">     145 </span>            :      * @return neuron type
-<span class="lineNum">     146 </span>            :      */
-<span class="lineNum">     147 </span>            :     NSOL_API
-<span class="lineNum">     148 </span>            :     TFunctionalType &amp; functionalType();
-<span class="lineNum">     149 </span>            : 
-<span class="lineNum">     150 </span>            :     /**
-<span class="lineNum">     151 </span>            :      * Method to know if the neuron is pyramidal type.
-<span class="lineNum">     152 </span>            :      * @return bool
-<span class="lineNum">     153 </span>            :      */
-<span class="lineNum">     154 </span>            :     NSOL_API
-<span class="lineNum">     155 </span>            :     bool isPyramidal( void );
-<span class="lineNum">     156 </span>            : 
-<span class="lineNum">     157 </span>            :     /**
-<span class="lineNum">     158 </span>            :      * Method to know if the neuron is internuron type.
-<span class="lineNum">     159 </span>            :      * @return bool
-<span class="lineNum">     160 </span>            :      */
-<span class="lineNum">     161 </span>            :     NSOL_API
-<span class="lineNum">     162 </span>            :     bool isInterneuron( void );
-<span class="lineNum">     163 </span>            : 
-<span class="lineNum">     164 </span>            :     /**
-<span class="lineNum">     165 </span>            :      * Method to know if the neuron is excitatory type.
-<span class="lineNum">     166 </span>            :      * @return bool
-<span class="lineNum">     167 </span>            :      */
-<span class="lineNum">     168 </span>            :     NSOL_API
-<span class="lineNum">     169 </span>            :     bool isExcitatory( void );
-<span class="lineNum">     170 </span>            : 
-<span class="lineNum">     171 </span>            :     /**
-<span class="lineNum">     172 </span>            :      * Method to know if the neuron is inhibitory type.
-<span class="lineNum">     173 </span>            :      * @return bool
-<span class="lineNum">     174 </span>            :      */
-<span class="lineNum">     175 </span>            :     NSOL_API
-<span class="lineNum">     176 </span>            :     bool isInhibitory( void );
-<a name="177"><span class="lineNum">     177 </span>            : </a>
-<span class="lineNum">     178 </span>            :     NSOL_API
-<span class="lineNum">     179 </span><span class="lineCov">          1 :     virtual NeuronPtr asNeuron( void )</span>
-<span class="lineNum">     180 </span>            :     {
-<span class="lineNum">     181 </span><span class="lineCov">          1 :       return this;</span>
-<span class="lineNum">     182 </span>            :     }
-<span class="lineNum">     183 </span>            : 
-<span class="lineNum">     184 </span>            : 
-<span class="lineNum">     185 </span>            :   protected:
-<span class="lineNum">     186 </span>            : 
-<span class="lineNum">     187 </span>            :     //! Morphology pointer
-<span class="lineNum">     188 </span>            :     NeuronMorphologyPtr _morphology;
+<span class="lineNum">      80 </span>            :       switch(type)
+<span class="lineNum">      81 </span>            :       {
+<span class="lineNum">      82 </span>            :         case PYRAMIDAL:
+<span class="lineNum">      83 </span>            :           typeStr = &quot;Pyramidal&quot;;
+<span class="lineNum">      84 </span>            :           break;
+<span class="lineNum">      85 </span>            :         case INTERNEURON:
+<span class="lineNum">      86 </span>            :           typeStr = &quot;Interneuron&quot;;
+<span class="lineNum">      87 </span>            :           break;
+<span class="lineNum">      88 </span>            :         case BASKET:
+<span class="lineNum">      89 </span>            :           typeStr = &quot;Basket&quot;;
+<span class="lineNum">      90 </span>            :           break;
+<span class="lineNum">      91 </span>            :         case STELLATE:
+<span class="lineNum">      92 </span>            :           typeStr = &quot;Stellate&quot;;
+<span class="lineNum">      93 </span>            :           break;
+<span class="lineNum">      94 </span>            :         case GOLGI:
+<span class="lineNum">      95 </span>            :           typeStr = &quot;Golgi&quot;;
+<span class="lineNum">      96 </span>            :           break;
+<span class="lineNum">      97 </span>            :         case GRANULE:
+<span class="lineNum">      98 </span>            :           typeStr = &quot;Granule&quot;;
+<span class="lineNum">      99 </span>            :           break;
+<span class="lineNum">     100 </span>            :         case LUGARO:
+<span class="lineNum">     101 </span>            :           typeStr = &quot;Lugaro&quot;;
+<span class="lineNum">     102 </span>            :           break;
+<span class="lineNum">     103 </span>            :         case UNIPOLAR_BRUSH:
+<span class="lineNum">     104 </span>            :           typeStr = &quot;Unipolar brush&quot;;
+<span class="lineNum">     105 </span>            :           break;
+<span class="lineNum">     106 </span>            :         case PURKINJE:
+<span class="lineNum">     107 </span>            :           typeStr = &quot;Purkinje&quot;;
+<span class="lineNum">     108 </span>            :           break;
+<span class="lineNum">     109 </span>            :         case CHANDELIER:
+<span class="lineNum">     110 </span>            :           typeStr = &quot;Chandelier&quot;;
+<span class="lineNum">     111 </span>            :           break;
+<span class="lineNum">     112 </span>            :         case INFERIOR_OLIVE:
+<span class="lineNum">     113 </span>            :           typeStr = &quot;Inferior olive&quot;;
+<span class="lineNum">     114 </span>            :           break;
+<span class="lineNum">     115 </span>            :         case DEEP_CEREBELLAR_NUCLEI:
+<span class="lineNum">     116 </span>            :           typeStr = &quot;Deep cerebellar nuclei&quot;;
+<span class="lineNum">     117 </span>            :           break;
+<span class="lineNum">     118 </span>            :         case UNDEFINED:
+<span class="lineNum">     119 </span>            :           // fall through
+<span class="lineNum">     120 </span>            :         default:
+<span class="lineNum">     121 </span>            :           break;
+<span class="lineNum">     122 </span>            :       }
+<span class="lineNum">     123 </span>            : 
+<span class="lineNum">     124 </span>            :       return typeStr;
+<span class="lineNum">     125 </span>            :     }
+<span class="lineNum">     126 </span>            : 
+<span class="lineNum">     127 </span>            :     /** \brief Returns the color assigned to the type. Colors are now
+<span class="lineNum">     128 </span>            :      * &quot;random&quot;, should use the ones defined in other HDF5 activity
+<span class="lineNum">     129 </span>            :      * file. TODO: change colors.
+<span class="lineNum">     130 </span>            :      * \param[in] type Morphological type.
+<span class="lineNum">     131 </span>            :      *
+<span class="lineNum">     132 </span>            :      */
+<span class="lineNum">     133 </span>            :     static Eigen::Vector3f typeToColor(const TMorphologicalType type)
+<span class="lineNum">     134 </span>            :     {
+<span class="lineNum">     135 </span>            :       Eigen::Vector3f color{0,0,0};
+<span class="lineNum">     136 </span>            : 
+<span class="lineNum">     137 </span>            :       auto hex2float = [](int v){ return static_cast&lt;float&gt;(v)/255.f; };
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span>            :       switch(type)
+<span class="lineNum">     140 </span>            :       {
+<span class="lineNum">     141 </span>            :         case PYRAMIDAL:
+<span class="lineNum">     142 </span>            :           color = { 1,0,0 };
+<span class="lineNum">     143 </span>            :           break;
+<span class="lineNum">     144 </span>            :         case INTERNEURON:
+<span class="lineNum">     145 </span>            :           color = { 0,1,0 };
+<span class="lineNum">     146 </span>            :           break;
+<span class="lineNum">     147 </span>            :         case BASKET: // F37735
+<span class="lineNum">     148 </span>            :           color = { hex2float(0xF3), hex2float(0x77), hex2float(0x35) };
+<span class="lineNum">     149 </span>            :           break;
+<span class="lineNum">     150 </span>            :         case STELLATE: // FFC425
+<span class="lineNum">     151 </span>            :           color = { hex2float(0xFF), hex2float(0xC4), hex2float(0x25) };
+<span class="lineNum">     152 </span>            :           break;
+<span class="lineNum">     153 </span>            :         case GOLGI: // 332EBC
+<span class="lineNum">     154 </span>            :           color = { hex2float(0x33), hex2float(0x2E), hex2float(0xBC) };
+<span class="lineNum">     155 </span>            :           break;
+<span class="lineNum">     156 </span>            :         case GRANULE: // E62214
+<span class="lineNum">     157 </span>            :           color = { hex2float(0xE6), hex2float(0x22), hex2float(0x14) };
+<span class="lineNum">     158 </span>            :           break;
+<span class="lineNum">     159 </span>            :         case LUGARO:
+<span class="lineNum">     160 </span>            :           color = { 0,1,1 };
+<span class="lineNum">     161 </span>            :           break;
+<span class="lineNum">     162 </span>            :         case UNIPOLAR_BRUSH:
+<span class="lineNum">     163 </span>            :           color = { 1,0,0.5 };
+<span class="lineNum">     164 </span>            :           break;
+<span class="lineNum">     165 </span>            :         case PURKINJE: // 0F8944
+<span class="lineNum">     166 </span>            :           color = { hex2float(0x0F), hex2float(0x89), hex2float(0x44) };
+<span class="lineNum">     167 </span>            :           break;
+<span class="lineNum">     168 </span>            :         case CHANDELIER:
+<span class="lineNum">     169 </span>            :           color = { 1,0.5,0.5 };
+<span class="lineNum">     170 </span>            :           break;
+<span class="lineNum">     171 </span>            :         case INFERIOR_OLIVE:
+<span class="lineNum">     172 </span>            :           color = { 0.5,0,0 };
+<span class="lineNum">     173 </span>            :           break;
+<span class="lineNum">     174 </span>            :         case DEEP_CEREBELLAR_NUCLEI:
+<span class="lineNum">     175 </span>            :           color = { 0,0.5,0 };
+<span class="lineNum">     176 </span>            :           break;
+<span class="lineNum">     177 </span>            :         case UNDEFINED:
+<span class="lineNum">     178 </span>            :           // fall through
+<span class="lineNum">     179 </span>            :         default:
+<span class="lineNum">     180 </span>            :           break;
+<span class="lineNum">     181 </span>            :       }
+<span class="lineNum">     182 </span>            : 
+<span class="lineNum">     183 </span>            :       return color;
+<span class="lineNum">     184 </span>            :     }
+<span class="lineNum">     185 </span>            : 
+<span class="lineNum">     186 </span>            :     static Eigen::Vector3f layerToColor(const unsigned short layer)
+<span class="lineNum">     187 </span>            :     {
+<span class="lineNum">     188 </span>            :       Eigen::Vector3f color{0,0,0};
 <span class="lineNum">     189 </span>            : 
-<span class="lineNum">     190 </span>            :     //! Minicolumn pointer
-<span class="lineNum">     191 </span>            :     MiniColumnPtr _miniColumn;
-<span class="lineNum">     192 </span>            : 
-<span class="lineNum">     193 </span>            :     //! Matrix of global transformation
-<span class="lineNum">     194 </span>            :     Matrix4_4f _transform;
-<span class="lineNum">     195 </span>            : 
-<span class="lineNum">     196 </span>            :     //! Layer
-<span class="lineNum">     197 </span>            :     unsigned short _layer; //&gt; Layer
-<span class="lineNum">     198 </span>            : 
-<span class="lineNum">     199 </span>            :     //! Unique id
-<span class="lineNum">     200 </span>            :     unsigned int _gid;
-<span class="lineNum">     201 </span>            : 
-<span class="lineNum">     202 </span>            :     //! Type of neuron based in morphology
-<span class="lineNum">     203 </span>            :     TMorphologicalType _morphologicalType;
-<span class="lineNum">     204 </span>            : 
-<span class="lineNum">     205 </span>            :     //! Type of neuron based in functionality
-<span class="lineNum">     206 </span>            :     TFunctionalType _functionalType;
-<span class="lineNum">     207 </span>            : 
-<span class="lineNum">     208 </span>            :   };
-<span class="lineNum">     209 </span>            : }
-<span class="lineNum">     210 </span>            : 
-<span class="lineNum">     211 </span>            : #endif
+<span class="lineNum">     190 </span>            :       switch(layer)
+<span class="lineNum">     191 </span>            :       {
+<span class="lineNum">     192 </span>            :         case 1:
+<span class="lineNum">     193 </span>            :           color = { 1,0,0 };
+<span class="lineNum">     194 </span>            :           break;
+<span class="lineNum">     195 </span>            :         case 2:
+<span class="lineNum">     196 </span>            :           color = { 1,1,0 };
+<span class="lineNum">     197 </span>            :           break;
+<span class="lineNum">     198 </span>            :         case 3:
+<span class="lineNum">     199 </span>            :           color = { 0,1,0 };
+<span class="lineNum">     200 </span>            :           break;
+<span class="lineNum">     201 </span>            :         case 4:
+<span class="lineNum">     202 </span>            :           color = { 0,1,1 };
+<span class="lineNum">     203 </span>            :           break;
+<span class="lineNum">     204 </span>            :         case 5:
+<span class="lineNum">     205 </span>            :           color = { 0,0,1 };
+<span class="lineNum">     206 </span>            :           break;
+<span class="lineNum">     207 </span>            :         case 6:
+<span class="lineNum">     208 </span>            :           color = { 1,0,1 };
+<span class="lineNum">     209 </span>            :           break;
+<span class="lineNum">     210 </span>            :         default:
+<span class="lineNum">     211 </span>            :           break;
+<span class="lineNum">     212 </span>            :       }
+<span class="lineNum">     213 </span>            : 
+<span class="lineNum">     214 </span>            :       return color;
+<span class="lineNum">     215 </span>            :     }
+<span class="lineNum">     216 </span>            : 
+<span class="lineNum">     217 </span>            :     //! Type of neuron based in neuron functionality
+<span class="lineNum">     218 </span>            :     typedef enum : uint8_t
+<span class="lineNum">     219 </span>            :     {
+<span class="lineNum">     220 </span>            :       UNDEFINED_FUNCTIONAL_TYPE = 0,
+<span class="lineNum">     221 </span>            :       INHIBITORY,
+<span class="lineNum">     222 </span>            :       EXCITATORY
+<span class="lineNum">     223 </span>            :     } TFunctionalType;
+<span class="lineNum">     224 </span>            : 
+<span class="lineNum">     225 </span>            :     static std::string functionToString(const TFunctionalType type)
+<span class="lineNum">     226 </span>            :     {
+<span class="lineNum">     227 </span>            :       std::string typeStr = &quot;Undefined&quot;;
+<span class="lineNum">     228 </span>            : 
+<span class="lineNum">     229 </span>            :       switch(type)
+<span class="lineNum">     230 </span>            :       {
+<span class="lineNum">     231 </span>            :         case INHIBITORY: typeStr = &quot;Inhibitory&quot;; break;
+<span class="lineNum">     232 </span>            :         case EXCITATORY: typeStr = &quot;Excitatory&quot;; break;
+<span class="lineNum">     233 </span>            :         default:
+<span class="lineNum">     234 </span>            :         case UNDEFINED_FUNCTIONAL_TYPE:
+<span class="lineNum">     235 </span>            :           break;
+<span class="lineNum">     236 </span>            :       }
+<span class="lineNum">     237 </span>            : 
+<span class="lineNum">     238 </span>            :       return typeStr;
+<span class="lineNum">     239 </span>            :     }
+<span class="lineNum">     240 </span>            : 
+<span class="lineNum">     241 </span>            :     static Eigen::Vector3f functionToColor(const TFunctionalType type)
+<span class="lineNum">     242 </span>            :     {
+<span class="lineNum">     243 </span>            :       Eigen::Vector3f color{0,0,0};
+<span class="lineNum">     244 </span>            : 
+<span class="lineNum">     245 </span>            :       switch(type)
+<span class="lineNum">     246 </span>            :       {
+<span class="lineNum">     247 </span>            :         case INHIBITORY:
+<span class="lineNum">     248 </span>            :           color = { 1,0,0 };
+<span class="lineNum">     249 </span>            :           break;
+<span class="lineNum">     250 </span>            :         case EXCITATORY:
+<span class="lineNum">     251 </span>            :           color = { 0,0,1 };
+<span class="lineNum">     252 </span>            :           break;
+<span class="lineNum">     253 </span>            :         case UNDEFINED_FUNCTIONAL_TYPE:
+<span class="lineNum">     254 </span>            :         default:
+<span class="lineNum">     255 </span>            :           break;
+<span class="lineNum">     256 </span>            :       }
+<span class="lineNum">     257 </span>            : 
+<span class="lineNum">     258 </span>            :       return color;
+<span class="lineNum">     259 </span>            :     }
+<span class="lineNum">     260 </span>            : 
+<span class="lineNum">     261 </span>            :     NSOL_API
+<span class="lineNum">     262 </span>            :     Neuron( const NeuronMorphologyPtr neuronMorphology = nullptr,
+<span class="lineNum">     263 </span>            :             const unsigned short layer = 0,
+<span class="lineNum">     264 </span>            :             const unsigned int gid = 0,
+<span class="lineNum">     265 </span>            :             const Matrix4_4f transform = Matrix4_4fIdentity,
+<span class="lineNum">     266 </span>            :             const MiniColumnPtr miniColumn = nullptr,
+<span class="lineNum">     267 </span>            :             const TMorphologicalType morphologicalType = UNDEFINED,
+<span class="lineNum">     268 </span>            :             const TFunctionalType functionalType = UNDEFINED_FUNCTIONAL_TYPE );
+<span class="lineNum">     269 </span>            : 
+<span class="lineNum">     270 </span>            :     NSOL_API
+<span class="lineNum">     271 </span>            :     virtual ~Neuron( void );
+<span class="lineNum">     272 </span>            : 
+<span class="lineNum">     273 </span>            :     NSOL_API
+<span class="lineNum">     274 </span>            :     bool hasMorphology() const;
+<span class="lineNum">     275 </span>            : 
+<span class="lineNum">     276 </span>            :     NSOL_API
+<span class="lineNum">     277 </span>            :     bool isMorphologyLoaded( ) const;
+<span class="lineNum">     278 </span>            : 
+<span class="lineNum">     279 </span>            :     // NSOL_API
+<span class="lineNum">     280 </span>            :     // NeuronMorphologyPtr createMorphology( void );
+<span class="lineNum">     281 </span>            : 
+<span class="lineNum">     282 </span>            :     NSOL_API
+<span class="lineNum">     283 </span>            :     NeuronMorphologyPtr morphology( void ) const;
+<span class="lineNum">     284 </span>            : 
+<span class="lineNum">     285 </span>            :     NSOL_API
+<span class="lineNum">     286 </span>            :     virtual void morphology( NeuronMorphologyPtr morphology );
+<span class="lineNum">     287 </span>            : 
+<span class="lineNum">     288 </span>            :     /**
+<span class="lineNum">     289 </span>            :      * Method to get the transformation matrix of the neuron.
+<span class="lineNum">     290 </span>            :      * @return transformation matrix
+<span class="lineNum">     291 </span>            :      */
+<span class="lineNum">     292 </span>            :     NSOL_API
+<span class="lineNum">     293 </span>            :     Matrix4_4f &amp; transform( void );
+<span class="lineNum">     294 </span>            : 
+<span class="lineNum">     295 </span>            :     /**
+<span class="lineNum">     296 </span>            :      * Method to get-set the layer of the neuron.
+<span class="lineNum">     297 </span>            :      * @return layer
+<span class="lineNum">     298 </span>            :      */
+<span class="lineNum">     299 </span>            :     NSOL_API
+<span class="lineNum">     300 </span>            :     unsigned short &amp; layer( void );
+<span class="lineNum">     301 </span>            : 
+<span class="lineNum">     302 </span>            :     /**
+<span class="lineNum">     303 </span>            :      * Method to get-set the layer of the neuron.
+<span class="lineNum">     304 </span>            :      * @return layer
+<span class="lineNum">     305 </span>            :      */
+<span class="lineNum">     306 </span>            :     NSOL_API
+<span class="lineNum">     307 </span>            :     unsigned int &amp; gid( void );
+<span class="lineNum">     308 </span>            : 
+<span class="lineNum">     309 </span>            :     NSOL_API
+<span class="lineNum">     310 </span>            :     void miniColumn(MiniColumnPtr miniColumn);
+<span class="lineNum">     311 </span>            : 
+<span class="lineNum">     312 </span>            :     NSOL_API
+<span class="lineNum">     313 </span>            :     MiniColumnPtr &amp;miniColumn( void );
+<span class="lineNum">     314 </span>            : 
+<span class="lineNum">     315 </span>            :     /**
+<span class="lineNum">     316 </span>            :      * Method to get the neuron type based in morphology.
+<span class="lineNum">     317 </span>            :      * @return neuron type
+<span class="lineNum">     318 </span>            :      */
+<span class="lineNum">     319 </span>            :     NSOL_API
+<span class="lineNum">     320 </span>            :     TMorphologicalType &amp; morphologicalType();
+<span class="lineNum">     321 </span>            : 
+<span class="lineNum">     322 </span>            :     /**
+<span class="lineNum">     323 </span>            :      * Method to get the neuron type based in functionality.
+<span class="lineNum">     324 </span>            :      * @return neuron type
+<span class="lineNum">     325 </span>            :      */
+<span class="lineNum">     326 </span>            :     NSOL_API
+<span class="lineNum">     327 </span>            :     TFunctionalType &amp; functionalType();
+<span class="lineNum">     328 </span>            : 
+<span class="lineNum">     329 </span>            :     /**
+<span class="lineNum">     330 </span>            :      * Method to know if the neuron is pyramidal type.
+<span class="lineNum">     331 </span>            :      * @return bool
+<span class="lineNum">     332 </span>            :      */
+<span class="lineNum">     333 </span>            :     NSOL_API
+<span class="lineNum">     334 </span>            :     bool isPyramidal( void );
+<span class="lineNum">     335 </span>            : 
+<span class="lineNum">     336 </span>            :     /**
+<span class="lineNum">     337 </span>            :      * Method to know if the neuron is internuron type.
+<span class="lineNum">     338 </span>            :      * @return bool
+<span class="lineNum">     339 </span>            :      */
+<span class="lineNum">     340 </span>            :     NSOL_API
+<span class="lineNum">     341 </span>            :     bool isInterneuron( void );
+<span class="lineNum">     342 </span>            : 
+<span class="lineNum">     343 </span>            :     /**
+<span class="lineNum">     344 </span>            :      * Method to know if the neuron is excitatory type.
+<span class="lineNum">     345 </span>            :      * @return bool
+<span class="lineNum">     346 </span>            :      */
+<span class="lineNum">     347 </span>            :     NSOL_API
+<span class="lineNum">     348 </span>            :     bool isExcitatory( void );
+<span class="lineNum">     349 </span>            : 
+<span class="lineNum">     350 </span>            :     /**
+<span class="lineNum">     351 </span>            :      * Method to know if the neuron is inhibitory type.
+<span class="lineNum">     352 </span>            :      * @return bool
+<span class="lineNum">     353 </span>            :      */
+<span class="lineNum">     354 </span>            :     NSOL_API
+<span class="lineNum">     355 </span>            :     bool isInhibitory( void );
+<a name="356"><span class="lineNum">     356 </span>            : </a>
+<span class="lineNum">     357 </span>            :     NSOL_API
+<span class="lineNum">     358 </span><span class="lineCov">          1 :     virtual NeuronPtr asNeuron( void )</span>
+<span class="lineNum">     359 </span>            :     {
+<span class="lineNum">     360 </span><span class="lineCov">          1 :       return this;</span>
+<span class="lineNum">     361 </span>            :     }
+<span class="lineNum">     362 </span>            : 
+<span class="lineNum">     363 </span>            : 
+<span class="lineNum">     364 </span>            :   protected:
+<span class="lineNum">     365 </span>            : 
+<span class="lineNum">     366 </span>            :     //! Morphology pointer
+<span class="lineNum">     367 </span>            :     NeuronMorphologyPtr _morphology;
+<span class="lineNum">     368 </span>            : 
+<span class="lineNum">     369 </span>            :     //! Minicolumn pointer
+<span class="lineNum">     370 </span>            :     MiniColumnPtr _miniColumn;
+<span class="lineNum">     371 </span>            : 
+<span class="lineNum">     372 </span>            :     //! Matrix of global transformation
+<span class="lineNum">     373 </span>            :     Matrix4_4f _transform;
+<span class="lineNum">     374 </span>            : 
+<span class="lineNum">     375 </span>            :     //! Layer
+<span class="lineNum">     376 </span>            :     unsigned short _layer; //&gt; Layer
+<span class="lineNum">     377 </span>            : 
+<span class="lineNum">     378 </span>            :     //! Unique id
+<span class="lineNum">     379 </span>            :     unsigned int _gid;
+<span class="lineNum">     380 </span>            : 
+<span class="lineNum">     381 </span>            :     //! Type of neuron based in morphology
+<span class="lineNum">     382 </span>            :     TMorphologicalType _morphologicalType;
+<span class="lineNum">     383 </span>            : 
+<span class="lineNum">     384 </span>            :     //! Type of neuron based in functionality
+<span class="lineNum">     385 </span>            :     TFunctionalType _functionalType;
+<span class="lineNum">     386 </span>            : 
+<span class="lineNum">     387 </span>            :   };
+<span class="lineNum">     388 </span>            : }
+<span class="lineNum">     389 </span>            : 
+<span class="lineNum">     390 </span>            : #endif
 </pre>
       </td>
     </tr>

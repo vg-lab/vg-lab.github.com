@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['weight',['weight',['../classnsol_1_1_synapse.html#a654bbf46033fef519c6491be6de07425',1,'nsol::Synapse::weight(const float weight_)'],['../classnsol_1_1_synapse.html#abafc0244647522496922b04f8e6cb2e1',1,'nsol::Synapse::weight(void) const ']]],
-  ['writetoxml',['writeToXml',['../classnsol_1_1_xml_scene_writer.html#af6abb046550fc8643a1a4eada2cc01b7',1,'nsol::XmlSceneWriter']]]
+  ['tojson',['toJSON',['../classnsol_1_1_version.html#aa1c5f35ed503f5fc88d53ef8db8969f1',1,'nsol::Version']]],
+  ['transform',['transform',['../classnsol_1_1_neuron.html#a29aa5688d8524b9a96b0154f07b4d3cd',1,'nsol::Neuron']]],
+  ['typetocolor',['typeToColor',['../classnsol_1_1_neuron.html#a27334b29ec413a93ce89af1354d82045',1,'nsol::Neuron']]],
+  ['typetostring',['typeToString',['../classnsol_1_1_neuron.html#a043d845f042368bc4f318bab3c44bd30',1,'nsol::Neuron']]]
 ];

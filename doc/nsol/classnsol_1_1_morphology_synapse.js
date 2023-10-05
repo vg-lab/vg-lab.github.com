@@ -18,6 +18,7 @@ var classnsol_1_1_morphology_synapse =
     [ "~MorphologySynapse", "classnsol_1_1_morphology_synapse.html#a3cc10831993149af6631d016187ad204", null ],
     [ "gid", "classnsol_1_1_morphology_synapse.html#a54d3ed66255ae0a1cfb368f385387a8f", null ],
     [ "gid", "classnsol_1_1_morphology_synapse.html#a18074dd5a33c66f523b74b492fcc69f7", null ],
+    [ "operator=", "classnsol_1_1_morphology_synapse.html#ac384b5ed1ec8083a3d980026e074fdfb", null ],
     [ "postSynapticSection", "classnsol_1_1_morphology_synapse.html#a6bd6944c776575db9c3a8ecf31c58cff", null ],
     [ "postSynapticSection", "classnsol_1_1_morphology_synapse.html#af9fd95def1733ef85bbd84f96f7c1ade", null ],
     [ "postSynapticSurfacePosition", "classnsol_1_1_morphology_synapse.html#a622be191d7f41382c1959d947430da57", null ],

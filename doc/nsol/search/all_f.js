@@ -11,7 +11,7 @@ var searchData=
   ['setstream',['setStream',['../classnsol_1_1_log.html#a28d69229997601a19e91c407052404fc',1,'nsol::Log']]],
   ['simplifier',['Simplifier',['../classnsol_1_1_simplifier.html',1,'nsol']]],
   ['simplify',['simplify',['../classnsol_1_1_simplifier.html#a835a25806ca661ddb4b9ceef515873eb',1,'nsol::Simplifier']]],
-  ['soma',['Soma',['../classnsol_1_1_soma.html#a3a860731c624b40179376fc455cae47b',1,'nsol::Soma::Soma()'],['../classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd',1,'nsol::NeuronMorphology::soma()']]],
+  ['soma',['soma',['../classnsol_1_1_neuron_morphology.html#a623496f80a4f6f4539edf69929434ccd',1,'nsol::NeuronMorphology::soma()'],['../classnsol_1_1_soma.html#a3a860731c624b40179376fc455cae47b',1,'nsol::Soma::Soma()']]],
   ['soma',['Soma',['../classnsol_1_1_soma.html',1,'nsol']]],
   ['somastats',['SomaStats',['../classnsol_1_1_soma_stats.html#a3d8fc3c2710cf69bff00cc8387c34622',1,'nsol::SomaStats']]],
   ['somastats',['SomaStats',['../classnsol_1_1_soma_stats.html',1,'nsol']]],

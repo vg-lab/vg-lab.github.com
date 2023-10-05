@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-26 14:32:41</td>
+            <td class="headerValue">2023-10-05 19:21:29</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -223,30 +223,35 @@
 <span class="lineNum">     161 </span>            :     NSOL_API
 <span class="lineNum">     162 </span>            :     NeuronMorphologySectionPtr postSynapticSection( void ) const;
 <span class="lineNum">     163 </span>            : 
-<span class="lineNum">     164 </span>            :     ///@}
-<span class="lineNum">     165 </span>            : 
-<span class="lineNum">     166 </span>            :   protected:
-<span class="lineNum">     167 </span>            : 
-<span class="lineNum">     168 </span>            :     //! Synapse GID (default value zero)
-<span class="lineNum">     169 </span>            :     unsigned int _gid;
+<span class="lineNum">     164 </span>            :     /** \brief Operator =. Included to avoid warning in modern gcc versions.
+<span class="lineNum">     165 </span>            :      *
+<span class="lineNum">     166 </span>            :      */
+<span class="lineNum">     167 </span>            :     MorphologySynapse&amp; operator=(const nsol::MorphologySynapse&amp;) = default;
+<span class="lineNum">     168 </span>            : 
+<span class="lineNum">     169 </span>            :     ///@}
 <span class="lineNum">     170 </span>            : 
-<span class="lineNum">     171 </span>            :     //! Presynaptic surface position
-<span class="lineNum">     172 </span>            :     Vec3f _preSynapticSurfacePosition;
-<span class="lineNum">     173 </span>            : 
-<span class="lineNum">     174 </span>            :     //! Postsynaptic surface position
-<span class="lineNum">     175 </span>            :     Vec3f _postSynapticSurfacePosition;
-<span class="lineNum">     176 </span>            : 
-<span class="lineNum">     177 </span>            :     //! Section of a presynaptic neuron (neurite)
-<span class="lineNum">     178 </span>            :     NeuronMorphologySectionPtr _preSynapticSection;
-<span class="lineNum">     179 </span>            : 
-<span class="lineNum">     180 </span>            :     //! Section of a postsynaptic neuron (neurite)
-<span class="lineNum">     181 </span>            :     NeuronMorphologySectionPtr _postSynapticSection;
-<span class="lineNum">     182 </span>            : 
-<span class="lineNum">     183 </span>            :   };
+<span class="lineNum">     171 </span>            :   protected:
+<span class="lineNum">     172 </span>            : 
+<span class="lineNum">     173 </span>            :     //! Synapse GID (default value zero)
+<span class="lineNum">     174 </span>            :     unsigned int _gid;
+<span class="lineNum">     175 </span>            : 
+<span class="lineNum">     176 </span>            :     //! Presynaptic surface position
+<span class="lineNum">     177 </span>            :     Vec3f _preSynapticSurfacePosition;
+<span class="lineNum">     178 </span>            : 
+<span class="lineNum">     179 </span>            :     //! Postsynaptic surface position
+<span class="lineNum">     180 </span>            :     Vec3f _postSynapticSurfacePosition;
+<span class="lineNum">     181 </span>            : 
+<span class="lineNum">     182 </span>            :     //! Section of a presynaptic neuron (neurite)
+<span class="lineNum">     183 </span>            :     NeuronMorphologySectionPtr _preSynapticSection;
 <span class="lineNum">     184 </span>            : 
-<span class="lineNum">     185 </span>            : } // namespace nsol
-<span class="lineNum">     186 </span>            : 
-<span class="lineNum">     187 </span>            : #endif // __NSOL_COMPARTMENTSYNAPSE__
+<span class="lineNum">     185 </span>            :     //! Section of a postsynaptic neuron (neurite)
+<span class="lineNum">     186 </span>            :     NeuronMorphologySectionPtr _postSynapticSection;
+<span class="lineNum">     187 </span>            : 
+<span class="lineNum">     188 </span>            :   };
+<span class="lineNum">     189 </span>            : 
+<span class="lineNum">     190 </span>            : } // namespace nsol
+<span class="lineNum">     191 </span>            : 
+<span class="lineNum">     192 </span>            : #endif // __NSOL_COMPARTMENTSYNAPSE__
 </pre>
       </td>
     </tr>

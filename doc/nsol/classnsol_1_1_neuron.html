@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">nsol
-   &#160;<span id="projectnumber">0.4.0</span>
+   &#160;<span id="projectnumber">0.4.1</span>
    </div>
    <div id="projectbrief">Nsol - Neuroscience Objects Library</div>
   </td>
@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('classnsol_1_1_neuron.html','');});
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classnsol_1_1_neuron-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -255,6 +256,24 @@ virtual <a class="el" href="classnsol_1_1_object_with_properties.html">ObjectWit
 <tr class="memitem:aef16841b8a49bb38c1997b622f0edaaf inherit pub_methods_classnsol_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef16841b8a49bb38c1997b622f0edaaf"></a>
 virtual <a class="el" href="classnsol_1_1_object.html">ObjectPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (void)</td></tr>
 <tr class="separator:aef16841b8a49bb38c1997b622f0edaaf inherit pub_methods_classnsol_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a043d845f042368bc4f318bab3c44bd30"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron.html#a043d845f042368bc4f318bab3c44bd30">typeToString</a> (const <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bd">TMorphologicalType</a> type)</td></tr>
+<tr class="memdesc:a043d845f042368bc4f318bab3c44bd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string of the given morphological type.  <a href="#a043d845f042368bc4f318bab3c44bd30">More...</a><br /></td></tr>
+<tr class="separator:a043d845f042368bc4f318bab3c44bd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27334b29ec413a93ce89af1354d82045"><td class="memItemLeft" align="right" valign="top">static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnsol_1_1_neuron.html#a27334b29ec413a93ce89af1354d82045">typeToColor</a> (const <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bd">TMorphologicalType</a> type)</td></tr>
+<tr class="memdesc:a27334b29ec413a93ce89af1354d82045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color assigned to the type.  <a href="#a27334b29ec413a93ce89af1354d82045">More...</a><br /></td></tr>
+<tr class="separator:a27334b29ec413a93ce89af1354d82045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5a04a2ab61061d8e3fcee8e2c351f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b5a04a2ab61061d8e3fcee8e2c351f5"></a>
+static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>layerToColor</b> (const unsigned short <a class="el" href="classnsol_1_1_neuron.html#a8b966e80f45c11f493a5c1497a1956a5">layer</a>)</td></tr>
+<tr class="separator:a7b5a04a2ab61061d8e3fcee8e2c351f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064e53feeb8f2f776e168e655ac612e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a064e53feeb8f2f776e168e655ac612e5"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>functionToString</b> (const <a class="el" href="classnsol_1_1_neuron.html#aed180f2e48f0c35b07dad4bd7f376ca3">TFunctionalType</a> type)</td></tr>
+<tr class="separator:a064e53feeb8f2f776e168e655ac612e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9929cb4e575240c80f81a145e9eb5fb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9929cb4e575240c80f81a145e9eb5fb2"></a>
+static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>functionToColor</b> (const <a class="el" href="classnsol_1_1_neuron.html#aed180f2e48f0c35b07dad4bd7f376ca3">TFunctionalType</a> type)</td></tr>
+<tr class="separator:a9929cb4e575240c80f81a145e9eb5fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -457,6 +476,20 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Method to get-set the layer of the neuron. </p>
 <dl class="section return"><dt>Returns</dt><dd>layer </dd></dl>
 
+<p>Referenced by <a class="el" href="classnsol_1_1_neuron.html#a27334b29ec413a93ce89af1354d82045">typeToColor()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_neuron_a8b966e80f45c11f493a5c1497a1956a5_icgraph.png" border="0" usemap="#classnsol_1_1_neuron_a8b966e80f45c11f493a5c1497a1956a5_icgraph" alt=""/></div>
+<map name="classnsol_1_1_neuron_a8b966e80f45c11f493a5c1497a1956a5_icgraph" id="classnsol_1_1_neuron_a8b966e80f45c11f493a5c1497a1956a5_icgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_neuron.html#a27334b29ec413a93ce89af1354d82045" title="Returns the color assigned to the type. " alt="" coords="196,5,381,32"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a210b3b6b30fc59d1efdf04a43dab1261"></a>
@@ -496,6 +529,90 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a class="anchor" id="a27334b29ec413a93ce89af1354d82045"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Eigen::Vector3f nsol::Neuron::typeToColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bd">TMorphologicalType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the color assigned to the type. </p>
+<p>Colors are now "random", should use the ones defined in other HDF5 activity file. TODO: change colors. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Morphological type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_neuron_8h_source.html#l00133">133</a> of file <a class="el" href="_neuron_8h_source.html">Neuron.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda937cf8ab2c537ac489e09be0f7010214">BASKET</a>, <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda03f47a6b3e96e12410cee41cd077ba4c">INTERNEURON</a>, <a class="el" href="classnsol_1_1_neuron.html#a8b966e80f45c11f493a5c1497a1956a5">layer()</a>, <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda56589ca6a708463353de6e983d0fc4ec">PURKINJE</a>, <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdafc61522d0af0098efce3bfe3727a9239">PYRAMIDAL</a>, and <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda6bef19c1eeaf092aced6f783ed85fda2">UNDEFINED</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnsol_1_1_neuron_a27334b29ec413a93ce89af1354d82045_cgraph.png" border="0" usemap="#classnsol_1_1_neuron_a27334b29ec413a93ce89af1354d82045_cgraph" alt=""/></div>
+<map name="classnsol_1_1_neuron_a27334b29ec413a93ce89af1354d82045_cgraph" id="classnsol_1_1_neuron_a27334b29ec413a93ce89af1354d82045_cgraph">
+<area shape="rect" id="node2" href="classnsol_1_1_neuron.html#a8b966e80f45c11f493a5c1497a1956a5" title="Method to get&#45;set the layer of the neuron. " alt="" coords="239,5,381,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a043d845f042368bc4f318bab3c44bd30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string nsol::Neuron::typeToString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bd">TMorphologicalType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the string of the given morphological type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Morphological type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_neuron_8h_source.html#l00076">76</a> of file <a class="el" href="_neuron_8h_source.html">Neuron.h</a>.</p>
+
+<p>References <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda937cf8ab2c537ac489e09be0f7010214">BASKET</a>, <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda03f47a6b3e96e12410cee41cd077ba4c">INTERNEURON</a>, <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda56589ca6a708463353de6e983d0fc4ec">PURKINJE</a>, <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bdafc61522d0af0098efce3bfe3727a9239">PYRAMIDAL</a>, and <a class="el" href="classnsol_1_1_neuron.html#ad2da03ee73ac0881fee23382259898bda6bef19c1eeaf092aced6f783ed85fda2">UNDEFINED</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_neuron_8h_source.html">Neuron.h</a></li>
 </ul>
@@ -505,7 +622,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>nsol</b></li><li class="navelem"><a class="el" href="classnsol_1_1_neuron.html">Neuron</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 14:32:42 for nsol by
+    <li class="footer">Generated on Thu Oct 5 2023 19:21:30 for nsol by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

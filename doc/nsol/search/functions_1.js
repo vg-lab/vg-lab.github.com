@@ -15,5 +15,5 @@ var searchData=
   ['addsynapse',['addSynapse',['../classnsol_1_1_circuit.html#ac7ac7d0caf266d8804a8b1b88834842e',1,'nsol::Circuit']]],
   ['apicaldendrite',['apicalDendrite',['../classnsol_1_1_neuron_morphology.html#a3f81653ee6a9f5cd91882b2780deee1c',1,'nsol::NeuronMorphology']]],
   ['apicaldendrites',['apicalDendrites',['../classnsol_1_1_neuron_morphology.html#a9446d39435740f6a1b356f114b996271',1,'nsol::NeuronMorphology']]],
-  ['axon',['axon',['../classnsol_1_1_neuron_morphology.html#a2b134489e53569208f1b2d376aa66746',1,'nsol::NeuronMorphology']]]
+  ['axons',['axons',['../classnsol_1_1_neuron_morphology.html#af65c1d879b4eea35fdda8b21a5e1e53d',1,'nsol::NeuronMorphology']]]
 ];

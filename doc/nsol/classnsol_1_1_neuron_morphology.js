@@ -8,7 +8,7 @@ var classnsol_1_1_neuron_morphology =
     [ "apicalDendrite", "classnsol_1_1_neuron_morphology.html#a3f81653ee6a9f5cd91882b2780deee1c", null ],
     [ "apicalDendrites", "classnsol_1_1_neuron_morphology.html#a9446d39435740f6a1b356f114b996271", null ],
     [ "asNeuronMorphology", "classnsol_1_1_neuron_morphology.html#abc65618b1d08dfab025446ac9f200e9f", null ],
-    [ "axon", "classnsol_1_1_neuron_morphology.html#a2b134489e53569208f1b2d376aa66746", null ],
+    [ "axons", "classnsol_1_1_neuron_morphology.html#af65c1d879b4eea35fdda8b21a5e1e53d", null ],
     [ "basalDendrites", "classnsol_1_1_neuron_morphology.html#af6df4ff3284339176ec79ebdfd717431", null ],
     [ "clone", "classnsol_1_1_neuron_morphology.html#a345a5f002c42d9a5340384e63338c894", null ],
     [ "dendrites", "classnsol_1_1_neuron_morphology.html#a473b24bf42349f9719f730291c68bbf9", null ],

@@ -18,7 +18,7 @@ var searchData=
   ['apicaldendrites',['apicalDendrites',['../classnsol_1_1_neuron_morphology.html#a9446d39435740f6a1b356f114b996271',1,'nsol::NeuronMorphology']]],
   ['ascreadertemplated',['AscReaderTemplated',['../classnsol_1_1_asc_reader_templated.html',1,'nsol']]],
   ['axon',['Axon',['../classnsol_1_1_axon.html',1,'nsol']]],
-  ['axon',['axon',['../classnsol_1_1_neuron_morphology.html#a2b134489e53569208f1b2d376aa66746',1,'nsol::NeuronMorphology']]],
   ['axoncachedstats',['AxonCachedStats',['../classnsol_1_1_axon_cached_stats.html',1,'nsol']]],
+  ['axons',['axons',['../classnsol_1_1_neuron_morphology.html#af65c1d879b4eea35fdda8b21a5e1e53d',1,'nsol::NeuronMorphology']]],
   ['axonstats',['AxonStats',['../classnsol_1_1_axon_stats.html',1,'nsol']]]
 ];
