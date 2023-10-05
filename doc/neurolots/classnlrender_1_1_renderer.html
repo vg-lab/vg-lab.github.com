@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">neurolots
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">NeuroLOTs</div>
   </td>
@@ -191,9 +191,9 @@ NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>colorFun
 <tr class="memitem:a0b38c787244a150c35064678ded91625"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a0b38c787244a150c35064678ded91625">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const Eigen::Vector3f &amp;color_=Eigen::Vector3f(0.5f, 0.5f, 0.5f), bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
 <tr class="memdesc:a0b38c787244a150c35064678ded91625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#a0b38c787244a150c35064678ded91625">More...</a><br /></td></tr>
 <tr class="separator:a0b38c787244a150c35064678ded91625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0fa8f8895697cb96dae297e8848628"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#aed0fa8f8895697cb96dae297e8848628">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const Eigen::Vector3f &amp;baseColor, const std::vector&lt; Eigen::Vector3f &gt; &amp;colors_, bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
-<tr class="memdesc:aed0fa8f8895697cb96dae297e8848628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#aed0fa8f8895697cb96dae297e8848628">More...</a><br /></td></tr>
-<tr class="separator:aed0fa8f8895697cb96dae297e8848628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae466728836dfcf6d44ea0545b9387640"><td class="memItemLeft" align="right" valign="top">NLRENDER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#ae466728836dfcf6d44ea0545b9387640">render</a> (nlgeometry::Meshes meshes_, const std::vector&lt; Eigen::Matrix4f &gt; &amp;modelMatrices_, const std::vector&lt; Eigen::Vector3f &gt; &amp;baseColors, const std::vector&lt; Eigen::Vector3f &gt; &amp;colors_, bool renderLines_=true, bool renderTriangles_=true, bool renderQuads_=true) const </td></tr>
+<tr class="memdesc:ae466728836dfcf6d44ea0545b9387640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that renderize the given meshes.  <a href="#ae466728836dfcf6d44ea0545b9387640">More...</a><br /></td></tr>
+<tr class="separator:ae466728836dfcf6d44ea0545b9387640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7801513a44ad17b1371476a8c430c41e"><td class="memItemLeft" align="right" valign="top">NLRENDER_API <a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlrender_1_1_renderer.html#a7801513a44ad17b1371476a8c430c41e">extract</a> (<a class="el" href="classnlgeometry_1_1_mesh.html">nlgeometry::MeshPtr</a> mesh_, const Eigen::Matrix4f &amp;modelMatrix_=Eigen::Matrix4f::Identity(), bool extractTriangles_=true, bool extractQuads_=true) const </td></tr>
 <tr class="memdesc:a7801513a44ad17b1371476a8c430c41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that extract the given mesh.  <a href="#a7801513a44ad17b1371476a8c430c41e">More...</a><br /></td></tr>
 <tr class="separator:a7801513a44ad17b1371476a8c430c41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -687,6 +687,11 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mesh_</td><td>mesh to renderize </td></tr>
+    <tr><td class="paramname">modelMatrix</td><td>model matrix transform. </td></tr>
+    <tr><td class="paramname">color_</td><td>Rendering color of the mesh, default gray. </td></tr>
+    <tr><td class="paramname">renderTriangles_</td><td>True to render mesh triangles and false otherwise. </td></tr>
+    <tr><td class="paramname">renderQuads_</td><td>True to render mesh quads and false otherwise. </td></tr>
+    <tr><td class="paramname">renderLines_</td><td>True to render mesh lines and false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -744,14 +749,19 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Method that renderize the given meshes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mesh_</td><td>meshes to renderize </td></tr>
+    <tr><td class="paramname">meshes_</td><td>meshes to renderize </td></tr>
+    <tr><td class="paramname">modelMatrices</td><td>Model matrices transform. </td></tr>
+    <tr><td class="paramname">color_</td><td>Rendering color of the meshes, default gray. </td></tr>
+    <tr><td class="paramname">renderTriangles_</td><td>True to render mesh triangles and false otherwise. </td></tr>
+    <tr><td class="paramname">renderQuads_</td><td>True to render mesh quads and false otherwise. </td></tr>
+    <tr><td class="paramname">renderLines_</td><td>True to render mesh lines and false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aed0fa8f8895697cb96dae297e8848628"></a>
+<a class="anchor" id="ae466728836dfcf6d44ea0545b9387640"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -770,8 +780,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
-          <td class="paramname"><em>baseColor</em>, </td>
+          <td class="paramtype">const std::vector&lt; Eigen::Vector3f &gt; &amp;&#160;</td>
+          <td class="paramname"><em>baseColors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -808,7 +818,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Method that renderize the given meshes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mesh_</td><td>meshes to renderize </td></tr>
+    <tr><td class="paramname">meshes_</td><td>meshes to renderize </td></tr>
+    <tr><td class="paramname">modelMatrices</td><td>Model matrices transform. </td></tr>
+    <tr><td class="paramname">baseColors</td><td>Default mesh colors. </td></tr>
+    <tr><td class="paramname">color_</td><td>Rendering color of the meshes, default gray. </td></tr>
+    <tr><td class="paramname">renderTriangles_</td><td>True to render mesh triangles and false otherwise. </td></tr>
+    <tr><td class="paramname">renderQuads_</td><td>True to render mesh quads and false otherwise. </td></tr>
+    <tr><td class="paramname">renderLines_</td><td>True to render mesh lines and false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -900,7 +916,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenlrender.html">nlrender</a></li><li class="navelem"><a class="el" href="classnlrender_1_1_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Wed Sep 6 2023 19:58:40 for neurolots by
+    <li class="footer">Generated on Thu Oct 5 2023 19:53:45 for neurolots by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
