@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-10-05 19:21:29</td>
+            <td class="headerValue">2024-12-10 16:00:21</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -395,14 +395,14 @@
 <span class="lineNum">     333 </span>            :       const Neuron::TMorphologicalType type_ = Neuron::PYRAMIDAL )
 <span class="lineNum">     334 </span>            :     {
 <span class="lineNum">     335 </span>            :       NeuronPtr neuron;
-<span class="lineNum">     336 </span>            : #ifdef NSOL_USE_BRION
-<span class="lineNum">     337 </span>            :       BrionReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION, DENDRITE, AXON, SOMA,
-<span class="lineNum">     338 </span>            :                             NEURONMORPHOLOGY, NEURON, MINICOLUMN, COLUMN  &gt;
-<span class="lineNum">     339 </span>            :         brionReader;
+<span class="lineNum">     336 </span>            : // #ifdef NSOL_USE_BRION
+<span class="lineNum">     337 </span>            : //       BrionReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION, DENDRITE, AXON, SOMA,
+<span class="lineNum">     338 </span>            : //                             NEURONMORPHOLOGY, NEURON, MINICOLUMN, COLUMN  &gt;
+<span class="lineNum">     339 </span>            : //         brionReader;
 <span class="lineNum">     340 </span>            : 
-<span class="lineNum">     341 </span>            :       neuron =  brionReader.loadNeuron( file_, gid_, layer_, transform_,
-<span class="lineNum">     342 </span>            :                                         type_ );
-<span class="lineNum">     343 </span>            : #else
+<span class="lineNum">     341 </span>            : //       neuron =  brionReader.loadNeuron( file_, gid_, layer_, transform_,
+<span class="lineNum">     342 </span>            : //                                         type_ );
+<span class="lineNum">     343 </span>            : // #else
 <span class="lineNum">     344 </span>            :       SwcReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION, DENDRITE, AXON, SOMA,
 <span class="lineNum">     345 </span>            :                           NEURONMORPHOLOGY, NEURON &gt; swcReader;
 <span class="lineNum">     346 </span>            :       neuron = swcReader.readNeuron( file_ );
@@ -411,180 +411,181 @@
 <span class="lineNum">     349 </span>            :       neuron-&gt;transform( ) = transform_;
 <span class="lineNum">     350 </span>            :       neuron-&gt;morphologicalType( ) = type_;
 <span class="lineNum">     351 </span>            : 
-<span class="lineNum">     352 </span>            : #endif
+<span class="lineNum">     352 </span>            : // #endif
 <span class="lineNum">     353 </span>            :       if ( neuron &amp;&amp; !addNeuron( neuron ))
 <span class="lineNum">     354 </span>            :       {
 <span class="lineNum">     355 </span>            :         delete neuron;
-<span class="lineNum">     356 </span>            :         return nullptr;
+<span class="lineNum">     356 </span>            :         neuron = nullptr;
 <span class="lineNum">     357 </span>            :       }
-<span class="lineNum">     358 </span>            :       return neuron;
-<span class="lineNum">     359 </span>            :     }
-<span class="lineNum">     360 </span>            : 
+<span class="lineNum">     358 </span>            :       
+<span class="lineNum">     359 </span>            :       return neuron;
+<span class="lineNum">     360 </span>            :     }
 <span class="lineNum">     361 </span>            : 
-<span class="lineNum">     362 </span>            :     template &lt; class NODE = Node,
-<span class="lineNum">     363 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
-<span class="lineNum">     364 </span>            :                class DENDRITE = Dendrite,
-<span class="lineNum">     365 </span>            :                class AXON = Axon,
-<span class="lineNum">     366 </span>            :                class SOMA = Soma,
-<span class="lineNum">     367 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
-<span class="lineNum">     368 </span>            :                class NEURON = Neuron,
-<span class="lineNum">     369 </span>            :                class MINICOLUMN = MiniColumn,
-<span class="lineNum">     370 </span>            :                class COLUMN = Column &gt;
-<span class="lineNum">     371 </span>            :     void loadCorticalNeuronFromFile(
-<span class="lineNum">     372 </span>            :       const std::string&amp; file_, const unsigned int gid_,
-<span class="lineNum">     373 </span>            :       const unsigned int columnId_ = 0, const unsigned int miniColumnId_ = 0,
-<span class="lineNum">     374 </span>            :       const unsigned int layer_ = 0,
-<span class="lineNum">     375 </span>            :       const Matrix4_4f transform_ = Matrix4_4fIdentity,
-<span class="lineNum">     376 </span>            :       const Neuron::TMorphologicalType type_ = Neuron::PYRAMIDAL )
-<span class="lineNum">     377 </span>            :     {
-<span class="lineNum">     378 </span>            :       NeuronPtr neuron =
-<span class="lineNum">     379 </span>            :         loadNeuronFromFile&lt; NODE, NEURONMORPHOLOGYSECTION, DENDRITE, AXON, SOMA,
-<span class="lineNum">     380 </span>            :                            NEURONMORPHOLOGY, NEURON, MINICOLUMN, COLUMN &gt;
-<span class="lineNum">     381 </span>            :         ( file_, gid_, layer_, transform_, type_ );
-<span class="lineNum">     382 </span>            : 
-<span class="lineNum">     383 </span>            :       if( neuron &amp;&amp; neuron-&gt;morphology( ) )
-<span class="lineNum">     384 </span>            :       {
-<span class="lineNum">     385 </span>            : 
-<span class="lineNum">     386 </span>            :         Column* column = nullptr;
-<span class="lineNum">     387 </span>            :         NSOL_FOREACH( col, _columns )
-<span class="lineNum">     388 </span>            :         {
-<span class="lineNum">     389 </span>            :           if (( *col )-&gt;id( ) == columnId_ )
-<span class="lineNum">     390 </span>            :           {
-<span class="lineNum">     391 </span>            :             column = *col;
-<span class="lineNum">     392 </span>            :           }
-<span class="lineNum">     393 </span>            :         }
-<span class="lineNum">     394 </span>            :         if( !column )
-<span class="lineNum">     395 </span>            :         {
-<span class="lineNum">     396 </span>            :           column = new COLUMN( columnId_ );
-<span class="lineNum">     397 </span>            :           _columns.push_back( column );
-<span class="lineNum">     398 </span>            :         }
-<span class="lineNum">     399 </span>            : 
-<span class="lineNum">     400 </span>            :         MINICOLUMN* miniColumn = nullptr;
-<span class="lineNum">     401 </span>            :         NSOL_FOREACH( miniCol, column-&gt;miniColumns() )
-<span class="lineNum">     402 </span>            :         {
-<span class="lineNum">     403 </span>            :           if(( *miniCol )-&gt;id( ) == miniColumnId_ )
-<span class="lineNum">     404 </span>            :           {
-<span class="lineNum">     405 </span>            :             miniColumn = *miniCol;
-<span class="lineNum">     406 </span>            :           }
-<span class="lineNum">     407 </span>            :         }
-<span class="lineNum">     408 </span>            :         if( !miniColumn )
-<span class="lineNum">     409 </span>            :         {
-<span class="lineNum">     410 </span>            :           miniColumn =
-<span class="lineNum">     411 </span>            :             ( MiniColumnPtr ) new MINICOLUMN( column, miniColumnId_ );
-<span class="lineNum">     412 </span>            :           column-&gt;addMiniColumn( miniColumn );
-<span class="lineNum">     413 </span>            :         }
-<span class="lineNum">     414 </span>            :         neuron-&gt;miniColumn( miniColumn );
-<span class="lineNum">     415 </span>            :         miniColumn-&gt;addNeuron( neuron );
-<span class="lineNum">     416 </span>            :       }
-<span class="lineNum">     417 </span>            : 
-<span class="lineNum">     418 </span>            :     }
-<span class="lineNum">     419 </span>            : 
+<span class="lineNum">     362 </span>            : 
+<span class="lineNum">     363 </span>            :     template &lt; class NODE = Node,
+<span class="lineNum">     364 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
+<span class="lineNum">     365 </span>            :                class DENDRITE = Dendrite,
+<span class="lineNum">     366 </span>            :                class AXON = Axon,
+<span class="lineNum">     367 </span>            :                class SOMA = Soma,
+<span class="lineNum">     368 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
+<span class="lineNum">     369 </span>            :                class NEURON = Neuron,
+<span class="lineNum">     370 </span>            :                class MINICOLUMN = MiniColumn,
+<span class="lineNum">     371 </span>            :                class COLUMN = Column &gt;
+<span class="lineNum">     372 </span>            :     void loadCorticalNeuronFromFile(
+<span class="lineNum">     373 </span>            :       const std::string&amp; file_, const unsigned int gid_,
+<span class="lineNum">     374 </span>            :       const unsigned int columnId_ = 0, const unsigned int miniColumnId_ = 0,
+<span class="lineNum">     375 </span>            :       const unsigned int layer_ = 0,
+<span class="lineNum">     376 </span>            :       const Matrix4_4f transform_ = Matrix4_4fIdentity,
+<span class="lineNum">     377 </span>            :       const Neuron::TMorphologicalType type_ = Neuron::PYRAMIDAL )
+<span class="lineNum">     378 </span>            :     {
+<span class="lineNum">     379 </span>            :       NeuronPtr neuron =
+<span class="lineNum">     380 </span>            :         loadNeuronFromFile&lt; NODE, NEURONMORPHOLOGYSECTION, DENDRITE, AXON, SOMA,
+<span class="lineNum">     381 </span>            :                            NEURONMORPHOLOGY, NEURON, MINICOLUMN, COLUMN &gt;
+<span class="lineNum">     382 </span>            :         ( file_, gid_, layer_, transform_, type_ );
+<span class="lineNum">     383 </span>            : 
+<span class="lineNum">     384 </span>            :       if( neuron &amp;&amp; neuron-&gt;morphology( ) )
+<span class="lineNum">     385 </span>            :       {
+<span class="lineNum">     386 </span>            : 
+<span class="lineNum">     387 </span>            :         Column* column = nullptr;
+<span class="lineNum">     388 </span>            :         NSOL_FOREACH( col, _columns )
+<span class="lineNum">     389 </span>            :         {
+<span class="lineNum">     390 </span>            :           if (( *col )-&gt;id( ) == columnId_ )
+<span class="lineNum">     391 </span>            :           {
+<span class="lineNum">     392 </span>            :             column = *col;
+<span class="lineNum">     393 </span>            :           }
+<span class="lineNum">     394 </span>            :         }
+<span class="lineNum">     395 </span>            :         if( !column )
+<span class="lineNum">     396 </span>            :         {
+<span class="lineNum">     397 </span>            :           column = new COLUMN( columnId_ );
+<span class="lineNum">     398 </span>            :           _columns.push_back( column );
+<span class="lineNum">     399 </span>            :         }
+<span class="lineNum">     400 </span>            : 
+<span class="lineNum">     401 </span>            :         MINICOLUMN* miniColumn = nullptr;
+<span class="lineNum">     402 </span>            :         NSOL_FOREACH( miniCol, column-&gt;miniColumns() )
+<span class="lineNum">     403 </span>            :         {
+<span class="lineNum">     404 </span>            :           if(( *miniCol )-&gt;id( ) == miniColumnId_ )
+<span class="lineNum">     405 </span>            :           {
+<span class="lineNum">     406 </span>            :             miniColumn = *miniCol;
+<span class="lineNum">     407 </span>            :           }
+<span class="lineNum">     408 </span>            :         }
+<span class="lineNum">     409 </span>            :         if( !miniColumn )
+<span class="lineNum">     410 </span>            :         {
+<span class="lineNum">     411 </span>            :           miniColumn =
+<span class="lineNum">     412 </span>            :             ( MiniColumnPtr ) new MINICOLUMN( column, miniColumnId_ );
+<span class="lineNum">     413 </span>            :           column-&gt;addMiniColumn( miniColumn );
+<span class="lineNum">     414 </span>            :         }
+<span class="lineNum">     415 </span>            :         neuron-&gt;miniColumn( miniColumn );
+<span class="lineNum">     416 </span>            :         miniColumn-&gt;addNeuron( neuron );
+<span class="lineNum">     417 </span>            :       }
+<span class="lineNum">     418 </span>            : 
+<span class="lineNum">     419 </span>            :     }
 <span class="lineNum">     420 </span>            : 
-<span class="lineNum">     421 </span>            :     template &lt; class NODE = Node,
-<span class="lineNum">     422 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
-<span class="lineNum">     423 </span>            :                class DENDRITE = Dendrite,
-<span class="lineNum">     424 </span>            :                class AXON = Axon,
-<span class="lineNum">     425 </span>            :                class SOMA = Soma,
-<span class="lineNum">     426 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
-<span class="lineNum">     427 </span>            :                class NEURON = Neuron,
-<a name="428"><span class="lineNum">     428 </span>            :                class MINICOLUMN = MiniColumn,</a>
-<span class="lineNum">     429 </span>            :                class COLUMN = Column &gt;
-<span class="lineNum">     430 </span><span class="lineCov">          4 :     void loadXmlScene( const std::string&amp; xmlSceneFile )</span>
-<span class="lineNum">     431 </span>            :     {
-<span class="lineNum">     432 </span><span class="lineCov">          4 :       XmlSceneReader::loadXml&lt;</span>
-<span class="lineNum">     433 </span>            :         NODE, NEURONMORPHOLOGYSECTION, DENDRITE,
-<span class="lineNum">     434 </span>            :         AXON, SOMA, NEURONMORPHOLOGY,
-<span class="lineNum">     435 </span><span class="lineCov">          4 :         NEURON, MINICOLUMN, COLUMN &gt;( xmlSceneFile, _columns,</span>
-<span class="lineNum">     436 </span>            :                                       _neurons, _morphologies );
-<span class="lineNum">     437 </span><span class="lineCov">          4 :     }</span>
-<span class="lineNum">     438 </span>            : 
-<span class="lineNum">     439 </span>            :     NSOL_API
-<span class="lineNum">     440 </span>            :     void writeXmlScene( const std::string&amp; xmlSceneFile );
-<span class="lineNum">     441 </span>            : 
-<span class="lineNum">     442 </span>            :   private:
-<span class="lineNum">     443 </span>            : 
-<span class="lineNum">     444 </span>            : #ifdef NSOL_USE_BRION
-<span class="lineNum">     445 </span>            :     template &lt; class NODE = Node,
-<span class="lineNum">     446 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
-<span class="lineNum">     447 </span>            :                class DENDRITE = Dendrite,
-<span class="lineNum">     448 </span>            :                class AXON = Axon,
-<span class="lineNum">     449 </span>            :                class SOMA = Soma,
-<span class="lineNum">     450 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
-<span class="lineNum">     451 </span>            :                class NEURON = Neuron,
-<span class="lineNum">     452 </span>            :                class MINICOLUMN = MiniColumn,
-<span class="lineNum">     453 </span>            :                class COLUMN = Column &gt;
-<span class="lineNum">     454 </span>            :     void _loadMorphology( unsigned int&amp; neuronId_,
-<span class="lineNum">     455 </span>            :                           const std::string&amp; morphologySource_,
-<span class="lineNum">     456 </span>            :                           const std::string&amp; morphologyLabel_,
-<span class="lineNum">     457 </span>            :                           BrionReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION,
-<span class="lineNum">     458 </span>            :                           DENDRITE, AXON, SOMA, NEURONMORPHOLOGY, NEURON,
-<span class="lineNum">     459 </span>            :                           MINICOLUMN, COLUMN &gt;&amp; brionReader_ )
-<span class="lineNum">     460 </span>            :   {
-<span class="lineNum">     461 </span>            :       NeuronsMap::iterator neuronIt = _neurons.find( neuronId_ );
-<span class="lineNum">     462 </span>            : 
-<span class="lineNum">     463 </span>            :       if( neuronIt == _neurons.end( ))
-<span class="lineNum">     464 </span>            :       {
-<span class="lineNum">     465 </span>            :         std::cerr &lt;&lt; &quot;Neuron &quot; &lt;&lt; neuronId_ &lt;&lt; &quot; doesn't exist in DataSet&quot;
-<span class="lineNum">     466 </span>            :                   &lt;&lt; std::endl;
-<span class="lineNum">     467 </span>            :         return;
-<span class="lineNum">     468 </span>            :       }
-<span class="lineNum">     469 </span>            :       NeuronPtr neuron = neuronIt-&gt;second;
-<span class="lineNum">     470 </span>            : 
-<span class="lineNum">     471 </span>            :       if ( neuron-&gt;morphology( ))
-<span class="lineNum">     472 </span>            :       {
-<span class="lineNum">     473 </span>            :         return;
-<span class="lineNum">     474 </span>            :       }
-<span class="lineNum">     475 </span>            : 
-<span class="lineNum">     476 </span>            :       std::map&lt; std::string, NeuronMorphologyPtr &gt;::iterator morphoIt =
-<span class="lineNum">     477 </span>            :         _morphologies.find( morphologyLabel_ );
-<span class="lineNum">     478 </span>            : 
-<span class="lineNum">     479 </span>            :       if( morphoIt != _morphologies.end( ))
-<span class="lineNum">     480 </span>            :       {
-<span class="lineNum">     481 </span>            :         morphoIt-&gt;second-&gt;parentNeurons( ).push_back( neuron );
-<span class="lineNum">     482 </span>            :         neuron-&gt;morphology( morphoIt-&gt;second );
-<span class="lineNum">     483 </span>            :         return;
-<span class="lineNum">     484 </span>            :       }
-<span class="lineNum">     485 </span>            : 
-<span class="lineNum">     486 </span>            :       NeuronMorphologyPtr morpho = brionReader_.loadMorphology(
-<span class="lineNum">     487 </span>            :         morphologySource_ + &quot;/&quot; + morphologyLabel_ + &quot;.h5&quot; );
-<span class="lineNum">     488 </span>            : 
-<span class="lineNum">     489 </span>            :       neuron-&gt;morphology( morpho );
-<span class="lineNum">     490 </span>            :       morpho-&gt;parentNeurons( ).push_back( neuron );
-<span class="lineNum">     491 </span>            :       _morphologies[ morphologyLabel_ ] = morpho;
-<span class="lineNum">     492 </span>            :     }
-<span class="lineNum">     493 </span>            : #endif
-<span class="lineNum">     494 </span>            : 
-<span class="lineNum">     495 </span>            :   protected:
-<span class="lineNum">     496 </span>            : 
-<span class="lineNum">     497 </span>            :     Vec3f _calculatePosition( const Vec3fs&amp; sectionNodes,
-<span class="lineNum">     498 </span>            :                               unsigned int segmentID, float distance ) const;
-<span class="lineNum">     499 </span>            : 
-<span class="lineNum">     500 </span>            :     //! Entry for cortical hierarchy in form o a container of cortial columns
-<span class="lineNum">     501 </span>            :     Columns _columns;
-<span class="lineNum">     502 </span>            : 
-<span class="lineNum">     503 </span>            :     //! Entry for connections of the circuit.
-<span class="lineNum">     504 </span>            :     Circuit _circuit;
-<span class="lineNum">     505 </span>            : 
-<span class="lineNum">     506 </span>            :     //! Container of neurons by its gid
-<span class="lineNum">     507 </span>            :     NeuronsMap _neurons;
-<span class="lineNum">     508 </span>            : 
-<span class="lineNum">     509 </span>            :     //! Map of the paths of morphologies
-<span class="lineNum">     510 </span>            :     std::map&lt; std::string, NeuronMorphologyPtr &gt; _morphologies;
-<span class="lineNum">     511 </span>            : 
-<span class="lineNum">     512 </span>            : #ifdef NSOL_USE_BRION
-<span class="lineNum">     513 </span>            : 
-<span class="lineNum">     514 </span>            :     brion::BlueConfig* _blueConfig;
-<span class="lineNum">     515 </span>            : 
-<span class="lineNum">     516 </span>            :     std::string _target;
-<span class="lineNum">     517 </span>            : 
-<span class="lineNum">     518 </span>            : #endif
-<span class="lineNum">     519 </span>            : 
+<span class="lineNum">     421 </span>            : 
+<span class="lineNum">     422 </span>            :     template &lt; class NODE = Node,
+<span class="lineNum">     423 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
+<span class="lineNum">     424 </span>            :                class DENDRITE = Dendrite,
+<span class="lineNum">     425 </span>            :                class AXON = Axon,
+<span class="lineNum">     426 </span>            :                class SOMA = Soma,
+<span class="lineNum">     427 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
+<span class="lineNum">     428 </span>            :                class NEURON = Neuron,
+<a name="429"><span class="lineNum">     429 </span>            :                class MINICOLUMN = MiniColumn,</a>
+<span class="lineNum">     430 </span>            :                class COLUMN = Column &gt;
+<span class="lineNum">     431 </span><span class="lineCov">          4 :     void loadXmlScene( const std::string&amp; xmlSceneFile )</span>
+<span class="lineNum">     432 </span>            :     {
+<span class="lineNum">     433 </span><span class="lineCov">          4 :       XmlSceneReader::loadXml&lt;</span>
+<span class="lineNum">     434 </span>            :         NODE, NEURONMORPHOLOGYSECTION, DENDRITE,
+<span class="lineNum">     435 </span>            :         AXON, SOMA, NEURONMORPHOLOGY,
+<span class="lineNum">     436 </span><span class="lineCov">          4 :         NEURON, MINICOLUMN, COLUMN &gt;( xmlSceneFile, _columns,</span>
+<span class="lineNum">     437 </span>            :                                       _neurons, _morphologies );
+<span class="lineNum">     438 </span><span class="lineCov">          4 :     }</span>
+<span class="lineNum">     439 </span>            : 
+<span class="lineNum">     440 </span>            :     NSOL_API
+<span class="lineNum">     441 </span>            :     void writeXmlScene( const std::string&amp; xmlSceneFile );
+<span class="lineNum">     442 </span>            : 
+<span class="lineNum">     443 </span>            :   private:
+<span class="lineNum">     444 </span>            : 
+<span class="lineNum">     445 </span>            : #ifdef NSOL_USE_BRION
+<span class="lineNum">     446 </span>            :     template &lt; class NODE = Node,
+<span class="lineNum">     447 </span>            :                class NEURONMORPHOLOGYSECTION = NeuronMorphologySection,
+<span class="lineNum">     448 </span>            :                class DENDRITE = Dendrite,
+<span class="lineNum">     449 </span>            :                class AXON = Axon,
+<span class="lineNum">     450 </span>            :                class SOMA = Soma,
+<span class="lineNum">     451 </span>            :                class NEURONMORPHOLOGY = NeuronMorphology,
+<span class="lineNum">     452 </span>            :                class NEURON = Neuron,
+<span class="lineNum">     453 </span>            :                class MINICOLUMN = MiniColumn,
+<span class="lineNum">     454 </span>            :                class COLUMN = Column &gt;
+<span class="lineNum">     455 </span>            :     void _loadMorphology( unsigned int&amp; neuronId_,
+<span class="lineNum">     456 </span>            :                           const std::string&amp; morphologySource_,
+<span class="lineNum">     457 </span>            :                           const std::string&amp; morphologyLabel_,
+<span class="lineNum">     458 </span>            :                           BrionReaderTemplated&lt; NODE, NEURONMORPHOLOGYSECTION,
+<span class="lineNum">     459 </span>            :                           DENDRITE, AXON, SOMA, NEURONMORPHOLOGY, NEURON,
+<span class="lineNum">     460 </span>            :                           MINICOLUMN, COLUMN &gt;&amp; brionReader_ )
+<span class="lineNum">     461 </span>            :   {
+<span class="lineNum">     462 </span>            :       NeuronsMap::iterator neuronIt = _neurons.find( neuronId_ );
+<span class="lineNum">     463 </span>            : 
+<span class="lineNum">     464 </span>            :       if( neuronIt == _neurons.end( ))
+<span class="lineNum">     465 </span>            :       {
+<span class="lineNum">     466 </span>            :         std::cerr &lt;&lt; &quot;Neuron &quot; &lt;&lt; neuronId_ &lt;&lt; &quot; doesn't exist in DataSet&quot;
+<span class="lineNum">     467 </span>            :                   &lt;&lt; std::endl;
+<span class="lineNum">     468 </span>            :         return;
+<span class="lineNum">     469 </span>            :       }
+<span class="lineNum">     470 </span>            :       NeuronPtr neuron = neuronIt-&gt;second;
+<span class="lineNum">     471 </span>            : 
+<span class="lineNum">     472 </span>            :       if ( neuron-&gt;morphology( ))
+<span class="lineNum">     473 </span>            :       {
+<span class="lineNum">     474 </span>            :         return;
+<span class="lineNum">     475 </span>            :       }
+<span class="lineNum">     476 </span>            : 
+<span class="lineNum">     477 </span>            :       std::map&lt; std::string, NeuronMorphologyPtr &gt;::iterator morphoIt =
+<span class="lineNum">     478 </span>            :         _morphologies.find( morphologyLabel_ );
+<span class="lineNum">     479 </span>            : 
+<span class="lineNum">     480 </span>            :       if( morphoIt != _morphologies.end( ))
+<span class="lineNum">     481 </span>            :       {
+<span class="lineNum">     482 </span>            :         morphoIt-&gt;second-&gt;parentNeurons( ).push_back( neuron );
+<span class="lineNum">     483 </span>            :         neuron-&gt;morphology( morphoIt-&gt;second );
+<span class="lineNum">     484 </span>            :         return;
+<span class="lineNum">     485 </span>            :       }
+<span class="lineNum">     486 </span>            : 
+<span class="lineNum">     487 </span>            :       NeuronMorphologyPtr morpho = brionReader_.loadMorphology(
+<span class="lineNum">     488 </span>            :         morphologySource_ + &quot;/&quot; + morphologyLabel_ + &quot;.h5&quot; );
+<span class="lineNum">     489 </span>            : 
+<span class="lineNum">     490 </span>            :       neuron-&gt;morphology( morpho );
+<span class="lineNum">     491 </span>            :       morpho-&gt;parentNeurons( ).push_back( neuron );
+<span class="lineNum">     492 </span>            :       _morphologies[ morphologyLabel_ ] = morpho;
+<span class="lineNum">     493 </span>            :     }
+<span class="lineNum">     494 </span>            : #endif
+<span class="lineNum">     495 </span>            : 
+<span class="lineNum">     496 </span>            :   protected:
+<span class="lineNum">     497 </span>            : 
+<span class="lineNum">     498 </span>            :     Vec3f _calculatePosition( const Vec3fs&amp; sectionNodes,
+<span class="lineNum">     499 </span>            :                               unsigned int segmentID, float distance ) const;
+<span class="lineNum">     500 </span>            : 
+<span class="lineNum">     501 </span>            :     //! Entry for cortical hierarchy in form o a container of cortial columns
+<span class="lineNum">     502 </span>            :     Columns _columns;
+<span class="lineNum">     503 </span>            : 
+<span class="lineNum">     504 </span>            :     //! Entry for connections of the circuit.
+<span class="lineNum">     505 </span>            :     Circuit _circuit;
+<span class="lineNum">     506 </span>            : 
+<span class="lineNum">     507 </span>            :     //! Container of neurons by its gid
+<span class="lineNum">     508 </span>            :     NeuronsMap _neurons;
+<span class="lineNum">     509 </span>            : 
+<span class="lineNum">     510 </span>            :     //! Map of the paths of morphologies
+<span class="lineNum">     511 </span>            :     std::map&lt; std::string, NeuronMorphologyPtr &gt; _morphologies;
+<span class="lineNum">     512 </span>            : 
+<span class="lineNum">     513 </span>            : #ifdef NSOL_USE_BRION
+<span class="lineNum">     514 </span>            : 
+<span class="lineNum">     515 </span>            :     brion::BlueConfig* _blueConfig;
+<span class="lineNum">     516 </span>            : 
+<span class="lineNum">     517 </span>            :     std::string _target;
+<span class="lineNum">     518 </span>            : 
+<span class="lineNum">     519 </span>            : #endif
 <span class="lineNum">     520 </span>            : 
-<span class="lineNum">     521 </span>            :   }; // class DataSet
-<span class="lineNum">     522 </span>            : 
-<span class="lineNum">     523 </span>            : } // namespace nsol
-<span class="lineNum">     524 </span>            : 
-<span class="lineNum">     525 </span>            : #endif // __NSOL_DATASET__
+<span class="lineNum">     521 </span>            : 
+<span class="lineNum">     522 </span>            :   }; // class DataSet
+<span class="lineNum">     523 </span>            : 
+<span class="lineNum">     524 </span>            : } // namespace nsol
+<span class="lineNum">     525 </span>            : 
+<span class="lineNum">     526 </span>            : #endif // __NSOL_DATASET__
 </pre>
       </td>
     </tr>
